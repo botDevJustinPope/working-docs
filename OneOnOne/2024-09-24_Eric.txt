@@ -1,0 +1,5 @@
+Talking through 30-60-90:
+- Best Practices:
+    * Domain Driven Design document
+    * Test Driven Development plurasight
+    * talk with Reid/Daniel
