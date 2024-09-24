@@ -1,0 +1,29 @@
+30 Days (2024/10/28): 
+
+1) Team Integration
+    Begin to integrate into the team, developing strong relationships with all members. 
+
+2) Development and Testing Procedures 
+    Participate in code reviews to familiarize yourself with the team's coding standards and best practices. 
+
+3) Best Practices and Principles 
+    Familiarize yourself with: 
+        Domain Driven Design
+        Test Driven Developmen
+        Other patterns and practices that VDS uses
+
+4) Practice Problems 
+    Complete assigned practice problems to learn various parts of the application and toolchains
+    Document any learning points or issues encountered for future reflection and discussion during check-ins
+
+5) Training Opportunities 
+    Seek out domain-specific training, such as online courses, internal documentation, or domain experts within the team. 
+    Participate in any available formal onboarding programs or knowledge-sharing sessions. 
+
+6) Agile Immersion 
+    Engage fully in all agile ceremonies: standups, sprint planning, retrospectives, and backlog refinement. 
+    Read through, or verbally acquire, any agile-related documentation (team rules, definition of done, working agreements). 
+
+7) Pairing 
+    Pair regularly with other developers on different tasks (e.g., debugging, feature development) to understand different facets of the development process. 
+    Alternate between pairing with developers and QA engineers to gain a well-rounded understanding of cross-functional work. 

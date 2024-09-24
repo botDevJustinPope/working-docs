@@ -1,0 +1,13 @@
+To Do:
+1) Initiate pairing wiht Daniel or Reid
+    Reid checked in yesterday, get with him
+
+    Topics to ask about:
+        Best Practices:
+            Domain Driven Design 
+            Test Driven Development 
+        Code talk:
+            Overview of the VeoDesignStudio app 
+        
+
+2) 
