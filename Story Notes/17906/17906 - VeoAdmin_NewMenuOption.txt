@@ -1,0 +1,14 @@
+link: https://dev.azure.com/BuildOnTechnologies/VeoDesignStudio/_workitems/edit/17906
+
+Design/changes:
+- Discovery:
+    The menu is built based on the routes that are configured in the app
+    app.ts is where the router is configured 
+    main-menu.ts/main-menu.html is where the 'component' is configured and displayed
+    tilePatternReports / (.ts .html .scss) is the component that will be duplicated
+
+- changes:
+    add a new route Tile Patterns 2 based on Tile Patterns report (app.ts)
+    modify the tilePatternReports to have the title be able to be configured to be passed in
+    - default title to have the original title 
+    - new route to have "Tile Pattern Reports 2"

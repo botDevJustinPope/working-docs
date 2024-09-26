@@ -1,0 +1,3 @@
+Operations sunset Azure Functions with session completetion:
+1) where is the process that the session being completed?
+2) why a nuget package?

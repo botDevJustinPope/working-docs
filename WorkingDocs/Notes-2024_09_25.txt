@@ -1,0 +1,7 @@
+Daniel show and tell:
+- use case methodology
+- specification patterns
+
+Things to ask Eric:
+- Why is the frontend app intermigled with the api?
+- What is the benefit of using 'UseCase' design pattern?
