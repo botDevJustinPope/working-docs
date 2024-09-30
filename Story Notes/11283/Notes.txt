@@ -1,0 +1,27 @@
+AC:
+- Create a value converter that will accept the numeric rounding value for an Organiztion and return the appropriate string that we'd like to see on the site
+- Apply the value converter to the Organiztion Details view
+- Remove any code that has been rendered obsolete due to this change 
+
+Notes:
+- in veo admin src/value-converter is where where the value converters are 
+- and src/index.ts is where the configure for the value converts are 
+
+Code edits:
+- add src/resuorces/value-converters/roundingLable.ts
+- add the converter to the src/index.ts 
+- updates to src/models/Organiztion.ts
+    looking into the Domain BuildOnTechnologies.VDS.Domain/Organiztion/OrganizationDetailDTO.cs, the property RoutingType is just an int
+    because of this:
+    - line 26 | roundingType property can be just a number
+    - line 48 | method roundingTypeLabel() is obsolete
+    - line 60 | roundingTypes Array<IRoundingTypes> : either moved or obsolete
+    - line 109 | interface IRoundingTypes obsolete?
+    - line 114 | enum OrganizationRoundingTypes can be moved to the converter or obsolete 
+
+- views:
+    - organizationDetails.html - line 41 utilize converter
+    - createOrganization.html - line 45 utilize converter 
+    *** this would be the reason not to remove the definitions for the routing types ***
+    *** Idea: move the enum out to its own file to seperate it from the Organiation.ts model ***
+    - editOrganization.html - line 51
