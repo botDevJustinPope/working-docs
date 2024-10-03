@@ -1,0 +1,27 @@
+AC:
+- in the DMH outer pererences menu create a new section to the left of the buyer's budget
+- in the new section, include an appropriately sized svg such as the visualizer reset icon
+- in the new section, include the user's first name 
+
+Notes:
+- App\managers\userManager.ts
+    contains both the current user and the impersonated user 
+- App\features\designMyHome\spendingSummary\summaryBar.html
+  App\features\designMyHome\spendingSummary\summaryBar.ts 
+  App\features\designMyHome\spendingSummary\summaryBar.scss 
+    these files comprise of the summary bar for the story 
+
+Ideas:
+    because of the idea that the user can impersonate another user, I want to visuazlize that within the 'section'
+    - Icon: 
+        utilze the followwing icons
+        user - https://icons.getbootstrap.com/icons/person-fill/
+        impersonated - https://icons.getbootstrap.com/icons/person-video/
+        these will be added to the wwwroot\Content\icons\icons.svg
+    - user name section 
+        create a new component to encapsulate the logic for the user name
+
+
+testing: screen shot of the following 
+    dmh landing page
+    room
