@@ -1,0 +1,13 @@
+60 days (2024/12/2)
+
+1) Sprint-Related Work 
+    - Begin to take on sprint-related work by selecting user stories during sprint planning and working closely with a menotr for guidance
+    - Focus on smaller user stories that allow for exposure to different parts of the application (e.g. fround-edn changes, backend services, database operations)
+    - Contribute to sprint retrospectives, offering insights or feedback from your perspective as a newer team member
+    - Continue contributing to code reviews and providing constructive feedback to peers 
+2) Domain Knowledge 
+    - Continue to develop the breadth and depth of your knowledge of the application and domain
+    - By the end of this period, aim to independently handle tasks across about 50% of the application with minimal guidance 
+3) Join Deployments - Observation
+    - Attend serveral deployments to understand the steps involved in deploying code to different environments (stagin, production). Ensure that the deployment that you attend provides exposure to each regular participant
+    - By the end of this period, aim to be able to explain the entire deployment process, including any key tools and troubleshooting methods, to another team member 
