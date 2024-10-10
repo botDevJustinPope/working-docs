@@ -1,0 +1,37 @@
+Notes:
+    Spending Summary Report utilizes the following:
+
+    IN VEO app:
+        the following endpoints looks to be able to generate the spending summary report:
+            api/homebuyer_catalogs/{sessionId}/spending_summary_report/{securityToken}
+            api/homebuyer_catalogs/{sessionId}/spending_summary_report/email/new/{securityToken}
+        these endpoints are being called from the following locations
+            VeoDesignStudio\App\features\designMyHome\dialogs\emailSummary\emailSummary.ts
+            VeoDesignStudio\App\features\designMyHome\spendingSummary\optionsReport\optionsReport.ts
+
+    IN VEO api:
+        HomebuyerCatalogController
+            VeoDesignStudio\Controllers\Homebuyers\HomebuyerCatalogController.cs
+
+        GET - GetSpendingSummaryReport method 
+            endpoint: api/homebuyer_catalogs/{sessionId}/spending_summary_report/{securityToken}
+            usecase: GetSpendingSummaryReport 
+
+        POST - SendSpendingSummaryReport method 
+            endpoint: api/homebuyer_catalogs/{sessionId}/spending_summary_report/email/new/{securityToken}
+            usecase: SendSpendingSummaryReportEmail
+                Note: this use case wraps GetSpendingSummaryReport around an email wrapper to send off to SendGrid 
+
+
+        GetSpendingSummaryReport 
+            This report is generated using something called handlebars / Mustache. A mehtodology to inject data into
+            html templates.
+            This report is utilizing the report templates located:
+                VeoDesignStudio\wwwroot\Content\reports\
+                    spendingSummary\
+                        templates\
+                            generalOption.handlebars 
+                            generalOption.css
+                            roomOption.handlebars 
+                            roomOption.css
+                        body.handlebars 

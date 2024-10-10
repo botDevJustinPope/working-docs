@@ -1,0 +1,4 @@
+Sprint Planning:
+    Main point is to plan on what is the Framework and Tooling training
+
+    I started a chat on chatgpt to look into training implementations
