@@ -1,0 +1,27 @@
+ONBOARDING: Create a new view in VDS - User Info
+Create a new view called User Info. This includes the menu and routing to navigate to the view.
+
+AC:
+    - Create a new view called User Info, and display the following information:
+        First Name
+        Last Name 
+        Email
+        Welcome Email Sent
+        Welcome Email Validated
+        Is Test User
+    - Create a new navigation menu item called My Info under the User / Session category and route to the new view that you've created
+
+Thoughts:
+    - editUserProfile view 
+        editUserProfile.html
+        editUserProfile.ts 
+        editUserProfile.scss
+
+    the ditUserProfile feature/view contains all the fields that are needed for this story
+
+Extra:
+    - create a pencil button to go to the edit view 
+    - profile picture?
+        ** there is going to be a lot of Architecture for this **
+        but I think the code is there to pick from 
+    

@@ -1,0 +1,34 @@
+Tasks:
+1) identify best comprehensive course
+    ** Plural Sight Course **
+    PS 1) Angular Fundamentals
+        a comprehensive guide to Angular 
+    PS 2) Angular Architecture Playbook
+        this is pointed as a Architecture for angular on large scale or to scale applications
+        *** this is a 'advanced' angular course and specific topic ***
+    PS Path *) Angular 
+        this path is comprehensive amongst the different courses on plural sight 
+        Suggested courses:
+            - angular fundamentals
+            - other topics if possible:
+                # Angular CLI Playbook
+                # Styling Angular Applications
+                # NgRx Fundamentals
+                # Angular
+        Code Lab:
+            - Guided: Building a Storefront in Angular
+2) identify appropriate supplementary material
+    - w3shcools.com 
+        a source of reference material
+        the site gives decent descriptions and code explames for each topic
+    - angular.dev
+        comprehensive resource for the Angular 
+        there are minimal tutorials but the documentation would be the most important
+3) find testing materials on angular knowledge
+    - w3schools.com
+        there is a certificate associated with the angular tutorial
+        $95.00 dollars
+            minimun 40% - intermediate
+                    60% - advanced
+                    90% - Professional
+    
