@@ -1,0 +1,7 @@
+90 Days (2024/1/6)
+    Fully Productive
+        independently handle sprint realted work, including taking ownership of user stories from sprint planning through deployment 
+        Deliver complete features or bug fixes on time, meeting the team's standards for quality and maintainability
+        begin mentoring other new team members if any or sharing your insights during code reviews and pairing sessions
+        begin menotring other new team mebers if any or sharing your insights during code reviews and pairing sessions 
+        start contributing to higher-level architec

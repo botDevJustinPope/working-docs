@@ -1,0 +1,6 @@
+Topics:
+Operation Face lift : lack of cohesiveness between vds and indago team
+    slow to try and take charge
+
+What to do for the rest of the week:
+1) Reach out to QA to see testing with

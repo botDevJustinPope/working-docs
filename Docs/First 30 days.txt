@@ -9,7 +9,9 @@
 3) Best Practices and Principles 
     Familiarize yourself with: 
         Domain Driven Design
+            read the doc that was given
         Test Driven Developmen
+            watch the plaralsight
         Other patterns and practices that VDS uses
 
 4) Practice Problems 
