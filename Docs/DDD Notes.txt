@@ -1,0 +1,24 @@
+Core Domain
+    Key differentiator for the customers business something they must do well and cannot outsource
+Subdomains
+    Separate applicationcs or features your software must support or interact with
+Bounded Context
+    A specific responsibility with explicit boundaries that Separate it from other parts of the system
+    Thought: this seems to start breaking some of the tenants of DDD like ubiquitous language
+Context Mapping
+    The process of identifiying bounded contexts and their relationships to one another
+Shared Kernel
+    Part of the model that is shared by two or more teams, who agree not to change it without collaboration
+Ubiquitous Language 
+    The language using terms from a domain model that programmers and domain experts use to discuss that particular
+    sub-system 
+
+Domain Model 
+    Anemic
+        little use for the data
+    Rich
+
+    Entities
+
+        Quote: "User interface should be designed to hide the existence of bounded contexts from end users."
+        Thought: Is this not directly opposing some of the problems that DDD is trying to solve?

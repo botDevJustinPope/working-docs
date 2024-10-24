@@ -1,1 +1,4 @@
 Implement Sales Scheduling legacy role in VDS:
+
+deployment:
+    manual insert on [VEOSolutions_DEV].dbo.scheduling_roles for the new role 

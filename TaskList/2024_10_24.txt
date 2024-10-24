@@ -1,0 +1,26 @@
+Task:
+    18448:
+        - PR resolution
+        - pass to qa when they are ready
+    18510:
+        - Dev Investigation
+            **Bug was confirmed yesterday but I was having difficulties seeing the comparison working in option pricing**
+            1) Comfirm that the bug is only in DMH
+            2) Schedule Pre Story meeting
+        - Development
+            1) start 
+    18489:
+        ** tentative ** 
+        focus on 18510 first before this one 
+
+    Ramp Up Work 
+        DDD 
+            - read document today
+            - continue videos if nessacariy 
+        TDD
+            - do the video training in pluralsight to confirm
+
+    Operation Face Lift 
+        Sprint work 
+            - remaining work on Angular training 
+            - start with other tooling training
