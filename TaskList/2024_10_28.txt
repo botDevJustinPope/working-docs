@@ -1,0 +1,12 @@
+Task:
+    18510:
+        - PR 
+            In Pull Request
+            Keep up with it through qa
+    
+    OFL - Meeting to work 
+        - Framework | Curriculum & Roadmap
+        - Tooling Training | Curriculum & Roadmap 
+        
+Things to keep in mind:
+    - 5674 - missing image on DMH 'product' card causes issues on comparision

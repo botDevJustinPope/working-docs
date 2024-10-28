@@ -1,0 +1,8 @@
+Additional Topics:
+    Framework concepts:
+        - advanced topics *?*?
+
+    Angualar Apps:
+        - Routing
+        - switching between apps 
+        - other things needed
