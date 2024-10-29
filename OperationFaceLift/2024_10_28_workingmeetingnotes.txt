@@ -1,0 +1,38 @@
+Thoughts:
+- What are we wanting to accomplish?
+    Before end of this sprint:
+        Tentative curriculumn and roadmap for both framework and tooling 
+- Roadmap:
+    Is the tentative time line for the accomplishing the training the following:
+        - 50% sprint work for 2 months (4 sprints | 120 ~ 160 hours of training)
+            calc : (3~4 hour days) * (5 day work week) * ( 8 weeks = 4 sprints )
+            calc : (2 hours days)
+
+        - tentative 20% sprint work for 4ish months to have a slow burn
+
+        Starting with Angular Zero to Mastery
+            course states 29.5 hours and devs take 40 days to complete
+            estimate 60~80 road map hours 
+
+- Tooling 20~60 hours
+
+- Angular 80~100 hours
+    ZtoM Angular to complete 
+    PluralSigh Videos (additional)
+        RxJS and Angular Signals Fundamentals - Devorah Kurata ( 6.5 hours total)
+ 
+- possible additional 
+    ZtoM Typescript**maybe
+    ZtoM WebDev course 
+
+frontend masters - 
+
+- Tooling Topics:
+    Typescript
+    CSS 
+    HTML | HTML 5
+    Web components
+    async code
+
+- road map 
+

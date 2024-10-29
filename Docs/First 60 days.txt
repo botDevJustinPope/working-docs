@@ -2,7 +2,7 @@
 
 1) Sprint-Related Work 
     - Begin to take on sprint-related work by selecting user stories during sprint planning and working closely with a menotr for guidance
-    - Focus on smaller user stories that allow for exposure to different parts of the application (e.g. fround-edn changes, backend services, database operations)
+    - Focus on smaller user stories that allow for exposure to different parts of the application (e.g. fround-end changes, backend services, database operations)
     - Contribute to sprint retrospectives, offering insights or feedback from your perspective as a newer team member
     - Continue contributing to code reviews and providing constructive feedback to peers 
 2) Domain Knowledge 

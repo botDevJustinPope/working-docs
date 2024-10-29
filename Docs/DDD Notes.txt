@@ -19,6 +19,3 @@ Domain Model
     Rich
 
     Entities
-
-        Quote: "User interface should be designed to hide the existence of bounded contexts from end users."
-        Thought: Is this not directly opposing some of the problems that DDD is trying to solve?
