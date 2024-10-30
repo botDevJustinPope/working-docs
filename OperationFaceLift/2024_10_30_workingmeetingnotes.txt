@@ -1,0 +1,6 @@
+Ciriculum:
+need suppilmental material for:
+    deployment
+    Angular Elements / Web Components
+    Advanced CSS/SASS
+    Bundling / Performance
