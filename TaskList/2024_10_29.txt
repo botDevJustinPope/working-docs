@@ -1,0 +1,14 @@
+Task:
+    18448:
+        - Reid 'says there is a permission issue' 
+        - Reid is taking point on permision issues with the new user legacy role
+    
+    18459:
+        - start discovery on what this will take
+    
+    IFL Work:
+        - Curriculum & Roadmap work (pushed to tomorrow)
+            List of other things that will fit the bill for tooling training 
+            List of other things for framework training
+            meet with team to discuss
+            reach out to ZtoM (Daniel)

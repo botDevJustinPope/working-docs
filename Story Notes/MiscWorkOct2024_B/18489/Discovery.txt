@@ -1,0 +1,52 @@
+YouTube links:
+    Designing Your Home - https://youtu.be/YIOEtDAn2LA
+    Understanding Your Budget - https://youtu.be/B1iT6opr6dE
+
+Where are these links?
+    Designing Your Home - designingYourHome.ts line 21
+    Understanding Your Budget - understandingBuget.ts line 21
+Other static links?
+
+AC:
+    - update the video links
+    - move links to configuration so that a recompile is not required each time
+
+Design for video links 
+
+    links would need to be able to be added to a sql table and then fetched from the site when the componenet needs it
+
+    1) SQL 
+        new table for storing the url to be used in the application
+
+        Table name: VideoCategory
+        Description: list of named categories that is going to be used to define the video link 
+        Columns : 
+        ID - unique identification
+        CategoryName - name for the category 
+
+        Table name: VideoURL
+        columns:
+        ID - unique identification
+        Category - foregien key to VideoCategory table 
+        URL - string of the url for the video 
+
+    2) API endpoints for video maintenance
+
+        get VideoCategories - fetch list of VideoCategory and VideoURL records
+
+        get VideoURL by CategoryName - fetch video url by VideoCategory.CategoryName
+        post VideoURL - inserts VideoURL record 
+        put VideoURL - updates VideoURL record 
+
+    3) VDS implementation 
+
+        service wrapping around endpoint
+        each static url link converted to fetch url from endpoint 
+
+    4) VDS Admin front end 
+
+        Admin page to maintain videos 
+        Similar to an Organizations video update productPerformanceCare.ts 
+        
+
+
