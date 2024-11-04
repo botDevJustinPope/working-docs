@@ -4,7 +4,7 @@ YouTube links:
 
 Where are these links?
     Designing Your Home - designingYourHome.ts line 21
-    Understanding Your Budget - understandingBuget.ts line 21
+    Understanding Your Budget - understandingBudget.ts line 21
 Other static links?
 
 AC:
