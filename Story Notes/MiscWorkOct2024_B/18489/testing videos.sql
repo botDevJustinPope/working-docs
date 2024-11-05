@@ -1,4 +1,5 @@
-use [VEOSolutions_DEV];
+--use [VEOSolutions_DEV];
+use [VEOSolutions_QA];
 go
 /*
     modify the db for the environment
@@ -22,3 +23,4 @@ when not matched then
     values (newid(), source.ThemeLookupKey, source.Category, source.[URL], source.Author, getdate(), source.Author, getdate());
 
 select * from [dbo].[ThemeVideoLink]
+
