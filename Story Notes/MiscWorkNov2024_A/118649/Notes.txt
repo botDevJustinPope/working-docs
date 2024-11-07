@@ -1,0 +1,19 @@
+Request 1:
+    Changing the background of the optionPricing-leftPane
+    Action: update the flintrock theme css to define the pane 
+
+Request 3:
+    Need more information from Rob for this item
+
+Request 4:
+    change text color on lifestyle snapshot
+        flintrock is wanting their secondary button color 
+    lifestyleSnapshot.scss
+        - possible variablization?
+        - want to create a function
+            With the background I want to use mathmatics to change the color 
+            default theme:
+                primary text color is #2de88e
+                background color is rgba(11, 57, 35, 0.48)
+
+            Theory
