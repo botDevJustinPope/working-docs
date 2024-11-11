@@ -10,10 +10,5 @@ Request 4:
         flintrock is wanting their secondary button color 
     lifestyleSnapshot.scss
         - possible variablization?
-        - want to create a function
-            With the background I want to use mathmatics to change the color 
-            default theme:
-                primary text color is #2de88e
-                background color is rgba(11, 57, 35, 0.48)
-
-            Theory
+        - green selectors and text 
+        - progress bar on side
