@@ -1,0 +1,140 @@
+@function adjust-color-saturation-and-lightness($color, $saturation: 0%, $lightness: 0%) {
+    $hsl: color-to-hsl($color);
+    $hue: hue($hsl);
+    $hsl: hsl($hue, $saturation, $lightness);
+    @return color-to-rgb($hsl);
+}
+
+@function adjust-color-opacity($color, $opacity: 100%) {
+    $rgb: color-to-rgb($color);
+    @return rgba(red($rgb), green($rgb), blue($rgb), $opacity);
+}
+
+@function color-to-hex($color) {
+    @if (type-of($color) == 'color') {
+        @return rgb-to-hex($color);
+    } 
+    @if (type-of($color) == 'hsl') {
+        @return hsl-to-hex($color);
+    }
+    @return $color;
+}
+
+@function color-to-rgb($color) {
+    @if (type-of($color) == 'hsl') {
+        @return hsl-to-rgb($color);
+    }
+    @if (type-of($color) == 'string' and str-length($color) == 7) {
+        @return hex-to-rgb($color);
+    }
+    @return $color;
+}
+
+@function color-to-hsl($color) {
+    @if (type-of($color) == 'color') {
+        @return rgb-to-hsl($color);
+    } 
+    @if (type-of($color) == 'string' and str-length($color) == 7) {
+        @return hex-to-hsl($color);
+    }
+    @return $color;
+}
+
+@function hex-to-rgb($hex) {
+    $r: str-to-num(str-slice($hex, 2, 3));
+    $g: str-to-num(str-slice($hex, 4, 5));
+    $b: str-to-num(str-slice($hex, 6, 7));
+    @return rgb($r, $g, $b);
+}
+
+@function hex-to-hsl($hex) {
+    @return rgb-to-hsl(hex-to-rgb($hex));
+}
+
+@function rgb-to-hex($rgb) {
+    @return '#' + str-slice(ie-hex-str(red($rgb)), 3) + str-slice(ie-hex-str(green($rgb)), 3) + str-slice(ie-hex-str(blue($rgb)), 3);
+}
+
+@function hsl-to-hex($hsl) {
+    @return rgb-to-hex(hsl-to-rgb($hsl));
+}
+
+@function rgb-to-hsl($rgb) {
+    $r: red($rgb) / 255;
+    $g: green($rgb) / 255;
+    $b: blue($rgb) / 255;
+    $max: max($r, $g, $b);
+    $min: min($r, $g, $b);
+    $l: ($max + $min) / 2;
+    $delta: $max - $min;
+    $h: 0;
+    $s: 0;
+
+    @if ($delta != 0) {
+        $s: if ($l > 0.5, $delta / (2 - $max - $min), $delta / ($max + $min));
+
+        @if ($max == $r) {
+            $h: ($g - $b) / $delta + if ($g < $b, 6, 0);
+        }
+        @else if ($max == $g) {
+            $h: ($b - $r) / $delta + 2;
+        }
+        @else if ($max == $b) {
+            $h: ($r - $g) / $delta + 4;
+        }
+
+        $h: $h / 6;
+    }
+
+    @return hsl($h * 360, $s * 100%, $l * 100%);
+}
+
+@function hsl-to-rgb($hsl) {
+    $h: hue($hsl) / 360;
+    $s: saturation($hsl) / 100;
+    $l: lightness($hsl) / 100;
+    $r: 0;
+    $g: 0;
+    $b: 0;
+
+    @if ($s == 0) {
+        $r: $l;
+        $g: $l;
+        $b: $l;
+    }
+
+    @else {
+        $q: if ($l < 0.5, $l * (1 + $s), $l + $s - $l * $s);
+        $p: 2 * $l - $q;
+
+        $r: hue-to-rgb($p, $q, $h + 1/3);
+        $g: hue-to-rgb($p, $q, $h);
+        $b: hue-to-rgb($p, $q, $h - 1/3);
+    }
+
+    @return rgb($r * 255, $g * 255, $b * 255);
+}
+
+@function hue-to-rgb($p, $q, $t) {
+    @if ($t < 0) {
+        $t: $t + 1;
+    }
+
+    @else if ($t > 1) {
+        $t: $t - 1;
+    }
+
+    @if ($t < 1/6) {
+        @return $p + ($q - $p) * 6 * $t;
+    }
+
+    @else if ($t < 1/2) {
+        @return $q;
+    }
+
+    @else if ($t < 2/3) {
+        @return $p + ($q - $p) * (2/3 - $t) * 6;
+    }
+
+    @return $p;
+}
