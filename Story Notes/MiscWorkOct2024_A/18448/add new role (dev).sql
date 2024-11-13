@@ -1,19 +1,19 @@
-if not exists(select * from [VEOSolutionsSecurity_DEV].dbo.roles_legacy where [name] = 'Builder Sales Scheduler')
+if not exists(select * from [VEOSolutionsSecurity].dbo.roles_legacy where [name] = 'Sales Counselor (Scheduling Only)')
 begin
 
-    insert into [VEOSolutionsSecurity_DEV].dbo.roles_legacy (role_id, [name], [numeric_role_id], [alpha_role_id])
+    insert into [VEOSolutionsSecurity].dbo.roles_legacy (role_id, [name], [numeric_role_id], [alpha_role_id])
     values ('76FC6A8E-D27E-4EEC-93A9-2ED4B1C10156', 'Sales Counselor (Scheduling Only)', 11, 'saleschedulerschedulingonly')
 
 end
 
-select * from [VEOSolutionsSecurity_DEV].dbo.roles_legacy
+select * from [VEOSolutionsSecurity].dbo.roles_legacy
 
-if not exists(select * from [VEOSolutionsSecurity_DEV].dbo.app_roles_legacy arl 
-                        inner join [VEOSolutionsSecurity_DEV].dbo.roles_legacy rl on rl.role_id = arl.role_id
+if not exists(select * from [VEOSolutionsSecurity].dbo.app_roles_legacy arl 
+                        inner join [VEOSolutionsSecurity].dbo.roles_legacy rl on rl.role_id = arl.role_id
                         where rl.[name] = 'Sales Counselor (Scheduling Only)')
 begin 
 
-    insert into [VEOSolutionsSecurity_DEV].dbo.app_roles_legacy ([app_id],[role_id],[name],[description],[author],[create_date],[modifier],[modified_date])
+    insert into [VEOSolutionsSecurity].dbo.app_roles_legacy ([app_id],[role_id],[name],[description],[author],[create_date],[modifier],[modified_date])
     select 
         'Scheduling',
         rl.role_id,
@@ -23,26 +23,26 @@ begin
         getdate(),
         'SETUP',
         getdate()
-    from [VEOSolutionsSecurity_DEV].dbo.roles_legacy rl
+    from [VEOSolutionsSecurity].dbo.roles_legacy rl
     where rl.[name] = 'Sales Counselor (Scheduling Only)'
 
 end
 
-select * from [VEOSolutionsSecurity_DEV].dbo.app_roles_legacy
+select * from [VEOSolutionsSecurity].dbo.app_roles_legacy
 
-if not exists(select * from [VEOSolutions_DEV].dbo.scheduling_roles sr 
-                        inner join [VEOSolutionsSecurity_DEV].dbo.roles_legacy rl on rl.role_id = sr.role_id
+if not exists(select * from [VEOSolutions].dbo.scheduling_roles sr 
+                        inner join [VEOSolutionsSecurity].dbo.roles_legacy rl on rl.role_id = sr.role_id
                         where rl.[name] = 'Sales Counselor (Scheduling Only)')
 begin 
-    insert into [VeoSolutions_DEV].dbo.scheduling_roles (role_id, [author], [create_date], [modifier], [modified_date])
+    insert into [VeoSolutions].dbo.scheduling_roles (role_id, [author], [create_date], [modifier], [modified_date])
     select 
         role_id,
         'SEED',
         getdate(),
         'SEED',
         getdate()
-    from VEOSolutionsSecurity_DEV.dbo.roles_legacy
+    from VEOSolutionsSecurity.dbo.roles_legacy
     where [name] = 'Sales Counselor (Scheduling Only)'
 end
 
-select * from [VEOSolutions_DEV].dbo.scheduling_roles
+select * from [VEOSolutions].dbo.scheduling_roles
