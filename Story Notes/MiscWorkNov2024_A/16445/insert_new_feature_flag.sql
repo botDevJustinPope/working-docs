@@ -1,5 +1,19 @@
-use [VeoSolutions_DEV];
-go
+/*
+*** 'DEV' DBS ***
+
+USE [VeoSolutions_DEV]
+use [VeoSolutions_QA]
+use [VeoSolutions_Staging]
+use [VeoSolutions_Preview]
+
+*** Prod DBS ***
+
+use [AFI_VEOSolutions]
+use [CCDI_VEOSolutions]
+use [EPLAN_VEOSolutions]
+use [VEOSolutions]
+
+*/
 
 delete from dbo.features where [id] = 66;
 

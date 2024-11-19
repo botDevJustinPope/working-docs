@@ -5,6 +5,7 @@ SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
 GO
+
 /*
  =============================================
  Author:		Robert Hobbs
@@ -16,7 +17,7 @@ GO
  Description:	17656 - Provitional Note for Appointments
  =============================================
  */
-ALTER FUNCTION [dbo].[ef_selSchedulingAppointmentSystemNote]
+CREATE FUNCTION [dbo].[ef_selSchedulingAppointmentSystemNote]
 (
 	@appointment_id uniqueidentifier, 
 	@action varchar(30),
@@ -72,28 +73,24 @@ BEGIN
 	begin 
 		set @note = @note_1 + @note_2
 	end 
-
-	if @action = 'Changed Start Time' 
+	else if @action = 'Changed Start Time' 
 	begin 
 		set @action = @action + ' for';
 		set @note = @note_1 + @note_3;
 	end 
-
-	if @action = 'Changed Duration'
+	else if @action = 'Changed Duration'
 	begin 
 		set @action = @action + ' for';
 		set @note = @note_1 + @note_4;
 	end 
 
-
-
-	return replace(replace(replace(replace(replace(replace(replace(@note, '<duration>', convert(varchar(3), @duration/60)), 
-																		  '<designer>', @designer), 
-																		  '<time>', @time), 
-																		  '<date>', @date), 
-																		  '<appointment>', @appointment), 
+	return replace(replace(replace(replace(replace(replace(replace(@note, '<action>', @action), 
 																		  '<appt_ord>', @appt_ord), 
-																		  '<action>', @action)
+																		  '<appointment>', @appointment), 
+																		  '<date>', @date), 
+																		  '<time>', @time), 
+																		  '<designer>', @designer), 
+																		  '<duration>', convert(varchar(3), @duration/60))
 
 END;
-go
+GO

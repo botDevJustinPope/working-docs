@@ -1,0 +1,52 @@
+Promoting Team Work in a SCRUM Environment
+
+Preface:
+    Right now in our SCRUM team we have two week sprints.
+    Our team is made of:
+        Product Owner - Robbert Hobbs
+        Developers -    Reid Wilson
+                        Daniel Arwe
+                        Justin Pope
+        QA -            Jennifer Hickey
+                        Walter Martinez
+        SCRUM Master -  Joe Ebeling
+        Designer -      Charlie Bradley
+    
+    In a given sprint we have Sprint Planning where the Product Owner presents the ordered items of stories to work on. Once the team, developers and QA, agrees on the work that is to be committed, 
+    then stories are assigned to each developer to be worked on. Developers independently work on stories by doing the nessacary development, testing, and working with Product Owner and QA to finish
+    the Acceptance Criteria for the story.
+
+Problem:
+    There has been an increased of "siloed" mentalities that have decreased the collective investment of development in the overall product between developers.
+    The developers and the team in a whole should all collectively be able to come together, voice ways to better the product, and work on any given task (within reason) in a given sprint.
+
+Solution:
+    Work committed in a sprint should not be assigned to a specific developer. The team of developers should work together to be able to figure out how each story will be solved and together work on 
+    each story.
+
+Problem Statement
+The current approach of assigning individual ownership of stories has resulted in:
+
+Siloed Development: Developers primarily focus on their assigned work, reducing team-wide collaboration and collective ownership of the product.
+Knowledge Gaps: Developers have limited insight into stories worked on by others, which creates dependencies and bottlenecks if one team member becomes unavailable.
+Missed Opportunities: The team lacks a shared approach to improving the product collectively, limiting innovation and cross-pollination of ideas.
+These challenges reduce the team's overall adaptability and investment in the product's success.
+
+Proposed Solution
+To promote collective ownership and teamwork, we propose shifting from an individual-assignment model to a team-collaboration model. Key elements of this approach include:
+
+Story Swarming
+
+Instead of assigning individual developers to specific stories, the team collaborates on breaking down stories into subtasks during Sprint Planning or refinement sessions.
+Developers collectively prioritize tasks based on their dependencies and allocate work dynamically.
+Cross-functional Pairing
+
+Pair programming sessions or small group collaborations are encouraged to ensure knowledge-sharing and collective problem-solving.
+QA and designers can participate during development to align on Acceptance Criteria early in the process.
+Team Ownership of Stories
+
+The entire development team is collectively responsible for all stories committed during the sprint. This reduces the pressure on individuals and ensures consistent progress, even if someone is unavailable.
+Enhanced Communication and Retrospectives
+
+Incorporate a short daily session where developers discuss progress on shared stories and any blockers.
+Encourage developers to share insights or suggest product improvements during Retrospectives.
