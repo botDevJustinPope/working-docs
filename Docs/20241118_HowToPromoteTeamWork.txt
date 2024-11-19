@@ -28,7 +28,8 @@ Problem Statement
 The current approach of assigning individual ownership of stories has resulted in:
 
 Siloed Development: Developers primarily focus on their assigned work, reducing team-wide collaboration and collective ownership of the product.
-Knowledge Gaps: Developers have limited insight into stories worked on by others, which creates dependencies and bottlenecks if one team member becomes unavailable.
+Knowledge Gaps: Developers have limited insight into stories worked on by others, which creates dependencies and 
+            bottlenecks if one team member becomes unavailable.
 Missed Opportunities: The team lacks a shared approach to improving the product collectively, limiting innovation and cross-pollination of ideas.
 These challenges reduce the team's overall adaptability and investment in the product's success.
 
