@@ -1,0 +1,30 @@
+VDS header gets the logo from the end point:
+    api/Builder/GetBuilderLogo
+
+Use Case:
+    GetBuilderLogo -> OrganizationDomainRepository.GetBuilderLogo -> vds_selCustomerLogo
+
+procedure vds_selCustomerLogo
+@organization_id uniqueidentifier = '3bf05014-1588-4942-94fd-7706ecb2cee2'
+select 
+	image_data
+from 
+	veo_customers 
+where 
+	custnmbr = (select external_organization_id from veosolutionssecurity_organizations where organization_id = @organization_id)
+
+VDS app:
+imageUrl.getBuilderLogoUrl usage:
+    changeCurrentOrgDialog.ts line 39
+    modCurrentOrganization.ts line 39
+    planSelector.ts line 68
+    header.js line 87
+
+GetBuilderLogo.Invoke usage:
+    BuilderController.cs line 39
+    GetSpendingSummaryReport.cs line 127
+    GeneratePatternByBuildReports.cs line 68
+    BuilderCostSelections.cs line 97
+    GetHTMLBuildSelectionsReport.cs line 142
+
+Talking with Reid, there is already a organization_images table within the data base.
