@@ -1,0 +1,103 @@
+just utilizing strictly String.ToLower() on AppHasAppIdSpecifications
+
+EF Generation:
+DEBUG|Microsoft.EntityFrameworkCore.Query|Compiling query expression: 
+'DbSet<App>()
+    .Where(c => c.AppId.ToLower() == __ToLower_0)
+    .FirstOrDefault()'
+DEBUG|Microsoft.EntityFrameworkCore.Query|Generated query execution expression: 
+'queryContext => ShapedQueryCompilingExpressionVisitor.SingleOrDefaultAsync<App>(
+    asyncEnumerable: SingleQueryingEnumerable.Create<App>(
+        relationalQueryContext: (RelationalQueryContext)queryContext, 
+        relationalCommandResolver: parameters => [LIFTABLE Constant: RelationalCommandCache.QueryExpression(
+            Projection Mapping:
+                EmptyProjectionMember -> Dictionary<IProperty, int> { [Property: App.Id (Guid) Required PK AfterSave:Throw ValueGenerated.OnAdd, 0], [Property: App.AppId (string) Required AlternateKey Index AfterSave:Throw, 1], [Property: App.Author (string) Required ValueGenerated.OnAdd MaxLength(50), 2], [Property: App.CreateDate (DateTime) Required ValueGenerated.OnAdd, 3], [Property: App.Description (string) Required, 4], [Property: App.EnumId (int) Required ValueGenerated.OnAdd, 5], [Property: App.ModifiedDate (DateTime) Required ValueGenerated.OnAdd, 6], [Property: App.Modifier (string) Required ValueGenerated.OnAdd MaxLength(50), 7] }
+            SELECT TOP(1) a.id, a.app_id, a.author, a.create_date, a.description, a.enum_id, a.modified_date, a.modifier
+            FROM apps AS a
+            WHERE LOWER(a.app_id) == @__ToLower_0) | Resolver: c => new RelationalCommandCache(
+            c.Dependencies.MemoryCache, 
+            c.RelationalDependencies.QuerySqlGeneratorFactory, 
+            c.RelationalDependencies.RelationalParameterBasedSqlProcessorFactory, 
+            Projection Mapping:
+                EmptyProjectionMember -> Dictionary<IProperty, int> { [Property: App.Id (Guid) Required PK AfterSave:Throw ValueGenerated.OnAdd, 0], [Property: App.AppId (string) Required AlternateKey Index AfterSave:Throw, 1], [Property: App.Author (string) Required ValueGenerated.OnAdd MaxLength(50), 2], [Property: App.CreateDate (DateTime) Required ValueGenerated.OnAdd, 3], [Property: App.Description (string) Required, 4], [Property: App.EnumId (int) Required ValueGenerated.OnAdd, 5], [Property: App.ModifiedDate (DateTime) Required ValueGenerated.OnAdd, 6], [Property: App.Modifier (string) Required ValueGenerated.OnAdd MaxLength(50), 7] }
+            SELECT TOP(1) a.id, a.app_id, a.author, a.create_date, a.description, a.enum_id, a.modified_date, a.modifier
+            FROM apps AS a
+            WHERE LOWER(a.app_id) == @__ToLower_0, 
+            False, 
+            new HashSet<string>(
+                new string[]{ }, 
+                StringComparer.Ordinal
+            )
+        )].GetRelationalCommandTemplate(parameters), 
+        readerColumns: null, 
+        shaper: (queryContext, dataReader, resultContext, resultCoordinator) => 
+        {
+            App entity;
+            entity = 
+            {
+                MaterializationContext materializationContext1;
+                IEntityType entityType1;
+                App instance1;
+                InternalEntityEntry entry1;
+                bool hasNullKey1;
+                materializationContext1 = new MaterializationContext(
+                    [LIFTABLE Constant: ValueBuffer | Resolver: _ => (object)ValueBuffer.Empty], 
+                    queryContext.Context
+                );
+                instance1 = default(App);
+                entry1 = queryContext.TryGetEntry(
+                    key: [LIFTABLE Constant: Key: App.Id PK | Resolver: c => c.Dependencies.Model.FindEntityType("BuildOnTechnologies.VDS.Domain.Entities.App").FindPrimaryKey()], 
+                    keyValues: new object[]{ (object)dataReader.GetGuid(0) }, 
+                    throwOnNullKey: True, 
+                    hasNullKey: hasNullKey1);
+                !(hasNullKey1) ? entry1 != default(InternalEntityEntry) ? 
+                {
+                    entityType1 = entry1.EntityType;
+                    return instance1 = (App)entry1.Entity;
+                } : 
+                {
+                    ISnapshot shadowSnapshot1;
+                    shadowSnapshot1 = [LIFTABLE Constant: Snapshot | Resolver: _ => Snapshot.Empty];
+                    entityType1 = [LIFTABLE Constant: EntityType: App | Resolver: namelessParameter{0} => namelessParameter{0}.Dependencies.Model.FindEntityType("BuildOnTechnologies.VDS.Domain.Entities.App")];
+                    instance1 = switch (entityType1)
+                    {
+                        case [LIFTABLE Constant: EntityType: App | Resolver: namelessParameter{1} => namelessParameter{1}.Dependencies.Model.FindEntityType("BuildOnTechnologies.VDS.Domain.Entities.App")]: 
+                            {
+                                return 
+                                {
+                                    App instance;
+                                    instance = new App();
+                                    instance.<Id>k__BackingField = dataReader.GetGuid(0);
+                                    instance.<AppId>k__BackingField = dataReader.GetString(1);
+                                    instance.<Author>k__BackingField = dataReader.GetString(2);
+                                    instance.<CreateDate>k__BackingField = dataReader.GetDateTime(3);
+                                    instance.<Description>k__BackingField = dataReader.GetString(4);
+                                    instance.<EnumId>k__BackingField = dataReader.GetInt32(5);
+                                    instance.<ModifiedDate>k__BackingField = dataReader.GetDateTime(6);
+                                    instance.<Modifier>k__BackingField = dataReader.GetString(7);
+                                    (instance is IInjectableService) ? ((IInjectableService)instance).Injected(
+                                        context: materializationContext1.Context, 
+                                        entity: instance, 
+                                        queryTrackingBehavior: TrackAll, 
+                                        structuralType: [LIFTABLE Constant: EntityType: App | Resolver: namelessParameter{2} => namelessParameter{2}.Dependencies.Model.FindEntityType("BuildOnTechnologies.VDS.Domain.Entities.App")]) : default(void);
+                                    return instance;
+                                }}
+                        default: 
+                            default(App)
+                    }
+                    ;
+                    entry1 = entityType1 == default(IEntityType) ? default(InternalEntityEntry) : queryContext.StartTracking(
+                        entityType: entityType1, 
+                        entity: instance1, 
+                        snapshot: shadowSnapshot1);
+                    return instance1;
+                } : default(void);
+                return instance1;
+            };
+            return entity;
+        }, 
+        contextType: BuildOnTechnologies.VDS.Repository.VDSSecurityDbContext, 
+        standAloneStateManager: False, 
+        detailedErrorsEnabled: False, 
+        threadSafetyChecksEnabled: True), 
+    cancellationToken: queryContext.CancellationToken)'

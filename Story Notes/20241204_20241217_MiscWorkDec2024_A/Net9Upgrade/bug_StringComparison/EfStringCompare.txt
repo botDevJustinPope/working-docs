@@ -1,0 +1,122 @@
+EF String Comparison:
+    IntegrationClientSpecifications.cs resulted in a removal of a string comparison change.
+    Where else is this utilized?
+
+    *Search: 'StringComparison'
+    - BuildOnTechnologies.VDS.Domain\AllowedDomains\AllowedDomainSpecifications.cs
+        AllowedDomainMatchesUriHostDomainSpecification : Specification<AllowedDomain>
+            Expression => ad => UriHost.Equals(ad.Domain, StringComparison.OrdinalIgnoreCase)
+            || UriHost.EndsWith($".{ ad.Domain }", StringComparison.OrdinalIgnoreCase);
+
+        SaveBuilderTrainingLink 
+
+    - BuildOnTechnologies.VDS.Domain\Apps\AppSpecifications.cs
+        AppHasAppIdSpecifications : Specification<App>
+            Expression => c => c.AppId.Equals(AppId, StringComparison.OrdinalIgnoreCase);
+
+    - BuildOnTechnologies.VDS.Domain\BuilderTrainingLink\BuilderTrainingLinkSpecifications.cs
+        BuilderTrainingLinkUrlIsDomainSpecification : Specification<BuilderTrainingLink>
+            Expression => btLink => btLink.UriHost.Equals(Domain, StringComparison.OrdinalIgnoreCase)
+            || btLink.UriHost.EndsWith($".{Domain}", StringComparison.OrdinalIgnoreCase);
+
+        Update builder training links, validates domain
+
+    - BuildOnTechnologies.VDS.Domain\BuyerSurvey\Specifications\BuyerSurveyQuestionSpecification.cs
+        BuyerSurveyQuestionHasQuestionSpecification : Specification<BuyerSurveyQuestion>
+            Expression => question => question.Question.Equals(Question, StringComparison.OrdinalIgnoreCase);
+
+        This is exposed in the endpoint POST buyerSurvey/profilePlan/{profilePlanId} within the 
+        BuyerSurveyController.AddBuyerSurveyResponse
+        within integration API
+
+    - BuildOnTechnologies.VDS.Domain\Communities\CommunitySpecifications.cs
+        CommunityHasNameSpecification: Specification<Community>
+            Expression => c => c.Name.Equals(Name, StringComparison.OrdinalIgnoreCase);
+
+        CommunityMappingHasNameSpecification: Specification<CommunityMapping>
+            Expression => c => c.MappedName.Equals(MappedName, StringComparison.OrdinalIgnoreCase);
+
+    - BuildOnTechnologies.VDS.Domain\EstimatedStageMappings\EstimatedStageMappingSpecifications.cs
+        EstimatedStageMappingHasAccountOrgIdApplicationProductCombinationSpecification : Specification<EstimatedStageMapping>
+            Expression => esm => esm.AccountOrgId.Equals(AccountOrgId) && 
+                                 esm.Application.Equals(Application, StringComparison.OrdinalIgnoreCase) && 
+                                 esm.Product.Equals(Product, StringComparison.OrdinalIgnoreCase);
+
+    - BuildOnTechnologies.VDS.Domain\HomebuyerDashboard\HomebuyerDashboardModuleSpecifications.cs
+        HomebuyerDashboardModuleHasCodeSpecification : Specification<HomebuyerDashboardModule>
+            Expression => dashboardModule => dashboardModule.Code.Equals(Code, StringComparison.OrdinalIgnoreCase);
+
+    - BuildOnTechnologies.VDS.Domain\IntegrationClients\IntegrationClientNotificationRecipientSpecifications.cs
+        NotificationRecipientHasEmailSpecification : Specification<IntegrationClientNotificationRecipient>
+            Expression => client => client.Email.Equals(Email, StringComparison.OrdinalIgnoreCase);
+
+    - BuildOnTechnologies.VDS.Domain\IntegrationClients\IntegrationClientSpecifications.cs
+        IntegrationClientHasApiKeySpecification: Specification<IntegrationClient>            
+            //public override Expression<Func<IntegrationClient, bool>> Expression => client => client.ApiKey.Equals(ApiKey, StringComparison.OrdinalIgnoreCase);
+            public override Expression<Func<IntegrationClient, bool>> Expression => client => client.ApiKey.Equals(ApiKey);
+
+    - BuildOnTechnologies.VDS.Domain\Organizations\OrganizationElevationSpecifications.cs
+        OrganizationElevationHasNameSpecifications : Specification<OrganizationElevation>
+            Expression => o => o.Elevation.Equals(Elevation, StringComparison.OrdinalIgnoreCase);
+
+    - BuildOnTechnologies.VDS.Domain\OrganizationSeries\SeriesSpecifications.cs
+        SeriesHasNameSpecification: Specification<Series>
+            Expression => c => c.Name.Equals(Name, StringComparison.OrdinalIgnoreCase);
+        SeriesMappingHasNameSpecification : Specification<SeriesMapping>
+            Expression => c => c.MappedName.Equals(MappedName, StringComparison.OrdinalIgnoreCase);
+    
+    - BuildOnTechnologies.VDS.Domain\Plans\PlanSpecifications.cs
+        PlanHasNameSpecification : Specification<Plan>
+            Expression => c => c.Name.Equals(Name, StringComparison.OrdinalIgnoreCase);
+        PlanMappingHasNameSpecification : Specification<PlanMapping>
+            Expression => c => c.MappedName.Equals(MappedName, StringComparison.OrdinalIgnoreCase);
+
+    - BuildOnTechnologies.VDS.Domain\RealtimeFeedback\Specifications\RealtimeFeedbackQuestionSpecification.cs
+        RealtimeFeedbackQuestionHasQuestionSpecification : Specification<RealtimeFeedbackQuestion>
+            Expression => question => question.Question.Equals(Question, StringComparison.OrdinalIgnoreCase);
+
+    - BuildOnTechnologies.VDS.Domain\Security\Models\RoleSpecifications.cs
+        RoleHasNameSpecification : Specification<Role>
+            Expression => c => c.Name.Equals(Name, StringComparison.OrdinalIgnoreCase);
+
+    - BuildOnTechnologies.VDS.Domain\Themes\ThemeSpecifications.cs
+        ThemeImageHasThemeLookupKeyCategoryOrderIndexSpecification : Specification<ThemeImage>
+            Expression => themeImage => 
+               (ThemeLookupKeys.Count == 0 || ThemeLookupKeys.Contains(themeImage.ThemeLookupKey))
+            && (themeImage.Category.ToString().Equals(Category, StringComparison.OrdinalIgnoreCase) || string.IsNullOrWhiteSpace(Category))
+            && ((themeImage.OrderIndex == OrderIndex) || (OrderIndex == null));
+
+    - BuildOnTechnologies.VDS.Domain\Visualization\SurfaceMapping\Specifications\VisualizationSurfaceMappingHeaderSpecifications.cs
+        VisualizationSurfaceMappingHeaderHasNameSpecifications : Specification<VisualizationSurfaceMappingHeader>
+            Expression => mapping => mapping.Name.Equals(Name, StringComparison.OrdinalIgnoreCase);
+
+    - BuildOnTechnologies.VDS.Domain\Visualization\SurfaceMapping\Specifications\VisualizationSurfaceMappingSpecifications.cs
+        VisualizationSurfaceMappingHasApplicationProductSpecifications : Specification<VisualizationSurfaceMapping>
+            Expression => mapping => mapping.Application.Equals(Application, StringComparison.OrdinalIgnoreCase) && 
+                                     mapping.Product.Equals(Product, StringComparison.OrdinalIgnoreCase);
+
+    - BuildOnTechnologies.VDS.Domain\VisualizationProgram\VisualizationProgramEstimatedOptionSpecifications.cs
+        VisualizationProgramEstimatedOptionHasItemNoSpecifications : Specification<VisualizationProgramEstimatedOption>
+            Expression => p => p.ItemNo.Equals(ItemNo, StringComparison.OrdinalIgnoreCase);
+
+    - BuildOnTechnologies.VDS.Domain\VisualizationProgram\VisualizationProgramSpecifications.cs
+        VisualizationProgramHasNameSpecification : Specification<VisualizationProgram>
+            Expression => vp => vp.ProgramName.Equals(Name, StringComparison.OrdinalIgnoreCase);
+
+    What are possible solutions?
+
+        Using EF.Functions.Like() (Recommended for case-insensitive queries): 
+        A more efficient and database-friendly solution is to use EF.Functions.Like() for case-insensitive comparisons, as it translates 
+        directly to SQL ILIKE (or equivalent) in databases that support case-insensitive comparisons (e.g., PostgreSQL or SQL Server with appropriate collation settings).
+            csharp:
+                Expression => c => EF.Functions.Like(c.AppId, AppId);
+        This provides a more efficient approach since it avoids unnecessary string manipulations and leverages the database's built-in case-insensitive capabilities. 
+        However, this approach might require some testing, as the underlying database needs to support this function for case-insensitive string comparison.
+
+        Using ToLower() or ToUpper(): Updating the expression to:
+            csharp:
+                Expression => c => c.AppId.ToLower() == AppId.ToLower();
+        This would indeed solve the issue by transforming both the AppId fields to lowercase before comparison. 
+        However, this can be inefficient because it forces a function (ToLower()) on both sides of the comparison for every query. 
+        This could lead to performance issues, especially if AppId is indexed or if you have a large dataset. Also, this could result in incorrect behavior for 
+        non-ASCII characters (e.g., when comparing strings with accented characters or different locales).

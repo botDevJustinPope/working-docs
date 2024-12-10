@@ -1,0 +1,24 @@
+Going through commits:
+
+file: LegacyRole.cs, Communities.cs , AareasSceneConfigurations.cs
+    - .HasDatabaseName - what? why that
+    Explanation: This line is part of the configuration for an index on the AareasSceneSurface entity.
+                 Specifically, it sets the name of the index in the database to 
+                 "UX_AareasSceneConfiguration_VisualizationProviderId_SceneId_SurfaceName".
+
+file: IntegrationClientSpecifications.cs 
+    - Issue with confirming case sensitivity
+
+ file: ObjectCopies.cs
+    - major issue here 
+    - Eric has commit to remove it 
+
+tech debt:
+    Legacy Projects:
+    - stop having legacy code
+    logging enhancement
+    startup enhancement
+    - dependency injection to lower
+    GetHTMLBuildSelectionsReport.cs
+    - intentional code 
+    HandleBars sucks
