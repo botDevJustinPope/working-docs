@@ -1,0 +1,229 @@
+CssMark
+"bg-ds-mobileMenu : #1b2743 url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAQElEQVQYV2NkIAIIiCv/ZySkDqTow8u7jHgVwhSBDMOpEFkRToXoirAqxKYIQyEuRSgK8SmCKySkCKyQGEUghQDARSVUweeZjwAAAABJRU5ErkJggg==)"
+text-primary-lighter : #0aca80
+color-ds-mobileMenu-item-text : #11AD6E
+color-notification : #e33a3a
+color-selectionsReportOptions-highlightedCategory : #90ee90
+icon-nonEstimatedItemCard-compareIcon-close : #acffde
+bg-optionPricing-areaHeader : #0a7249
+filter-main-site-header : none
+bg-hbDashboard-orientationStep-active-light : #93a9d1
+bg-optionPricing-selectedCell : #eeffe5
+border-ds-mobileMenu-item : #324165
+bg-footer : 51e1bbc9-c563-48a4-9194-b9afeb33059e
+text-sessionCard-primary-1 : 82573c3d-6013-4936-87e9-4f6fdd31e387
+color-buyerWelcome-maybeLater-button : 6ee51a8c-9116-4590-8a98-3d30aa9bd3d8
+color-icon-primary : 36523bb3-def2-40d2-8564-46bc65686f03
+bg-hbDashboard-moduleComplete : #2ea656
+bg-ds-catalogSearchBar : 4f07e03d-5deb-4bd5-b5ac-6f8fcf8e3c9c
+bg-optionPricing-priceLevel-selected : 36523bb3-def2-40d2-8564-46bc65686f03
+bg-dmh-header : #272f42
+"bg-nonEstimatedItemCard-compareIcon : rgba(56, 142, 92, 0.85)"
+bg-dmh-right : url(../../../Content/images/dmh-right-bg.png) no-repeat
+color-profileStatus-other : #12b59d
+color-ds-catalogCard-status-error-icon : #bb3838
+color-dmh-icon-included-product-on-darkBg : #ffc435
+bg-cancelImpersonation : #E2EAE7
+color-dmh-leftNav-listItemText : #e3e3e4
+bg-light-top : #efefef
+color-optionPricing-leftPane-applicationProductList-navIcon : 7ebbc181-8c6b-40b3-9ccf-7c5258f674af
+bg-ds-catalog-item-document-pagination-inactive-page : 49701b99-7d3c-488e-92cd-ba7850e1e4d2
+color-banner-text : #000
+color-primary-alt1 : #047c4d
+color-ds-catalogCard-status-incomplete-icon : #dcb51b
+color-dmh-optionMenu-tab-selected-title : #35d695
+bg-ds-sessionSupportEmail-attachFile : 8f1634ac-208a-4f18-994e-b672b2b2cd39
+bg-sessionCard-actionBlock : 51e1bbc9-c563-48a4-9194-b9afeb33059e
+text-copyright : #8b94a8
+bg-dmh-navMenu-selected : 56c3cbbf-a6e8-4663-8d73-1558322ad6ed
+color-cancelImpersonation : 36523bb3-def2-40d2-8564-46bc65686f03
+btn-completeOrientationStep : #419877
+color-ds-catalogCard-status-error : #bb3838
+"bg-image-lifestyle-select : linear-gradient(45deg, transparent 50%, 1afa636f-2160-44fc-af68-a313ee66a558 50%), linear-gradient(135deg, 1afa636f-2160-44fc-af68-a313ee66a558 50%, transparent 50%), linear-gradient(to right, transparent, transparent)"
+color-optionPricing-currentPlanEditButton : 485d2910-0fb7-427d-9efc-b78dbea466c4
+bg-menu-inactive : #e8e8e8
+"bg-buyerWelcome-letsGetStarted-button-hover : rgba(31, 76, 53, 0.77)"
+border-left-menu-option-hover : #2f762f
+icon-titleBar-mobileMenu-dots : #508e5f
+bg-ds-catalogCard-body-status-complete : #eeffe5
+boxShadowColor-actionBar-selected : #b8d4c8
+btn-grouped-hover : #233763
+color-dmh-dark-accent-alt-lighter : #4c5f81
+color-icon-signOut : 7ebbc181-8c6b-40b3-9ccf-7c5258f674af
+bg-dmh-product-list-product-selected : #245854
+bg-ds-catalogCard-header-status-complete : #eeffe5
+bg-disclaimerCheckbox : #4bac82
+bg-nonEstimatedItemCard-compareIcon-close : 36523bb3-def2-40d2-8564-46bc65686f03
+bg-emphasis : #05a76c
+bg-banner : #05a76c
+color-dmh-icons-primary : 7ebbc181-8c6b-40b3-9ccf-7c5258f674af
+color-userRegistration-testUserMessage-text : 36523bb3-def2-40d2-8564-46bc65686f03
+"bg-footer-update : rgb(16, 23, 35)"
+color-dmh-prefMenu-prefToggle-top-border : a8329264-a00d-42c4-a37f-eebc020077ed
+color-ds-text-primary : 36523bb3-def2-40d2-8564-46bc65686f03
+"bg-buyerWelcome-letsGetStarted-button : rgba(22, 58, 40, 0.6)"
+"btn-primary-hover : linear-gradient( 0deg, #08492f 0, #0a7c4f 100%)"
+color-dmh-text-primary : 36523bb3-def2-40d2-8564-46bc65686f03
+border-budgetItem : #51678c
+"bg-hbDashboard : linear-gradient(to bottom, #efefef 0%, #e8e8e8 100%)"
+text-primary-alt1 : #01B771
+border-optionPricing-screenToggle : #8590a1
+"btn-secondary : linear-gradient( 0deg, #283661 0, #3f5291 100%)"
+bg-dmh-left : url(../../../Content/images/dmh-left-bg.png) no-repeat
+"btn-grouped-current : linear-gradient(to bottom, #1a9565 0, #14714d 100%)"
+text-dark : #1f1f1f
+color-training-text : 7ebbc181-8c6b-40b3-9ccf-7c5258f674af
+bg-optionPricing-screenToggle : #1e2433
+bg-hbDashboard-orientationStep-inactive : #047a4c
+bg-optionPricing-rightPane : 51e1bbc9-c563-48a4-9194-b9afeb33059e
+color-lifestyle-primary : #2de88e
+color-dmh-optionMenu-optionDetailTotal : #a5a2b0
+"btn-secondary-hover : linear-gradient( 0deg, #1e2a4d 0, #324275 100%)"
+color-optionPricing-rightPane-disabledTab-text : #8b94a8
+bg-optionPricing-leftPane : url('../../../Content/images/designselections/bg-designSelection.jpg')
+bg-light-btm : #d8d8d8
+bg-busyIndicator : 51e1bbc9-c563-48a4-9194-b9afeb33059e
+color-dmh-visualizer-somethingWentWrong-error-icon : #ff604b
+color-lifestyle-saturated-dark-4 : #00331a
+color-dmh-leftNav-listItem-active : 36523bb3-def2-40d2-8564-46bc65686f03
+color-dmh-disclaimer-dialog-community-name : 2e7c98b8-3ae7-42aa-a607-250aae671f7c
+color-main-site-header-vds-logo-color : #fff
+color-optionPricing-screenToggle-active : #3dce97
+color-dmh-disclaimer-dialog-community-series-plan-text : db7b2441-a16a-4c8a-a882-4e99fd5fa20a
+bg-dmh-visualizer-exclamation-banner : #ff9018
+"btn-nonEstimatedItem-compare : rgba(18, 133, 87, 0.1)"
+select-btm : #e2e2e2
+"btn-primary : linear-gradient( 0deg, #0e7b50 0, #129d66 100%)"
+color-lifestyle-saturated-light-4 : #ccffeb
+"bg-optionPricing-panelTitle : rgba(0,0,0,.45)"
+bg-userImpersonation-userItem : #eff7f4
+btn-grouped-bg : 1b2743
+bg-dmh-topBar : url(../../../Content/images/bg-designmyhome.jpg)
+bg-optionPricing-screenToggle-active : c1211683-ef2f-4cab-b391-0ad25c7a0d49
+bg-dmh-visualizableIndicator-light-side : #3b598a
+"bg-lifestyle-button : rgba(11, 56, 34, .6)"
+bg-ds-catalogCard-body-status-incomplete : #fff1c2
+bg-supportEmail-attachFile-button : #34457a
+color-icon-light : #3bb681
+bg-dmh-optionMenu-tab-selected : a8329264-a00d-42c4-a37f-eebc020077ed
+color-beta-sup : #118e5c
+color-optionPricing-rightPane-collapseButton-icon : 7ebbc181-8c6b-40b3-9ccf-7c5258f674af
+bg-userRegistration-testUserMessage : #e1efe4
+bg-footer-contentSupportEmailArea : 51e1bbc9-c563-48a4-9194-b9afeb33059e
+"bg-dark : #1b2743 url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAQElEQVQYV2NkIAIIiCv/ZySkDqTow8u7jHgVwhSBDMOpEFkRToXoirAqxKYIQyEuRSgK8SmCKySkCKyQGEUghQDARSVUweeZjwAAAABJRU5ErkJggg==)"
+color-lifestyle-saturated-light-3 : #99ffd5
+bg-optionPricing-productSamplesTab-priceLevel-header : 51e1bbc9-c563-48a4-9194-b9afeb33059e
+color-dmh-optionMenu-optionDetailSelections-countLabel : #969696
+bg-white : #fff
+bg-sessionCard-confirm : #d2f1dd
+"bg-planSelector-selectedPlan : linear-gradient(to bottom, rgba(255,255,255,0) 0%,rgba(107,234,183,0.15) 100%)"
+color-optionPricing-areaCard-areaName-text : 6ee51a8c-9116-4590-8a98-3d30aa9bd3d8
+color-optionPricing-currentPlanEditButton-icon : 7ebbc181-8c6b-40b3-9ccf-7c5258f674af
+color-planSelector-selectedPlan : #37aa7d
+bg-ds-catalogCard-header-status-incomplete : #fff1c2
+color-dmh-icons-light-on-darkBg : #f0f0f0
+bg-dmh-optionMenu-optionDetailSelections-fullySelectedCheck : d63362a1-f022-47d4-8acb-487ec9f80015
+bg-ds-leftPane : url('../../../Content/images/designselections/bg-designSelection.jpg')
+color-ds-catalogCard-status-complete-icon : #4caa1d
+color-dmh-optionMenu-radio-button : #bbb
+color-sessionCard-actionBlock-title : 6ee51a8c-9116-4590-8a98-3d30aa9bd3d8
+"boxShadowColor-nonEstimatedItemCard-compareIcon : rgb(74, 159, 118)"
+text-light : #fff
+color-dmh-prefMenu-budgetExclamation : #303d52
+bg-title-bar : cd145038-c22a-4f95-943a-82b0df974ea3
+bg-dmh-prefMenu-budgetExclamation : #fff886
+text-sessionCard-primary-2 : #349055
+bg-optionPricing-rightPane-disabledTab : 51e1bbc9-c563-48a4-9194-b9afeb33059e
+bg-dmh-leftPanel-nav : 51e1bbc9-c563-48a4-9194-b9afeb33059e
+"bg-footer-contentSupportEmailArea-hover : rgba(8, 148, 255, 0.35)"
+"bg-sessionCard : linear-gradient(to bottom, #f2f2f2 0%, #e8e8e8 100%)"
+bg-optionPricing-priceLevelHeader-hover : #4A546D
+color-dmh-optionMenu-tab-selected-desc : #cad8f3
+color-dmh-icon-included-product-on-lightBg : #e69012
+color-dmh-leftNav-title : #9ea8bb
+color-lifestyle-saturated-light-2 : #66ffbf
+color-lifestyle-saturated-dark-2 : #00994f
+color-busyIndicator : 6ee51a8c-9116-4590-8a98-3d30aa9bd3d8
+btn-completeOrientationStep-hover : #4baf91
+bg-ds-catalogCard-body-status-error : #ffe5e5
+color-title-bar-text : ba71c37b-afb3-4fb7-8e24-b9cb514ebb5f
+bg-optionPricing-priceLevelHeader : #0f1525
+btn-primary-active : #0c5739
+color-footer-update : #e4fff4
+"bg-ds-copyAreaSelections-credit : rgb(255, 255, 210)"
+"bg-ds-mobileMenuLauncher-button : #1b2743 url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAQElEQVQYV2NkIAIIiCv/ZySkDqTow8u7jHgVwhSBDMOpEFkRToXoirAqxKYIQyEuRSgK8SmCKySkCKyQGEUghQDARSVUweeZjwAAAABJRU5ErkJggg==)"
+color-dmh-optionMenu-tab-title : 2e7c98b8-3ae7-42aa-a607-250aae671f7c
+bg-ds-catalogCard-header-status-error : #ffe5e5
+color-ds-mobileMenu-item-icon : 7ebbc181-8c6b-40b3-9ccf-7c5258f674af
+color-lifestyle-saturated-light-1 : #33ff9c
+bg-ds-mobileMenu-hover : #113561
+bg-dmh-navMenu-close-hover : 56c3cbbf-a6e8-4663-8d73-1558322ad6ed
+bg-dmh-optionMenu-tab-hover : #CCC
+btn-grouped-border : #354d70
+bg-main-site-header : 51e1bbc9-c563-48a4-9194-b9afeb33059e
+bg-hbDashboard-orientationStep-inactive-light : #92cfb7
+select-top : #efefef
+color-ds-catalogCard-status-incomplete : #877031
+color-dmh-roomProductIcon : d63362a1-f022-47d4-8acb-487ec9f80015
+color-ds-wizard-priceLevelSelector-flag-icon : 7ebbc181-8c6b-40b3-9ccf-7c5258f674af
+bg-ds-catalog-item-field-section-divider : 49701b99-7d3c-488e-92cd-ba7850e1e4d2
+bg-menu-active : #f0f0f0
+filter-dmh-roomProductIcon : brightness(0) saturate(100%) invert(38%) sepia(66%) saturate(920%) hue-rotate(115deg) brightness(91%) contrast(87%); // this equals e5dfc52a-3605-435e-b1f2-b12b8d058ae0
+"switch-bg : linear-gradient(to bottom, #387e26 0, #215c16 100%)"
+color-wishlist : #e33a3a
+color-ds-cabinetWizard-priceLevelSelector-flag-icon : #000
+color-primary : #118e5c
+color-sessionCard-actionBlock-border : none
+color-main-site-header-text-muted : #b9b9b9
+font-main : 'Lato'
+bg-dmh-visualizableIndicator-dark-side : #2e4365
+color-profileStatus-bustout : #ea3d3d
+font-size-sessionCard-currentStatus : 15px
+bg-ds-catalogDocumentSelectedIndicator : 6F9619FF-8B86-D011-B42D-00CF4FC964FF
+bg-light : #f7f7f7
+text-footer-systemMessage : black
+text-disclaimerWelcomeMsg : #6f88ba
+color-dmh-materialsTab-text : 3471d1cc-e1e4-40bc-ab0e-0d3e56369e67
+bg-hbDashboard-orientationStep-active : #526993
+color-footer-helpMenu-item : #23c487
+color-optionPricing-monthlyPayment : #828a9e
+color-icon-training : 7ebbc181-8c6b-40b3-9ccf-7c5258f674af
+bg-dark-noImage : #1b2743
+"textarea-bg : linear-gradient(to bottom, #eeeeee 0, #ffffff 13%)"
+bg-footer-supportEmailQuestionMark : 7ebbc181-8c6b-40b3-9ccf-7c5258f674af
+color-dmh-dark-accent : #293346
+color-dmh-roomProduct-section-text : #797979
+table-header-color : #11915f
+color-dmh-visualizableIndicator-icon : #fff
+color-ds-catalogCard-status-complete : 58428484-22ab-4c40-855d-38e49e02a2a6
+color-lifestyle-saturated-dark-1 : #00cc69
+btn-secondary-active : #23315a
+color-optionPricing-selectionSummary-card-icon : 7ebbc181-8c6b-40b3-9ccf-7c5258f674af
+color-lifestyle-saturated : #00ff84
+color-dmh-optionMenu-optionDetailSelections-fullySelectedCheck : 2e87f00c-19ec-44c2-83eb-894bcdc5da73
+"bg-lifestyle-progressBar : linear-gradient(to bottom, 37a3f9ed-7adf-48cf-a0d1-e4351171ca41 0%,8724558a-a19d-4d7a-8d8b-0dfed6a2eb40 84%,2ffcbcb7-9ccf-4dc4-bb98-04df55706962 100%)"
+color-main-site-header-text : 6ee51a8c-9116-4590-8a98-3d30aa9bd3d8
+color-actionBar : #047c4d
+color-optionPricing-screenToggle : #e1e4ea
+color-profileStatus-contracted : #1fab01
+text-primary : #0ABF7D
+bg-optionPricing-areaHeader-hover : 36523bb3-def2-40d2-8564-46bc65686f03
+color-profileStatus-complete : #1ea2f3
+boxShadow-selectionsReportOptions-option : #90ee904d
+bg-dmh-optionMenu-optionDetailSelections : #f0f0f0
+border-optionPricing-selectionSummary-card : #4e576f
+text-menu : #388e5c
+"border-nonEstimatedItemCard-compareIcon-close : rgba(172, 255, 222, 0.5)"
+bg-dmh : url(../../../Content/images/bg-designmyhome.jpg)
+bg-lifestyle : url('../../../../Content/images/orientation/bg1.jpg') no-repeat
+bg-hbDashboard-progressBar : #4aa164
+color-selectionsReportOptions-selectedOption : 36523bb3-def2-40d2-8564-46bc65686f03
+color-dmh-materialsTab-text-selected : 3471d1cc-e1e4-40bc-ab0e-0d3e56369e67
+"bg-hbDashboard-header : rgba(0,0,0,0.3)"
+color-dmh-optionMenu-tab-desc : #171717
+color-lifestyle-saturated-dark-3 : #006635
+bg-dmh-product-filter-dropdown-top : a8329264-a00d-42c4-a37f-eebc020077ed
+"color-colorGame-selector : rgba(86, 138, 113, .6)"
+text-darkest : #000
+color-buyerWelcome-letsGetStarted-button : #2de88e
+color-dmh-light-boundary : #e0e0e0

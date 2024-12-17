@@ -1,0 +1,31 @@
+1) Microsoft.EntityFrameworkCore.DbUpdateException
+  HResult=0x80131500
+  Message=Could not save changes because the target table has database triggers. Please configure your table accordingly, see https://aka.ms/efcore-docs-sqlserver-save-changes-and-output-clause for more information.
+  Source=Microsoft.EntityFrameworkCore.SqlServer
+  StackTrace:
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.<ExecuteAsync>d__15.MoveNext()
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.<ExecuteAsync>d__9.MoveNext()
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.<ExecuteAsync>d__9.MoveNext()
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.<ExecuteAsync>d__9.MoveNext()
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.<SaveChangesAsync>d__8.MoveNext()
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.<SaveChangesAsync>d__111.MoveNext()
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.<SaveChangesAsync>d__115.MoveNext()
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.<ExecuteAsync>d__7`2.MoveNext()
+   at Microsoft.EntityFrameworkCore.DbContext.<SaveChangesAsync>d__63.MoveNext()
+   at Microsoft.EntityFrameworkCore.DbContext.<SaveChangesAsync>d__63.MoveNext()
+   at BuildOnTechnologies.VDS.Repository.Repository`1.<SaveChanges>d__29.MoveNext() in C:\AzureDevOps\BuildOnTechnologies\VeoDesignStudio\VeoDesignStudio\BuildOnTechnologies.VDS.Repository\Repository.cs:line 231
+   at BuildOnTechnologies.VDS.Services.Organizations.UpdateOrganization.<_Invoke>d__6.MoveNext() in C:\AzureDevOps\BuildOnTechnologies\VeoDesignStudio\VeoDesignStudio\BuildOnTechnologies.VDS.Services\Organizations\UpdateOrganization.cs:line 37
+   at BuildOnTechnologies.VDS.Services.UseCase`1.<Invoke>d__15.MoveNext() in C:\AzureDevOps\BuildOnTechnologies\VeoDesignStudio\VeoDesignStudio\BuildOnTechnologies.VDS.Services\UseCase.cs:line 50
+   at VeoDesignStudio.Controllers.api.OrganizationsController.<UpdateOrganization>d__18.MoveNext() in C:\AzureDevOps\BuildOnTechnologies\VeoDesignStudio\VeoDesignStudio\VeoDesignStudio\Controllers\Api\OrganizationsController.cs:line 157
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.<Execute>d__0.MoveNext()
+
+  This exception was originally thrown at this call stack:
+    [External Code]
+
+Inner Exception 1:
+SqlException: The target table 'organizations' of the DML statement cannot have any enabled triggers if the statement contains an OUTPUT clause without INTO clause.
+
+
+1.a) Reproduce 
+    - Edit Organziation in VEOAdmin, save changes. Underlining entity Organization (table: VeoSolutionsSecurity.dbo.organization)
+    
