@@ -20,8 +20,15 @@ function Confirm-Branch-Removal {
 # Validate the file path is a git repo 
 Set-Location $RepoPath
 
+# check status, if there are difs, prompt user to commit or stash and try again
 try {
-    git status
+    $statusResponse = git status
+    if ($statusResponse -match "nothing to commit, working tree clean") {
+        Write-Host "Working tree is clean. Continuing..."
+    } else {
+        Write-Host "Working tree is not clean. Please commit or stash changes and try again."
+        exit
+    }
 } catch {
     Write-Host "The file path is not a git repo. Varify the file path and try again."
     exit
