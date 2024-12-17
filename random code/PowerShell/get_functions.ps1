@@ -2,18 +2,29 @@
 
 # renames the branch to new name
 function Rename-Branch {
-    param {
+    param (
         [string]$branchName,
         [string]$newName
+    )
+    try {
+        git branch -m $branchName $newName
+        return $newName
+    } catch {
+        Write-Host "Error renaming branch $branchName to $newName"
+        return $null
     }
-    git branch -m $branchName $newName
-    return $newName
 }
 
 function Remove-Branch {
-    param {
+    param (
         [string]$branchName
+    )
+    try {
+        git branch -D $branchName
+        Write-Host "Branch $branchName deleted"
+        return $true
+    } catch {
+        Write-Host "Error deleting branch $branchName"
+        return $false
     }
-    git branch -D $branchName
-    return $true
 }

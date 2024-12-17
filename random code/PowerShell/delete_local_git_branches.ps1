@@ -7,9 +7,9 @@ param (
 . "C:\GitHub\botDevJustinPope\working-docs\random code\PowerShell\get_functions.ps1"
 
 function Confirm-Branch-Removal {
-    param {
+    param (
         [string]$branchName
-    }
+    )
     $message = "Do you want to delete local branch $branchName? (Y[delete]/N)"
     $response = Get-User-Input-Y-N -message $message
     if ($response) {
@@ -20,10 +20,20 @@ function Confirm-Branch-Removal {
 # Validate the file path is a git repo 
 Set-Location $RepoPath
 
-if (-not (Test-Path .git)) {
+try {
+    git status
+} catch {
     Write-Host "The file path is not a git repo. Varify the file path and try again."
     exit
 }
+try {
+    # checkout default branch
+    git checkout master
+} catch {
+    Write-Host "This does not have a master branch. Exiting..."
+    exit
+}
+
 Write-Host "$RepoPath is a git repo, starting archive process..."
 # fetch all remote branches
 git fetch --all 
@@ -39,6 +49,10 @@ if (-not $localBranches) {
 }
 
 foreach ($branch in $localBranches) {
+    if ($branch -eq "master") {
+        Write-Host "Skipping master branch..."
+        continue
+    }
     Write-Host "Checking branch $branch..."
     $remoteBranch = git branch -r | Where-Object { $_ -match $branch }
     if (-not $remoteBranch) {
