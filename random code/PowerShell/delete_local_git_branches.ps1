@@ -23,14 +23,14 @@ Set-Location $RepoPath
 # check status, if there are difs, prompt user to commit or stash and try again
 try {
     $statusResponse = git status
-    if ($statusResponse -match "nothing to commit, working tree clean") {
+    if ($statusResponse -match "Your branch is up to date") {
         Write-Host "Working tree is clean. Continuing..."
     } else {
         Write-Host "Working tree is not clean. Please commit or stash changes and try again."
         exit
     }
 } catch {
-    Write-Host "The file path is not a git repo. Varify the file path and try again."
+    Write-Host "The file path is not a git repo. Verify the file path and try again."
     exit
 }
 try {
