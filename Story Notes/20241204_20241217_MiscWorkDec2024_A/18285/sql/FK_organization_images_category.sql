@@ -25,3 +25,5 @@ REFERENCES [dbo].[organization_images_categories] ([category])
 ON UPDATE CASCADE
 ON DELETE CASCADE
 GO
+ALTER TABLE [dbo].[organization_images] CHECK CONSTRAINT [FK_organization_images_category]
+go

@@ -8,6 +8,7 @@ This story creates a way for us to manage builder logos. To implement that the f
     script: create organizations_images_categories.sql 
         creates and populates
 2) populate new table 
+    *** This is not needed if script was executed in step 1 ***
     script: populate organization_images_categories.sql
 3) foriegn Key from organization_image
     script: FK_orgnaization_images_category.sql
@@ -16,3 +17,7 @@ This story creates a way for us to manage builder logos. To implement that the f
 4) update procedure
     script: procedure [dbo].[vds_selCustomerLogo].sql
 5) populate org images with builder logos 
+    script: insert customer logos into org images.sql
+
+=== If you are not wanting to execute these scrips ====
+Script: SQL_Deployment.sql
