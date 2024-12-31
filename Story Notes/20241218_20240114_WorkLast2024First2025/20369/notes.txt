@@ -1,0 +1,43 @@
+Manage Designers: allowedSelections.js | allowedSelections.html | designCenterService.js 
+
+    GET api/designers/{userID}/availabe_applications
+        1-> DesignersController.GetDesignerAvailableApplications
+        2-> GetDesignerAvailableApplications.Invoke
+        3-> DesignerApplicationRepository.GetDesignerAvailableApplications
+        4-> SQL execute procedure vds_selDesignerAvailableApplications
+
+    PUT api/designers/{userID}/applciations 
+        1-> DesignerController.ReplaceDesignerApplications
+        2-> ReplaceDesignerApplications.Invoke
+            Refactor this
+            2.a Deletes
+                2.a.1-> DesignerApplicationRepository.DeleteDesignerAssignedApplciations
+                2.a.2-> SQL executes procedure vds_delDesignerAssignedApplications
+            2.b Loops through Adds
+                2.b.1-> DesignerApplicationRepository.AddDesignerAssignedApplication
+                2.b.2-> SQL executes procedure vds_insDesignerAssignedApplication
+            NOTE: just go full EF
+
+Design Selections: navList.ts | navList.html
+
+    By Area:
+
+        GET api/sessions/{sessionID}/areas
+        1-> AreaController.GetSessionsAreas
+        2-> GetSessionAreas.Invoke
+            2.a-> .GetBuilds -> DesignerApplicationRepository.GetDesignerAssignedApplications
+            2.b-> .GetCatalogItems -> DesignerApplicationRepository.GetDesignerAssignedApplications
+        
+
+    By Application:
+    
+        GET api/sessions/{sessionID}/applications
+        1-> ApplicationController.GetSessionApplications
+        2-> GetSessionApplications.Invoke
+            2.a-> .InitializeDesignerApplications
+            2.b-> _designerApplications = DesignerApplicationRepository.GetDesignerAssignedApplications
+
+            2.c-> use of _designerApplications 
+                2.c.1-> .GetBuilds
+                2.c.2-> .GetSelectedCatalogItems
+                2.c.3-> .GetNonEstimatedApplicationsAndProducts
