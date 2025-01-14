@@ -1,0 +1,9 @@
+To deploy our dot net 9 application the following is needed:
+- dot net 9 hosting is istalled on the server
+- reset IIS
+
+Testing:
+a few seconds of lag was experienced when the IIS was reset.
+
+Notes for deployment:
+For actual deployment, application pool for the the vds site needs to point to No Managed Code and then IIS is restarted.

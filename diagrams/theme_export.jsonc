@@ -1,0 +1,15 @@
+{
+    // The following would be the structure of the theme entity
+    "lookupKey": "dark",
+    "name": "Dark Mode",
+    "description": "A dark theme for your website",
+    "cssClass": "dark-mode",
+    "Variables": {
+        // Variables is a list of both ThemeVariables and ThemeVariableValues in totality
+        "primary_color": "#ff0000",
+        "bg_dmh": "var(--primary_color)",
+        "bg_dmh2": "var(--primary_color)",
+        "secondary_color": "#00ff00",
+        "border_color_dmh": "var(--secondary_color)" 
+    }
+}
