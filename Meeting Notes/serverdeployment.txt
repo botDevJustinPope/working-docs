@@ -7,3 +7,4 @@ a few seconds of lag was experienced when the IIS was reset.
 
 Notes for deployment:
 For actual deployment, application pool for the the vds site needs to point to No Managed Code and then IIS is restarted.
+.NET CLR Version
