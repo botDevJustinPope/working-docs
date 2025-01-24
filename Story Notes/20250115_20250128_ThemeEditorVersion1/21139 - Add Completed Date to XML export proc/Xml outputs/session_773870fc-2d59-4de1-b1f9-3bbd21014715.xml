@@ -1,0 +1,11 @@
+<ConciergeSelectionSet user_plan_id="773870FC-2D59-4DE1-B1F9-3BBD21014715"
+    estimated_id="773870FC-2D59-4DE1-B1F9-3BBD21014715"
+    user_id="1DEA6AE0-0019-4C2D-BEF6-AC0D1FF0E24D" plan_id="169459" spec_id="3520"
+    effective_date="2024-01-05T15:15:05.983" completed_date="2024-01-05T15:21:37.140"
+    first_completed_date="2024-01-05T15:17:44.403" designer="" job_type="0"
+    appointment_date="01/01/1900">
+    <address address="a" lot_block="" city="a" state="a" zipcode="a" builder_id="STAG2014"
+        spec_id="3520" community_id="3097" series="NONE" plan_name="Aransas" elevation="A" />
+    <contact contact_name="DevRei TestHB4" home_phone="+1 (234) 567-8900" work_phone=""
+        email="dev_rei_hb4@mailinator.com" />
+</ConciergeSelectionSet>
