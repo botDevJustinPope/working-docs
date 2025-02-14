@@ -1,6 +1,6 @@
 <mxfile host="65bd71144e" pages="2">
     <diagram name="New Entity Architecture" id="eIHBJfK-Ix2usfNjn9Gq">
-        <mxGraphModel dx="1685" dy="1146" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+        <mxGraphModel dx="1002" dy="666" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
             <root>
                 <mxCell id="0"/>
                 <mxCell id="1" parent="0"/>
@@ -644,7 +644,7 @@
         </mxGraphModel>
     </diagram>
     <diagram id="i58F9RqyO7AOpKq6OkYb" name="New Concept">
-        <mxGraphModel dx="1685" dy="2246" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+        <mxGraphModel dx="2026" dy="2246" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
             <root>
                 <mxCell id="0"/>
                 <mxCell id="1" parent="0"/>
@@ -673,7 +673,7 @@
                     <mxGeometry x="40" y="350" width="140" height="60" as="geometry"/>
                 </mxCell>
                 <mxCell id="Ouv1Zv4pm-kSpNQtkWr6-10" value="VDS" style="swimlane;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-                    <mxGeometry x="320" y="40" width="1000" height="630" as="geometry">
+                    <mxGeometry x="320" y="40" width="1980" height="940" as="geometry">
                         <mxRectangle x="320" y="40" width="70" height="30" as="alternateBounds"/>
                     </mxGeometry>
                 </mxCell>
@@ -800,6 +800,9 @@
                 <mxCell id="Ouv1Zv4pm-kSpNQtkWr6-62" value="Font: Drop down box of usable fonts to select" style="rounded=0;whiteSpace=wrap;html=1;" parent="Ouv1Zv4pm-kSpNQtkWr6-10" vertex="1">
                     <mxGeometry x="90" y="430" width="120" height="60" as="geometry"/>
                 </mxCell>
+                <mxCell id="9J65OQsFUXTtiXQuiqBW-1" value="Vertical Container" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="Ouv1Zv4pm-kSpNQtkWr6-10">
+                    <mxGeometry x="1460" y="110" width="200" height="200" as="geometry"/>
+                </mxCell>
                 <mxCell id="Ouv1Zv4pm-kSpNQtkWr6-56" style="edgeStyle=none;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="Ouv1Zv4pm-kSpNQtkWr6-9" target="Ouv1Zv4pm-kSpNQtkWr6-55" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
@@ -852,6 +855,59 @@
                 </mxCell>
                 <mxCell id="Ouv1Zv4pm-kSpNQtkWr6-77" style="edgeStyle=none;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="Ouv1Zv4pm-kSpNQtkWr6-8" target="Ouv1Zv4pm-kSpNQtkWr6-62" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="IWbHBUB-pUmUSM1TG-Ro-1" value="_variable.scss" style="swimlane;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="120" y="1250" width="420" height="450" as="geometry"/>
+                </mxCell>
+                <mxCell id="IWbHBUB-pUmUSM1TG-Ro-2" value="//Global Set of variables&lt;br&gt;primary&lt;br&gt;secondary&lt;br&gt;accent_color_1&lt;br&gt;accent_color_2&lt;br&gt;complete_color&lt;br&gt;warning_color&lt;br&gt;error_color" style="whiteSpace=wrap;html=1;aspect=fixed;align=left;" parent="IWbHBUB-pUmUSM1TG-Ro-1" vertex="1">
+                    <mxGeometry x="30" y="50" width="310" height="310" as="geometry"/>
+                </mxCell>
+                <mxCell id="IWbHBUB-pUmUSM1TG-Ro-3" value="variable control" style="swimlane;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="580" y="1250" width="400" height="480" as="geometry"/>
+                </mxCell>
+                <mxCell id="IWbHBUB-pUmUSM1TG-Ro-4" value=".ts" style="swimlane;whiteSpace=wrap;html=1;" parent="IWbHBUB-pUmUSM1TG-Ro-3" vertex="1">
+                    <mxGeometry x="30" y="40" width="240" height="220" as="geometry"/>
+                </mxCell>
+                <mxCell id="IWbHBUB-pUmUSM1TG-Ro-7" value="Foreach var in _variable.scss&lt;br&gt;compute gradients&lt;br&gt;- 4 light and 4 darks" style="rounded=0;whiteSpace=wrap;html=1;" parent="IWbHBUB-pUmUSM1TG-Ro-4" vertex="1">
+                    <mxGeometry x="20" y="30" width="140" height="90" as="geometry"/>
+                </mxCell>
+                <mxCell id="IWbHBUB-pUmUSM1TG-Ro-10" value="process to control 'override'" style="rounded=0;whiteSpace=wrap;html=1;" parent="IWbHBUB-pUmUSM1TG-Ro-4" vertex="1">
+                    <mxGeometry x="30" y="140" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="IWbHBUB-pUmUSM1TG-Ro-8" value=".scss" style="swimlane;whiteSpace=wrap;html=1;" parent="IWbHBUB-pUmUSM1TG-Ro-3" vertex="1">
+                    <mxGeometry x="40" y="280" width="200" height="200" as="geometry"/>
+                </mxCell>
+                <mxCell id="IWbHBUB-pUmUSM1TG-Ro-9" value="list of variable gradients for each gobal" style="rounded=0;whiteSpace=wrap;html=1;" parent="IWbHBUB-pUmUSM1TG-Ro-8" vertex="1">
+                    <mxGeometry x="20" y="40" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="IWbHBUB-pUmUSM1TG-Ro-11" value="for each visual element" style="swimlane;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="1030" y="1250" width="330" height="440" as="geometry"/>
+                </mxCell>
+                <mxCell id="IWbHBUB-pUmUSM1TG-Ro-13" value="variable is set to what it needs from the global set:&lt;br&gt;--btn-primary : linear-gradient(0deg, var(--primary-lgt-1 0, var(--primary-drk-2, 100)&lt;br&gt;--dmh-nav-bar-background: var(--secondar-drk-3, url(.....)" style="whiteSpace=wrap;html=1;" parent="IWbHBUB-pUmUSM1TG-Ro-11" vertex="1">
+                    <mxGeometry x="40" y="115" width="280" height="175" as="geometry"/>
+                </mxCell>
+                <mxCell id="IWbHBUB-pUmUSM1TG-Ro-12" value="variable to represent the aspect we are controling" style="whiteSpace=wrap;html=1;" parent="IWbHBUB-pUmUSM1TG-Ro-11" vertex="1">
+                    <mxGeometry x="120" y="40" width="120" height="60" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+    <diagram id="05d2tlSPgwyAQrC-P0eU" name="Page-5">
+        <mxGraphModel dx="1152" dy="858" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="JKQUMvYCzQaQBJMv1iX4-1" value="Color: rgb, hex, hsl, ect" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="40" y="60" width="220" height="200" as="geometry"/>
+                </mxCell>
+                <mxCell id="JKQUMvYCzQaQBJMv1iX4-2" value="convert to hsl" style="triangle;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="300" y="85" width="140" height="150" as="geometry"/>
+                </mxCell>
+                <mxCell id="JKQUMvYCzQaQBJMv1iX4-3" value="hsl : hue saturation lightness&lt;br&gt;we care only about lignthness on gradients&lt;br&gt;L - 0% is black and L - 100% is white&lt;br&gt;lowest delta to black or white, gives the minimum range either way&lt;br&gt;&amp;nbsp;delta / gradient step # = delta lightness to compute gradients" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="470" y="60" width="260" height="200" as="geometry"/>
+                </mxCell>
+                <mxCell id="JKQUMvYCzQaQBJMv1iX4-4" value="pallet is 7, computed gradients 2&lt;br&gt;35" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="40" y="360" width="480" height="280" as="geometry"/>
                 </mxCell>
             </root>
         </mxGraphModel>

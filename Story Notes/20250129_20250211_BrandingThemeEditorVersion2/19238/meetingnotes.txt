@@ -1,0 +1,7 @@
+Ungrouped Variables => indipendent, misc
+
+add base theme label to header
+
+tour guide, some sort of summary of what is going on
+
+if not in the current theme don't show the theme

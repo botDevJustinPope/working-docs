@@ -1,0 +1,24 @@
+variables and where they show up -> where in the world are the variables applied
+arrows reverse direction on groups
+- figure out how to apply where the variables go work item to get the mapping 
+
+would be nice to link css pointers and navigate to the variable that they associate with
+- link
+
+indepent variables above group variables => she thought to utilize them in group variables
+
+Text color, specifically change groups to areas on the screen, and group variables to attributes
+filter variables or search for variables
+- sorting algrithm 
+- tagging methodology
+
+be able to add images and change were in the site
+- 
+
+text attributes wanted to be exposed
+be able to be very picky
+- i don't think this is what we want to do
+- figure out how to deal with text properties
+
+
+next session focus on producing a theme
