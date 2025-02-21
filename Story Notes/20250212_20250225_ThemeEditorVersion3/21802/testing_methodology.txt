@@ -1,0 +1,34 @@
+Test Plan - 21802
+
+To confirm that changes to the appsettings.json are going to work, we are going to utilize the dev environment and do the following:
+1) run through testing on dev configuration for a base line for dev 
+    1.a) No setup
+    1.b) login
+        curl --location "https://dev.veodesignstudio.com/api/authenticate" --header "Content-Type: application/json" --data-raw "{\"Email\": \"justinpo@buildontechnologies.com\", \"Password\": \"xx\"}" -v -o "response.json"
+    1.c) with a valid session execute the session report with builder codes and confirm that the excel does not generate errors
+        sessionID - 7a18c1d5-6748-4e33-b51a-d33ba6eea80e
+        curl -v -o "C:\GitHub\botDevJustinPope\working-docs\Story Notes\20250212_20250225_ThemeEditorVersion3\21802\response\selections_dev_test.xlsx" -H "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6Ikp1c3RpbiBTeXNBZG1pbi1Qb3BlIiwidXNlcl9pZCI6IjEwNDkwNWQ2LTJlZjUtNDc1OC04ZGMyLTViODFmNjFhMjkwYiIsImVtYWlsIjoianVzdGlucG9AYnVpbGRvbnRlY2hub2xvZ2llcy5jb20iLCJhcHBfYWNjZXNzIjoiVmVvQWRtaW4iLCJwZXJtaXNzaW9ucyI6IjEsMiwzLDQsNSw2LDcsOCw5LDEwLDExLDEyLDEzLDE0LDE1LDE2LDE3LDE4LDE5LDIwIiwic2VjdXJpdHlfdG9rZW4iOiJjMDMxZDQ2ZS01MzcxLTQ2NTEtYWYxMC03MjAwMzgyMjBhNDUiLCJuYmYiOjE3Mzk5OTY5MTMsImV4cCI6MTc0MDA0MDExMywiaWF0IjoxNzM5OTk2OTEzLCJpc3MiOiJodHRwczovL2Rldi52ZW9kZXNpZ25zdHVkaW8uY29tIn0.MDiYTxLT1iRChdC8HTavXGFaDetQ3edU0jlkOXQYu6Q" "https://dev.veodesignstudio.com/api/sessions/7a18c1d5-6748-4e33-b51a-d33ba6eea80e/reports/excel_with_builder_price"
+    1.d) check logging to confirm no issues
+        check on the dev server : C:\Websites\dev.veodesignstudio.com\logs\unhandled-exceptions.txt
+
+
+    Note: our dev environment needs to change the company code from L7ON9 -> 7LXGS
+
+2) run through testing on the eplan stack for a base line for current production (EPLAN)
+    2.a) No setup
+    2.b) login 
+        curl --location "https://www.myveodesignstudio.com/api/authenticate" --header "Content-Type: application/json" --data-raw "{\"Email\": \"justinpo@buildontechnologies.com\", \"Password\": \"EmilyJustin2016!\"}" 
+        -v -o "C:\GitHub\botDevJustinPope\working-docs\Story Notes\20250212_20250225_ThemeEditorVersion3\21802\response\login_eplan_response.json"
+    2.c) with a valid session execute the session report with builder codes and confirm that the excel does generate errors 
+        sessionID - 0649c51d-2f64-4b05-aaa6-33a23653ce38
+        curl -v -o "C:\GitHub\botDevJustinPope\working-docs\Story Notes\20250212_20250225_ThemeEditorVersion3\21802\response\selections_prod_eplan.xlsx" -H "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6Ikp1c3RpbiAgU3lzQWRtaW4tUG9wZSIsInVzZXJfaWQiOiI5Zjk5ZTg5YS05ZjI1LTQ1ZWQtOGZmMC03YmJmZWNlNGM4ZTIiLCJlbWFpbCI6Imp1c3RpbnBvQGJ1aWxkb250ZWNobm9sb2dpZXMuY29tIiwiYXBwX2FjY2VzcyI6IlZlb0FkbWluIiwicGVybWlzc2lvbnMiOiIiLCJzZWN1cml0eV90b2tlbiI6IjQ2YTI3ZmEyLWI2NTAtNDcwOS05YzMzLTQwYTAyNmJhNTgzMiIsIm5iZiI6MTczOTk5NzM5MywiZXhwIjoxNzQwMDQwNTkzLCJpYXQiOjE3Mzk5OTczOTMsImlzcyI6Imh0dHBzOi8vd3d3Lm15dmVvZGVzaWduc3R1ZGlvLmNvbSJ9.LA3MKftNRdoqbJJLg67Ur8cfnO1RVvK9Y0WlWw2g3nQ" "https://www.myveodesignstudio.com/api/sessions/0649c51d-2f64-4b05-aaa6-33a23653ce38/reports/excel_with_builder_price"
+    2.d) we could go try and search the logs for the exception but we would have to check each server exception.txt file for that needle, no thanks
+3) run through testing on a modified dev configuration to get results for changes
+    2.a) Set up - change the appsettings.json to what it would be to that of the EPLAN stack configuration
+        VDS - C:\Websites\dev.veodesignstudio.com
+        - botDevJustinPope\working-docs\Story Notes\20250212_20250225_ThemeEditorVersion3\21802\app-eplan-appsettings.json
+    2.b) login 
+        curl --location "https://dev.veodesignstudio.com/api/authenticate" --header "Content-Type: application/json" --data-raw "{\"Email\": \"justinpo@buildontechnologies.com\", \"Password\": \"EmilyJustin2016!\"}" -v -o "C:\GitHub\botDevJustinPope\working-docs\Story Notes\20250212_20250225_ThemeEditorVersion3\21802\response\login_deveplan_response.json"
+    2.c) with the same session get the report, this time it should execute correctly
+        sessionID - 0649c51d-2f64-4b05-aaa6-33a23653ce38
+        curl -v -o "C:\GitHub\botDevJustinPope\working-docs\Story Notes\20250212_20250225_ThemeEditorVersion3\21802\response\selections_deveplan_test.xlsx" -H "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6Ikp1c3RpbiAgU3lzQWRtaW4tUG9wZSIsInVzZXJfaWQiOiI5Zjk5ZTg5YS05ZjI1LTQ1ZWQtOGZmMC03YmJmZWNlNGM4ZTIiLCJlbWFpbCI6Imp1c3RpbnBvQGJ1aWxkb250ZWNobm9sb2dpZXMuY29tIiwiYXBwX2FjY2VzcyI6IlZlb0FkbWluIiwicGVybWlzc2lvbnMiOiIiLCJzZWN1cml0eV90b2tlbiI6IjhhZTAyYzk5LThmZTctNDk3ZS05NWU1LWVkZWYwMzFjNjFlZiIsIm5iZiI6MTczOTk5OTAzNiwiZXhwIjoxNzQwMDQyMjM2LCJpYXQiOjE3Mzk5OTkwMzYsImlzcyI6Imh0dHBzOi8vd3d3Lm15dmVvZGVzaWduc3R1ZGlvLmNvbSJ9.gi7TD8alIbonyomcJnj9RcICpTuRZSLZFXP8K8VhfaI" "https://dev.veodesignstudio.com/api/sessions/0649c51d-2f64-4b05-aaa6-33a23653ce38/reports/excel_with_builder_price"

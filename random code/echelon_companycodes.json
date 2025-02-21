@@ -1,0 +1,68 @@
+{
+  "CompanySettings": [
+    {
+      "CompanyCode": "LX3YX", //WBSDev
+      "EchelonConnection": "data source=echelon-dev.buildontechnologies.com;initial catalog=wbs_dev;user id=richardg;password=Hist0rica|;Connection Timeout=30;TrustServerCertificate=True;",
+      "HomebaseConnection": "Server=dev.eplanpartners.com;database=builder.wisenbaker.com;UID=adriang;PWD=Mispart!;TrustServerCertificate=True;",
+      "VeoInvoicingConnection": "data source=erp.wisenbaker.com;initial catalog=wbs_pricing;user id=richardg;password=Hist0rica|;Connection Timeout=30;TrustServerCertificate=True;",
+      "EchelonImplementationConnection": "data source=erp.wisenbaker.com;initial catalog=wbs_pricing;user id=adriang;password=Mispart!;Connection Timeout=30;TrustServerCertificate=True;",
+      "S3Bucket": "echelon-dev"
+    },
+    {
+      "CompanyCode": "DEMO1", //EchelonDemo
+      "EchelonConnection": "data source=echelon-demo.buildontechnologies.com;initial catalog=echelon_demo;user id=richardg;password=Hist0rica|;Connection Timeout=30;TrustServerCertificate=True;",
+      "HomebaseConnection": "Server=dev.eplanpartners.com;database=builder.wisenbaker.com;UID=adriang;PWD=Mispart!;TrustServerCertificate=True;",
+      "VeoInvoicingConnection": "data source=erp.wisenbaker.com;initial catalog=wbs_pricing;user id=richardg;password=Hist0rica|;Connection Timeout=30;TrustServerCertificate=True;",
+      "EchelonImplementationConnection": "data source=erp.wisenbaker.com;initial catalog=wbs_pricing;user id=adriang;password=Mispart!;Connection Timeout=30;TrustServerCertificate=True;",
+      "S3Bucket": "echelon-dev"    
+    },
+    {
+      "CompanyCode": "C7EUB", //WBSStaging
+      "EchelonConnection": "data source=echelon-staging.buildontechnologies.com;initial catalog=echelon_staging;user id=richardg;password=Hist0rica|;Connection Timeout=30;TrustServerCertificate=True;",
+      "HomebaseConnection": "Server=dev.eplanpartners.com;database=builder.wisenbaker.com;UID=adriang;PWD=Mispart!;TrustServerCertificate=True;",
+      "VeoInvoicingConnection": "data source=erp.wisenbaker.com;initial catalog=wbs_pricing;user id=richardg;password=Hist0rica|;Connection Timeout=30;TrustServerCertificate=True;",
+      "EchelonImplementationConnection": "data source=erp.wisenbaker.com;initial catalog=wbs_pricing;user id=adriang;password=Mispart!;Connection Timeout=30;TrustServerCertificate=True;",
+      "S3Bucket": "echelon-staging"
+    },
+    {
+      "CompanyCode": "U8YX4", //WBS
+      "EchelonConnection": "data source=erp.wisenbaker.com;initial catalog=wbs;user id=richardg;password=Hist0rica|;Connection Timeout=30;TrustServerCertificate=True;",
+      "HomebaseConnection": "Server=builder-sql.wisenbaker.com;database=builder.wisenbaker.com;UID=adriang;PWD=Mispart!;TrustServerCertificate=True;",
+      "VeoInvoicingConnection": "server=sql.veodesignstudio.com;database=veoinvoicing;UID=adriang;PWD=Mispart!;TrustServerCertificate=True;",
+      "EchelonImplementationConnection": "data source=erp.wisenbaker.com;initial catalog=wbs_pricing;user id=adriang;password=Mispart!;Connection Timeout=30;TrustServerCertificate=True;",
+      "S3Bucket": "echelon-wbs"
+    },
+    {
+      "CompanyCode": "7LXG5", //EPP
+      "EchelonConnection": "data source=erp.wisenbaker.com;initial catalog=echelon-epp;user id=richardg;password=Hist0rica|;Connection Timeout=30;TrustServerCertificate=True;",
+      "HomebaseConnection": "Server=builder-sql.wisenbaker.com;database=builder.wisenbaker.com;UID=adriang;PWD=Mispart!;TrustServerCertificate=True;",
+      "VeoInvoicingConnection": "data source=erp.wisenbaker.com;initial catalog=wbs_pricing;user id=richardg;password=Hist0rica|;Connection Timeout=30;TrustServerCertificate=True;",
+      "EchelonImplementationConnection": "data source=erp.wisenbaker.com;initial catalog=wbs_pricing;user id=adriang;password=Mispart!;Connection Timeout=30;TrustServerCertificate=True;",
+      "S3Bucket": "echelon-epp"
+    },
+    {
+      "CompanyCode": "4BHNH", //AFI
+      "EchelonConnection": "data source=erp.veoechelon.com;initial catalog=afi;user id=adriang;password=Mispart!;Connection Timeout=30;TrustServerCertificate=True;",
+      "HomebaseConnection": "Server=builder-sql.wisenbaker.com;database=builder.wisenbaker.com;UID=adriang;PWD=Mispart!;TrustServerCertificate=True;",
+      "VeoInvoicingConnection": "Server=builder-sql.wisenbaker.com;database=builder.wisenbaker.com;UID=adriang;PWD=Mispart!;TrustServerCertificate=True;",
+      "EchelonImplementationConnection": "Server=builder-sql.wisenbaker.com;database=builder.wisenbaker.com;UID=adriang;PWD=Mispart!;TrustServerCertificate=True;",
+      "S3Bucket": "echelon-afi"
+    },
+    {
+      "CompanyCode": "XD9OU", //CCDI
+      "EchelonConnection": "data source=erp.veoechelon.com;initial catalog=ccdi;user id=adriang;password=Mispart!;Connection Timeout=30;TrustServerCertificate=True;",
+      "HomebaseConnection": "Server=builder-sql.wisenbaker.com;database=builder.wisenbaker.com;UID=adriang;PWD=Mispart!;TrustServerCertificate=True;",
+      "VeoInvoicingConnection": "Server=builder-sql.wisenbaker.com;database=builder.wisenbaker.com;UID=adriang;PWD=Mispart!;TrustServerCertificate=True;",
+      "EchelonImplementationConnection": "Server=builder-sql.wisenbaker.com;database=builder.wisenbaker.com;UID=adriang;PWD=Mispart!;TrustServerCertificate=True;",
+      "S3Bucket": "echelon-ccdi"
+    },
+    {
+      "CompanyCode": "L7ON9", //VDS
+      "EchelonConnection": "data source=dev-sql.veodesignstudio.com;initial catalog=wbs_staging;user id=richardg;password=Hist0rica|;Connection Timeout=30;TrustServerCertificate=True;",
+      "HomebaseConnection": "Server=builder-sql.wisenbaker.com;database=builder.wisenbaker.com;UID=adriang;PWD=Mispart!;TrustServerCertificate=True;",
+      "VeoInvoicingConnection": "Server=builder-sql.wisenbaker.com;database=builder.wisenbaker.com;UID=adriang;PWD=Mispart!;TrustServerCertificate=True;",
+      "EchelonImplementationConnection": "Server=builder-sql.wisenbaker.com;database=builder.wisenbaker.com;UID=adriang;PWD=Mispart!;TrustServerCertificate=True;",
+      "S3Bucket": "echelon-dev"
+    }
+  ]
+}

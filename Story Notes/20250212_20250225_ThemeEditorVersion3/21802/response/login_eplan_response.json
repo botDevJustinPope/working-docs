@@ -1,0 +1,10 @@
+{
+  "HasError": false,
+  "Error": "",
+  "Authenticated": true,
+  "SecurityToken": "46a27fa2-b650-4709-9c33-40a026ba5832",
+  "MustChangePassword": false,
+  "MustAcceptTermsOfService": false,
+  "UserId": "9f99e89a-9f25-45ed-8ff0-7bbfece4c8e2",
+  "Token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6Ikp1c3RpbiAgU3lzQWRtaW4tUG9wZSIsInVzZXJfaWQiOiI5Zjk5ZTg5YS05ZjI1LTQ1ZWQtOGZmMC03YmJmZWNlNGM4ZTIiLCJlbWFpbCI6Imp1c3RpbnBvQGJ1aWxkb250ZWNobm9sb2dpZXMuY29tIiwiYXBwX2FjY2VzcyI6IlZlb0FkbWluIiwicGVybWlzc2lvbnMiOiIiLCJzZWN1cml0eV90b2tlbiI6IjQ2YTI3ZmEyLWI2NTAtNDcwOS05YzMzLTQwYTAyNmJhNTgzMiIsIm5iZiI6MTczOTk5NzM5MywiZXhwIjoxNzQwMDQwNTkzLCJpYXQiOjE3Mzk5OTczOTMsImlzcyI6Imh0dHBzOi8vd3d3Lm15dmVvZGVzaWduc3R1ZGlvLmNvbSJ9.LA3MKftNRdoqbJJLg67Ur8cfnO1RVvK9Y0WlWw2g3nQ"
+}

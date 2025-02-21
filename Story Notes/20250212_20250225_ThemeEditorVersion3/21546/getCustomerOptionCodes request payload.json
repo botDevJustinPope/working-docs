@@ -1,0 +1,790 @@
+{
+  "SpecId": 10149,
+  "PlanName": "40A2-Alamosa",
+  "PlanVersion": "7/3/2023",
+  "EffectiveDate": "2023-10-09T00:00:00",
+  "Builds": [
+    {
+      "BuildId": 1004880418,
+      "ApplicationId": "17",
+      "ProductId": "6",
+      "AreaId": "KITCHN",
+      "SubAreaId": "BS",
+      "LocationId": 1,
+      "BomLines": [
+        {
+          "ItemType": "labor",
+          "PlanItemId": "FIELD",
+          "Item": "NLBRT",
+          "PatternId": 0
+        },
+        {
+          "ItemType": "labor",
+          "PlanItemId": "GROUT",
+          "Item": "NLBRTS",
+          "PatternId": 0
+        },
+        {
+          "ItemType": "Labor",
+          "PlanItemId": "Pat",
+          "Item": "PAT",
+          "PatternId": 1826
+        },
+        {
+          "ItemType": "labor",
+          "PlanItemId": "TRIM",
+          "Item": "NLBRLF",
+          "PatternId": 0
+        },
+        {
+          "ItemType": "labor",
+          "PlanItemId": "UNDERLAYMENT",
+          "Item": "",
+          "PatternId": 0
+        },
+        {
+          "ItemType": "material",
+          "PlanItemId": "FIELD",
+          "Item": "6ARCH12/AR42",
+          "PatternId": 1826
+        },
+        {
+          "ItemType": "material",
+          "PlanItemId": "GROUT",
+          "Item": "TCUSTGRT/640",
+          "PatternId": 0
+        },
+        {
+          "ItemType": "material",
+          "PlanItemId": "TRIM",
+          "Item": "6JOST/ATGB80",
+          "PatternId": 0
+        },
+        {
+          "ItemType": "material",
+          "PlanItemId": "UNDERLAYMENT",
+          "Item": "",
+          "PatternId": 0
+        }
+      ]
+    },
+    {
+      "BuildId": 1004880417,
+      "ApplicationId": "10",
+      "ProductId": "Y",
+      "AreaId": "WHOLE",
+      "SubAreaId": "CAB",
+      "LocationId": 1,
+      "BomLines": [
+        {
+          "ItemType": "labor",
+          "PlanItemId": "FIELD",
+          "Item": "NLBRY",
+          "PatternId": 0
+        },
+        {
+          "ItemType": "material",
+          "PlanItemId": "FIELD",
+          "Item": "YTCBSM/COG",
+          "PatternId": 0
+        }
+      ]
+    },
+    {
+      "BuildId": 1004880420,
+      "ApplicationId": "2",
+      "ProductId": "O",
+      "AreaId": "BTH2",
+      "SubAreaId": "CT",
+      "LocationId": 1,
+      "BomLines": [
+        {
+          "ItemType": "labor",
+          "PlanItemId": "EDGE",
+          "Item": "Bevel",
+          "PatternId": 0
+        },
+        {
+          "ItemType": "labor",
+          "PlanItemId": "FIELD",
+          "Item": "NLBRO",
+          "PatternId": 0
+        },
+        {
+          "ItemType": "labor",
+          "PlanItemId": "SINK",
+          "Item": "USINK",
+          "PatternId": 0
+        },
+        {
+          "ItemType": "Material",
+          "PlanItemId": "credit",
+          "Item": "",
+          "PatternId": 0
+        },
+        {
+          "ItemType": "material",
+          "PlanItemId": "FIELD",
+          "Item": "O3CMQuartz/BIL",
+          "PatternId": 0
+        },
+        {
+          "ItemType": "material",
+          "PlanItemId": "SINK",
+          "Item": "OMSI2015/WH",
+          "PatternId": 0
+        }
+      ]
+    },
+    {
+      "BuildId": 1004880422,
+      "ApplicationId": "2",
+      "ProductId": "O",
+      "AreaId": "KITCHN",
+      "SubAreaId": "CT",
+      "LocationId": 1,
+      "BomLines": [
+        {
+          "ItemType": "labor",
+          "PlanItemId": "EDGE",
+          "Item": "Bevel",
+          "PatternId": 0
+        },
+        {
+          "ItemType": "labor",
+          "PlanItemId": "FIELD",
+          "Item": "NLBRO",
+          "PatternId": 0
+        },
+        {
+          "ItemType": "labor",
+          "PlanItemId": "SINK",
+          "Item": "USINK",
+          "PatternId": 0
+        },
+        {
+          "ItemType": "labor",
+          "PlanItemId": "WATEDG",
+          "Item": "NLBRO",
+          "PatternId": 0
+        },
+        {
+          "ItemType": "Material",
+          "PlanItemId": "credit",
+          "Item": "",
+          "PatternId": 0
+        },
+        {
+          "ItemType": "material",
+          "PlanItemId": "FIELD",
+          "Item": "O3CMGR/VN",
+          "PatternId": 0
+        },
+        {
+          "ItemType": "material",
+          "PlanItemId": "SINK",
+          "Item": "OBDEDU/440185",
+          "PatternId": 0
+        },
+        {
+          "ItemType": "material",
+          "PlanItemId": "WATEDG",
+          "Item": "OAPRON/na",
+          "PatternId": 0
+        }
+      ]
+    },
+    {
+      "BuildId": 1004880424,
+      "ApplicationId": "2",
+      "ProductId": "O",
+      "AreaId": "PRMBTH",
+      "SubAreaId": "CT",
+      "LocationId": 1,
+      "BomLines": [
+        {
+          "ItemType": "labor",
+          "PlanItemId": "EDGE",
+          "Item": "E15SQ",
+          "PatternId": 0
+        },
+        {
+          "ItemType": "labor",
+          "PlanItemId": "FIELD",
+          "Item": "NLBRO",
+          "PatternId": 0
+        },
+        {
+          "ItemType": "labor",
+          "PlanItemId": "SINK",
+          "Item": "USINK",
+          "PatternId": 0
+        },
+        {
+          "ItemType": "Material",
+          "PlanItemId": "credit",
+          "Item": "",
+          "PatternId": 0
+        },
+        {
+          "ItemType": "material",
+          "PlanItemId": "FIELD",
+          "Item": "O3CMGR/DALW",
+          "PatternId": 0
+        },
+        {
+          "ItemType": "material",
+          "PlanItemId": "SINK",
+          "Item": "OMSI1714/WH",
+          "PatternId": 0
+        }
+      ]
+    },
+    {
+      "BuildId": 1004880383,
+      "ApplicationId": "1",
+      "ProductId": "1",
+      "AreaId": "WHOLE",
+      "SubAreaId": "NONE",
+      "LocationId": 1,
+      "BomLines": [
+        {
+          "ItemType": "labor",
+          "PlanItemId": "FIELD",
+          "Item": "NLBRC",
+          "PatternId": 0
+        },
+        {
+          "ItemType": "labor",
+          "PlanItemId": "UNDERLAYMENT",
+          "Item": "NLBRC",
+          "PatternId": 0
+        },
+        {
+          "ItemType": "Material",
+          "PlanItemId": "credit",
+          "Item": "",
+          "PatternId": 0
+        },
+        {
+          "ItemType": "material",
+          "PlanItemId": "FIELD",
+          "Item": "1501TM/00105",
+          "PatternId": 0
+        },
+        {
+          "ItemType": "material",
+          "PlanItemId": "UNDERLAYMENT",
+          "Item": "1128bl/1/28LB",
+          "PatternId": 0
+        }
+      ]
+    },
+    {
+      "BuildId": 1004884179,
+      "ApplicationId": "1",
+      "ProductId": "1",
+      "AreaId": "BED2",
+      "SubAreaId": "NONE",
+      "LocationId": 1,
+      "BomLines": [
+        {
+          "ItemType": "labor",
+          "PlanItemId": "FIELD",
+          "Item": "NLBRC",
+          "PatternId": 0
+        },
+        {
+          "ItemType": "labor",
+          "PlanItemId": "UNDERLAYMENT",
+          "Item": "NLBRC",
+          "PatternId": 0
+        },
+        {
+          "ItemType": "Material",
+          "PlanItemId": "credit",
+          "Item": "",
+          "PatternId": 0
+        },
+        {
+          "ItemType": "material",
+          "PlanItemId": "FIELD",
+          "Item": "1501TM/00105",
+          "PatternId": 0
+        },
+        {
+          "ItemType": "material",
+          "PlanItemId": "UNDERLAYMENT",
+          "Item": "1128bl/1/28LB",
+          "PatternId": 0
+        }
+      ]
+    },
+    {
+      "BuildId": 1004880411,
+      "ApplicationId": "1",
+      "ProductId": "L",
+      "AreaId": "KITCHN",
+      "SubAreaId": "NONE",
+      "LocationId": 1,
+      "BomLines": [
+        {
+          "ItemType": "labor",
+          "PlanItemId": "FIELD",
+          "Item": "NLL",
+          "PatternId": 0
+        },
+        {
+          "ItemType": "Material",
+          "PlanItemId": "credit",
+          "Item": "",
+          "PatternId": 0
+        },
+        {
+          "ItemType": "material",
+          "PlanItemId": "FIELD",
+          "Item": "L33576/04",
+          "PatternId": 0
+        }
+      ]
+    },
+    {
+      "BuildId": 1004880393,
+      "ApplicationId": "1",
+      "ProductId": "6",
+      "AreaId": "BTH2",
+      "SubAreaId": "NONE",
+      "LocationId": 1,
+      "BomLines": [
+        {
+          "ItemType": "labor",
+          "PlanItemId": "FIELD",
+          "Item": "NLBRT",
+          "PatternId": 0
+        },
+        {
+          "ItemType": "labor",
+          "PlanItemId": "GROUT",
+          "Item": "NLBRTS",
+          "PatternId": 0
+        },
+        {
+          "ItemType": "Labor",
+          "PlanItemId": "Pat",
+          "Item": "PAT",
+          "PatternId": 1800
+        },
+        {
+          "ItemType": "labor",
+          "PlanItemId": "UNDERLAYMENT",
+          "Item": "",
+          "PatternId": 0
+        },
+        {
+          "ItemType": "Material",
+          "PlanItemId": "credit",
+          "Item": "",
+          "PatternId": 0
+        },
+        {
+          "ItemType": "material",
+          "PlanItemId": "FIELD",
+          "Item": "6CFC1212/AR02",
+          "PatternId": 1800
+        },
+        {
+          "ItemType": "material",
+          "PlanItemId": "GROUT",
+          "Item": "TCUSTGRT/10",
+          "PatternId": 0
+        },
+        {
+          "ItemType": "material",
+          "PlanItemId": "UNDERLAYMENT",
+          "Item": "",
+          "PatternId": 0
+        }
+      ]
+    },
+    {
+      "BuildId": 1004880392,
+      "ApplicationId": "1",
+      "ProductId": "6",
+      "AreaId": "BSMNTBTH",
+      "SubAreaId": "NONE",
+      "LocationId": 6,
+      "BomLines": [
+        {
+          "ItemType": "labor",
+          "PlanItemId": "FIELD",
+          "Item": "NLBRT",
+          "PatternId": 0
+        },
+        {
+          "ItemType": "labor",
+          "PlanItemId": "GROUT",
+          "Item": "NLBRTS",
+          "PatternId": 0
+        },
+        {
+          "ItemType": "Labor",
+          "PlanItemId": "Pat",
+          "Item": "PAT",
+          "PatternId": 1800
+        },
+        {
+          "ItemType": "Material",
+          "PlanItemId": "credit",
+          "Item": "",
+          "PatternId": 0
+        },
+        {
+          "ItemType": "material",
+          "PlanItemId": "FIELD",
+          "Item": "6CFC1212/AR02",
+          "PatternId": 1800
+        },
+        {
+          "ItemType": "material",
+          "PlanItemId": "GROUT",
+          "Item": "TCUSTGRT/642",
+          "PatternId": 0
+        },
+        {
+          "ItemType": "Material",
+          "PlanItemId": "incorrect_price_credit",
+          "Item": "Incorrect Price",
+          "PatternId": 0
+        }
+      ]
+    },
+    {
+      "BuildId": 1004881043,
+      "ApplicationId": "1",
+      "ProductId": "6",
+      "AreaId": "PRMBTH2",
+      "SubAreaId": "NONE",
+      "LocationId": 1,
+      "BomLines": [
+        {
+          "ItemType": "labor",
+          "PlanItemId": "FIELD",
+          "Item": "NLBRT",
+          "PatternId": 0
+        },
+        {
+          "ItemType": "labor",
+          "PlanItemId": "GROUT",
+          "Item": "NLBRTS",
+          "PatternId": 0
+        },
+        {
+          "ItemType": "Labor",
+          "PlanItemId": "Pat",
+          "Item": "PAT",
+          "PatternId": 1800
+        },
+        {
+          "ItemType": "labor",
+          "PlanItemId": "UNDERLAYMENT",
+          "Item": "",
+          "PatternId": 0
+        },
+        {
+          "ItemType": "Material",
+          "PlanItemId": "credit",
+          "Item": "",
+          "PatternId": 0
+        },
+        {
+          "ItemType": "material",
+          "PlanItemId": "FIELD",
+          "Item": "6CBR12/CS20",
+          "PatternId": 1800
+        },
+        {
+          "ItemType": "material",
+          "PlanItemId": "GROUT",
+          "Item": "TCUSTGRT/640",
+          "PatternId": 0
+        },
+        {
+          "ItemType": "material",
+          "PlanItemId": "UNDERLAYMENT",
+          "Item": "",
+          "PatternId": 0
+        }
+      ]
+    },
+    {
+      "BuildId": 1004884182,
+      "ApplicationId": "1",
+      "ProductId": "7",
+      "AreaId": "BED2",
+      "SubAreaId": "NONE",
+      "LocationId": 1,
+      "BomLines": [
+        {
+          "ItemType": "labor",
+          "PlanItemId": "FIELD",
+          "Item": "IAM",
+          "PatternId": 0
+        },
+        {
+          "ItemType": "Material",
+          "PlanItemId": "credit",
+          "Item": "",
+          "PatternId": 0
+        },
+        {
+          "ItemType": "material",
+          "PlanItemId": "FIELD",
+          "Item": "7551TM/05091",
+          "PatternId": 0
+        }
+      ]
+    },
+    {
+      "BuildId": 1004880405,
+      "ApplicationId": "1",
+      "ProductId": "7",
+      "AreaId": "OENT",
+      "SubAreaId": "NONE",
+      "LocationId": 1,
+      "BomLines": [
+        {
+          "ItemType": "labor",
+          "PlanItemId": "FIELD",
+          "Item": "IAM",
+          "PatternId": 0
+        },
+        {
+          "ItemType": "Material",
+          "PlanItemId": "credit",
+          "Item": "",
+          "PatternId": 0
+        },
+        {
+          "ItemType": "material",
+          "PlanItemId": "FIELD",
+          "Item": "7551TM/05091",
+          "PatternId": 0
+        }
+      ]
+    },
+    {
+      "BuildId": 1004884192,
+      "ApplicationId": "1",
+      "ProductId": "7",
+      "AreaId": "PRMBD",
+      "SubAreaId": "NONE",
+      "LocationId": 1,
+      "BomLines": [
+        {
+          "ItemType": "labor",
+          "PlanItemId": "FIELD",
+          "Item": "IAM",
+          "PatternId": 0
+        },
+        {
+          "ItemType": "Material",
+          "PlanItemId": "credit",
+          "Item": "",
+          "PatternId": 0
+        },
+        {
+          "ItemType": "material",
+          "PlanItemId": "FIELD",
+          "Item": "7551TM/05091",
+          "PatternId": 0
+        }
+      ]
+    },
+    {
+      "BuildId": 1004880385,
+      "ApplicationId": "1",
+      "ProductId": "3",
+      "AreaId": "ENT",
+      "SubAreaId": "NONE",
+      "LocationId": 1,
+      "BomLines": [
+        {
+          "ItemType": "labor",
+          "PlanItemId": "FIELD",
+          "Item": "NLBRW",
+          "PatternId": 0
+        },
+        {
+          "ItemType": "Material",
+          "PlanItemId": "credit",
+          "Item": "",
+          "PatternId": 0
+        },
+        {
+          "ItemType": "material",
+          "PlanItemId": "FIELD",
+          "Item": "3SBH/7036",
+          "PatternId": 0
+        }
+      ]
+    },
+    {
+      "BuildId": 1004880425,
+      "ApplicationId": "24",
+      "ProductId": "6",
+      "AreaId": "PRMBTH",
+      "SubAreaId": "SF",
+      "LocationId": 1,
+      "BomLines": [
+        {
+          "ItemType": "labor",
+          "PlanItemId": "DRAIN",
+          "Item": "NLBREA",
+          "PatternId": 0
+        },
+        {
+          "ItemType": "labor",
+          "PlanItemId": "FIELD",
+          "Item": "NLBRT",
+          "PatternId": 0
+        },
+        {
+          "ItemType": "labor",
+          "PlanItemId": "GROUT",
+          "Item": "NLBRTS",
+          "PatternId": 0
+        },
+        {
+          "ItemType": "material",
+          "PlanItemId": "DRAIN",
+          "Item": "6SCHDR/DE",
+          "PatternId": 0
+        },
+        {
+          "ItemType": "material",
+          "PlanItemId": "FIELD",
+          "Item": "6CFA24BJM/AQ02",
+          "PatternId": 0
+        },
+        {
+          "ItemType": "material",
+          "PlanItemId": "GROUT",
+          "Item": "TCUSTGRT/10",
+          "PatternId": 0
+        }
+      ]
+    },
+    {
+      "BuildId": 1004880434,
+      "ApplicationId": "3",
+      "ProductId": "6",
+      "AreaId": "PRMBTH",
+      "SubAreaId": "SS",
+      "LocationId": 1,
+      "BomLines": [
+        {
+          "ItemType": "labor",
+          "PlanItemId": "CADDY",
+          "Item": "NLBREA",
+          "PatternId": 0
+        },
+        {
+          "ItemType": "labor",
+          "PlanItemId": "CADDY2",
+          "Item": "NLBREA",
+          "PatternId": 0
+        },
+        {
+          "ItemType": "labor",
+          "PlanItemId": "FIELD",
+          "Item": "NLBRT",
+          "PatternId": 0
+        },
+        {
+          "ItemType": "labor",
+          "PlanItemId": "GROUT",
+          "Item": "NLBRTS",
+          "PatternId": 0
+        },
+        {
+          "ItemType": "Labor",
+          "PlanItemId": "Pat",
+          "Item": "PAT2",
+          "PatternId": 1856
+        },
+        {
+          "ItemType": "labor",
+          "PlanItemId": "SOAP",
+          "Item": "NLBREA",
+          "PatternId": 0
+        },
+        {
+          "ItemType": "labor",
+          "PlanItemId": "SOAP2",
+          "Item": "NLBREA",
+          "PatternId": 0
+        },
+        {
+          "ItemType": "labor",
+          "PlanItemId": "TRIM",
+          "Item": "NLBRLF",
+          "PatternId": 0
+        },
+        {
+          "ItemType": "Material",
+          "PlanItemId": "Accent LF",
+          "Item": "6ARCH12/AR40",
+          "PatternId": 1856
+        },
+        {
+          "ItemType": "material",
+          "PlanItemId": "CADDY",
+          "Item": "6StSHF/5111",
+          "PatternId": 0
+        },
+        {
+          "ItemType": "material",
+          "PlanItemId": "CADDY2",
+          "Item": "6StSHF/NONE",
+          "PatternId": 0
+        },
+        {
+          "ItemType": "Material",
+          "PlanItemId": "credit",
+          "Item": "",
+          "PatternId": 0
+        },
+        {
+          "ItemType": "material",
+          "PlanItemId": "FIELD",
+          "Item": "6CFA1212/EP20",
+          "PatternId": 1856
+        },
+        {
+          "ItemType": "material",
+          "PlanItemId": "GROUT",
+          "Item": "TCUSTGRT/333",
+          "PatternId": 0
+        },
+        {
+          "ItemType": "material",
+          "PlanItemId": "SOAP",
+          "Item": "6913/0100",
+          "PatternId": 0
+        },
+        {
+          "ItemType": "material",
+          "PlanItemId": "SOAP2",
+          "Item": "6913/None",
+          "PatternId": 0
+        },
+        {
+          "ItemType": "material",
+          "PlanItemId": "TRIM",
+          "Item": "6JOST/BW80",
+          "PatternId": 0
+        }
+      ]
+    }
+  ]
+}

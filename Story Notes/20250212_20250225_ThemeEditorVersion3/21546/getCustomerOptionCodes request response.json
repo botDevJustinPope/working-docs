@@ -1,0 +1,853 @@
+[
+  {
+    "buildId": 1004880418,
+    "bomLines": [
+      {
+        "optionCodes": [],
+        "itemType": "labor",
+        "planItemId": "FIELD",
+        "item": "NLBRT",
+        "patternId": 0
+      },
+      {
+        "optionCodes": [],
+        "itemType": "labor",
+        "planItemId": "GROUT",
+        "item": "NLBRTS",
+        "patternId": 0
+      },
+      {
+        "optionCodes": [],
+        "itemType": "Labor",
+        "planItemId": "Pat",
+        "item": "PAT",
+        "patternId": 1826
+      },
+      {
+        "optionCodes": [],
+        "itemType": "labor",
+        "planItemId": "TRIM",
+        "item": "NLBRLF",
+        "patternId": 0
+      },
+      {
+        "optionCodes": [],
+        "itemType": "labor",
+        "planItemId": "UNDERLAYMENT",
+        "item": "",
+        "patternId": 0
+      },
+      {
+        "optionCodes": [],
+        "itemType": "material",
+        "planItemId": "FIELD",
+        "item": "6ARCH12/AR42",
+        "patternId": 1826
+      },
+      {
+        "optionCodes": [],
+        "itemType": "material",
+        "planItemId": "GROUT",
+        "item": "TCUSTGRT/640",
+        "patternId": 0
+      },
+      {
+        "optionCodes": [],
+        "itemType": "material",
+        "planItemId": "TRIM",
+        "item": "6JOST/ATGB80",
+        "patternId": 0
+      },
+      {
+        "optionCodes": [],
+        "itemType": "material",
+        "planItemId": "UNDERLAYMENT",
+        "item": "",
+        "patternId": 0
+      }
+    ],
+    "optionCodes": []
+  },
+  {
+    "buildId": 1004880417,
+    "bomLines": [
+      {
+        "optionCodes": [
+          { "codeCategory": "Spec Area Opt Code", "code": "CABST" },
+          { "codeCategory": "Customer Area", "code": "CABST" }
+        ],
+        "itemType": "labor",
+        "planItemId": "FIELD",
+        "item": "NLBRY",
+        "patternId": 0
+      },
+      {
+        "optionCodes": [
+          { "codeCategory": "Spec Area Opt Code", "code": "CABST" },
+          { "codeCategory": "Customer Area", "code": "CABST" }
+        ],
+        "itemType": "material",
+        "planItemId": "FIELD",
+        "item": "YTCBSM/COG",
+        "patternId": 0
+      }
+    ],
+    "optionCodes": [
+      { "codeCategory": "Structural Option (Builder)", "code": "CABST" }
+    ]
+  },
+  {
+    "buildId": 1004880420,
+    "bomLines": [
+      {
+        "optionCodes": [
+          { "codeCategory": "Spec Selection Labor", "code": "edge2" }
+        ],
+        "itemType": "labor",
+        "planItemId": "EDGE",
+        "item": "Bevel",
+        "patternId": 0
+      },
+      {
+        "optionCodes": [],
+        "itemType": "labor",
+        "planItemId": "FIELD",
+        "item": "NLBRO",
+        "patternId": 0
+      },
+      {
+        "optionCodes": [],
+        "itemType": "labor",
+        "planItemId": "SINK",
+        "item": "USINK",
+        "patternId": 0
+      },
+      {
+        "optionCodes": [],
+        "itemType": "Material",
+        "planItemId": "credit",
+        "item": "",
+        "patternId": 0
+      },
+      {
+        "optionCodes": [
+          { "codeCategory": "Spec Selection Group", "code": "CUSCNTPST00" }
+        ],
+        "itemType": "material",
+        "planItemId": "FIELD",
+        "item": "O3CMQuartz/BIL",
+        "patternId": 0
+      },
+      {
+        "optionCodes": [],
+        "itemType": "material",
+        "planItemId": "SINK",
+        "item": "OMSI2015/WH",
+        "patternId": 0
+      }
+    ],
+    "optionCodes": []
+  },
+  {
+    "buildId": 1004880422,
+    "bomLines": [
+      {
+        "optionCodes": [
+          { "codeCategory": "Spec Selection Labor", "code": "edge2" }
+        ],
+        "itemType": "labor",
+        "planItemId": "EDGE",
+        "item": "Bevel",
+        "patternId": 0
+      },
+      {
+        "optionCodes": [],
+        "itemType": "labor",
+        "planItemId": "FIELD",
+        "item": "NLBRO",
+        "patternId": 0
+      },
+      {
+        "optionCodes": [],
+        "itemType": "labor",
+        "planItemId": "SINK",
+        "item": "USINK",
+        "patternId": 0
+      },
+      {
+        "optionCodes": [],
+        "itemType": "labor",
+        "planItemId": "WATEDG",
+        "item": "NLBRO",
+        "patternId": 0
+      },
+      {
+        "optionCodes": [],
+        "itemType": "Material",
+        "planItemId": "credit",
+        "item": "",
+        "patternId": 0
+      },
+      {
+        "optionCodes": [],
+        "itemType": "material",
+        "planItemId": "FIELD",
+        "item": "O3CMGR/VN",
+        "patternId": 0
+      },
+      {
+        "optionCodes": [],
+        "itemType": "material",
+        "planItemId": "SINK",
+        "item": "OBDEDU/440185",
+        "patternId": 0
+      },
+      {
+        "optionCodes": [],
+        "itemType": "material",
+        "planItemId": "WATEDG",
+        "item": "OAPRON/na",
+        "patternId": 0
+      }
+    ],
+    "optionCodes": []
+  },
+  {
+    "buildId": 1004880424,
+    "bomLines": [
+      {
+        "optionCodes": [],
+        "itemType": "labor",
+        "planItemId": "EDGE",
+        "item": "E15SQ",
+        "patternId": 0
+      },
+      {
+        "optionCodes": [],
+        "itemType": "labor",
+        "planItemId": "FIELD",
+        "item": "NLBRO",
+        "patternId": 0
+      },
+      {
+        "optionCodes": [],
+        "itemType": "labor",
+        "planItemId": "SINK",
+        "item": "USINK",
+        "patternId": 0
+      },
+      {
+        "optionCodes": [],
+        "itemType": "Material",
+        "planItemId": "credit",
+        "item": "",
+        "patternId": 0
+      },
+      {
+        "optionCodes": [
+          { "codeCategory": "Spec Selection Group", "code": "CUSCNTPGR00" }
+        ],
+        "itemType": "material",
+        "planItemId": "FIELD",
+        "item": "O3CMGR/DALW",
+        "patternId": 0
+      },
+      {
+        "optionCodes": [],
+        "itemType": "material",
+        "planItemId": "SINK",
+        "item": "OMSI1714/WH",
+        "patternId": 0
+      }
+    ],
+    "optionCodes": []
+  },
+  {
+    "buildId": 1004880383,
+    "bomLines": [
+      {
+        "optionCodes": [],
+        "itemType": "labor",
+        "planItemId": "FIELD",
+        "item": "NLBRC",
+        "patternId": 0
+      },
+      {
+        "optionCodes": [],
+        "itemType": "labor",
+        "planItemId": "UNDERLAYMENT",
+        "item": "NLBRC",
+        "patternId": 0
+      },
+      {
+        "optionCodes": [],
+        "itemType": "Material",
+        "planItemId": "credit",
+        "item": "",
+        "patternId": 0
+      },
+      {
+        "optionCodes": [
+          { "codeCategory": "Spec Selection Group", "code": "CUSFL000000" }
+        ],
+        "itemType": "material",
+        "planItemId": "FIELD",
+        "item": "1501TM/00105",
+        "patternId": 0
+      },
+      {
+        "optionCodes": [],
+        "itemType": "material",
+        "planItemId": "UNDERLAYMENT",
+        "item": "1128bl/1/28LB",
+        "patternId": 0
+      }
+    ],
+    "optionCodes": []
+  },
+  {
+    "buildId": 1004884179,
+    "bomLines": [
+      {
+        "optionCodes": [],
+        "itemType": "labor",
+        "planItemId": "FIELD",
+        "item": "NLBRC",
+        "patternId": 0
+      },
+      {
+        "optionCodes": [],
+        "itemType": "labor",
+        "planItemId": "UNDERLAYMENT",
+        "item": "NLBRC",
+        "patternId": 0
+      },
+      {
+        "optionCodes": [],
+        "itemType": "Material",
+        "planItemId": "credit",
+        "item": "",
+        "patternId": 0
+      },
+      {
+        "optionCodes": [
+          { "codeCategory": "Spec Selection Group", "code": "CUSFL000000" }
+        ],
+        "itemType": "material",
+        "planItemId": "FIELD",
+        "item": "1501TM/00105",
+        "patternId": 0
+      },
+      {
+        "optionCodes": [],
+        "itemType": "material",
+        "planItemId": "UNDERLAYMENT",
+        "item": "1128bl/1/28LB",
+        "patternId": 0
+      }
+    ],
+    "optionCodes": []
+  },
+  {
+    "buildId": 1004880411,
+    "bomLines": [
+      {
+        "optionCodes": [],
+        "itemType": "labor",
+        "planItemId": "FIELD",
+        "item": "NLL",
+        "patternId": 0
+      },
+      {
+        "optionCodes": [],
+        "itemType": "Material",
+        "planItemId": "credit",
+        "item": "",
+        "patternId": 0
+      },
+      {
+        "optionCodes": [
+          { "codeCategory": "Spec Selection Group", "code": "CUSFLLMMK001" }
+        ],
+        "itemType": "material",
+        "planItemId": "FIELD",
+        "item": "L33576/04",
+        "patternId": 0
+      }
+    ],
+    "optionCodes": []
+  },
+  {
+    "buildId": 1004880393,
+    "bomLines": [
+      {
+        "optionCodes": [],
+        "itemType": "labor",
+        "planItemId": "FIELD",
+        "item": "NLBRT",
+        "patternId": 0
+      },
+      {
+        "optionCodes": [],
+        "itemType": "labor",
+        "planItemId": "GROUT",
+        "item": "NLBRTS",
+        "patternId": 0
+      },
+      {
+        "optionCodes": [],
+        "itemType": "Labor",
+        "planItemId": "Pat",
+        "item": "PAT",
+        "patternId": 1800
+      },
+      {
+        "optionCodes": [],
+        "itemType": "labor",
+        "planItemId": "UNDERLAYMENT",
+        "item": "",
+        "patternId": 0
+      },
+      {
+        "optionCodes": [],
+        "itemType": "Material",
+        "planItemId": "credit",
+        "item": "",
+        "patternId": 0
+      },
+      {
+        "optionCodes": [
+          { "codeCategory": "Spec Selection Group", "code": "CUSFL000000" }
+        ],
+        "itemType": "material",
+        "planItemId": "FIELD",
+        "item": "6CFC1212/AR02",
+        "patternId": 1800
+      },
+      {
+        "optionCodes": [],
+        "itemType": "material",
+        "planItemId": "GROUT",
+        "item": "TCUSTGRT/10",
+        "patternId": 0
+      },
+      {
+        "optionCodes": [],
+        "itemType": "material",
+        "planItemId": "UNDERLAYMENT",
+        "item": "",
+        "patternId": 0
+      }
+    ],
+    "optionCodes": []
+  },
+  {
+    "buildId": 1004880392,
+    "bomLines": [
+      {
+        "optionCodes": [],
+        "itemType": "labor",
+        "planItemId": "FIELD",
+        "item": "NLBRT",
+        "patternId": 0
+      },
+      {
+        "optionCodes": [],
+        "itemType": "labor",
+        "planItemId": "GROUT",
+        "item": "NLBRTS",
+        "patternId": 0
+      },
+      {
+        "optionCodes": [],
+        "itemType": "Labor",
+        "planItemId": "Pat",
+        "item": "PAT",
+        "patternId": 1800
+      },
+      {
+        "optionCodes": [],
+        "itemType": "Material",
+        "planItemId": "credit",
+        "item": "",
+        "patternId": 0
+      },
+      {
+        "optionCodes": [
+          { "codeCategory": "Spec Selection Group", "code": "CUSFL000000" }
+        ],
+        "itemType": "material",
+        "planItemId": "FIELD",
+        "item": "6CFC1212/AR02",
+        "patternId": 1800
+      },
+      {
+        "optionCodes": [],
+        "itemType": "material",
+        "planItemId": "GROUT",
+        "item": "TCUSTGRT/642",
+        "patternId": 0
+      },
+      {
+        "optionCodes": [],
+        "itemType": "Material",
+        "planItemId": "incorrect_price_credit",
+        "item": "Incorrect Price",
+        "patternId": 0
+      }
+    ],
+    "optionCodes": []
+  },
+  {
+    "buildId": 1004881043,
+    "bomLines": [
+      {
+        "optionCodes": [],
+        "itemType": "labor",
+        "planItemId": "FIELD",
+        "item": "NLBRT",
+        "patternId": 0
+      },
+      {
+        "optionCodes": [],
+        "itemType": "labor",
+        "planItemId": "GROUT",
+        "item": "NLBRTS",
+        "patternId": 0
+      },
+      {
+        "optionCodes": [],
+        "itemType": "Labor",
+        "planItemId": "Pat",
+        "item": "PAT",
+        "patternId": 1800
+      },
+      {
+        "optionCodes": [],
+        "itemType": "labor",
+        "planItemId": "UNDERLAYMENT",
+        "item": "",
+        "patternId": 0
+      },
+      {
+        "optionCodes": [],
+        "itemType": "Material",
+        "planItemId": "credit",
+        "item": "",
+        "patternId": 0
+      },
+      {
+        "optionCodes": [
+          { "codeCategory": "Spec Selection Group", "code": "CUSFLTLDL001" }
+        ],
+        "itemType": "material",
+        "planItemId": "FIELD",
+        "item": "6CBR12/CS20",
+        "patternId": 1800
+      },
+      {
+        "optionCodes": [],
+        "itemType": "material",
+        "planItemId": "GROUT",
+        "item": "TCUSTGRT/640",
+        "patternId": 0
+      },
+      {
+        "optionCodes": [],
+        "itemType": "material",
+        "planItemId": "UNDERLAYMENT",
+        "item": "",
+        "patternId": 0
+      }
+    ],
+    "optionCodes": []
+  },
+  {
+    "buildId": 1004884182,
+    "bomLines": [
+      {
+        "optionCodes": [],
+        "itemType": "labor",
+        "planItemId": "FIELD",
+        "item": "IAM",
+        "patternId": 0
+      },
+      {
+        "optionCodes": [],
+        "itemType": "Material",
+        "planItemId": "credit",
+        "item": "",
+        "patternId": 0
+      },
+      {
+        "optionCodes": [],
+        "itemType": "material",
+        "planItemId": "FIELD",
+        "item": "7551TM/05091",
+        "patternId": 0
+      }
+    ],
+    "optionCodes": []
+  },
+  {
+    "buildId": 1004880405,
+    "bomLines": [
+      {
+        "optionCodes": [],
+        "itemType": "labor",
+        "planItemId": "FIELD",
+        "item": "IAM",
+        "patternId": 0
+      },
+      {
+        "optionCodes": [],
+        "itemType": "Material",
+        "planItemId": "credit",
+        "item": "",
+        "patternId": 0
+      },
+      {
+        "optionCodes": [],
+        "itemType": "material",
+        "planItemId": "FIELD",
+        "item": "7551TM/05091",
+        "patternId": 0
+      }
+    ],
+    "optionCodes": []
+  },
+  {
+    "buildId": 1004884192,
+    "bomLines": [
+      {
+        "optionCodes": [],
+        "itemType": "labor",
+        "planItemId": "FIELD",
+        "item": "IAM",
+        "patternId": 0
+      },
+      {
+        "optionCodes": [],
+        "itemType": "Material",
+        "planItemId": "credit",
+        "item": "",
+        "patternId": 0
+      },
+      {
+        "optionCodes": [],
+        "itemType": "material",
+        "planItemId": "FIELD",
+        "item": "7551TM/05091",
+        "patternId": 0
+      }
+    ],
+    "optionCodes": []
+  },
+  {
+    "buildId": 1004880385,
+    "bomLines": [
+      {
+        "optionCodes": [
+          { "codeCategory": "Spec Material", "code": "CUSFLHWSH001" }
+        ],
+        "itemType": "labor",
+        "planItemId": "FIELD",
+        "item": "NLBRW",
+        "patternId": 0
+      },
+      {
+        "optionCodes": [
+          { "codeCategory": "Spec Material", "code": "CUSFLHWSH001" }
+        ],
+        "itemType": "Material",
+        "planItemId": "credit",
+        "item": "",
+        "patternId": 0
+      },
+      {
+        "optionCodes": [
+          { "codeCategory": "Spec Material", "code": "CUSFLHWSH001" },
+          { "codeCategory": "Customer Selection Group", "code": "CUSFLHWSH001" }
+        ],
+        "itemType": "material",
+        "planItemId": "FIELD",
+        "item": "3SBH/7036",
+        "patternId": 0
+      }
+    ],
+    "optionCodes": []
+  },
+  {
+    "buildId": 1004880425,
+    "bomLines": [
+      {
+        "optionCodes": [],
+        "itemType": "labor",
+        "planItemId": "DRAIN",
+        "item": "NLBREA",
+        "patternId": 0
+      },
+      {
+        "optionCodes": [],
+        "itemType": "labor",
+        "planItemId": "FIELD",
+        "item": "NLBRT",
+        "patternId": 0
+      },
+      {
+        "optionCodes": [],
+        "itemType": "labor",
+        "planItemId": "GROUT",
+        "item": "NLBRTS",
+        "patternId": 0
+      },
+      {
+        "optionCodes": [],
+        "itemType": "material",
+        "planItemId": "DRAIN",
+        "item": "6SCHDR/DE",
+        "patternId": 0
+      },
+      {
+        "optionCodes": [],
+        "itemType": "material",
+        "planItemId": "FIELD",
+        "item": "6CFA24BJM/AQ02",
+        "patternId": 0
+      },
+      {
+        "optionCodes": [],
+        "itemType": "material",
+        "planItemId": "GROUT",
+        "item": "TCUSTGRT/10",
+        "patternId": 0
+      }
+    ],
+    "optionCodes": []
+  },
+  {
+    "buildId": 1004880434,
+    "bomLines": [
+      {
+        "optionCodes": [],
+        "itemType": "labor",
+        "planItemId": "CADDY",
+        "item": "NLBREA",
+        "patternId": 0
+      },
+      {
+        "optionCodes": [],
+        "itemType": "labor",
+        "planItemId": "CADDY2",
+        "item": "NLBREA",
+        "patternId": 0
+      },
+      {
+        "optionCodes": [],
+        "itemType": "labor",
+        "planItemId": "FIELD",
+        "item": "NLBRT",
+        "patternId": 0
+      },
+      {
+        "optionCodes": [],
+        "itemType": "labor",
+        "planItemId": "GROUT",
+        "item": "NLBRTS",
+        "patternId": 0
+      },
+      {
+        "optionCodes": [],
+        "itemType": "Labor",
+        "planItemId": "Pat",
+        "item": "PAT2",
+        "patternId": 1856
+      },
+      {
+        "optionCodes": [],
+        "itemType": "labor",
+        "planItemId": "SOAP",
+        "item": "NLBREA",
+        "patternId": 0
+      },
+      {
+        "optionCodes": [],
+        "itemType": "labor",
+        "planItemId": "SOAP2",
+        "item": "NLBREA",
+        "patternId": 0
+      },
+      {
+        "optionCodes": [],
+        "itemType": "labor",
+        "planItemId": "TRIM",
+        "item": "NLBRLF",
+        "patternId": 0
+      },
+      {
+        "optionCodes": [],
+        "itemType": "Material",
+        "planItemId": "Accent LF",
+        "item": "6ARCH12/AR40",
+        "patternId": 1856
+      },
+      {
+        "optionCodes": [],
+        "itemType": "material",
+        "planItemId": "CADDY",
+        "item": "6StSHF/5111",
+        "patternId": 0
+      },
+      {
+        "optionCodes": [],
+        "itemType": "material",
+        "planItemId": "CADDY2",
+        "item": "6StSHF/NONE",
+        "patternId": 0
+      },
+      {
+        "optionCodes": [],
+        "itemType": "Material",
+        "planItemId": "credit",
+        "item": "",
+        "patternId": 0
+      },
+      {
+        "optionCodes": [],
+        "itemType": "material",
+        "planItemId": "FIELD",
+        "item": "6CFA1212/EP20",
+        "patternId": 1856
+      },
+      {
+        "optionCodes": [],
+        "itemType": "material",
+        "planItemId": "GROUT",
+        "item": "TCUSTGRT/333",
+        "patternId": 0
+      },
+      {
+        "optionCodes": [],
+        "itemType": "material",
+        "planItemId": "SOAP",
+        "item": "6913/0100",
+        "patternId": 0
+      },
+      {
+        "optionCodes": [],
+        "itemType": "material",
+        "planItemId": "SOAP2",
+        "item": "6913/None",
+        "patternId": 0
+      },
+      {
+        "optionCodes": [],
+        "itemType": "material",
+        "planItemId": "TRIM",
+        "item": "6JOST/BW80",
+        "patternId": 0
+      }
+    ],
+    "optionCodes": []
+  }
+]
