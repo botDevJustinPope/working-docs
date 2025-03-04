@@ -1,0 +1,6 @@
+{
+  "operation": "GetCustomerOptionCodes",
+  "result": "Failure",
+  "payload": "getBomOptionCodes eror: GetItemNumberGroupDetails() error: Could not find stored procedure 'api_getSpecItemGroupDetails'.",
+  "warning": ""
+}
