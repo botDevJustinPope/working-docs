@@ -1,0 +1,268 @@
+
+:root {
+    /* Default theme variables */
+    // button colors
+    --btn-primary: linear-gradient( 0deg, #0e7b50 0, #129d66 100%);
+    --btn-primary-hover: linear-gradient( 0deg, #08492f 0, #0a7c4f 100%);
+    --btn-primary-active: #0c5739;
+    --btn-secondary: linear-gradient( 0deg, #283661 0, #3f5291 100%);
+    --btn-secondary-hover: linear-gradient( 0deg, #1e2a4d 0, #324275 100%);
+    --btn-secondary-active: #23315a;
+    --btn-grouped-current: linear-gradient(to bottom, #1a9565 0, #14714d 100%);
+    --btn-grouped-hover: #233763;
+    --btn-grouped-border: #354d70;
+    --btn-grouped-bg: 1b2743;
+    --btn-completeOrientationStep: #419877;
+    --btn-completeOrientationStep-hover: #4baf91;
+    // select colors
+    --select-top: #efefef;
+    --select-btm: #e2e2e2;
+    // textarea colors
+    --textarea-bg: linear-gradient(to bottom, #eeeeee 0, #ffffff 13%);
+    // switch colors
+    --switch-bg: linear-gradient(to bottom, #387e26 0, #215c16 100%);
+    // table colors
+    --table-header-color: #11915f;
+    // background colors
+    --bg-light-top: #efefef;
+    --bg-light-btm: #d8d8d8;
+    --bg-white: #fff;
+    --bg-light: #f7f7f7;
+    --bg-emphasis: #05a76c;
+    --bg-dark: #1b2743 url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAQElEQVQYV2NkIAIIiCv/ZySkDqTow8u7jHgVwhSBDMOpEFkRToXoirAqxKYIQyEuRSgK8SmCKySkCKyQGEUghQDARSVUweeZjwAAAABJRU5ErkJggg==);
+    --bg-dark-noImage: #1b2743;
+    // text colors
+    --text-darkest: #000;
+    --text-dark: #1f1f1f;
+    --text-light: #fff;
+    --text-menu: #388e5c;
+    --text-copyright: hsl(221, 14%, 60%);
+    --text-primary: #0ABF7D;
+    --text-primary-lighter: #0aca80;
+    --text-primary-alt1: #01B771;
+    --text-disclaimerWelcomeMsg: #6f88ba;
+    // main colors
+    --color-primary: #118e5c;
+    --color-primary-alt1: #047c4d;
+    --color-icon-light: #3bb681; // use on --dark-bg for instance
+    --color-icon-primary: var(--color-primary);
+    // fonts
+    --font-main: 'Lato';
+    // main site header
+    --filter-main-site-header: none;
+    --bg-main-site-header: var(--bg-dark);
+    --color-main-site-header-text-muted: #b9b9b9;
+    --color-main-site-header-text: var(--text-light);
+    --color-main-site-header-vds-logo-color: #fff;
+    --color-icon-signOut: var(--color-icon-primary);
+    --color-icon-training: var(--color-icon-primary);
+    --color-training-text: var(--color-icon-primary);
+    // title bar, main menu
+    --bg-title-bar: var(--bg-light);
+    --color-title-bar-text: var(--text-dark);
+    --bg-menu-inactive: #e8e8e8;
+    --bg-menu-active: #f0f0f0;
+    --bg-cancelImpersonation: hsl(158, 16%, 90%);
+    --bg-userImpersonation-userItem: #eff7f4;
+    --border-left-menu-option-hover: #2f762f;
+    --color-cancelImpersonation: var(--color-primary);
+    --icon-titleBar-mobileMenu-dots: #508e5f;
+    // footer
+    --bg-footer: var(--bg-dark);
+    --bg-footer-contentSupportEmailArea: var(--bg-dark);
+    --bg-footer-contentSupportEmailArea-hover: hsla(206, 100%, 52%, 0.35);
+    --bg-footer-update: rgb(16, 23, 35);
+    --bg-footer-supportEmailQuestionMark: var(--color-icon-primary);
+    --color-footer-update: #e4fff4;
+    --color-footer-helpMenu-item: #23c487;
+    --text-footer-systemMessage: black;
+    // session card
+    --bg-sessionCard: linear-gradient(to bottom, #f2f2f2 0%, #e8e8e8 100%);
+    --bg-sessionCard-confirm: #d2f1dd;
+    --text-sessionCard-primary-1: var(--color-primary-alt1);
+    --text-sessionCard-primary-2: #349055;
+    --font-size-sessionCard-currentStatus: 15px;
+    --color-sessionCard-actionBlock-border: none;
+    --color-sessionCard-actionBlock-title: var(--text-light);
+    --bg-sessionCard-actionBlock: var(--bg-dark);
+    // profile status // TODO: when variablizing "Edit User Profile", consider merging variables
+    --color-profileStatus-other: #12b59d;
+    --color-profileStatus-contracted: #1fab01;
+    --color-profileStatus-complete: #1ea2f3;
+    --color-profileStatus-bustout: #ea3d3d;
+    // homebuyer dashboard
+    --bg-hbDashboard-header: rgba(0,0,0,0.3);
+    --bg-hbDashboard: linear-gradient(to bottom, #efefef 0%, #e8e8e8 100%);
+    --bg-hbDashboard-orientationStep-active: #526993;
+    --bg-hbDashboard-orientationStep-active-light: #93a9d1;
+    --bg-hbDashboard-orientationStep-inactive: #047a4c;
+    --bg-hbDashboard-orientationStep-inactive-light: #92cfb7;
+    --bg-hbDashboard-moduleComplete: #2ea656;
+    --bg-hbDashboard-progressBar: #4aa164;
+    // option pricing
+    --bg-optionPricing-areaHeader: #0a7249;
+    --bg-optionPricing-areaHeader-hover: var(--color-primary);
+    --bg-optionPricing-priceLevel-selected: var(--color-primary);
+    --bg-optionPricing-leftPane: url('../../../Content/images/designselections/bg-designSelection.jpg');
+    --bg-optionPricing-rightPane: var(--bg-dark);
+    --bg-optionPricing-priceLevelHeader: #0f1525;
+    --bg-optionPricing-priceLevelHeader-hover: #4A546D;
+    --bg-optionPricing-selectedCell: #eeffe5;
+    --bg-optionPricing-productSamplesTab-priceLevel-header: var(--bg-dark);
+    --bg-optionPricing-rightPane-disabledTab: var(--bg-dark);
+    --bg-optionPricing-screenToggle: #1e2433;
+    --bg-optionPricing-screenToggle-active: var(--bg-optionPricing-screenToggle);
+    --bg-optionPricing-panelTitle: rgba(0,0,0,.45);
+    --color-optionPricing-rightPane-collapseButton-icon: var(--color-icon-primary);
+    --color-optionPricing-selectionSummary-card-icon: var(--color-icon-primary);
+    --color-optionPricing-areaCard-areaName-text: var(--text-light);
+    --color-optionPricing-screenToggle: #e1e4ea;
+    --color-optionPricing-screenToggle-active: #3dce97;
+    --color-optionPricing-monthlyPayment: hsl(223, 13%, 56%);
+    --color-optionPricing-currentPlanEditButton: var(--text-primary);
+    --color-optionPricing-currentPlanEditButton-icon: var(--color-icon-primary);
+    --color-optionPricing-rightPane-disabledTab-text: #8b94a8;
+    --color-optionPricing-leftPane-applicationProductList-navIcon: var(--color-icon-primary);
+    --border-optionPricing-selectionSummary-card: #4e576f;
+    --border-optionPricing-screenToggle: #8590a1;
+    // design my home
+    --color-dmh-icons-primary: var(--color-icon-primary);
+    --color-dmh-icons-light-on-darkBg: #f0f0f0;
+    --color-dmh-icon-included-product-on-darkBg: #ffc435;
+    --color-dmh-icon-included-product-on-lightBg: #e69012;
+    --color-dmh-text-primary: var(--color-primary);
+    --color-dmh-light-boundary: #e0e0e0;
+    --color-dmh-dark-accent: #293346;
+    --color-dmh-dark-accent-alt-lighter: #4c5f81;
+    --color-dmh-optionMenu-radio-button: #bbb;
+    --color-dmh-optionMenu-tab-title: var(--color-dmh-text-primary);
+    --color-dmh-optionMenu-tab-selected-title: #35d695;
+    --color-dmh-optionMenu-tab-desc: #171717;
+    --color-dmh-optionMenu-tab-selected-desc: #cad8f3;
+    --color-dmh-optionMenu-optionDetailSelections-fullySelectedCheck: var(--color-dmh-icons-light-on-darkBg);
+    --color-dmh-optionMenu-optionDetailSelections-countLabel: #969696;
+    --color-dmh-optionMenu-optionDetailTotal: #a5a2b0;
+    --color-dmh-visualizableIndicator-icon: #fff;
+    --color-dmh-prefMenu-budgetExclamation: #303d52;
+    --color-dmh-prefMenu-prefToggle-top-border: var(--color-dmh-dark-accent);
+    --color-dmh-roomProduct-section-text: #797979;
+    --color-dmh-roomProductIcon: var(--color-dmh-icons-primary);
+    --color-dmh-disclaimer-dialog-community-name: var(--color-dmh-text-primary);
+    --color-dmh-disclaimer-dialog-community-series-plan-text: var(--color-dmh-optionMenu-tab-selected-desc);
+    --color-dmh-visualizer-somethingWentWrong-error-icon: #ff604b;
+    --color-dmh-leftNav-title: #9ea8bb;
+    --color-dmh-leftNav-listItemText: #e3e3e4;
+    --color-dmh-leftNav-listItem-active: var(--color-primary);
+    --color-dmh-materialsTab-text: var(--color-dmh-optionMenu-tab-selected-title);
+    --color-dmh-materialsTab-text-selected: var(--color-dmh-optionMenu-tab-selected-title);
+    --bg-dmh-header: #272f42;
+    --bg-dmh-optionMenu-tab-selected: var(--color-dmh-dark-accent);
+    --bg-dmh-optionMenu-tab-hover: #CCC;
+    --bg-dmh-optionMenu-optionDetailSelections: #f0f0f0;
+    --bg-dmh-optionMenu-optionDetailSelections-fullySelectedCheck: var(--color-dmh-icons-primary);
+    --bg-dmh-visualizableIndicator-light-side: #3b598a;
+    --bg-dmh-visualizableIndicator-dark-side: #2e4365;
+    --bg-dmh-prefMenu-budgetExclamation: #fff886;
+    --bg-dmh-visualizer-exclamation-banner: #ff9018;
+    --bg-dmh-product-list-product-selected: #245854;
+    --bg-dmh-product-filter-dropdown-top: var(--color-dmh-dark-accent);
+    --bg-dmh: url(../../../Content/images/bg-designmyhome.jpg);
+    --bg-dmh-left: url(../../../Content/images/dmh-left-bg.png) no-repeat;
+    --bg-dmh-right: url(../../../Content/images/dmh-right-bg.png) no-repeat;
+    --bg-dmh-topBar: url(../../../Content/images/bg-designmyhome.jpg);
+    --bg-dmh-navMenu-selected: var(--bg-dmh-product-list-product-selected);
+    --bg-dmh-navMenu-close-hover: var(--bg-dmh-product-list-product-selected);
+    --bg-dmh-leftPanel-nav: var(--bg-dark);
+    --filter-dmh-roomProductIcon: brightness(0) saturate(100%) invert(38%) sepia(66%) saturate(920%) hue-rotate(115deg) brightness(91%) contrast(87%); // this equals var(--color-dmh-roomProductIcon); visit an online CSS filter converter to convert between formats
+    // design selections
+    --color-ds-text-primary: var(--color-primary);
+    --color-ds-catalogCard-status-complete: var(--color-ds-text-primary);
+    --color-ds-catalogCard-status-incomplete: #877031;
+    --color-ds-catalogCard-status-error: #bb3838;
+    --color-ds-catalogCard-status-complete-icon: #4caa1d;
+    --color-ds-catalogCard-status-incomplete-icon: #dcb51b;
+    --color-ds-catalogCard-status-error-icon: #bb3838;
+    --color-ds-mobileMenu-item-icon: var(--color-icon-primary);
+    --color-ds-mobileMenu-item-text: #11AD6E;
+    --color-ds-wizard-priceLevelSelector-flag-icon: var(--color-icon-primary);
+    --color-ds-cabinetWizard-priceLevelSelector-flag-icon: #000;
+    --bg-ds-copyAreaSelections-credit: rgb(255, 255, 210);
+    --bg-ds-catalogCard-body-status-complete: #eeffe5;
+    --bg-ds-catalogCard-body-status-incomplete: #fff1c2;
+    --bg-ds-catalogCard-body-status-error: #ffe5e5;
+    --bg-ds-catalogCard-header-status-complete: #eeffe5;
+    --bg-ds-catalogCard-header-status-incomplete: #fff1c2;
+    --bg-ds-catalogCard-header-status-error: #ffe5e5;
+    --bg-ds-catalog-item-document-pagination-inactive-page: var(--bg-light-btm);
+    --bg-ds-catalog-item-field-section-divider: var(--bg-light-btm);
+    --bg-ds-sessionSupportEmail-attachFile: var(--color-dmh-dark-accent-alt-lighter);
+    --bg-ds-leftPane: url('../../../Content/images/designselections/bg-designSelection.jpg');
+    --bg-ds-catalogSearchBar: var(--bg-dark-noImage);
+    --bg-ds-catalogDocumentSelectedIndicator: var(--btn-primary);
+    --bg-ds-mobileMenuLauncher-button: #1b2743 url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAQElEQVQYV2NkIAIIiCv/ZySkDqTow8u7jHgVwhSBDMOpEFkRToXoirAqxKYIQyEuRSgK8SmCKySkCKyQGEUghQDARSVUweeZjwAAAABJRU5ErkJggg==);
+    --bg-ds-mobileMenu-hover: #113561;
+    --bg-ds-mobileMenu: #1b2743 url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAQElEQVQYV2NkIAIIiCv/ZySkDqTow8u7jHgVwhSBDMOpEFkRToXoirAqxKYIQyEuRSgK8SmCKySkCKyQGEUghQDARSVUweeZjwAAAABJRU5ErkJggg==);
+    --border-ds-mobileMenu-item: #324165;
+    --textShadow-ds-navList: 1px 1px 2px black;
+    // plan selector
+    --color-planSelector-selectedPlan: #37aa7d;
+    --bg-planSelector-selectedPlan: linear-gradient(to bottom, rgba(255,255,255,0) 0%,rgba(107,234,183,0.15) 100%);
+    // non-estimated item card
+    --bg-nonEstimatedItemCard-compareIcon: hsla(145, 43%, 39%, 0.85);
+    --bg-nonEstimatedItemCard-compareIcon-close: var(--color-primary);
+    --boxShadowColor-nonEstimatedItemCard-compareIcon: rgb(74, 159, 118);
+    --border-nonEstimatedItemCard-compareIcon-close: hsla(156, 100%, 84%, 0.5);
+    --icon-nonEstimatedItemCard-compareIcon-close: #acffde;
+    --btn-nonEstimatedItem-compare: hsla(156, 76%, 30%, 0.1);
+    // action bar
+    --color-actionBar: #047c4d;
+    --boxShadowColor-actionBar-selected: #b8d4c8;
+    // lifestyle snapshot
+    --color-lifestyle-primary: #2de88e;
+    --bg-lifestyle: url('../../../../Content/images/orientation/bg1.jpg') no-repeat;
+    --bg-lifestyle-button: hsla(151, 67%, 13%, 0.6);
+    --bg-lifestyle-progressBar: linear-gradient(to bottom, var(--color-lifestyle-saturated-dark-4) 0%,var(--color-lifestyle-saturated-dark-2) 84%,var(--color-lifestyle-saturated-light-1) 100%);
+    --bg-image-lifestyle-select: linear-gradient(45deg, transparent 50%, var(--color-lifestyle-primary) 50%), linear-gradient(135deg, var(--color-lifestyle-primary) 50%, transparent 50%), linear-gradient(to right, transparent, transparent);
+    // lifestyle gradients
+    /*
+        The saturated color is taking the --color-lifestyle-primary and coverting it to a hsl then adjusting the saturation to 100% and the lightness to 50%.
+        With hsl colors, lightness is a percentage of white to black. 0% is black, 100% is white.
+        with the convention, 1 - 4 are steps of lightness in the direction that is named.
+            so light-1 is 10% lighter than the saturated color, light-2 is 20% lighter, etc.
+            so dark-1 is 10% darker than the saturated color, dark-2 is 20% darker, etc.
+
+    */
+    --color-lifestyle-saturated-light-4: #ccffeb;
+    --color-lifestyle-saturated-light-3: #99ffd5;
+    --color-lifestyle-saturated-light-2: #66ffbf;
+    --color-lifestyle-saturated-light-1: #33ff9c;
+    --color-lifestyle-saturated: #00ff84;
+    --color-lifestyle-saturated-dark-1: #00cc69;
+    --color-lifestyle-saturated-dark-2: #00994f;
+    --color-lifestyle-saturated-dark-3: #006635;
+    --color-lifestyle-saturated-dark-4: #00331a;
+    // colorGame
+    --color-colorGame-selector: hsla(151, 23%, 44%, 0.6);
+    // banner indicators
+    --color-banner-text: var(--text-darkest);
+    --bg-banner: var(--bg-emphasis);
+    --color-beta-sup: var(--color-primary);
+    // miscellaneous
+    --bg-busyIndicator: var(--bg-dark);
+    --bg-disclaimerCheckbox: #4bac82;
+    --bg-supportEmail-attachFile-button: #34457a;
+    --bg-userRegistration-testUserMessage: #e1efe4;
+    --bg-buyerWelcome-letsGetStarted-button: hsla(150, 45%, 16%, 0.6);
+    --bg-buyerWelcome-letsGetStarted-button-hover: rgba(31, 76, 53, 0.77);
+    --border-budgetItem: #51678c;
+    --color-userRegistration-testUserMessage-text: var(--color-primary);
+    --color-busyIndicator: var(--text-light);
+    --color-wishlist: #e33a3a;
+    --color-unwishlisted: var(--color-icon-primary);
+    --color-notification: #e33a3a;
+    --color-buyerWelcome-letsGetStarted-button: #2de88e;
+    --color-buyerWelcome-maybeLater-button: var(--text-light);
+    --color-selectionsReportOptions-selectedOption: var(--color-primary);
+    --color-selectionsReportOptions-highlightedCategory: #90ee90; // (CSS lightgreen)
+    --boxShadow-selectionsReportOptions-option: #90ee904d;
+}

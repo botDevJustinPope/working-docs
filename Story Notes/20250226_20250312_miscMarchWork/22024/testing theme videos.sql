@@ -6,3 +6,12 @@ values (NEWID(), 'wild', 'DESIGNING_YOUR_HOME', 'https://www.youtube.com/embed/d
 
 
 select * from VeoSolutions_DEV.dbo.ThemeVideoLink
+
+/*
+linear-gradient(90deg, #8B0000 0%, #B22222 25%, #FF0000 50%, #DC143C 75%, #FF6347 100%);
+
+#B22222
+
+*/
+
+select * from VeoSolutions_DEV.dbo.ThemeableVariable
