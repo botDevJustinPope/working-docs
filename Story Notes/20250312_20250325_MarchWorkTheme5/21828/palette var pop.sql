@@ -91,17 +91,18 @@ BEGIN
 							(''172d7dc5-bc78-4fae-9e20-5e0fb874e4a2'', ''palette-gradient-secondary-light'', ''Secondary Gradient Light'', ''A light gradient using the secondary color palette'', ''SEED'', GETDATE(), ''SEED'', GETDATE()),
 							(''d58e99bb-3519-4e0d-bec1-542b29508cae'' ,''palette-gradient-secondary'' ,''Secondary Gradient'' ,''A gradient using the secondary color palette'' ,''SEED'' ,GETDATE() ,''SEED'' ,GETDATE()),
 							(''e1f8b2c3-4d5e-4f6a-8b7c-9d0e1f2a3b4c'', ''palette-gradient-secondary-dark'', ''Secondary Gradient Dark'', ''A dark gradient using the secondary color palette'', ''SEED'', GETDATE(), ''SEED'', GETDATE())
-						) as src (Id, CssName, Name, Description, Author, CreateDate, Modifier, ModifiedDate) ) as source on target.Id = source.Id
+						) as src (Id, CssName, Name, Description, Author, CreateDate, Modifier, ModifiedDate) 
+                        ) as source on target.Id = source.Id
 					WHEN MATCHED THEN
 						UPDATE 
-							SET target.CssName = src.CssName,
-								target.Name = src.Name,
-								target.Description = src.Description,
-								target.Modifier = src.Modifier,
-								target.ModifiedDate = src.ModifiedDate
+							SET target.CssName = source.CssName,
+								target.Name = source.Name,
+								target.Description = source.Description,
+								target.Modifier = source.Modifier,
+								target.ModifiedDate = source.ModifiedDate
 					WHEN NOT MATCHED BY TARGET THEN
 						INSERT (Id, CssName, Name, Description, Author, CreateDate, Modifier, ModifiedDate)
-						VALUES (src.Id, src.CssName, src.Name, src.Description, src.Author, src.CreateDate, src.Modifier, src.ModifiedDate)
+						VALUES (source.Id, source.CssName, source.Name, source.Description, source.Author, source.CreateDate, source.Modifier, source.ModifiedDate)
 					WHEN NOT MATCHED BY SOURCE THEN
 						DELETE;'
 	exec sp_executesql @sql

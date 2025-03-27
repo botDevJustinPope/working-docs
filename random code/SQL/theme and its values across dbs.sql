@@ -1,8 +1,9 @@
-declare @ThemeId UNIQUEIDENTIFIER = '6CFA416D-2EF3-41F0-AB7B-EB503ABD5699';
+declare @ThemeId UNIQUEIDENTIFIER = '10a814cc-bad9-42b3-b7bd-1d0ba438b3b9';
 
 select 
     [base].ThemeId,
     [base].Theme_Name,
+    [base].ThemeableVariableId,
     [base].Variable_Name,
     [dev_values].Value as [Dev_Value],
     [dev_values].modifier as [Dev_Modifier],
@@ -36,7 +37,8 @@ from (
             tv.[CssName] as [Variable_Name]
         from VeoSolutions_DEV.dbo.Theme t
             inner join VeoSolutions_DEV.dbo.ThemeableVariable tv on 1=1
-        where t.Id = @ThemeId ) [base]    
+        where t.Id = @ThemeId
+            and tv.CssName = 'btn-secondary' ) [base]    
     outer APPLY (
         select top 1
             r.[Value],

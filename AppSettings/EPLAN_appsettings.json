@@ -1,0 +1,65 @@
+{
+  "ConnectionStrings": {
+    "YukonConnection": "#{WBS_ConnectionString}#",
+    "VEOInvoicingConnection": "#{WBS_ConnectionString}#",
+    "VEOEchelonConnection": "#{VEO_ConnectionString}#",
+    "VEOSecurityConnection": "#{VeoSolutionsSecurity_ConnectionString}#",
+    "VEOSolutionsConnection": "#{VEOSolutions_ConnectionString}#",
+    "GPCConnection": "#{GPC_ConnectionString}#"
+  },
+  "AppSettings": {
+    "webpagesVersion": "3.0.0.0",
+    "webpagesEnabled": false,
+    "ClientValidationEnabled": true,
+    "UnobtrusiveJavaScriptEnabled": true,
+    "EnableRefreshSession": true,
+    "baseUrl": "#{BaseUrl}#",
+    "baseSchedulerUrl": "#{BaseSchedulerUrl}#",
+    "baseApiUrl": "#{BaseApiUrl}#",
+    "baseGpcUrl": "#{BaseGpcUrl}#",
+    "publicUrl": "#{PinterestPublicUrl}#",
+    "EchelonAPIBaseUrl": "#{EchelonAPIBaseUrl}#",
+    "EchelonAPIUserName": "#{EchelonAPIUserName}#",
+    "EchelonAPIPassword": "#{EchelonAPIPassword}#",
+    "EchelonAPICompanyCode": "#{EchelonAPICompanyCode}#",
+    "LegacyEchelonApiBaseUrl": "#{LegacyEchelonApiBaseUrl}#",
+    "LegacyEchelonApiClient": "#{LegacyEchelonApiClient}#",
+    "LegacyEchelonApiSecret": "#{LegacyEchelonApiSecret}#",
+    "LegacyEchelonApiScope": "#{LegacyEchelonApiScope}#",
+    "LegacyEchelonApiTenantId": "#{LegacyEchelonApiTenantId}#",
+    "AuthenticationTokenIssuer": "#{BaseUrl}#",
+    "AuthenticationTokenLifetimeSeconds": "43200",
+    "AuthenticationTokenSecret": "#{AuthenticationTokenSecret}#",
+    "ReportsLocation": "wwwroot/Content/reports",
+    "DefaultTempPassword": "mydesign",
+    "SendGridApiKey": "#{SendGridApiKey}#",
+    "WelcomeEmailId": "#{WelcomeEmailId}#",
+    "AccountChangeEmailId": "#{AccountChangeEmailId}#",
+    "ForgotPasswordEmailId": "#{ForgotPasswordEmailId}#",
+    "ShortLinkAccessToken": "bd87f88db87b792e29ec58e53d198a1c01307c61",
+    "ShortLinkURL": "https://api-ssl.bitly.com/v4/shorten",
+    "Version": "dev",
+    "defaultPasswordHashProvider": "PWDTKProvider",
+    "UploadMaxLength": 100000000,
+    "environment": "#{environment}#",
+    "stack": "#{stack}#",
+    "ChromeRevision": 857997,
+    "VcmsApiBaseUrl": "#{VcmsApiBaseUrl}#",
+    "VcmsApiKey": "#{VcmsApiKey}#",
+    "CacheExpirationInMinutes": "#{CacheExpirationInMinutes}#",
+    "ImageCacheExpirationInMinutes": "#{ImageCacheExpirationInMinutes}#"
+  },
+  "DomainEventingSettings": {
+    "SendDomainEvents": "#{DomainEventingEnabled}#",
+    "ConnectionString": "#{DomainEventingConnectionString}#",
+    "Environment": "#{DomainEventingEnvironment}#",
+    "IntegrationUrl": "#{DomainEventingIntegrationUrl}#",
+    "Origin": "#{DomainEventingOrigin}#"
+  },
+  "Logging": {
+    "LogLevel": {
+      "Default": "Error"
+    }
+  },
+  "AllowedHosts": "*"
+}

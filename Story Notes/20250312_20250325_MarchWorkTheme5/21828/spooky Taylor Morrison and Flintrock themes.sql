@@ -88,7 +88,7 @@ update dbo.ThemeablePaletteVariableValue
     set [Value] = '#0000FF',
         [Modifier] = 'justinp',
         [ModifiedDate] = GETDATE()
-where ThemeId = 'feba4d63-7a02-4c49-812e-e2b7dc0143e1'
+where ThemeId = '48f91740-06bb-4029-812e-db00092da492'
     and ThemeablePaletteVariableId = '09c70019-aed9-4b75-bd5c-10d4e507f4ed'
 
 --secondary update
@@ -96,7 +96,7 @@ update dbo.ThemeablePaletteVariableValue
     set [Value] = '#00FF00',
         [Modifier] = 'justinp',
         [ModifiedDate] = GETDATE()
-where ThemeId = 'feba4d63-7a02-4c49-812e-e2b7dc0143e1'
+where ThemeId = '48f91740-06bb-4029-812e-db00092da492'
     and ThemeablePaletteVariableId = 'e46e8ff1-5516-4da2-b00a-2fc60cc5d6ca'
 
 --primary update
@@ -104,7 +104,7 @@ update dbo.ThemeablePaletteVariableValue
     set [Value] = '#FFA500',
         [Modifier] = 'justinp',
         [ModifiedDate] = GETDATE()
-where ThemeId = 'feba4d63-7a02-4c49-812e-e2b7dc0143e1'
+where ThemeId = '48f91740-06bb-4029-812e-db00092da492'
     and ThemeablePaletteVariableId = '2b93185b-03e9-498c-b088-9a44c17d097a'
 
     */
