@@ -17,8 +17,11 @@ values ('ThemeableVariableValue'),
 create table #temp_OnlyCheckDBS (
     [name] sysname not null
 );
+/*
+-- Uncomment and add the databases you want to check
 insert into #temp_OnlyCheckDBS
 values ('VeoSolutions_DEV'), ('master');
+*/
 
 create table #temp_dbs (
     [name] sysname not null
