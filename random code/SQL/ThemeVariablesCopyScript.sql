@@ -43,13 +43,13 @@
 use [master];
 go
 
-declare @source_db nvarchar(50) = 'VeoSolutions_STAGING',
+declare @source_db nvarchar(50) = 'EPLAN_VeoSolutions',
         @messages nvarchar(250) = N'',
-        @source_DB_prod bit = 0,
-        @export_variables bit = 1,
-        @export_group_variables bit = 1,
-        @export_palette_variables bit = 1,
-        @export_mappings bit = 1,
+        @source_DB_prod bit = 1,
+        @export_variables bit = 0,
+        @export_group_variables bit = 0,
+        @export_palette_variables bit =1,
+        @export_mappings bit = 0,
         @delete_existing_records_on_target bit = 1,
         @SQL nvarchar(max) = N'';
 
@@ -77,13 +77,14 @@ create table #temp_input_destination_db (
 
 insert into #temp_input_destination_db ([dbName], [prod])
 values --('VeoSolutions_DEV', 0) -- env: dev, db: dev
-    -- ('VeoSolutions_QA', 0) -- env: qa, db: qa
+    --, ('VeoSolutions_QA', 0) -- env: qa, db: qa
     --, ('VeoSolutions_STAGING', 0) -- env: staging, db: staging
     --, ('VeoSolutions_PREVIEW', 0) -- env: preview, db: preview
     --, ('VeoSolutions', 1) -- env: prod, stack: WBS
     --, ('AFI_VeoSolutions', 1) -- env: prod, stack: AFI
-   /* --, */('CCDI_VeoSolutions', 1) -- env: prod, stack: CCDI
-    --, ('EPLAN_VeoSolutions', 1) -- env: prod, stack: EPLAN
+    --, ('CCDI_VeoSolutions', 1) -- env: prod, stack: CCDI
+    --, 
+	('EPLAN_VeoSolutions', 1) -- env: prod, stack: EPLAN
     ;
 
 create table #temp_source_db (
@@ -390,7 +391,7 @@ begin
     declare @max_variablestomerge int = 50; -- set a limit on how many variables to merge at once to avoid hitting limits of nvarchar(max) or other performance issues
 
     print 'use [' + @dbName + '];';
-    print 'go;';
+    print 'go';
 
     declare @Id UNIQUEIDENTIFIER,
             @CssName NVARCHAR(100),
@@ -638,13 +639,13 @@ begin
 
                 if @var_merge_cnt < @palettevarcnt -- Check if we are still within the count of palette variables to process
                 begin 
-                    print '(''' + cast(@Id as nvarchar(36)) + '),';
+                    print '(''' + cast(@Id as nvarchar(36)) + '''),';
                 end
                 ELSE
                 begin 
-                    print'(''' + cast(@Id as nvarchar(36)) + ')';
+                    print'(''' + cast(@Id as nvarchar(36)) + ''')';
                 END
-                fetch next from @cursor_palette_variables into @Id, @CssName, @Name, @Description;
+                fetch next from @cursor_palette_variables into @Id;
             END
             close @cursor_palette_variables;
             deallocate @cursor_palette_variables;

@@ -40,8 +40,8 @@ go
 -- configure the theme id to export
 declare @themeid varchar(50) = 'D4D24AA9-974D-455A-B7A2-D3FE77C0247B';
 -- configure the source database name
-declare @source_DB NVARCHAR(50) = 'VeoSolutions_STAGING';
-declare @source_DB_PROD bit = 0;
+declare @source_DB NVARCHAR(50) = 'EPLAN_VeoSolutions';
+declare @source_DB_PROD bit = 1;
 -- utilize these bit flags to configure what data you want to export
 declare @export_variablevalues bit = 1,
         @export_groupvariablevalues bit = 1,
@@ -77,10 +77,11 @@ values --('VeoSolutions_QA', 0)
        --,('VeoSolutions_DEV', 0)
        --,('VeoSolutions_STAGING', 0)
        --,('VeoSolutions_PREVIEW', 0)
-       /*,*/('VeoSolutions', 1)
-       ,('AFI_VeoSolutions', 1)
-       ,('CCDI_VeoSolutions', 1)
-       ,('EPLAN_VeoSolutions', 1)
+       --,('VeoSolutions', 1)
+       --,('AFI_VeoSolutions', 1)
+       --,('CCDI_VeoSolutions', 1)
+       --,
+	   ('EPLAN_VeoSolutions', 1)
        ;
 
 print '/*';
@@ -324,13 +325,13 @@ begin
         while @@fetch_status = 0
         begin 
             set @var_merge_cnt += 1;
-            if @var_merge_cnt = 1
+            if @var_merge_cnt < @varcnt
             begin 
-                print '('''+cast(@varThemeId as nvarchar(50))+''', '''+cast(@varThemeableVariableId as nvarchar(50))+''', '''+REPLACE(ISNULL(cast(@varValue as nvarchar(500)),''),'''','''''')+''')'; -- first value, no comma
+                print '('''+cast(@varThemeId as nvarchar(50))+''', '''+cast(@varThemeableVariableId as nvarchar(50))+''', '''+REPLACE(ISNULL(cast(@varValue as nvarchar(500)),''),'''','''''')+'''), '; -- first value, no comma
             end
             else
             begin
-                print ', '+char(10)+'('''+cast(@varThemeId as nvarchar(50))+''', '''+cast(@varThemeableVariableId as nvarchar(50))+''', '''+REPLACE(ISNULL(cast(@varValue as nvarchar(500)),''),'''','''''')+''')';
+                print '('''+cast(@varThemeId as nvarchar(50))+''', '''+cast(@varThemeableVariableId as nvarchar(50))+''', '''+REPLACE(ISNULL(cast(@varValue as nvarchar(500)),''),'''','''''')+''')';
             end
             fetch next from varval_cursor into @varThemeId, @varThemeableVariableId, @varValue;
         end
