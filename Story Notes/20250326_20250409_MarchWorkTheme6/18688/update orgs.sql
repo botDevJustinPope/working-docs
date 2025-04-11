@@ -7,11 +7,13 @@ create table #temp_dbs (
 );
 
 insert into #temp_dbs 
-values --('VeoSolutionsSecurity_DEV')
-       --,('VeoSolutionsSecurity_QA')
+values --
+        ('VeoSolutionsSecurity_DEV')
+       --
+       ,('VeoSolutionsSecurity_QA')
        --,('VeoSolutionsSecurity_STAGING')
-       --,
-       ('VeoSolutionsSecurity_PREVIEW')
+       --
+       ,('VeoSolutionsSecurity_PREVIEW')
        --,('VeoSolutionsSecurity')
        --,('AFI_VeoSolutionsSecurity')
        --,('CCDI_VeoSolutionsSecurity')
@@ -57,6 +59,15 @@ BEGIN
         print 'Deleting feature flag if it exists in ['+@dbSolutions+'].[dbo].[feature]';
         set @sql = N'USE [' + @dbSolutions + '];'+char(10)+
         'delete from [dbo].[features] where id = 65;';
+        if @verbose = 1 print @sql 
+        else EXECUTE sp_executesql @sql;
+
+        print 'Updating permision for editing VDS (Custom) theme';
+        set @sql = N'USE [' + @dbName + '];'+char(10)+
+        'update [dbo].[permissions]'+char(10)+
+        'set [name] = ''Can Modify VDS (Custom) Theme'','+char(10)+
+        '[description] = ''Allows a user to modify the VDS (Custom) theme images, variable values, and videos''' +char(10)+
+        'where [value] = 20;';
         if @verbose = 1 print @sql 
         else EXECUTE sp_executesql @sql;
 
