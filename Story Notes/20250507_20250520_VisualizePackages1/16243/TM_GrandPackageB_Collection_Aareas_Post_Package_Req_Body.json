@@ -1,0 +1,18 @@
+{
+    "packageName": "Grand Package B",
+    "packageGUID": "c50db23d-c6fb-4ea3-8959-1a4aa903a635",
+    "productGuids": [   
+        {
+            "surface": "Kitchen_Dishwasher",
+            "productGUID": "a1e3df4c-a7d3-42cf-b713-da6f2ca2f5c5"
+        },
+        {
+            "surface": "Kitchen_Microwave",
+            "productGUID": "6b750160-ffba-49e9-8e5b-5b95c75828c7"
+        },
+        {
+            "surface": "Kitchen_Stove",
+            "productGUID": "17a6fd48-4126-41ee-b0cd-f8d7ac444f3e"
+        }
+    ]
+}

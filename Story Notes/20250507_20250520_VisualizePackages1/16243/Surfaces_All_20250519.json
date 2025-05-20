@@ -1,0 +1,757 @@
+{
+    "responseObject": [
+        {
+            "sceneId": 56443,
+            "roomName": "Bathroom #2",
+            "renderableSurfaceList": [
+                "Bathroom #2_Cabinet Door",
+                "Bathroom #2_Countertop",
+                "Bathroom #2_FLOOR",
+                "Bathroom #2_Wall Tile"
+            ]
+        },
+        {
+            "sceneId": 56443,
+            "roomName": "Bathroom #3",
+            "renderableSurfaceList": [
+                "Bathroom #3_Cabinet Door",
+                "Bathroom #3_Countertop",
+                "Bathroom #3_FLOOR",
+                "Bathroom #3_Wall Tile"
+            ]
+        },
+        {
+            "sceneId": 56443,
+            "roomName": "Bedroom 2",
+            "renderableSurfaceList": [
+                "Bedroom 2_Floor"
+            ]
+        },
+        {
+            "sceneId": 56443,
+            "roomName": "Bedroom 3",
+            "renderableSurfaceList": [
+                "Bedroom 3_Floor"
+            ]
+        },
+        {
+            "sceneId": 56443,
+            "roomName": "Bedroom 4",
+            "renderableSurfaceList": [
+                "Bedroom 4_Floor"
+            ]
+        },
+        {
+            "sceneId": 56443,
+            "roomName": "Flex",
+            "renderableSurfaceList": [
+                "Flex_Floor"
+            ]
+        },
+        {
+            "sceneId": 56443,
+            "roomName": "Foyer",
+            "renderableSurfaceList": [
+                "Foyer_Floor"
+            ]
+        },
+        {
+            "sceneId": 56443,
+            "roomName": "Gathering Room",
+            "renderableSurfaceList": [
+                "Gathering Room_Floor"
+            ]
+        },
+        {
+            "sceneId": 56443,
+            "roomName": "Kitchen",
+            "renderableSurfaceList": [
+                "Kitchen_Backsplash",
+                "Kitchen_Cabinet Door",
+                "Kitchen_Countertop",
+                "Kitchen_Dishwasher",
+                "Kitchen_Faucet",
+                "Kitchen_Floor",
+                "Kitchen_Fridge",
+                "Kitchen_Sink",
+                "Kitchen_Stove"
+            ]
+        },
+        {
+            "sceneId": 56443,
+            "roomName": "Owner Bath",
+            "renderableSurfaceList": [
+                "Owner Bath_BATHROOM FAUCET",
+                "Owner Bath_BATHTUB FAUCET",
+                "Owner Bath_Cabinet Door",
+                "Owner Bath_Countertop",
+                "Owner Bath_FLOOR",
+                "Owner Bath_Wall Tile"
+            ]
+        },
+        {
+            "sceneId": 56443,
+            "roomName": "Utility / Laundry",
+            "renderableSurfaceList": [
+                "Utility / Laundry_Floor"
+            ]
+        },
+        {
+            "sceneId": 56534,
+            "roomName": "Opt. Owner Bath w/Enlarged Shower and WIC",
+            "renderableSurfaceList": [
+                "Opt. Owner Bath w/Enlarged Shower and WIC_Cabinet Door",
+                "Opt. Owner Bath w/Enlarged Shower and WIC_Countertop",
+                "Opt. Owner Bath w/Enlarged Shower and WIC_FLOOR",
+                "Opt. Owner Bath w/Enlarged Shower and WIC_Wall Tile"
+            ]
+        },
+        {
+            "sceneId": 56534,
+            "roomName": "Owner Bath",
+            "renderableSurfaceList": [
+                "Owner Bath_BATHROOM FAUCET",
+                "Owner Bath_BATHTUB FAUCET"
+            ]
+        },
+        {
+            "sceneId": 56536,
+            "roomName": "Opt. Study (at bedroom 4)",
+            "renderableSurfaceList": [
+                "Opt. Study (at bedroom 4)_Floor"
+            ]
+        },
+        {
+            "sceneId": 56538,
+            "roomName": "Opt. Study (at Flex space)",
+            "renderableSurfaceList": [
+                "Opt. Study (at Flex space)_Floor"
+            ]
+        },
+        {
+            "sceneId": 56540,
+            "roomName": "Opt. Bedroom 5 (at Flex Space)",
+            "renderableSurfaceList": [
+                "Opt. Bedroom 5 (at Flex Space)_Floor"
+            ]
+        },
+        {
+            "sceneId": 56794,
+            "roomName": "Bedroom 2",
+            "renderableSurfaceList": [
+                "Bedroom 2_Floor"
+            ]
+        },
+        {
+            "sceneId": 56794,
+            "roomName": "Bedroom 3",
+            "renderableSurfaceList": [
+                "Bedroom 3_Floor"
+            ]
+        },
+        {
+            "sceneId": 56794,
+            "roomName": "Bedroom 4",
+            "renderableSurfaceList": [
+                "Bedroom 4_Floor"
+            ]
+        },
+        {
+            "sceneId": 56794,
+            "roomName": "Dining Room",
+            "renderableSurfaceList": [
+                "Dining Room_Floor"
+            ]
+        },
+        {
+            "sceneId": 56794,
+            "roomName": "Flex",
+            "renderableSurfaceList": [
+                "Flex_Floor"
+            ]
+        },
+        {
+            "sceneId": 56794,
+            "roomName": "Foyer",
+            "renderableSurfaceList": [
+                "Foyer_Floor"
+            ]
+        },
+        {
+            "sceneId": 56794,
+            "roomName": "Games Room",
+            "renderableSurfaceList": [
+                "Games Room_Floor"
+            ]
+        },
+        {
+            "sceneId": 56794,
+            "roomName": "Gathering Room",
+            "renderableSurfaceList": [
+                "Gathering Room_Floor"
+            ]
+        },
+        {
+            "sceneId": 56794,
+            "roomName": "Kitchen",
+            "renderableSurfaceList": [
+                "Kitchen_Backsplash",
+                "Kitchen_Cabinet Door",
+                "Kitchen_Countertop",
+                "Kitchen_Dishwasher",
+                "Kitchen_Faucet",
+                "Kitchen_Floor",
+                "Kitchen_Fridge",
+                "Kitchen_Hood Fan",
+                "Kitchen_Island Countertop",
+                "Kitchen_Stove"
+            ]
+        },
+        {
+            "sceneId": 56794,
+            "roomName": "Media",
+            "renderableSurfaceList": [
+                "Media_Floor"
+            ]
+        },
+        {
+            "sceneId": 56794,
+            "roomName": "Owner's Bath",
+            "renderableSurfaceList": [
+                "Owner's Bath_Cabinet Door",
+                "Owner's Bath_Countertop",
+                "Owner's Bath_Floor",
+                "Owner's Bath_Shower Wall Tile"
+            ]
+        },
+        {
+            "sceneId": 57114,
+            "roomName": "Exterior",
+            "renderableSurfaceList": [
+                "Exterior_Beams and Columns",
+                "Exterior_Corner Board",
+                "Exterior_Deck Patio Door",
+                "Exterior_Door Color",
+                "Exterior_Garage Door",
+                "Exterior_Masonry Wall",
+                "Exterior_Roof",
+                "Exterior_Siding",
+                "Exterior_Soffit / Fascia",
+                "Exterior_Stucco",
+                "Exterior_Window Frame",
+                "Exterior_Window Trim"
+            ]
+        },
+        {
+            "sceneId": 57142,
+            "roomName": "Exterior",
+            "renderableSurfaceList": [
+                "Exterior_Beams and Columns",
+                "Exterior_Corner Board",
+                "Exterior_Deck Patio Door",
+                "Exterior_Door Color",
+                "Exterior_Garage Door",
+                "Exterior_Masonry Wall",
+                "Exterior_Opt. Patio Fireplace",
+                "Exterior_Roof",
+                "Exterior_Siding",
+                "Exterior_Soffit / Fascia",
+                "Exterior_Stucco",
+                "Exterior_Window Frame",
+                "Exterior_Window Trim"
+            ]
+        },
+        {
+            "sceneId": 60475,
+            "roomName": "Exterior",
+            "renderableSurfaceList": [
+                "Exterior_Beams and Columns",
+                "Exterior_Deck Patio Door",
+                "Exterior_Door Color",
+                "Exterior_Garage Door",
+                "Exterior_Masonry Wall",
+                "Exterior_Opt. Patio Fireplace",
+                "Exterior_Roof",
+                "Exterior_Siding",
+                "Exterior_Soffit / Fascia",
+                "Exterior_Stucco",
+                "Exterior_Window Frame",
+                "Exterior_Window Trim"
+            ]
+        },
+        {
+            "sceneId": 61766,
+            "roomName": "Bathroom #2",
+            "renderableSurfaceList": [
+                "Bathroom #2_Cabinet Door",
+                "Bathroom #2_Countertop",
+                "Bathroom #2_FLOOR",
+                "Bathroom #2_Wall Tile"
+            ]
+        },
+        {
+            "sceneId": 61766,
+            "roomName": "Bathroom #3",
+            "renderableSurfaceList": [
+                "Bathroom #3_Cabinet Door",
+                "Bathroom #3_Countertop",
+                "Bathroom #3_FLOOR",
+                "Bathroom #3_Wall Tile"
+            ]
+        },
+        {
+            "sceneId": 61766,
+            "roomName": "Bedroom 2",
+            "renderableSurfaceList": [
+                "Bedroom 2_Floor"
+            ]
+        },
+        {
+            "sceneId": 61766,
+            "roomName": "Bedroom 3",
+            "renderableSurfaceList": [
+                "Bedroom 3_Floor"
+            ]
+        },
+        {
+            "sceneId": 61766,
+            "roomName": "Bedroom 4",
+            "renderableSurfaceList": [
+                "Bedroom 4_Floor"
+            ]
+        },
+        {
+            "sceneId": 61766,
+            "roomName": "Flex",
+            "renderableSurfaceList": [
+                "Flex_Floor"
+            ]
+        },
+        {
+            "sceneId": 61766,
+            "roomName": "Foyer",
+            "renderableSurfaceList": [
+                "Foyer_Floor"
+            ]
+        },
+        {
+            "sceneId": 61766,
+            "roomName": "Gathering Room",
+            "renderableSurfaceList": [
+                "Gathering Room_Floor"
+            ]
+        },
+        {
+            "sceneId": 61766,
+            "roomName": "Kitchen",
+            "renderableSurfaceList": [
+                "Kitchen_Backsplash",
+                "Kitchen_Cabinet Door",
+                "Kitchen_Countertop",
+                "Kitchen_Dishwasher",
+                "Kitchen_Faucet",
+                "Kitchen_Floor",
+                "Kitchen_Fridge",
+                "Kitchen_Sink",
+                "Kitchen_Stove"
+            ]
+        },
+        {
+            "sceneId": 61766,
+            "roomName": "Opt. Bedroom 5 (at Flex Space)",
+            "renderableSurfaceList": [
+                "Opt. Bedroom 5 (at Flex Space)_Floor"
+            ]
+        },
+        {
+            "sceneId": 61766,
+            "roomName": "Opt. Owner Bath w/Enlarged Shower and WIC",
+            "renderableSurfaceList": [
+                "Opt. Owner Bath w/Enlarged Shower and WIC_Cabinet Door",
+                "Opt. Owner Bath w/Enlarged Shower and WIC_Countertop",
+                "Opt. Owner Bath w/Enlarged Shower and WIC_FLOOR",
+                "Opt. Owner Bath w/Enlarged Shower and WIC_Wall Tile"
+            ]
+        },
+        {
+            "sceneId": 61766,
+            "roomName": "Opt. Study (at bedroom 4)",
+            "renderableSurfaceList": [
+                "Opt. Study (at bedroom 4)_Floor"
+            ]
+        },
+        {
+            "sceneId": 61766,
+            "roomName": "Opt. Study (at Flex space)",
+            "renderableSurfaceList": [
+                "Opt. Study (at Flex space)_Floor"
+            ]
+        },
+        {
+            "sceneId": 61766,
+            "roomName": "Owner Bath",
+            "renderableSurfaceList": [
+                "Owner Bath_BATHROOM FAUCET",
+                "Owner Bath_BATHTUB FAUCET",
+                "Owner Bath_Cabinet Door",
+                "Owner Bath_Countertop",
+                "Owner Bath_FLOOR",
+                "Owner Bath_Wall Tile"
+            ]
+        },
+        {
+            "sceneId": 61766,
+            "roomName": "Utility / Laundry",
+            "renderableSurfaceList": [
+                "Utility / Laundry_Floor"
+            ]
+        },
+        {
+            "sceneId": 63377,
+            "roomName": "Bathroom 2",
+            "renderableSurfaceList": [
+                "Bathroom 2_Ceiling",
+                "Bathroom 2_Countertop",
+                "Bathroom 2_Faucet",
+                "Bathroom 2_Floor",
+                "Bathroom 2_Lower Cabinet Door",
+                "Bathroom 2_Shower Tile",
+                "Bathroom 2_Wall"
+            ]
+        },
+        {
+            "sceneId": 63377,
+            "roomName": "Bathroom 3",
+            "renderableSurfaceList": [
+                "Bathroom 3_Ceiling",
+                "Bathroom 3_Countertop",
+                "Bathroom 3_Faucet",
+                "Bathroom 3_Floor",
+                "Bathroom 3_Lower Cabinet Door",
+                "Bathroom 3_Shower Tile",
+                "Bathroom 3_Wall"
+            ]
+        },
+        {
+            "sceneId": 63377,
+            "roomName": "Bathroom 4",
+            "renderableSurfaceList": [
+                "Bathroom 4_Ceiling",
+                "Bathroom 4_Countertop",
+                "Bathroom 4_Faucet",
+                "Bathroom 4_Floor",
+                "Bathroom 4_Lower Cabinet Door",
+                "Bathroom 4_Shower Tile",
+                "Bathroom 4_Wall"
+            ]
+        },
+        {
+            "sceneId": 63377,
+            "roomName": "Bathroom 5",
+            "renderableSurfaceList": [
+                "Bathroom 5_Ceiling",
+                "Bathroom 5_Countertop",
+                "Bathroom 5_Faucet",
+                "Bathroom 5_Floor",
+                "Bathroom 5_Lower Cabinet Door",
+                "Bathroom 5_Shower Tile",
+                "Bathroom 5_Wall"
+            ]
+        },
+        {
+            "sceneId": 63377,
+            "roomName": "Bathroom 6",
+            "renderableSurfaceList": [
+                "Bathroom 6_Ceiling",
+                "Bathroom 6_Countertop",
+                "Bathroom 6_Faucet",
+                "Bathroom 6_Floor",
+                "Bathroom 6_Lower Cabinet Door",
+                "Bathroom 6_Wall"
+            ]
+        },
+        {
+            "sceneId": 63377,
+            "roomName": "Bedroom 2",
+            "renderableSurfaceList": [
+                "Bedroom 2_Ceiling",
+                "Bedroom 2_Floor",
+                "Bedroom 2_Wall"
+            ]
+        },
+        {
+            "sceneId": 63377,
+            "roomName": "Bedroom 3",
+            "renderableSurfaceList": [
+                "Bedroom 3_Ceiling",
+                "Bedroom 3_Floor",
+                "Bedroom 3_Wall"
+            ]
+        },
+        {
+            "sceneId": 63377,
+            "roomName": "Bedroom 4",
+            "renderableSurfaceList": [
+                "Bedroom 4_Ceiling",
+                "Bedroom 4_Floor",
+                "Bedroom 4_Wall"
+            ]
+        },
+        {
+            "sceneId": 63377,
+            "roomName": "Bedroom 5",
+            "renderableSurfaceList": [
+                "Bedroom 5_Ceiling",
+                "Bedroom 5_Floor",
+                "Bedroom 5_Wall"
+            ]
+        },
+        {
+            "sceneId": 63377,
+            "roomName": "Dining Room",
+            "renderableSurfaceList": [
+                "Dining Room_Ceiling",
+                "Dining Room_Floor",
+                "Dining Room_Wall"
+            ]
+        },
+        {
+            "sceneId": 63377,
+            "roomName": "Ensuite",
+            "renderableSurfaceList": [
+                "Ensuite_Ceiling"
+            ]
+        },
+        {
+            "sceneId": 63377,
+            "roomName": "Family Room",
+            "renderableSurfaceList": [
+                "Family Room_Ceiling",
+                "Family Room_Floor",
+                "Family Room_Wall"
+            ]
+        },
+        {
+            "sceneId": 63377,
+            "roomName": "Foyer",
+            "renderableSurfaceList": [
+                "Foyer_Baseboard",
+                "Foyer_Ceiling",
+                "Foyer_Door",
+                "Foyer_Floor",
+                "Foyer_Wall"
+            ]
+        },
+        {
+            "sceneId": 63377,
+            "roomName": "Games Room",
+            "renderableSurfaceList": [
+                "Games Room_Ceiling",
+                "Games Room_Floor",
+                "Games Room_Wall"
+            ]
+        },
+        {
+            "sceneId": 63377,
+            "roomName": "Kitchen",
+            "renderableSurfaceList": [
+                "Kitchen_Backsplash",
+                "Kitchen_Ceiling",
+                "Kitchen_Countertop",
+                "Kitchen_Dishwasher",
+                "Kitchen_Faucet",
+                "Kitchen_Floor",
+                "Kitchen_Hood Fan",
+                "Kitchen_Island Countertop",
+                "Kitchen_Refrigerator",
+                "Kitchen_Stove",
+                "Kitchen_Upper Cabinet Door",
+                "Kitchen_Wall"
+            ]
+        },
+        {
+            "sceneId": 63377,
+            "roomName": "Laundry",
+            "renderableSurfaceList": [
+                "Laundry_Ceiling",
+                "Laundry_Floor",
+                "Laundry_Wall"
+            ]
+        },
+        {
+            "sceneId": 63377,
+            "roomName": "Master Bathroom",
+            "renderableSurfaceList": [
+                "Master Bathroom_Countertop",
+                "Master Bathroom_Floor",
+                "Master Bathroom_Shower Door",
+                "Master Bathroom_Shower Floor",
+                "Master Bathroom_Shower Tile",
+                "Master Bathroom_Sill",
+                "Master Bathroom_Tub Deck",
+                "Master Bathroom_Tub Faucet",
+                "Master Bathroom_Upper Cabinet Door",
+                "Master Bathroom_Wall"
+            ]
+        },
+        {
+            "sceneId": 63377,
+            "roomName": "Media Room",
+            "renderableSurfaceList": [
+                "Media Room_Ceiling",
+                "Media Room_Floor",
+                "Media Room_Wall"
+            ]
+        },
+        {
+            "sceneId": 63377,
+            "roomName": "Powder Room",
+            "renderableSurfaceList": [
+                "Powder Room_Ceiling",
+                "Powder Room_Floor",
+                "Powder Room_Toilet",
+                "Powder Room_Wall"
+            ]
+        },
+        {
+            "sceneId": 63377,
+            "roomName": "Study Room",
+            "renderableSurfaceList": [
+                "Study Room_Ceiling",
+                "Study Room_Floor",
+                "Study Room_Wall"
+            ]
+        },
+        {
+            "sceneId": 63377,
+            "roomName": "Walk In Closet",
+            "renderableSurfaceList": [
+                "Walk In Closet_Ceiling",
+                "Walk In Closet_Floor",
+                "Walk In Closet_Wall"
+            ]
+        },
+        {
+            "sceneId": 76548,
+            "roomName": "Kitchen",
+            "renderableSurfaceList": [
+                "Kitchen_Backsplash",
+                "Kitchen_Ceiling",
+                "Kitchen_Countertop",
+                "Kitchen_Dishwasher",
+                "Kitchen_Faucet",
+                "Kitchen_Floor",
+                "Kitchen_Island Cabinet Door",
+                "Kitchen_Island Countertop",
+                "Kitchen_Lower Cabinet Door",
+                "Kitchen_Microwave",
+                "Kitchen_Refrigerator",
+                "Kitchen_Upper Cabinet Door",
+                "Kitchen_Wall"
+            ]
+        },
+        {
+            "sceneId": 76598,
+            "roomName": "Master Bathroom",
+            "renderableSurfaceList": [
+                "Master Bathroom_Countertop",
+                "Master Bathroom_Floor",
+                "Master Bathroom_Lower Cabinet Door",
+                "Master Bathroom_Shower Floor",
+                "Master Bathroom_Shower Tile",
+                "Master Bathroom_Wall"
+            ]
+        },
+        {
+            "sceneId": 84087,
+            "roomName": "Owners Bath",
+            "renderableSurfaceList": [
+                "Owners Bath_Baseboard",
+                "Owners Bath_Ceiling",
+                "Owners Bath_Countertop",
+                "Owners Bath_Door Handle",
+                "Owners Bath_Faucet",
+                "Owners Bath_Floor",
+                "Owners Bath_Lower Cabinet Door",
+                "Owners Bath_Shower Floor",
+                "Owners Bath_Shower Tile",
+                "Owners Bath_Wall"
+            ]
+        },
+        {
+            "sceneId": 84087,
+            "roomName": "Walk In Closet",
+            "renderableSurfaceList": [
+                "Walk In Closet_Wall"
+            ]
+        },
+        {
+            "sceneId": 84513,
+            "roomName": "Kitchen",
+            "renderableSurfaceList": [
+                "Kitchen_Backsplash",
+                "Kitchen_Ceiling",
+                "Kitchen_Countertop",
+                "Kitchen_Dishwasher",
+                "Kitchen_Faucet",
+                "Kitchen_Floor",
+                "Kitchen_Hood Fan",
+                "Kitchen_Island Cabinet Door",
+                "Kitchen_Island Countertop",
+                "Kitchen_Lower Cabinet Door",
+                "Kitchen_Refrigerator",
+                "Kitchen_Upper Cabinet Door"
+            ]
+        },
+        {
+            "sceneId": 85068,
+            "roomName": "Bathroom 2",
+            "renderableSurfaceList": [
+                "Bathroom 2_Ceiling",
+                "Bathroom 2_Countertop",
+                "Bathroom 2_Faucet",
+                "Bathroom 2_Floor",
+                "Bathroom 2_Lower Cabinet Door",
+                "Bathroom 2_Shower Tile",
+                "Bathroom 2_Wall"
+            ]
+        },
+        {
+            "sceneId": 85069,
+            "roomName": "Ensuite",
+            "renderableSurfaceList": [
+                "Ensuite_Baseboard",
+                "Ensuite_Cabinet Door Handle",
+                "Ensuite_Ceiling",
+                "Ensuite_Countertop",
+                "Ensuite_Door",
+                "Ensuite_Door Handle",
+                "Ensuite_Faucet",
+                "Ensuite_Floor",
+                "Ensuite_Freestanding Tub",
+                "Ensuite_Lower Cabinet Door",
+                "Ensuite_Mirror",
+                "Ensuite_Shower Floor",
+                "Ensuite_Shower Head",
+                "Ensuite_Shower Tile",
+                "Ensuite_Sink",
+                "Ensuite_Toilet",
+                "Ensuite_Toilet Paper Holder",
+                "Ensuite_Tub/Shower Wall Tile",
+                "Ensuite_Wall"
+            ]
+        },
+        {
+            "sceneId": 85071,
+            "roomName": "Family Room",
+            "renderableSurfaceList": [
+                "Family Room_Ceiling",
+                "Family Room_Floor",
+                "Family Room_Wall"
+            ]
+        }
+    ],
+    "responseMessage": "Successful",
+    "responseType": 1,
+    "responseStatus": 1
+}

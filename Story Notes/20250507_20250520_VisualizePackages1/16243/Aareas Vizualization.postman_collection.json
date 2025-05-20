@@ -1,0 +1,289 @@
+{
+	"info": {
+		"_postman_id": "12709b06-e041-4d5b-ab5a-78cb0c8df385",
+		"name": "Aareas Vizualization",
+		"description": "The purpose of this collection is to document the endpoint that we use and be able to test them outside of our VDS application.",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "21333109"
+	},
+	"item": [
+		{
+			"name": "Fetch Available Surfaces",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://apirc.aareas.com/api/SceneSurface/GetClientSurfaceList/b73ce491-bc27-42a7-ad85-6463eca43bfd",
+					"protocol": "https",
+					"host": [
+						"apirc",
+						"aareas",
+						"com"
+					],
+					"path": [
+						"api",
+						"SceneSurface",
+						"GetClientSurfaceList",
+						"b73ce491-bc27-42a7-ad85-6463eca43bfd"
+					]
+				},
+				"description": "The endpoint SceneSurface/GetClientSurfaceList is utilizied to return a list of surfaces for a scene to be visulized.\n\n**Request**  \nURL : api/SceneSurface/GetClientSurfaceList/{clientId}/{sceneId}/{roomId}  \nclientId - Client Identifier  \nsceneId - Scene Identifier (optional)  \nroomId - Room Identifier (optional)"
+			},
+			"response": []
+		},
+		{
+			"name": "Fetch Stream URL",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://apirc.aareas.com/api/Image/GetImage/Buildon?sceneId=56443&room=Flex&size=2560&userId=35e35a43-216c-4792-acea-4709cf989828|104905d6-2ef5-4758-8dc2-5b81f61a290b&doNotRenderImage=true&keepCamPostion=false&client=BuildOn&builder=NON-STAGGERED&project=demo&unit=123 Some Where, Houston, TX 77377&applications=[]",
+					"protocol": "https",
+					"host": [
+						"apirc",
+						"aareas",
+						"com"
+					],
+					"path": [
+						"api",
+						"Image",
+						"GetImage",
+						"Buildon"
+					],
+					"query": [
+						{
+							"key": "sceneId",
+							"value": "56443"
+						},
+						{
+							"key": "room",
+							"value": "Flex"
+						},
+						{
+							"key": "size",
+							"value": "2560"
+						},
+						{
+							"key": "userId",
+							"value": "35e35a43-216c-4792-acea-4709cf989828|104905d6-2ef5-4758-8dc2-5b81f61a290b"
+						},
+						{
+							"key": "doNotRenderImage",
+							"value": "true"
+						},
+						{
+							"key": "keepCamPostion",
+							"value": "false"
+						},
+						{
+							"key": "client",
+							"value": "BuildOn"
+						},
+						{
+							"key": "builder",
+							"value": "NON-STAGGERED"
+						},
+						{
+							"key": "project",
+							"value": "demo"
+						},
+						{
+							"key": "unit",
+							"value": "123 Some Where, Houston, TX 77377"
+						},
+						{
+							"key": "applications",
+							"value": "[]"
+						},
+						{
+							"key": "Packages",
+							"value": "",
+							"disabled": true
+						}
+					]
+				},
+				"description": "This endpoint provides a streamurl to visualize the rooms for a given home floor plan.\n\n\\*_Request__\\*_URL: \\[[https://apirc.aareas.com/api/Image/GetImage/Buildon?sceneId=](https://apirc.aareas.com/api/Image/GetImage/Buildon?sceneId=)&room=&size=&userId=&doNotRenderImage=&keepCamPosition=&client=BuildOn&builder=&project=demo&unit=\\]([https://apirc.aareas.com/api/Image/GetImage/Buildon?sceneId=](https://apirc.aareas.com/api/Image/GetImage/Buildon?sceneId=)&room=&size=&userId=&doNotRenderImage=&keepCamPosition=&client=BuildOn&builder=&project=demo&unit=\n\n&applications=\n\n\\[&applications=\\]([https://apirc.aareas.com/api/Image/GetImage/Buildon?sceneId=](https://apirc.aareas.com/api/Image/GetImage/Buildon?sceneId=)&room=&size=&userId=&doNotRenderImage=&keepCamPosition=&client=BuildOn&builder=&project=demo&unit=\n\n&applications=\n\nsceneId - scene identifier  \nroom - room identiefer (optional)  \nsize - width of the frame to be returned  \nuserId - consists of user's security token | session user id  \ndoNotRenderImage -  \nkeepCamPosition - indicates if camera position should be kept  \nclient - set to \"BuildOn\"  \nbuilder - organization name  \nproject - community name if billable, otherwise \"demo\"  \nunit - full address  \napplications - string of application and product pairs, default to \\[\\]  \nPackages - string of comma delimited Guids of packages to render\n\n**Response:**  \nframeUrl - source url to be used in the iFrame"
+			},
+			"response": []
+		},
+		{
+			"name": "Fetch Visualizable Options",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"GUIDS\":\"7900f807-2697-401d-8b61-0d8f765d5c60,7e42525d-37d1-40d2-94d1-63b942c8f158\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://apirc.aareas.com/api/ClientProduct/GetClientProductlist/BuildOn",
+					"protocol": "https",
+					"host": [
+						"apirc",
+						"aareas",
+						"com"
+					],
+					"path": [
+						"api",
+						"ClientProduct",
+						"GetClientProductlist",
+						"BuildOn"
+					]
+				},
+				"description": "Fetch Visualizable Options\n\nreturns a list of options that are valid to be visualized.\n\n**Requst:**\n\nURL: [https://apirc.aareas.com/api/ClientProduct/GetClientProductlist/BuildOn](https://apirc.aareas.com/api/ClientProduct/GetClientProductlist/BuildOn)\n\nBody:  \n{ \"GUIDS\": }\n\n**Response:**  \nreturns a resonpseObject of guids that are renderable\n\nNOTES:  \nWe need to re-think how we are using this endpoint in our application. The endpoint returns the same list no matter"
+			},
+			"response": []
+		},
+		{
+			"name": "Get All Packages",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://apirc.aareas.com/api/ClientProduct/GetClientProductPackageList/false/justinpo/44102854-ef6a-467e-8ea1-b574573bdbd3",
+					"protocol": "https",
+					"host": [
+						"apirc",
+						"aareas",
+						"com"
+					],
+					"path": [
+						"api",
+						"ClientProduct",
+						"GetClientProductPackageList",
+						"false",
+						"justinpo",
+						"44102854-ef6a-467e-8ea1-b574573bdbd3"
+					]
+				},
+				"description": "The GetClientProducttPackageList endpoint returns packages set up wtih aareas  \nURL:  \n[https://apirc.aareas.com/api/ClientProduct/GetClientProductPackageList///](https://apirc.aareas.com/api/ClientProduct/GetClientProductPackageList///)  \nvalidDA - boolean returns valid only valid digital assets if true  \nusername - string of user's name  \ntoken - guid\n\nResponse:  \nPackage Object:  \npackageName - string  \npackageGUID - guid  \nproductGuids - array of objects {  \nsurface - the surface that the digital assest will apply to when rendered  \nproductGUID - the digital assest }"
+			},
+			"response": []
+		},
+		{
+			"name": "Get Single Package Detail",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://apirc.aareas.com/api/ClientProduct/GetClientPackage/1850a4f9-6491-4c67-84fb-38ab6413dbb7/veodesignstudiostaging/44102854-ef6a-467e-8ea1-b574573bdbd3",
+					"protocol": "https",
+					"host": [
+						"apirc",
+						"aareas",
+						"com"
+					],
+					"path": [
+						"api",
+						"ClientProduct",
+						"GetClientPackage",
+						"1850a4f9-6491-4c67-84fb-38ab6413dbb7",
+						"veodesignstudiostaging",
+						"44102854-ef6a-467e-8ea1-b574573bdbd3"
+					]
+				},
+				"description": "The GetClientPackage returns a single Package definition based on the request package guid requested  \nURL:  \n[https://apirc.aareas.com/api/ClientProduct/GetClientPackage///](https://apirc.aareas.com/api/ClientProduct/GetClientPackage///)  \npackageGUID - the guid of the package requested  \nusername - sting user name  \ntoken - guid\n\nResponse\n\nPackage Object  \npackageName - string  \npackageGUID - guid  \nproductGUIDS - array of objects {  \nsurface - the surface that the digital assest will apply to when rendered  \nproductGUID - the digital assest }"
+			},
+			"response": []
+		},
+		{
+			"name": "Add New Package",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"packageName\": \"\", //name\r\n    \"packageGUID\": \"\", //guid\r\n    \"productGuids\": [\r\n        // surface and producGUID pairs to define the package\r\n        {\r\n            \"surface\": \"\", // surface of the scene to target\r\n            \"productGUID\": \"\" // guid of the digital asset\r\n        }\r\n    ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://apirc.aareas.com/api/ClientProduct/AddClientPackages/veodesignstudio/b73ce491-bc27-42a7-ad85-6463eca43bfd",
+					"protocol": "https",
+					"host": [
+						"apirc",
+						"aareas",
+						"com"
+					],
+					"path": [
+						"api",
+						"ClientProduct",
+						"AddClientPackages",
+						"veodesignstudio",
+						"b73ce491-bc27-42a7-ad85-6463eca43bfd"
+					]
+				},
+				"description": "The AddClientPackages endpoint is use to create a package with aareas  \nURL:  \nhttps://apirc.aareas.com/api/ClientProduct/AddClientPackages//  \nusername - string  \ntoken - guid  \n  \nbody"
+			},
+			"response": []
+		},
+		{
+			"name": "Update Packages",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"packageGUID\": \"aa52422b-7449-4c16-a228-3c435d40c4de\", // package guid\r\n\t\"productGUIDs\": [\r\n        // surface and product pairs\r\n\t\t{\r\n\t\t\t\"surface\": \"Kitchen_Countertop\",\r\n\t\t\t\"productGUID\": \"c4c9703f-22fc-46cc-9cfd-b10e7be43614\"\r\n\t\t},\r\n\t\t{\r\n\t\t\t\"surface\": \"Kitchen_Backsplash\",\r\n\t\t\t\"productGUID\": \"fff6a5ac-3b5b-40a5-80ee-83fe37edbd5d\"\r\n\t\t}\r\n\t]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://apirc.aareas.com/api/ClientProduct/UpdateClientPackages/veodesignstudio/b73ce491-bc27-42a7-ad85-6463eca43bfd",
+					"protocol": "https",
+					"host": [
+						"apirc",
+						"aareas",
+						"com"
+					],
+					"path": [
+						"api",
+						"ClientProduct",
+						"UpdateClientPackages",
+						"veodesignstudio",
+						"b73ce491-bc27-42a7-ad85-6463eca43bfd"
+					]
+				},
+				"description": "the UpdateClientPackages endpoint is used to update a defined package  \nThis will update the surface product pairs for the package\n\nURL:  \nhttps://apirc.aareas.com/api/ClientProduct/UpdateClientPackages//  \n\\- username - string  \n\\- token - GUID"
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Package",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://apirc.aareas.com/api/ClientProduct/DeleteClientPackages/aa52422b-7449-4c16-a228-3c435d40c4d1/veodesignstudio/b73ce491-bc27-42a7-ad85-6463eca43bfd",
+					"protocol": "https",
+					"host": [
+						"apirc",
+						"aareas",
+						"com"
+					],
+					"path": [
+						"api",
+						"ClientProduct",
+						"DeleteClientPackages",
+						"aa52422b-7449-4c16-a228-3c435d40c4d1",
+						"veodesignstudio",
+						"b73ce491-bc27-42a7-ad85-6463eca43bfd"
+					]
+				},
+				"description": "The DeleteClientPakcages is used to delete a package set up with Aareas  \n  \nURL:  \nhttps://apirc.aareas.com/api/ClientProduct/DeleteClientPackages///  \n\\- packageID - guid the package to be deleted  \n\\- username - string user  \n\\- token - guid"
+			},
+			"response": []
+		}
+	]
+}

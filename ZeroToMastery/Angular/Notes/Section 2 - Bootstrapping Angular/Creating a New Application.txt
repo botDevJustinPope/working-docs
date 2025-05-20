@@ -1,0 +1,43 @@
+Reviewing the ng new command:
+
+options:
+
+--collection: this points to schematics to use in generating the intitial application
+    though I do not believe we will be spinning up new angular applications all the time, this seems interesting to look into
+
+--commit: this creates the new initial git commit for the new repository
+    if created in a git repository already, what is it doing?
+
+--creeate-application: this is the initizl application project when spinning up a new angular workspace
+
+--experimental-zoneless: creates an application that does not utilize 'zone.js'
+    what is the zone.js doing?
+
+--inline-style: styling in the ts files
+    PLEASE DO NOT DO THIS!!!!
+
+--inline-template: html in the ts 
+    PLEASE DO NOT DO THIS!!
+
+--minimal generate a minimal angular workspace without any testing frameworks, boolean
+
+--new-project-root: the path where new projects will be created within the workspace relative of the workspace root
+
+--prefix: define a prefix that is applied when creating components
+
+--skip-git: boolean to skip git
+
+--skip-install: skip installing packages
+
+--skip-tests: skip the generation of unit test files 
+
+--ssr: configure the application for server-side rendering and static site generation 
+
+--standalone: creates an application based upon the standalone api, without ngmodules, default: true
+
+--strict: stricker type checking and bundle budgets, to help maintainability default: true 
+
+--style: configure style for the application choices: "css", "scss", "sass", "less"
+
+--view-encapsulation: view encapsulation mode for componets in initial project, choices: "Emulated", "None", "ShadowDom"
+    what does this mean for the application?

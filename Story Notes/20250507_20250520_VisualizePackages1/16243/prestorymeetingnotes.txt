@@ -1,0 +1,20 @@
+Pre Story meeting:
+- How do we define the interaction between a package and a single selection?
+  - a single selection should over ride a package 
+
+- no rules for packages right now 
+  * identifier for grouping
+  * restructure categories, and based on categories
+
+rig packages these are muatally
+2 whole house packages
+2 appliance packages
+
+- Aaron has identified packages for Taylor Morrison to the 'leader ship team'
+
+
+hit https://api.aareas.com/api/ClientProduct/GetClientProductlist/BuildOn to get all options
+went into admin and on a test visprogram try to add 3399 options from the response
+- WBS only 9 items were found
+- EPLAN only 1 items was found 
+This seems like a pretty big issue?

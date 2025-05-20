@@ -1,0 +1,10 @@
+Angular CLI:
+Can do a lot of things
+- build the project
+- start a dev server
+- run tests
+- deploy the app
+
+angular.dev/tools/cli
+
+- the cli creates the bundle

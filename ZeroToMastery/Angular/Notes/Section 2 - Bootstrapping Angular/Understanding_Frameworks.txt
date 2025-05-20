@@ -1,0 +1,15 @@
+Frameworks:
+
+- configuration over convention
+Easy to learn
+Freedom to structure however you please
+needs additional libraries to fill in missing feature
+challenge to scale, but not impossible
+
+- convention over configuration
+sturcture straight out of the box
+provides solutions for common problems
+larger learning curve
+over whelming
+
+Angular is considered Convetion Over Configuration
