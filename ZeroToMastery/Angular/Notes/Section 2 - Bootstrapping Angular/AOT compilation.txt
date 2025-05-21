@@ -1,0 +1,17 @@
+strategy for compilation
+the process for code to machine code
+
+- Is there technical debt for this in web dev? TS -> JS?
+
+Just in time comp:
+server will compile when available, browser will download the code and the server helps the browser 
+
+Ahead-of-time comp:
+server compiles everything and the browser downloads it
+
+jit is larger vs aot is smaller 
+jit the browser downloads the compiler 
+jit browser catches errors 
+aot server cataches errors
+
+course uses aot compilation 

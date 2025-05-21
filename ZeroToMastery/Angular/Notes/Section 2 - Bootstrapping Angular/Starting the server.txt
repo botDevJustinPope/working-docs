@@ -1,0 +1,45 @@
+ng serve [project]
+
+Builds and serves your application, rebuilding on file changes.
+
+Arguments:
+  project  The name of the project to build. Can be an application or a library.       [string] [choices: "angular-basics"]
+
+Options:
+      --help                Shows a help message for this command in the console.                                 [boolean]
+  -c, --configuration       One or more named builder configurations as a comma-separated list as specified in the
+                            "configurations" section in angular.json.
+                            The builder uses the named configurations to run the given target.
+                            For more information, see
+                            https://angular.dev/reference/configs/workspace-config#alternate-build-configurations.
+                                                                            [string] [choices: "development", "production"]
+      --allowed-hosts       List of hosts that are allowed to access the dev server.                                [array]
+      --build-target        A build builder target to serve in the format of `project:target[:configuration]`. You can also
+                            pass in more than one configuration name as a comma-separated list. Example:
+                            `project:target:production,staging`.                                                   [string]
+      --disable-host-check  Don't verify connected clients are part of allowed hosts.            [boolean] [default: false]
+      --force-esbuild       Force the development server to use the 'browser-esbuild' builder when building.
+                                                                                                 [boolean] [default: false]
+      --headers             Custom HTTP headers to be added to all responses.                                       [array]
+      --hmr                 Enable hot module replacement.                                                        [boolean]
+      --host                Host to listen on.                                              [string] [default: "localhost"]
+      --inspect             Activate debugging inspector. This option only has an effect when 'SSR' or 'SSG' are enabled.
+                                                                                                                   [string]
+      --live-reload         Whether to reload the page on change, using live-reload.              [boolean] [default: true]
+  -o, --open                Opens the url in default browser.                                    [boolean] [default: false]
+      --poll                Enable and define the file watching poll time period in milliseconds.                  [number]
+      --port                Port to listen on.                                                     [number] [default: 4200]
+      --prebundle           Enable and control the Vite-based development server's prebundling capabilities. To enable
+                            prebundling, the Angular CLI cache must also be enabled. This option has no effect when using
+                            the 'browser' or other Webpack-based builders.                                        [boolean]
+      --proxy-config        Proxy configuration file. For more information, see
+                            https://angular.dev/tools/cli/serve#proxying-to-a-backend-server.                      [string]
+      --public-host         The URL that the browser client (or live-reload client, if enabled) should use to connect to
+                            the development server. Use for a complex dev server setup, such as one with reverse proxies.
+                            This option has no effect when using the 'application' or other esbuild-based builders.[string]
+      --serve-path          The pathname where the application will be served.                                     [string]
+      --ssl                 Serve using HTTPS.                                                   [boolean] [default: false]
+      --ssl-cert            SSL certificate to use for serving HTTPS.                                              [string]
+      --ssl-key             SSL key to use for serving HTTPS.                                                      [string]
+      --verbose             Adds more details to output logging.                                                  [boolean]
+      --watch               Rebuild on change.                                                    [boolean] [default: true]

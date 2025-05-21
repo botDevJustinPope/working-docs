@@ -1,0 +1,1 @@
+components are used to create a html tag or element

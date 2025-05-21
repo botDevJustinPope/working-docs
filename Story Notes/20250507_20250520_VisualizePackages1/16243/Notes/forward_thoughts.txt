@@ -1,0 +1,16 @@
+Exclusions and associations:
+- how are packges not selected together and UX is smooth
+- how can packages be selected together and UX is smooth
+
+Ordering for packages?
+
+Selection?
+- what about area / subarea
+
+Setup / Management of Packages 
+- set up a postman suite for 
+- what does it need to manage 
+
+Knowledge:
+- how to "debug" on a kidagarden level
+- we have to know, what scene room surface, is the digiatal asset actually live?

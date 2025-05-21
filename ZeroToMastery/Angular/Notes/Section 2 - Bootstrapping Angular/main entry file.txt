@@ -1,0 +1,2 @@
+this file loads angular and then the app 
+this is called src/main.ts

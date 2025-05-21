@@ -1,0 +1,2 @@
+the folder assests is copied over in the final build
+the main style file is a global file

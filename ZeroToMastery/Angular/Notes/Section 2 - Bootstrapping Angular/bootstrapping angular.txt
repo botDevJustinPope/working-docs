@@ -1,0 +1,13 @@
+we have to load up the angular code 
+angular can run on a lot of platforms
+
+components is a feature for teaching the browser for a new html element
+
+app.component.ts is the root component of our application 
+
+image for the console log within directory
+
+notice that the same error "Unchecked runtime.lastError: A listener indicated an asynchronous response by returning true, but the message channel closed before a response was received"
+is happening here , wonder why?
+
+we don't pull in the appConfig right now because we don't need a router

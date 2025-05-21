@@ -1,0 +1,26 @@
+.editorconfig file
+-- editor config file
+-- sets the editor and formating consistant
+    -- daniel
+.gitignore
+-- ignore files for git
+angular.json
+-- configuration of the angular project 
+-- schema:
+    this points to rules for the project 
+-- version: version
+-- newProjectRoot: for multiple apps 
+    could we build VDS amongst different applications 
+-- projects: list of projects within the Angular Project 
+    -- architect: has a list of build commands this stuff coorelates to the CLI 
+        -- extract-i18n: extract translations for the project 
+        -- test: build the test 
+package.json 
+-- list of dependancies 
+tsconfig.app.json 
+tsconfig.json 
+    this runs for prod
+tsconfig.spec.json 
+    this runs for tests
+    
+    ***configs for typescript
