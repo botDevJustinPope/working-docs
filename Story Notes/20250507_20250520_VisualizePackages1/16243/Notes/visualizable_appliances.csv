@@ -1,0 +1,30 @@
+Stack,application,product,color,part no.,global product id,Is Visualizable?
+WBS - catalog item,Appliance,Dishwasher,4440-51,4440-51 Whirlpool Tall Tub Dishwasher WDF330PAHS,c408c8a5-1984-4ba8-b737-d1c8d4fb0f2f,Yes
+WBS - catalog item,Appliance,Dishwasher,4440-53,4440-53 Whirlpool Hidden Control DW WDT970SAHZ,aa8f5546-cddf-48a3-9020-c43a72656556,Yes
+WBS - catalog item,Appliance,Microwave,4460-49,"4460-49 Whirlpool 30"" Micro WMC50522AS/MK2220A",5ff15ff6-5fad-4754-a883-a730b263d4f6,Yes
+WBS - catalog item,Appliance,Oven,4450-50,"4450-50 Whirlpool 30"" Single Oven WOS51EC0HS",0dc40627-4d86-480b-bb82-af1724ae2e9e,Yes
+WBS - catalog item,Appliances,4. Ovens,75210,"30"" Standard Double Regular",7885d05b-75e7-4480-96c7-4061af56171f,Yes
+WBS - catalog item,Appliances,Dishwashers,,Heavy-Duty Dishwasher with 1-Hour Wash Cycle,c408c8a5-1984-4ba8-b737-d1c8d4fb0f2f,Yes
+WBS - catalog item,Appliances,Ovens,,"30""DoubleOven-JTD3000SNSS",7885d05b-75e7-4480-96c7-4061af56171f,Yes
+WBS - catalog item,Appliances,Ranges,,"30"" Bertazzoni 4- Induction Zones, Electric Self-Clean Oven in White Finish",18c3e6f9-d3ef-4949-a3b4-d860074a0127,Yes
+WBS - catalog item,Appliances,Ranges,,"30"" Bosch 800 Series Induction Slide-in Range in Stainless Steel Finish",1229d153-3264-448b-9108-722dc71746da,Yes
+WBS - catalog item,Appliances,Ranges,,"30"" KitchenAid 5-Element Electric Slide-in Convection Range in Black Stainless Finish",2a9474ec-72b3-4c29-b573-f5626be288f9,Yes
+WBS - catalog item,Appliances,Refrigerator,,BOTTOM MT NO/FR GE COUNTER DEPTH BOTTOM FREEZER,f3d45e18-b6d5-47df-8cb3-f96c379ec466,Yes
+WBS - catalog item,Appliances,Refrigerators,,"48"" CLASSIC SIDE-BY-SIDE REFRIGERATOR/FREEZER WITH DISPENSER",b54998b5-dedd-49be-ad55-630734aa621c,Yes
+WBS - catalog item,Appliances,Refrigerators,,Frigidaire Gallery 25.5 Cu. Ft. Side-by-Side Refrigerator - Black Stainless,cd79e53c-996a-4778-ba23-19737f641f8f,Yes
+WBS - catalog item,Appliances,Refrigerators,,Frigidaire Gallery 25.5 Cu. Ft. Side-by-Side Refrigerator - Stainless Steel,f07b076f-00a4-41ef-97ab-3686f696687b,Yes
+WBS - catalog item,Appliances,Refrigerators,GYE22GYNFS,GE 22.1 CF Counter Depth French Door Refrigerator - Stainless Steel,f3d45e18-b6d5-47df-8cb3-f96c379ec466,Yes
+WBS - catalog item,Appliances,Single Oven,,WHIRLPOOL SINGLE THERMAL OVEN - WOS51EC0HS,0dc40627-4d86-480b-bb82-af1724ae2e9e,Yes
+EPLAN - catalog item,Appliances,Double-Wall Ovens,JTD3000SNSS,"Dbl Wall Oven, 30"" W, Slf Cln, Wifi JTD3000SNSS Stainless Steel",7885d05b-75e7-4480-96c7-4061af56171f,Yes
+EPLAN - catalog item,Appliances,Microwaves,4460-49,"4460-49 Whirlpool 30"" Micro WMC50522AS/MK2220A",5ff15ff6-5fad-4754-a883-a730b263d4f6,Yes
+EPLAN - catalog item,Appliances,Ovens,,"30"" Double Oven - JTD3000SNSS",7885d05b-75e7-4480-96c7-4061af56171f,Yes
+EPLAN - catalog item,Appliances,Ovens,,"30"" DOUBLE WALL OVEN - GE JTD3000SNSS - UPGRADED FROM GE JTS5000SNSS (INCLUDES REQUIRED ELECTRICAL)",7885d05b-75e7-4480-96c7-4061af56171f,Yes
+EPLAN - catalog item,Appliances,Ovens 2,JTD3000SNSS,"30"" Smart Built-In Self-Clean Double Wall Oven With Never-Scrub Racks",7885d05b-75e7-4480-96c7-4061af56171f,Yes
+EPLAN - catalog item,Appliances,Refrigerator,APRC00SSE03,Refrigerator Level 3 Stainless,f3d45e18-b6d5-47df-8cb3-f96c379ec466,Yes
+EPLAN - catalog item,Appliances,Refrigerator,APRF00SSE06,"GYE22GYNFS - GE® ENERGY STAR® 22.1 Cu. Ft. Counter-Depth Fingerprint Resistant French-Door Refrigerator
+*SEE DC FOR PRICING*",f3d45e18-b6d5-47df-8cb3-f96c379ec466,Yes
+EPLAN - catalog item,Appliances,Refrigerators,,LG 22 Cu Ft. 3 Door SS CNTR Depth : LFXC22526S,cd378cf5-f5ac-4fab-8904-f06e4e903bfe,Yes
+EPLAN - catalog item,Appliances,Refrigerators,AFS06,GE STAINLESS 27.7 CU FT FRENCH DOOR REFRIGERATOR,f4a91fd8-ee78-4737-becb-596f430655e4,Yes
+EPLAN - catalog item,Appliances,Refrigerators,APRF00SSE06,"APRF00SSE06 GE Profile Refrigerator - 22 Cu Ft, Counter Depth, Evaps, Adv Flt, LED - GYE22GYNFS Stainless Steel *SEE DC FOR PRICING*",f3d45e18-b6d5-47df-8cb3-f96c379ec466,Yes
+EPLAN - catalog item,Appliances,Refrigerators,APRF00SSE06,GYE22GYNFS - GE® ENERGY STAR® 22.1 Cu. Ft. Counter-Depth Fingerprint Resistant French-Door Refrigerator *SEE DC FOR PRICING*,f3d45e18-b6d5-47df-8cb3-f96c379ec466,Yes
+EPLAN - catalog item,Appliances,Refrigerators,GFE28GYNFS,Energy Star 27.7 Cu. Ft. Fingerprint Resistant French-Door Refrigerator,f4a91fd8-ee78-4737-becb-596f430655e4,Yes

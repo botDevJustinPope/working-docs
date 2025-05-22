@@ -1,12 +1,15 @@
-import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { Component, signal } from "@angular/core";
 
 @Component({
-  selector: 'app-root',
-  imports: [RouterOutlet],
+  selector:'app-root',
   templateUrl: './app.component.html',
-  styleUrl: './app.component.scss'
+  styleUrls: ['./app.component.scss'],
 })
 export class AppComponent {
-  title = 'angular-basics';
+  name = signal('Justin');
+  imageURL = signal('https://wallpapers.com/images/hd/darth-vader-pictures-qwlyfdkmyjirchwo.jpg');
+
+  getName() {
+    return this.name();
+  }
 }

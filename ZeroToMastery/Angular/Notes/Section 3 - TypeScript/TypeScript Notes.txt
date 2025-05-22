@@ -1,0 +1,9 @@
+Typescript is a superset of javascript
+
+can run js files with node from the command line
+can run ts files with ts-node from the command line
+
+generics are a place holder for a type, T is the standard for the generic but can be anything to name it.
+
+Typescript supports Decorators
+Decorators extend logic or adds metadata

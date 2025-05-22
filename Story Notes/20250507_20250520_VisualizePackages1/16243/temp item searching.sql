@@ -8,6 +8,16 @@ from ERP.WBS.dbo.application_products ap
 inner join ERP.WBS.dbo.products p on p.product_id = ap.product_id
 inner join ERP.WBS.dbo.applications a on a.application_id = ap.application_id
 
+select * from (
+    select distinct product, application from VDS_PROD.VeoSolutions.dbo.catalog_items 
+    union
+    select distinct product, application from VDS_PROD.EPLAN_VeoSolutions.dbo.catalog_items
+    union
+    select distinct product, application from VDS_PROD.CCDI_VeoSolutions.dbo.catalog_items
+    union
+    select distinct product, application from VDS_PROD.AFI_VeoSolutions.dbo.catalog_items
+) ci
+where application like '%appliances%' and product like '%dishwasher%'
 */
 
 
@@ -59,7 +69,7 @@ from (
         product as [product],
         item_no as [item_no],
         item as [item],
-        gpc
+        cast(gpc as varchar(36)) as [global product id]
     from VDS_PROD.VeoSolutions.dbo.catalog_items
     UNION
     select distinct 
@@ -70,7 +80,7 @@ from (
         product as [product],
         item_no,
         item ,
-        gpc
+        cast(gpc as varchar(36)) as [global product id]
     from VDS_PROD.EPLAN_VeoSolutions.dbo.catalog_items
     UNION
     select distinct 
@@ -81,7 +91,7 @@ from (
         product as [product],
         item_no,
         item,
-        gpc
+        cast(gpc as varchar(36)) as [global product id]
     from VDS_PROD.CCDI_VeoSolutions.dbo.catalog_items
     union 
     select distinct 
@@ -92,12 +102,13 @@ from (
         product as [product],
         item_no,
         item,
-        gpc
+        cast(gpc as varchar(36)) as [global product id]
     from VDS_PROD.AFI_VeoSolutions.dbo.catalog_items
     ) as colors_combined
-INNER join master.dbo.aareas_digital_assets da on da.gpcIds = colors_combined.[global product id]
-where -- colors_combined.[application_id] = '1' and colors_combined.[product_id] = '6'
-colors_combined.color like '%dishwasher%'
+INNER join master.dbo.aareas_digital_assets da on cast(da.gpcIds as varchar(36)) = colors_combined.[global product id]
+where -- 
+colors_combined.[application_id] = '1' and colors_combined.[product_id] = '6'
+--colors_combined.color like '%dishwasher%'
 --and colors_combined.[global product id] in ('92ea1dc1-84cb-4654-984d-78dd77b77de9', '')
 --and colors_combined.[color] like '%fin%granite%uba%tuba%'
 --and c.color_id = '01900'
@@ -108,6 +119,7 @@ where [product_id] = 'Y'
     and [description] like '%fairfield%'
     and class = 'field' )*/
 --and colors_combined.[part no.] like 'OG0UBTF3/1/1'
+order by colors_combined.[global product id]
 
 /*
 query to find the style_id for a cabinet
@@ -121,60 +133,3 @@ query to find the color_id for a cabinet
 select * from ERP.[Echelon-Epp].dbo.cabinet_colors
 where [color_name] like '%rye%'
 */
-
-/*
-query to find catalog items that are visualizable
-*/
-select 
-    ci.*,
-    case when da.gpcIds is not null then 'Yes' else 'No' end as [Is Visualizable?]
-from (
-    select distinct
-        'WBS - catalog item' as [Type],
-        '' as [application_id],
-        [application] as [application],
-        '' as [product_id],
-        product as [product],
-        item_no as [item_no],
-        item as [item],
-        gpc
-    from VDS_PROD.VeoSolutions.dbo.catalog_items
-    UNION
-    select distinct 
-        'EPLAN - catalog item',
-        '' as [application_id],
-        [application] as [application],
-        '' as [product_id],
-        product as [product],
-        item_no,
-        item ,
-        gpc
-    from VDS_PROD.EPLAN_VeoSolutions.dbo.catalog_items
-    UNION
-    select distinct 
-        'CCDI - catalog item',
-        '' as [application_id],
-        [application] as [application],
-        '' as [product_id],
-        product as [product],
-        item_no,
-        item,
-        gpc
-    from VDS_PROD.CCDI_VeoSolutions.dbo.catalog_items
-    union 
-    select distinct 
-        'AFI - catalog item',
-        '' as [application_id],
-        [application] as [application],
-        '' as [product_id],
-        product as [product],
-        item_no,
-        item,
-        gpc
-    from VDS_PROD.AFI_VeoSolutions.dbo.catalog_items
-) ci 
-inner join master.dbo.aareas_digital_assets da on cast(da.gpcIds as varchar(36)) = ci.gpc 
-where /*
-and product = 'Appliances' and application = 'A La Cartes'
-item like '%GE%Free%standing%' and item not like '%Microwave%'*/ 
-ci.product like '%dishwasher%'

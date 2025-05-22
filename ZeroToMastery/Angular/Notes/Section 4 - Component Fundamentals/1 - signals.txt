@@ -1,0 +1,33 @@
+A signal is a value tracked by Angular
+
+expression - a single line of code that evaluates to a value
+
+expressions are:
+
+//number expression
+2 + 2;
+//string expression 
+"hello".toUpperCase(); // Evaluates to HELLO WORLD 
+//logical expressions 
+100 === 100; // evaluates to true 
+
+expressions are not:
+// variable declarations
+var a;
+// funcation declarations
+function greet(message:string) {
+    console.log(message);
+}
+//conditional statements
+if ( a===b) {
+    // something cool
+}
+
+
+String Interpolation is the process of replacing placeholders into string values
+
+Angular Interpolation is the process of evaluating a variable or method utilized in a template from 
+the veiwmodel
+
+In Angular and using signals, you must call the property as a function to return the value or it will 
+give you the object of that variable.
