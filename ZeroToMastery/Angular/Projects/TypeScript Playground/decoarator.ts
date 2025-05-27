@@ -1,20 +1,14 @@
-function MenuItem(itemId: string) {
-    return function (value, context) {
-    return class extends value {
-        id = itemId;
-    };
+
+class MenuItem{
+    id: string;
+    constructor(id: string) {
+        this.id = id;
     }
 }
 
-@MenuItem("abc")
-class Pizza {
-    id: string;
-}
+class Pizza extends MenuItem {}
 
-@MenuItem("def")
-class Hamburger {
-    id: string;
-}
+class Hamburger extends MenuItem {}
 
-console.log(new Pizza());
-console.log(new Hamburger());
+console.log(new Pizza('abc'));
+console.log(new Hamburger('def'));
