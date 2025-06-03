@@ -1,0 +1,11 @@
+constructor - JavaScript life cycle hook, is executed when Angular instantiates the componet
+
+ngonInit - runs after Angular has intialized all the components inputs with initial values. This is executed only once.
+    This executes before the template is initialized
+
+ngOnChanges - Angular executes this method after inputs have changed, this is executed before the template is checked, ngOnChagnes fires before ngOnInit
+    ngOnChanges excepts a SimpleChanges object. This object is a Record mapping with each input as a SimpleChange object. The SimpleChange object contains
+    the inputs previous value, current value, and a flag for whether or not this is the first change. The input properties TypeScript property name is always
+    used as the key.
+
+ngOnDestroy - 

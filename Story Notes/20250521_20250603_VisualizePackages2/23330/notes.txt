@@ -1,0 +1,26 @@
+VDS logos:
+- unsupported browser
+    * shell.ts / shell.html
+    uses vds-logo-for-white-bg.png
+- splash loader
+    * index.html / index.mustache
+    uses vds-logo-for-white-bg.png
+- forgot password email
+    * SendGridForgotPasswordEmail.cs
+    uses vds-logo-for-white-bg.png
+- SendGridWelcomeEmail
+    * SendGridWelcomeEmail.cs 
+    uses vds-logo-for-white-bg.png 
+- SendGridAccountChangeEmail.cs 
+    uses vds-logo-for-white-bg.png 
+
+- error.html
+    uses vds-logo.png 
+
+- main site dashboard
+    * header.html
+    uses vds-logo.svg
+
+- maint.veosolutions.com
+    assumably there is a maintaince site that is on the server.
+    this is a just an html file plus png

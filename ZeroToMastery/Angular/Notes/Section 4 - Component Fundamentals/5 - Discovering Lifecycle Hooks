@@ -1,3 +1,0 @@
-constructor - JavaScript life cycle hook
-ngonInit() - Angular hook to initialize an componet 
-* OnInit interface can help create a contract for components to implement the ngOnInit method
