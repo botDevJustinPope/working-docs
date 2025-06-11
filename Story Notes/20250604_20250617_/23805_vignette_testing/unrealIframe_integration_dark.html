@@ -1,0 +1,121 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>UnrealIframe Integration Guide</title>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Fira Code', monospace;
+            padding: 20px;
+            line-height: 1.6;
+            background-color: #121212;
+            color: #f1f1f1;
+        }
+        h2 {
+            color: #90caf9;
+            border-bottom: 1px solid #333;
+            padding-bottom: 4px;
+        }
+        pre, code {
+            background-color: #1e1e1e;
+            color: #dcdcdc;
+            padding: 12px;
+            display: block;
+            white-space: pre-wrap;
+            border-radius: 6px;
+            font-size: 0.95em;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+        }
+        table, th, td {
+            border: 1px solid #333;
+        }
+        th, td {
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #2c2c2c;
+            color: #ffffff;
+        }
+        td {
+            background-color: #1c1c1c;
+        }
+        em {
+            color: #b0bec5;
+        }
+        strong {
+            color: #ffcc80;
+        }
+    </style>
+</head>
+<body>
+
+<h2>🔄 Apply Selections from URL</h2>
+<p><em>(Use this when changing packages in the current session)</em></p>
+<pre><code>unrealIframe.postMessage({
+  event: "Apply Materials",
+  url: frameUrl
+}, "*");
+</code></pre>
+
+<p><strong>Example Payload:</strong></p>
+<pre><code>{
+  "event": "Apply Materials",
+  "url": "https://damrc.aareas.com/RenderImage/TheVillages/index.html?...&sceneId=88395&..."
+}
+</code></pre>
+
+<h2>🧩 Apply Changes in Current Session</h2>
+<pre><code>unrealIframe.postMessage({
+  event: "Apply Materials Based On Names",
+  list: applicationObj,
+  room: room,
+  sceneId: SceneId
+}, "*");
+</code></pre>
+
+<p><strong>Example Payload:</strong></p>
+<pre><code>{
+  "event": "Apply Materials Based On Names",
+  "list": [
+    {
+      "Application": "Exterior_Accent Siding 1",
+      "Product": "Group-Q2 Quartz (3 Cm) - UQSG"
+    }
+  ],
+  "room": "Exterior",
+  "sceneId": 88395
+}
+</code></pre>
+
+<h2>🎥 Camera & Furniture Toggles</h2>
+<table>
+  <tr><th>Action</th><th>Code Snippet</th></tr>
+  <tr><td><strong>Show cameras</strong></td><td><code>unrealIframe.postMessage("show cameras", "*");</code></td></tr>
+  <tr><td><strong>Hide cameras</strong></td><td><code>unrealIframe.postMessage("do not show cameras", "*");</code></td></tr>
+  <tr><td><strong>Show furniture</strong> <em>(no UI)</em></td><td><code>unrealIframe.postMessage("show furniture", "*");</code></td></tr>
+  <tr><td><strong>Hide furniture</strong> <em>(no UI)</em></td><td><code>unrealIframe.postMessage("do not show furniture", "*");</code></td></tr>
+</table>
+
+<h2>🔁 Switch Camera</h2>
+<pre><code>unrealIframe.postMessage({
+  event: "Switch Camera",
+  value: val
+}, "*");
+</code></pre>
+
+<p><strong>Example Payload:</strong></p>
+<pre><code>{
+  "event": "Switch Camera",
+  "value": "Bathroom"
+}
+</code></pre>
+
+</body>
+</html>
