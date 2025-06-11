@@ -1,0 +1,13 @@
+How to do relationships?
+
+VCMS: has a thought with hints to 'enforce' to function of relationships
+VCMS: a tag system to enforce a relationship
+- tag on items
+
+Required category selection:
+
+Mutual exclusivity:
+
+Previous selection required (dependency):
+
+Finish color:

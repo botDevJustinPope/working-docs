@@ -1,1 +1,4 @@
 Are we firing heart beat on Org/builder change?
+How to see first, is vds the active tab?
+How to see activity?
+- mouse movement?
