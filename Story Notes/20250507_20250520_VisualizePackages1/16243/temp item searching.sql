@@ -106,10 +106,9 @@ from (
     from VDS_PROD.AFI_VeoSolutions.dbo.catalog_items
     ) as colors_combined
 INNER join master.dbo.aareas_digital_assets da on cast(da.gpcIds as varchar(36)) = colors_combined.[global product id]
-where -- 
-colors_combined.[application_id] = '1' and colors_combined.[product_id] = '6'
---colors_combined.color like '%dishwasher%'
---and colors_combined.[global product id] in ('92ea1dc1-84cb-4654-984d-78dd77b77de9', '')
+where -- colors_combined.[application_id] = '1' and colors_combined.[product_id] = '6'
+--colors_combined.color like '%dishwasher%' and 
+colors_combined.[global product id] in ('2e7fd3a4-64f5-4c9f-9003-ec3f595def18')
 --and colors_combined.[color] like '%fin%granite%uba%tuba%'
 --and c.color_id = '01900'
 /* for cabinets */
