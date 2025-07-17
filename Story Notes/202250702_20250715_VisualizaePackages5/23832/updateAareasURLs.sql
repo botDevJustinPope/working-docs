@@ -22,7 +22,7 @@ end
 declare @UrlTable table ([column] nvarchar(1000), [url] nvarchar(1000));
 insert into @UrlTable ([column], [url])
 values 
-    --('RenderUrl', 'https://apirc.aareas.com/api/Image/GetImage/v2/buildon'),
+    ('RenderUrl', 'https://apirc.aareas.com/api/Image/GetImage/v2/buildon'),
     --('ConfigurationUrl', 'https://apirc.aareas.com/api/SceneSurface/GetClientSurfaceList/b73ce491-bc27-42a7-ad85-6463eca43bfd'),
     --('RenderableProductUrl', 'https://apirc.aareas.com/api/ClientProduct/GetClientProductlist/BuildOn'),
     ('GetAllPackagesUrl', 'https://apirc.aareas.com/api/ClientProduct/GetClientProductPackageList/false/veodesignstudio/b73ce491-bc27-42a7-ad85-6463eca43bfd');
@@ -44,9 +44,9 @@ declare @sql_dbs table (
 )
 insert into @sql_dbs (db_name, enabled)
 values ('VeoSolutions_DEV', 1),
-       ('VeoSolutions_QA', 0),
+       ('VeoSolutions_QA', 1),
        ('VeoSolutions_STAGING', 0),
-       ('VeoSolutions_PREVIEW', 0),
+       ('VeoSolutions_PREVIEW', 1),
        ('VeoSolutions', 0),
        ('AFI_VeoSolutions', 0),
        ('CCDI_VeoSolutions', 0),
