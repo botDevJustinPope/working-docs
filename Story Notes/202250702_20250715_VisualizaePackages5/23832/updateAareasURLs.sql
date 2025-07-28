@@ -45,7 +45,7 @@ declare @sql_dbs table (
 insert into @sql_dbs (db_name, enabled)
 values ('VeoSolutions_DEV', 1),
        ('VeoSolutions_QA', 1),
-       ('VeoSolutions_STAGING', 0),
+       ('VeoSolutions_STAGING', 1),
        ('VeoSolutions_PREVIEW', 1),
        ('VeoSolutions', 0),
        ('AFI_VeoSolutions', 0),

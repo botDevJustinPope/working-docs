@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, input, signal } from '@angular/core';
 
 @Component({
   standalone: true,
@@ -8,5 +8,7 @@ import { Component } from '@angular/core';
   styleUrl: './tab.component.scss'
 })
 export class TabComponent {
+  tabTitle = input<string>('');
+  active = signal(false);
 
 }
