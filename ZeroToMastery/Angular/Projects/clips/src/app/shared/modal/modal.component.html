@@ -1,12 +1,12 @@
 <dialog
   #baseDialog
   (click)="closeModal()"
-  class="z-50 text-white fixed inset-0 w-full h-full p-0 m-0 border-none bg-black/25 open:flex items-center justify-center"
+  class="z-50 text-white fixed inset-0 w-full h-full p-0 m-0 border-none bg-black/35 open:flex items-center justify-center"
 >
   <div
     (click)="$event.stopPropagation()"
     class="bg-secondary p-6 rounded-lg flex flex-col overflow-auto"
-    [ngClass]="{ 'w-screen h-screen': fullscreen(), ' shadow-xl w-full max-w-md': !fullscreen() }"
+    [ngClass]="{ 'w-screen h-screen': fullscreen(), ' shadow-xl w-1/2': !fullscreen() }"
   >
     <!--Title-->
     <div class="flex justify-between items-center pb-4">
