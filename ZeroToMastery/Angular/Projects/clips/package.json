@@ -10,6 +10,7 @@
   },
   "private": true,
   "dependencies": {
+    "@angular-builders/custom-webpack": "^20.0.0",
     "@angular/common": "^20.0.4",
     "@angular/compiler": "^20.0.4",
     "@angular/core": "^20.0.4",
@@ -36,7 +37,7 @@
     "karma-jasmine": "~5.1.0",
     "karma-jasmine-html-reporter": "~2.1.0",
     "postcss": "^8.5.6",
-    "tailwindcss": "^4.1.10",
+    "tailwindcss": "^4.1.11",
     "typescript": "~5.8.3"
   }
 }

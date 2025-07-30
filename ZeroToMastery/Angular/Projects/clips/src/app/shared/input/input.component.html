@@ -1,0 +1,30 @@
+<input
+  type={{type()}}
+  [formControl]="control()"
+  class="block w-full py-1.5 px-3 text-gray-200 border border-gray-400 transition duration-500 focus:outline-none rounded bg-transparent focus:border-indigo-400"
+  [ngClass]="{ 'border-red-400':control().status === 'INVALID' && control().touched }"
+  placeholder={{placeholder()}}
+/>
+@if (control().touched && control().dirty) { 
+  @if (control().hasError('required')) {
+    <p class="text-red-400 italic">Field is required.</p>
+  } 
+  @if (control().hasError('minlength')) {
+    <p class="text-red-400 italic">Field must be {{ control().getError("minlength").requiredLength }} characters long. Current input is {{ control().getError("minlength").actualLength }} long.</p>
+  } 
+  @if (control().hasError('email')) {
+    <p class="text-red-400 italic">Field must be a valid email.</p>
+  }
+  @if (control().hasError('min')) {
+    <p class="text-red-400 italic">Field must be greater than equal {{ control().getError("min").min }}. Current input is {{ control().getError("min").actual }}.</p>    
+  }
+  @if (control().hasError('max')) {
+    <p class="text-red-400 italic">Field must be less than {{ control().getError("max").max }}. Current input is {{ control().getError("max").actual }}.</p>
+  }
+  @if (control().hasError('pattern')) {
+    <p class="text-red-400 italic">Passowrd must be stronger.</p>
+  }
+  @if (control().hasError('passwordMismatch')) {
+    <p class="text-red-400 italic">Passwords must match.</p>
+  }
+}

@@ -1,0 +1,3 @@
+Handling Errors:
+- we are staticly configuring error messages for each error type
+- lets componentize this to have an input of a form control and know what type of message to show based on the error type
