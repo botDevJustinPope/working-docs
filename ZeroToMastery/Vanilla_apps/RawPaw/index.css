@@ -1,0 +1,112 @@
+
+html {
+    height: 100%;
+    font: montserrat, system-ui, sans-serif;
+    font-family: montserrat, system-ui, sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--main-background);
+    color: var(--main-text);
+}
+
+header {
+    flex: 0 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--main-header);
+}
+
+header #AppLogoSvg {
+    max-height: 100px;
+    max-width: 100px;
+    border-radius: 100px;
+    margin: 10px;
+    color: var(--logo-bg);
+}
+
+header  #AppLogoSvg #logoBg {
+    fill: var(--logo-bg);
+}
+
+header  #AppLogoSvg #svgg #path0 {
+    fill: var(--logo-primary);
+}
+
+header  #AppLogoSvg #svgg #path1 {
+    fill: var(--logo-secondary);
+}
+
+header .title {
+    text-align: center;
+}
+
+main {
+    flex: 1 1 0;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    min-height: 0;
+}
+
+main .introduction {
+    flex: 0 0 auto;
+    text-align: center;
+    justify-content: center;
+    align-content: center;
+}
+
+main #console-output-anchor {
+    flex: 1 1 auto;
+    margin: 25px;
+    overflow: hidden;
+    justify-content: center;
+    align-content: center;
+}
+
+footer {
+    flex: 0 0 auto;
+    height: 200px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--main-footer);
+    margin-top: auto;
+}
+
+footer .footerLogos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+}
+
+footer .footerLogos .logoContainer {
+    max-width: 100px;
+    max-height: 100px;
+}
+
+.footerLogos .logoContainer img {
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+}
+
+footer .footerLogos .logoContainer .jkpLogo {
+    border-radius: 100px;
+}
+
+footer .copyRight {
+    text-align: center;
+    color: var(--gray-500);
+    font-size: 14px;
+    margin-top: 10px;
+}

@@ -1,0 +1,14 @@
+:root {
+    /* Main Page variables*/
+    --main-background: var(--primary-500);
+    --main-header: var(--primary-700);
+    --main-footer: var(--primary-900);
+    --main-text: var(--gray-700);
+    --main-header-text: var(--secondary-600);
+
+    /*Logo Variables*/
+    --logo-bg: var(--tertiary-400);
+    --logo-primary: var(--primary-600);
+    --logo-secondary: var(--secondary-600);
+
+}

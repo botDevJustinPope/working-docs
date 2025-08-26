@@ -1,0 +1,54 @@
+:root {
+    /* Main Theme Colors */
+    --primary-color: #0066ff;
+    --secondary-color: #ff9500;
+    --tertiary-color: #00bfa6;
+
+    /* Dark and Light */
+    --absolute-dark: #000000;
+    --absolute-light: #ffffff;
+
+    /* Primary Shades */
+    --primary-100: color-mix(in srgb, var(--primary-color), var(--absolute-light) 80%);
+    --primary-200: color-mix(in srgb, var(--primary-color), var(--absolute-light) 60%);
+    --primary-300: color-mix(in srgb, var(--primary-color), var(--absolute-light) 40%);
+    --primary-400: color-mix(in srgb, var(--primary-color), var(--absolute-light) 20%);
+    --primary-500: var(--primary-color);
+    --primary-600: color-mix(in srgb, var(--primary-color), var(--absolute-dark) 20%);
+    --primary-700: color-mix(in srgb, var(--primary-color), var(--absolute-dark) 40%);
+    --primary-800: color-mix(in srgb, var(--primary-color), var(--absolute-dark) 60%);
+    --primary-900: color-mix(in srgb, var(--primary-color), var(--absolute-dark) 80%);
+
+    /* Secondary Shades */
+    --secondary-100: color-mix(in srgb, var(--secondary-color), var(--absolute-light) 80%);
+    --secondary-200: color-mix(in srgb, var(--secondary-color), var(--absolute-light) 60%);
+    --secondary-300: color-mix(in srgb, var(--secondary-color), var(--absolute-light) 40%);
+    --secondary-400: color-mix(in srgb, var(--secondary-color), var(--absolute-light) 20%);
+    --secondary-500: var(--secondary-color);
+    --secondary-600: color-mix(in srgb, var(--secondary-color), var(--absolute-dark) 20%);
+    --secondary-700: color-mix(in srgb, var(--secondary-color), var(--absolute-dark) 40%);
+    --secondary-800: color-mix(in srgb, var(--secondary-color), var(--absolute-dark) 60%);
+    --secondary-900: color-mix(in srgb, var(--secondary-color), var(--absolute-dark) 80%);
+
+    /* Tertiary Shades */
+    --tertiary-100: color-mix(in srgb, var(--tertiary-color), var(--absolute-light) 80%);
+    --tertiary-200: color-mix(in srgb, var(--tertiary-color), var(--absolute-light) 60%);
+    --tertiary-300: color-mix(in srgb, var(--tertiary-color), var(--absolute-light) 40%);
+    --tertiary-400: color-mix(in srgb, var(--tertiary-color), var(--absolute-light) 20%);
+    --tertiary-500: var(--tertiary-color);
+    --tertiary-600: color-mix(in srgb, var(--tertiary-color), var(--absolute-dark) 20%);
+    --tertiary-700: color-mix(in srgb, var(--tertiary-color), var(--absolute-dark) 40%);
+    --tertiary-800: color-mix(in srgb, var(--tertiary-color), var(--absolute-dark) 60%);
+    --tertiary-900: color-mix(in srgb, var(--tertiary-color), var(--absolute-dark) 80%);
+
+    /* Gray Shades */
+    --gray-100: color-mix(in srgb, var(--absolute-light), var(--absolute-dark) 90%);
+    --gray-200: color-mix(in srgb, var(--absolute-light), var(--absolute-dark) 80%);
+    --gray-300: color-mix(in srgb, var(--absolute-light), var(--absolute-dark) 70%);
+    --gray-400: color-mix(in srgb, var(--absolute-light), var(--absolute-dark) 60%);
+    --gray-500: color-mix(in srgb, var(--absolute-light), var(--absolute-dark) 50%);
+    --gray-600: color-mix(in srgb, var(--absolute-light), var(--absolute-dark) 40%);
+    --gray-700: color-mix(in srgb, var(--absolute-light), var(--absolute-dark) 30%);
+    --gray-800: color-mix(in srgb, var(--absolute-light), var(--absolute-dark) 20%);
+    --gray-900: color-mix(in srgb, var(--absolute-light), var(--absolute-dark) 10%);
+}

@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg">
+  <symbol id="appLogosvg" viewBox="0 0 400 400">
+    <style>
+      #appLogosvg #svgg { background: var(--logo-bg); }
+      #appLogosvg #path0 { fill: var(--logo-primary); }
+      #appLogosvg #path1 { fill: var(--logo-secondary); }
+    </style>
+    <g id="svgg">
+      <path id="path0" d="M257.917 91.832 ... 175.447 308.551 " fill-rule="evenodd"></path>
+      <path id="path1" d="M137.500 87.102 ... 284.570 234.272 " fill-rule="evenodd"></path>
+    </g>
+  </symbol>
+</svg>
