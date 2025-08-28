@@ -17,7 +17,7 @@
     height: 100%;
 }
 
-#console-output .output-header {
+#console-output #output-header {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -27,7 +27,7 @@
     font-size: 12px;
 }
 
-#console-output .output-header .options {
+#console-output #output-header .options {
     display: flex;
     align-items: center;
 }

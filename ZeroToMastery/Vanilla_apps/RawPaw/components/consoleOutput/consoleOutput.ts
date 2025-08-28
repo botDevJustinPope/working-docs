@@ -3,11 +3,12 @@
 const TEMPLATE_URL = new URL("./consoleOutput.html", import.meta.url).href;
 const CONSOLE_OUTPUT_CSS_HREF = new URL("./consoleOutput.css", import.meta.url)
   .href;
-const ROOT_ID = "console-output";
+const ROOT_ID = "#console-output";
 const MSGS_ID = "console-messages";
-const CLEAR_BTN_ID = "clear-console";
-const ENABLE_DELETING_LOGS = "maximum-log";
-const NUBMER_OF_LOGS = "max-log-size";
+const HEADER = "#output-header";
+const CLEAR_BTN_ID = "#clear-console";
+const ENABLE_DELETING_LOGS = "#maximum-log";
+const NUMBER_OF_LOGS = "#max-log-size";
 
 type ConsoleMethod = "log" | "info" | "warn" | "error";
 
@@ -21,6 +22,7 @@ interface ConsoleMessage {
 
 class ConsoleOutput {
   private messages: ConsoleMessage[] = [];
+  private headerContainer: HTMLElement | null = null;
   private container: HTMLElement | null = null;
   private originals: Partial<Record<ConsoleMethod, (...args: any[]) => void>> =
     {};
@@ -31,6 +33,8 @@ class ConsoleOutput {
   private clearLogs: boolean = false;
   private maxLogsInput: HTMLInputElement | null = null;
   private maxMessages = 500;
+  private maxMessagesMin = 100;
+  private maxMessagesMax = 10000;
 
   static async mount(
     options: {
@@ -68,19 +72,10 @@ class ConsoleOutput {
     if (!document.getElementById(ROOT_ID)) {
       try {
         const html = await fetchTemplate(TEMPLATE_URL);
-        const tpl = document.createElement("template");
-        tpl.innerHTML = html.trim();
-        if (anchorEl.childElementCount === 0) {
-          anchorEl.insertAdjacentElement(
-            "beforeend",
-            tpl.content.firstElementChild as HTMLElement
-          );
-        } else {
-          anchorEl.insertAdjacentElement(
+          anchorEl.insertAdjacentHTML(
             position,
-            tpl.content.firstElementChild as HTMLElement
+            html.trim()
           );
-        }
       } catch (e) {
         console.warn("[ConsoleOutput] Failed to load template:", e);
         return null;
@@ -94,6 +89,7 @@ class ConsoleOutput {
 
   private attach(containerSelector: string) {
     if (this.attached) return;
+    this.headerContainer = document.querySelector(HEADER);
     this.container = document.querySelector(containerSelector);
     if (!this.container) {
       console.warn(
@@ -189,7 +185,7 @@ class ConsoleOutput {
     div.appendChild(messageDiv);
     const originDiv = document.createElement("div");
     originDiv.className = "console-message-origin";
-    originDiv.textContent = m.origin;
+    originDiv.textContent = m.origin ? m.origin : "unknown";
     div.appendChild(originDiv);
     this.container.appendChild(div);
     if (this.autoScroll) {
@@ -204,7 +200,7 @@ class ConsoleOutput {
   }
 
   private wireClearButton() {
-    const btn = document.getElementById(CLEAR_BTN_ID);
+    const btn = this.headerContainer?.querySelector(CLEAR_BTN_ID);
     if (btn && !btn.hasAttribute("data-wired")) {
       btn.addEventListener("click", () => this.clear());
       btn.setAttribute("data-wired", "1");
@@ -212,37 +208,43 @@ class ConsoleOutput {
   }
 
   private wireMaxLogsCheckbox() {
-    this.clearLogsCheckBox = this.container?.querySelector(
+    this.clearLogsCheckBox = this.headerContainer?.querySelector(
       ENABLE_DELETING_LOGS
     ) as HTMLInputElement;
-    if (!this.clearLogsCheckBox) return;
 
-    this.clearLogsCheckBox.addEventListener("change", () => {
-      this.clearLogs = (this.clearLogsCheckBox as HTMLInputElement)
-        .checked as boolean;
+    if (!this.clearLogsCheckBox || this.clearLogsCheckBox.hasAttribute("data-wired")) return;
+
+    this.clearLogsCheckBox.addEventListener("input", () => {
+      this.clearLogs = (this.clearLogsCheckBox as HTMLInputElement).checked;
       if (this.maxLogsInput) {
         // enable or disable maxloginput
         this.maxLogsInput.disabled = !this.clearLogs;
       }
     });
+    this.clearLogsCheckBox.setAttribute("data-wired", "1");
   }
 
   private wireMaxLogsInput() {
-    this.maxLogsInput = this.container?.querySelector(
-      NUBMER_OF_LOGS
+    this.maxLogsInput = this.headerContainer?.querySelector(
+      NUMBER_OF_LOGS
     ) as HTMLInputElement;
-    if (!this.maxLogsInput) return;
+    if (!this.maxLogsInput || this.maxLogsInput.hasAttribute("data-wired")) return;
 
     this.maxLogsInput.addEventListener("change", () => {
       this.maxMessages = parseInt((this.maxLogsInput as HTMLInputElement).value);
-    })
+      if (this.maxMessages < this.maxMessagesMin) {
+        this.maxMessages = this.maxMessagesMin;
+      } else if (this.maxMessages > this.maxMessagesMax) {
+        this.maxMessages = this.maxMessagesMax;
+      }
+      (this.maxLogsInput as HTMLInputElement).value = String(this.maxMessages);
+    });
+    this.maxLogsInput.setAttribute("data-wired", "1");
   }
 
   private handleScroll() {
     if (!this.container) return;
-    const messagesContainer = this.container.querySelector("console-messages");
-    if (!messagesContainer) return;
-    const { scrollTop, scrollHeight, clientHeight } = messagesContainer;
+    const { scrollTop, scrollHeight, clientHeight } = this.container;
     this.autoScroll =
       scrollTop + clientHeight + this.bottomThreshhold >= scrollHeight;
   }
@@ -250,10 +252,45 @@ class ConsoleOutput {
   private captureOrigin(): string {
     const err = new Error();
     if (!err.stack) return "unknown";
-    const stackLines = err.stack.split("\n").map((l) => l.trim());
-    const originLine = stackLines[stackLines.length - 1];
-    const match = originLine.match(/\(([^)]+)\)/);
-    return match ? match[1] : "unknown";
+
+    const selfHint = /consoleOutput/i;
+    const lines = err.stack
+      .split("\n")
+      .map(l => l.trim())
+      .filter(l => l && !l.startsWith("Error"));
+
+    for (const ln of lines) {
+      // Skip frames from this file / internal eval
+      if (selfHint.test(ln)) continue;
+
+      // Chrome / Edge style: at func (http://host/path/file.ts:line:col)
+      let match = ln.match(/\((.*?):(\d+):(\d+)\)/);
+      // Firefox style: func@http://host/path/file.ts:line:col
+      if (!match) match = ln.match(/@(.*?):(\d+):(\d+)/);
+      // Bare style: at http://host/path/file.ts:line:col
+      if (!match) match = ln.match(/\s(at\s)?(.*?):(\d+):(\d+)/);
+
+      if (match) {
+        // match forms vary; normalize
+        // Chrome/Firefox grouped: fullPath line col at indices end-2, end-1
+        const parts = match.slice(1);
+        // Extract last three numeric groups as line/col
+        const nums = parts.filter(p => /^\d+$/.test(p));
+        if (nums.length >= 2) {
+          const line = nums[nums.length - 2];
+            const col = nums[nums.length - 1];
+          // Find the path candidate (first non-numeric part containing / or \ )
+          const pathCandidate =
+            parts.find(p => /[\\/]/.test(p)) ||
+            parts[0];
+          // Remove query/hash
+          const clean = pathCandidate.split(/[?#]/)[0];
+          const file = clean.split(/[\\/]/).pop() || clean;
+          return `${file}:${line}:${col}`;
+        }
+      }
+    }
+    return "unknown";
   }
 }
 
