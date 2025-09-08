@@ -1,0 +1,86 @@
+[
+{
+  //save new survey dto
+  "id": null, // guid? is nullable, if null creating, present updating
+  "name": "TM Survey", // name of the Lifestyle Snapshot
+  "steps": [
+    {
+      "id": null, // guid
+      "prompt": "", // prompt for the survey step
+      "type": "questionaire",
+      "options": []
+    },
+    {
+      "id": null, // guid
+      "prompt": "What colors do you prefer?", // prompt
+      "options": [
+        {
+          "id": null, // guid
+          "caption": "Cool" // caption for the option
+        },
+        {
+          "id": null, // guid
+          "caption": "Neutral" // caption for the option
+        },
+        {
+          "id": null, // guid
+          "caption": "Warm" // caption for the option
+        }
+      ]
+    },
+    {
+      "id": "", // guid
+      "prompt": "What style do you prefer?", // prompt
+      "options": [
+        {
+          "id": null, // guid? is nullable, if null creating, present updating
+          "caption": "Traditional", // caption for the option
+          "imageData": "", // image data to save
+          "fileType": "" // file type
+        },
+        {
+          "id": null, // guid? is nullable, if null creating, present updating
+          "caption": "Transitional", // caption for the option
+          "imageData": "", // image data to save
+          "fileType": "" // file type
+        },
+        {
+          "id": null, // guid? is nullable, if null creating, present updating
+          "caption": "Modern", // caption for the option
+          "imageData": "", // image data to save
+          "fileType": "" // file type
+        }
+      ]
+    }
+  ]
+},
+
+{
+  //save update survey dto
+  "id": "0000-0000-0000-0000", // guid? is nullable, if null creating, present updating
+  "name": "TM Survey", // name of the Lifestyle Snapshot
+  "steps": [
+    {
+      "id": "0000-0000-0000-0001", // guid
+      //"prompt": "What style do you prefer?", // prompt
+      "options": [
+        { // this option will be updated
+          "id": "0000-0000-0000-0002", // guid? is nullable, if null creating, present updating
+          "caption": "Traditional" // caption for the option
+        },
+        { // this option will be created
+            "id": null,
+            "caption": "Sith",
+            "imageData": "DarthVarder",
+            "fileType": "image/png"
+            /*
+                On Adding/Creating with image data error if imageData and fileType are not provided
+
+                On updating with image data error if imageData and fileType are not provided
+            */
+        }
+      ]
+    }
+  ]
+}
+]

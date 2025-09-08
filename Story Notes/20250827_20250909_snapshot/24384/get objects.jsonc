@@ -1,0 +1,61 @@
+[
+  { // Detailed Survey object
+    "id": "", // guid
+    "name": "TM Survey", // name of the Lifestyle Snapshot
+    "steps": [
+      {
+        "id": "", // guid
+        "prompt": "", // prompt for the survey step
+        "type": "questionaire",
+        "options": []
+      },
+      {
+        "id": "", // guid
+        "prompt": "What colors do you prefer?", // prompt
+        "options": [
+          {
+            "id": "", // guid
+            "caption": "Cool", // caption for the option
+            "imageURL": "" // image URL for retrieval
+          },
+          {
+            "id": "", // guid
+            "caption": "Neutral", // caption for the option
+            "imageURL": "" // image URL for retrieval
+          },
+          {
+            "id": "", // guid
+            "caption": "Warm", // caption for the option
+            "imageURL": "" // image URL for retrieval
+          }
+        ]
+      },
+      {
+        "id": "", // guid
+        "prompt": "What style do you prefer?", // prompt
+        "options": [
+          {
+            "id": "", // guid
+            "caption": "Traditional", // caption for the option
+            "imageURL": "" // image URL for retrieval
+          },
+          {
+            "id": "", // guid
+            "caption": "Transitional", // caption for the option
+            "imageURL": "" // image URL for retrieval
+          },
+          {
+            "id": "", // guid
+            "caption": "Modern", // caption for the option
+            "imageURL": "" // image URL for retrieval
+          }
+        ]
+      }
+    ]
+  },
+
+  { // Summaries DTO
+    "summaries": [{ "id": "", "name": "", "Author": "", "LastModified": "" }]
+  }
+]
+    
