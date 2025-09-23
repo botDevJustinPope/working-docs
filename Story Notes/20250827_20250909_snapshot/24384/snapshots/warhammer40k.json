@@ -1,0 +1,116 @@
+{
+    "Id":"5542659c-8279-426e-b1d1-a5a7558d4288", 
+    "Name":"Warhammer 40k",
+    "Steps" : [
+        {
+            "Id": "be0521e9-ad32-4426-8465-98823b026a4e",
+            "Prompt": "Which army do you want to build?",
+            "Type": "SELECTION",
+            "Order": 0,
+            "Options":[
+                {
+                    "Id":"2345923d-96c1-402e-bcf3-dd9a476b385b",
+                    "Caption":"Space Marines",
+                    "ImageId":"10acd9de-9cd0-46aa-ab65-b30fc31f3ee8",
+                    "Order":0
+                },
+                {
+                    "Id":"abc4381c-bde7-44f8-8777-92bab3b4b7bb",
+                    "Caption":"Adeptus Mechanicus",
+                    "ImageId":"8b896d15-7fdd-4665-bf7e-0c39856fb7d4",
+                    "Order":1
+                },
+                {
+                    "Id":"c8175883-a594-47cf-bad6-d16de0bc085f",
+                    "Caption":"Astra Militarum",
+                    "ImageId":"c2e2be9b-bd53-4e17-8ebe-2df9aa5e63c2",
+                    "Order":2
+                },
+                {
+                    "Caption":"Adeptus Custodes",
+                    "ImageId":"f0c29edd-ab1f-4c0f-883b-7bad9f8186b5",
+                    "Order":3
+                },
+                {
+                    "Caption":"Chaos Space Marines",
+                    "ImageId":"aaf91731-6610-451c-9308-bdc29d44001a",
+                    "Order":4
+                },
+                {
+                    "Caption":"Aeldari",
+                    "ImageId":"50b3f95c-fcff-42f7-866a-82ce034d040e",
+                    "Order":5
+                },
+                {
+                    "Caption":"Tyranids",
+                    "ImageId":"2ba1a645-766a-4c1b-8cba-93bc896434e2",
+                    "Order":6
+                },
+                {
+                    "Caption":"Necrons",
+                    "ImageId":"5306df96-9657-4526-a78c-660154a9d895",
+                    "Order":7
+                },
+                {
+                    "Caption":"Orks",
+                    "ImageId":"a09a4324-8b4f-437c-985c-fe086e1150f9",
+                    "Order":8
+                },
+                {
+                    "Caption":"Tau",
+                    "ImageId":"d2948df7-676c-45eb-ac63-4cc9ab163b00",
+                    "Order":9
+                }
+            ]
+        },
+        {
+            "Id": "841e6579-343e-4e72-b3f1-265818f011f7",
+            "Prompt": "What is your play style?",
+            "Type": "SELECTION",
+            "Order": 1,
+            "Options":[
+                {
+                    "id":"cb82a5b7-4aea-484b-8dce-9b9ddec608b2",
+                    "Caption":"Blood and Guts",
+                    "ImageId":"c0350869-1fb0-4348-b971-f4412298830d",
+                    "Order":0
+                },
+                {
+                    "id":"7d5f7840-eb87-4d5c-8c3c-627152bd15a4",
+                    "Caption":"Mid-range",
+                    "ImageId":"68d39e00-0a97-4523-9de9-edb99edb9798",
+                    "Order":1
+                },
+                {
+                    "id":"8caaf1b9-32e8-4e4e-b5ef-d8828aaa3ad0",
+                    "Caption":"From the Other Side of the Table",
+                    "ImageId":"5a9946bf-4692-4d66-b5ad-cc2c2346ec78",
+                    "Order":2
+                }
+            ]
+        },
+        {
+            "Prompt":"What is your budget?",
+            "Type": "SELECTION",
+            "Order": 2,
+            "Options":[
+                {
+                    "Caption":"I have no money",
+                    "ImageId":"3aa77d24-82fd-4a4a-99ab-4a6b158ba6cf",
+                    "Order":0
+                },
+                {
+                    "Caption":"$250-$750",
+                    "ImageId":"4579d526-6edb-458f-9107-13ad8c87acf1",
+                    "Order":1
+                },
+                {
+                    "Caption":"I'm the whale",
+                    "ImageId":"c112a937-6a97-4e92-9e79-738176ddabe5",
+                    "Order":2
+                }
+
+            ]
+        }
+    ]
+}

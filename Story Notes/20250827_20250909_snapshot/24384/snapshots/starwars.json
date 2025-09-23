@@ -1,0 +1,75 @@
+{
+  "name": "Star Wars",
+  "steps": [
+    {
+      "prompt": "Which side of the Force?",
+      "options": [
+        {
+          "caption": "Light",
+          "imageId": "6942222e-ba86-4b68-95bd-df53bf4e793d",
+          "order": 0
+        },
+        {
+          "caption": "Grey",
+          "imageId": "87b3cb7b-2139-4fd9-b74a-16be6dc315e3",
+          "order": 3
+        },
+        {
+          "caption": "Dark",
+          "imageId": "35e6968b-6e80-4dae-8d51-9ab1b2860425",
+          "order": 2
+        },
+        {
+          "caption": "Mandalorian",
+          "imageId": "d71fae50-41e1-4905-b77a-8e5a7a46e3d3",
+          "order": 3
+        }
+      ]
+    },
+    {
+      "prompt": "Where is your next home planet?",
+      "options": [
+        {
+          "caption": "Tatooine",
+          "imageId": "865d4c00-b3b0-48ba-8d6b-d48c678b99bf",
+          "order": 0
+        },
+        {
+          "caption": "Naboo",
+          "imageId": "90d2ebc4-3144-4d72-845d-0e4a1d690d7b",
+          "order": 1
+        },
+        {
+          "caption": "Coruscant",
+          "imageId": "dade5a05-2c56-4339-a423-9f800cb31ad0",
+          "order": 2
+        },
+        {
+          "caption": "Kashyyyk",
+          "imageId": "18c3d274-6426-49c3-a573-f0288c889d63",
+          "order": 3
+        },
+        {
+          "caption": "Alderaan",
+          "imageId": "5dfa0112-7383-4c24-873e-cfb56f7c0bc3",
+          "order": 4
+        },
+        {
+          "caption": "Hoth",
+          "imageId": "68478ef1-81b9-44a0-b25e-9fb88dc98501",
+          "order": 5
+        },
+        {
+          "caption": "Endor",
+          "imageId": "4a4cb042-8b62-4402-ad6a-110df0cf5f1a",
+          "order": 6
+        },
+        {
+          "caption": "Dagobah",
+          "imageId": "075e71cd-1694-4010-8cfb-5fbad158d30f",
+          "order": 7
+        }
+      ]
+    }
+  ]
+}

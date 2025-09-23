@@ -3,7 +3,7 @@ import { ReactiveFormsModule, FormBuilder, Validators } from '@angular/forms';
 import { CommonModule } from '@angular/common';
 import { InputComponent } from '../../shared/input/input.component';
 import { AlertComponent } from '../../shared/alert/alert.component';
-import { Auth, createUserWithEmailAndPassword } from '@angular/fire/auth';
+import { AuthService } from '../../services/auth.service';
 
 @Component({
   standalone: true,
@@ -14,7 +14,8 @@ import { Auth, createUserWithEmailAndPassword } from '@angular/fire/auth';
 })
 export class RegisterComponent {
   fb = inject(FormBuilder);
-  #auth = inject(Auth);
+  inSubmission = signal(false);
+  authService = inject(AuthService);
 
   form = this.fb.nonNullable.group(
     {
@@ -67,23 +68,20 @@ export class RegisterComponent {
   }
 
   async register() {
+    this.inSubmission.set(true);
     this.showAlert.set(true);
     this.alertMsg.set('Please wait! Your account is being created.');
     this.alertColor.set('blue');
 
-    const { email, password } = this.form.getRawValue();
     try {
-      const userCred = await createUserWithEmailAndPassword(
-        this.#auth,
-        email,
-        password
-      );
 
-      console.log(userCred);
+      await this.authService.createUser(this.form.getRawValue());
+
     } catch (error) {
       console.error(error);
       this.alertMsg.set('An error occurred! Please try again latter.');
       this.alertColor.set('red');
+      this.inSubmission.set(false);
       return;
     }
 

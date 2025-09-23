@@ -1,0 +1,25 @@
+Section 10 - 
+**Handling the Response **
+1) Right now the messaging is a generic error, 
+lets review documentation of Firebases createUserWithEmailAndPassword method 
+to know the kinds of errors that are thrown back and tailor the messages to what is best.
+
+2) UX in the register submission could better
+Process:
+
+*1 user fills out form
+*2 submission is available
+*3 user clicks submit
+
+Path 4.a: invalid submission
+*5 Error messaging prompting is specific to the possible errors that Firebase returns
+- other reflexes of preventing resubmission unless fields are touched again and/or modified
+*6 pick back up with step *3
+
+Path 4.b: valid submission 
+*6 Form should clear, and the success should either authenticate from there |or| ask them to sign in or force them to the login tab
+
+** Buckets, Collections, and Documents **
+- Buckets - physical locations of where data is stored
+- Collections - a 'folder' of where data is stored
+- Documents - the data that is stored, records per say
