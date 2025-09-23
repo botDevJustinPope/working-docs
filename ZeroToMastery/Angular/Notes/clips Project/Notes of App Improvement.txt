@@ -23,3 +23,7 @@ Path 4.b: valid submission
 - Buckets - physical locations of where data is stored
 - Collections - a 'folder' of where data is stored
 - Documents - the data that is stored, records per say
+
+** Setting Up the Login **
+This dude teaches about the service layer and then just disregards
+Any time we call fire base it should be through a service

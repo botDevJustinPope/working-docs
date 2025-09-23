@@ -1,7 +1,9 @@
 import { inject, Injectable } from '@angular/core';
-import { Auth, createUserWithEmailAndPassword, updateProfile, authState } from '@angular/fire/auth';
+import { Auth, createUserWithEmailAndPassword, updateProfile, authState, signInWithEmailAndPassword, signOut } from '@angular/fire/auth';
 import { Firestore, collection, addDoc, doc, setDoc } from '@angular/fire/firestore';
 import IUser from '../models/user.model';
+import { ILogin } from '../models/login.model';
+import { delay } from 'rxjs/internal/operators/delay';
 
 @Injectable({
   providedIn: 'root'
@@ -12,6 +14,9 @@ export class AuthService {
   #firestore = inject(Firestore);
   // $ is a convention to indicate an observable
   authState$ = authState(this.#auth);
+  authStateWithDelay$ = this.authState$.pipe(
+    delay(1000)
+  );
 
   public async createUser(userData: IUser) {
     try {
@@ -35,6 +40,29 @@ export class AuthService {
 
     } catch (e) {
       console.error('Error adding document: ', e);
+      throw e;
+    }
+  }
+
+  public async logIn(userCredentials: ILogin) {
+    try {
+      const userCred = await signInWithEmailAndPassword(
+        this.#auth,
+        userCredentials.email,
+        userCredentials.password
+      );
+    } catch (e) {
+      console.error('Error logging in: ', e);
+      throw e;
+    }
+  }
+
+  public async logOut() {
+    try {
+      await signOut(this.#auth);
+    } catch (e) {
+      console.error('Error logging out: ', e);
+      throw e;
     }
   }
 

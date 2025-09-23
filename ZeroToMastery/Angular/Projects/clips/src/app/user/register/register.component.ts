@@ -4,6 +4,8 @@ import { CommonModule } from '@angular/common';
 import { InputComponent } from '../../shared/input/input.component';
 import { AlertComponent } from '../../shared/alert/alert.component';
 import { AuthService } from '../../services/auth.service';
+import { Alert } from '../../models/alert.model';
+import { AlertType } from '../../models/enum/alert.enum';
 
 @Component({
   standalone: true,
@@ -45,8 +47,7 @@ export class RegisterComponent {
   );
 
   showAlert = signal(false);
-  alertMsg = signal('Please wait! Your account is begin created.');
-  alertColor = signal('blue');
+  alert = signal<Alert|null>(null);
 
   passwordsMatchValidator(group: import('@angular/forms').AbstractControl) {
     const password = group.get('password')?.value;
@@ -69,9 +70,7 @@ export class RegisterComponent {
 
   async register() {
     this.inSubmission.set(true);
-    this.showAlert.set(true);
-    this.alertMsg.set('Please wait! Your account is being created.');
-    this.alertColor.set('blue');
+    this.setAlertInfo();
 
     try {
 
@@ -79,13 +78,27 @@ export class RegisterComponent {
 
     } catch (error) {
       console.error(error);
-      this.alertMsg.set('An error occurred! Please try again latter.');
-      this.alertColor.set('red');
+      this.setAlertError();
       this.inSubmission.set(false);
       return;
     }
 
-    this.alertMsg.set('Success! Your account has been created.');
-    this.alertColor.set('green');
+    this.setAlertSuccess();
   }
+
+  setAlertInfo() {
+    this.showAlert.set(true);
+    this.alert.set(new Alert(AlertType.Info, 'Please wait! Your account is being created.'));
+  }
+
+  setAlertSuccess() {
+    this.showAlert.set(true);
+    this.alert.set(new Alert(AlertType.Success, 'Success! Your account has been created.'));
+  }
+
+  setAlertError() {
+    this.showAlert.set(true);
+    this.alert.set(new Alert(AlertType.Error, 'An error occurred! Please try again later.'));
+  }
+
 }

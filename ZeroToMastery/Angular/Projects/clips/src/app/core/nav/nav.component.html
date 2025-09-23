@@ -12,12 +12,15 @@
       <!-- Primary Navigation -->
       <ul class="flex flex-row mt-1">
         <!-- Navigation Links -->
-        @if (auth.authState$ | async) {
+        @if (authService.authState$ | async) {
         <li>
           <a class="px-2" href="#">Manage</a>
         </li>
         <li>
           <a class="px-2" href="#">Upload</a>
+        </li>
+        <li>
+          <a class="px-2" href="#" (click)="logOut($event)">Log Out</a>
         </li>
         } @else {
         <li>

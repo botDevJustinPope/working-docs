@@ -12,11 +12,22 @@ import { AsyncPipe } from '@angular/common';
 })
 export class NavComponent {
   modal = inject(ModalService);
-  auth = inject(AuthService);
+  authService = inject(AuthService);
 
   openModal($event: Event) {
     $event.preventDefault();
     this.modal.toggle('auth');
+  }
+
+  async logOut($event: Event) {
+    $event.preventDefault();
+
+    try {
+      await this.authService.logOut();
+    } catch (e) {
+      console.error(e);
+    }
+    
   }
 
 }

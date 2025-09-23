@@ -1,5 +1,5 @@
 @if(showAlert()){
-  <app-alert [color]="alertColor()">{{alertMsg() }}</app-alert>}
+  <app-alert [alertInput]="alert()"></app-alert>}
 <!-- Registration Form -->
 <form [formGroup]="form" (ngSubmit)="register()">
   <!-- Name -->
