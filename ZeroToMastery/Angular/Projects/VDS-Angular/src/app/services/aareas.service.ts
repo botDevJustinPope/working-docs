@@ -1,8 +1,8 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { BaseService } from './base.service';
-import { AareasGetSurfaceListReturnDTO } from '../models/aareasGetSurfaceListReturnDTO';
-import { AareasGetProductPackageListReturnDTO } from '../models/aareasPackagesDTOs';
+import { AareasGetSurfaceListReturnDTO } from '../models/Aareas/aareasGetSurfaceListReturnDTO';
+import { AareasGetProductPackageListReturnDTO } from '../models/Aareas/aareasPackagesDTOs';
 
 @Injectable({
   providedIn: 'root'
@@ -14,7 +14,7 @@ export class AareasService extends BaseService {
 
   constructor(client: HttpClient) {
     super(client);
-    this.rootUrl = 'https://apirc.aareas.com/api';
+    this.rootUrl = 'https://api.aareas.com/api';
    }
 
 /**
