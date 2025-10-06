@@ -6,6 +6,7 @@ import { AlertComponent } from '../../shared/alert/alert.component';
 import { AuthService } from '../../services/auth.service';
 import { Alert } from '../../models/alert.model';
 import { AlertType } from '../../models/enum/alert.enum';
+import { Match, EmailTaken } from './validators';
 
 @Component({
   standalone: true,
@@ -18,11 +19,12 @@ export class RegisterComponent {
   fb = inject(FormBuilder);
   inSubmission = signal(false);
   authService = inject(AuthService);
+  emailTaken = inject(EmailTaken);
 
   form = this.fb.nonNullable.group(
     {
       name: ['', [Validators.required, Validators.minLength(3)]],
-      email: ['', [Validators.required, Validators.email]],
+      email: ['', [Validators.required, Validators.email], [this.emailTaken.validate.bind(this.emailTaken)]],
       age: [18, [Validators.required, Validators.min(18), Validators.max(120)]],
       password: [
         '',
@@ -43,30 +45,11 @@ export class RegisterComponent {
         ],
       ],
     },
-    { validators: [this.passwordsMatchValidator] }
+    { validators: [Match('password', 'confirmPassword')] }
   );
 
   showAlert = signal(false);
   alert = signal<Alert|null>(null);
-
-  passwordsMatchValidator(group: import('@angular/forms').AbstractControl) {
-    const password = group.get('password')?.value;
-    const confirmPassword = group.get('confirmPassword')?.value;
-    if (password !== confirmPassword) {
-      group.get('confirmPassword')?.setErrors({ passwordMismatch: true });
-    } else {
-      const errors = group.get('confirmPassword')?.errors;
-      if (errors) {
-        delete errors['passwordMismatch'];
-        if (Object.keys(errors).length === 0) {
-          group.get('confirmPassword')?.setErrors(null);
-        } else {
-          group.get('confirmPassword')?.setErrors(errors);
-        }
-      }
-    }
-    return null;
-  }
 
   async register() {
     this.inSubmission.set(true);

@@ -26,7 +26,10 @@
   @if (control().hasError('pattern')) {
     <p class="text-red-400 italic">Passowrd must be stronger.</p>
   }
-  @if (control().hasError('passwordMismatch')) {
+  @if (control().hasError('noMatch')) {
     <p class="text-red-400 italic">Passwords must match.</p>
+  }
+  @if (control().hasError('emailTaken')) {
+    <p class="text-red-400 italic">Email is already taken.</p>
   }
 }

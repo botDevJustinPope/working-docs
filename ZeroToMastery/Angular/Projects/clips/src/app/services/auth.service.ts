@@ -1,5 +1,5 @@
 import { inject, Injectable } from '@angular/core';
-import { Auth, createUserWithEmailAndPassword, updateProfile, authState, signInWithEmailAndPassword, signOut } from '@angular/fire/auth';
+import { Auth, createUserWithEmailAndPassword, updateProfile, authState, signInWithEmailAndPassword, signOut, fetchSignInMethodsForEmail } from '@angular/fire/auth';
 import { Firestore, collection, addDoc, doc, setDoc } from '@angular/fire/firestore';
 import IUser from '../models/user.model';
 import { ILogin } from '../models/login.model';
@@ -66,4 +66,14 @@ export class AuthService {
     }
   }
 
+  public async doesEmailExist(email: string): Promise<string[]> {
+    let rtn: string[] = [];
+    try {
+      rtn = await fetchSignInMethodsForEmail(this.#auth, email);
+    } catch (e) {
+      console.error('Error checking email: ', e);
+      throw e;
+    }
+    return rtn;
+  }
 }
