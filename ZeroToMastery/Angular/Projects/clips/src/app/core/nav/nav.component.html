@@ -4,7 +4,7 @@
     <!-- App Name -->
     <a
       class="text-3xl text-indigo-400 font-bold uppercase mr-4"
-      href="index.html"
+      [routerLink]="RouteNames.Home"
       >Clips</a
     >
 
@@ -14,10 +14,10 @@
         <!-- Navigation Links -->
         @if (authService.authState$ | async) {
         <li>
-          <a class="px-2" href="#">Manage</a>
+          <a class="px-2" [routerLink]="RouteNames.Manage" routerLinkActive="text-indigo-400">Manage</a>
         </li>
         <li>
-          <a class="px-2" href="#">Upload</a>
+          <a class="px-2" [routerLink]="RouteNames.Upload" routerLinkActive="text-indigo-400">Upload</a>
         </li>
         <li>
           <a class="px-2" href="#" (click)="logOut($event)">Log Out</a>
@@ -29,8 +29,8 @@
           >
         </li>
         }
-        <li>
-          <a class="px-2" href="about">About</a>
+        <li routerLinkActive="text-indigo-400">
+          <a class="px-2" [routerLink]="RouteNames.About" routerLinkActive="text-indigo-400">About</a>
         </li>
       </ul>
     </div>
