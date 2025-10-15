@@ -1,8 +1,6 @@
 import { Injectable, inject } from '@angular/core';
-import { Storage, ref, uploadBytesResumable, getDownloadURL, UploadTask } from '@angular/fire/storage';
-import { v4 as uuid } from 'uuid';
+import { Storage, ref, uploadBytesResumable, UploadTask } from '@angular/fire/storage';
 import { AppFile } from '../models/file.model';
-import { UpdateData } from '@angular/fire/firestore';
 
 @Injectable({
   providedIn: 'root'

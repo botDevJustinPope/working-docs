@@ -9,6 +9,7 @@ import { AlertComponent } from '../../shared/alert/alert.component';
 import { Alert } from '../../models/alert.model';
 import { AlertType } from '../../models/enum/alert.enum';
 import { StorageError, UploadTaskSnapshot } from '@angular/fire/storage';
+import { AuthService } from '../../services/auth.service';
 
 @Component({
   selector: 'app-upload',
@@ -30,6 +31,10 @@ export class UploadComponent {
   uploadsService = inject(UploadsService);
   alertObj = signal<Alert>(new Alert(false));
 
+  #auth = inject(AuthService);
+
+  private maxFileSize = 25 * 1024 * 1024; // 25MB
+
   fb = inject(FormBuilder);
   form = this.fb.nonNullable.group({
     title: ['', [Validators.required, Validators.minLength(3)]],
@@ -45,7 +50,11 @@ export class UploadComponent {
 
     if (!this.file()?.isValidType) {
       this.file.set(null);
-      alert('Please upload a valid mp4 file');
+      this.setAlertError('Please upload a valid mp4 file');
+      return;
+    } else if (!this.file() || !(this.file()!.file.size < this.maxFileSize)) {
+      this.file.set(null);
+      this.setAlertError(`File size must be less than ${this.maxFileSize / 1024 / 1024}MB`);
       return;
     }
 
@@ -53,11 +62,14 @@ export class UploadComponent {
       this.file()?.file.name.replace(/\.[^/.]+$/, '') ?? ''
     );
 
-    this.nextStep.set(true);
+    this.uploadFile();
   }
 
   uploadFile() {
     const task = this.uploadsService.uploadfile(this.file() as AppFile);
+
+    console.log(`file mime ${this.file()?.file.type} and size ${(this.file()?.file.size as number / 1024/1024).toFixed(2)}MB`);
+
     this.setUploadInProgress();
 
     task.on(
@@ -76,7 +88,7 @@ export class UploadComponent {
         // await a second then set next step
         setTimeout(() => {
           this.nextStep.set(true);
-        }, 1000);
+        }, 750);
       }
     );
   }
@@ -91,8 +103,8 @@ export class UploadComponent {
   }
 
   setUploadTaskProgress(task: UploadTaskSnapshot) {
-    const progress = (task.bytesTransferred / task.totalBytes) * 100;
-    this.alertObj.set(new Alert(true, AlertType.Info, `Upload is ${progress}% done`));
+    const progress:number = ((task.bytesTransferred / task.totalBytes) * 100) as number;
+    this.alertObj.set(new Alert(true, AlertType.Info, '', progress));
   }
 
   setUploadError(error: StorageError) {
@@ -101,5 +113,9 @@ export class UploadComponent {
 
   setUploadComplete() {
     this.alertObj.set(new Alert(true, AlertType.Success, 'Upload complete!'));
+  }
+
+  setAlertError(message: string) {
+    this.alertObj.set(new Alert(true, AlertType.Error, message));
   }
 }
