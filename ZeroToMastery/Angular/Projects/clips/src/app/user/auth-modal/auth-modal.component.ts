@@ -4,6 +4,7 @@ import { TabsContainerComponent } from '../../shared/tabs-container/tabs-contain
 import { TabComponent } from '../../shared/tab/tab.component';
 import { LoginComponent } from '../login/login.component';
 import { RegisterComponent } from '../register/register.component';
+import { Modals } from '../../services/modal.service';
 
 @Component({
   selector: 'app-auth-modal',
@@ -13,5 +14,6 @@ import { RegisterComponent } from '../register/register.component';
   styleUrl: './auth-modal.component.scss'
 })
 export class AuthModalComponent {
+  modalId = Modals.Auth;
 
 }

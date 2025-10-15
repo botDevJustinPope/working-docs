@@ -11,21 +11,27 @@ interface IModal {
 })
 export class ModalService {
   private modals = signal<IModal[]>([]);
-
+  
   constructor() { }
 
-  register(id: string, element: HTMLDialogElement) {
-    this.modals.set([...this.modals(),{ id, element }]);
+  register(modalENUM: Modals, element: HTMLDialogElement) {
+    this.modals.set([...this.modals(),{ id: modalENUM, element }]);
   }
 
-  unregister(id: string) {
-    this.modals.set(this.modals().filter((item) => item.id !== id));
+  unregister(modalENUM: Modals) {
+    this.modals.set(this.modals().filter((item) => item.id !== modalENUM));
   }
 
-  toggle(id: string) {
-    const modal = this.modals().find((item) => item.id === id);
+  toggle(modalENUM: Modals) {
+    const modal = this.modals().find((item) => item.id === modalENUM);
     if (modal) {
       modal.element.open ? modal.element.close() : modal.element.showModal();
     }
   }
 }
+
+export enum Modals {
+  Auth = 'auth',
+  Alert = 'alert'
+}
+  

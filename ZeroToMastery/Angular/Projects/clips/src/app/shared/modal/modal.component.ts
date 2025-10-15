@@ -1,6 +1,6 @@
 import { Component, inject, input, viewChild, AfterViewInit, ElementRef, OnDestroy, signal} from '@angular/core';
 import { NgClass } from '@angular/common';
-import { ModalService } from '../../services/modal.service';
+import { Modals, ModalService } from '../../services/modal.service';
 
 @Component({
   selector: 'app-modal',
@@ -13,7 +13,7 @@ import { ModalService } from '../../services/modal.service';
 export class ModalComponent implements AfterViewInit, OnDestroy {
   modal = inject(ModalService);  
 
-  id = input.required<string>();
+  id = input.required<Modals>();
   dialog = viewChild.required<ElementRef<HTMLDialogElement>>('baseDialog');
   fullscreen = signal(false);
 

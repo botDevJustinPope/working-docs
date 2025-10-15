@@ -1,6 +1,9 @@
 <section class="container mx-auto my-8 bg-secondary p-6">
   <div class="rounded relative flex flex-col">
     <div class="font-bold mb-6">Upload Video</div>
+    @if (showAlert()) {
+    <app-alert [alertInput]="alertObj()"></app-alert>
+    }
 
     <!-- Upload Dropbox -->
     @if (!nextStep()) {
@@ -39,7 +42,10 @@
       <!-- Title -->
       <div class="mt-4">
         <label class="block text-xl mb-4">Title</label>
-        <app-input [control]="form.controls.title" placeholder="Enter title"></app-input>
+        <app-input
+          [control]="form.controls.title"
+          placeholder="Enter title"
+        ></app-input>
       </div>
 
       <div class="mt-4 text-right">
@@ -52,6 +58,5 @@
       </div>
     </form>
     }
-
   </div>
 </section>

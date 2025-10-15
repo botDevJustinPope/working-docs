@@ -1,5 +1,5 @@
 import { Component, inject } from '@angular/core';
-import { ModalService } from '../../services/modal.service';
+import { Modals, ModalService } from '../../services/modal.service';
 import { AuthService } from '../../services/auth.service';
 import { AsyncPipe } from '@angular/common';
 import { RouterLink, RouterLinkActive } from "@angular/router";
@@ -21,7 +21,7 @@ export class NavComponent {
 
   openModal($event: Event) {
     $event.preventDefault();
-    this.modal.toggle('auth');
+    this.modal.toggle(Modals.Auth);
   }
 
   public navigate(routeName: RouteNames) {
