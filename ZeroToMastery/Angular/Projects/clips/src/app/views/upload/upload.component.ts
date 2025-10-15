@@ -28,8 +28,7 @@ export class UploadComponent {
   file = signal<AppFile | null>(null);
   nextStep = signal(false);
   uploadsService = inject(UploadsService);
-  showAlert = signal(false);
-  alertObj = signal<Alert | null>(null);
+  alertObj = signal<Alert>(new Alert(false));
 
   fb = inject(FormBuilder);
   form = this.fb.nonNullable.group({
@@ -84,31 +83,23 @@ export class UploadComponent {
 
   //* Alerts *//
   closeAlert() {
-    this.showAlert.set(false);
-  }
-
-  activateAlert() {
-    this.showAlert.set(true);
+    this.alertObj.set(new Alert(false));
   }
 
   setUploadInProgress() {
-    this.activateAlert();
-    this.alertObj.set(new Alert(AlertType.Info, 'Upload in prgress...'));
+    this.alertObj.set(new Alert(true, AlertType.Info, 'Upload in prgress...'));
   }
 
   setUploadTaskProgress(task: UploadTaskSnapshot) {
-    this.activateAlert();
     const progress = (task.bytesTransferred / task.totalBytes) * 100;
-    this.alertObj.set(new Alert(AlertType.Info, `Upload is ${progress}% done`));
+    this.alertObj.set(new Alert(true, AlertType.Info, `Upload is ${progress}% done`));
   }
 
   setUploadError(error: StorageError) {
-    this.activateAlert();
-    this.alertObj.set(new Alert(AlertType.Error, `Upload failed: ${error.message}`));
+    this.alertObj.set(new Alert(true, AlertType.Error, `Upload failed: ${error.message}`));
   }
 
   setUploadComplete() {
-    this.activateAlert();
-    this.alertObj.set(new Alert(AlertType.Success, 'Upload complete!'));
+    this.alertObj.set(new Alert(true, AlertType.Success, 'Upload complete!'));
   }
 }

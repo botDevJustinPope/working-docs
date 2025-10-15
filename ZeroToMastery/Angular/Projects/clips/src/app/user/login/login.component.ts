@@ -17,8 +17,7 @@ export class LoginComponent {
   authService = inject(AuthService);
 
   inSubmission = signal(false);
-  showAlert = signal(false);
-  alert = signal<Alert|null>(null);
+  alert = signal<Alert>(new Alert(false));
   
   credentials : ILogin = {
     email: '',
@@ -40,17 +39,14 @@ export class LoginComponent {
   }
 
   setAlertInfo() {
-    this.showAlert.set(true);
-    this.alert.set(new Alert(AlertType.Info, 'Please wait! Logging you in.'));
+    this.alert.set(new Alert(true, AlertType.Info, 'Please wait! Logging you in.'));
   }
 
   setAlertSuccess() {
-    this.showAlert.set(true);
-    this.alert.set(new Alert(AlertType.Success, 'Success! You have been logged in.'));
+    this.alert.set(new Alert(true, AlertType.Success, 'Success! You have been logged in.'));
   }
 
   setAlertError() {
-    this.showAlert.set(true);
-    this.alert.set(new Alert(AlertType.Error, 'An error occurred! Please try again later.'));
+    this.alert.set(new Alert(true, AlertType.Error, 'An error occurred! Please try again later.'));
   }
 }

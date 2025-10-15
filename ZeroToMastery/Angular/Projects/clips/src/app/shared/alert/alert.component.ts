@@ -1,4 +1,4 @@
-import { Component, input, signal } from '@angular/core';
+import { Component, input, signal, computed } from '@angular/core';
 import { NgClass } from '@angular/common';
 import { Alert } from '../../models/alert.model';
 import { AlertType } from '../../models/enum/alert.enum';
@@ -11,11 +11,12 @@ import { AlertType } from '../../models/enum/alert.enum';
   styleUrl: './alert.component.scss'
 })
 export class AlertComponent {
-  color = input('blue');
-  alertInput = input<Alert|null>(null)
+  alertInput = input<Alert>(new Alert(false));
 
-  get bgColor() {
-    switch (this.alertType) {
+  showAlert = computed(() => this.alertInput() ? this.alertInput().enabled : false);
+
+  color = computed(() => {
+    switch (this.alertType()) {
       case AlertType.Success:
         return 'bg-green-500';
       case AlertType.Error:
@@ -27,13 +28,14 @@ export class AlertComponent {
       default:
         return 'bg-blue-500';
     }
-  }
+  });
 
-  get alertMessage() {
+  alertMessage = computed(() => {
     return this.alertInput() ? this.alertInput()?.message : '';
-  }
+  });
 
-  get alertType() {
-    return this.alertInput() ? this.alertInput()?.type : null;
-  }
+  alertType = computed(() => {
+    return this.alertInput() ? this.alertInput()?.type : AlertType.Info;
+  });
+
 }

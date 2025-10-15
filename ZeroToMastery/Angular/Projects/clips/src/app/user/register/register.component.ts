@@ -20,6 +20,7 @@ export class RegisterComponent {
   inSubmission = signal(false);
   authService = inject(AuthService);
   emailTaken = inject(EmailTaken);
+  alert = signal<Alert>(new Alert(false));
 
   form = this.fb.nonNullable.group(
     {
@@ -48,9 +49,6 @@ export class RegisterComponent {
     { validators: [Match('password', 'confirmPassword')] }
   );
 
-  showAlert = signal(false);
-  alert = signal<Alert|null>(null);
-
   async register() {
     this.inSubmission.set(true);
     this.setAlertInfo();
@@ -70,18 +68,15 @@ export class RegisterComponent {
   }
 
   setAlertInfo() {
-    this.showAlert.set(true);
-    this.alert.set(new Alert(AlertType.Info, 'Please wait! Your account is being created.'));
+    this.alert.set(new Alert(true,AlertType.Info, 'Please wait! Your account is being created.'));
   }
 
   setAlertSuccess() {
-    this.showAlert.set(true);
-    this.alert.set(new Alert(AlertType.Success, 'Success! Your account has been created.'));
+    this.alert.set(new Alert(true,AlertType.Success, 'Success! Your account has been created.'));
   }
 
   setAlertError() {
-    this.showAlert.set(true);
-    this.alert.set(new Alert(AlertType.Error, 'An error occurred! Please try again later.'));
+    this.alert.set(new Alert(true,AlertType.Error, 'An error occurred! Please try again later.'));
   }
 
 }

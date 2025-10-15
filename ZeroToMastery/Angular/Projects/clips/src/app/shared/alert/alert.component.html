@@ -1,3 +1,5 @@
-<div class="text-white text-center font-bold p-4 mb-4 rounded-md" [ngClass]="bgColor">
-    <span>{{ alertMessage }}</span>
+@if (showAlert()) {
+<div class="text-white text-center font-bold p-4 mb-4 rounded-md" [ngClass]="color()">
+    <span>{{ alertMessage() }}</span>
 </div>
+}
