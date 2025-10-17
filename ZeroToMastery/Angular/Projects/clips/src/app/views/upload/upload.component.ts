@@ -30,6 +30,7 @@ export class UploadComponent {
   nextStep = signal(false);
   uploadsService = inject(UploadsService);
   alertObj = signal<Alert>(new Alert(false));
+  inSubmission = signal(false);
 
   #auth = inject(AuthService);
 
@@ -56,50 +57,49 @@ export class UploadComponent {
       this.file.set(null);
       this.setAlertError(`File size must be less than ${this.maxFileSize / 1024 / 1024}MB`);
       return;
+    } else {
+      this.setAlertClear();
     }
 
     this.form.controls.title.setValue(
       this.file()?.file.name.replace(/\.[^/.]+$/, '') ?? ''
     );
 
-    this.uploadFile();
+    this.nextStep.set(true);
   }
 
   uploadFile() {
     const task = this.uploadsService.uploadfile(this.file() as AppFile);
 
-    console.log(`file mime ${this.file()?.file.type} and size ${(this.file()?.file.size as number / 1024/1024).toFixed(2)}MB`);
-
     this.setUploadInProgress();
 
-    task.on(
-      'state_changed',
-      (snapshot: UploadTaskSnapshot) => {
+    task.subscribe(
+      {
+      next: (snapshot: UploadTaskSnapshot) => {
         // set progress
         this.setUploadTaskProgress(snapshot);
       },
-      (error: StorageError) => {
+      error: (error: StorageError) => {
         // set error
         this.setUploadError(error);
       },
-      () => {
+      complete: () => {
         // completed
         this.setUploadComplete();
         // await a second then set next step
-        setTimeout(() => {
-          this.nextStep.set(true);
-        }, 750);
       }
+    }
     );
   }
 
   //* Alerts *//
-  closeAlert() {
+  setAlertClear() {
     this.alertObj.set(new Alert(false));
   }
 
   setUploadInProgress() {
     this.alertObj.set(new Alert(true, AlertType.Info, 'Upload in prgress...'));
+    this.inSubmission.set(true);
   }
 
   setUploadTaskProgress(task: UploadTaskSnapshot) {

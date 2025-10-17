@@ -1,12 +1,12 @@
 import { Component, input, signal, computed } from '@angular/core';
-import { NgClass } from '@angular/common';
+import { NgClass, PercentPipe } from '@angular/common';
 import { Alert } from '../../models/alert.model';
 import { AlertType } from '../../models/enum/alert.enum';
 
 @Component({
   selector: 'app-alert',
   standalone: true,
-  imports: [NgClass],
+  imports: [NgClass, PercentPipe],
   templateUrl: './alert.component.html',
   styleUrl: './alert.component.scss',
 })
