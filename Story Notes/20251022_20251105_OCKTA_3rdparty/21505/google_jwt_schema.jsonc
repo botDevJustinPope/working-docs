@@ -1,0 +1,16 @@
+{
+  "iss": "https://accounts.google.com", // issuer identifier
+  "azp": "1234987819200.apps.googleusercontent.com",
+  "aud": "1234987819200.apps.googleusercontent.com", // client ID of the app
+  "sub": "10769150350006150715113082367", // this is recommended as the unique indentifier for the user, not the email. It is never reassigned to another user
+  "at_hash": "HK6E_P6Dh8Y93mRNtsDB1Q", // access token hash
+  "hd": "example.com",
+  "email": "jsmith@example.com", // user's email address
+  "email_verified": "true", // true or false if email is verified
+  "iat": 1353601026, // time issued, in seconds since epoch
+  "exp": 1353604926, // token expiration time, in seconds since epoch
+  "nonce": "0394852-3190485-2490358"
+  /*
+  for more information see: https://developers.google.com/identity/openid-connect/openid-connect#obtainuserinfo
+  */
+}
