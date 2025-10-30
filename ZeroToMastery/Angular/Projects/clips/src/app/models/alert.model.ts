@@ -1,17 +1,34 @@
+import { CircularProgress } from "./animations/circular-progress.model";
 import { AlertType } from "./enum/alert.enum";
 
 export interface IAlert {
     enabled: boolean,
     type: AlertType|null,
     message: string|null,
-    percentile?: number|null,
-    radius?: number|null
+    alertPercent?: CircularProgress|null
 }
 
 export class Alert implements IAlert {
-    constructor(public enabled: boolean, 
-                public type: AlertType|null = null, 
-                public message: string|null = null, 
-                public percentile?: number|null,
-                public radius?: number|null) {}
+    public enabled: boolean;
+    public type: AlertType|null;
+    public message: string|null;
+    public alertPercent?: CircularProgress|null;
+
+    constructor(enabled: boolean, 
+                type: AlertType|null = null, 
+                message: string|null = null, 
+                percentile?: number|null,
+                radius?: number|null) {
+        this.enabled = enabled;
+        this.type = type;
+        this.message = message;
+        this.alertPercent = null;
+
+        if (percentile !== null && percentile !== undefined) {
+            const radiusValue = radius ?? 45;
+            const typeValue = type ?? AlertType.Info;
+            const percentileValue = percentile ?? 0;
+            this.alertPercent = new CircularProgress(typeValue, percentileValue, radiusValue);
+        }
+    }
 }

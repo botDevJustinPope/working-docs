@@ -1,0 +1,40 @@
+video: https://youtu.be/996OiexHze0?si=K6p8AgDMefZCtJWk
+
+Notes on OAuth 2.0 and OpenID Connect:
+
+Thoughts on better Authentication just for VDS:
+**Delegated authorization**
+How can i let a website access my data (without giving it my password)?
+This is done with the page that something like Google prompts that some site is accessing your information from Google.
+
+Pre OAuth flow, Yelp tried to solve this by requesting your authentication with Google to do what they needed and then "throw it away"
+I tried to suggest that we could do this to Daniel, THIS IS NOT GOOD.
+
+OAuth basic flow:
+1) site redirects to authentication provider
+2) user authenticates with provider
+3) provider sends user back to a call back to the site 
+4) site trusts provider and authenticates user
+
+OAuth 2.0:
+Resource owner: the user 
+Client: the application / site 
+authorization server: the system to say "yes" example access users google information
+Resource server: api / system that the client is trying to access example: google contacts
+authorization grant:
+Redirect URI: where to end up after authentication
+Access Token:
+scope:
+content:
+
+Setting up a client?
+- for VDS we would want to have some sort of configuration to set up 3rd party authentication servers
+- this would be needed for secrets
+
+OpenID Connect adds the following:
+- Id Token 
+
+for debugging:
+https://oauthdebugger.com/
+
+Notes on Open ID Connect:

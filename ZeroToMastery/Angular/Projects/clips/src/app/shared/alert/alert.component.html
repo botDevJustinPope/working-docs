@@ -5,49 +5,7 @@
 >
   <span>{{ alertMessage() }}</span>
   @if (showPercentile()) {
-  <div
-    class="relative flex items-center justify-center rounded-full shadow-lg bg-gray-800 mx-auto my-8"
-    [style.width.px]="containerSize()"
-    [style.height.px]="containerSize()"
-  >
-    <svg
-      [attr.width]="svgSize()"
-      [attr.height]="svgSize()"
-      [attr.viewBox]="'0 0 ' + svgSize() + ' ' + svgSize()"
-      class="block"
-    >
-      <circle
-        [attr.r]="percentCircleRadius()"
-        [attr.cx]="svgSize() / 2"
-        [attr.cy]="svgSize() / 2"
-        fill="transparent"
-        stroke="gray"
-        [attr.stroke-width]="strokeWidth"
-        [attr.stroke-dasharray]="circleCircumference()"
-        class="transition-all duration-1000"
-      ></circle>
-      <circle
-        [attr.r]="percentCircleRadius()"
-        [attr.cx]="svgSize() / 2"
-        [attr.cy]="svgSize() / 2"
-        fill="transparent"
-        stroke="purple"
-        stroke-linecap="round"
-        [attr.stroke-width]="strokeWidth"
-        [attr.stroke-dasharray]="circleCircumference()"
-        [attr.stroke-dashoffset]="alertPercentileCircumference()"
-        [attr.transform]="
-          'rotate(-90 ' + svgSize() / 2 + ' ' + svgSize() / 2 + ')'
-        "
-        class="transition-all duration-1000"
-      ></circle>
-    </svg>
-    <span
-      class="absolute inset-0 flex items-center justify-center text-lg font-bold text-white"
-    >
-      {{ alertPercentileDisplay() | percent }}
-    </span>
-  </div>
+    <app-circular-progress [input]="alertPercentileInput()"></app-circular-progress>
   }
 </div>
 }

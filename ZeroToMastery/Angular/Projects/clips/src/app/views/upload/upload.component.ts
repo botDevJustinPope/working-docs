@@ -55,7 +55,9 @@ export class UploadComponent {
       return;
     } else if (!this.file() || !(this.file()!.file.size < this.maxFileSize)) {
       this.file.set(null);
-      this.setAlertError(`File size must be less than ${this.maxFileSize / 1024 / 1024}MB`);
+      this.setAlertError(
+        `File size must be less than ${this.maxFileSize / 1024 / 1024}MB`
+      );
       return;
     } else {
       this.setAlertClear();
@@ -73,8 +75,7 @@ export class UploadComponent {
 
     this.setUploadInProgress();
 
-    task.subscribe(
-      {
+    task.subscribe({
       next: (snapshot: UploadTaskSnapshot) => {
         // set progress
         this.setUploadTaskProgress(snapshot);
@@ -87,9 +88,23 @@ export class UploadComponent {
         // completed
         this.setUploadComplete();
         // await a second then set next step
-      }
-    }
-    );
+        setTimeout(() => {
+          this.resetPage();
+        }, 2000);
+      },
+    });
+  }
+
+  //* Page Status Methods *//
+  resetPage() {
+    this.file.set(null);
+    this.nextStep.set(false);
+    this.inSubmission.set(false);
+    this.setAlertClear();
+  }
+
+  isPageValidToSubmit(): boolean {
+    return this.form.valid && this.file() !== null && !this.inSubmission();
   }
 
   //* Alerts *//
@@ -103,12 +118,14 @@ export class UploadComponent {
   }
 
   setUploadTaskProgress(task: UploadTaskSnapshot) {
-    const progress:number = ((task.bytesTransferred / task.totalBytes) * 100) as number;
+    const progress: number = ((task.bytesTransferred / task.totalBytes)) as number;
     this.alertObj.set(new Alert(true, AlertType.Info, '', progress));
   }
 
   setUploadError(error: StorageError) {
-    this.alertObj.set(new Alert(true, AlertType.Error, `Upload failed: ${error.message}`));
+    this.alertObj.set(
+      new Alert(true, AlertType.Error, `Upload failed: ${error.message}`)
+    );
   }
 
   setUploadComplete() {
