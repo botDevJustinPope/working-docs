@@ -1,9 +1,10 @@
-import { Component, input, signal, computed } from '@angular/core';
-import { NgClass,  } from '@angular/common';
+import { Component, input, signal, computed, Signal } from '@angular/core';
+import { NgClass } from '@angular/common';
 import { Alert } from '../../models/alert.model';
 import { AlertType } from '../../models/enum/alert.enum';
 import { CircularProgressComponent } from '../animations/circular-progress/circular-progress.component';
 import { CircularProgress } from '../../models/animations/circular-progress.model';
+import { UploadTask } from '@angular/fire/storage';
 
 @Component({
   selector: 'app-alert',
@@ -50,4 +51,28 @@ export class AlertComponent {
     return this.alertInput()?.alertPercent ? true : false;
   });
 
+  showButtons = computed(() => {
+    return this.alertInput()?.uploadTask ? true : false;
+  });
+
+  private alertUploadTask = computed(() => {
+    return this.alertInput()?.uploadTask ?? null;
+  });
+
+  public uploadTaskPaused = signal(false);
+
+  public firstBtnClick(): void {
+    if (!this.uploadTaskPaused()) {
+      this.alertUploadTask()?.pause();
+      this.uploadTaskPaused.set(true);
+    } else {
+      this.alertUploadTask()?.resume();
+      this.uploadTaskPaused.set(false);
+    }
+  }
+
+  public secondBtnClick(): void {
+    console.log('canceling upload task');
+    this.alertUploadTask()?.cancel();
+  }
 }

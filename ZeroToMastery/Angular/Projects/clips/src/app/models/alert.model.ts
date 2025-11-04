@@ -1,3 +1,4 @@
+import { UploadTask } from "@angular/fire/storage";
 import { CircularProgress } from "./animations/circular-progress.model";
 import { AlertType } from "./enum/alert.enum";
 
@@ -13,12 +14,14 @@ export class Alert implements IAlert {
     public type: AlertType|null;
     public message: string|null;
     public alertPercent?: CircularProgress|null;
+    public uploadTask?: UploadTask|null;
 
     constructor(enabled: boolean, 
                 type: AlertType|null = null, 
                 message: string|null = null, 
                 percentile?: number|null,
-                radius?: number|null) {
+                radius?: number|null,
+                uploadTask?: UploadTask|null) {
         this.enabled = enabled;
         this.type = type;
         this.message = message;
@@ -32,6 +35,10 @@ export class Alert implements IAlert {
                 percentileValue = Math.min(percentileValue/100, 1);
             }
             this.alertPercent = new CircularProgress(typeValue, percentileValue, radiusValue);
+        }
+
+        if (uploadTask) {
+            this.uploadTask = uploadTask;
         }
     }
 }

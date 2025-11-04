@@ -4,8 +4,6 @@ import {
   ref,
   uploadBytesResumable,
   UploadTask,
-  fromTask,
-  UploadTaskSnapshot,
   getDownloadURL,
   StorageReference,
 } from '@angular/fire/storage';
@@ -21,11 +19,10 @@ export class UploadsService {
   #firestore = inject(Firestore);
   #clipsCollection = collection(this.#firestore, 'clips');
 
-  public uploadfile(file: AppFile): Observable<UploadTaskSnapshot> {
-    console.log('file path:', file.path);
+  public uploadfile(file: AppFile): UploadTask {
     file.setReference(ref(this.#storage, file.path));
 
-    return fromTask(uploadBytesResumable(file.fireBaseRef, file.file));
+    return uploadBytesResumable(file.fireBaseRef, file.file);
   }
 
   public async getFileDownloadURL(ref: StorageReference): Promise<string> {
@@ -33,9 +30,8 @@ export class UploadsService {
   }
 
   public async createClip(appFile: AppFile) {
-    console.log('clip data before creatation', appFile.clipsInterface);
     try {
-      await addDoc(this.#clipsCollection, appFile.clipsInterface);
+      await addDoc(this.#clipsCollection, appFile.clipsInterface());
     } catch (err) {
       console.error('caught error:', err);
     }

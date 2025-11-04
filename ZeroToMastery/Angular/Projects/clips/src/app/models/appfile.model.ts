@@ -37,8 +37,15 @@ export class AppFile {
         return this.data.file;
     }
 
-    public get clipsInterface(): IClip {
-        return this.clip as IClip;
+    public clipsInterface(): IClip {
+        return {
+            fid: this.clip.fid,
+            uid: this.clip.uid,
+            displayName: this.clip.displayName,
+            fileTitle: this.clip.fileTitle,
+            fileName: this.clip.fileName,
+            clipURL: this.clip.clipURL
+        };
     }
 
     get isValidType(): boolean {

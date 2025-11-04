@@ -1,4 +1,4 @@
-import { Component, signal, inject, OnDestroy } from '@angular/core';
+import { Component, signal, inject, OnDestroy, effect } from '@angular/core';
 import { EventBlockerDirective } from '../../shared/directives/event-blocker.directive';
 import { NgClass } from '@angular/common';
 import { ReactiveFormsModule, FormBuilder, Validators } from '@angular/forms';
@@ -12,6 +12,8 @@ import {
   StorageError,
   StorageReference,
   UploadTaskSnapshot,
+  UploadTask,
+  fromTask,
 } from '@angular/fire/storage';
 import { AuthService } from '../../services/auth.service';
 import { Subscription } from 'rxjs';
@@ -37,6 +39,9 @@ export class UploadComponent implements OnDestroy {
   alertObj = signal<Alert>(new Alert(false));
   inSubmission = signal(false);
 
+  uploadTask: UploadTask | null = null;
+  uploadSub: Subscription | null = null;
+
   #auth = inject(AuthService);
 
   fb = inject(FormBuilder);
@@ -46,7 +51,27 @@ export class UploadComponent implements OnDestroy {
 
   private formTitleSub: Subscription | null = null;
 
+  constructor() {
+    // create an effect to disable the form when in submission
+    effect(() => {
+      if (this.inSubmission()) {
+        this.form.disable();
+      } else {
+        this.form.enable();
+      }
+    });
+  }
+
   public ngOnDestroy() {
+    if (this.uploadTask) {
+      this.uploadTask?.cancel();
+    }
+    if (this.uploadSub) {
+      this.uploadSub.unsubscribe();
+    }
+    this.uploadTask = null;
+    this.uploadSub = null;
+
     // clean up page
     this.resetPage();
   }
@@ -97,17 +122,22 @@ export class UploadComponent implements OnDestroy {
   }
 
   uploadFile() {
-    const task = this.uploadsService.uploadfile(this.file() as AppFile);
+    this.uploadTask = this.uploadsService.uploadfile(this.file() as AppFile);
+    const observableTask = fromTask(this.uploadTask);
 
     this.setUploadInProgress();
 
-    task.subscribe({
+    this.uploadSub = observableTask.subscribe({
       next: (snapshot: UploadTaskSnapshot) => {
         // set progress
-        this.setUploadTaskProgress(snapshot);
+        this.setUploadTaskProgressWithSnapshotandTask(
+          snapshot,
+          this.uploadTask!
+        );
       },
       error: (error: StorageError) => {
         // set error
+        console.log('upload error:', error);
         this.setUploadError(error);
       },
       complete: async () => {
@@ -116,9 +146,18 @@ export class UploadComponent implements OnDestroy {
             this.file()?.fireBaseRef as StorageReference
           );
 
-        console.log('file before upload: ', this.file());
+        const dataMessage: string = 'Finalizing data upload...';
+        this.setUploadTaskProgressWithRawPercentage(dataMessage, 95);
+
+        await sleep(500);
 
         await this.uploadsService.createClip(this.file()!);
+
+        await sleep(500);
+
+        this.setUploadTaskProgressWithRawPercentage(dataMessage, 100);
+
+        await sleep(500);
 
         // completed
         this.setUploadComplete();
@@ -131,12 +170,25 @@ export class UploadComponent implements OnDestroy {
     });
   }
 
+  async cancelUpload() {
+    if (this.uploadTask) {
+      this.uploadTask.cancel();
+    }
+    this.uploadSub?.unsubscribe();
+    this.setAlertError('Upload was cancelled by user. Cancelling upload.');
+    await sleep(2000);
+    this.resetPage();
+  }
+
   //* Page Status Methods *//
   resetPage() {
     this.file.set(null);
     this.nextStep.set(false);
     this.inSubmission.set(false);
+    this.uploadTask = null;
     this.formTitleSub?.unsubscribe();
+    this.uploadSub?.unsubscribe();
+    this.form.reset();
     this.setAlertClear();
   }
 
@@ -154,10 +206,56 @@ export class UploadComponent implements OnDestroy {
     this.inSubmission.set(true);
   }
 
-  setUploadTaskProgress(task: UploadTaskSnapshot) {
-    const progress: number = (task.bytesTransferred /
-      task.totalBytes) as number;
-    this.alertObj.set(new Alert(true, AlertType.Info, '', progress));
+  setUploadTaskProgressWithSnapshotandTask(
+    task: UploadTaskSnapshot,
+    uploadTask: UploadTask
+  ) {
+    /*
+    The file upload is only part of the upload. Subtracting 5% for the file so that the clip data upload to be apart of the percentage.
+    */
+    const progress: number = ((task.bytesTransferred / task.totalBytes / 95) * 100) as number;
+    let aType: AlertType = AlertType.Info;
+    console.log('task state:', task.state);
+    switch (task.state) {
+      case 'paused': 
+        aType = AlertType.Warning;
+        break;
+      case 'running':
+      default:
+        aType = AlertType.Info;
+        break;
+      case 'canceled':
+        aType = AlertType.Error;
+        break;
+    }
+    this.baseSetUploadTaskProgress(
+      true,
+      aType,
+      'Video Upload in progress....',
+      progress,
+      null,
+      uploadTask
+    );
+  }
+
+  setUploadTaskProgressWithRawPercentage(
+    message: string = '',
+    percentage: number
+  ) {
+    this.baseSetUploadTaskProgress(true, AlertType.Info, message, percentage);
+  }
+
+  baseSetUploadTaskProgress(
+    enabled: boolean = true,
+    alertType: AlertType = AlertType.Info,
+    message: string = '',
+    percentile: number | null = null,
+    radius: number | null = null,
+    uploadTask: UploadTask | null = null
+  ) {
+    this.alertObj.set(
+      new Alert(enabled, alertType, message, percentile, radius, uploadTask)
+    );
   }
 
   setUploadError(error: StorageError) {
@@ -174,3 +272,8 @@ export class UploadComponent implements OnDestroy {
     this.alertObj.set(new Alert(true, AlertType.Error, message));
   }
 }
+
+function sleep(ms: number): Promise<void> {
+  return new Promise(resolve => setTimeout(resolve, ms));
+}
+
