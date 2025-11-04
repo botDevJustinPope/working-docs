@@ -1,15 +1,20 @@
-import { Component, signal, inject } from '@angular/core';
+import { Component, signal, inject, OnDestroy } from '@angular/core';
 import { EventBlockerDirective } from '../../shared/directives/event-blocker.directive';
 import { NgClass } from '@angular/common';
 import { ReactiveFormsModule, FormBuilder, Validators } from '@angular/forms';
 import { InputComponent } from '../../shared/input/input.component';
 import { UploadsService } from '../../services/uploads.service';
-import { AppFile } from '../../models/file.model';
+import { AppFile } from '../../models/appfile.model';
 import { AlertComponent } from '../../shared/alert/alert.component';
 import { Alert } from '../../models/alert.model';
 import { AlertType } from '../../models/enum/alert.enum';
-import { StorageError, UploadTaskSnapshot } from '@angular/fire/storage';
+import {
+  StorageError,
+  StorageReference,
+  UploadTaskSnapshot,
+} from '@angular/fire/storage';
 import { AuthService } from '../../services/auth.service';
+import { Subscription } from 'rxjs';
 
 @Component({
   selector: 'app-upload',
@@ -24,7 +29,7 @@ import { AuthService } from '../../services/auth.service';
   templateUrl: './upload.component.html',
   styleUrl: './upload.component.scss',
 })
-export class UploadComponent {
+export class UploadComponent implements OnDestroy {
   isDragover = signal(false);
   file = signal<AppFile | null>(null);
   nextStep = signal(false);
@@ -34,34 +39,55 @@ export class UploadComponent {
 
   #auth = inject(AuthService);
 
-  private maxFileSize = 25 * 1024 * 1024; // 25MB
-
   fb = inject(FormBuilder);
   form = this.fb.nonNullable.group({
     title: ['', [Validators.required, Validators.minLength(3)]],
   });
 
+  private formTitleSub: Subscription | null = null;
+
+  public ngOnDestroy() {
+    // clean up page
+    this.resetPage();
+  }
+
   storeFile(event: Event) {
     this.isDragover.set(false);
 
     const file = (event as DragEvent).dataTransfer?.files.item(0);
+
     if (file) {
-      this.file.set(new AppFile(file));
+      this.file.set(new AppFile(file, this.#auth.currentUser()!));
     }
 
     if (!this.file()?.isValidType) {
       this.file.set(null);
       this.setAlertError('Please upload a valid mp4 file');
       return;
-    } else if (!this.file() || !(this.file()!.file.size < this.maxFileSize)) {
-      this.file.set(null);
+    } else if (
+      !this.file() ||
+      !(this.file()?.file && this.file()?.isValidFileSize)
+    ) {
       this.setAlertError(
-        `File size must be less than ${this.maxFileSize / 1024 / 1024}MB`
+        `File size must be less than ${
+          AppFile.maxFileSizeInMB
+        }MB. The file that was upload is ${
+          this.file()?.data.file.size! / 1024 / 1024
+        }MB.`
       );
+      this.file.set(null);
       return;
     } else {
       this.setAlertClear();
     }
+
+    this.formTitleSub = this.form.controls.title.valueChanges.subscribe(
+      (val) => {
+        if (this.file()) {
+          this.file()!.clip.fileTitle = val ?? '';
+        }
+      }
+    );
 
     this.form.controls.title.setValue(
       this.file()?.file.name.replace(/\.[^/.]+$/, '') ?? ''
@@ -84,9 +110,19 @@ export class UploadComponent {
         // set error
         this.setUploadError(error);
       },
-      complete: () => {
+      complete: async () => {
+        this.file()!.clip.clipURL =
+          await this.uploadsService.getFileDownloadURL(
+            this.file()?.fireBaseRef as StorageReference
+          );
+
+        console.log('file before upload: ', this.file());
+
+        await this.uploadsService.createClip(this.file()!);
+
         // completed
         this.setUploadComplete();
+
         // await a second then set next step
         setTimeout(() => {
           this.resetPage();
@@ -100,6 +136,7 @@ export class UploadComponent {
     this.file.set(null);
     this.nextStep.set(false);
     this.inSubmission.set(false);
+    this.formTitleSub?.unsubscribe();
     this.setAlertClear();
   }
 
@@ -118,7 +155,8 @@ export class UploadComponent {
   }
 
   setUploadTaskProgress(task: UploadTaskSnapshot) {
-    const progress: number = ((task.bytesTransferred / task.totalBytes)) as number;
+    const progress: number = (task.bytesTransferred /
+      task.totalBytes) as number;
     this.alertObj.set(new Alert(true, AlertType.Info, '', progress));
   }
 

@@ -1,10 +1,11 @@
-import { Component, computed, input, signal, effect } from '@angular/core';
+import { Component, computed, Input, signal, effect } from '@angular/core';
 import { PercentPipe, NgStyle } from '@angular/common';
 import { AlertType } from '../../../models/enum/alert.enum';
 import { CircularProgress } from '../../../models/animations/circular-progress.model';
 
 @Component({
   selector: 'app-circular-progress',
+  standalone: true,
   imports: [PercentPipe, NgStyle],
   template: `
     <div
@@ -49,65 +50,35 @@ import { CircularProgress } from '../../../models/animations/circular-progress.m
       <span
         class="absolute inset-0 flex items-center justify-center text-lg font-bold text-white"
       >
-        {{ alertPercentileDisplay() | percent }}
+        {{ computedPercentage() | percent }}
       </span>
     </div>
   `,
   styles: ``,
 })
 export class CircularProgressComponent {
-  input = input<CircularProgress>(new CircularProgress(AlertType.Info, 0, 45));
-  styling = computed(() => this.input().styling);
-  targetPercent = computed(() => this.input().animationPercent);
-  radius = computed(() => this.input().radius);
-
-  private animatedValue = signal(0);
-  animatedPercentage = computed(() => this.animatedValue());
-
-  constructor() {
-    effect(() => {
-      const target = this.targetPercent();
-      this.animateToValue(target);
-    });
+  @Input('input') set  inputSetter(value: CircularProgress | undefined) {
+    this._progress.set(value ?? new CircularProgress(AlertType.Info, 0, 45));
   }
 
-  private animateToValue(targetValue: number) {
-    const startValue = this.animatedValue();
-    const duration = 500; // 500ms animation
-    const startTime = performance.now();
+ private _progress = signal<CircularProgress>( new CircularProgress(AlertType.Info, 0, 45));
 
-    const animate = (currentTime: number) => {
-      const elapsed = currentTime - startTime;
-      const progress = Math.min(elapsed / duration, 1);
-
-      // Ease out cubic function for smooth animation
-      const easeOut = 1 - Math.pow(1 - progress, 3);
-      const currentValue = startValue + (targetValue - startValue) * easeOut;
-
-      this.animatedValue.set(currentValue);
-
-      if (progress < 1) {
-        requestAnimationFrame(animate);
-      }
-    };
-
-    requestAnimationFrame(animate);
-  }
+  styling = computed(() => this._progress().styling);
 
   primaryColor = computed(() => {
     // based on the percentage input, 0=> orange-red, 25%=> orange, 50%=> yellow, 75%=> yellow-green, 100%=> green
     // this should be smoothly animated
-    const percent = this.animatedPercentage() * 100;
-    return `hsl(${(percent * 120) / 100}, 100%, 50%)`;
+    const percent = this._progress().animationPercent;
+    return `hsl(${(percent * 120)}, 100%, 50%)`;
   });
 
-  secondaryColor = computed(() => { 
+  secondaryColor = computed(() => {
     // similar to primary color but darker
-    const percent = this.animatedPercentage() * 100;
+    const percent = this._progress().animationPercent;
     return `hsl(${(percent * 120) / 100}, 100%, 30%)`;
   });
 
-  backGroundColor = computed(() => {  
+  backGroundColor = computed(() => {
     switch (this.styling()) {
       case AlertType.Success:
         return 'var(--color-green-900)';
@@ -121,15 +92,10 @@ export class CircularProgressComponent {
     }
   });
 
-  computedPercentage = computed(() => {
-    // Ensure percentage is between 0 and 100%
-    let percent = this.animatedPercentage();
-    let rtn = Math.max(0, Math.min(percent * 100, 100));
-    return rtn;
-  });
-
+  radius = computed(() => this._progress().radius);
   containerSize = computed(() => this.percentCircleRadius() * 2 + 32); // +32 for padding/margin
   strokeWidth = 10;
+  computedPercentage = computed(() => this._progress().animationPercent);
 
   svgSize = computed(() => this.percentCircleRadius() * 2 + this.strokeWidth);
 
@@ -146,15 +112,9 @@ export class CircularProgressComponent {
   });
 
   alertPercentileCircumference = computed(() => {
-    let percent = this.computedPercentage();
+    let percent = this._progress().animationPercent;
     let circumference = this.circleCircumference();
-    let rtn = circumference * (1 - percent / 100);
-    return rtn;
-  alertPercentileDisplay = computed(() => {
-    // Display as a value between 0 and 1 for percent pipe
-    let rtn = Math.max(0, Math.min(this.animatedPercentage(), 1));
-    return rtn;
-  });
+    let rtn = circumference * (1 - percent);
     return rtn;
   });
 }

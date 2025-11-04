@@ -1,4 +1,4 @@
-import { inject, Injectable } from '@angular/core';
+import { computed, inject, Injectable, signal } from '@angular/core';
 import {
   Auth,
   createUserWithEmailAndPassword,
@@ -20,7 +20,7 @@ import { RouteNames } from '../app.routes';
 import { RoutesService } from './routes.service';
 
 @Injectable({
-  providedIn: 'root',
+  providedIn: 'root', 
 })
 export class AuthService {
   #auth = inject(Auth);
@@ -31,6 +31,8 @@ export class AuthService {
   authStateWithDelay$ = this.authState$.pipe(delay(1000));
 
   routesService = inject(RoutesService);
+
+  currentUser = computed(() => this.#auth.currentUser);
 
   constructor() {
     this.init();

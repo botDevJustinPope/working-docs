@@ -27,7 +27,10 @@ export class Alert implements IAlert {
         if (percentile !== null && percentile !== undefined) {
             const radiusValue = radius ?? 45;
             const typeValue = type ?? AlertType.Info;
-            const percentileValue = percentile ?? 0;
+            let percentileValue = percentile ?? 0;
+            if (percentileValue > 1) {
+                percentileValue = Math.min(percentileValue/100, 1);
+            }
             this.alertPercent = new CircularProgress(typeValue, percentileValue, radiusValue);
         }
     }
