@@ -1,10 +1,9 @@
 import { Component, input, signal, computed, Signal } from '@angular/core';
 import { NgClass } from '@angular/common';
-import { Alert } from '../../models/alert.model';
+import { Alert } from '../../models/alerts/alert.model';
 import { AlertType } from '../../models/enum/alert.enum';
 import { CircularProgressComponent } from '../animations/circular-progress/circular-progress.component';
-import { CircularProgress } from '../../models/animations/circular-progress.model';
-import { UploadTask } from '@angular/fire/storage';
+import { CircularProgress } from '../../models/animations/circular-progress/circular-progress.model';
 
 @Component({
   selector: 'app-alert',
@@ -52,27 +51,10 @@ export class AlertComponent {
   });
 
   showButtons = computed(() => {
-    return this.alertInput()?.uploadTask ? true : false;
+    return (this.alertInput()?.buttons?.length ?? 0) > 0;
   });
 
-  private alertUploadTask = computed(() => {
-    return this.alertInput()?.uploadTask ?? null;
+  alertButtons = computed(() => {
+    return this.alertInput()?.buttons ?? [];
   });
-
-  public uploadTaskPaused = signal(false);
-
-  public firstBtnClick(): void {
-    if (!this.uploadTaskPaused()) {
-      this.alertUploadTask()?.pause();
-      this.uploadTaskPaused.set(true);
-    } else {
-      this.alertUploadTask()?.resume();
-      this.uploadTaskPaused.set(false);
-    }
-  }
-
-  public secondBtnClick(): void {
-    console.log('canceling upload task');
-    this.alertUploadTask()?.cancel();
-  }
 }

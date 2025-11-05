@@ -6,7 +6,7 @@ import { InputComponent } from '../../shared/input/input.component';
 import { UploadsService } from '../../services/uploads.service';
 import { AppFile } from '../../models/appfile.model';
 import { AlertComponent } from '../../shared/alert/alert.component';
-import { Alert } from '../../models/alert.model';
+import { Alert } from '../../models/alerts/alert.model';
 import { AlertType } from '../../models/enum/alert.enum';
 import {
   StorageError,
@@ -17,6 +17,11 @@ import {
 } from '@angular/fire/storage';
 import { AuthService } from '../../services/auth.service';
 import { Subscription } from 'rxjs';
+import { UtilService } from '../../services/utils/util.service';
+import { AnimationsConfigHelper } from '../../services/utils/animations-config.helper';
+import { ButtonsHelper } from '../../services/utils/buttons.helper';
+import { CircularProgress } from '../../models/animations/circular-progress/circular-progress.model';
+import { ButtonConfig } from '../../models/alerts/button-config.model';
 
 @Component({
   selector: 'app-upload',
@@ -32,27 +37,35 @@ import { Subscription } from 'rxjs';
   styleUrl: './upload.component.scss',
 })
 export class UploadComponent implements OnDestroy {
+  /* 
+  Signals and Injected services
+  */
   isDragover = signal(false);
   file = signal<AppFile | null>(null);
   nextStep = signal(false);
   uploadsService = inject(UploadsService);
   alertObj = signal<Alert>(new Alert(false));
   inSubmission = signal(false);
-
-  uploadTask: UploadTask | null = null;
-  uploadSub: Subscription | null = null;
-
   #auth = inject(AuthService);
 
+  /* 
+  Firebase Upload Task
+  */
+  uploadTask: UploadTask | null = null;
+  /* 
+  page subscriptions 
+  */
+  uploadSub: Subscription | null = null;
+  formTitleSub: Subscription | null = null;
+
+  /* page form */
   fb = inject(FormBuilder);
   form = this.fb.nonNullable.group({
     title: ['', [Validators.required, Validators.minLength(3)]],
   });
 
-  private formTitleSub: Subscription | null = null;
-
   constructor() {
-    // create an effect to disable the form when in submission
+    // this effect will read off the inSubmission to disable/enable the form
     effect(() => {
       if (this.inSubmission()) {
         this.form.disable();
@@ -149,15 +162,15 @@ export class UploadComponent implements OnDestroy {
         const dataMessage: string = 'Finalizing data upload...';
         this.setUploadTaskProgressWithRawPercentage(dataMessage, 95);
 
-        await sleep(500);
+        await UtilService.sleep(500);
 
         await this.uploadsService.createClip(this.file()!);
 
-        await sleep(500);
+        await UtilService.sleep(500);
 
         this.setUploadTaskProgressWithRawPercentage(dataMessage, 100);
 
-        await sleep(500);
+        await UtilService.sleep(500);
 
         // completed
         this.setUploadComplete();
@@ -176,7 +189,7 @@ export class UploadComponent implements OnDestroy {
     }
     this.uploadSub?.unsubscribe();
     this.setAlertError('Upload was cancelled by user. Cancelling upload.');
-    await sleep(2000);
+    await UtilService.sleep(2000);
     this.resetPage();
   }
 
@@ -213,48 +226,44 @@ export class UploadComponent implements OnDestroy {
     /*
     The file upload is only part of the upload. Subtracting 5% for the file so that the clip data upload to be apart of the percentage.
     */
-    const progress: number = ((task.bytesTransferred / task.totalBytes / 95) * 100) as number;
+    const progress: number = ((task.bytesTransferred / task.totalBytes / 95) *
+      100) as number;
     let aType: AlertType = AlertType.Info;
     console.log('task state:', task.state);
     switch (task.state) {
-      case 'paused': 
+      case 'paused':
         aType = AlertType.Warning;
         break;
       case 'running':
       default:
-        aType = AlertType.Info;
+        aType = AlertType.Info; 
         break;
       case 'canceled':
         aType = AlertType.Error;
         break;
     }
-    this.baseSetUploadTaskProgress(
-      true,
-      aType,
-      'Video Upload in progress....',
-      progress,
-      null,
-      uploadTask
-    );
+    const percentConfig = AnimationsConfigHelper.generateCircularProgress(progress, aType);
+    const buttons = ButtonsHelper.generateButtonsForUploadTask(uploadTask);
+    this.baseSetUploadTaskProgress(true, aType, 'Video Upload in progress....', percentConfig, buttons);
   }
 
   setUploadTaskProgressWithRawPercentage(
     message: string = '',
     percentage: number
   ) {
-    this.baseSetUploadTaskProgress(true, AlertType.Info, message, percentage);
+    const percentConfig = AnimationsConfigHelper.generateCircularProgress(percentage, AlertType.Info);
+    this.baseSetUploadTaskProgress(true, AlertType.Info, message, percentConfig);
   }
 
   baseSetUploadTaskProgress(
     enabled: boolean = true,
     alertType: AlertType = AlertType.Info,
     message: string = '',
-    percentile: number | null = null,
-    radius: number | null = null,
-    uploadTask: UploadTask | null = null
+    percentile: CircularProgress|null,
+    buttons?: ButtonConfig[]|null
   ) {
     this.alertObj.set(
-      new Alert(enabled, alertType, message, percentile, radius, uploadTask)
+      new Alert(enabled, alertType, message, percentile, buttons)
     );
   }
 
@@ -272,8 +281,3 @@ export class UploadComponent implements OnDestroy {
     this.alertObj.set(new Alert(true, AlertType.Error, message));
   }
 }
-
-function sleep(ms: number): Promise<void> {
-  return new Promise(resolve => setTimeout(resolve, ms));
-}
-

@@ -4,7 +4,7 @@ import { CommonModule } from '@angular/common';
 import { InputComponent } from '../../shared/input/input.component';
 import { AlertComponent } from '../../shared/alert/alert.component';
 import { AuthService } from '../../services/auth.service';
-import { Alert } from '../../models/alert.model';
+import { Alert } from '../../models/alerts/alert.model';
 import { AlertType } from '../../models/enum/alert.enum';
 import { Match, EmailTaken } from './validators';
 

@@ -2,7 +2,7 @@ import { Component, inject, signal } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { AlertComponent } from '../../shared/alert/alert.component';
 import { AuthService } from '../../services/auth.service';
-import { Alert } from '../../models/alert.model';
+import { Alert } from '../../models/alerts/alert.model';
 import { AlertType } from '../../models/enum/alert.enum';
 import { ILogin } from '../../models/login.model';
 

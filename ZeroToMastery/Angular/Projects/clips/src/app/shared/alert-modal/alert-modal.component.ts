@@ -1,7 +1,7 @@
 import { Component, input } from '@angular/core';
 import { ModalComponent } from '../modal/modal.component';
 import { AlertComponent } from '../alert/alert.component';
-import { Alert } from '../../models/alert.model';
+import { Alert } from '../../models/alerts/alert.model';
 
 @Component({
   selector: 'app-alert-modal',

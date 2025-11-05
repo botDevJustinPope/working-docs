@@ -1,4 +1,4 @@
-import { AlertType } from "../enum/alert.enum";
+import { AlertType } from "../../enum/alert.enum";
 
 export class CircularProgress {
     public styling: AlertType;

@@ -1,7 +1,7 @@
 import { Component, computed, Input, signal, effect } from '@angular/core';
 import { PercentPipe, NgStyle } from '@angular/common';
 import { AlertType } from '../../../models/enum/alert.enum';
-import { CircularProgress } from '../../../models/animations/circular-progress.model';
+import { CircularProgress } from '../../../models/animations/circular-progress/circular-progress.model';
 
 @Component({
   selector: 'app-circular-progress',
