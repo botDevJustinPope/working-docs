@@ -1,3 +1,4 @@
+import { serverTimestamp, Timestamp } from "firebase/firestore";
 import { IClip } from "./clip.interface";
 
 export class Clip implements IClip {   
@@ -7,6 +8,7 @@ export class Clip implements IClip {
     public fileTitle: string = '';    
     public fileName: string = '';
     public clipURL: string = '';
+    public createdAt: Timestamp;
 
     constructor(fid:string, uid:string, displayName:string, title:string='', name:string='', url:string=''){
         this.fid = fid;
@@ -15,6 +17,7 @@ export class Clip implements IClip {
         this.fileName = name;
         this.fileTitle = title;
         this.clipURL = url;
+        this.createdAt = serverTimestamp() as Timestamp;
     }
 
 }

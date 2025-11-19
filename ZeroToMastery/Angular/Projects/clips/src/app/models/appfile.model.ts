@@ -44,7 +44,8 @@ export class AppFile {
             displayName: this.clip.displayName,
             fileTitle: this.clip.fileTitle,
             fileName: this.clip.fileName,
-            clipURL: this.clip.clipURL
+            clipURL: this.clip.clipURL,
+            createdAt: this.clip.createdAt
         };
     }
 

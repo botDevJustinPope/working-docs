@@ -29,6 +29,8 @@ import { AnimationsConfigHelper } from '../../services/utils/animations-config.h
 import { ButtonsHelper } from '../../services/utils/buttons.helper';
 import { CircularProgress } from '../../models/animations/circular-progress/circular-progress.model';
 import { IButtonConfig } from '../../models/alerts/button-config.model';
+import { RoutesService } from '../../services/routes.service';
+import { RouteNames } from '../../app.routes';
 
 @Component({
   selector: 'app-upload',
@@ -52,6 +54,8 @@ export class UploadComponent implements OnDestroy {
   nextStep = signal(false);
   uploadsService = inject(UploadsService);
   inSubmission = signal(false);
+
+  #routeService = inject(RoutesService);
   #auth = inject(AuthService);
 
   /* 
@@ -156,7 +160,6 @@ export class UploadComponent implements OnDestroy {
       },
       error: (error: StorageError) => {
         // set error
-        console.log('upload error:', error);
         this.setUploadError(error);
       },
       complete: async () => {
@@ -166,15 +169,15 @@ export class UploadComponent implements OnDestroy {
           );
 
         const dataMessage: string = 'Finalizing data upload...';
-        this.setUploadTaskProgressWithRawPercentage(dataMessage, 95);
+        this.setUploadTaskProgressWithRawPercentage(dataMessage, .95);
 
         await UtilService.sleep(500);
 
-        await this.uploadsService.createClip(this.file()!);
+        const clipDoc = await this.uploadsService.createClip(this.file()!);
 
         await UtilService.sleep(500);
 
-        this.setUploadTaskProgressWithRawPercentage(dataMessage, 100);
+        this.setUploadTaskProgressWithRawPercentage(dataMessage, 1);
 
         await UtilService.sleep(500);
 
@@ -184,6 +187,7 @@ export class UploadComponent implements OnDestroy {
         // await a second then set next step
         setTimeout(() => {
           this.resetPage();
+          this.#routeService.navigateToRoute(RouteNames.Clip, [{ id: clipDoc?.id }]);
         }, 2000);
       },
     });
@@ -236,10 +240,12 @@ export class UploadComponent implements OnDestroy {
     /*
     The file upload is only part of the upload. Subtracting 5% for the file so that the clip data upload to be apart of the percentage.
     */
-    const progress: number = ((task.bytesTransferred / task.totalBytes / 95) *
-      100) as number;
+    let progress: number = task.bytesTransferred / task.totalBytes as number;
+    progress = progress * .9;
+    if (progress > .9) {
+      progress = .9;
+    }
     let aType: AlertType = AlertType.Info;
-    console.log('task state:', task.state);
     switch (task.state) {
       case 'paused':
         aType = AlertType.Warning;
@@ -274,6 +280,7 @@ export class UploadComponent implements OnDestroy {
       percentage,
       AlertType.Info
     );
+    console.log('progress:', percentage);
     this.baseSetUploadTaskProgress(
       true,
       AlertType.Info,
@@ -317,15 +324,12 @@ export class UploadComponent implements OnDestroy {
     }
 
     if (buttons) {
-      console.log('Setting buttons');
       let updateButtons = false;
       if (
         this.alertButtons()?.length === buttons.length
       ) {
-        console.log('Comparing buttons');
         this.alertButtons()?.forEach((btn) => {
           buttons.forEach((newBtn) => {
-            console.log('Comparing button', btn, newBtn);
             if (ButtonsHelper.buttonsAreEqual(btn, newBtn)) {
               updateButtons = false;
               return;
@@ -334,7 +338,6 @@ export class UploadComponent implements OnDestroy {
             }
           });
           if (updateButtons) {
-            console.log('Buttons differ, updating buttons');
             return;
           }
         });
@@ -342,11 +345,9 @@ export class UploadComponent implements OnDestroy {
         updateButtons = true;
       }
       if (updateButtons) {
-        console.log('Updating buttons');
         this.alertButtons.set(buttons);
       }
     } else {
-      console.log('Clearing buttons');
       this.alertButtons.set(null);
     }
   }

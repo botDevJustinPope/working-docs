@@ -7,7 +7,7 @@ import {
   getDownloadURL,
   StorageReference,
 } from '@angular/fire/storage';
-import { Firestore, addDoc, collection } from '@angular/fire/firestore';
+import { DocumentData, DocumentReference, Firestore, addDoc, collection } from '@angular/fire/firestore';
 import { AppFile } from '../models/appfile.model';
 import { Observable } from 'rxjs';
 
@@ -29,11 +29,12 @@ export class UploadsService {
     return await getDownloadURL(ref);
   }
 
-  public async createClip(appFile: AppFile) {
+  public async createClip(appFile: AppFile) : Promise<DocumentReference<DocumentData, DocumentData> | null> {
     try {
-      await addDoc(this.#clipsCollection, appFile.clipsInterface());
+      return await addDoc(this.#clipsCollection, appFile.clipsInterface());
     } catch (err) {
       console.error('caught error:', err);
     }
+    return null;
   }
 }
