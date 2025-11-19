@@ -1,0 +1,22 @@
+ResizeImage — short summary
+•	Purpose: take an image as a byte array, optionally scale it down to fit inside maxWidth × maxHeight while preserving aspect ratio, re-encode it to the requested ImageFormat, and return the resulting bytes.
+What it does (step-by-step)
+1.	Returns null immediately if imageBytes is null.
+2.	Loads the image from the input bytes via Image.FromStream.
+3.	Computes width and height scale factors (wRatio, hRatio) and picks the smaller one to preserve aspect ratio.
+4.	If the image is larger than the allowed bounds, creates a resized Bitmap with the computed newWidth/newHeight and assigns it to the image variable.
+5.	Finds an encoder for the requested ImageFormat and sets encoder parameters (quality = 65).
+6.	Saves the image into a MemoryStream using that encoder, converts the stream to a byte array, and returns it.
+7.	Exceptions are caught and swallowed: on error the method returns null (outer try/catch) or falls through to return the original imageBytes if the inner save fails silently.
+Important gotchas / potential issues
+•	The original Image returned by Image.FromStream is replaced by a new Bitmap without disposing the original instance — potential resource leak.
+•	image.Dispose() is called in both try and catch blocks; if image refers to different objects this may be misleading and error-prone.
+•	Exceptions are swallowed (no logging) and the method returns null on failure — this hides error causes and makes debugging harder.
+•	GetEncoderInfo may return null for unsupported formats; image.Save will then throw.
+•	Pixel format, metadata, and transparency handling are not explicitly controlled — re-encoding may change image characteristics.
+•	Per-pixel resizing uses new Bitmap(image, new Size(...)), which uses default scaling quality; better control can be achieved via Graphics with interpolation settings or a modern library (ImageSharp, Magick).
+Small suggestions
+•	Use using for Image and MemoryStream instances to ensure deterministic disposal.
+•	Dispose the original Image before replacing it with a resized Bitmap.
+•	Avoid swallowing exceptions; either rethrow or log the error so callers can act.
+•	Consider using a more modern/resilient library (ImageSharp or Magick.NET) for higher-quality resizing and clearer resource management.

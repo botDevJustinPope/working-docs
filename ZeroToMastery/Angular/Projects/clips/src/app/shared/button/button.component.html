@@ -1,0 +1,9 @@
+<button type="button" (click)="executeButtonClick()" [ngClass]="cssClasses()">
+  @if (isIconConfigured()) {
+  <svg class="w-6 h-6">
+    <use [attr.href]="'/assets/icon.svg#'+buttonIcon()"></use>
+  </svg>
+  } @else {
+  {{ displayLabel() }}
+  }
+</button>

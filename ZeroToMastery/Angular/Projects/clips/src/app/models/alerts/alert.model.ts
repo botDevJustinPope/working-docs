@@ -1,14 +1,14 @@
 import { UploadTask } from "@angular/fire/storage";
 import { CircularProgress } from "../animations/circular-progress/circular-progress.model";
 import { AlertType } from "../enum/alert.enum";
-import { ButtonConfig } from "./button-config.model";
+import { IButtonConfig } from "./button-config.model";
 
 export interface IAlert {
     enabled: boolean,
     type: AlertType|null,
     message: string|null,
     alertPercent?: CircularProgress|null
-    buttons?: ButtonConfig[]|null
+    buttons?: IButtonConfig[]|null
 }
 
 export class Alert implements IAlert {
@@ -16,13 +16,13 @@ export class Alert implements IAlert {
     public type: AlertType|null;
     public message: string|null;
     public alertPercent?: CircularProgress|null;
-    public buttons?: ButtonConfig[]|null;
+    public buttons?: IButtonConfig[]|null;
 
     constructor(enabled: boolean, 
                 type: AlertType|null = null, 
                 message: string|null = null, 
                 percentProgress?: CircularProgress|null,
-                buttons?: ButtonConfig[]|null) {
+                buttons?: IButtonConfig[]|null) {
         this.enabled = enabled;
         this.type = type;
         this.message = message;

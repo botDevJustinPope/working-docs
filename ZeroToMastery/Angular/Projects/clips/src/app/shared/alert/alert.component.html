@@ -1,13 +1,11 @@
 @if (showAlert()) {
 <div class="text-white text-center font-bold p-4 mb-4 rounded-md" [ngClass]="color()">
   <span>{{ alertMessage() }}</span>
-  @if (showPercentile()) { <app-circular-progress [input]="alertPercentileInput()"></app-circular-progress> } 
+  @if (showPercentile()) { <app-circular-progress [input]="alertPercentile()!"></app-circular-progress> } 
   @if (showButtons()) {
-  <div class="mt-4 mb-4 justify-end gap-1">
-    @for (let button of alertButtons()) {
-    <button type="button" (click)="button.executeButtonClick()" [ngClass]="button.cssClasses">
-      {{ button.label }}
-    </button>
+  <div class="mt-4 mb-4 justify-center gap-2 flex">
+    @for (button of alertButtons(); track button) {
+    <app-button [buttonInput]="button"></app-button>
     }
   </div>
   }

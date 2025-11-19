@@ -1,19 +1,58 @@
-import { Component, input, signal, computed, Signal } from '@angular/core';
+import { Component, input, computed, Signal, WritableSignal, signal, effect } from '@angular/core';
 import { NgClass } from '@angular/common';
 import { Alert } from '../../models/alerts/alert.model';
 import { AlertType } from '../../models/enum/alert.enum';
 import { CircularProgressComponent } from '../animations/circular-progress/circular-progress.component';
 import { CircularProgress } from '../../models/animations/circular-progress/circular-progress.model';
+import { ButtonComponent } from '../button/button.component';
+import { ButtonConfig, IButtonConfig } from '../../models/alerts/button-config.model';
 
 @Component({
   selector: 'app-alert',
   standalone: true,
-  imports: [NgClass, CircularProgressComponent],
+  imports: [NgClass, CircularProgressComponent, ButtonComponent],
   templateUrl: './alert.component.html',
   styleUrl: './alert.component.scss',
 })
 export class AlertComponent {
   alertInput = input<Alert>(new Alert(false));
+
+  alertPercentileInput = input<CircularProgress|null>(null);
+
+  alertButtonsInput = input<IButtonConfig[]|null>(null);
+
+  constructor() {
+    effect(() => {
+      if (this.alertInput().alertPercent) {
+        this.alertPercentile.set(this.alertInput().alertPercent!);
+      }
+      if (this.alertInput().buttons) {
+        this.alertButtons.set(this.alertInput().buttons!);
+      }
+    });
+    effect(() => {
+      if (this.alertPercentileInput()) {
+        this.alertPercentile.set(this.alertPercentileInput()!);
+      }
+    })
+    effect(() => {
+      if (this.alertButtonsInput()) {
+        this.alertButtons.set(this.alertButtonsInput()!);
+      }
+    })
+  }
+
+  showPercentile = computed(() => {
+    return this.alertPercentile() ? true : false;
+  });
+
+  alertPercentile: WritableSignal<CircularProgress|null> = signal(null);
+
+  showButtons = computed(() => {
+    return (this.alertButtons().length ?? 0) > 0;
+  });
+
+  alertButtons: WritableSignal<ButtonConfig[]> = signal([]);
 
   showAlert = computed(() =>
     this.alertInput() ? this.alertInput().enabled : false
@@ -42,19 +81,6 @@ export class AlertComponent {
     return this.alertInput() ? this.alertInput()?.type : AlertType.Info;
   });
 
-  alertPercentileInput = computed(() => {
-    return this.alertInput()?.alertPercent ?? new CircularProgress();
-  });
 
-  showPercentile = computed(() => {
-    return this.alertInput()?.alertPercent ? true : false;
-  });
 
-  showButtons = computed(() => {
-    return (this.alertInput()?.buttons?.length ?? 0) > 0;
-  });
-
-  alertButtons = computed(() => {
-    return this.alertInput()?.buttons ?? [];
-  });
 }

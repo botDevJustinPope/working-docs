@@ -1,4 +1,11 @@
-import { Component, signal, inject, OnDestroy, effect } from '@angular/core';
+import {
+  Component,
+  WritableSignal,
+  signal,
+  inject,
+  OnDestroy,
+  effect,
+} from '@angular/core';
 import { EventBlockerDirective } from '../../shared/directives/event-blocker.directive';
 import { NgClass } from '@angular/common';
 import { ReactiveFormsModule, FormBuilder, Validators } from '@angular/forms';
@@ -21,7 +28,7 @@ import { UtilService } from '../../services/utils/util.service';
 import { AnimationsConfigHelper } from '../../services/utils/animations-config.helper';
 import { ButtonsHelper } from '../../services/utils/buttons.helper';
 import { CircularProgress } from '../../models/animations/circular-progress/circular-progress.model';
-import { ButtonConfig } from '../../models/alerts/button-config.model';
+import { IButtonConfig } from '../../models/alerts/button-config.model';
 
 @Component({
   selector: 'app-upload',
@@ -44,7 +51,6 @@ export class UploadComponent implements OnDestroy {
   file = signal<AppFile | null>(null);
   nextStep = signal(false);
   uploadsService = inject(UploadsService);
-  alertObj = signal<Alert>(new Alert(false));
   inSubmission = signal(false);
   #auth = inject(AuthService);
 
@@ -210,8 +216,12 @@ export class UploadComponent implements OnDestroy {
   }
 
   //* Alerts *//
+  alertObj: WritableSignal<Alert> = signal(new Alert(false));
+  alertPercentage: WritableSignal<CircularProgress | null> = signal(null);
+  alertButtons: WritableSignal<IButtonConfig[] | null> = signal(null);
+
   setAlertClear() {
-    this.alertObj.set(new Alert(false));
+    this.baseSetUploadTaskProgress(false);
   }
 
   setUploadInProgress() {
@@ -236,35 +246,109 @@ export class UploadComponent implements OnDestroy {
         break;
       case 'running':
       default:
-        aType = AlertType.Info; 
+        aType = AlertType.Info;
         break;
       case 'canceled':
         aType = AlertType.Error;
         break;
     }
-    const percentConfig = AnimationsConfigHelper.generateCircularProgress(progress, aType);
+    const percentConfig = AnimationsConfigHelper.generateCircularProgress(
+      progress,
+      aType
+    );
     const buttons = ButtonsHelper.generateButtonsForUploadTask(uploadTask);
-    this.baseSetUploadTaskProgress(true, aType, 'Video Upload in progress....', percentConfig, buttons);
+    this.baseSetUploadTaskProgress(
+      true,
+      aType,
+      'Video Upload in progress....',
+      percentConfig,
+      buttons
+    );
   }
 
   setUploadTaskProgressWithRawPercentage(
     message: string = '',
     percentage: number
   ) {
-    const percentConfig = AnimationsConfigHelper.generateCircularProgress(percentage, AlertType.Info);
-    this.baseSetUploadTaskProgress(true, AlertType.Info, message, percentConfig);
+    const percentConfig = AnimationsConfigHelper.generateCircularProgress(
+      percentage,
+      AlertType.Info
+    );
+    this.baseSetUploadTaskProgress(
+      true,
+      AlertType.Info,
+      message,
+      percentConfig
+    );
   }
 
   baseSetUploadTaskProgress(
     enabled: boolean = true,
     alertType: AlertType = AlertType.Info,
     message: string = '',
-    percentile: CircularProgress|null,
-    buttons?: ButtonConfig[]|null
+    percentile: CircularProgress | null = null,
+    buttons: IButtonConfig[] | null = null
   ) {
-    this.alertObj.set(
-      new Alert(enabled, alertType, message, percentile, buttons)
-    );
+    // if the alert is not visible, set it to a new alert
+    if (this.alertObj().enabled !== enabled || 
+        this.alertObj().type !== alertType ||
+        this.alertObj().message !== message) {
+      this.alertObj.set(new Alert(enabled, alertType, message));
+    }
+
+    // otherwise just update the existing alert
+
+    if (this.alertObj().type !== alertType) {
+      this.alertObj().type = alertType;
+    }
+
+    if (this.alertObj().message !== message) {
+      this.alertObj().message = message;
+    }
+
+    if (percentile) {
+      if (
+        percentile.animationPercent !== this.alertPercentage()?.animationPercent
+      ) {
+        this.alertPercentage.set(percentile);
+      }
+    } else {
+      this.alertPercentage.set(null);
+    }
+
+    if (buttons) {
+      console.log('Setting buttons');
+      let updateButtons = false;
+      if (
+        this.alertButtons()?.length === buttons.length
+      ) {
+        console.log('Comparing buttons');
+        this.alertButtons()?.forEach((btn) => {
+          buttons.forEach((newBtn) => {
+            console.log('Comparing button', btn, newBtn);
+            if (ButtonsHelper.buttonsAreEqual(btn, newBtn)) {
+              updateButtons = false;
+              return;
+            } else {
+              updateButtons = true;
+            }
+          });
+          if (updateButtons) {
+            console.log('Buttons differ, updating buttons');
+            return;
+          }
+        });
+      } else {
+        updateButtons = true;
+      }
+      if (updateButtons) {
+        console.log('Updating buttons');
+        this.alertButtons.set(buttons);
+      }
+    } else {
+      console.log('Clearing buttons');
+      this.alertButtons.set(null);
+    }
   }
 
   setUploadError(error: StorageError) {

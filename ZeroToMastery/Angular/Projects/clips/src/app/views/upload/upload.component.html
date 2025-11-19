@@ -2,7 +2,7 @@
   <div class="rounded relative flex flex-col">
     <div class="font-bold mb-6">Upload Video</div>
     
-    <app-alert [alertInput]="alertObj()"></app-alert>
+    <app-alert [alertInput]="alertObj()" [alertPercentileInput]="alertPercentage()" [alertButtonsInput]="alertButtons()"></app-alert>
 
     <!-- Upload Dropbox -->
     @if (!nextStep()) {
