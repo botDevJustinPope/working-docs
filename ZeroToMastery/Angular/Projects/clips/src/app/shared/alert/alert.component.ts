@@ -1,11 +1,22 @@
-import { Component, input, computed, Signal, WritableSignal, signal, effect } from '@angular/core';
+import {
+  Component,
+  input,
+  computed,
+  Signal,
+  WritableSignal,
+  signal,
+  effect,
+} from '@angular/core';
 import { NgClass } from '@angular/common';
 import { Alert } from '../../models/alerts/alert.model';
 import { AlertType } from '../../models/enum/alert.enum';
 import { CircularProgressComponent } from '../animations/circular-progress/circular-progress.component';
 import { CircularProgress } from '../../models/animations/circular-progress/circular-progress.model';
 import { ButtonComponent } from '../button/button.component';
-import { ButtonConfig, IButtonConfig } from '../../models/alerts/button-config.model';
+import {
+  ButtonConfig,
+  IButtonConfig,
+} from '../../models/alerts/button-config.model';
 
 @Component({
   selector: 'app-alert',
@@ -17,12 +28,23 @@ import { ButtonConfig, IButtonConfig } from '../../models/alerts/button-config.m
 export class AlertComponent {
   alertInput = input<Alert>(new Alert(false));
 
-  alertPercentileInput = input<CircularProgress|null>(null);
+  alertPercentileInput = input<CircularProgress | null>(null);
 
-  alertButtonsInput = input<IButtonConfig[]|null>(null);
+  alertButtonsInput = input<IButtonConfig[] | null>(null);
 
   constructor() {
     effect(() => {
+      if (this.alertInput()) {
+        this.enabled.set(this.alertInput().enabled);
+        let type = this.alertInput().type;
+        if (type) {
+          this.alertType.set(type);
+        }
+        let msg = this.alertInput().message;
+        if (msg) {
+          this.alertMessage.set(msg);
+        }
+      }
       if (this.alertInput().alertPercent) {
         this.alertPercentile.set(this.alertInput().alertPercent!);
       }
@@ -34,19 +56,23 @@ export class AlertComponent {
       if (this.alertPercentileInput()) {
         this.alertPercentile.set(this.alertPercentileInput()!);
       }
-    })
+    });
     effect(() => {
       if (this.alertButtonsInput()) {
         this.alertButtons.set(this.alertButtonsInput()!);
       }
-    })
+    });
   }
+
+  enabled = signal<boolean>(false);
+  alertType = signal<AlertType>(AlertType.Info);
+  alertMessage = signal<string>('');
 
   showPercentile = computed(() => {
     return this.alertPercentile() ? true : false;
   });
 
-  alertPercentile: WritableSignal<CircularProgress|null> = signal(null);
+  alertPercentile: WritableSignal<CircularProgress | null> = signal(null);
 
   showButtons = computed(() => {
     return (this.alertButtons().length ?? 0) > 0;
@@ -72,15 +98,4 @@ export class AlertComponent {
         return 'bg-blue-500';
     }
   });
-
-  alertMessage = computed(() => {
-    return this.alertInput() ? this.alertInput()?.message : '';
-  });
-
-  alertType = computed(() => {
-    return this.alertInput() ? this.alertInput()?.type : AlertType.Info;
-  });
-
-
-
 }

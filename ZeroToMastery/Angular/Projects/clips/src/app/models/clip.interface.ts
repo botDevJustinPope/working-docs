@@ -1,6 +1,7 @@
 import { Timestamp } from "@angular/fire/firestore";
 
-export interface IClip {    
+export interface IClip {
+    docID?: string;    
     fid: string;
     uid: string;
     displayName: string;

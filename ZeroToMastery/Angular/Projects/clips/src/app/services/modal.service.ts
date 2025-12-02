@@ -1,4 +1,5 @@
 import { Injectable, signal } from '@angular/core';
+import { BehaviorSubject, Observable } from 'rxjs';
 
 interface IModal {
   id: string;
@@ -13,6 +14,13 @@ export class ModalService {
   private modals = signal<IModal[]>([]);
   
   constructor() { }
+
+  private modalSubject = new BehaviorSubject<IModal[]>([]);
+  public modals$: Observable<IModal[]> = this.modalSubject.asObservable();
+
+  private setModalsObservable() {
+    
+  }
 
   register(modalENUM: Modals, element: HTMLDialogElement) {
     this.modals.set([...this.modals(),{ id: modalENUM, element }]);
@@ -32,6 +40,7 @@ export class ModalService {
 
 export enum Modals {
   Auth = 'auth',
-  Alert = 'alert'
+  Alert = 'alert',
+  VideoEdit = 'video-edit'
 }
   
