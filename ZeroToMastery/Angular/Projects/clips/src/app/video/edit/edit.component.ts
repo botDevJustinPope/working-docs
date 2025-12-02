@@ -1,4 +1,12 @@
-import { Component, computed, effect, inject, input, OnDestroy, signal } from '@angular/core';
+import {
+  Component,
+  computed,
+  effect,
+  inject,
+  input,
+  OnDestroy,
+  signal,
+} from '@angular/core';
 import { NgClass } from '@angular/common';
 import { ModalComponent } from '../../shared/modal/modal.component';
 import { Modals } from '../../services/modal.service';
@@ -14,17 +22,23 @@ import { UtilService } from '../../services/utils/util.service';
 @Component({
   selector: 'app-edit',
   standalone: true,
-  imports: [ModalComponent, ReactiveFormsModule, InputComponent, AlertComponent, NgClass],
+  imports: [
+    ModalComponent,
+    ReactiveFormsModule,
+    InputComponent,
+    AlertComponent,
+    NgClass,
+  ],
   templateUrl: './edit.component.html',
-  styleUrl: './edit.component.scss'
+  styleUrl: './edit.component.scss',
 })
 export class EditComponent implements OnDestroy {
   modalId = Modals.VideoEdit;
-  
+
   clip = input<Clip | null>(null);
 
   uploadsService = inject(UploadsService);
-  fb = inject(FormBuilder);  
+  fb = inject(FormBuilder);
   form = this.fb.nonNullable.group({
     id: [''],
     title: ['', [Validators.required, Validators.minLength(3)]],
@@ -36,18 +50,21 @@ export class EditComponent implements OnDestroy {
 
   disableSubmit = computed(() => {
     return this.inSubmission() || this.formInvalid();
-  })
+  });
 
   constructor() {
     effect(() => {
       if (this.clip()) {
-        this.form.controls.id.setValue(this.clip()?.docID ?? '');
-        this.form.controls.title.setValue(this.clip()?.fileTitle ?? '');
+        if (this.clip()?.docID !== this.form.controls.id.value) {
+          this.setAlertClear();
+          this.form.controls.id.setValue(this.clip()?.docID ?? '');
+          this.form.controls.title.setValue(this.clip()?.fileTitle ?? '');
+        }
       }
-    })
+    });
     this.form.statusChanges.subscribe(() => {
       this.formInvalid.set(this.form.invalid);
-    })
+    });
   }
 
   ngOnDestroy(): void {
@@ -57,15 +74,17 @@ export class EditComponent implements OnDestroy {
 
   async submit() {
     this.setAlertUpdateBegin();
-      await UtilService.sleep(500);
+    await UtilService.sleep(500);
     try {
-      this.uploadsService.updateClip(this.form.controls.id.value, 
-                                     this.form.controls.title.value);
+      this.uploadsService.updateClip(
+        this.form.controls.id.value,
+        this.form.controls.title.value
+      );
       this.setAlertUpdateSuccess();
     } catch (error) {
       this.setAlertUpdateError((error as Error).message);
       return;
-    } 
+    }
   }
 
   setAlertClear() {
@@ -85,10 +104,18 @@ export class EditComponent implements OnDestroy {
 
   setAlertUpdateError(errorMessage: string) {
     this.inSubmission.set(false);
-    this.baseAlertUpdate(true, AlertType.Error, `Error updating clip: ${errorMessage}`);
+    this.baseAlertUpdate(
+      true,
+      AlertType.Error,
+      `Error updating clip: ${errorMessage}`
+    );
   }
 
-  baseAlertUpdate(enabled:boolean, type: AlertType = AlertType.Info, message: string = '') {
+  baseAlertUpdate(
+    enabled: boolean,
+    type: AlertType = AlertType.Info,
+    message: string = ''
+  ) {
     this.alertObj.set(new Alert(enabled, type, message));
   }
 }
