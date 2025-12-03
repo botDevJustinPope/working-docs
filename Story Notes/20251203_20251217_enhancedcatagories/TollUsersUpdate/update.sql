@@ -1,7 +1,8 @@
 declare  @TollUsers table (
     userEmail varchar(255) not null,
     FirstName VARCHAR(100) not null,
-    LastName VARCHAR(100) not null
+    LastName VARCHAR(100) not null,
+    activeInWBS bit default 0
 );
 insert into @TollUsers (FirstName, LastName, userEmail) values
 ('Adam',	'Bautista',	'abautista@tollbrothers.com'),
@@ -101,28 +102,31 @@ insert into @TollUsers (FirstName, LastName, userEmail) values
 ('Donna', 'Fitzgerald', 'dfitzgerald@tollbrothers.com'),
 ('Ashlee', 'Austin', 'aaustin@tollbrothers.com'),
 ('Crystal', 'Halsell', 'chalsell@tollbrothers.com');
+
+BEGIN TRANSACTION
+
 /*
 -- wbs users update
+    */
 update wbs_users
 set temporary_password = null,
     [password] = null,
     modifier = 'justinpo@buildontechnologies.com',
-    modified_date = getdate(),
-    no_vds_auth = 1
+    modified_date = getdate()
 from [VEOSolutionsSecurity].[dbo].[Users] wbs_users
 inner join @TollUsers toll_users
     on wbs_users.email = toll_users.userEmail;
-    */
 
 /*
 -- eplan users update
+*/
 update eplan_users
 set temporary_password = null,
     [password] = null,
     modifier = 'justinpo@buildontechnologies.com',
-    modified_date = getdate(),
-    no_vds_auth = 1
+    modified_date = getdate()
 from [EPLAN_veoSolutionsSecurity].[dbo].[Users] eplan_users
 inner join @TollUsers toll_users
     on eplan_users.email = toll_users.userEmail;
-*/
+
+COMMIT TRANSACTION

@@ -133,12 +133,13 @@ inner join [EPLAN_VEOSolutionsSecurity].[dbo].[Users] u on tu.userEmail = u.emai
 /*
 select * from @Users
 
+*/
 select count(*) as WBSCount from @Users where Stack = 'WBS'
 select count(*) as EPLANCount from @Users where Stack = 'EPLAN'
+/*
 */
-
 select 
-tu.userEmail, WBSUser.UserID as [WBSUserID], EPLANUser.UserID as [EPLANUserID]
+tu.FirstName, tu.LastName, tu.userEmail, WBSUser.UserID as [WBSUserID], EPLANUser.UserID as [EPLANUserID]
 from @TollUsers tu 
 outer apply ( select top 1 u.UserID from @users u where tu.userEmail = u.EmailAddress and u.Stack = 'WBS') as WBSUser
 outer apply ( select top 1 u.UserID from @users u where tu.userEmail = u.EmailAddress and u.Stack = 'EPLAN') as EPLANUser
