@@ -23,7 +23,7 @@
 <div class="container mx-auto my-8">
   <!-- Video List -->
   <div class="grid grid-cols-1 lg:grid-cols-3 gap-4">
-    @for(clip of clips(); track clip.docID) {
+    @for(clip of clipsSorted(); track clip.docID) {
     <div
       class="mt-6 rounded-tl-2xl rounded-br-2xl shadow-xl bg-secondary flex flex-col justify-start"
     >

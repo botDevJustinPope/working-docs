@@ -91,6 +91,7 @@ export class ManageComponent implements OnInit {
           clip.fileTitle,
           clip.fileName,
           clip.clipURL,
+          clip.createdAt,
           clip.docID
         ),
       ]);
@@ -121,6 +122,20 @@ export class ManageComponent implements OnInit {
   public mutateClips() {
     this.clips.set([...this.clips()]);
   }
+
+  clipsSorted = computed(() => {
+    return this.clips().sort((a: Clip, b: Clip) => {
+      switch (this.videoOrder()) {
+        case '1':
+          return b.createdAt.toMillis() - a.createdAt.toMillis();
+        case '2':
+          return a.createdAt.toMillis() - b.createdAt.toMillis();
+        default:
+          return 0;
+      }
+
+    });
+  })
 
   public navigate(routeName: RouteNames) {
     this.#routes.navigateToRoute(routeName);
