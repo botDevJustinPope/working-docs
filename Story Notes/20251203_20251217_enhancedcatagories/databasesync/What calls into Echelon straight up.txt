@@ -1,0 +1,145 @@
+YukonConnection is the connection string that the VDS application uses to connect striaght to the Echelon server and the WBS database for veodesignstudio.com, for other stacks take a look at the libary for the appsetting by navigating to Pipelines>Library. With this connection string we call the following procedures listed out in the following sections. The purpose was to:
+- Identify what we are calling directly
+- trace its usage (actaul sql sever call => endpoint)
+
+_This does not get into where in the app does the enpdoints get used which could  be in a later wiki or story to figure out._
+
+Points of connection straight into Echelon (looking for things that use YukonConnection)
+==========================================================================================
+    Class DataAccess (DataAccess.cs)
+
+        method: GetPricesLandedEffectiveDate
+        - proc called: vsp_getPricesLandedEffectiveDate
+        - refrences:
+            * DataAccess.GetAreaBuildInfoForSpecPlanFromPricesLanded (DataAccess.cs)
+
+        method: GetPlanIDForAccountOrganizationSpecPlanEffectiveDate
+        - proc called: vsp_getPlanIDForAccountOrganizationSpecPlanEffectiveDate_Yukon
+        - refrences:
+            * DataAccess.GetAreaBuildInfoForSpecPlanFromPricesLanded (DataAccess.cs)
+            * DataAccess.GetAreaBuildInfoForSpecEffectiveDatePlanFromPricesLanded (DataAccess.cs)
+        
+        method: GetAreaBuildInfoForSpecPlanFromPricesLanded
+        - proc called: vsp_getAreaBuildInfoFromPlanID_Yukon
+        - refrences:
+            * DataAccessBridge.GetAreaBuildInfoForSpecPlanFromPricesLanded (DataAccessBridge.cs)
+
+        method: GetAreaBuildInfoForSpecEffectiveDatePlanFromPricesLanded
+        - proc called: vsp_getAreaBuildInfoFromPlanID_Yukon
+        - refrences: 
+            * DataAccessBridge.GetAreaBuildInfoForSpecEffectiveDatePlanFromPricesLanded (DataAccessBridge.cs)
+    
+    Class EchelonRepository (EchelonRepository.cs)
+
+        mehtod: GetPricesLandedEffectiveDateForSpecPlan
+        - proc called: vsp_getPricesLandedEffectiveDate
+
+        mehtod: GetPricesLandedGeneratedPublishedDatesAsync
+        - proc called: vsp_getPricesLandedGeneratedPublishedDates
+
+        mehtod: GetPricesLandedDataForSessionCreation
+        - proc called: vds_selPricesLandedDataForSessionCreation
+
+        method: GetEchelonCustomerProgramAsync
+        - proc called: vds_selCustomerProductProgramByCustomer
+
+    Class OptionPricingDomainRepository (OptionPricingDomainRepository.cs)
+
+        method: GetAllEstimatedOptionPricingItemsForNonSessionAsync
+        - proc called: vds_selAllEstimatedOptionPricingItemsForNonSession_Yukon
+
+        method: GetEstimatedOptionPricingItemsForNonSessionAsync
+        - proc called: vds_selEstimatedOptionPricingItemsForNonSession_Yukon
+
+        method: GetGroupLevelPartsAsync
+        - proc called: vds_selGroupLevelParts_Yukon
+
+        method: GetInstalledPartPhotosAsync
+        - proc called: vds_selInstalledPartPhotos_Yukon, vsp_selPhotoAttributes
+
+Points of refrences to DataAccesBridge methods
+==========================================================================================
+    method: GetAreaBuildInfoForSpecEffectiveDatePlanFromPricesLanded
+    - refrences:
+    * [BuildOnTechnologies.VDS.Legacy.Domain.UseCases] GetStructuralOptions.Invoke
+
+    method: GetAreaBuildInfoForSpecPlanFromPricesLanded
+    - refrences:
+        * [BuildOnTechnologies.VDS.Legacy.Domain.UseCases] GetStructuralOptions.Invoke
+
+Points of refrences to GetStructuralOptions
+==========================================================================================
+    refrences:
+        - Domain\BuildOnTechnologies.VDS.Services\Session\AutoCreateSession.cs
+        - PresentationVeoDesignStudio\Controllers\Api\StructuralOptionsController.cs
+
+Points of refrences to AutoCreateSession
+==========================================================================================
+    refrences:
+        - DomainBuildOnTechnologies.VDS.Services\Session\CreateProfilePlan.cs
+        - DomainBuildOnTechnologies.VDS.Services\Session\UpdateProfilePlan.cs
+
+Points of refrences to CreateProfilePlan
+==========================================================================================
+    refrences:
+        - Presentation\VeoDesignStudio\Controllers\Api\ProfilePlanEditorController.cs
+        - Presentation\VeoDesignStudio\Controllers\Api\UserController.cs
+        - Integration\VeoDesignStudio.Integration.Api\Services\CreateProspectivePlanService.cs
+
+Points of refrences to UpdateProfilePlan
+==========================================================================================
+    refrences:
+        - Presentation\VeoDesignStudio\Controllers\Api\ProfilePlanEditorController.cs
+        - Integration\VeoDesignStudio.Integration.Api\Services\ContractHomebuyerPlanService.cs
+
+Points of interest that refrences integration api services:
+==========================================================================================
+    Services:
+        - ContractHomebuyerPlanService
+        - CreateProspectivePlanService
+
+    refrences:
+        - Integration\VeoDesignStudio.Integration.Api\Controllers\HomebuyerPlansController.cs
+
+Endpoints of intrest from indentified Controllers:
+==========================================================================================
+    VDS API:
+        - ProfilePlanEditorController (UpdateProfilePlan, CreateProfilePlan)
+        - UserController (CreateProfilePlan)
+        - StructuralOptionsController (GetStructuralOptions)
+
+    Integration API:
+        - HomebuyerPlansController (ContractHomebuyerPlanService, CreateProspectivePlanService)
+
+VDS API
+==========================================================================================
+    ProfilePlanEditorController
+        * endpoints:
+            - POST - api/ProfilePlanEditor/UpdateProfilePlan
+                method: UpdateProfilePlan
+
+    StructuralOptionsController
+        * endpoints:
+            - GET - api/StructuralOptions/GetStructuralOptionsBySpecPlan
+                method: GetStructuralOptionsBySpecPlan
+
+            - GET - api/StructuralOptions/GetStructuralOptionsBySpecEffectiveDatePlan
+                method: GetStructuralOptionsBySpecEffectiveDatePlan
+
+            - GET - api/sessions/{session_id}/structural_options
+                method: GetStructuralOptionsBySession
+
+    UserController
+        * endpoints 
+            - POST - api/User/AddAccountOrganizationUserProfilePlan
+                method: AddAccountOrganizationUserProfilePlan
+
+Integration API
+==========================================================================================
+    HomebuyerPlansController
+        * endpoints
+            - POST - tenants/{tenantId}/homebuyers/{homebuyerId}/plans
+                method: CreateProspectiveHomebuyerPlan
+            - POST - homebuyerPlans/{homebuyerPlanId}/contract
+                method: ContractHomebuyerPlan
+

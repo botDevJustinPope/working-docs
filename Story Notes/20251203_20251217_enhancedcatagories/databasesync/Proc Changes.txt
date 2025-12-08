@@ -1,0 +1,21 @@
+Changes to procs and refrenced tables in SQL compare (2025-12-04 1300)
+
+vsp_getPricesLandedEffectiveDate - no proc change
+- prices_landed -
+- plan_mstr
+    new base_plan_id
+- pricesets
+
+vsp_getPlanIDForAccountOrganizationSpecPlanEffectiveDate_Yukon - no proc change
+- prices_landed
+- plan_builds
+- plan_mstr
+
+vsp_getAreaBuildInfoFromPlanID_Yukon - no proc change
+- plan_builds
+- plan_areas
+- areas 
+- sub_areas
+- applications
+- products
+- plan_material00

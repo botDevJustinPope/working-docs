@@ -1,0 +1,35 @@
+proc: osp_selitemprice
+==========================================================================================
+    We use it from a synonym via a procedure inthe veosolutions db:
+    [VeoSolutions].[dbo].[vds_vs_selItemPrice] => this Calls
+        Veo_vs_selItemPrice => this synonym points to 
+            [VEO].[dbo].[vs_selItemPrice] => this calls 
+                [VEO].[dbo].[esp_selItemPrice] => this calls 
+                    [VEO].[dbo].[osp_selItemPrice]
+    _Note: the elements from the VEO database are from echelon_
+
+
+Code path to vds_vs_selItemPrice
+==========================================================================================
+    PriceBomLine.Invoke
+
+        GetBuildItemsForBomLine.PriceBomDetailLine
+            GetBuildItemsForBomLineByPage.Invoke
+                BuildController.GetBuildItemsForBomLineByPage
+                endpoint: api/build/GetBuildItemsForBomLineByPage
+
+            GetBuildItemsForBomLineBySelected
+                BuildController.GetBuildItemsForBomLineBySelected
+                endpoint : api/build/GetBuildItemsForBomLineBySelected
+
+
+
+        PriceBuild.UpdateBuildPricingAsync
+            CopyAllSelectionsToAnotherSession
+            CopyBuildSelectionsToOtherAreas
+            OverridePatternCharge
+            SelectBuildItem
+            SelectBuildPattern
+            SetNoSlabPreference
+            PriceBuild
+            ChangeBuildSelectionsPriceLevel

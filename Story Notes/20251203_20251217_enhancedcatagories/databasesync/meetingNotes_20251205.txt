@@ -1,0 +1,18 @@
+Meeting Notes on flat rate pricing:
+procs:
+- osp_sellitemprice
+- osp_contractitemprice
+
+- osp_selUnitPriceExtenedMaterial
+
+tables:
+- extended_pricing_material
+- extended_pricing_labor
+
+- global_dflts
+
+datasync:
+- to get global_dflts data
+
+concern:
+- What are we doing for flat rate pricing?

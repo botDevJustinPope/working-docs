@@ -1,0 +1,25 @@
+VEOEchelonConnection - into the airgap
+VEOEchelonConnection is the sql connection to the VEO Database for the particular stack. For the DEV environments that is the VEO_DEV data base on the dev-sql.veodesignstudio.com server and for the WBS stack in production that is the VEO database on the sql.veodesignstudio.com server. Other stacks can be found in the Library in Pipelines > Library.
+This article is to identify in server code what we use from that database. Another facet of this is that we have synonyms into the veo database. This article will attempt to identify refrences for those synonyms.
+
+Direct Connection Calls
+==========================================================================================
+
+
+VEO synonyms
+==========================================================================================
+    [dbo].[Veo_accent_sqft_conversions]
+        refrences
+        - procedure [dbo].[vds_getDesignSessionWizardAccentPrompts]
+    
+    [dbo].[Veo_applications]
+        refrences
+        - FUNCTION [dbo].[vdsf_isSpecItemExcludedOnSessionBuild]
+        - PROCEDURE [dbo].[vds_selPriceLevelsByBuild]
+        - PROCEDURE [dbo].[vds_selSpecPatternItems]
+        - PROCEDURE [dbo].[vds_getOptionPricingSessionSelections]
+        - PROCEDURE [dbo].[vds_selValidPatternsForBuild]
+        - PROCEDURE [dbo].[vds_selAccountOrganizationPlanItems]
+        - procedure [dbo].[vs_selDocumentProductFromApplications]
+        - procedure vs_selDocumentApplications
+        - PROCEDURE [dbo].[vds_selAllOptionPricingItemsForSession]
