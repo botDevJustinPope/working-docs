@@ -1,0 +1,1163 @@
+[
+    {
+        "ApplicationID": "3",
+        "Application": "Walls",
+        "ProductID": "6",
+        "Product": "Tile",
+        "Source": "Contract",
+        "Areas": [
+            {
+                "ApplicationID": "3",
+                "Application": "Walls",
+                "ProductID": "6",
+                "Product": "Tile",
+                "Area": "Bath 2 Tub Splash",
+                "SubArea": "",
+                "Source": "Contract",
+                "Prices": [
+                    {
+                        "ItemID": "4729",
+                        "ItemType": "group",
+                        "ItemName": "Bath And Backsplash Tile - Level 1",
+                        "ItemImage": {
+                            "ContentType": null,
+                            "EncodedData": null,
+                            "FullURL": null
+                        },
+                        "Gpc": null,
+                        "GpcDocCount": 0,
+                        "SpecID": 4333,
+                        "EffectiveDate": "2014-04-11T00:00:00",
+                        "PlanVersion": "02/06/15 (1)",
+                        "Price": 0.0
+                    },
+                    {
+                        "ItemID": "4730",
+                        "ItemType": "group",
+                        "ItemName": "Bath And Backsplash Tile - Level 2",
+                        "ItemImage": {
+                            "ContentType": null,
+                            "EncodedData": null,
+                            "FullURL": null
+                        },
+                        "Gpc": null,
+                        "GpcDocCount": 0,
+                        "SpecID": 4333,
+                        "EffectiveDate": "2014-04-11T00:00:00",
+                        "PlanVersion": "02/06/15 (1)",
+                        "Price": 60.0
+                    },
+                    {
+                        "ItemID": "4731",
+                        "ItemType": "group",
+                        "ItemName": "Bath And Backsplash Tile - Level 3",
+                        "ItemImage": {
+                            "ContentType": null,
+                            "EncodedData": null,
+                            "FullURL": null
+                        },
+                        "Gpc": null,
+                        "GpcDocCount": 0,
+                        "SpecID": 4333,
+                        "EffectiveDate": "2014-04-11T00:00:00",
+                        "PlanVersion": "02/06/15 (1)",
+                        "Price": 120.0
+                    },
+                    {
+                        "ItemID": "4732",
+                        "ItemType": "group",
+                        "ItemName": "Bath And Backsplash Tile - Level 4",
+                        "ItemImage": {
+                            "ContentType": null,
+                            "EncodedData": null,
+                            "FullURL": null
+                        },
+                        "Gpc": null,
+                        "GpcDocCount": 0,
+                        "SpecID": 4333,
+                        "EffectiveDate": "2014-04-11T00:00:00",
+                        "PlanVersion": "02/06/15 (1)",
+                        "Price": 180.0
+                    },
+                    {
+                        "ItemID": "4733",
+                        "ItemType": "group",
+                        "ItemName": "Bath And Backsplash Tile - Level 5",
+                        "ItemImage": {
+                            "ContentType": null,
+                            "EncodedData": null,
+                            "FullURL": null
+                        },
+                        "Gpc": null,
+                        "GpcDocCount": 0,
+                        "SpecID": 4333,
+                        "EffectiveDate": "2014-04-11T00:00:00",
+                        "PlanVersion": "02/06/15 (1)",
+                        "Price": 290.0
+                    },
+                    {
+                        "ItemID": "4734",
+                        "ItemType": "group",
+                        "ItemName": "Wall Tile - Group 6",
+                        "ItemImage": {
+                            "ContentType": null,
+                            "EncodedData": null,
+                            "FullURL": null
+                        },
+                        "Gpc": null,
+                        "GpcDocCount": 0,
+                        "SpecID": 4333,
+                        "EffectiveDate": "2014-04-11T00:00:00",
+                        "PlanVersion": "02/06/15 (1)",
+                        "Price": 350.0
+                    },
+                    {
+                        "ItemID": "4735",
+                        "ItemType": "group",
+                        "ItemName": "Wall Tile - Group 7",
+                        "ItemImage": {
+                            "ContentType": null,
+                            "EncodedData": null,
+                            "FullURL": null
+                        },
+                        "Gpc": null,
+                        "GpcDocCount": 0,
+                        "SpecID": 4333,
+                        "EffectiveDate": "2014-04-11T00:00:00",
+                        "PlanVersion": "02/06/15 (1)",
+                        "Price": 460.0
+                    },
+                    {
+                        "ItemID": "4736",
+                        "ItemType": "group",
+                        "ItemName": "Wall Tile - Group 8",
+                        "ItemImage": {
+                            "ContentType": null,
+                            "EncodedData": null,
+                            "FullURL": null
+                        },
+                        "Gpc": null,
+                        "GpcDocCount": 0,
+                        "SpecID": 4333,
+                        "EffectiveDate": "2014-04-11T00:00:00",
+                        "PlanVersion": "02/06/15 (1)",
+                        "Price": 580.0
+                    },
+                    {
+                        "ItemID": "4737",
+                        "ItemType": "group",
+                        "ItemName": "Wall Tile - Group 9",
+                        "ItemImage": {
+                            "ContentType": null,
+                            "EncodedData": null,
+                            "FullURL": null
+                        },
+                        "Gpc": null,
+                        "GpcDocCount": 0,
+                        "SpecID": 4333,
+                        "EffectiveDate": "2014-04-11T00:00:00",
+                        "PlanVersion": "02/06/15 (1)",
+                        "Price": 810.0
+                    },
+                    {
+                        "ItemID": "4755",
+                        "ItemType": "group",
+                        "ItemName": "Wall Tile - Group 10",
+                        "ItemImage": {
+                            "ContentType": null,
+                            "EncodedData": null,
+                            "FullURL": null
+                        },
+                        "Gpc": null,
+                        "GpcDocCount": 0,
+                        "SpecID": 4333,
+                        "EffectiveDate": "2014-04-11T00:00:00",
+                        "PlanVersion": "02/06/15 (1)",
+                        "Price": 1270.0
+                    },
+                    {
+                        "ItemID": "4761",
+                        "ItemType": "group",
+                        "ItemName": "Wall Tile - Group 11",
+                        "ItemImage": {
+                            "ContentType": null,
+                            "EncodedData": null,
+                            "FullURL": null
+                        },
+                        "Gpc": null,
+                        "GpcDocCount": 0,
+                        "SpecID": 4333,
+                        "EffectiveDate": "2014-04-11T00:00:00",
+                        "PlanVersion": "02/06/15 (1)",
+                        "Price": 0.0
+                    },
+                    {
+                        "ItemID": "4762",
+                        "ItemType": "group",
+                        "ItemName": "Wall Tile - Group 12",
+                        "ItemImage": {
+                            "ContentType": null,
+                            "EncodedData": null,
+                            "FullURL": null
+                        },
+                        "Gpc": null,
+                        "GpcDocCount": 0,
+                        "SpecID": 4333,
+                        "EffectiveDate": "2014-04-11T00:00:00",
+                        "PlanVersion": "02/06/15 (1)",
+                        "Price": 0.0
+                    },
+                    {
+                        "ItemID": "4800",
+                        "ItemType": "group",
+                        "ItemName": "Wall Tile - Group 13",
+                        "ItemImage": {
+                            "ContentType": null,
+                            "EncodedData": null,
+                            "FullURL": null
+                        },
+                        "Gpc": null,
+                        "GpcDocCount": 0,
+                        "SpecID": 4333,
+                        "EffectiveDate": "2014-04-11T00:00:00",
+                        "PlanVersion": "02/06/15 (1)",
+                        "Price": 120.0
+                    },
+                    {
+                        "ItemID": "4801",
+                        "ItemType": "group",
+                        "ItemName": "Wall Tile - Group 14",
+                        "ItemImage": {
+                            "ContentType": null,
+                            "EncodedData": null,
+                            "FullURL": null
+                        },
+                        "Gpc": null,
+                        "GpcDocCount": 0,
+                        "SpecID": 4333,
+                        "EffectiveDate": "2014-04-11T00:00:00",
+                        "PlanVersion": "02/06/15 (1)",
+                        "Price": 240.0
+                    }
+                ]
+            },
+            {
+                "ApplicationID": "3",
+                "Application": "Walls",
+                "ProductID": "6",
+                "Product": "Tile",
+                "Area": "Kitchen/Dining Back Splash",
+                "SubArea": "",
+                "Source": "Contract",
+                "Prices": [
+                    {
+                        "ItemID": "4729",
+                        "ItemType": "group",
+                        "ItemName": "Bath And Backsplash Tile - Level 1",
+                        "ItemImage": {
+                            "ContentType": null,
+                            "EncodedData": null,
+                            "FullURL": null
+                        },
+                        "Gpc": null,
+                        "GpcDocCount": 0,
+                        "SpecID": 4333,
+                        "EffectiveDate": "2014-04-11T00:00:00",
+                        "PlanVersion": "02/06/15 (1)",
+                        "Price": 0.0
+                    },
+                    {
+                        "ItemID": "4730",
+                        "ItemType": "group",
+                        "ItemName": "Bath And Backsplash Tile - Level 2",
+                        "ItemImage": {
+                            "ContentType": null,
+                            "EncodedData": null,
+                            "FullURL": null
+                        },
+                        "Gpc": null,
+                        "GpcDocCount": 0,
+                        "SpecID": 4333,
+                        "EffectiveDate": "2014-04-11T00:00:00",
+                        "PlanVersion": "02/06/15 (1)",
+                        "Price": 40.0
+                    },
+                    {
+                        "ItemID": "4731",
+                        "ItemType": "group",
+                        "ItemName": "Bath And Backsplash Tile - Level 3",
+                        "ItemImage": {
+                            "ContentType": null,
+                            "EncodedData": null,
+                            "FullURL": null
+                        },
+                        "Gpc": null,
+                        "GpcDocCount": 0,
+                        "SpecID": 4333,
+                        "EffectiveDate": "2014-04-11T00:00:00",
+                        "PlanVersion": "02/06/15 (1)",
+                        "Price": 70.0
+                    },
+                    {
+                        "ItemID": "4732",
+                        "ItemType": "group",
+                        "ItemName": "Bath And Backsplash Tile - Level 4",
+                        "ItemImage": {
+                            "ContentType": null,
+                            "EncodedData": null,
+                            "FullURL": null
+                        },
+                        "Gpc": null,
+                        "GpcDocCount": 0,
+                        "SpecID": 4333,
+                        "EffectiveDate": "2014-04-11T00:00:00",
+                        "PlanVersion": "02/06/15 (1)",
+                        "Price": 100.0
+                    },
+                    {
+                        "ItemID": "4733",
+                        "ItemType": "group",
+                        "ItemName": "Bath And Backsplash Tile - Level 5",
+                        "ItemImage": {
+                            "ContentType": null,
+                            "EncodedData": null,
+                            "FullURL": null
+                        },
+                        "Gpc": null,
+                        "GpcDocCount": 0,
+                        "SpecID": 4333,
+                        "EffectiveDate": "2014-04-11T00:00:00",
+                        "PlanVersion": "02/06/15 (1)",
+                        "Price": 160.0
+                    },
+                    {
+                        "ItemID": "4734",
+                        "ItemType": "group",
+                        "ItemName": "Wall Tile - Group 6",
+                        "ItemImage": {
+                            "ContentType": null,
+                            "EncodedData": null,
+                            "FullURL": null
+                        },
+                        "Gpc": null,
+                        "GpcDocCount": 0,
+                        "SpecID": 4333,
+                        "EffectiveDate": "2014-04-11T00:00:00",
+                        "PlanVersion": "02/06/15 (1)",
+                        "Price": 190.0
+                    },
+                    {
+                        "ItemID": "4735",
+                        "ItemType": "group",
+                        "ItemName": "Wall Tile - Group 7",
+                        "ItemImage": {
+                            "ContentType": null,
+                            "EncodedData": null,
+                            "FullURL": null
+                        },
+                        "Gpc": null,
+                        "GpcDocCount": 0,
+                        "SpecID": 4333,
+                        "EffectiveDate": "2014-04-11T00:00:00",
+                        "PlanVersion": "02/06/15 (1)",
+                        "Price": 250.0
+                    },
+                    {
+                        "ItemID": "4736",
+                        "ItemType": "group",
+                        "ItemName": "Wall Tile - Group 8",
+                        "ItemImage": {
+                            "ContentType": null,
+                            "EncodedData": null,
+                            "FullURL": null
+                        },
+                        "Gpc": null,
+                        "GpcDocCount": 0,
+                        "SpecID": 4333,
+                        "EffectiveDate": "2014-04-11T00:00:00",
+                        "PlanVersion": "02/06/15 (1)",
+                        "Price": 310.0
+                    },
+                    {
+                        "ItemID": "4737",
+                        "ItemType": "group",
+                        "ItemName": "Wall Tile - Group 9",
+                        "ItemImage": {
+                            "ContentType": null,
+                            "EncodedData": null,
+                            "FullURL": null
+                        },
+                        "Gpc": null,
+                        "GpcDocCount": 0,
+                        "SpecID": 4333,
+                        "EffectiveDate": "2014-04-11T00:00:00",
+                        "PlanVersion": "02/06/15 (1)",
+                        "Price": 430.0
+                    },
+                    {
+                        "ItemID": "4755",
+                        "ItemType": "group",
+                        "ItemName": "Wall Tile - Group 10",
+                        "ItemImage": {
+                            "ContentType": null,
+                            "EncodedData": null,
+                            "FullURL": null
+                        },
+                        "Gpc": null,
+                        "GpcDocCount": 0,
+                        "SpecID": 4333,
+                        "EffectiveDate": "2014-04-11T00:00:00",
+                        "PlanVersion": "02/06/15 (1)",
+                        "Price": 670.0
+                    },
+                    {
+                        "ItemID": "4761",
+                        "ItemType": "group",
+                        "ItemName": "Wall Tile - Group 11",
+                        "ItemImage": {
+                            "ContentType": null,
+                            "EncodedData": null,
+                            "FullURL": null
+                        },
+                        "Gpc": null,
+                        "GpcDocCount": 0,
+                        "SpecID": 4333,
+                        "EffectiveDate": "2014-04-11T00:00:00",
+                        "PlanVersion": "02/06/15 (1)",
+                        "Price": 0.0
+                    },
+                    {
+                        "ItemID": "4762",
+                        "ItemType": "group",
+                        "ItemName": "Wall Tile - Group 12",
+                        "ItemImage": {
+                            "ContentType": null,
+                            "EncodedData": null,
+                            "FullURL": null
+                        },
+                        "Gpc": null,
+                        "GpcDocCount": 0,
+                        "SpecID": 4333,
+                        "EffectiveDate": "2014-04-11T00:00:00",
+                        "PlanVersion": "02/06/15 (1)",
+                        "Price": 0.0
+                    },
+                    {
+                        "ItemID": "4800",
+                        "ItemType": "group",
+                        "ItemName": "Wall Tile - Group 13",
+                        "ItemImage": {
+                            "ContentType": null,
+                            "EncodedData": null,
+                            "FullURL": null
+                        },
+                        "Gpc": null,
+                        "GpcDocCount": 0,
+                        "SpecID": 4333,
+                        "EffectiveDate": "2014-04-11T00:00:00",
+                        "PlanVersion": "02/06/15 (1)",
+                        "Price": 310.0
+                    },
+                    {
+                        "ItemID": "4801",
+                        "ItemType": "group",
+                        "ItemName": "Wall Tile - Group 14",
+                        "ItemImage": {
+                            "ContentType": null,
+                            "EncodedData": null,
+                            "FullURL": null
+                        },
+                        "Gpc": null,
+                        "GpcDocCount": 0,
+                        "SpecID": 4333,
+                        "EffectiveDate": "2014-04-11T00:00:00",
+                        "PlanVersion": "02/06/15 (1)",
+                        "Price": 430.0
+                    }
+                ]
+            },
+            {
+                "ApplicationID": "3",
+                "Application": "Walls",
+                "ProductID": "6",
+                "Product": "Tile",
+                "Area": "Master Bath Shower Stall",
+                "SubArea": "",
+                "Source": "Contract",
+                "Prices": [
+                    {
+                        "ItemID": "4729",
+                        "ItemType": "group",
+                        "ItemName": "Bath And Backsplash Tile - Level 1",
+                        "ItemImage": {
+                            "ContentType": null,
+                            "EncodedData": null,
+                            "FullURL": null
+                        },
+                        "Gpc": null,
+                        "GpcDocCount": 0,
+                        "SpecID": 4333,
+                        "EffectiveDate": "2014-04-11T00:00:00",
+                        "PlanVersion": "02/06/15 (1)",
+                        "Price": 0.0
+                    },
+                    {
+                        "ItemID": "4730",
+                        "ItemType": "group",
+                        "ItemName": "Bath And Backsplash Tile - Level 2",
+                        "ItemImage": {
+                            "ContentType": null,
+                            "EncodedData": null,
+                            "FullURL": null
+                        },
+                        "Gpc": null,
+                        "GpcDocCount": 0,
+                        "SpecID": 4333,
+                        "EffectiveDate": "2014-04-11T00:00:00",
+                        "PlanVersion": "02/06/15 (1)",
+                        "Price": 110.0
+                    },
+                    {
+                        "ItemID": "4731",
+                        "ItemType": "group",
+                        "ItemName": "Bath And Backsplash Tile - Level 3",
+                        "ItemImage": {
+                            "ContentType": null,
+                            "EncodedData": null,
+                            "FullURL": null
+                        },
+                        "Gpc": null,
+                        "GpcDocCount": 0,
+                        "SpecID": 4333,
+                        "EffectiveDate": "2014-04-11T00:00:00",
+                        "PlanVersion": "02/06/15 (1)",
+                        "Price": 220.0
+                    },
+                    {
+                        "ItemID": "4732",
+                        "ItemType": "group",
+                        "ItemName": "Bath And Backsplash Tile - Level 4",
+                        "ItemImage": {
+                            "ContentType": null,
+                            "EncodedData": null,
+                            "FullURL": null
+                        },
+                        "Gpc": null,
+                        "GpcDocCount": 0,
+                        "SpecID": 4333,
+                        "EffectiveDate": "2014-04-11T00:00:00",
+                        "PlanVersion": "02/06/15 (1)",
+                        "Price": 330.0
+                    },
+                    {
+                        "ItemID": "4733",
+                        "ItemType": "group",
+                        "ItemName": "Bath And Backsplash Tile - Level 5",
+                        "ItemImage": {
+                            "ContentType": null,
+                            "EncodedData": null,
+                            "FullURL": null
+                        },
+                        "Gpc": null,
+                        "GpcDocCount": 0,
+                        "SpecID": 4333,
+                        "EffectiveDate": "2014-04-11T00:00:00",
+                        "PlanVersion": "02/06/15 (1)",
+                        "Price": 540.0
+                    },
+                    {
+                        "ItemID": "4734",
+                        "ItemType": "group",
+                        "ItemName": "Wall Tile - Group 6",
+                        "ItemImage": {
+                            "ContentType": null,
+                            "EncodedData": null,
+                            "FullURL": null
+                        },
+                        "Gpc": null,
+                        "GpcDocCount": 0,
+                        "SpecID": 4333,
+                        "EffectiveDate": "2014-04-11T00:00:00",
+                        "PlanVersion": "02/06/15 (1)",
+                        "Price": 650.0
+                    },
+                    {
+                        "ItemID": "4735",
+                        "ItemType": "group",
+                        "ItemName": "Wall Tile - Group 7",
+                        "ItemImage": {
+                            "ContentType": null,
+                            "EncodedData": null,
+                            "FullURL": null
+                        },
+                        "Gpc": null,
+                        "GpcDocCount": 0,
+                        "SpecID": 4333,
+                        "EffectiveDate": "2014-04-11T00:00:00",
+                        "PlanVersion": "02/06/15 (1)",
+                        "Price": 860.0
+                    },
+                    {
+                        "ItemID": "4736",
+                        "ItemType": "group",
+                        "ItemName": "Wall Tile - Group 8",
+                        "ItemImage": {
+                            "ContentType": null,
+                            "EncodedData": null,
+                            "FullURL": null
+                        },
+                        "Gpc": null,
+                        "GpcDocCount": 0,
+                        "SpecID": 4333,
+                        "EffectiveDate": "2014-04-11T00:00:00",
+                        "PlanVersion": "02/06/15 (1)",
+                        "Price": 1070.0
+                    },
+                    {
+                        "ItemID": "4737",
+                        "ItemType": "group",
+                        "ItemName": "Wall Tile - Group 9",
+                        "ItemImage": {
+                            "ContentType": null,
+                            "EncodedData": null,
+                            "FullURL": null
+                        },
+                        "Gpc": null,
+                        "GpcDocCount": 0,
+                        "SpecID": 4333,
+                        "EffectiveDate": "2014-04-11T00:00:00",
+                        "PlanVersion": "02/06/15 (1)",
+                        "Price": 1500.0
+                    },
+                    {
+                        "ItemID": "4755",
+                        "ItemType": "group",
+                        "ItemName": "Wall Tile - Group 10",
+                        "ItemImage": {
+                            "ContentType": null,
+                            "EncodedData": null,
+                            "FullURL": null
+                        },
+                        "Gpc": null,
+                        "GpcDocCount": 0,
+                        "SpecID": 4333,
+                        "EffectiveDate": "2014-04-11T00:00:00",
+                        "PlanVersion": "02/06/15 (1)",
+                        "Price": 2360.0
+                    },
+                    {
+                        "ItemID": "4761",
+                        "ItemType": "group",
+                        "ItemName": "Wall Tile - Group 11",
+                        "ItemImage": {
+                            "ContentType": null,
+                            "EncodedData": null,
+                            "FullURL": null
+                        },
+                        "Gpc": null,
+                        "GpcDocCount": 0,
+                        "SpecID": 4333,
+                        "EffectiveDate": "2014-04-11T00:00:00",
+                        "PlanVersion": "02/06/15 (1)",
+                        "Price": 0.0
+                    },
+                    {
+                        "ItemID": "4762",
+                        "ItemType": "group",
+                        "ItemName": "Wall Tile - Group 12",
+                        "ItemImage": {
+                            "ContentType": null,
+                            "EncodedData": null,
+                            "FullURL": null
+                        },
+                        "Gpc": null,
+                        "GpcDocCount": 0,
+                        "SpecID": 4333,
+                        "EffectiveDate": "2014-04-11T00:00:00",
+                        "PlanVersion": "02/06/15 (1)",
+                        "Price": 0.0
+                    },
+                    {
+                        "ItemID": "4800",
+                        "ItemType": "group",
+                        "ItemName": "Wall Tile - Group 13",
+                        "ItemImage": {
+                            "ContentType": null,
+                            "EncodedData": null,
+                            "FullURL": null
+                        },
+                        "Gpc": null,
+                        "GpcDocCount": 0,
+                        "SpecID": 4333,
+                        "EffectiveDate": "2014-04-11T00:00:00",
+                        "PlanVersion": "02/06/15 (1)",
+                        "Price": 1070.0
+                    },
+                    {
+                        "ItemID": "4801",
+                        "ItemType": "group",
+                        "ItemName": "Wall Tile - Group 14",
+                        "ItemImage": {
+                            "ContentType": null,
+                            "EncodedData": null,
+                            "FullURL": null
+                        },
+                        "Gpc": null,
+                        "GpcDocCount": 0,
+                        "SpecID": 4333,
+                        "EffectiveDate": "2014-04-11T00:00:00",
+                        "PlanVersion": "02/06/15 (1)",
+                        "Price": 1500.0
+                    }
+                ]
+            },
+            {
+                "ApplicationID": "3",
+                "Application": "Walls",
+                "ProductID": "6",
+                "Product": "Tile",
+                "Area": "Opt Utility Back Splash",
+                "SubArea": "",
+                "Source": "Contract",
+                "Prices": [
+                    {
+                        "ItemID": "4729",
+                        "ItemType": "group",
+                        "ItemName": "Bath And Backsplash Tile - Level 1",
+                        "ItemImage": {
+                            "ContentType": null,
+                            "EncodedData": null,
+                            "FullURL": null
+                        },
+                        "Gpc": null,
+                        "GpcDocCount": 0,
+                        "SpecID": 4333,
+                        "EffectiveDate": "2014-04-11T00:00:00",
+                        "PlanVersion": "02/06/15 (1)",
+                        "Price": 50.0
+                    },
+                    {
+                        "ItemID": "4730",
+                        "ItemType": "group",
+                        "ItemName": "Bath And Backsplash Tile - Level 2",
+                        "ItemImage": {
+                            "ContentType": null,
+                            "EncodedData": null,
+                            "FullURL": null
+                        },
+                        "Gpc": null,
+                        "GpcDocCount": 0,
+                        "SpecID": 4333,
+                        "EffectiveDate": "2014-04-11T00:00:00",
+                        "PlanVersion": "02/06/15 (1)",
+                        "Price": 50.0
+                    },
+                    {
+                        "ItemID": "4731",
+                        "ItemType": "group",
+                        "ItemName": "Bath And Backsplash Tile - Level 3",
+                        "ItemImage": {
+                            "ContentType": null,
+                            "EncodedData": null,
+                            "FullURL": null
+                        },
+                        "Gpc": null,
+                        "GpcDocCount": 0,
+                        "SpecID": 4333,
+                        "EffectiveDate": "2014-04-11T00:00:00",
+                        "PlanVersion": "02/06/15 (1)",
+                        "Price": 60.0
+                    },
+                    {
+                        "ItemID": "4732",
+                        "ItemType": "group",
+                        "ItemName": "Bath And Backsplash Tile - Level 4",
+                        "ItemImage": {
+                            "ContentType": null,
+                            "EncodedData": null,
+                            "FullURL": null
+                        },
+                        "Gpc": null,
+                        "GpcDocCount": 0,
+                        "SpecID": 4333,
+                        "EffectiveDate": "2014-04-11T00:00:00",
+                        "PlanVersion": "02/06/15 (1)",
+                        "Price": 70.0
+                    },
+                    {
+                        "ItemID": "4733",
+                        "ItemType": "group",
+                        "ItemName": "Bath And Backsplash Tile - Level 5",
+                        "ItemImage": {
+                            "ContentType": null,
+                            "EncodedData": null,
+                            "FullURL": null
+                        },
+                        "Gpc": null,
+                        "GpcDocCount": 0,
+                        "SpecID": 4333,
+                        "EffectiveDate": "2014-04-11T00:00:00",
+                        "PlanVersion": "02/06/15 (1)",
+                        "Price": 80.0
+                    },
+                    {
+                        "ItemID": "4734",
+                        "ItemType": "group",
+                        "ItemName": "Wall Tile - Group 6",
+                        "ItemImage": {
+                            "ContentType": null,
+                            "EncodedData": null,
+                            "FullURL": null
+                        },
+                        "Gpc": null,
+                        "GpcDocCount": 0,
+                        "SpecID": 4333,
+                        "EffectiveDate": "2014-04-11T00:00:00",
+                        "PlanVersion": "02/06/15 (1)",
+                        "Price": 90.0
+                    },
+                    {
+                        "ItemID": "4735",
+                        "ItemType": "group",
+                        "ItemName": "Wall Tile - Group 7",
+                        "ItemImage": {
+                            "ContentType": null,
+                            "EncodedData": null,
+                            "FullURL": null
+                        },
+                        "Gpc": null,
+                        "GpcDocCount": 0,
+                        "SpecID": 4333,
+                        "EffectiveDate": "2014-04-11T00:00:00",
+                        "PlanVersion": "02/06/15 (1)",
+                        "Price": 100.0
+                    },
+                    {
+                        "ItemID": "4736",
+                        "ItemType": "group",
+                        "ItemName": "Wall Tile - Group 8",
+                        "ItemImage": {
+                            "ContentType": null,
+                            "EncodedData": null,
+                            "FullURL": null
+                        },
+                        "Gpc": null,
+                        "GpcDocCount": 0,
+                        "SpecID": 4333,
+                        "EffectiveDate": "2014-04-11T00:00:00",
+                        "PlanVersion": "02/06/15 (1)",
+                        "Price": 110.0
+                    },
+                    {
+                        "ItemID": "4737",
+                        "ItemType": "group",
+                        "ItemName": "Wall Tile - Group 9",
+                        "ItemImage": {
+                            "ContentType": null,
+                            "EncodedData": null,
+                            "FullURL": null
+                        },
+                        "Gpc": null,
+                        "GpcDocCount": 0,
+                        "SpecID": 4333,
+                        "EffectiveDate": "2014-04-11T00:00:00",
+                        "PlanVersion": "02/06/15 (1)",
+                        "Price": 140.0
+                    },
+                    {
+                        "ItemID": "4755",
+                        "ItemType": "group",
+                        "ItemName": "Wall Tile - Group 10",
+                        "ItemImage": {
+                            "ContentType": null,
+                            "EncodedData": null,
+                            "FullURL": null
+                        },
+                        "Gpc": null,
+                        "GpcDocCount": 0,
+                        "SpecID": 4333,
+                        "EffectiveDate": "2014-04-11T00:00:00",
+                        "PlanVersion": "02/06/15 (1)",
+                        "Price": 180.0
+                    },
+                    {
+                        "ItemID": "4761",
+                        "ItemType": "group",
+                        "ItemName": "Wall Tile - Group 11",
+                        "ItemImage": {
+                            "ContentType": null,
+                            "EncodedData": null,
+                            "FullURL": null
+                        },
+                        "Gpc": null,
+                        "GpcDocCount": 0,
+                        "SpecID": 4333,
+                        "EffectiveDate": "2014-04-11T00:00:00",
+                        "PlanVersion": "02/06/15 (1)",
+                        "Price": 0.0
+                    },
+                    {
+                        "ItemID": "4762",
+                        "ItemType": "group",
+                        "ItemName": "Wall Tile - Group 12",
+                        "ItemImage": {
+                            "ContentType": null,
+                            "EncodedData": null,
+                            "FullURL": null
+                        },
+                        "Gpc": null,
+                        "GpcDocCount": 0,
+                        "SpecID": 4333,
+                        "EffectiveDate": "2014-04-11T00:00:00",
+                        "PlanVersion": "02/06/15 (1)",
+                        "Price": 0.0
+                    },
+                    {
+                        "ItemID": "4800",
+                        "ItemType": "group",
+                        "ItemName": "Wall Tile - Group 13",
+                        "ItemImage": {
+                            "ContentType": null,
+                            "EncodedData": null,
+                            "FullURL": null
+                        },
+                        "Gpc": null,
+                        "GpcDocCount": 0,
+                        "SpecID": 4333,
+                        "EffectiveDate": "2014-04-11T00:00:00",
+                        "PlanVersion": "02/06/15 (1)",
+                        "Price": 110.0
+                    },
+                    {
+                        "ItemID": "4801",
+                        "ItemType": "group",
+                        "ItemName": "Wall Tile - Group 14",
+                        "ItemImage": {
+                            "ContentType": null,
+                            "EncodedData": null,
+                            "FullURL": null
+                        },
+                        "Gpc": null,
+                        "GpcDocCount": 0,
+                        "SpecID": 4333,
+                        "EffectiveDate": "2014-04-11T00:00:00",
+                        "PlanVersion": "02/06/15 (1)",
+                        "Price": 140.0
+                    }
+                ]
+            }
+        ],
+        "PriceLevelMasterList": [
+            {
+                "ItemID": "4729",
+                "ItemType": "group",
+                "ItemName": "Bath And Backsplash Tile - Level 1",
+                "ItemImage": {
+                    "ContentType": null,
+                    "EncodedData": null,
+                    "FullURL": null
+                },
+                "GPC": null,
+                "GpcDocCount": 0,
+                "SpecID": "4333",
+                "EffectiveDate": "2014-04-11",
+                "Price": 0.0
+            },
+            {
+                "ItemID": "4730",
+                "ItemType": "group",
+                "ItemName": "Bath And Backsplash Tile - Level 2",
+                "ItemImage": {
+                    "ContentType": null,
+                    "EncodedData": null,
+                    "FullURL": null
+                },
+                "GPC": null,
+                "GpcDocCount": 0,
+                "SpecID": "4333",
+                "EffectiveDate": "2014-04-11",
+                "Price": 60.0
+            },
+            {
+                "ItemID": "4731",
+                "ItemType": "group",
+                "ItemName": "Bath And Backsplash Tile - Level 3",
+                "ItemImage": {
+                    "ContentType": null,
+                    "EncodedData": null,
+                    "FullURL": null
+                },
+                "GPC": null,
+                "GpcDocCount": 0,
+                "SpecID": "4333",
+                "EffectiveDate": "2014-04-11",
+                "Price": 120.0
+            },
+            {
+                "ItemID": "4732",
+                "ItemType": "group",
+                "ItemName": "Bath And Backsplash Tile - Level 4",
+                "ItemImage": {
+                    "ContentType": null,
+                    "EncodedData": null,
+                    "FullURL": null
+                },
+                "GPC": null,
+                "GpcDocCount": 0,
+                "SpecID": "4333",
+                "EffectiveDate": "2014-04-11",
+                "Price": 180.0
+            },
+            {
+                "ItemID": "4733",
+                "ItemType": "group",
+                "ItemName": "Bath And Backsplash Tile - Level 5",
+                "ItemImage": {
+                    "ContentType": null,
+                    "EncodedData": null,
+                    "FullURL": null
+                },
+                "GPC": null,
+                "GpcDocCount": 0,
+                "SpecID": "4333",
+                "EffectiveDate": "2014-04-11",
+                "Price": 290.0
+            },
+            {
+                "ItemID": "4734",
+                "ItemType": "group",
+                "ItemName": "Wall Tile - Group 6",
+                "ItemImage": {
+                    "ContentType": null,
+                    "EncodedData": null,
+                    "FullURL": null
+                },
+                "GPC": null,
+                "GpcDocCount": 0,
+                "SpecID": "4333",
+                "EffectiveDate": "2014-04-11",
+                "Price": 350.0
+            },
+            {
+                "ItemID": "4735",
+                "ItemType": "group",
+                "ItemName": "Wall Tile - Group 7",
+                "ItemImage": {
+                    "ContentType": null,
+                    "EncodedData": null,
+                    "FullURL": null
+                },
+                "GPC": null,
+                "GpcDocCount": 0,
+                "SpecID": "4333",
+                "EffectiveDate": "2014-04-11",
+                "Price": 460.0
+            },
+            {
+                "ItemID": "4736",
+                "ItemType": "group",
+                "ItemName": "Wall Tile - Group 8",
+                "ItemImage": {
+                    "ContentType": null,
+                    "EncodedData": null,
+                    "FullURL": null
+                },
+                "GPC": null,
+                "GpcDocCount": 0,
+                "SpecID": "4333",
+                "EffectiveDate": "2014-04-11",
+                "Price": 580.0
+            },
+            {
+                "ItemID": "4737",
+                "ItemType": "group",
+                "ItemName": "Wall Tile - Group 9",
+                "ItemImage": {
+                    "ContentType": null,
+                    "EncodedData": null,
+                    "FullURL": null
+                },
+                "GPC": null,
+                "GpcDocCount": 0,
+                "SpecID": "4333",
+                "EffectiveDate": "2014-04-11",
+                "Price": 810.0
+            },
+            {
+                "ItemID": "4755",
+                "ItemType": "group",
+                "ItemName": "Wall Tile - Group 10",
+                "ItemImage": {
+                    "ContentType": null,
+                    "EncodedData": null,
+                    "FullURL": null
+                },
+                "GPC": null,
+                "GpcDocCount": 0,
+                "SpecID": "4333",
+                "EffectiveDate": "2014-04-11",
+                "Price": 1270.0
+            },
+            {
+                "ItemID": "4761",
+                "ItemType": "group",
+                "ItemName": "Wall Tile - Group 11",
+                "ItemImage": {
+                    "ContentType": null,
+                    "EncodedData": null,
+                    "FullURL": null
+                },
+                "GPC": null,
+                "GpcDocCount": 0,
+                "SpecID": "4333",
+                "EffectiveDate": "2014-04-11",
+                "Price": 0.0
+            },
+            {
+                "ItemID": "4762",
+                "ItemType": "group",
+                "ItemName": "Wall Tile - Group 12",
+                "ItemImage": {
+                    "ContentType": null,
+                    "EncodedData": null,
+                    "FullURL": null
+                },
+                "GPC": null,
+                "GpcDocCount": 0,
+                "SpecID": "4333",
+                "EffectiveDate": "2014-04-11",
+                "Price": 0.0
+            },
+            {
+                "ItemID": "4800",
+                "ItemType": "group",
+                "ItemName": "Wall Tile - Group 13",
+                "ItemImage": {
+                    "ContentType": null,
+                    "EncodedData": null,
+                    "FullURL": null
+                },
+                "GPC": null,
+                "GpcDocCount": 0,
+                "SpecID": "4333",
+                "EffectiveDate": "2014-04-11",
+                "Price": 120.0
+            },
+            {
+                "ItemID": "4801",
+                "ItemType": "group",
+                "ItemName": "Wall Tile - Group 14",
+                "ItemImage": {
+                    "ContentType": null,
+                    "EncodedData": null,
+                    "FullURL": null
+                },
+                "GPC": null,
+                "GpcDocCount": 0,
+                "SpecID": "4333",
+                "EffectiveDate": "2014-04-11",
+                "Price": 240.0
+            }
+        ]
+    }
+]

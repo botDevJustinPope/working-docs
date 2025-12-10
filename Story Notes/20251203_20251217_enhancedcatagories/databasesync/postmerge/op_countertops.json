@@ -1,0 +1,2253 @@
+[
+    {
+        "ApplicationID": "2",
+        "Application": "Countertops",
+        "ProductID": "O",
+        "Product": "Fabricated Ctops",
+        "Source": "Contract",
+        "Areas": [
+            {
+                "ApplicationID": "2",
+                "Application": "Countertops",
+                "ProductID": "O",
+                "Product": "Fabricated Ctops",
+                "Area": "Bath 2 Vanity",
+                "SubArea": "",
+                "Source": "Contract",
+                "Prices": [
+                    {
+                        "ItemID": "4656",
+                        "ItemType": "group",
+                        "ItemName": "Granite - Level 1",
+                        "ItemImage": {
+                            "ContentType": null,
+                            "EncodedData": null,
+                            "FullURL": null
+                        },
+                        "Gpc": null,
+                        "GpcDocCount": 0,
+                        "SpecID": 4333,
+                        "EffectiveDate": "2014-04-11T00:00:00",
+                        "PlanVersion": "02/06/15 (1)",
+                        "Price": 0.0
+                    },
+                    {
+                        "ItemID": "4657",
+                        "ItemType": "group",
+                        "ItemName": "Granite - Level 2",
+                        "ItemImage": {
+                            "ContentType": null,
+                            "EncodedData": null,
+                            "FullURL": null
+                        },
+                        "Gpc": null,
+                        "GpcDocCount": 0,
+                        "SpecID": 4333,
+                        "EffectiveDate": "2014-04-11T00:00:00",
+                        "PlanVersion": "02/06/15 (1)",
+                        "Price": 80.0
+                    },
+                    {
+                        "ItemID": "4658",
+                        "ItemType": "group",
+                        "ItemName": "Granite - Level 3",
+                        "ItemImage": {
+                            "ContentType": null,
+                            "EncodedData": null,
+                            "FullURL": null
+                        },
+                        "Gpc": null,
+                        "GpcDocCount": 0,
+                        "SpecID": 4333,
+                        "EffectiveDate": "2014-04-11T00:00:00",
+                        "PlanVersion": "02/06/15 (1)",
+                        "Price": 100.0
+                    },
+                    {
+                        "ItemID": "4659",
+                        "ItemType": "group",
+                        "ItemName": "Granite - Level 4",
+                        "ItemImage": {
+                            "ContentType": null,
+                            "EncodedData": null,
+                            "FullURL": null
+                        },
+                        "Gpc": null,
+                        "GpcDocCount": 0,
+                        "SpecID": 4333,
+                        "EffectiveDate": "2014-04-11T00:00:00",
+                        "PlanVersion": "02/06/15 (1)",
+                        "Price": 150.0
+                    },
+                    {
+                        "ItemID": "4660",
+                        "ItemType": "group",
+                        "ItemName": "Granite - Level 5",
+                        "ItemImage": {
+                            "ContentType": null,
+                            "EncodedData": null,
+                            "FullURL": null
+                        },
+                        "Gpc": null,
+                        "GpcDocCount": 0,
+                        "SpecID": 4333,
+                        "EffectiveDate": "2014-04-11T00:00:00",
+                        "PlanVersion": "02/06/15 (1)",
+                        "Price": 180.0
+                    },
+                    {
+                        "ItemID": "4661",
+                        "ItemType": "group",
+                        "ItemName": "Granite - Level 6",
+                        "ItemImage": {
+                            "ContentType": null,
+                            "EncodedData": null,
+                            "FullURL": null
+                        },
+                        "Gpc": null,
+                        "GpcDocCount": 0,
+                        "SpecID": 4333,
+                        "EffectiveDate": "2014-04-11T00:00:00",
+                        "PlanVersion": "02/06/15 (1)",
+                        "Price": 200.0
+                    },
+                    {
+                        "ItemID": "4662",
+                        "ItemType": "group",
+                        "ItemName": "Artisan Granite - Level 1",
+                        "ItemImage": {
+                            "ContentType": null,
+                            "EncodedData": null,
+                            "FullURL": null
+                        },
+                        "Gpc": null,
+                        "GpcDocCount": 0,
+                        "SpecID": 4333,
+                        "EffectiveDate": "2014-04-11T00:00:00",
+                        "PlanVersion": "02/06/15 (1)",
+                        "Price": 0.0
+                    },
+                    {
+                        "ItemID": "4663",
+                        "ItemType": "group",
+                        "ItemName": "Artisan Granite - Level 2",
+                        "ItemImage": {
+                            "ContentType": null,
+                            "EncodedData": null,
+                            "FullURL": null
+                        },
+                        "Gpc": null,
+                        "GpcDocCount": 0,
+                        "SpecID": 4333,
+                        "EffectiveDate": "2014-04-11T00:00:00",
+                        "PlanVersion": "02/06/15 (1)",
+                        "Price": 30.0
+                    },
+                    {
+                        "ItemID": "4664",
+                        "ItemType": "group",
+                        "ItemName": "Artisan Granite - Level 3",
+                        "ItemImage": {
+                            "ContentType": null,
+                            "EncodedData": null,
+                            "FullURL": null
+                        },
+                        "Gpc": null,
+                        "GpcDocCount": 0,
+                        "SpecID": 4333,
+                        "EffectiveDate": "2014-04-11T00:00:00",
+                        "PlanVersion": "02/06/15 (1)",
+                        "Price": 60.0
+                    },
+                    {
+                        "ItemID": "4665",
+                        "ItemType": "group",
+                        "ItemName": "Artisan Granite - Level 4",
+                        "ItemImage": {
+                            "ContentType": null,
+                            "EncodedData": null,
+                            "FullURL": null
+                        },
+                        "Gpc": null,
+                        "GpcDocCount": 0,
+                        "SpecID": 4333,
+                        "EffectiveDate": "2014-04-11T00:00:00",
+                        "PlanVersion": "02/06/15 (1)",
+                        "Price": 80.0
+                    },
+                    {
+                        "ItemID": "4741",
+                        "ItemType": "group",
+                        "ItemName": "Artisan Granite - Level 5",
+                        "ItemImage": {
+                            "ContentType": null,
+                            "EncodedData": null,
+                            "FullURL": null
+                        },
+                        "Gpc": null,
+                        "GpcDocCount": 0,
+                        "SpecID": 4333,
+                        "EffectiveDate": "2014-04-11T00:00:00",
+                        "PlanVersion": "02/06/15 (1)",
+                        "Price": 110.0
+                    },
+                    {
+                        "ItemID": "4641",
+                        "ItemType": "group",
+                        "ItemName": "Marlana Level 1",
+                        "ItemImage": {
+                            "ContentType": null,
+                            "EncodedData": null,
+                            "FullURL": null
+                        },
+                        "Gpc": null,
+                        "GpcDocCount": 0,
+                        "SpecID": 4333,
+                        "EffectiveDate": "2014-04-11T00:00:00",
+                        "PlanVersion": "02/06/15 (1)",
+                        "Price": 0.0
+                    },
+                    {
+                        "ItemID": "4642",
+                        "ItemType": "group",
+                        "ItemName": "Marlana Level 2",
+                        "ItemImage": {
+                            "ContentType": null,
+                            "EncodedData": null,
+                            "FullURL": null
+                        },
+                        "Gpc": null,
+                        "GpcDocCount": 0,
+                        "SpecID": 4333,
+                        "EffectiveDate": "2014-04-11T00:00:00",
+                        "PlanVersion": "02/06/15 (1)",
+                        "Price": 60.0
+                    },
+                    {
+                        "ItemID": "4823",
+                        "ItemType": "group",
+                        "ItemName": "Omega Stone - Level 1",
+                        "ItemImage": {
+                            "ContentType": null,
+                            "EncodedData": null,
+                            "FullURL": null
+                        },
+                        "Gpc": null,
+                        "GpcDocCount": 0,
+                        "SpecID": 4333,
+                        "EffectiveDate": "2014-04-11T00:00:00",
+                        "PlanVersion": "02/06/15 (1)",
+                        "Price": 0.0
+                    },
+                    {
+                        "ItemID": "4824",
+                        "ItemType": "group",
+                        "ItemName": "Omega Stone - Level 2",
+                        "ItemImage": {
+                            "ContentType": null,
+                            "EncodedData": null,
+                            "FullURL": null
+                        },
+                        "Gpc": null,
+                        "GpcDocCount": 0,
+                        "SpecID": 4333,
+                        "EffectiveDate": "2014-04-11T00:00:00",
+                        "PlanVersion": "02/06/15 (1)",
+                        "Price": 10.0
+                    },
+                    {
+                        "ItemID": "4825",
+                        "ItemType": "group",
+                        "ItemName": "Omega Stone - Level 3",
+                        "ItemImage": {
+                            "ContentType": null,
+                            "EncodedData": null,
+                            "FullURL": null
+                        },
+                        "Gpc": null,
+                        "GpcDocCount": 0,
+                        "SpecID": 4333,
+                        "EffectiveDate": "2014-04-11T00:00:00",
+                        "PlanVersion": "02/06/15 (1)",
+                        "Price": 50.0
+                    },
+                    {
+                        "ItemID": "4826",
+                        "ItemType": "group",
+                        "ItemName": "Omega Stone - Level 4",
+                        "ItemImage": {
+                            "ContentType": null,
+                            "EncodedData": null,
+                            "FullURL": null
+                        },
+                        "Gpc": null,
+                        "GpcDocCount": 0,
+                        "SpecID": 4333,
+                        "EffectiveDate": "2014-04-11T00:00:00",
+                        "PlanVersion": "02/06/15 (1)",
+                        "Price": 80.0
+                    },
+                    {
+                        "ItemID": "4636",
+                        "ItemType": "group",
+                        "ItemName": "Specialty Stone Level 1",
+                        "ItemImage": {
+                            "ContentType": null,
+                            "EncodedData": null,
+                            "FullURL": null
+                        },
+                        "Gpc": null,
+                        "GpcDocCount": 0,
+                        "SpecID": 4333,
+                        "EffectiveDate": "2014-04-11T00:00:00",
+                        "PlanVersion": "02/06/15 (1)",
+                        "Price": 0.0
+                    },
+                    {
+                        "ItemID": "4637",
+                        "ItemType": "group",
+                        "ItemName": "Specialty Stone Level 2",
+                        "ItemImage": {
+                            "ContentType": null,
+                            "EncodedData": null,
+                            "FullURL": null
+                        },
+                        "Gpc": null,
+                        "GpcDocCount": 0,
+                        "SpecID": 4333,
+                        "EffectiveDate": "2014-04-11T00:00:00",
+                        "PlanVersion": "02/06/15 (1)",
+                        "Price": 130.0
+                    },
+                    {
+                        "ItemID": "4742",
+                        "ItemType": "group",
+                        "ItemName": "Tresca - Level 1",
+                        "ItemImage": {
+                            "ContentType": null,
+                            "EncodedData": null,
+                            "FullURL": null
+                        },
+                        "Gpc": null,
+                        "GpcDocCount": 0,
+                        "SpecID": 4333,
+                        "EffectiveDate": "2014-04-11T00:00:00",
+                        "PlanVersion": "02/06/15 (1)",
+                        "Price": 0.0
+                    },
+                    {
+                        "ItemID": "4743",
+                        "ItemType": "group",
+                        "ItemName": "Tresca - Level 2",
+                        "ItemImage": {
+                            "ContentType": null,
+                            "EncodedData": null,
+                            "FullURL": null
+                        },
+                        "Gpc": null,
+                        "GpcDocCount": 0,
+                        "SpecID": 4333,
+                        "EffectiveDate": "2014-04-11T00:00:00",
+                        "PlanVersion": "02/06/15 (1)",
+                        "Price": 20.0
+                    },
+                    {
+                        "ItemID": "4744",
+                        "ItemType": "group",
+                        "ItemName": "Tresca - Level 3",
+                        "ItemImage": {
+                            "ContentType": null,
+                            "EncodedData": null,
+                            "FullURL": null
+                        },
+                        "Gpc": null,
+                        "GpcDocCount": 0,
+                        "SpecID": 4333,
+                        "EffectiveDate": "2014-04-11T00:00:00",
+                        "PlanVersion": "02/06/15 (1)",
+                        "Price": 50.0
+                    },
+                    {
+                        "ItemID": "4745",
+                        "ItemType": "group",
+                        "ItemName": "Tresca - Level 4",
+                        "ItemImage": {
+                            "ContentType": null,
+                            "EncodedData": null,
+                            "FullURL": null
+                        },
+                        "Gpc": null,
+                        "GpcDocCount": 0,
+                        "SpecID": 4333,
+                        "EffectiveDate": "2014-04-11T00:00:00",
+                        "PlanVersion": "02/06/15 (1)",
+                        "Price": 80.0
+                    }
+                ]
+            },
+            {
+                "ApplicationID": "2",
+                "Application": "Countertops",
+                "ProductID": "O",
+                "Product": "Fabricated Ctops",
+                "Area": "Kitchen w/Range",
+                "SubArea": "",
+                "Source": "Contract",
+                "Prices": [
+                    {
+                        "ItemID": "4656",
+                        "ItemType": "group",
+                        "ItemName": "Granite - Level 1",
+                        "ItemImage": {
+                            "ContentType": null,
+                            "EncodedData": null,
+                            "FullURL": null
+                        },
+                        "Gpc": null,
+                        "GpcDocCount": 0,
+                        "SpecID": 4333,
+                        "EffectiveDate": "2014-04-11T00:00:00",
+                        "PlanVersion": "02/06/15 (1)",
+                        "Price": 0.0
+                    },
+                    {
+                        "ItemID": "4657",
+                        "ItemType": "group",
+                        "ItemName": "Granite - Level 2",
+                        "ItemImage": {
+                            "ContentType": null,
+                            "EncodedData": null,
+                            "FullURL": null
+                        },
+                        "Gpc": null,
+                        "GpcDocCount": 0,
+                        "SpecID": 4333,
+                        "EffectiveDate": "2014-04-11T00:00:00",
+                        "PlanVersion": "02/06/15 (1)",
+                        "Price": 310.0
+                    },
+                    {
+                        "ItemID": "4658",
+                        "ItemType": "group",
+                        "ItemName": "Granite - Level 3",
+                        "ItemImage": {
+                            "ContentType": null,
+                            "EncodedData": null,
+                            "FullURL": null
+                        },
+                        "Gpc": null,
+                        "GpcDocCount": 0,
+                        "SpecID": 4333,
+                        "EffectiveDate": "2014-04-11T00:00:00",
+                        "PlanVersion": "02/06/15 (1)",
+                        "Price": 390.0
+                    },
+                    {
+                        "ItemID": "4659",
+                        "ItemType": "group",
+                        "ItemName": "Granite - Level 4",
+                        "ItemImage": {
+                            "ContentType": null,
+                            "EncodedData": null,
+                            "FullURL": null
+                        },
+                        "Gpc": null,
+                        "GpcDocCount": 0,
+                        "SpecID": 4333,
+                        "EffectiveDate": "2014-04-11T00:00:00",
+                        "PlanVersion": "02/06/15 (1)",
+                        "Price": 580.0
+                    },
+                    {
+                        "ItemID": "4660",
+                        "ItemType": "group",
+                        "ItemName": "Granite - Level 5",
+                        "ItemImage": {
+                            "ContentType": null,
+                            "EncodedData": null,
+                            "FullURL": null
+                        },
+                        "Gpc": null,
+                        "GpcDocCount": 0,
+                        "SpecID": 4333,
+                        "EffectiveDate": "2014-04-11T00:00:00",
+                        "PlanVersion": "02/06/15 (1)",
+                        "Price": 670.0
+                    },
+                    {
+                        "ItemID": "4661",
+                        "ItemType": "group",
+                        "ItemName": "Granite - Level 6",
+                        "ItemImage": {
+                            "ContentType": null,
+                            "EncodedData": null,
+                            "FullURL": null
+                        },
+                        "Gpc": null,
+                        "GpcDocCount": 0,
+                        "SpecID": 4333,
+                        "EffectiveDate": "2014-04-11T00:00:00",
+                        "PlanVersion": "02/06/15 (1)",
+                        "Price": 760.0
+                    },
+                    {
+                        "ItemID": "4662",
+                        "ItemType": "group",
+                        "ItemName": "Artisan Granite - Level 1",
+                        "ItemImage": {
+                            "ContentType": null,
+                            "EncodedData": null,
+                            "FullURL": null
+                        },
+                        "Gpc": null,
+                        "GpcDocCount": 0,
+                        "SpecID": 4333,
+                        "EffectiveDate": "2014-04-11T00:00:00",
+                        "PlanVersion": "02/06/15 (1)",
+                        "Price": 0.0
+                    },
+                    {
+                        "ItemID": "4663",
+                        "ItemType": "group",
+                        "ItemName": "Artisan Granite - Level 2",
+                        "ItemImage": {
+                            "ContentType": null,
+                            "EncodedData": null,
+                            "FullURL": null
+                        },
+                        "Gpc": null,
+                        "GpcDocCount": 0,
+                        "SpecID": 4333,
+                        "EffectiveDate": "2014-04-11T00:00:00",
+                        "PlanVersion": "02/06/15 (1)",
+                        "Price": 90.0
+                    },
+                    {
+                        "ItemID": "4664",
+                        "ItemType": "group",
+                        "ItemName": "Artisan Granite - Level 3",
+                        "ItemImage": {
+                            "ContentType": null,
+                            "EncodedData": null,
+                            "FullURL": null
+                        },
+                        "Gpc": null,
+                        "GpcDocCount": 0,
+                        "SpecID": 4333,
+                        "EffectiveDate": "2014-04-11T00:00:00",
+                        "PlanVersion": "02/06/15 (1)",
+                        "Price": 220.0
+                    },
+                    {
+                        "ItemID": "4665",
+                        "ItemType": "group",
+                        "ItemName": "Artisan Granite - Level 4",
+                        "ItemImage": {
+                            "ContentType": null,
+                            "EncodedData": null,
+                            "FullURL": null
+                        },
+                        "Gpc": null,
+                        "GpcDocCount": 0,
+                        "SpecID": 4333,
+                        "EffectiveDate": "2014-04-11T00:00:00",
+                        "PlanVersion": "02/06/15 (1)",
+                        "Price": 290.0
+                    },
+                    {
+                        "ItemID": "4741",
+                        "ItemType": "group",
+                        "ItemName": "Artisan Granite - Level 5",
+                        "ItemImage": {
+                            "ContentType": null,
+                            "EncodedData": null,
+                            "FullURL": null
+                        },
+                        "Gpc": null,
+                        "GpcDocCount": 0,
+                        "SpecID": 4333,
+                        "EffectiveDate": "2014-04-11T00:00:00",
+                        "PlanVersion": "02/06/15 (1)",
+                        "Price": 400.0
+                    },
+                    {
+                        "ItemID": "4641",
+                        "ItemType": "group",
+                        "ItemName": "Marlana Level 1",
+                        "ItemImage": {
+                            "ContentType": null,
+                            "EncodedData": null,
+                            "FullURL": null
+                        },
+                        "Gpc": null,
+                        "GpcDocCount": 0,
+                        "SpecID": 4333,
+                        "EffectiveDate": "2014-04-11T00:00:00",
+                        "PlanVersion": "02/06/15 (1)",
+                        "Price": 0.0
+                    },
+                    {
+                        "ItemID": "4642",
+                        "ItemType": "group",
+                        "ItemName": "Marlana Level 2",
+                        "ItemImage": {
+                            "ContentType": null,
+                            "EncodedData": null,
+                            "FullURL": null
+                        },
+                        "Gpc": null,
+                        "GpcDocCount": 0,
+                        "SpecID": 4333,
+                        "EffectiveDate": "2014-04-11T00:00:00",
+                        "PlanVersion": "02/06/15 (1)",
+                        "Price": 210.0
+                    },
+                    {
+                        "ItemID": "4823",
+                        "ItemType": "group",
+                        "ItemName": "Omega Stone - Level 1",
+                        "ItemImage": {
+                            "ContentType": null,
+                            "EncodedData": null,
+                            "FullURL": null
+                        },
+                        "Gpc": null,
+                        "GpcDocCount": 0,
+                        "SpecID": 4333,
+                        "EffectiveDate": "2014-04-11T00:00:00",
+                        "PlanVersion": "02/06/15 (1)",
+                        "Price": 0.0
+                    },
+                    {
+                        "ItemID": "4824",
+                        "ItemType": "group",
+                        "ItemName": "Omega Stone - Level 2",
+                        "ItemImage": {
+                            "ContentType": null,
+                            "EncodedData": null,
+                            "FullURL": null
+                        },
+                        "Gpc": null,
+                        "GpcDocCount": 0,
+                        "SpecID": 4333,
+                        "EffectiveDate": "2014-04-11T00:00:00",
+                        "PlanVersion": "02/06/15 (1)",
+                        "Price": 30.0
+                    },
+                    {
+                        "ItemID": "4825",
+                        "ItemType": "group",
+                        "ItemName": "Omega Stone - Level 3",
+                        "ItemImage": {
+                            "ContentType": null,
+                            "EncodedData": null,
+                            "FullURL": null
+                        },
+                        "Gpc": null,
+                        "GpcDocCount": 0,
+                        "SpecID": 4333,
+                        "EffectiveDate": "2014-04-11T00:00:00",
+                        "PlanVersion": "02/06/15 (1)",
+                        "Price": 170.0
+                    },
+                    {
+                        "ItemID": "4826",
+                        "ItemType": "group",
+                        "ItemName": "Omega Stone - Level 4",
+                        "ItemImage": {
+                            "ContentType": null,
+                            "EncodedData": null,
+                            "FullURL": null
+                        },
+                        "Gpc": null,
+                        "GpcDocCount": 0,
+                        "SpecID": 4333,
+                        "EffectiveDate": "2014-04-11T00:00:00",
+                        "PlanVersion": "02/06/15 (1)",
+                        "Price": 300.0
+                    },
+                    {
+                        "ItemID": "4636",
+                        "ItemType": "group",
+                        "ItemName": "Specialty Stone Level 1",
+                        "ItemImage": {
+                            "ContentType": null,
+                            "EncodedData": null,
+                            "FullURL": null
+                        },
+                        "Gpc": null,
+                        "GpcDocCount": 0,
+                        "SpecID": 4333,
+                        "EffectiveDate": "2014-04-11T00:00:00",
+                        "PlanVersion": "02/06/15 (1)",
+                        "Price": 0.0
+                    },
+                    {
+                        "ItemID": "4637",
+                        "ItemType": "group",
+                        "ItemName": "Specialty Stone Level 2",
+                        "ItemImage": {
+                            "ContentType": null,
+                            "EncodedData": null,
+                            "FullURL": null
+                        },
+                        "Gpc": null,
+                        "GpcDocCount": 0,
+                        "SpecID": 4333,
+                        "EffectiveDate": "2014-04-11T00:00:00",
+                        "PlanVersion": "02/06/15 (1)",
+                        "Price": 500.0
+                    },
+                    {
+                        "ItemID": "4742",
+                        "ItemType": "group",
+                        "ItemName": "Tresca - Level 1",
+                        "ItemImage": {
+                            "ContentType": null,
+                            "EncodedData": null,
+                            "FullURL": null
+                        },
+                        "Gpc": null,
+                        "GpcDocCount": 0,
+                        "SpecID": 4333,
+                        "EffectiveDate": "2014-04-11T00:00:00",
+                        "PlanVersion": "02/06/15 (1)",
+                        "Price": 0.0
+                    },
+                    {
+                        "ItemID": "4743",
+                        "ItemType": "group",
+                        "ItemName": "Tresca - Level 2",
+                        "ItemImage": {
+                            "ContentType": null,
+                            "EncodedData": null,
+                            "FullURL": null
+                        },
+                        "Gpc": null,
+                        "GpcDocCount": 0,
+                        "SpecID": 4333,
+                        "EffectiveDate": "2014-04-11T00:00:00",
+                        "PlanVersion": "02/06/15 (1)",
+                        "Price": 50.0
+                    },
+                    {
+                        "ItemID": "4744",
+                        "ItemType": "group",
+                        "ItemName": "Tresca - Level 3",
+                        "ItemImage": {
+                            "ContentType": null,
+                            "EncodedData": null,
+                            "FullURL": null
+                        },
+                        "Gpc": null,
+                        "GpcDocCount": 0,
+                        "SpecID": 4333,
+                        "EffectiveDate": "2014-04-11T00:00:00",
+                        "PlanVersion": "02/06/15 (1)",
+                        "Price": 180.0
+                    },
+                    {
+                        "ItemID": "4745",
+                        "ItemType": "group",
+                        "ItemName": "Tresca - Level 4",
+                        "ItemImage": {
+                            "ContentType": null,
+                            "EncodedData": null,
+                            "FullURL": null
+                        },
+                        "Gpc": null,
+                        "GpcDocCount": 0,
+                        "SpecID": 4333,
+                        "EffectiveDate": "2014-04-11T00:00:00",
+                        "PlanVersion": "02/06/15 (1)",
+                        "Price": 310.0
+                    }
+                ]
+            },
+            {
+                "ApplicationID": "2",
+                "Application": "Countertops",
+                "ProductID": "O",
+                "Product": "Fabricated Ctops",
+                "Area": "Master Bath Shower Seat",
+                "SubArea": "",
+                "Source": "Contract",
+                "Prices": [
+                    {
+                        "ItemID": "4656",
+                        "ItemType": "group",
+                        "ItemName": "Granite - Level 1",
+                        "ItemImage": {
+                            "ContentType": null,
+                            "EncodedData": null,
+                            "FullURL": null
+                        },
+                        "Gpc": null,
+                        "GpcDocCount": 0,
+                        "SpecID": 4333,
+                        "EffectiveDate": "2014-04-11T00:00:00",
+                        "PlanVersion": "02/06/15 (1)",
+                        "Price": 0.0
+                    },
+                    {
+                        "ItemID": "4657",
+                        "ItemType": "group",
+                        "ItemName": "Granite - Level 2",
+                        "ItemImage": {
+                            "ContentType": null,
+                            "EncodedData": null,
+                            "FullURL": null
+                        },
+                        "Gpc": null,
+                        "GpcDocCount": 0,
+                        "SpecID": 4333,
+                        "EffectiveDate": "2014-04-11T00:00:00",
+                        "PlanVersion": "02/06/15 (1)",
+                        "Price": 20.0
+                    },
+                    {
+                        "ItemID": "4658",
+                        "ItemType": "group",
+                        "ItemName": "Granite - Level 3",
+                        "ItemImage": {
+                            "ContentType": null,
+                            "EncodedData": null,
+                            "FullURL": null
+                        },
+                        "Gpc": null,
+                        "GpcDocCount": 0,
+                        "SpecID": 4333,
+                        "EffectiveDate": "2014-04-11T00:00:00",
+                        "PlanVersion": "02/06/15 (1)",
+                        "Price": 20.0
+                    },
+                    {
+                        "ItemID": "4659",
+                        "ItemType": "group",
+                        "ItemName": "Granite - Level 4",
+                        "ItemImage": {
+                            "ContentType": null,
+                            "EncodedData": null,
+                            "FullURL": null
+                        },
+                        "Gpc": null,
+                        "GpcDocCount": 0,
+                        "SpecID": 4333,
+                        "EffectiveDate": "2014-04-11T00:00:00",
+                        "PlanVersion": "02/06/15 (1)",
+                        "Price": 30.0
+                    },
+                    {
+                        "ItemID": "4660",
+                        "ItemType": "group",
+                        "ItemName": "Granite - Level 5",
+                        "ItemImage": {
+                            "ContentType": null,
+                            "EncodedData": null,
+                            "FullURL": null
+                        },
+                        "Gpc": null,
+                        "GpcDocCount": 0,
+                        "SpecID": 4333,
+                        "EffectiveDate": "2014-04-11T00:00:00",
+                        "PlanVersion": "02/06/15 (1)",
+                        "Price": 30.0
+                    },
+                    {
+                        "ItemID": "4661",
+                        "ItemType": "group",
+                        "ItemName": "Granite - Level 6",
+                        "ItemImage": {
+                            "ContentType": null,
+                            "EncodedData": null,
+                            "FullURL": null
+                        },
+                        "Gpc": null,
+                        "GpcDocCount": 0,
+                        "SpecID": 4333,
+                        "EffectiveDate": "2014-04-11T00:00:00",
+                        "PlanVersion": "02/06/15 (1)",
+                        "Price": 30.0
+                    },
+                    {
+                        "ItemID": "4662",
+                        "ItemType": "group",
+                        "ItemName": "Artisan Granite - Level 1",
+                        "ItemImage": {
+                            "ContentType": null,
+                            "EncodedData": null,
+                            "FullURL": null
+                        },
+                        "Gpc": null,
+                        "GpcDocCount": 0,
+                        "SpecID": 4333,
+                        "EffectiveDate": "2014-04-11T00:00:00",
+                        "PlanVersion": "02/06/15 (1)",
+                        "Price": 0.0
+                    },
+                    {
+                        "ItemID": "4663",
+                        "ItemType": "group",
+                        "ItemName": "Artisan Granite - Level 2",
+                        "ItemImage": {
+                            "ContentType": null,
+                            "EncodedData": null,
+                            "FullURL": null
+                        },
+                        "Gpc": null,
+                        "GpcDocCount": 0,
+                        "SpecID": 4333,
+                        "EffectiveDate": "2014-04-11T00:00:00",
+                        "PlanVersion": "02/06/15 (1)",
+                        "Price": 10.0
+                    },
+                    {
+                        "ItemID": "4664",
+                        "ItemType": "group",
+                        "ItemName": "Artisan Granite - Level 3",
+                        "ItemImage": {
+                            "ContentType": null,
+                            "EncodedData": null,
+                            "FullURL": null
+                        },
+                        "Gpc": null,
+                        "GpcDocCount": 0,
+                        "SpecID": 4333,
+                        "EffectiveDate": "2014-04-11T00:00:00",
+                        "PlanVersion": "02/06/15 (1)",
+                        "Price": 10.0
+                    },
+                    {
+                        "ItemID": "4665",
+                        "ItemType": "group",
+                        "ItemName": "Artisan Granite - Level 4",
+                        "ItemImage": {
+                            "ContentType": null,
+                            "EncodedData": null,
+                            "FullURL": null
+                        },
+                        "Gpc": null,
+                        "GpcDocCount": 0,
+                        "SpecID": 4333,
+                        "EffectiveDate": "2014-04-11T00:00:00",
+                        "PlanVersion": "02/06/15 (1)",
+                        "Price": 20.0
+                    },
+                    {
+                        "ItemID": "4741",
+                        "ItemType": "group",
+                        "ItemName": "Artisan Granite - Level 5",
+                        "ItemImage": {
+                            "ContentType": null,
+                            "EncodedData": null,
+                            "FullURL": null
+                        },
+                        "Gpc": null,
+                        "GpcDocCount": 0,
+                        "SpecID": 4333,
+                        "EffectiveDate": "2014-04-11T00:00:00",
+                        "PlanVersion": "02/06/15 (1)",
+                        "Price": 20.0
+                    },
+                    {
+                        "ItemID": "4641",
+                        "ItemType": "group",
+                        "ItemName": "Marlana Level 1",
+                        "ItemImage": {
+                            "ContentType": null,
+                            "EncodedData": null,
+                            "FullURL": null
+                        },
+                        "Gpc": null,
+                        "GpcDocCount": 0,
+                        "SpecID": 4333,
+                        "EffectiveDate": "2014-04-11T00:00:00",
+                        "PlanVersion": "02/06/15 (1)",
+                        "Price": 0.0
+                    },
+                    {
+                        "ItemID": "4642",
+                        "ItemType": "group",
+                        "ItemName": "Marlana Level 2",
+                        "ItemImage": {
+                            "ContentType": null,
+                            "EncodedData": null,
+                            "FullURL": null
+                        },
+                        "Gpc": null,
+                        "GpcDocCount": 0,
+                        "SpecID": 4333,
+                        "EffectiveDate": "2014-04-11T00:00:00",
+                        "PlanVersion": "02/06/15 (1)",
+                        "Price": 10.0
+                    },
+                    {
+                        "ItemID": "4823",
+                        "ItemType": "group",
+                        "ItemName": "Omega Stone - Level 1",
+                        "ItemImage": {
+                            "ContentType": null,
+                            "EncodedData": null,
+                            "FullURL": null
+                        },
+                        "Gpc": null,
+                        "GpcDocCount": 0,
+                        "SpecID": 4333,
+                        "EffectiveDate": "2014-04-11T00:00:00",
+                        "PlanVersion": "02/06/15 (1)",
+                        "Price": 0.0
+                    },
+                    {
+                        "ItemID": "4824",
+                        "ItemType": "group",
+                        "ItemName": "Omega Stone - Level 2",
+                        "ItemImage": {
+                            "ContentType": null,
+                            "EncodedData": null,
+                            "FullURL": null
+                        },
+                        "Gpc": null,
+                        "GpcDocCount": 0,
+                        "SpecID": 4333,
+                        "EffectiveDate": "2014-04-11T00:00:00",
+                        "PlanVersion": "02/06/15 (1)",
+                        "Price": 10.0
+                    },
+                    {
+                        "ItemID": "4825",
+                        "ItemType": "group",
+                        "ItemName": "Omega Stone - Level 3",
+                        "ItemImage": {
+                            "ContentType": null,
+                            "EncodedData": null,
+                            "FullURL": null
+                        },
+                        "Gpc": null,
+                        "GpcDocCount": 0,
+                        "SpecID": 4333,
+                        "EffectiveDate": "2014-04-11T00:00:00",
+                        "PlanVersion": "02/06/15 (1)",
+                        "Price": 10.0
+                    },
+                    {
+                        "ItemID": "4826",
+                        "ItemType": "group",
+                        "ItemName": "Omega Stone - Level 4",
+                        "ItemImage": {
+                            "ContentType": null,
+                            "EncodedData": null,
+                            "FullURL": null
+                        },
+                        "Gpc": null,
+                        "GpcDocCount": 0,
+                        "SpecID": 4333,
+                        "EffectiveDate": "2014-04-11T00:00:00",
+                        "PlanVersion": "02/06/15 (1)",
+                        "Price": 20.0
+                    },
+                    {
+                        "ItemID": "4636",
+                        "ItemType": "group",
+                        "ItemName": "Specialty Stone Level 1",
+                        "ItemImage": {
+                            "ContentType": null,
+                            "EncodedData": null,
+                            "FullURL": null
+                        },
+                        "Gpc": null,
+                        "GpcDocCount": 0,
+                        "SpecID": 4333,
+                        "EffectiveDate": "2014-04-11T00:00:00",
+                        "PlanVersion": "02/06/15 (1)",
+                        "Price": 0.0
+                    },
+                    {
+                        "ItemID": "4637",
+                        "ItemType": "group",
+                        "ItemName": "Specialty Stone Level 2",
+                        "ItemImage": {
+                            "ContentType": null,
+                            "EncodedData": null,
+                            "FullURL": null
+                        },
+                        "Gpc": null,
+                        "GpcDocCount": 0,
+                        "SpecID": 4333,
+                        "EffectiveDate": "2014-04-11T00:00:00",
+                        "PlanVersion": "02/06/15 (1)",
+                        "Price": 20.0
+                    },
+                    {
+                        "ItemID": "4742",
+                        "ItemType": "group",
+                        "ItemName": "Tresca - Level 1",
+                        "ItemImage": {
+                            "ContentType": null,
+                            "EncodedData": null,
+                            "FullURL": null
+                        },
+                        "Gpc": null,
+                        "GpcDocCount": 0,
+                        "SpecID": 4333,
+                        "EffectiveDate": "2014-04-11T00:00:00",
+                        "PlanVersion": "02/06/15 (1)",
+                        "Price": 0.0
+                    },
+                    {
+                        "ItemID": "4743",
+                        "ItemType": "group",
+                        "ItemName": "Tresca - Level 2",
+                        "ItemImage": {
+                            "ContentType": null,
+                            "EncodedData": null,
+                            "FullURL": null
+                        },
+                        "Gpc": null,
+                        "GpcDocCount": 0,
+                        "SpecID": 4333,
+                        "EffectiveDate": "2014-04-11T00:00:00",
+                        "PlanVersion": "02/06/15 (1)",
+                        "Price": 10.0
+                    },
+                    {
+                        "ItemID": "4744",
+                        "ItemType": "group",
+                        "ItemName": "Tresca - Level 3",
+                        "ItemImage": {
+                            "ContentType": null,
+                            "EncodedData": null,
+                            "FullURL": null
+                        },
+                        "Gpc": null,
+                        "GpcDocCount": 0,
+                        "SpecID": 4333,
+                        "EffectiveDate": "2014-04-11T00:00:00",
+                        "PlanVersion": "02/06/15 (1)",
+                        "Price": 10.0
+                    },
+                    {
+                        "ItemID": "4745",
+                        "ItemType": "group",
+                        "ItemName": "Tresca - Level 4",
+                        "ItemImage": {
+                            "ContentType": null,
+                            "EncodedData": null,
+                            "FullURL": null
+                        },
+                        "Gpc": null,
+                        "GpcDocCount": 0,
+                        "SpecID": 4333,
+                        "EffectiveDate": "2014-04-11T00:00:00",
+                        "PlanVersion": "02/06/15 (1)",
+                        "Price": 20.0
+                    }
+                ]
+            },
+            {
+                "ApplicationID": "2",
+                "Application": "Countertops",
+                "ProductID": "O",
+                "Product": "Fabricated Ctops",
+                "Area": "Master Bath Vanity",
+                "SubArea": "",
+                "Source": "Contract",
+                "Prices": [
+                    {
+                        "ItemID": "4656",
+                        "ItemType": "group",
+                        "ItemName": "Granite - Level 1",
+                        "ItemImage": {
+                            "ContentType": null,
+                            "EncodedData": null,
+                            "FullURL": null
+                        },
+                        "Gpc": null,
+                        "GpcDocCount": 0,
+                        "SpecID": 4333,
+                        "EffectiveDate": "2014-04-11T00:00:00",
+                        "PlanVersion": "02/06/15 (1)",
+                        "Price": 0.0
+                    },
+                    {
+                        "ItemID": "4657",
+                        "ItemType": "group",
+                        "ItemName": "Granite - Level 2",
+                        "ItemImage": {
+                            "ContentType": null,
+                            "EncodedData": null,
+                            "FullURL": null
+                        },
+                        "Gpc": null,
+                        "GpcDocCount": 0,
+                        "SpecID": 4333,
+                        "EffectiveDate": "2014-04-11T00:00:00",
+                        "PlanVersion": "02/06/15 (1)",
+                        "Price": 110.0
+                    },
+                    {
+                        "ItemID": "4658",
+                        "ItemType": "group",
+                        "ItemName": "Granite - Level 3",
+                        "ItemImage": {
+                            "ContentType": null,
+                            "EncodedData": null,
+                            "FullURL": null
+                        },
+                        "Gpc": null,
+                        "GpcDocCount": 0,
+                        "SpecID": 4333,
+                        "EffectiveDate": "2014-04-11T00:00:00",
+                        "PlanVersion": "02/06/15 (1)",
+                        "Price": 130.0
+                    },
+                    {
+                        "ItemID": "4659",
+                        "ItemType": "group",
+                        "ItemName": "Granite - Level 4",
+                        "ItemImage": {
+                            "ContentType": null,
+                            "EncodedData": null,
+                            "FullURL": null
+                        },
+                        "Gpc": null,
+                        "GpcDocCount": 0,
+                        "SpecID": 4333,
+                        "EffectiveDate": "2014-04-11T00:00:00",
+                        "PlanVersion": "02/06/15 (1)",
+                        "Price": 200.0
+                    },
+                    {
+                        "ItemID": "4660",
+                        "ItemType": "group",
+                        "ItemName": "Granite - Level 5",
+                        "ItemImage": {
+                            "ContentType": null,
+                            "EncodedData": null,
+                            "FullURL": null
+                        },
+                        "Gpc": null,
+                        "GpcDocCount": 0,
+                        "SpecID": 4333,
+                        "EffectiveDate": "2014-04-11T00:00:00",
+                        "PlanVersion": "02/06/15 (1)",
+                        "Price": 230.0
+                    },
+                    {
+                        "ItemID": "4661",
+                        "ItemType": "group",
+                        "ItemName": "Granite - Level 6",
+                        "ItemImage": {
+                            "ContentType": null,
+                            "EncodedData": null,
+                            "FullURL": null
+                        },
+                        "Gpc": null,
+                        "GpcDocCount": 0,
+                        "SpecID": 4333,
+                        "EffectiveDate": "2014-04-11T00:00:00",
+                        "PlanVersion": "02/06/15 (1)",
+                        "Price": 260.0
+                    },
+                    {
+                        "ItemID": "4662",
+                        "ItemType": "group",
+                        "ItemName": "Artisan Granite - Level 1",
+                        "ItemImage": {
+                            "ContentType": null,
+                            "EncodedData": null,
+                            "FullURL": null
+                        },
+                        "Gpc": null,
+                        "GpcDocCount": 0,
+                        "SpecID": 4333,
+                        "EffectiveDate": "2014-04-11T00:00:00",
+                        "PlanVersion": "02/06/15 (1)",
+                        "Price": 0.0
+                    },
+                    {
+                        "ItemID": "4663",
+                        "ItemType": "group",
+                        "ItemName": "Artisan Granite - Level 2",
+                        "ItemImage": {
+                            "ContentType": null,
+                            "EncodedData": null,
+                            "FullURL": null
+                        },
+                        "Gpc": null,
+                        "GpcDocCount": 0,
+                        "SpecID": 4333,
+                        "EffectiveDate": "2014-04-11T00:00:00",
+                        "PlanVersion": "02/06/15 (1)",
+                        "Price": 30.0
+                    },
+                    {
+                        "ItemID": "4664",
+                        "ItemType": "group",
+                        "ItemName": "Artisan Granite - Level 3",
+                        "ItemImage": {
+                            "ContentType": null,
+                            "EncodedData": null,
+                            "FullURL": null
+                        },
+                        "Gpc": null,
+                        "GpcDocCount": 0,
+                        "SpecID": 4333,
+                        "EffectiveDate": "2014-04-11T00:00:00",
+                        "PlanVersion": "02/06/15 (1)",
+                        "Price": 80.0
+                    },
+                    {
+                        "ItemID": "4665",
+                        "ItemType": "group",
+                        "ItemName": "Artisan Granite - Level 4",
+                        "ItemImage": {
+                            "ContentType": null,
+                            "EncodedData": null,
+                            "FullURL": null
+                        },
+                        "Gpc": null,
+                        "GpcDocCount": 0,
+                        "SpecID": 4333,
+                        "EffectiveDate": "2014-04-11T00:00:00",
+                        "PlanVersion": "02/06/15 (1)",
+                        "Price": 100.0
+                    },
+                    {
+                        "ItemID": "4741",
+                        "ItemType": "group",
+                        "ItemName": "Artisan Granite - Level 5",
+                        "ItemImage": {
+                            "ContentType": null,
+                            "EncodedData": null,
+                            "FullURL": null
+                        },
+                        "Gpc": null,
+                        "GpcDocCount": 0,
+                        "SpecID": 4333,
+                        "EffectiveDate": "2014-04-11T00:00:00",
+                        "PlanVersion": "02/06/15 (1)",
+                        "Price": 140.0
+                    },
+                    {
+                        "ItemID": "4641",
+                        "ItemType": "group",
+                        "ItemName": "Marlana Level 1",
+                        "ItemImage": {
+                            "ContentType": null,
+                            "EncodedData": null,
+                            "FullURL": null
+                        },
+                        "Gpc": null,
+                        "GpcDocCount": 0,
+                        "SpecID": 4333,
+                        "EffectiveDate": "2014-04-11T00:00:00",
+                        "PlanVersion": "02/06/15 (1)",
+                        "Price": 0.0
+                    },
+                    {
+                        "ItemID": "4642",
+                        "ItemType": "group",
+                        "ItemName": "Marlana Level 2",
+                        "ItemImage": {
+                            "ContentType": null,
+                            "EncodedData": null,
+                            "FullURL": null
+                        },
+                        "Gpc": null,
+                        "GpcDocCount": 0,
+                        "SpecID": 4333,
+                        "EffectiveDate": "2014-04-11T00:00:00",
+                        "PlanVersion": "02/06/15 (1)",
+                        "Price": 70.0
+                    },
+                    {
+                        "ItemID": "4823",
+                        "ItemType": "group",
+                        "ItemName": "Omega Stone - Level 1",
+                        "ItemImage": {
+                            "ContentType": null,
+                            "EncodedData": null,
+                            "FullURL": null
+                        },
+                        "Gpc": null,
+                        "GpcDocCount": 0,
+                        "SpecID": 4333,
+                        "EffectiveDate": "2014-04-11T00:00:00",
+                        "PlanVersion": "02/06/15 (1)",
+                        "Price": 0.0
+                    },
+                    {
+                        "ItemID": "4824",
+                        "ItemType": "group",
+                        "ItemName": "Omega Stone - Level 2",
+                        "ItemImage": {
+                            "ContentType": null,
+                            "EncodedData": null,
+                            "FullURL": null
+                        },
+                        "Gpc": null,
+                        "GpcDocCount": 0,
+                        "SpecID": 4333,
+                        "EffectiveDate": "2014-04-11T00:00:00",
+                        "PlanVersion": "02/06/15 (1)",
+                        "Price": 10.0
+                    },
+                    {
+                        "ItemID": "4825",
+                        "ItemType": "group",
+                        "ItemName": "Omega Stone - Level 3",
+                        "ItemImage": {
+                            "ContentType": null,
+                            "EncodedData": null,
+                            "FullURL": null
+                        },
+                        "Gpc": null,
+                        "GpcDocCount": 0,
+                        "SpecID": 4333,
+                        "EffectiveDate": "2014-04-11T00:00:00",
+                        "PlanVersion": "02/06/15 (1)",
+                        "Price": 60.0
+                    },
+                    {
+                        "ItemID": "4826",
+                        "ItemType": "group",
+                        "ItemName": "Omega Stone - Level 4",
+                        "ItemImage": {
+                            "ContentType": null,
+                            "EncodedData": null,
+                            "FullURL": null
+                        },
+                        "Gpc": null,
+                        "GpcDocCount": 0,
+                        "SpecID": 4333,
+                        "EffectiveDate": "2014-04-11T00:00:00",
+                        "PlanVersion": "02/06/15 (1)",
+                        "Price": 100.0
+                    },
+                    {
+                        "ItemID": "4636",
+                        "ItemType": "group",
+                        "ItemName": "Specialty Stone Level 1",
+                        "ItemImage": {
+                            "ContentType": null,
+                            "EncodedData": null,
+                            "FullURL": null
+                        },
+                        "Gpc": null,
+                        "GpcDocCount": 0,
+                        "SpecID": 4333,
+                        "EffectiveDate": "2014-04-11T00:00:00",
+                        "PlanVersion": "02/06/15 (1)",
+                        "Price": 0.0
+                    },
+                    {
+                        "ItemID": "4637",
+                        "ItemType": "group",
+                        "ItemName": "Specialty Stone Level 2",
+                        "ItemImage": {
+                            "ContentType": null,
+                            "EncodedData": null,
+                            "FullURL": null
+                        },
+                        "Gpc": null,
+                        "GpcDocCount": 0,
+                        "SpecID": 4333,
+                        "EffectiveDate": "2014-04-11T00:00:00",
+                        "PlanVersion": "02/06/15 (1)",
+                        "Price": 170.0
+                    },
+                    {
+                        "ItemID": "4742",
+                        "ItemType": "group",
+                        "ItemName": "Tresca - Level 1",
+                        "ItemImage": {
+                            "ContentType": null,
+                            "EncodedData": null,
+                            "FullURL": null
+                        },
+                        "Gpc": null,
+                        "GpcDocCount": 0,
+                        "SpecID": 4333,
+                        "EffectiveDate": "2014-04-11T00:00:00",
+                        "PlanVersion": "02/06/15 (1)",
+                        "Price": 0.0
+                    },
+                    {
+                        "ItemID": "4743",
+                        "ItemType": "group",
+                        "ItemName": "Tresca - Level 2",
+                        "ItemImage": {
+                            "ContentType": null,
+                            "EncodedData": null,
+                            "FullURL": null
+                        },
+                        "Gpc": null,
+                        "GpcDocCount": 0,
+                        "SpecID": 4333,
+                        "EffectiveDate": "2014-04-11T00:00:00",
+                        "PlanVersion": "02/06/15 (1)",
+                        "Price": 20.0
+                    },
+                    {
+                        "ItemID": "4744",
+                        "ItemType": "group",
+                        "ItemName": "Tresca - Level 3",
+                        "ItemImage": {
+                            "ContentType": null,
+                            "EncodedData": null,
+                            "FullURL": null
+                        },
+                        "Gpc": null,
+                        "GpcDocCount": 0,
+                        "SpecID": 4333,
+                        "EffectiveDate": "2014-04-11T00:00:00",
+                        "PlanVersion": "02/06/15 (1)",
+                        "Price": 60.0
+                    },
+                    {
+                        "ItemID": "4745",
+                        "ItemType": "group",
+                        "ItemName": "Tresca - Level 4",
+                        "ItemImage": {
+                            "ContentType": null,
+                            "EncodedData": null,
+                            "FullURL": null
+                        },
+                        "Gpc": null,
+                        "GpcDocCount": 0,
+                        "SpecID": 4333,
+                        "EffectiveDate": "2014-04-11T00:00:00",
+                        "PlanVersion": "02/06/15 (1)",
+                        "Price": 110.0
+                    }
+                ]
+            },
+            {
+                "ApplicationID": "2",
+                "Application": "Countertops",
+                "ProductID": "O",
+                "Product": "Fabricated Ctops",
+                "Area": "Opt Utility Countertop",
+                "SubArea": "",
+                "Source": "Contract",
+                "Prices": [
+                    {
+                        "ItemID": "4656",
+                        "ItemType": "group",
+                        "ItemName": "Granite - Level 1",
+                        "ItemImage": {
+                            "ContentType": null,
+                            "EncodedData": null,
+                            "FullURL": null
+                        },
+                        "Gpc": null,
+                        "GpcDocCount": 0,
+                        "SpecID": 4333,
+                        "EffectiveDate": "2014-04-11T00:00:00",
+                        "PlanVersion": "02/06/15 (1)",
+                        "Price": 0.0
+                    },
+                    {
+                        "ItemID": "4657",
+                        "ItemType": "group",
+                        "ItemName": "Granite - Level 2",
+                        "ItemImage": {
+                            "ContentType": null,
+                            "EncodedData": null,
+                            "FullURL": null
+                        },
+                        "Gpc": null,
+                        "GpcDocCount": 0,
+                        "SpecID": 4333,
+                        "EffectiveDate": "2014-04-11T00:00:00",
+                        "PlanVersion": "02/06/15 (1)",
+                        "Price": 40.0
+                    },
+                    {
+                        "ItemID": "4658",
+                        "ItemType": "group",
+                        "ItemName": "Granite - Level 3",
+                        "ItemImage": {
+                            "ContentType": null,
+                            "EncodedData": null,
+                            "FullURL": null
+                        },
+                        "Gpc": null,
+                        "GpcDocCount": 0,
+                        "SpecID": 4333,
+                        "EffectiveDate": "2014-04-11T00:00:00",
+                        "PlanVersion": "02/06/15 (1)",
+                        "Price": 50.0
+                    },
+                    {
+                        "ItemID": "4659",
+                        "ItemType": "group",
+                        "ItemName": "Granite - Level 4",
+                        "ItemImage": {
+                            "ContentType": null,
+                            "EncodedData": null,
+                            "FullURL": null
+                        },
+                        "Gpc": null,
+                        "GpcDocCount": 0,
+                        "SpecID": 4333,
+                        "EffectiveDate": "2014-04-11T00:00:00",
+                        "PlanVersion": "02/06/15 (1)",
+                        "Price": 70.0
+                    },
+                    {
+                        "ItemID": "4660",
+                        "ItemType": "group",
+                        "ItemName": "Granite - Level 5",
+                        "ItemImage": {
+                            "ContentType": null,
+                            "EncodedData": null,
+                            "FullURL": null
+                        },
+                        "Gpc": null,
+                        "GpcDocCount": 0,
+                        "SpecID": 4333,
+                        "EffectiveDate": "2014-04-11T00:00:00",
+                        "PlanVersion": "02/06/15 (1)",
+                        "Price": 80.0
+                    },
+                    {
+                        "ItemID": "4661",
+                        "ItemType": "group",
+                        "ItemName": "Granite - Level 6",
+                        "ItemImage": {
+                            "ContentType": null,
+                            "EncodedData": null,
+                            "FullURL": null
+                        },
+                        "Gpc": null,
+                        "GpcDocCount": 0,
+                        "SpecID": 4333,
+                        "EffectiveDate": "2014-04-11T00:00:00",
+                        "PlanVersion": "02/06/15 (1)",
+                        "Price": 90.0
+                    },
+                    {
+                        "ItemID": "4662",
+                        "ItemType": "group",
+                        "ItemName": "Artisan Granite - Level 1",
+                        "ItemImage": {
+                            "ContentType": null,
+                            "EncodedData": null,
+                            "FullURL": null
+                        },
+                        "Gpc": null,
+                        "GpcDocCount": 0,
+                        "SpecID": 4333,
+                        "EffectiveDate": "2014-04-11T00:00:00",
+                        "PlanVersion": "02/06/15 (1)",
+                        "Price": 0.0
+                    },
+                    {
+                        "ItemID": "4663",
+                        "ItemType": "group",
+                        "ItemName": "Artisan Granite - Level 2",
+                        "ItemImage": {
+                            "ContentType": null,
+                            "EncodedData": null,
+                            "FullURL": null
+                        },
+                        "Gpc": null,
+                        "GpcDocCount": 0,
+                        "SpecID": 4333,
+                        "EffectiveDate": "2014-04-11T00:00:00",
+                        "PlanVersion": "02/06/15 (1)",
+                        "Price": 10.0
+                    },
+                    {
+                        "ItemID": "4664",
+                        "ItemType": "group",
+                        "ItemName": "Artisan Granite - Level 3",
+                        "ItemImage": {
+                            "ContentType": null,
+                            "EncodedData": null,
+                            "FullURL": null
+                        },
+                        "Gpc": null,
+                        "GpcDocCount": 0,
+                        "SpecID": 4333,
+                        "EffectiveDate": "2014-04-11T00:00:00",
+                        "PlanVersion": "02/06/15 (1)",
+                        "Price": 30.0
+                    },
+                    {
+                        "ItemID": "4665",
+                        "ItemType": "group",
+                        "ItemName": "Artisan Granite - Level 4",
+                        "ItemImage": {
+                            "ContentType": null,
+                            "EncodedData": null,
+                            "FullURL": null
+                        },
+                        "Gpc": null,
+                        "GpcDocCount": 0,
+                        "SpecID": 4333,
+                        "EffectiveDate": "2014-04-11T00:00:00",
+                        "PlanVersion": "02/06/15 (1)",
+                        "Price": 40.0
+                    },
+                    {
+                        "ItemID": "4741",
+                        "ItemType": "group",
+                        "ItemName": "Artisan Granite - Level 5",
+                        "ItemImage": {
+                            "ContentType": null,
+                            "EncodedData": null,
+                            "FullURL": null
+                        },
+                        "Gpc": null,
+                        "GpcDocCount": 0,
+                        "SpecID": 4333,
+                        "EffectiveDate": "2014-04-11T00:00:00",
+                        "PlanVersion": "02/06/15 (1)",
+                        "Price": 50.0
+                    },
+                    {
+                        "ItemID": "4641",
+                        "ItemType": "group",
+                        "ItemName": "Marlana Level 1",
+                        "ItemImage": {
+                            "ContentType": null,
+                            "EncodedData": null,
+                            "FullURL": null
+                        },
+                        "Gpc": null,
+                        "GpcDocCount": 0,
+                        "SpecID": 4333,
+                        "EffectiveDate": "2014-04-11T00:00:00",
+                        "PlanVersion": "02/06/15 (1)",
+                        "Price": 0.0
+                    },
+                    {
+                        "ItemID": "4642",
+                        "ItemType": "group",
+                        "ItemName": "Marlana Level 2",
+                        "ItemImage": {
+                            "ContentType": null,
+                            "EncodedData": null,
+                            "FullURL": null
+                        },
+                        "Gpc": null,
+                        "GpcDocCount": 0,
+                        "SpecID": 4333,
+                        "EffectiveDate": "2014-04-11T00:00:00",
+                        "PlanVersion": "02/06/15 (1)",
+                        "Price": 30.0
+                    },
+                    {
+                        "ItemID": "4823",
+                        "ItemType": "group",
+                        "ItemName": "Omega Stone - Level 1",
+                        "ItemImage": {
+                            "ContentType": null,
+                            "EncodedData": null,
+                            "FullURL": null
+                        },
+                        "Gpc": null,
+                        "GpcDocCount": 0,
+                        "SpecID": 4333,
+                        "EffectiveDate": "2014-04-11T00:00:00",
+                        "PlanVersion": "02/06/15 (1)",
+                        "Price": 0.0
+                    },
+                    {
+                        "ItemID": "4824",
+                        "ItemType": "group",
+                        "ItemName": "Omega Stone - Level 2",
+                        "ItemImage": {
+                            "ContentType": null,
+                            "EncodedData": null,
+                            "FullURL": null
+                        },
+                        "Gpc": null,
+                        "GpcDocCount": 0,
+                        "SpecID": 4333,
+                        "EffectiveDate": "2014-04-11T00:00:00",
+                        "PlanVersion": "02/06/15 (1)",
+                        "Price": 10.0
+                    },
+                    {
+                        "ItemID": "4825",
+                        "ItemType": "group",
+                        "ItemName": "Omega Stone - Level 3",
+                        "ItemImage": {
+                            "ContentType": null,
+                            "EncodedData": null,
+                            "FullURL": null
+                        },
+                        "Gpc": null,
+                        "GpcDocCount": 0,
+                        "SpecID": 4333,
+                        "EffectiveDate": "2014-04-11T00:00:00",
+                        "PlanVersion": "02/06/15 (1)",
+                        "Price": 20.0
+                    },
+                    {
+                        "ItemID": "4826",
+                        "ItemType": "group",
+                        "ItemName": "Omega Stone - Level 4",
+                        "ItemImage": {
+                            "ContentType": null,
+                            "EncodedData": null,
+                            "FullURL": null
+                        },
+                        "Gpc": null,
+                        "GpcDocCount": 0,
+                        "SpecID": 4333,
+                        "EffectiveDate": "2014-04-11T00:00:00",
+                        "PlanVersion": "02/06/15 (1)",
+                        "Price": 40.0
+                    },
+                    {
+                        "ItemID": "4636",
+                        "ItemType": "group",
+                        "ItemName": "Specialty Stone Level 1",
+                        "ItemImage": {
+                            "ContentType": null,
+                            "EncodedData": null,
+                            "FullURL": null
+                        },
+                        "Gpc": null,
+                        "GpcDocCount": 0,
+                        "SpecID": 4333,
+                        "EffectiveDate": "2014-04-11T00:00:00",
+                        "PlanVersion": "02/06/15 (1)",
+                        "Price": 0.0
+                    },
+                    {
+                        "ItemID": "4637",
+                        "ItemType": "group",
+                        "ItemName": "Specialty Stone Level 2",
+                        "ItemImage": {
+                            "ContentType": null,
+                            "EncodedData": null,
+                            "FullURL": null
+                        },
+                        "Gpc": null,
+                        "GpcDocCount": 0,
+                        "SpecID": 4333,
+                        "EffectiveDate": "2014-04-11T00:00:00",
+                        "PlanVersion": "02/06/15 (1)",
+                        "Price": 60.0
+                    },
+                    {
+                        "ItemID": "4742",
+                        "ItemType": "group",
+                        "ItemName": "Tresca - Level 1",
+                        "ItemImage": {
+                            "ContentType": null,
+                            "EncodedData": null,
+                            "FullURL": null
+                        },
+                        "Gpc": null,
+                        "GpcDocCount": 0,
+                        "SpecID": 4333,
+                        "EffectiveDate": "2014-04-11T00:00:00",
+                        "PlanVersion": "02/06/15 (1)",
+                        "Price": 0.0
+                    },
+                    {
+                        "ItemID": "4743",
+                        "ItemType": "group",
+                        "ItemName": "Tresca - Level 2",
+                        "ItemImage": {
+                            "ContentType": null,
+                            "EncodedData": null,
+                            "FullURL": null
+                        },
+                        "Gpc": null,
+                        "GpcDocCount": 0,
+                        "SpecID": 4333,
+                        "EffectiveDate": "2014-04-11T00:00:00",
+                        "PlanVersion": "02/06/15 (1)",
+                        "Price": 10.0
+                    },
+                    {
+                        "ItemID": "4744",
+                        "ItemType": "group",
+                        "ItemName": "Tresca - Level 3",
+                        "ItemImage": {
+                            "ContentType": null,
+                            "EncodedData": null,
+                            "FullURL": null
+                        },
+                        "Gpc": null,
+                        "GpcDocCount": 0,
+                        "SpecID": 4333,
+                        "EffectiveDate": "2014-04-11T00:00:00",
+                        "PlanVersion": "02/06/15 (1)",
+                        "Price": 20.0
+                    },
+                    {
+                        "ItemID": "4745",
+                        "ItemType": "group",
+                        "ItemName": "Tresca - Level 4",
+                        "ItemImage": {
+                            "ContentType": null,
+                            "EncodedData": null,
+                            "FullURL": null
+                        },
+                        "Gpc": null,
+                        "GpcDocCount": 0,
+                        "SpecID": 4333,
+                        "EffectiveDate": "2014-04-11T00:00:00",
+                        "PlanVersion": "02/06/15 (1)",
+                        "Price": 40.0
+                    }
+                ]
+            }
+        ],
+        "PriceLevelMasterList": [
+            {
+                "ItemID": "4656",
+                "ItemType": "group",
+                "ItemName": "Granite - Level 1",
+                "ItemImage": {
+                    "ContentType": null,
+                    "EncodedData": null,
+                    "FullURL": null
+                },
+                "GPC": null,
+                "GpcDocCount": 0,
+                "SpecID": "4333",
+                "EffectiveDate": "2014-04-11",
+                "Price": 0.0
+            },
+            {
+                "ItemID": "4657",
+                "ItemType": "group",
+                "ItemName": "Granite - Level 2",
+                "ItemImage": {
+                    "ContentType": null,
+                    "EncodedData": null,
+                    "FullURL": null
+                },
+                "GPC": null,
+                "GpcDocCount": 0,
+                "SpecID": "4333",
+                "EffectiveDate": "2014-04-11",
+                "Price": 80.0
+            },
+            {
+                "ItemID": "4658",
+                "ItemType": "group",
+                "ItemName": "Granite - Level 3",
+                "ItemImage": {
+                    "ContentType": null,
+                    "EncodedData": null,
+                    "FullURL": null
+                },
+                "GPC": null,
+                "GpcDocCount": 0,
+                "SpecID": "4333",
+                "EffectiveDate": "2014-04-11",
+                "Price": 100.0
+            },
+            {
+                "ItemID": "4659",
+                "ItemType": "group",
+                "ItemName": "Granite - Level 4",
+                "ItemImage": {
+                    "ContentType": null,
+                    "EncodedData": null,
+                    "FullURL": null
+                },
+                "GPC": null,
+                "GpcDocCount": 0,
+                "SpecID": "4333",
+                "EffectiveDate": "2014-04-11",
+                "Price": 150.0
+            },
+            {
+                "ItemID": "4660",
+                "ItemType": "group",
+                "ItemName": "Granite - Level 5",
+                "ItemImage": {
+                    "ContentType": null,
+                    "EncodedData": null,
+                    "FullURL": null
+                },
+                "GPC": null,
+                "GpcDocCount": 0,
+                "SpecID": "4333",
+                "EffectiveDate": "2014-04-11",
+                "Price": 180.0
+            },
+            {
+                "ItemID": "4661",
+                "ItemType": "group",
+                "ItemName": "Granite - Level 6",
+                "ItemImage": {
+                    "ContentType": null,
+                    "EncodedData": null,
+                    "FullURL": null
+                },
+                "GPC": null,
+                "GpcDocCount": 0,
+                "SpecID": "4333",
+                "EffectiveDate": "2014-04-11",
+                "Price": 200.0
+            },
+            {
+                "ItemID": "4662",
+                "ItemType": "group",
+                "ItemName": "Artisan Granite - Level 1",
+                "ItemImage": {
+                    "ContentType": null,
+                    "EncodedData": null,
+                    "FullURL": null
+                },
+                "GPC": null,
+                "GpcDocCount": 0,
+                "SpecID": "4333",
+                "EffectiveDate": "2014-04-11",
+                "Price": 0.0
+            },
+            {
+                "ItemID": "4663",
+                "ItemType": "group",
+                "ItemName": "Artisan Granite - Level 2",
+                "ItemImage": {
+                    "ContentType": null,
+                    "EncodedData": null,
+                    "FullURL": null
+                },
+                "GPC": null,
+                "GpcDocCount": 0,
+                "SpecID": "4333",
+                "EffectiveDate": "2014-04-11",
+                "Price": 30.0
+            },
+            {
+                "ItemID": "4664",
+                "ItemType": "group",
+                "ItemName": "Artisan Granite - Level 3",
+                "ItemImage": {
+                    "ContentType": null,
+                    "EncodedData": null,
+                    "FullURL": null
+                },
+                "GPC": null,
+                "GpcDocCount": 0,
+                "SpecID": "4333",
+                "EffectiveDate": "2014-04-11",
+                "Price": 60.0
+            },
+            {
+                "ItemID": "4665",
+                "ItemType": "group",
+                "ItemName": "Artisan Granite - Level 4",
+                "ItemImage": {
+                    "ContentType": null,
+                    "EncodedData": null,
+                    "FullURL": null
+                },
+                "GPC": null,
+                "GpcDocCount": 0,
+                "SpecID": "4333",
+                "EffectiveDate": "2014-04-11",
+                "Price": 80.0
+            },
+            {
+                "ItemID": "4741",
+                "ItemType": "group",
+                "ItemName": "Artisan Granite - Level 5",
+                "ItemImage": {
+                    "ContentType": null,
+                    "EncodedData": null,
+                    "FullURL": null
+                },
+                "GPC": null,
+                "GpcDocCount": 0,
+                "SpecID": "4333",
+                "EffectiveDate": "2014-04-11",
+                "Price": 110.0
+            },
+            {
+                "ItemID": "4641",
+                "ItemType": "group",
+                "ItemName": "Marlana Level 1",
+                "ItemImage": {
+                    "ContentType": null,
+                    "EncodedData": null,
+                    "FullURL": null
+                },
+                "GPC": null,
+                "GpcDocCount": 0,
+                "SpecID": "4333",
+                "EffectiveDate": "2014-04-11",
+                "Price": 0.0
+            },
+            {
+                "ItemID": "4642",
+                "ItemType": "group",
+                "ItemName": "Marlana Level 2",
+                "ItemImage": {
+                    "ContentType": null,
+                    "EncodedData": null,
+                    "FullURL": null
+                },
+                "GPC": null,
+                "GpcDocCount": 0,
+                "SpecID": "4333",
+                "EffectiveDate": "2014-04-11",
+                "Price": 60.0
+            },
+            {
+                "ItemID": "4823",
+                "ItemType": "group",
+                "ItemName": "Omega Stone - Level 1",
+                "ItemImage": {
+                    "ContentType": null,
+                    "EncodedData": null,
+                    "FullURL": null
+                },
+                "GPC": null,
+                "GpcDocCount": 0,
+                "SpecID": "4333",
+                "EffectiveDate": "2014-04-11",
+                "Price": 0.0
+            },
+            {
+                "ItemID": "4824",
+                "ItemType": "group",
+                "ItemName": "Omega Stone - Level 2",
+                "ItemImage": {
+                    "ContentType": null,
+                    "EncodedData": null,
+                    "FullURL": null
+                },
+                "GPC": null,
+                "GpcDocCount": 0,
+                "SpecID": "4333",
+                "EffectiveDate": "2014-04-11",
+                "Price": 10.0
+            },
+            {
+                "ItemID": "4825",
+                "ItemType": "group",
+                "ItemName": "Omega Stone - Level 3",
+                "ItemImage": {
+                    "ContentType": null,
+                    "EncodedData": null,
+                    "FullURL": null
+                },
+                "GPC": null,
+                "GpcDocCount": 0,
+                "SpecID": "4333",
+                "EffectiveDate": "2014-04-11",
+                "Price": 50.0
+            },
+            {
+                "ItemID": "4826",
+                "ItemType": "group",
+                "ItemName": "Omega Stone - Level 4",
+                "ItemImage": {
+                    "ContentType": null,
+                    "EncodedData": null,
+                    "FullURL": null
+                },
+                "GPC": null,
+                "GpcDocCount": 0,
+                "SpecID": "4333",
+                "EffectiveDate": "2014-04-11",
+                "Price": 80.0
+            },
+            {
+                "ItemID": "4636",
+                "ItemType": "group",
+                "ItemName": "Specialty Stone Level 1",
+                "ItemImage": {
+                    "ContentType": null,
+                    "EncodedData": null,
+                    "FullURL": null
+                },
+                "GPC": null,
+                "GpcDocCount": 0,
+                "SpecID": "4333",
+                "EffectiveDate": "2014-04-11",
+                "Price": 0.0
+            },
+            {
+                "ItemID": "4637",
+                "ItemType": "group",
+                "ItemName": "Specialty Stone Level 2",
+                "ItemImage": {
+                    "ContentType": null,
+                    "EncodedData": null,
+                    "FullURL": null
+                },
+                "GPC": null,
+                "GpcDocCount": 0,
+                "SpecID": "4333",
+                "EffectiveDate": "2014-04-11",
+                "Price": 130.0
+            },
+            {
+                "ItemID": "4742",
+                "ItemType": "group",
+                "ItemName": "Tresca - Level 1",
+                "ItemImage": {
+                    "ContentType": null,
+                    "EncodedData": null,
+                    "FullURL": null
+                },
+                "GPC": null,
+                "GpcDocCount": 0,
+                "SpecID": "4333",
+                "EffectiveDate": "2014-04-11",
+                "Price": 0.0
+            },
+            {
+                "ItemID": "4743",
+                "ItemType": "group",
+                "ItemName": "Tresca - Level 2",
+                "ItemImage": {
+                    "ContentType": null,
+                    "EncodedData": null,
+                    "FullURL": null
+                },
+                "GPC": null,
+                "GpcDocCount": 0,
+                "SpecID": "4333",
+                "EffectiveDate": "2014-04-11",
+                "Price": 20.0
+            },
+            {
+                "ItemID": "4744",
+                "ItemType": "group",
+                "ItemName": "Tresca - Level 3",
+                "ItemImage": {
+                    "ContentType": null,
+                    "EncodedData": null,
+                    "FullURL": null
+                },
+                "GPC": null,
+                "GpcDocCount": 0,
+                "SpecID": "4333",
+                "EffectiveDate": "2014-04-11",
+                "Price": 50.0
+            },
+            {
+                "ItemID": "4745",
+                "ItemType": "group",
+                "ItemName": "Tresca - Level 4",
+                "ItemImage": {
+                    "ContentType": null,
+                    "EncodedData": null,
+                    "FullURL": null
+                },
+                "GPC": null,
+                "GpcDocCount": 0,
+                "SpecID": "4333",
+                "EffectiveDate": "2014-04-11",
+                "Price": 80.0
+            }
+        ]
+    }
+]

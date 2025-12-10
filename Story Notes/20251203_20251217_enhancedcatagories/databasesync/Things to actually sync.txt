@@ -1,0 +1,14 @@
+Things to actually sync
+==========================================================================================
+    of_selItemStyleGroup
+    
+    osp_selUnitPriceExtendedMaterial
+    osp_selUnitPriceExtendedLabor
+
+    osp_selItemPrice 
+    esp_selItemPrice
+    vs_selItemPrice
+
+    prices_extended_material
+    prices_extended_labor
+    CUSTOMER
