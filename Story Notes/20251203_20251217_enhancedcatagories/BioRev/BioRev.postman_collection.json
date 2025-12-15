@@ -1,0 +1,616 @@
+{
+	"info": {
+		"_postman_id": "87aa740d-f9e9-4c73-835a-26648f6ee45b",
+		"name": "BioRev",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "29125592"
+	},
+	"item": [
+		{
+			"name": "getOptions",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "{{baseURL}}/api/v1/visualizer/getOptions",
+					"host": [
+						"{{baseURL}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"visualizer",
+						"getOptions"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getOptions Kitchen",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"scene\":\"kitchen\"}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{baseURL}}/api/v1/visualizer/getOptions",
+					"host": [
+						"{{baseURL}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"visualizer",
+						"getOptions"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getOptions Primary Bathroom",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"scene\":\"primary-bathroom\"}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{baseURL}}/api/v1/visualizer/getOptions",
+					"host": [
+						"{{baseURL}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"visualizer",
+						"getOptions"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Scene - Kitchen - integer IDs",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"let template = `\r",
+							"<img src='{{img}}'/>\r",
+							"`;\r",
+							"\r",
+							"pm.visualizer.set(template, { \r",
+							"    img: pm.response.json()[\"data\"][\"image\"]\r",
+							"});\r",
+							""
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "*/*",
+						"type": "text"
+					},
+					{
+						"key": "Connection",
+						"value": "keep-alive",
+						"type": "text"
+					},
+					{
+						"key": "content-type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"visualizerSlug\":\"kitchen\",\r\n    \"layers\":[\r\n                {\"category\":\"cabinets\",\"optionId\":301}, {\"category\": \"countertop\", \"optionId\":305}\r\n            ]\r\n}\r\n\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{baseURL}}/api/v1/visualizer/createScene",
+					"host": [
+						"{{baseURL}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"visualizer",
+						"createScene"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Scene - Kitchen - GUIDs - 1",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"let template = `\r",
+							"<img src='{{img}}'/>\r",
+							"`;\r",
+							"\r",
+							"pm.visualizer.set(template, { \r",
+							"    img: pm.response.json()[\"data\"][\"image\"]\r",
+							"});\r",
+							""
+						],
+						"type": "text/javascript",
+						"packages": {},
+						"requests": {}
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "*/*",
+						"type": "text"
+					},
+					{
+						"key": "Connection",
+						"value": "keep-alive",
+						"type": "text"
+					},
+					{
+						"key": "content-type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"visualizerSlug\":\"kitchen\",\r\n    \"layers\":[\r\n                {\"category\":\"cabinets\",\"optionId\":\"e53597de-bec5-4a52-b446-b3b7233785e3\"}, {\"category\": \"countertop\", \"optionId\":\"d321f141-4a5e-468c-9ddb-8dbe835f9a28\"}\r\n            ]\r\n}\r\n\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{baseURL}}/api/v1/visualizer/createScene",
+					"host": [
+						"{{baseURL}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"visualizer",
+						"createScene"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Scene - Kitchen - GUIDs - 2",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"let template = `\r",
+							"<img src='{{img}}'/>\r",
+							"`;\r",
+							"\r",
+							"pm.visualizer.set(template, { \r",
+							"    img: pm.response.json()[\"data\"][\"image\"]\r",
+							"});\r",
+							""
+						],
+						"type": "text/javascript",
+						"packages": {},
+						"requests": {}
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "*/*",
+						"type": "text"
+					},
+					{
+						"key": "Connection",
+						"value": "keep-alive",
+						"type": "text"
+					},
+					{
+						"key": "content-type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"visualizerSlug\":\"kitchen\",\r\n    \"layers\":[\r\n                {\"category\":\"cabinets\",\"productId\":\"e18f29b6-c4f3-4899-adeb-cc71225cd50e\"}, {\"category\": \"countertop\", \"productId\":\"40e0ec0d-f220-4744-85b7-90476eb8e677\"}\r\n            ]\r\n}\r\n\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{baseURL}}/api/v1/visualizer/createScene",
+					"host": [
+						"{{baseURL}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"visualizer",
+						"createScene"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Scene Copy",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"let template = `\r",
+							"<img src='{{img}}'/>\r",
+							"`;\r",
+							"\r",
+							"pm.visualizer.set(template, { \r",
+							"    img: pm.response.json()[\"data\"][\"image\"]\r",
+							"});\r",
+							""
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "content-type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "x-app-key",
+						"value": "XXXXXXXX",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"visualizerSlug\":\"kitchen\",\r\n    \"layers\":[\r\n                {\"category\":\"cabinets\",\"optionId\":300}\r\n            ]\r\n}\r\n\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://buildon.xdesign360.com/api/v1/visualizer/createScene",
+					"protocol": "https",
+					"host": [
+						"buildon",
+						"xdesign360",
+						"com"
+					],
+					"path": [
+						"api",
+						"v1",
+						"visualizer",
+						"createScene"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Scene Bath 2",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"let template = `\r",
+							"<img src='{{img}}'/>\r",
+							"`;\r",
+							"\r",
+							"pm.visualizer.set(template, { \r",
+							"    img: pm.response.json()[\"data\"][\"image\"]\r",
+							"});\r",
+							""
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "content-type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "x-app-key",
+						"value": "XXXXXXXX",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"visualizerSlug\":\"bathroom-2\",\r\n    \"layers\":[\r\n                 {\"category\": \"countertops\", \"optionId\":345}, {\"category\":\"wall-tile\",\"optionId\":364}, {\"category\": \"floor-tile\", \"optionId\":353}\r\n            ]\r\n}\r\n\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://buildon.xdesign360.com/api/v1/visualizer/createScene",
+					"protocol": "https",
+					"host": [
+						"buildon",
+						"xdesign360",
+						"com"
+					],
+					"path": [
+						"api",
+						"v1",
+						"visualizer",
+						"createScene"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Scene - Bath 2 Guids",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"let template = `\r",
+							"<img src='{{img}}'/>\r",
+							"`;\r",
+							"\r",
+							"pm.visualizer.set(template, { \r",
+							"    img: pm.response.json()[\"data\"][\"image\"]\r",
+							"});\r",
+							""
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "content-type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "x-app-key",
+						"value": "XXXXXXXX",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"visualizerSlug\":\"bathroom-2\",\r\n    \"layers\":[\r\n                 {\"category\": \"countertops\", \"optionId\":345}, {\"category\":\"wall-tile\",\"optionId\":364}, {\"category\": \"floor-tile\", \"optionId\":353}\r\n            ]\r\n}\r\n\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://buildon.xdesign360.com/api/v1/visualizer/createScene",
+					"protocol": "https",
+					"host": [
+						"buildon",
+						"xdesign360",
+						"com"
+					],
+					"path": [
+						"api",
+						"v1",
+						"visualizer",
+						"createScene"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getScene - Bath 2",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "*/*",
+						"type": "text"
+					},
+					{
+						"key": "Connection",
+						"value": "keep-alive",
+						"type": "text"
+					},
+					{
+						"key": "",
+						"value": "",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"url": {
+					"raw": "{{baseURL}}/api/v1/visualizer/getScene?scene=bathroom-2&sceneType=wall-tile",
+					"host": [
+						"{{baseURL}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"visualizer",
+						"getScene"
+					],
+					"query": [
+						{
+							"key": "scene",
+							"value": "bathroom-2"
+						},
+						{
+							"key": "sceneType",
+							"value": "wall-tile"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getScene - kitchen",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "*/*",
+						"type": "text"
+					},
+					{
+						"key": "Connection",
+						"value": "keep-alive",
+						"type": "text"
+					},
+					{
+						"key": "",
+						"value": "",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"url": {
+					"raw": "{{baseURL}}/api/v1/visualizer/getScene?scene=kitchen&sceneType=cabinets",
+					"host": [
+						"{{baseURL}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"visualizer",
+						"getScene"
+					],
+					"query": [
+						{
+							"key": "scene",
+							"value": "kitchen"
+						},
+						{
+							"key": "sceneType",
+							"value": "cabinets"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getScene - kitchen Copy",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "*/*",
+						"type": "text"
+					},
+					{
+						"key": "Connection",
+						"value": "keep-alive",
+						"type": "text"
+					},
+					{
+						"key": "",
+						"value": "",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"url": {
+					"raw": "{{baseURL}}/api/v1/visualizer/getScene?scene=kitchen&sceneType=cabinets",
+					"host": [
+						"{{baseURL}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"visualizer",
+						"getScene"
+					],
+					"query": [
+						{
+							"key": "scene",
+							"value": "kitchen"
+						},
+						{
+							"key": "sceneType",
+							"value": "cabinets"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"variable": [
+		{
+			"key": "baseURL",
+			"value": "",
+			"type": "default"
+		}
+	]
+}
