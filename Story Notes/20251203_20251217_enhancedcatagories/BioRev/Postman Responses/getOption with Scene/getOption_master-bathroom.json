@@ -1,0 +1,323 @@
+{
+    "status": true,
+    "data": {
+        "image": "https://buildon.xdesign360.com/media/uploads/base-1756305719.jpg",
+        "categorizedOptions": [
+            {
+                "id": 24,
+                "title": "Wall Tile",
+                "thumbnail": "https://buildon.xdesign360.com/media/uploads/1756308003.png",
+                "priority": 4,
+                "dependency": null,
+                "slug": "wall-tile",
+                "option_layers": [
+                    {
+                        "id": 363,
+                        "design_type_id": 24,
+                        "title": "00510 Thala Gray",
+                        "thumbnail": "https://buildon.xdesign360.com/media/uploads/wall-tile/1756308735thumb.jpg",
+                        "is_default": 1,
+                        "price": null,
+                        "productId": "770ff5b0-008a-47ad-a325-9e4094c84a77",
+                        "rating": null,
+                        "slug": "00510-thala-gray"
+                    },
+                    {
+                        "id": 364,
+                        "design_type_id": 24,
+                        "title": "00530 Foussana Gray",
+                        "thumbnail": "https://buildon.xdesign360.com/media/uploads/wall-tile/1756308772thumb.jpg",
+                        "is_default": 0,
+                        "price": null,
+                        "productId": "86700884-5a2d-4dab-ab2e-e847f2e7c84f",
+                        "rating": null,
+                        "slug": "00530-foussana-gray"
+                    },
+                    {
+                        "id": 365,
+                        "design_type_id": 24,
+                        "title": "00590 Milly Gray",
+                        "thumbnail": "https://buildon.xdesign360.com/media/uploads/wall-tile/1756308809thumb.jpg",
+                        "is_default": 0,
+                        "price": null,
+                        "productId": "8efc77f8-60ca-4ff2-b46d-ae567978d2db",
+                        "rating": null,
+                        "slug": "00590-milly-gray"
+                    },
+                    {
+                        "id": 356,
+                        "design_type_id": 24,
+                        "title": "Cosmic Sapphire",
+                        "thumbnail": "https://buildon.xdesign360.com/media/uploads/wall-tile/1756308215thumb.jpg",
+                        "is_default": 0,
+                        "price": null,
+                        "productId": "342f363e-17ae-419b-a69b-c8a2fca93cc9",
+                        "rating": null,
+                        "slug": "cosmic-sapphire"
+                    },
+                    {
+                        "id": 357,
+                        "design_type_id": 24,
+                        "title": "Dark Gray",
+                        "thumbnail": "https://buildon.xdesign360.com/media/uploads/wall-tile/1756308461thumb.jpg",
+                        "is_default": 0,
+                        "price": null,
+                        "productId": "b22c8836-d66c-4b30-a551-93a407f05fc9",
+                        "rating": null,
+                        "slug": "dark-gray"
+                    },
+                    {
+                        "id": 359,
+                        "design_type_id": 24,
+                        "title": "Fawn",
+                        "thumbnail": "https://buildon.xdesign360.com/media/uploads/wall-tile/1756308559thumb.jpg",
+                        "is_default": 0,
+                        "price": null,
+                        "productId": "d0b33864-cd8c-44a9-8293-a72e72dc8888",
+                        "rating": null,
+                        "slug": "fawn"
+                    },
+                    {
+                        "id": 354,
+                        "design_type_id": 24,
+                        "title": "Frost",
+                        "thumbnail": "https://buildon.xdesign360.com/media/uploads/wall-tile/1756308068thumb.jpg",
+                        "is_default": 0,
+                        "price": null,
+                        "productId": "866d14ff-fcf0-4cde-80fa-3788884b0d9a",
+                        "rating": null,
+                        "slug": "frost"
+                    },
+                    {
+                        "id": 360,
+                        "design_type_id": 24,
+                        "title": "Gray",
+                        "thumbnail": "https://buildon.xdesign360.com/media/uploads/wall-tile/1756308604thumb.jpg",
+                        "is_default": 0,
+                        "price": null,
+                        "productId": "bc5ed975-40e6-4cc9-8fb0-699b64dac84f",
+                        "rating": null,
+                        "slug": "gray"
+                    },
+                    {
+                        "id": 361,
+                        "design_type_id": 24,
+                        "title": "Marble",
+                        "thumbnail": "https://buildon.xdesign360.com/media/uploads/wall-tile/1756308655thumb.jpg",
+                        "is_default": 0,
+                        "price": null,
+                        "productId": "bfa7043a-65eb-4768-ae91-a974d2b0b1b4",
+                        "rating": null,
+                        "slug": "marble"
+                    },
+                    {
+                        "id": 362,
+                        "design_type_id": 24,
+                        "title": "Mirror",
+                        "thumbnail": "https://buildon.xdesign360.com/media/uploads/wall-tile/1756308687thumb.jpg",
+                        "is_default": 0,
+                        "price": null,
+                        "productId": "0e0d6730-946f-4053-84f3-ebf71dad3973",
+                        "rating": null,
+                        "slug": "mirror"
+                    },
+                    {
+                        "id": 358,
+                        "design_type_id": 24,
+                        "title": "Peacock Green",
+                        "thumbnail": "https://buildon.xdesign360.com/media/uploads/wall-tile/1756308513thumb.jpg",
+                        "is_default": 0,
+                        "price": null,
+                        "productId": "e93d2e59-f9bd-4375-85f5-6c2a38307a3f",
+                        "rating": null,
+                        "slug": "peacock-green"
+                    }
+                ]
+            },
+            {
+                "id": 23,
+                "title": "Floor Tile",
+                "thumbnail": "https://buildon.xdesign360.com/media/uploads/1756307468.png",
+                "priority": 3,
+                "dependency": null,
+                "slug": "floor-tile",
+                "option_layers": [
+                    {
+                        "id": 349,
+                        "design_type_id": 23,
+                        "title": "00100 Cream",
+                        "thumbnail": "https://buildon.xdesign360.com/media/uploads/floor-tile/1756307597thumb.jpg",
+                        "is_default": 0,
+                        "price": null,
+                        "productId": "bf76e7d6-4d69-4181-b748-5de94dee42ec",
+                        "rating": null,
+                        "slug": "00100-cream"
+                    },
+                    {
+                        "id": 350,
+                        "design_type_id": 23,
+                        "title": "00200 Latte",
+                        "thumbnail": "https://buildon.xdesign360.com/media/uploads/floor-tile/1756307673thumb.jpg",
+                        "is_default": 0,
+                        "price": null,
+                        "productId": "d5b2cf01-6833-4b1e-a1cb-8ef6f24aa3f1",
+                        "rating": null,
+                        "slug": "00200-latte"
+                    },
+                    {
+                        "id": 348,
+                        "design_type_id": 23,
+                        "title": "00500 Surf",
+                        "thumbnail": "https://buildon.xdesign360.com/media/uploads/floor-tile/1756307628thumb.jpg",
+                        "is_default": 1,
+                        "price": null,
+                        "productId": "60076cb4-3cfc-41df-9f54-7aef8a433753",
+                        "rating": null,
+                        "slug": "00500-surf"
+                    },
+                    {
+                        "id": 353,
+                        "design_type_id": 23,
+                        "title": "Alley",
+                        "thumbnail": "https://buildon.xdesign360.com/media/uploads/floor-tile/1756307907thumb.jpg",
+                        "is_default": 0,
+                        "price": null,
+                        "productId": "e074818d-3349-4a6e-9591-d599a8c99570",
+                        "rating": null,
+                        "slug": "alley"
+                    },
+                    {
+                        "id": 352,
+                        "design_type_id": 23,
+                        "title": "Hall",
+                        "thumbnail": "https://buildon.xdesign360.com/media/uploads/floor-tile/1756307876thumb.jpg",
+                        "is_default": 0,
+                        "price": null,
+                        "productId": "7b188a18-cfc5-44be-88f8-ec3c8bd982ca",
+                        "rating": null,
+                        "slug": "hall"
+                    },
+                    {
+                        "id": 351,
+                        "design_type_id": 23,
+                        "title": "Trail",
+                        "thumbnail": "https://buildon.xdesign360.com/media/uploads/floor-tile/1756307842thumb.jpg",
+                        "is_default": 0,
+                        "price": null,
+                        "productId": "b1441c06-7c18-4053-a2dd-2b0c4bec7388",
+                        "rating": null,
+                        "slug": "trail"
+                    }
+                ]
+            },
+            {
+                "id": 22,
+                "title": "Countertops",
+                "thumbnail": "https://buildon.xdesign360.com/media/uploads/1756307137.png",
+                "priority": 2,
+                "dependency": null,
+                "slug": "countertops",
+                "option_layers": [
+                    {
+                        "id": 346,
+                        "design_type_id": 22,
+                        "title": "Ashen",
+                        "thumbnail": "https://buildon.xdesign360.com/media/uploads/countertops/1756307366thumb.jpg",
+                        "is_default": 0,
+                        "price": null,
+                        "productId": "40e0ec0d-f220-4744-85b7-90476eb8e677",
+                        "rating": null,
+                        "slug": "ashen"
+                    },
+                    {
+                        "id": 347,
+                        "design_type_id": 22,
+                        "title": "Calcatta White",
+                        "thumbnail": "https://buildon.xdesign360.com/media/uploads/countertops/1756307409thumb.jpg",
+                        "is_default": 0,
+                        "price": null,
+                        "productId": "d321f141-4a5e-468c-9ddb-8dbe835f9a28",
+                        "rating": null,
+                        "slug": "calcatta-white"
+                    },
+                    {
+                        "id": 344,
+                        "design_type_id": 22,
+                        "title": "Galaxy White",
+                        "thumbnail": "https://buildon.xdesign360.com/media/uploads/countertops/1756307220thumb.jpg",
+                        "is_default": 1,
+                        "price": null,
+                        "productId": "d3708f7a-c8aa-4020-b0c5-f7423e005caf",
+                        "rating": null,
+                        "slug": "galaxy-white"
+                    },
+                    {
+                        "id": 345,
+                        "design_type_id": 22,
+                        "title": "Nebula",
+                        "thumbnail": "https://buildon.xdesign360.com/media/uploads/countertops/1756307288thumb.jpg",
+                        "is_default": 0,
+                        "price": null,
+                        "productId": "beba38d2-351e-413e-b664-98f49f753187",
+                        "rating": null,
+                        "slug": "nebula"
+                    }
+                ]
+            },
+            {
+                "id": 21,
+                "title": "Cabinets",
+                "thumbnail": "https://buildon.xdesign360.com/media/uploads/1756305824.png",
+                "priority": 1,
+                "dependency": null,
+                "slug": "cabinets",
+                "option_layers": [
+                    {
+                        "id": 342,
+                        "design_type_id": 21,
+                        "title": "Cobblestone",
+                        "thumbnail": "https://buildon.xdesign360.com/media/uploads/cabinets/1756306964thumb.jpg",
+                        "is_default": 0,
+                        "price": null,
+                        "productId": "8bae0077-6efa-4c08-bb07-1860a6c569d0",
+                        "rating": null,
+                        "slug": "cobblestone"
+                    },
+                    {
+                        "id": 341,
+                        "design_type_id": 21,
+                        "title": "Honey",
+                        "thumbnail": "https://buildon.xdesign360.com/media/uploads/cabinets/1756306847thumb.jpg",
+                        "is_default": 0,
+                        "price": null,
+                        "productId": "7fdfdff4-c67d-4bf4-a234-1d7db5669396",
+                        "rating": null,
+                        "slug": "honey"
+                    },
+                    {
+                        "id": 343,
+                        "design_type_id": 21,
+                        "title": "Linen",
+                        "thumbnail": "https://buildon.xdesign360.com/media/uploads/cabinets/1756307065thumb.jpg",
+                        "is_default": 0,
+                        "price": null,
+                        "productId": "e53597de-bec5-4a52-b446-b3b7233785e3",
+                        "rating": null,
+                        "slug": "linen"
+                    },
+                    {
+                        "id": 340,
+                        "design_type_id": 21,
+                        "title": "Truffle",
+                        "thumbnail": "https://buildon.xdesign360.com/media/uploads/cabinets/1756306709thumb.jpg",
+                        "is_default": 1,
+                        "price": null,
+                        "productId": "e18f29b6-c4f3-4899-adeb-cc71225cd50e",
+                        "rating": null,
+                        "slug": "truffle"
+                    }
+                ]
+            }
+        ]
+    }
+}

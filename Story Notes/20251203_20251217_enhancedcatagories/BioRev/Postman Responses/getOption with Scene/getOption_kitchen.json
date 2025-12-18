@@ -1,0 +1,430 @@
+{
+    "status": true,
+    "data": {
+        "image": "https://buildon.xdesign360.com/media/uploads/base-1752527698.jpg",
+        "categorizedOptions": [
+            {
+                "id": 14,
+                "title": "Cabinets",
+                "thumbnail": "https://buildon.xdesign360.com/media/uploads/1752174649.png",
+                "priority": 6,
+                "dependency": null,
+                "slug": "cabinets",
+                "option_layers": [
+                    {
+                        "id": 303,
+                        "design_type_id": 14,
+                        "title": "Cobblestone",
+                        "thumbnail": "https://buildon.xdesign360.com/media/uploads/cabinets/1752175830thumb.jpg",
+                        "is_default": 0,
+                        "price": null,
+                        "productId": "8bae0077-6efa-4c08-bb07-1860a6c569d0",
+                        "rating": null,
+                        "slug": "cobblestone"
+                    },
+                    {
+                        "id": 302,
+                        "design_type_id": 14,
+                        "title": "Honey",
+                        "thumbnail": "https://buildon.xdesign360.com/media/uploads/cabinets/1752175739thumb.jpg",
+                        "is_default": 0,
+                        "price": null,
+                        "productId": "7fdfdff4-c67d-4bf4-a234-1d7db5669396",
+                        "rating": null,
+                        "slug": "honey"
+                    },
+                    {
+                        "id": 301,
+                        "design_type_id": 14,
+                        "title": "Midnight",
+                        "thumbnail": "https://buildon.xdesign360.com/media/uploads/cabinets/1752174895thumb.jpg",
+                        "is_default": 0,
+                        "price": null,
+                        "productId": "e53597de-bec5-4a52-b446-b3b7233785e3",
+                        "rating": null,
+                        "slug": "midnight"
+                    },
+                    {
+                        "id": 300,
+                        "design_type_id": 14,
+                        "title": "Truffle",
+                        "thumbnail": "https://buildon.xdesign360.com/media/uploads/cabinets/1752174797thumb.jpg",
+                        "is_default": 1,
+                        "price": null,
+                        "productId": "e18f29b6-c4f3-4899-adeb-cc71225cd50e",
+                        "rating": null,
+                        "slug": "truffle"
+                    }
+                ]
+            },
+            {
+                "id": 15,
+                "title": "Countertop",
+                "thumbnail": "https://buildon.xdesign360.com/media/uploads/1752175942.png",
+                "priority": 4,
+                "dependency": null,
+                "slug": "countertop",
+                "option_layers": [
+                    {
+                        "id": 306,
+                        "design_type_id": 15,
+                        "title": "Ashen",
+                        "thumbnail": "https://buildon.xdesign360.com/media/uploads/countertop/1752179260thumb.jpg",
+                        "is_default": 0,
+                        "price": null,
+                        "productId": "40e0ec0d-f220-4744-85b7-90476eb8e677",
+                        "rating": null,
+                        "slug": "ashen"
+                    },
+                    {
+                        "id": 307,
+                        "design_type_id": 15,
+                        "title": "Calcatta White",
+                        "thumbnail": "https://buildon.xdesign360.com/media/uploads/countertop/1752179325thumb.jpg",
+                        "is_default": 0,
+                        "price": null,
+                        "productId": "d321f141-4a5e-468c-9ddb-8dbe835f9a28",
+                        "rating": null,
+                        "slug": "calcatta-white"
+                    },
+                    {
+                        "id": 304,
+                        "design_type_id": 15,
+                        "title": "Galaxy White",
+                        "thumbnail": "https://buildon.xdesign360.com/media/uploads/countertop/1752176037thumb.jpg",
+                        "is_default": 1,
+                        "price": null,
+                        "productId": "d3708f7a-c8aa-4020-b0c5-f7423e005caf",
+                        "rating": null,
+                        "slug": "galaxy-white"
+                    },
+                    {
+                        "id": 305,
+                        "design_type_id": 15,
+                        "title": "Nebula",
+                        "thumbnail": "https://buildon.xdesign360.com/media/uploads/countertop/1752179213thumb.jpg",
+                        "is_default": 0,
+                        "price": null,
+                        "productId": "beba38d2-351e-413e-b664-98f49f753187",
+                        "rating": null,
+                        "slug": "nebula"
+                    }
+                ]
+            },
+            {
+                "id": 16,
+                "title": "Backsplash",
+                "thumbnail": "https://buildon.xdesign360.com/media/uploads/1752179669.png",
+                "priority": 3,
+                "dependency": null,
+                "slug": "backsplash",
+                "option_layers": [
+                    {
+                        "id": 318,
+                        "design_type_id": 16,
+                        "title": "00510 Thala Gray",
+                        "thumbnail": "https://buildon.xdesign360.com/media/uploads/backsplash/1752181629thumb.jpg",
+                        "is_default": 0,
+                        "price": null,
+                        "productId": "770ff5b0-008a-47ad-a325-9e4094c84a77",
+                        "rating": null,
+                        "slug": "00510-thala-gray"
+                    },
+                    {
+                        "id": 317,
+                        "design_type_id": 16,
+                        "title": "00530 Foussana Gray",
+                        "thumbnail": "https://buildon.xdesign360.com/media/uploads/backsplash/1752181590thumb.jpg",
+                        "is_default": 0,
+                        "price": null,
+                        "productId": "86700884-5a2d-4dab-ab2e-e847f2e7c84f",
+                        "rating": null,
+                        "slug": "00530-foussana-gray"
+                    },
+                    {
+                        "id": 316,
+                        "design_type_id": 16,
+                        "title": "00590 Milly Gray",
+                        "thumbnail": "https://buildon.xdesign360.com/media/uploads/backsplash/1752181538thumb.jpg",
+                        "is_default": 1,
+                        "price": null,
+                        "productId": "8efc77f8-60ca-4ff2-b46d-ae567978d2db",
+                        "rating": null,
+                        "slug": "00590-milly-gray"
+                    },
+                    {
+                        "id": 314,
+                        "design_type_id": 16,
+                        "title": "Cosmic Sapphire",
+                        "thumbnail": "https://buildon.xdesign360.com/media/uploads/backsplash/1752181393thumb.jpg",
+                        "is_default": 0,
+                        "price": null,
+                        "productId": "342f363e-17ae-419b-a69b-c8a2fca93cc9",
+                        "rating": null,
+                        "slug": "cosmic-sapphire"
+                    },
+                    {
+                        "id": 313,
+                        "design_type_id": 16,
+                        "title": "Dark Gray",
+                        "thumbnail": "https://buildon.xdesign360.com/media/uploads/backsplash/1752181344thumb.jpg",
+                        "is_default": 0,
+                        "price": null,
+                        "productId": "b22c8836-d66c-4b30-a551-93a407f05fc9",
+                        "rating": null,
+                        "slug": "dark-gray"
+                    },
+                    {
+                        "id": 311,
+                        "design_type_id": 16,
+                        "title": "Fawn",
+                        "thumbnail": "https://buildon.xdesign360.com/media/uploads/backsplash/1752181261thumb.jpg",
+                        "is_default": 0,
+                        "price": null,
+                        "productId": "d0b33864-cd8c-44a9-8293-a72e72dc8888",
+                        "rating": null,
+                        "slug": "fawn"
+                    },
+                    {
+                        "id": 315,
+                        "design_type_id": 16,
+                        "title": "Frost",
+                        "thumbnail": "https://buildon.xdesign360.com/media/uploads/backsplash/1752181430thumb.jpg",
+                        "is_default": 0,
+                        "price": null,
+                        "productId": "866d14ff-fcf0-4cde-80fa-3788884b0d9a",
+                        "rating": null,
+                        "slug": "frost"
+                    },
+                    {
+                        "id": 310,
+                        "design_type_id": 16,
+                        "title": "Gray",
+                        "thumbnail": "https://buildon.xdesign360.com/media/uploads/backsplash/1752181208thumb.jpg",
+                        "is_default": 0,
+                        "price": null,
+                        "productId": "bc5ed975-40e6-4cc9-8fb0-699b64dac84f",
+                        "rating": null,
+                        "slug": "gray"
+                    },
+                    {
+                        "id": 309,
+                        "design_type_id": 16,
+                        "title": "Marble",
+                        "thumbnail": "https://buildon.xdesign360.com/media/uploads/backsplash/1752180711thumb.jpg",
+                        "is_default": 0,
+                        "price": null,
+                        "productId": "bfa7043a-65eb-4768-ae91-a974d2b0b1b4",
+                        "rating": null,
+                        "slug": "marble"
+                    },
+                    {
+                        "id": 319,
+                        "design_type_id": 16,
+                        "title": "Market",
+                        "thumbnail": "https://buildon.xdesign360.com/media/uploads/backsplash/1752181771thumb.jpg",
+                        "is_default": 0,
+                        "price": null,
+                        "productId": "58d32eb4-955d-40d5-acdc-d48aefc16883",
+                        "rating": null,
+                        "slug": "market"
+                    },
+                    {
+                        "id": 320,
+                        "design_type_id": 16,
+                        "title": "Market Blue",
+                        "thumbnail": "https://buildon.xdesign360.com/media/uploads/backsplash/1752184365thumb.jpg",
+                        "is_default": 0,
+                        "price": null,
+                        "productId": "09484c63-4fe5-4035-a82f-13ddf4c334ae",
+                        "rating": null,
+                        "slug": "market-blue"
+                    },
+                    {
+                        "id": 308,
+                        "design_type_id": 16,
+                        "title": "Mirror",
+                        "thumbnail": "https://buildon.xdesign360.com/media/uploads/backsplash/1752180655thumb.jpg",
+                        "is_default": 0,
+                        "price": null,
+                        "productId": "0e0d6730-946f-4053-84f3-ebf71dad3973",
+                        "rating": null,
+                        "slug": "mirror"
+                    },
+                    {
+                        "id": 312,
+                        "design_type_id": 16,
+                        "title": "Peacock Green",
+                        "thumbnail": "https://buildon.xdesign360.com/media/uploads/backsplash/1752181297thumb.jpg",
+                        "is_default": 0,
+                        "price": null,
+                        "productId": "e93d2e59-f9bd-4375-85f5-6c2a38307a3f",
+                        "rating": null,
+                        "slug": "peacock-green"
+                    }
+                ]
+            },
+            {
+                "id": 17,
+                "title": "Floor Tiles",
+                "thumbnail": "https://buildon.xdesign360.com/media/uploads/1752184649.png",
+                "priority": 3,
+                "dependency": null,
+                "slug": "floor-tiles",
+                "option_layers": [
+                    {
+                        "id": 324,
+                        "design_type_id": 17,
+                        "title": "00100 Cream",
+                        "thumbnail": "https://buildon.xdesign360.com/media/uploads/floor-tiles/1752184815thumb.jpg",
+                        "is_default": 0,
+                        "price": null,
+                        "productId": "bf76e7d6-4d69-4181-b748-5de94dee42ec",
+                        "rating": null,
+                        "slug": "00100-cream"
+                    },
+                    {
+                        "id": 325,
+                        "design_type_id": 17,
+                        "title": "00200 Latte",
+                        "thumbnail": "https://buildon.xdesign360.com/media/uploads/floor-tiles/1752184854thumb.jpg",
+                        "is_default": 0,
+                        "price": null,
+                        "productId": "d5b2cf01-6833-4b1e-a1cb-8ef6f24aa3f1",
+                        "rating": null,
+                        "slug": "00200-latte"
+                    },
+                    {
+                        "id": 323,
+                        "design_type_id": 17,
+                        "title": "00500 Surf",
+                        "thumbnail": "https://buildon.xdesign360.com/media/uploads/floor-tiles/1752184787thumb.jpg",
+                        "is_default": 1,
+                        "price": null,
+                        "productId": "60076cb4-3cfc-41df-9f54-7aef8a433753",
+                        "rating": null,
+                        "slug": "00500-surf"
+                    },
+                    {
+                        "id": 328,
+                        "design_type_id": 17,
+                        "title": "Alley",
+                        "thumbnail": "https://buildon.xdesign360.com/media/uploads/floor-tiles/1752184953thumb.jpg",
+                        "is_default": 0,
+                        "price": null,
+                        "productId": "e074818d-3349-4a6e-9591-d599a8c99570",
+                        "rating": null,
+                        "slug": "alley"
+                    },
+                    {
+                        "id": 327,
+                        "design_type_id": 17,
+                        "title": "Hall",
+                        "thumbnail": "https://buildon.xdesign360.com/media/uploads/floor-tiles/1752184918thumb.jpg",
+                        "is_default": 0,
+                        "price": null,
+                        "productId": "7b188a18-cfc5-44be-88f8-ec3c8bd982ca",
+                        "rating": null,
+                        "slug": "hall"
+                    },
+                    {
+                        "id": 326,
+                        "design_type_id": 17,
+                        "title": "Trail",
+                        "thumbnail": "https://buildon.xdesign360.com/media/uploads/floor-tiles/1752184883thumb.jpg",
+                        "is_default": 0,
+                        "price": null,
+                        "productId": "b1441c06-7c18-4053-a2dd-2b0c4bec7388",
+                        "rating": null,
+                        "slug": "trail"
+                    }
+                ]
+            },
+            {
+                "id": 18,
+                "title": "Refrigerator",
+                "thumbnail": "https://buildon.xdesign360.com/media/uploads/1752263182.png",
+                "priority": 2,
+                "dependency": null,
+                "slug": "refrigerator",
+                "option_layers": [
+                    {
+                        "id": 332,
+                        "design_type_id": 18,
+                        "title": "Black Stainless Refrigerator",
+                        "thumbnail": "https://buildon.xdesign360.com/media/uploads/refrigerator/1752262862thumb.jpg",
+                        "is_default": 0,
+                        "price": null,
+                        "productId": "cd79e53c-996a-4778-ba23-19737f641f8f",
+                        "rating": null,
+                        "slug": "black-stainless-refrigerator"
+                    },
+                    {
+                        "id": 331,
+                        "design_type_id": 18,
+                        "title": "Stainless Steel Refrigerator",
+                        "thumbnail": "https://buildon.xdesign360.com/media/uploads/refrigerator/1752262807thumb.jpg",
+                        "is_default": 1,
+                        "price": null,
+                        "productId": "f07b076f-00a4-41ef-97ab-3686f696687b",
+                        "rating": null,
+                        "slug": "stainless-steel-refrigerator"
+                    }
+                ]
+            },
+            {
+                "id": 19,
+                "title": "Electric Range",
+                "thumbnail": "https://buildon.xdesign360.com/media/uploads/1752263190.png",
+                "priority": 2,
+                "dependency": null,
+                "slug": "electric-range",
+                "option_layers": [
+                    {
+                        "id": 334,
+                        "design_type_id": 19,
+                        "title": "Bertazzoni White Finish",
+                        "thumbnail": "https://buildon.xdesign360.com/media/uploads/electric-range/1752263127thumb.jpg",
+                        "is_default": 0,
+                        "price": null,
+                        "productId": "18c3e6f9-d3ef-4949-a3b4-d860074a0127",
+                        "rating": null,
+                        "slug": "bertazzoni-white-finish"
+                    },
+                    {
+                        "id": 333,
+                        "design_type_id": 19,
+                        "title": "Kitchen Aid Black Stainless Finish",
+                        "thumbnail": "https://buildon.xdesign360.com/media/uploads/electric-range/1752263059thumb.jpg",
+                        "is_default": 1,
+                        "price": null,
+                        "productId": "2a9474ec-72b3-4c29-b573-f5626be288f9",
+                        "rating": null,
+                        "slug": "kitchen-aid-black-stainless-finish"
+                    }
+                ]
+            },
+            {
+                "id": 20,
+                "title": "Faucets",
+                "thumbnail": "https://buildon.xdesign360.com/media/uploads/1752530754.png",
+                "priority": 1,
+                "dependency": null,
+                "slug": "faucets",
+                "option_layers": [
+                    {
+                        "id": 339,
+                        "design_type_id": 20,
+                        "title": "Chrome",
+                        "thumbnail": "https://buildon.xdesign360.com/media/uploads/faucets/1752531006thumb.png",
+                        "is_default": 1,
+                        "price": null,
+                        "productId": "8f107332-b663-4e61-9207-50c8e2d390b3",
+                        "rating": null,
+                        "slug": "chrome"
+                    }
+                ]
+            }
+        ]
+    }
+}

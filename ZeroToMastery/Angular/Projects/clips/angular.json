@@ -29,6 +29,10 @@
               {
                 "glob": "**/*",
                 "input": "public"
+              }, {
+                "input": "node_modules/@ffmpeg/core/dist",
+                "output":"node_modules/@ffmpeg/core/dist",
+                "glob":"**/*"
               }
             ],
             "styles": [
@@ -70,7 +74,13 @@
               "buildTarget": "clips:build:development"
             }
           },
-          "defaultConfiguration": "development"
+          "defaultConfiguration": "development",
+          "options":{
+            "headers":{
+              "Cross-Origin-Opener-Policy":"same-origin",
+              "Cross-Origin-Embedder-Policy":"require-corp"
+            }
+          }
         },
         "extract-i18n": {
           "builder": "@angular/build:extract-i18n"

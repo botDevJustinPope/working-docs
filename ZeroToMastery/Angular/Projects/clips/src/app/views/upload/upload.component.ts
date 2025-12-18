@@ -5,6 +5,7 @@ import {
   inject,
   OnDestroy,
   effect,
+  computed,
 } from '@angular/core';
 import { EventBlockerDirective } from '../../shared/directives/event-blocker.directive';
 import { NgClass } from '@angular/common';
@@ -31,6 +32,7 @@ import { CircularProgress } from '../../models/animations/circular-progress/circ
 import { IButtonConfig } from '../../models/alerts/button-config.model';
 import { RoutesService } from '../../services/routes.service';
 import { RouteNames } from '../../app.routes';
+import { FfmpegService } from '../../services/ffmpeg.service';
 
 @Component({
   selector: 'app-upload',
@@ -57,6 +59,7 @@ export class UploadComponent implements OnDestroy {
 
   #routeService = inject(RoutesService);
   #auth = inject(AuthService);
+  #ffmpegService = inject(FfmpegService);
 
   /* 
   Firebase Upload Task
@@ -74,6 +77,10 @@ export class UploadComponent implements OnDestroy {
     title: ['', [Validators.required, Validators.minLength(3)]],
   });
 
+  isComponentLoading = computed(() => {
+    return this.#ffmpegService.isLoading();
+  });
+
   constructor() {
     // this effect will read off the inSubmission to disable/enable the form
     effect(() => {
@@ -83,6 +90,20 @@ export class UploadComponent implements OnDestroy {
         this.form.enable();
       }
     });
+
+    effect(() => {
+      if (this.isComponentLoading()) {
+        this.baseSetUploadTaskProgress(
+          true,
+          AlertType.Info,
+          'Loading compoennets, please wait...'
+        );
+      } else {
+        this.baseSetUploadTaskProgress(false);
+      }
+    });
+
+    this.#ffmpegService.init();
   }
 
   public ngOnDestroy() {
@@ -146,19 +167,19 @@ export class UploadComponent implements OnDestroy {
 
   uploadFile() {
     this.uploadTask = this.uploadsService.uploadfile(this.file() as AppFile);
-    const observableTask = fromTask(this.uploadTask);
+    const observableTask = fromTask(this.uploadTask as any);
 
     this.setUploadInProgress();
 
-    this.uploadSub = observableTask.subscribe({
-      next: (snapshot: UploadTaskSnapshot) => {
+    this.uploadSub = (observableTask as any).subscribe({
+      next: (snapshot: any) => {
         // set progress
         this.setUploadTaskProgressWithSnapshotandTask(
           snapshot,
-          this.uploadTask!
+          this.uploadTask as any
         );
       },
-      error: (error: StorageError) => {
+      error: (error: any) => {
         // set error
         this.setUploadError(error);
       },
@@ -169,7 +190,7 @@ export class UploadComponent implements OnDestroy {
           );
 
         const dataMessage: string = 'Finalizing data upload...';
-        this.setUploadTaskProgressWithRawPercentage(dataMessage, .95);
+        this.setUploadTaskProgressWithRawPercentage(dataMessage, 0.95);
 
         await UtilService.sleep(500);
 
@@ -187,7 +208,9 @@ export class UploadComponent implements OnDestroy {
         // await a second then set next step
         setTimeout(() => {
           this.resetPage();
-          this.#routeService.navigateToRoute(RouteNames.Clip, [{ id: clipDoc?.id }]);
+          this.#routeService.navigateToRoute(RouteNames.Clip, [
+            { id: clipDoc?.id },
+          ]);
         }, 2000);
       },
     });
@@ -240,10 +263,10 @@ export class UploadComponent implements OnDestroy {
     /*
     The file upload is only part of the upload. Subtracting 5% for the file so that the clip data upload to be apart of the percentage.
     */
-    let progress: number = task.bytesTransferred / task.totalBytes as number;
-    progress = progress * .9;
-    if (progress > .9) {
-      progress = .9;
+    let progress: number = (task.bytesTransferred / task.totalBytes) as number;
+    progress = progress * 0.9;
+    if (progress > 0.9) {
+      progress = 0.9;
     }
     let aType: AlertType = AlertType.Info;
     switch (task.state) {
@@ -297,9 +320,11 @@ export class UploadComponent implements OnDestroy {
     buttons: IButtonConfig[] | null = null
   ) {
     // if the alert is not visible, set it to a new alert
-    if (this.alertObj().enabled !== enabled || 
-        this.alertObj().type !== alertType ||
-        this.alertObj().message !== message) {
+    if (
+      this.alertObj().enabled !== enabled ||
+      this.alertObj().type !== alertType ||
+      this.alertObj().message !== message
+    ) {
       this.alertObj.set(new Alert(enabled, alertType, message));
     }
 
@@ -325,9 +350,7 @@ export class UploadComponent implements OnDestroy {
 
     if (buttons) {
       let updateButtons = false;
-      if (
-        this.alertButtons()?.length === buttons.length
-      ) {
+      if (this.alertButtons()?.length === buttons.length) {
         this.alertButtons()?.forEach((btn) => {
           buttons.forEach((newBtn) => {
             if (ButtonsHelper.buttonsAreEqual(btn, newBtn)) {

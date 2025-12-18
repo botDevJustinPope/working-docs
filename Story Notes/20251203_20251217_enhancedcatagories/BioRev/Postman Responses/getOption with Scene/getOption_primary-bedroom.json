@@ -1,0 +1,128 @@
+{
+    "status": true,
+    "data": {
+        "image": "https://buildon.xdesign360.com/media/uploads/base-1752525790.jpg",
+        "categorizedOptions": [
+            {
+                "id": 9,
+                "title": "Flooring",
+                "thumbnail": "https://buildon.xdesign360.com/media/uploads/1751732719.png",
+                "priority": 1,
+                "dependency": null,
+                "slug": "flooring",
+                "option_layers": [
+                    {
+                        "id": 337,
+                        "design_type_id": 9,
+                        "title": "938 Melody",
+                        "thumbnail": "https://buildon.xdesign360.com/media/uploads/flooring/1752502772thumb.jpg",
+                        "is_default": 0,
+                        "price": null,
+                        "productId": "3241ada9-fc65-44d4-b112-561476a0c8af",
+                        "rating": null,
+                        "slug": "938-melody"
+                    },
+                    {
+                        "id": 338,
+                        "design_type_id": 9,
+                        "title": "945 Scotch Mist",
+                        "thumbnail": "https://buildon.xdesign360.com/media/uploads/flooring/1752502829thumb.jpg",
+                        "is_default": 0,
+                        "price": null,
+                        "productId": "a7725d67-20e7-41e7-8f56-14d9f34f2e2a",
+                        "rating": null,
+                        "slug": "945-scotch-mist"
+                    },
+                    {
+                        "id": 270,
+                        "design_type_id": 9,
+                        "title": "Abalone",
+                        "thumbnail": "https://buildon.xdesign360.com/media/uploads/flooring/1752502493thumb.jpg",
+                        "is_default": 0,
+                        "price": null,
+                        "productId": "b1a9d749-c63a-4f9e-8b9c-5914da9b6e7f",
+                        "rating": null,
+                        "slug": "abalone"
+                    },
+                    {
+                        "id": 271,
+                        "design_type_id": 9,
+                        "title": "Bisonte Beige",
+                        "thumbnail": "https://buildon.xdesign360.com/media/uploads/flooring/1752502514thumb.jpg",
+                        "is_default": 1,
+                        "price": null,
+                        "productId": "eae657dc-8c45-4acc-9f56-c24cfe2eb4c8",
+                        "rating": null,
+                        "slug": "bisonte-beige"
+                    },
+                    {
+                        "id": 272,
+                        "design_type_id": 9,
+                        "title": "Cachemira",
+                        "thumbnail": "https://buildon.xdesign360.com/media/uploads/flooring/1752502552thumb.jpg",
+                        "is_default": 0,
+                        "price": null,
+                        "productId": "ed734719-3128-4908-9d14-466fc4b2ec35",
+                        "rating": null,
+                        "slug": "cachemira"
+                    },
+                    {
+                        "id": 336,
+                        "design_type_id": 9,
+                        "title": "Chrome",
+                        "thumbnail": "https://buildon.xdesign360.com/media/uploads/flooring/1752502712thumb.jpg",
+                        "is_default": 0,
+                        "price": null,
+                        "productId": "eed3e512-c4e6-49a7-a72b-96f79010647d",
+                        "rating": null,
+                        "slug": "chrome"
+                    },
+                    {
+                        "id": 335,
+                        "design_type_id": 9,
+                        "title": "Cookie Dough",
+                        "thumbnail": "https://buildon.xdesign360.com/media/uploads/flooring/1752502666thumb.jpg",
+                        "is_default": 0,
+                        "price": null,
+                        "productId": "8585724b-9936-43ac-89d6-7f673ecc5d50",
+                        "rating": null,
+                        "slug": "cookie-dough"
+                    },
+                    {
+                        "id": 273,
+                        "design_type_id": 9,
+                        "title": "Dogwood",
+                        "thumbnail": "https://buildon.xdesign360.com/media/uploads/flooring/1752502572thumb.jpg",
+                        "is_default": 0,
+                        "price": null,
+                        "productId": "b87ca763-af40-4609-a9d5-4d70e108766a",
+                        "rating": null,
+                        "slug": "dogwood"
+                    },
+                    {
+                        "id": 274,
+                        "design_type_id": 9,
+                        "title": "Metro Brown",
+                        "thumbnail": "https://buildon.xdesign360.com/media/uploads/flooring/1752502595thumb.jpg",
+                        "is_default": 0,
+                        "price": null,
+                        "productId": "e042035d-45b7-4050-8bff-cf106e5fcd60",
+                        "rating": null,
+                        "slug": "metro-brown"
+                    },
+                    {
+                        "id": 275,
+                        "design_type_id": 9,
+                        "title": "Morningside",
+                        "thumbnail": "https://buildon.xdesign360.com/media/uploads/flooring/1752502607thumb.jpg",
+                        "is_default": 0,
+                        "price": null,
+                        "productId": "fbcc0984-0874-4f5d-801d-3eeb7c361673",
+                        "rating": null,
+                        "slug": "morningside"
+                    }
+                ]
+            }
+        ]
+    }
+}

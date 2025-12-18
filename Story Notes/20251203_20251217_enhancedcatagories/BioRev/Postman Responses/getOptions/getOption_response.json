@@ -1,0 +1,27 @@
+{
+    "status": true,
+    "data": {
+        "visualizers": [
+            {
+                "title": "Kitchen",
+                "slug": "kitchen",
+                "baseImage": "https://buildon.xdesign360.com/media/uploads/base-1752527698.jpg"
+            },
+            {
+                "title": "Master Bathroom",
+                "slug": "master-bathroom",
+                "baseImage": "https://buildon.xdesign360.com/media/uploads/base-1756305719.jpg"
+            },
+            {
+                "title": "Primary Bathroom",
+                "slug": "primary-bathroom",
+                "baseImage": "https://buildon.xdesign360.com/media/uploads/base-1752526718.jpg"
+            },
+            {
+                "title": "Primary Bedroom",
+                "slug": "primary-bedroom",
+                "baseImage": "https://buildon.xdesign360.com/media/uploads/base-1752525790.jpg"
+            }
+        ]
+    }
+}

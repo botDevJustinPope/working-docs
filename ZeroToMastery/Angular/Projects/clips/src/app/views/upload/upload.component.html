@@ -5,9 +5,10 @@
     <app-alert [alertInput]="alertObj()" [alertPercentileInput]="alertPercentage()" [alertButtonsInput]="alertButtons()"></app-alert>
 
     <!-- Upload Dropbox -->
-    @if (!nextStep()) {
+    @if (!nextStep() || isComponentLoading()) {
     <div
       app-event-blocker
+      (disabled)="isComponentLoading()"
       (dragend)="isDragover.set(false)"
       (dragover)="isDragover.set(true)"
       (dragenter)="isDragover.set(true)"
