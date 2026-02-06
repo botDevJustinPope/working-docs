@@ -1,0 +1,80 @@
+postman: 
+
+1-createScene:
+body:
+{"visualizerSlug":"master-bathroom",
+    "layers":[
+                {"category":"cabinets","productId":"e53597de-bec5-4a52-b446-b3b7233785e3"}
+            ]
+}
+time: 984 ms 
+
+2-createScene:
+body:
+{"visualizerSlug":"master-bathroom",
+    "layers":[
+                {"category":"cabinets","productId":"8bae0077-6efa-4c08-bb07-1860a6c569d0"}
+            ]
+}
+time: 809 ms
+
+3-createScene:
+body:
+{"visualizerSlug":"master-bathroom",
+    "layers":[
+                {"category":"cabinets","productId":"8bae0077-6efa-4c08-bb07-1860a6c569d0"}, {"category":"countertops","productId":"d3708f7a-c8aa-4020-b0c5-f7423e005caf"}
+            ]
+}
+time: 1.18 seconds
+
+4-createScene:
+body:
+{"visualizerSlug":"master-bathroom",
+    "layers":[
+                {"category":"cabinets","productId":"8bae0077-6efa-4c08-bb07-1860a6c569d0"}, {"category":"countertops","productId":"beba38d2-351e-413e-b664-98f49f753187"}
+            ]
+}
+time: 850 ms
+
+5-createScene:
+body:
+{"visualizerSlug":"kitchen",
+    "layers":[
+                {"category":"cabinets","productId":"7fdfdff4-c67d-4bf4-a234-1d7db5669396"}
+            ]
+}
+time: 1.19 seconds 
+
+6-createScene:
+body:
+{"visualizerSlug":"kitchen",
+    "layers":[
+                {"category":"cabinets","productId":"7fdfdff4-c67d-4bf4-a234-1d7db5669396"}, {"category":"countertop","productId":"beba38d2-351e-413e-b664-98f49f753187"}
+            ]
+}
+time: 2.56 seconds 
+
+7-createScene:
+{"visualizerSlug":"kitchen",
+    "layers":[
+                {"category":"cabinets","productId":"7fdfdff4-c67d-4bf4-a234-1d7db5669396"}, {"category":"countertop","productId":"d3708f7a-c8aa-4020-b0c5-f7423e005caf"}
+            ]
+}
+time: 2.27 seconds 
+
+8-createScene:
+{"visualizerSlug":"kitchen",
+    "layers":[
+                {"category":"cabinets","productId":"7fdfdff4-c67d-4bf4-a234-1d7db5669396"}, {"category":"countertop","productId":"d3708f7a-c8aa-4020-b0c5-f7423e005caf"}, {"category":"electric-range","productId":"18c3e6f9-d3ef-4949-a3b4-d860074a0127"}
+            ]
+}
+time: 7.05 seconds 
+
+9-createScene:
+{"visualizerSlug":"kitchen",
+    "layers":[
+                {"category":"cabinets","productId":"7fdfdff4-c67d-4bf4-a234-1d7db5669396"}, {"category":"countertop","productId":"d3708f7a-c8aa-4020-b0c5-f7423e005caf"}, 
+                {"category":"electric-range","productId":"18c3e6f9-d3ef-4949-a3b4-d860074a0127"}, {"category":"refrigerator","productId":"f07b076f-00a4-41ef-97ab-3686f696687b"}
+            ]
+}
+time: 1.55 seconds
