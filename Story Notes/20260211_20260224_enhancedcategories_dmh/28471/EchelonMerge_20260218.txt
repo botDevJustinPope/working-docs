@@ -1,0 +1,197 @@
+servers:
+- DYNAMICS - user sa
+- HILSQL01 - user cindypieper
+- BLADE01 - user EchelonService
+- 10.112.150.7 - in [osp_fetchNextEDIPrereciptImage]
+- [BUILDER-SQL.WISENBAKER.COM] - user adraing
+
+Items that are not coming over:
+
+    Functions:
+- [GetRMDocDistributions]
+- [GetPMDocDistributions]
+- [of_IsClipboardUser]
+- [of_IsHomebaseUser]
+
+    Procs:
+- [osp_getImage_crp]
+- [whb_getNotificationUsersForEvent]
+- [osp_transmit_purchase_order]
+- [osp_selSalesOrderMaterialReconciliationByInstallDatesAutomation]
+- [osp_rptARPastDueAnalysis]
+- [osp_zDP_SY00800SI_Production]
+- [vs_selUsageStatistics_VEOSOLUTIONS_FOR_INSTALLER]
+- [osp_transmit_purchase_order]
+- [osp_selSalesOrderMaterialReconciliationByInstallDatesAutomation]
+- [osp_selPriceRelatedItemsFromApplicationAndItemNumber_20220113_adg]
+- [osp_selImagesHoles]
+- [osp_selPriceRelatedItemsFromApplicationAndItemNumber_adg]
+- [api_getEventLog]
+- [osp_getUserImageList]
+- [esp_selDynamicsVariableExpensesByWeek]
+- [osp_selBidRelatedItemsFromApplicationAndItemNumber_20161018]
+- [osp_del_plan_structural_options]
+- [osp_GenerateAHGCompanyInvoicesFile]
+- [osp_createDynJEAdditive_Production]
+- [osp_createCabinetCategories]
+- [osp_createCabinetCategories_wise]
+- [osp_createCabinetOptionValidationInclusionsExclusions]
+- [osp_fetchNextEDIPrereciptImage]
+- [osp_createEDIPreReceiveDetail2020]
+- [osp_createEDIPreReceiveDetail2020_byASN]
+- [osp_createEDIPreReceiveDetail2020_Reversed]
+- [osp_insInventoryForecast_crp]
+- [osp_insInventoryForecast_v2_20211102]
+- [api_selPurchaseOrdersByMaterial_crp]
+- [osp_insInventoryForecast_v2_crp]
+- [osp_createEDIPreReceiveDetail2020ByPONumber]
+- [api_selPricesDefaultLaborService]
+- [osp_fixDynamicsCurrencyError]
+- [osp_getDynNextJournalEntry_Production]
+- [osp_selCabinetValidOptionByItem]
+- [osp_rptARPastDueAnalysis]
+
+    Synonyms:
+- frontier_rush
+- Frontier_YP
+- Frontier_YOP
+- Frontier_YFP
+- Frontier_YEP
+- Frontier_OH
+- Frontier_OHP
+- Frontier_SS
+- Frontier_XOP
+- Frontier_PMPSTAT
+- Frontier_ECHDATES
+- Frontier_ORDLINK
+- Frontier_ORDSHIP
+- Frontier_PMP
+- Frontier_PIN
+- Frontier_PMPCOUNT
+- accounting_segment_description_master
+- accounting_historical_year_transactions
+- accounting_general_ledger_setup
+- accounting_general_ledger_work_header
+- accounting_batch_activity
+- accounting_general_ledger_work_detail
+- accounting_Record_Notes_Master
+- accounting_multicurrency
+- SY00800_Dynamics
+- accounting_companies_users
+- accounting_transaction_work_header
+- TAC_view_Payables_Apply_Detail
+- invoicing_account_category_master
+- invoicing_account_category_master
+- global_product_vendors
+- global_product_styles
+- global__product_stocking_codes
+- global_product_iv00103
+- global_product_colors
+- whb_users
+- [dbo].[image_holes_table]
+
+  Views:
+- ATP_STK_IN
+- ATP_STK_OUT
+- CFM10302
+- CFM20101
+- CFM20102
+- BankTransactions
+- CFM10000
+- CFM20000
+- FieldServiceCalls
+- FixedAssets
+- Employees
+- EmployeeSummary
+- FixedAssetsAdditions
+- FixedAssetsBooks
+- FixedAssetsDepreciation
+- FixedAssetsPurchase
+- FixedAssetsRetirements
+- IV00702V
+- IV00701V
+- IV00700V
+- [homebaseRecipients]
+- [SalesSerialLot]
+- [SRptAllJanuary05]
+- [RTVs]
+- [RTVSerialLot_Work]
+- RTVLines
+- [Prospects]
+- PayrollCheckAndDistributionHistory
+- [PayablesApply_Open]
+- [HoustonSRptJan05]
+- [HistoryRTVs]
+- [HistoryRTVLines]
+- [GL50101]
+- [CM20301]
+- CM00500
+- [PayrollTransactions]
+- [PayrollHistoricalTrx]
+- [PayablesTransactions]
+- MultidimensionalAnalysis
+- LandedCostID
+- [LandedCostGroupID]
+- [Items]
+- ItemQuantities
+- InventoryTransactions
+- InventorySalesSummaryPeriod_History
+- InventoryPurchaseReceipts
+- [CPO10114]
+- [CPO10113]
+- [CFM30300]
+- [CFM30200]
+- [WorkOrders]
+- [RMAs]
+- [RMALines]
+- [ov_BrandomParts]
+- [FixedAssets]
+- [view_eve_users]
+- [FieldServiceCalls]
+- [homebase_customers]
+- [qryADGImageExport]
+- PMV0100
+- [qryBlindUpdate]
+- [Vendors_view]
+- [WIPCOMBINED]
+- VendorItems
+- [WIPGREATPLAINS]
+- [SalesTransactions]
+- [SalesLineItems]
+- [ReceivingsTransactions]
+- ReceivingsLineItems
+- ReceivablesApply_Open
+- PurchaseOrderStatus
+- [RMV0100]
+- [ds_tables_views]
+
+Items that are different:
+
+    Functions:
+- tvf_selFirstLastAppointmentDate
+changed utilization of [epp-cy1-SQL-01.eplanpartners.com].VEOSOLUTIONS => VeoSolutions_Staging
+- esp_selCabinetForecastFromVDSSelections
+changed utilization of vds.VEOSOLUTIONS => VeoSolutions_Staging
+                       vds.VEoSolutionsSecurity => VeoSolutionsSecurity_Staging
+
+    Procedure
+- esp_forecast_daily
+changed utilization of vds.VEOSOLUTIONS => VeoSolutions_Staging
+- esp_createVEOEchelonLinkedAddresses
+changed utilization of vds.veosolutions => VeoSolutions_Staging
+                       vds.veosolutionssecurity => VeoSolutionsSecurity_Staging
+- [osp_selSalesBacklog]
+changed utilization of vds.veosolutions => VeoSolutions_Staging
+                       vds.veoinvoicing => VeoInvoicing
+                       vds.veo => Veo_Staging
+    Synonym:
+- [veosolutions_catalog_slections_area_details]
+vds.veolsolutions => [VeoSolutions_Staging]
+- [Veosolutions_customer_master]
+vds.veoinvoicing => VeoInvoicing
+- [VeoSolutions_catalog_selections_bom_modifications]
+addressimport.veosolutions => VeoSolutions_Staging
+- [VeoSolutions_catalog_selections_area_bom_modifications]
+addressimport.veosolutions => VeoSolutions_Staging
+- [veosolutions_catalog_selections_area_details]
+addressimport.veosolutions => VeoSolutions_Staging

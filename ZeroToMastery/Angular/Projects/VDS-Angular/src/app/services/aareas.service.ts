@@ -61,7 +61,13 @@ export class AareasService extends BaseService {
     sceneId: number,
     room: string,
     applications: Array<AareasSurfaceProductPairDTO> = [],
-    packages: Array<string> | null = null
+    packages: Array<string> | null = null,
+    size: number = 2560,
+    user: string|null = null,
+    client: string = 'BuildOn',
+    builder: string = 'Angular-Test-Project',
+    project: string = 'demo',
+    unit: string = '1234 Home Sweet Home'
   ) : Promise<AareasGetSceneRenderReturnDTO> {
     let parms: { [key: string]: any } = {};
     parms['sceneId'] = sceneId;
