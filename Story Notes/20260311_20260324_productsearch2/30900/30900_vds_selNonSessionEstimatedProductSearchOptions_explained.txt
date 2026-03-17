@@ -1,0 +1,236 @@
+Story 30900
+Procedure explanation: dbo.vds_selNonSessionEstimatedProductSearchOptions
+
+Purpose
+This stored procedure returns estimated product-search results for a non-session scenario.
+The output shape is meant to align with the session-based product-search proc so the
+application can consume a consistent result set:
+
+- source_type
+- name
+- application
+- product
+- area
+- sub_area
+- price
+- price_level
+- part_no
+- item_no
+- gpc_id
+- build_id
+
+
+What problem it solves
+Before this proc, the non-session estimated search path was effectively stitched together
+from several older Yukon-era routines plus application-side orchestration:
+
+1. Resolve the builder/external organization, community, series, and plan names.
+2. Find the active spec.
+3. Find the correct prices_landed effective date.
+4. Find the correct plan_id.
+5. Call logic to determine the max/default build per application/product/area/sub-area/location.
+6. Call logic to get estimated price levels.
+7. Resolve each returned price level into the actual selectable parts/colors.
+8. Apply builder overrides and final search filtering.
+
+The older approach spread that work across routines such as:
+
+- vds_selAllEstimatedOptionPricingItemsForNonSession_Yukon
+- vds_optionPricingMaxMinBuilds
+- vds_selGroupLevelParts_Yukon
+
+It also depended on application-side orchestration in
+BuildOnTechnologies.VDS.Legacy.Dal\Services\OptionPricingService.cs.
+In `GetEstimatedGroupsForNonSessionAsync`, the legacy path first called:
+
+- vds_selAccountOrganizationMatchingSpecCommunities
+- vds_selAccountOrganizationMatchingSpecSeries
+- vds_selUnmappedAccountOrganizationPlans
+
+Those three result sets were then handed into
+`GetEstimatedOptionPricingItemsForNonSessionAsync`, where the service looped in priority
+order through:
+
+- each matching community
+- each matching series
+- each unmapped plan
+
+and repeatedly called into the repository until one community/series/plan combination
+returned rows. In other words, the legacy non-session path used both multiple stored
+procedure calls up front and nested application loops afterward to arrive at the same
+candidate spec/plan combination that this new proc now resolves inline.
+
+That made the flow harder to follow, more chatty, and more procedural than necessary.
+
+
+How the new proc condenses the flow
+The new procedure compresses the above into one set-based pipeline.
+
+Phase 1 - resolve builder and candidate names
+The proc first resolves the builder's external organization id from
+VeoSolutionsSecurity_organizations / VeoSolutionsSecurity_account_organizations.
+
+Then it builds candidate values for:
+
+- community
+- series
+- plan
+
+using the VeoSolutionsSecurity account-organization tables plus the mapping tables.
+This preserves the existing behavior where both the builder-facing VDS name and the mapped
+Wisenbaker/Echelon name can be considered valid matches.
+
+This is the same matching concept used by:
+
+- vds_selAccountOrganizationMatchingSpecCommunities
+- vds_selAccountOrganizationMatchingSpecSeries
+- vds_selUnmappedAccountOrganizationPlans
+
+but instead of returning three separate result sets back to the application and then having
+`OptionPricingService` iterate over the combinations, the new proc materializes those
+candidate name sets as CTEs and keeps the resolution inside SQL.
+
+
+Phase 2 - resolve spec, effective date, and plan
+Once candidate names are known, the proc joins through Veo-side spec/plan metadata first:
+
+- Veo_spec_communities
+- Veo_spec_series
+- Veo_plan_mstr
+- Veo_spec_mstr
+- Veo_communities
+
+That narrows the search down to the relevant spec/plan combinations for the builder.
+
+Then it joins to the WBS synonyms to determine the exact:
+
+- active spec_id
+- prices_landed effective_date
+- plan_id
+
+This replaces the older pattern where those were found in separate steps and separate
+procedures.
+
+
+Phase 3 - replace max/min build cursor logic with a windowed set
+The old vds_optionPricingMaxMinBuilds proc uses a cursor to walk plan/build combinations
+and determine the representative build.
+
+This new proc folds that behavior into CTEs:
+
+- build_candidates
+- max_builds
+
+using a window function / ranking approach.
+
+For cabinets, the standard build is given priority when required.
+For other cases, the highest field quantity wins.
+
+This is a major simplification because the build-selection logic now lives inline with the
+rest of the price-level query instead of being a separate execution step.
+
+
+Phase 4 - produce the estimated price levels directly
+The price_levels CTE replaces the older
+vds_selAllEstimatedOptionPricingItemsForNonSession_Yukon-style intermediate result set.
+
+It joins:
+
+- wbs_prices_landed
+- wbs_plan_builds
+- wbs_plan_mstr
+- wbs_areas
+- wbs_sub_areas
+- wbs_applications
+- wbs_products
+- wbs_spec_areas_items
+- wbs_areas_sub_areas
+- wbs_builder_styles
+
+This produces the estimated price-level rows already decorated with:
+
+- application name
+- product name
+- area/sub-area names
+- builder style display name override when applicable
+- correct price for the chosen build and effective date
+
+
+Phase 5 - resolve price levels down to actual parts
+The most complicated part of the old flow was taking a price-level item and turning it into
+the actual part/color records that should appear in search results.
+
+The new proc does this inline in the resolved_colors CTE using four paths:
+
+1. group -> styles_groups_detail(style) -> styles -> colors
+2. group -> styles_groups_detail(color) -> colors
+3. style -> colors
+4. color -> direct part_no
+
+This is essentially the same conceptual resolution that used to be split across the Yukon
+group-level part logic, but now it is performed set-wise for the entire result set.
+
+That means the proc resolves all candidate parts in one pass instead of repeatedly jumping
+out to additional procedure calls.
+
+
+Phase 6 - builder override and final search filter
+After the parts are resolved, the proc:
+
+- applies color private-label overrides from veo_colors_customer_overrides when enabled
+- filters to homebuyer-selectable parts via Veo_stocking_codes
+- filters by search term against part name and part number
+
+The final output is already in the exact shape needed by the caller.
+
+
+Why this is simpler than the old way
+The simplification is not that the underlying business rules disappeared.
+The simplification is that they now live in one query pipeline instead of being spread
+across multiple stored procedures and multiple procedural hops.
+
+More specifically:
+
+- spec resolution is inline
+- prices_landed effective-date resolution is inline
+- plan_id resolution is inline
+- max/default build selection is inline
+- estimated price-level retrieval is inline
+- group/style/color part resolution is inline
+
+So instead of:
+
+- call a proc to determine builds
+- call another proc to get estimated price levels
+- call another proc to resolve group-level parts
+- stitch together results in application logic
+
+we now do:
+
+- one call
+- one set-based query pipeline
+- one final result set
+
+
+Practical benefit
+This reduces complexity in three ways:
+
+1. Fewer moving pieces
+   The non-session estimated search path is easier to reason about because the full flow is
+   visible in one stored procedure.
+
+2. Less procedural / N+1 behavior
+    The windowed and CTE-based approach avoids repeated procedural round-trips and folds
+    multiple sub-steps into one execution. That includes collapsing the legacy
+    community/series/plan nested looping in `OptionPricingService` into one set-based
+    name-resolution phase.
+
+3. Easier deployment and debugging
+   When investigating pricing or part-resolution issues, there is now a single main proc to
+   inspect rather than several interdependent Yukon helpers.
+
+
+Important note
+This new proc does not eliminate the business rules from the old solution.
+It preserves them, but expresses them in a consolidated, set-based form that is much easier
+to deploy, reason about, and maintain.
