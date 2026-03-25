@@ -1,0 +1,9 @@
+Testing Refresh Session:
+
+Scenario 1 - 
+Organization: STAGGERED-QA
+CatalogSource: VCMS
+Refresh Session Mode: Default (adds only)
+Session ID: db4eb53e-7662-4937-9ac3-0c0b2b0146d8
+
+
