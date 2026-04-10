@@ -1,0 +1,14 @@
+
+Questions to Confirm with Jim / Echelon
+
+What is the exact price_type string returned for flat rate? ("flat_rate", "flat", other?)
+the type on the line will be "area", it looks like we already do this, so need to figure out how to test jims scenarios
+
+Does flat rate apply to the bom line itself (non-options path), the options path, or both?
+
+
+What does @bypass_flat_fee_exclusion control — is it a VDS concept or an Echelon concept?
+If the field line is a bypass, charge it normally
+
+Should the price floor guard (AdjustBomLinePricing in PriceBuild) still apply to flat rate items?
+Keep the original price, the floor guard does not apply here

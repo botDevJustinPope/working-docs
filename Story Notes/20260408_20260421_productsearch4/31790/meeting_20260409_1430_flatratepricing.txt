@@ -1,0 +1,888 @@
+
+Justin Pope started transcription
+JW
+
+Jim Warnement
+0 minutes 3 seconds0:03
+Jim Warnement 0 minutes 3 seconds
+It's fine. So in doing so and trying to figure out, you know, what is it that I need to give VDS development to help them understand what I'm what I'm expecting and everything. Rob sent out a list of questions or a list of items.
+Jim Warnement 0 minutes 19 seconds
+And I started looking at that and Cindy, I sent it to you the other day and I'm like, I don't know what half this stuff is, to be honest with you, because it's.
+Jim Warnement 0 minutes 30 seconds
+Regarding tables that I don't really ever see or anything like that. So that's where Cindy, I wanted you to come in on the echelon side to see you know what are we expecting and what what should we expect so.
+Jim Warnement 0 minutes 45 seconds
+And some of this honestly, I mean we were talking specifically about door hardware, but there's other aspects of the bomb where we do flat rate pricing even today, but because they have in the bomb line item.
+Jim Warnement 1 minute 2 seconds
+Ignore price, price, no ex leg. It doesn't hit all that type of stuff, so but door hardware is not one in the WBS stack that actually has that, so it actually hits the bomb.
+Jim Warnement 1 minute 21 seconds
+When producing the pricing for Cindy and her team and stuff like that, so we can go through this list of items that.
+Jim Warnement 1 minute 33 seconds
+Rob sent. I can share my screen so everyone can see it and start trying to have everyone understand what we need to do. So with that.
+Jim Warnement 1 minute 48 seconds
+Let me share my screen.
+Jim Warnement 1 minute 58 seconds
+Y'all can see my screen.
+1:59
+1 minute 59 seconds
+Yes.
+
+CP
+Cindy Pieper
+4 minutes 2 seconds4:02
+Cindy Pieper 4 minutes 2 seconds
+$125 and that's also an area price. Well, generally or prior to this change inside of echelon, once it hit an area price, it would roll out a pricing and say we're not pricing anything else because the entire material line is.
+Cindy Pieper 4 minutes 18 seconds
+The total of the price is that one material line, that one area material line. So if that was $450 then it would it would pull out a pricing and say I'm not pricing anything else because the area price is $450 for material only it it still prices labor, it's just for material.
+Cindy Pieper 4 minutes 37 seconds
+What the new bypass flat fee exclusion means is is that if if they check the box bypass flat fee exclusion for hardware and it gets that area price for the field line for the cabinets.
+Cindy Pieper 4 minutes 52 seconds
+It's going to price that, then it's going to continue to price everything after that. If the price is not a bypass flat fee exclusion, mean bypass flat fee is 0, it's going to 0 out all those prices as it goes. If it comes back and it's a bypass flat fee, then it's either it's going to charge either that flat rate.
+Cindy Pieper 5 minutes 12 seconds
+Rice for the area also or it will it will calculate it based on the square footage and the unit price OK.
+Cindy Pieper 5 minutes 23 seconds
+So basically all it means is is that if the if the field line is an area price and any other line item is marked as bypass flat fee, it will also charge that line item as well whether it be unit or area.
+
+Justin Pope
+5 minutes 43 seconds5:43
+Justin Pope 5 minutes 43 seconds
+Let me make sure I understood you. If a line item has the bypass, price it normally not zero it out.
+CP
+Cindy Pieper
+5 minutes 54 seconds5:54
+Cindy Pieper 5 minutes 54 seconds
+Correct.
+Cindy Pieper 5 minutes 57 seconds
+Which we normally zeroed out whenever there's flat rate pricing in the field line or or area pricing in the field line.
+
+Justin Pope
+6 minutes 5 seconds6:05
+Justin Pope 6 minutes 5 seconds
+OK, so when?
+Justin Pope 6 minutes 9 seconds
+If the bottom line is of an area type, right now we are setting quantity to one and then pricing it. Is that correct for every line item?
+CP
+Cindy Pieper
+6 minutes 16 seconds6:16
+Cindy Pieper 6 minutes 16 seconds
+Right.
+Cindy Pieper 6 minutes 20 seconds
+Yes.
+
+Justin Pope
+6 minutes 21 seconds6:21
+Justin Pope 6 minutes 21 seconds
+Explain to me what you meant by if the field line is area price, all other line items are zeroed out unless they're bypass.
+CP
+Cindy Pieper
+6 minutes 34 seconds6:34
+Cindy Pieper 6 minutes 34 seconds
+Um.
+Cindy Pieper 6 minutes 38 seconds
+And.
+Cindy Pieper 6 minutes 40 seconds
+Let me pull up the code real quick. Let me double check that.
+Cindy Pieper 7 minutes 37 seconds
+OK, so...
+Cindy Pieper 7 minutes 41 seconds
+We get into this material labor extended.
+Cindy Pieper 8 minutes 17 seconds
+Great.
+Cindy Pieper 8 minutes 26 seconds
+Jim, are you aware? I I can't. I don't believe that. I think it does have to be a field line.
+JW
+Jim Warnement
+8 minutes 34 seconds8:34
+Jim Warnement 8 minutes 34 seconds
+Or what?
+CP
+Cindy Pieper
+8 minutes 35 seconds8:35
+Cindy Pieper 8 minutes 35 seconds
+For it to be zeroed out, everything else zeroed out.
+JW
+Jim Warnement
+8 minutes 44 seconds8:44
+Jim Warnement 8 minutes 44 seconds
+And.
+Jim Warnement 8 minutes 46 seconds
+Don't know because we really don't flat rate, especially on the material side, anything other than the field line. Now labor, I know you do underlayments.
+CP
+Cindy Pieper
+8 minutes 59 seconds8:59
+Cindy Pieper 8 minutes 59 seconds
+In labor you can have area and unit pricing. It doesn't. It doesn't care, but I can't remember.
+JW
+Jim Warnement
+9 minutes 11 seconds9:11
+Jim Warnement 9 minutes 11 seconds
+It would make sense it had to be on the field line.
+CP
+Cindy Pieper
+9 minutes 34 seconds9:34
+Cindy Pieper 9 minutes 34 seconds
+Yeah. OK. So it goes into extended pricing. It looks for area pricing in the field line first. It's the first thing it does.
+Cindy Pieper 9 minutes 44 seconds
+Uh, select same equal area.
+Cindy Pieper 10 minutes 1 second
+I said he is not known.
+Cindy Pieper 10 minutes 2 seconds
+No, it doesn't look per field. Sorry.
+Cindy Pieper 10 minutes 8 seconds
+Step in.
+Cindy Pieper 10 minutes 24 seconds
+Not equal 0 is not equal feel the first name not equal area.
+Cindy Pieper 11 minutes 4 seconds
+OK.
+Cindy Pieper 11 minutes 17 seconds
+Basically, Justin, if um.
+Cindy Pieper 11 minutes 21 seconds
+If the price type comes back in its area.
+Cindy Pieper 11 minutes 27 seconds
+It's going to 0 everything else out.
+
+Justin Pope
+11 minutes 36 seconds11:36
+Justin Pope 11 minutes 36 seconds
+Not to be pedantic, but I thought we just said it was gonna set the quantity to 1.
+CP
+Cindy Pieper
+11 minutes 41 seconds11:41
+Cindy Pieper 11 minutes 41 seconds
+Well, you can set OK area. I mean zero is everything else out, everything else out, not the area price, the line where the area pricing turns to one all the other lines. Currently all the other lines go to 0.
+11:49
+11 minutes 49 seconds
+It's.
+JW
+Jim Warnement
+11 minutes 50 seconds11:50
+Jim Warnement 11 minutes 50 seconds
+So all the.
+
+Justin Pope
+11 minutes 59 seconds11:59
+Justin Pope 11 minutes 59 seconds
+OK. So the price all that is, do we expect to receive that from the select item price procedure?
+CP
+Cindy Pieper
+12 minutes 10 seconds12:10
+Cindy Pieper 12 minutes 10 seconds
+No, it happens after it comes back.
+
+Justin Pope
+12 minutes 11 seconds12:11
+Justin Pope 12 minutes 11 seconds
+No, so.
+Justin Pope 12 minutes 15 seconds
+OK, so when we get it.
+CP
+Cindy Pieper
+12 minutes 17 seconds12:17
+Cindy Pieper 12 minutes 17 seconds
+Currently that's handled in code.
+
+Justin Pope
+12 minutes 22 seconds12:22
+Justin Pope 12 minutes 22 seconds
+So when we get the item back, if it's area priced or the price type is area, we need to zero everything else out.
+CP
+Cindy Pieper
+12 minutes 34 seconds12:34
+Cindy Pieper 12 minutes 34 seconds
+That is the way it currently works. That is that. Moving forward, we need to price all the lines out and we only zero out other lines if they're not bypass fee exclusion.
+
+Justin Pope
+12 minutes 53 seconds12:53
+Justin Pope 12 minutes 53 seconds
+Going forward, we need to price them out normally unless they're marked as bypassed or the reverse.
+JW
+Jim Warnement
+12 minutes 54 seconds12:54
+Jim Warnement 12 minutes 54 seconds
+OK.
+CP
+Cindy Pieper
+13 minutes 7 seconds13:07
+Cindy Pieper 13 minutes 7 seconds
+Going forward we would price all the lines and we would zero out only the lines that are not bypass flat fee exclusion. Field will will field will the the area price will still remain the same.
+
+Justin Pope
+13 minutes 17 seconds13:17
+Justin Pope 13 minutes 17 seconds
+OK.
+Justin Pope 13 minutes 22 seconds
+Mhm.
+CP
+Cindy Pieper
+13 minutes 23 seconds13:23
+Cindy Pieper 13 minutes 23 seconds
+For the field line and then any other lines that are bypassed would stay priced, meaning it could be a unit price or an area price that is going to be charged in addition.
+CP
+Cindy Pieper
+16 minutes 10 seconds16:10
+Cindy Pieper 16 minutes 10 seconds
+If we need to know which quantities we're modifying, I would have to get Adrian or Jenna in this call. Neither one of them were available at this time today, so I didn't put them in here, but if we need to know whether or not they're zeroing out the price.
+Cindy Pieper 16 minutes 26 seconds
+Or the quantity. We can ask them which one they're doing because they're the ones that wrote it.
+
+Justin Pope
+16 minutes 31 seconds16:31
+Justin Pope 16 minutes 31 seconds
+Well, effectively.
+Justin Pope 16 minutes 34 seconds
+We need a 0 price on the line, so zeroing out either one should effectively do the same so.
+CP
+Cindy Pieper
+16 minutes 37 seconds16:37
+Cindy Pieper 16 minutes 37 seconds
+Mhm.
+Cindy Pieper 16 minutes 39 seconds
+Yep, yep.
+
+Justin Pope
+16 minutes 43 seconds16:43
+Justin Pope 16 minutes 43 seconds
+Is that OK with you, Jim, or Jim, do you want it to look a particular way?
+JW
+Jim Warnement
+16 minutes 50 seconds16:50
+Jim Warnement 16 minutes 50 seconds
+No, it's fine. I just want it to work. So whatever makes it work.
+
+Justin Pope
+16 minutes 52 seconds16:52
+Justin Pope 16 minutes 52 seconds
+OK, great.
+CP
+Cindy Pieper
+16 minutes 54 seconds16:54
+Cindy Pieper 16 minutes 54 seconds
+The only reason it would matter, Justin, is if you need to be able to keep those quantities for something that if you have to reselect later, right? So I think in.
+
+Justin Pope
+17 minutes 4 seconds17:04
+Justin Pope 17 minutes 4 seconds
+OK.
+Justin Pope 17 minutes 6 seconds
+Well, if we reselect as long as the item doesn't come back as like we're we're taking.
+CP
+Cindy Pieper
+17 minutes 17 seconds17:17
+Cindy Pieper 17 minutes 17 seconds
+It could come back as a different price type and then you would need the quantity.
+
+Justin Pope
+17 minutes 21 seconds17:21
+Justin Pope 17 minutes 21 seconds
+Right. So I like I'm seeing, I'm seeing some pricing that we're already doing for flat rate and I'm just seeing the like the price zeroing out. So I feel like that would be better.
+CP
+Cindy Pieper
+17 minutes 33 seconds17:33
+Cindy Pieper 17 minutes 33 seconds
+Yeah, that makes sense. So that's probably so you keep the quantity if you need it later.
+
+Justin Pope
+17 minutes 37 seconds17:37
+Justin Pope 17 minutes 37 seconds
+Right, right. So I'm I would probably choose to do that, Jim, just let you know.
+CP
+Cindy Pieper
+17 minutes 44 seconds17:44
+Cindy Pieper 17 minutes 44 seconds
+Yeah. In in Echelon, we keep track of what the original allocation and billable quantities were so that we can roll things back. But I I don't think y'all have that.
+
+Justin Pope
+17 minutes 55 seconds17:55
+Justin Pope 17 minutes 55 seconds
+I'm just looking at or it looks like we do have allocation quantity, but like for pricing we just care about the billable quantity.
+CP
+Cindy Pieper
+18 minutes 3 seconds18:03
+Cindy Pieper 18 minutes 3 seconds
+Y'all y'all carry allocation for us, I think.
+JW
+Jim Warnement
+18 minutes 4 seconds18:04
+Jim Warnement 18 minutes 4 seconds
+Correct. Billable on credits, yeah.
+
+Justin Pope
+18 minutes 4 seconds18:04
+Justin Pope 18 minutes 4 seconds
+Um.
+Justin Pope 18 minutes 7 seconds
+Well.
+Justin Pope 18 minutes 9 seconds
+Yeah. Does credit quantity come into play at all with this or no?
+CP
+Cindy Pieper
+18 minutes 18 seconds18:18
+Cindy Pieper 18 minutes 18 seconds
+Um, I don't know.
+
+Justin Pope
+18 minutes 20 seconds18:20
+Justin Pope 18 minutes 20 seconds
+You don't know, OK.
+Justin Pope 18 minutes 24 seconds
+Do we need to set up another meeting with Jenna and Adrian?
+CP
+Cindy Pieper
+18 minutes 26 seconds18:26
+Cindy Pieper 18 minutes 26 seconds
+Rinted quantity.
+JW
+Jim Warnement
+18 minutes 32 seconds18:32
+Jim Warnement 18 minutes 32 seconds
+I mean all your all your quantities. I know when you do a flat rate becomes one. I think it's also on the credits because that is a flat rate of credit too at the same time.
+Jim Warnement 18 minutes 44 seconds
+So I think the only things that don't in the system become one is the allocate.
+Jim Warnement 18 minutes 57 seconds
+If there is a credit, not nonzero credit, let's put it that one, but I can't guarantee.
+
+Justin Pope
+19 minutes 1 second19:01
+Justin Pope 19 minutes 1 second
+Correct me if I'm correcting me if I'm wrong, but those quantities come off the.
+JW
+Jim Warnement
+19 minutes 5 seconds19:05
+Jim Warnement 19 minutes 5 seconds
+So.
+
+Justin Pope
+19 minutes 10 seconds19:10
+Justin Pope 19 minutes 10 seconds
+Build bond lines, right?
+JW
+Jim Warnement
+19 minutes 11 seconds19:11
+Jim Warnement 19 minutes 11 seconds
+Correct, yes.
+CP
+Cindy Pieper
+19 minutes 13 seconds19:13
+Cindy Pieper 19 minutes 13 seconds
+Mhm.
+
+Justin Pope
+19 minutes 14 seconds19:14
+Justin Pope 19 minutes 14 seconds
+So the price that comes in is for the item. So we're just gonna run with those quantities that are coming off the build and just affect the price depending on whether it's flat rate or bypass or area.
+Justin Pope 19 minutes 30 seconds
+Area pricing or bypassing it or some other kind of pricing?
+Justin Pope 19 minutes 37 seconds
+Right.
+JW
+Jim Warnement
+19 minutes 41 seconds19:41
+Jim Warnement 19 minutes 41 seconds
+Yes, I would say so.
+
+Justin Pope
+19 minutes 47 seconds19:47
+Justin Pope 19 minutes 47 seconds
+OK.
+JW
+Jim Warnement
+19 minutes 58 seconds19:58
+Jim Warnement 19 minutes 58 seconds
+So does that take care of our?
+
+Justin Pope
+20 minutes 4 seconds20:04
+Justin Pope 20 minutes 4 seconds
+Let's see.
+Justin Pope 20 minutes 6 seconds
+I understand the bypass flag, so yes.
+Justin Pope 20 minutes 16 seconds
+I guess the floor guard, I don't know. Do you understand what the floor guard is, Jen?
+CP
+Cindy Pieper
+20 minutes 21 seconds20:21
+Cindy Pieper 20 minutes 21 seconds
+It says never let reprice bomb go below original price level price.
+JW
+Jim Warnement
+20 minutes 22 seconds20:22
+Jim Warnement 20 minutes 22 seconds
+I mean.
+
+CP
+Cindy Pieper
+26 minutes 15 seconds26:15
+Cindy Pieper 26 minutes 15 seconds
+Because we don't have a flat rate price for the individual cabinets.
+JW
+Jim Warnement
+26 minutes 17 seconds26:17
+Jim Warnement 26 minutes 17 seconds
+Because.
+Jim Warnement 26 minutes 18 seconds
+Because our actual flat rate price for the individual cabinet, which is cabinet color here, tells us it's area and it's an extended. So this is where I had no clue where this part is coming from.
+CP
+Cindy Pieper
+26 minutes 23 seconds26:23
+Cindy Pieper 26 minutes 23 seconds
+It is area.
+Cindy Pieper 26 minutes 28 seconds
+I bet y'all are setting the rest of them to flat rate when you're when you're setting them to 0.
+Cindy Pieper 26 minutes 35 seconds
+Because flowery does not come back from us. We do not return that that those words.
+
+Justin Pope
+26 minutes 40 seconds26:40
+Justin Pope 26 minutes 40 seconds
+OK, I'll take a look into it.
+CP
+Cindy Pieper
+26 minutes 43 seconds26:43
+Cindy Pieper 26 minutes 43 seconds
+It kind of looks like y'all might change the all the other lines to flat rate because the one line is area.
+JW
+Jim Warnement
+26 minutes 44 seconds26:44
+Jim Warnement 26 minutes 44 seconds
+OK.
+CP
+Cindy Pieper
+26 minutes 52 seconds26:52
+Cindy Pieper 26 minutes 52 seconds
+Because it didn't the field line say area?
+JW
+Jim Warnement
+26 minutes 56 seconds26:56
+Jim Warnement 26 minutes 56 seconds
+Yeah, the field line says area and this door hardware, which I this is got all screwed up. But once I did this, once I actually chose one of my hardwares, it screwed it up and went to a global price for some reason. That was one of the things we couldn't figure out.
+26:57
+26 minutes 57 seconds
+Yeah.
+JW
+Jim Warnement
+27 minutes 13 seconds27:13
+Jim Warnement 27 minutes 13 seconds
+Um.
+Jim Warnement 27 minutes 15 seconds
+But when I first before I even selected hardware.
+CP
+Cindy Pieper
+27 minutes 19 seconds27:19
+Cindy Pieper 27 minutes 19 seconds
+Global's customer pricing.
+JW
+Jim Warnement
+27 minutes 22 seconds27:22
+Jim Warnement 27 minutes 22 seconds
+Yeah, which it doesn't exist there. So. But when I first, let's do this when I first.
+Jim Warnement 27 minutes 30 seconds
+Just made a selection.
+Jim Warnement 27 minutes 31 seconds
+And.
+Jim Warnement 27 minutes 34 seconds
+Next and I don't actually select anything. Yes, it makes that and you will see my hardware wherever the damn stuff is. Hardware came out as.
+Jim Warnement 27 minutes 48 seconds
+Area extended and then once I made that choice, it flipped it and screwed everything up. But all all my stuff and this is bypass this marked down as bypass. So that's where it's actually pulling that information. But once it does the calculations once.
+Jim Warnement 28 minutes 8 seconds
+I actually pick something here.
+Jim Warnement 28 minutes 33 seconds
+For time's sake.
+Jim Warnement 28 minutes 39 seconds
+That's where.
+Jim Warnement 28 minutes 48 seconds
+Well, now it's working more proper. So I don't know if y'all made a change in that already, but that was becoming as we saw before it got switched. So y'all might have made a change already in something. I think you are working a little bit on it already, correct?
+
+Justin Pope
+29 minutes 5 seconds29:05
+Justin Pope 29 minutes 5 seconds
+I know there were some VO database updates that I pushed to staging, so.
+JW
+Jim Warnement
+29 minutes 8 seconds29:08
+Jim Warnement 29 minutes 8 seconds
+I.
+Jim Warnement 29 minutes 12 seconds
+OK.
+Jim Warnement 29 minutes 17 seconds
+But yeah, so that's where this whole flat rate stuff is. So it should still say area extended always. And I don't know where that flat rate and I thought that was where what that question was all about to be honest with you in here.
+
+Justin Pope
+29 minutes 29 seconds29:29
+Justin Pope 29 minutes 29 seconds
+Is this the same session you're working out of, Jim?
+JW
+Jim Warnement
+29 minutes 33 seconds29:33
+Jim Warnement 29 minutes 33 seconds
+Yeah, that was the same session I just worked out of.
+
+Justin Pope
+29 minutes 35 seconds29:35
+Justin Pope 29 minutes 35 seconds
+OK.
+Justin Pope 29 minutes 37 seconds
+OK.
+Justin Pope 29 minutes 41 seconds
+So we'll figure or I'll take a look and figure out where that flat rate pricing is coming. Do we need to make a bet, Cindy?
+CP
+Cindy Pieper
+29 minutes 49 seconds29:49
+Cindy Pieper 29 minutes 49 seconds
+Oh, let's go.
+
+Justin Pope
+29 minutes 50 seconds29:50
+Justin Pope 29 minutes 50 seconds
+All right, I can bring out the whatever anyways.
+
+Samuel Klepper
+29 minutes 51 seconds29:51
+Samuel Klepper 29 minutes 51 seconds
+Mhm.
+CP
+Cindy Pieper
+29 minutes 56 seconds29:56
+Cindy Pieper 29 minutes 56 seconds
+Bring me the sign sheet of paper to sign and I'm gonna bring yours.
+JW
+Jim Warnement
+29 minutes 58 seconds29:58
+Jim Warnement 29 minutes 58 seconds
+Well.
+Jim Warnement 30 minutes
+Whoever, whoever wins the bet, you both owe me lunch on this one.
+
+Justin Pope
+30 minutes 1 second30:01
+Justin Pope 30 minutes 1 second
+OK, sounds good.
+
+Samuel Klepper
+30 minutes 2 seconds30:02
+Samuel Klepper 30 minutes 2 seconds
+Mm.
+CP
+Cindy Pieper
+30 minutes 7 seconds30:07
+Cindy Pieper 30 minutes 7 seconds
+Oh, you have to pick a side, Jim. You have to pick a side.
+
+Justin Pope
+30 minutes 8 seconds30:08
+Justin Pope 30 minutes 8 seconds
+Oh, you lunch. How do I?
+
+Samuel Klepper
+30 minutes 9 seconds30:09
+Samuel Klepper 30 minutes 9 seconds
+Oh.
+
+W
+Jim Warnement
+30 minutes 10 seconds30:10
+Jim Warnement 30 minutes 10 seconds
+Uh, my side is the winning side. That's my side on this one.
+
+Samuel Klepper
+30 minutes 11 seconds30:11
+Samuel Klepper 30 minutes 11 seconds
+Uh huh.
+
+Justin Pope
+30 minutes 16 seconds30:16
+Justin Pope 30 minutes 16 seconds
+Anyways, um.
+Justin Pope 30 minutes 22 seconds
+OK, I guess. Is there any other open questions?
+JW
+Jim Warnement
+30 minutes 28 seconds30:28
+Jim Warnement 30 minutes 28 seconds
+Let's see here. I don't know what some of this confirmed with Jim for flat rate option lines is quantity equals one always fixed total. It's a multiple of quantities from.
+Jim Warnement 30 minutes 39 seconds
+That goes back into this flat, right? That goes back into this whole other thing, I think.
+
+Justin Pope
+30 minutes 40 seconds30:40
+Justin Pope 30 minutes 40 seconds
+That.
+Justin Pope 30 minutes 47 seconds
+So let let me give you some context to what this is. Jim is is a little bit of me and copilot evaluating the code and generating things to work on. So like a lot of this is just referencing pieces of code.
+JW
+Jim Warnement
+30 minutes 51 seconds30:51
+Jim Warnement 30 minutes 51 seconds
+Yeah.
+
+Justin Pope
+31 minutes 5 seconds31:05
+Justin Pope 31 minutes 5 seconds
+I do not expect you to understand that.
+JW
+Jim Warnement
+31 minutes 8 seconds31:08
+Jim Warnement 31 minutes 8 seconds
+OK.
+
+Justin Pope
+31 minutes 13 seconds31:13
+Justin Pope 31 minutes 13 seconds
+But that is just oh options. OK, so bottom lines can have options that generate additional lines. Does flat rate mean we're zeroing out all those options?
+CP
+Cindy Pieper
+31 minutes 27 seconds31:27
+Cindy Pieper 31 minutes 27 seconds
+What? What are options? What are y'all's options?
+
+Justin Pope
+31 minutes 32 seconds31:32
+Justin Pope 31 minutes 32 seconds
+So like Jim, if you go back here like the the crown molding, if you open that up, those are bottom line options.
+CP
+Cindy Pieper
+31 minutes 43 seconds31:43
+Cindy Pieper 31 minutes 43 seconds
+Enter.
+Cindy Pieper 31 minutes 48 seconds
+Oh, that it's it's basically like soft close hinges and stuff.
+JW
+Jim Warnement
+31 minutes 53 seconds31:53
+Jim Warnement 31 minutes 53 seconds
+Yeah, that are.
+CP
+Cindy Pieper
+31 minutes 55 seconds31:55
+Cindy Pieper 31 minutes 55 seconds
+Those all get rolled up into the line above them for us anyway. I don't know what it does for y'all and so we don't.
+
+Justin Pope
+32 minutes 3 seconds32:03
+Justin Pope 32 minutes 3 seconds
+OK.
+CP
+Cindy Pieper
+32 minutes 7 seconds32:07
+Cindy Pieper 32 minutes 7 seconds
+It would be everything.
+Cindy Pieper 32 minutes 12 seconds
+For us, I don't know what it does for y'all, so Jim would have to answer that. We roll, we roll all the options up into a unit price that goes onto the line above it.
+
+Justin Pope
+32 minutes 17 seconds32:17
+Justin Pope 32 minutes 17 seconds
+Well, so.
+JW
+Jim Warnement
+32 minutes 17 seconds32:17
+Jim Warnement 32 minutes 17 seconds
+We don't ever.
+
+Justin Pope
+32 minutes 21 seconds32:21
+Justin Pope 32 minutes 21 seconds
+Mhm.
+Justin Pope 32 minutes 23 seconds
+OK.
+CP
+Cindy Pieper
+32 minutes 24 seconds32:24
+Cindy Pieper 32 minutes 24 seconds
+Um.
+Cindy Pieper 32 minutes 25 seconds
+For in echelon.
+
+Justin Pope
+32 minutes 28 seconds32:28
+Justin Pope 32 minutes 28 seconds
+OK.
+JW
+Jim Warnement
+32 minutes 29 seconds32:29
+Jim Warnement 32 minutes 29 seconds
+Yeah, and I honestly, I don't know what y'all are doing on it because these, these, this option part is very Wisenbaker specific. So I don't really ever look at to their cabinet details on what they are doing in the cabinets when it comes to that because.
+Jim Warnement 32 minutes 46 seconds
+We don't. We don't have any options on our cabinets and stuff. It's just a flat right. Here's the price. Don. Have a nice day, so.
+
+Justin Pope
+32 minutes 54 seconds32:54
+Justin Pope 32 minutes 54 seconds
+Sure. So based off the pricing that we should expect, that should be on the bottom line for the item.
+JW
+Jim Warnement
+33 minutes 1 second33:01
+Jim Warnement 33 minutes 1 second
+Yeah.
+
+Justin Pope
+33 minutes 3 seconds33:03
+Justin Pope 33 minutes 3 seconds
+OK, Julio.
+
+Justin Pope 33 minutes 7 seconds
+Um.
+Justin Pope 33 minutes 16 seconds
+Jim, if you don't or hold on.
+Justin Pope 33 minutes 44 seconds
+Jim, any other questions? I feel like we've gone through a bunch of this already.
+JW
+Jim Warnement
+33 minutes 45 seconds33:45
+Jim Warnement 33 minutes 45 seconds
+No, I think that's.
+Jim Warnement 33 minutes 49 seconds
+I think we've gone through everything, but especially with after that flat rate. So I think if y'all have the understanding of how the answer to that whole override builder flat rate, I think that's the key. Now there will be items and right now this is very.
+
+Justin Pope
+34 minutes 1 second34:01
+Justin Pope 34 minutes 1 second
+Right.
+JW
+Jim Warnement
+34 minutes 8 seconds34:08
+Jim Warnement 34 minutes 8 seconds
+Specific to cabinets that we're working on and looking at, and cabinets is always the bigger problem of anything anyways. But there is, especially with y'all doing, give me cabinets, be more dynamic and stuff like that.
+Jim Warnement 34 minutes 25 seconds
+There always could be possibilities that we have bottom line items like I said that we do a price null or ignore price null X like type of thing and I don't want I want that to continue to work.
+Jim Warnement 34 minutes 43 seconds
+The same way, even if it's in cabinets or stuff. So I don't have an example here of that.
+Jim Warnement 34 minutes 52 seconds
+Um, but.
+
+Justin Pope
+34 minutes 53 seconds34:53
+Justin Pope 34 minutes 53 seconds
+OK. Would you be able to generate an example of that because I cannot confirm that we are seeing anything of X late on our side. So maybe that's just how the bill like we already accounted in the bond when we get the.
+JW
+Jim Warnement
+34 minutes 56 seconds34:56
+Jim Warnement 34 minutes 56 seconds
+Yeah, and I can.
+Jim Warnement 35 minutes 2 seconds
+Yeah.
+
+Justin Pope
+35 minutes 9 seconds35:09
+Justin Pope 35 minutes 9 seconds
+When we grab it for the build, so I don't know.
+JW
+Jim Warnement
+35 minutes 14 seconds35:14
+Jim Warnement 35 minutes 14 seconds
+Yeah, so I will do something. I'll write that down in staging. I need to create something like that. I can't really create it in the cabinets because cabinets wizard doesn't isn't dynamic.
+Jim Warnement 35 minutes 32 seconds
+And allow me to do stuff like that, like the other parts of the Wizards too, the countertops and stuff, but I'll see what I can do on it.
+
+Justin Pope
+35 minutes 42 seconds35:42
+Justin Pope 35 minutes 42 seconds
+OK, well.
+JW
+Jim Warnement
+35 minutes 42 seconds35:42
+Jim Warnement 35 minutes 42 seconds
+Let's see how I can create that even. Yeah, I'll, I'll, I'll have to get some example to example for you.
+
+Justin Pope
+35 minutes 49 seconds35:49
+Justin Pope 35 minutes 49 seconds
+OK.
+JW
+Jim Warnement
+35 minutes 56 seconds35:56
+Jim Warnement 35 minutes 56 seconds
+But that's it for me.
+
+Justin Pope
+35 minutes 58 seconds35:58
+Justin Pope 35 minutes 58 seconds
+Okie dokie anything?
+Justin Pope 36 minutes 2 seconds
+Else you need, we need to discuss Cindy.
+CP
+Cindy Pieper
+36 minutes 5 seconds36:05
+Cindy Pieper 36 minutes 5 seconds
+I don't think so.
+
+Justin Pope
+36 minutes 7 seconds36:07
+Justin Pope 36 minutes 7 seconds
+OK. Well, I appreciate all of y'all's time.
+JW
+Jim Warnement
+36 minutes 8 seconds36:08
+Jim Warnement 36 minutes 8 seconds
+And Cindy.
+Jim Warnement 36 minutes 11 seconds
+But real quick, Cindy, I just want to tell you, Rob asked me what was #1 on my list. I did put this one for you #1 on my list for him to get done.
+CP
+Cindy Pieper
+36 minutes 21 seconds36:21
+Cindy Pieper 36 minutes 21 seconds
+OK, I mean.
+Cindy Pieper 36 minutes 24 seconds
+I appreciate it so we can get it out of here, but.
+JW
+Jim Warnement
+36 minutes 27 seconds36:27
+Jim Warnement 36 minutes 27 seconds
+Exactly. And you get Wise Baker off our ears about it. So OK, yeah, he hasn't been on it for a while, so I don't want it to come back again.
+CP
+Cindy Pieper
+36 minutes 29 seconds36:29
+Cindy Pieper 36 minutes 29 seconds
+It'd be nice to get it done.
+
+Samuel Klepper
+36 minutes 30 seconds36:30
+Samuel Klepper 36 minutes 30 seconds
+OK.
+CP
+Cindy Pieper
+36 minutes 34 seconds36:34
+Cindy Pieper 36 minutes 34 seconds
+I think you want Richard off your rear.
+JW
+Jim Warnement
+36 minutes 43 seconds36:43
+Jim Warnement 36 minutes 43 seconds
+OK. Thank you very much, Justin, Sam, for for the meeting, for meeting us. Thank you.
+CP
+Cindy Pieper
+36 minutes 46 seconds36:46
+Cindy Pieper 36 minutes 46 seconds
+No problem.
+
+Samuel Klepper
+36 minutes 47 seconds36:47
+Samuel Klepper 36 minutes 47 seconds
+OK.
+
+Justin Pope
+36 minutes 48 seconds36:48
+Justin Pope 36 minutes 48 seconds
+Thank you.
+CP
+Cindy Pieper
+36 minutes 49 seconds36:49
+Cindy Pieper 36 minutes 49 seconds
+Sam, don't be so loud next time. Let us all talk.
+Cindy Pieper 36 minutes 55 seconds
+Bye.
+
+Samuel Klepper
+36 minutes 55 seconds36:55
+Samuel Klepper 36 minutes 55 seconds
+Yeah, right. All right. Bye.
+
+Justin Pope
+36 minutes 57 seconds36:57
+Justin Pope 36 minutes 57 seconds
+All right, bye.
+JW
+Jim Warnement
+36 minutes 57 seconds36:57
+Jim Warnement 36 minutes 57 seconds
+Bye.
+
+Justin Pope stopped transcription
