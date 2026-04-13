@@ -1,0 +1,22 @@
+Context:
+Product search taking a long time utilizing a linked server connection, how come?
+
+We could take the time to see why this is the case.
+
+Potential Solutions:
+1) Echelon API Endpoint:
+
+
+
+2) DataSync process:
+Update the process to sync new table
+New sync of prices_landed
+
+
+
+3) VDS creates a procedure to place in Echelon Server:
+We already have crafted a procedure, so we could potentially craft a new procedure to place on the Echelon SQL server.
+
+
+
+4) Other ideas.....
