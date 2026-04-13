@@ -112,8 +112,8 @@ The floor guard (`AdjustBomLinePricing`) and "ex leg" / options path questions a
 | `Dal/Repositories/PricingDomainRepository.cs` | **Conditionally** read `bypass_flat_fee_exclusion` from the result dict — check for key existence before reading (Echelon's SP chain may not include the column yet in all environments); default to `false` if absent |
 | `Domain/Entities/BaseBomLine.cs` | Add `BypassFlatFeeExclusion` bool property; add `IsPriceTypeFlatRate` computed property; expand `GetExtendedBuilderPrice` to accept `BaseBomLine fieldBomLine = null` — return `0` if `fieldBomLine.IsPriceTypeArea && !BypassFlatFeeExclusion`; add the same check to `GetExtendedHomebuyerPrice` (already receives `fieldBomLine`) — return `0` before any other calculations if the flat rate zeroing condition is met |
 | `Domain/Entities/BuildEntities/BuildDomainModel.cs` | `CalculateBuildCostTotal` calls `GetExtendedBuilderPrice()` with no args — update to pass `Bom.FieldBomLine` so the zeroing check has field line context |
-| `Domain/Entities/BuildEntities/BomLineOptionDomainModel.cs` | Add `[Column("bypass_flat_fee_exclusion")] public bool BypassFlatFeeExclusion { get; set; }` property |
-| `Domain/UseCases/Pricing/PriceBomLine.cs` | Comment out the `AdjustBomLinePriceResultBillQtyIfPriceTypeIsArea` call in `Invoke` — **do not delete the method**. Add a comment explaining that bill qty is preserved as-is. Set `bomLine.BypassFlatFeeExclusion = price.BypassFlatFeeExclusion` after successful price fetch (non-options path). Options path: pending confirmation from Cindy/Jim (see Open Question). **Refactoring note:** the `percent`/`unit`/field price type logic inside the options loop is a candidate to move to `BomLineOptionDomainModel` — consider as a follow-up refactor. |
+| `Domain/Entities/BuildEntities/BomLineOptionDomainModel.cs` | Add `[Column("bypass_flat_fee_exclusion")] public bool BypassFlatFeeExclusion { get; set; }` property; add `IsPriceTypeFlatRate` computed property; add `GetExtendedBuilderContribution(BaseBomLine fieldBomLine = null)` and `GetExtendedHomebuyerContribution(BaseBomLine fieldBomLine = null)` methods — same zeroing guard as `BaseBomLine` (`fieldBomLine.IsPriceTypeArea && !IsField && !BypassFlatFeeExclusion → return 0m`); `!IsField` guard protects the field option which carries the rolled-up flat rate total |
+| `Domain/UseCases/Pricing/PriceBomLine.cs` | Comment out the `AdjustBomLinePriceResultBillQtyIfPriceTypeIsArea` call in `Invoke` — **do not delete the method**. Add a comment explaining that bill qty is preserved as-is. Set `bomLine.BypassFlatFeeExclusion = price.BypassFlatFeeExclusion` after successful price fetch (non-options path). Options path: set `option.BypassFlatFeeExclusion = price.BypassFlatFeeExclusion` per option in the success branch; replace the raw `costTotal`/`priceTotal` LINQ sums with `option.GetExtendedBuilderContribution(fieldBomLine)` / `option.GetExtendedHomebuyerContribution(fieldBomLine)` where `fieldBomLine = bomLine.ParentBom.FieldBomLine`. **Refactoring note:** the `percent`/`unit`/field price type logic inside the options loop is a candidate to move to `BomLineOptionDomainModel` — consider as a follow-up refactor. |
 | `Domain/UseCases/Pricing/PriceBuild.cs` | **No zeroing logic needed here** — zeroing is handled inside `GetExtendedBuilderPrice` / `GetExtendedHomebuyerPrice` at the calculation level. Floor guard (`AdjustBomLinePricing`) unchanged. |
 
 ---
@@ -165,23 +165,17 @@ The zeroing is baked into the price calculation methods so it applies consistent
 - These lines are not accounted for in this story. If "ex leg" / price null lines surface as a problem during implementation or testing, they will be handled in a follow-up story.
 - Jim to provide a staging BOM example when available (Open Item 2) — for future reference only.
 
-**Options Path — Open Question for Cindy & Jim**
+**Options Path — RESOLVED**
 
-The options path in `PriceBomLine.Invoke` (lines 82–170) prices each `BomLineOption` individually via `GetBomItemPriceAsync`, then sums them into `bomLine.BuilderPrice` / `bomLine.HomeownerPrice`. There is no fallback to a direct BOM line price fetch.
+Confirmed answers from Cindy & Jim:
+- Under certain circumstances, individual option prices roll up to the parent BOM line and come back as `$0` from Echelon. This is expected behavior under flat rate.
+- `bypass_flat_fee_exclusion` applies per option line — each `BomLineOptionDomainModel` can have its own flag.
+- The correct approach is **not** a `$0`-sum fallback. Instead, apply the same zeroing guard used in `BaseBomLine` directly to each option's contribution to the sum.
 
-In a flat rate scenario Echelon rolls option pricing up to the parent BOM line — individual option prices may come back zeroed. This means `costTotal` and `priceTotal` could sum to `$0` even though the line has a real price.
-
-**Proposed logic (pending confirmation from Cindy and Jim):**
-1. Price out options as normal
-2. Sum into `BuilderPrice` / `HomeownerPrice` as normal
-3. If both sum to `$0`, fall through to the non-options path to fetch the price directly against the BOM line itself
-
-**Open question to ask Cindy and Jim:**
-- In a flat rate build, does an options BOM line's price come back entirely on the parent line (rolled up), with all individual option prices zeroed?
-- If so, is step 3 the correct fallback — or does Echelon have a different mechanism for pricing options lines under flat rate?
-- Does `bypass_flat_fee_exclusion` play a role on option lines?
-
-Until confirmed, no code changes are made to the options path. This question must be resolved before considering this story complete.
+**Implementation (now in scope):**
+- `BomLineOptionDomainModel` gets `BypassFlatFeeExclusion`, `IsPriceTypeFlatRate`, `GetExtendedBuilderContribution`, and `GetExtendedHomebuyerContribution` — see Affected Files table above.
+- In `PriceBomLine.Invoke` options path: set `option.BypassFlatFeeExclusion = price.BypassFlatFeeExclusion` per option; replace raw `Qty * Price` LINQ sums with the contribution methods passing `bomLine.ParentBom.FieldBomLine`.
+- The field option (`IsField = true`) is never zeroed — it carries the rolled-up flat rate total.
 
 **General**
 - [ ] Build passes, no regressions
@@ -216,7 +210,19 @@ All affected domain files have existing test files in `BuildOnTechnologies.VDS.L
 ### `BomLineOptionDomainModelTests.cs`
 **Existing coverage:** `IsField` only (5 tests — true, false, mixed case, null, empty string).
 
-`BypassFlatFeeExclusion` is a plain data property with no computed logic — no behavioral tests are required. However, if any computed behavior is added to `BomLineOptionDomainModel` as part of the options path resolution (pending Cindy/Jim answer), tests should be added at that time following the `IsField` naming pattern.
+**New tests to add (contribution methods):**
+
+`GetExtendedBuilderContribution`:
+- `BomLineOptionDomainModel_GetExtendedBuilderContribution_returnsZero_whenFieldLineIsAreaPricedAndBypassIsFalse`
+- `BomLineOptionDomainModel_GetExtendedBuilderContribution_returnsRealContribution_whenFieldLineIsAreaPricedAndBypassIsTrue`
+- `BomLineOptionDomainModel_GetExtendedBuilderContribution_returnsRealContribution_whenFieldLineIsNotAreaPriced`
+- `BomLineOptionDomainModel_GetExtendedBuilderContribution_returnsRealContribution_whenOptionIsFieldOption` — `IsField = true` is never zeroed even in flat rate context; it carries the rolled-up total
+
+`GetExtendedHomebuyerContribution`:
+- `BomLineOptionDomainModel_GetExtendedHomebuyerContribution_returnsZero_whenFieldLineIsAreaPricedAndBypassIsFalse`
+- `BomLineOptionDomainModel_GetExtendedHomebuyerContribution_returnsRealContribution_whenFieldLineIsAreaPricedAndBypassIsTrue`
+- `BomLineOptionDomainModel_GetExtendedHomebuyerContribution_returnsRealContribution_whenFieldLineIsNotAreaPriced`
+- `BomLineOptionDomainModel_GetExtendedHomebuyerContribution_returnsRealContribution_whenOptionIsFieldOption`
 
 ### `BuildDomainModelTests.cs`
 **Existing coverage:** `HasPattern`, `HasBom`, `CalculateBuildSelectionTotal` (credits, staggered, area price type, modifications).
@@ -235,6 +241,12 @@ All affected domain files have existing test files in `BuildOnTechnologies.VDS.L
 - `PriceBomLine_DoesNotAdjustBillQty_WhenPriceTypeIsArea` — verify `BillQty` is unchanged after repricing an area-priced line (confirms `AdjustBomLinePriceResultBillQtyIfPriceTypeIsArea` is commented out)
 - `PriceBomLine_SetsBypassFlatFeeExclusion_WhenPriceResultHasBypassTrue`
 - `PriceBomLine_SetsBypassFlatFeeExclusion_WhenPriceResultHasBypassFalse`
+
+**New tests to add (options path):**
+- `PriceBomLine_SetsOptionBypassFlatFeeExclusion_WhenOptionPriceResultHasBypassTrue`
+- `PriceBomLine_SetsOptionBypassFlatFeeExclusion_WhenOptionPriceResultHasBypassFalse`
+- `PriceBomLine_ZerosNonBypassOptionContributions_WhenParentBomFieldLineIsAreaPriced`
+- `PriceBomLine_PreservesRealOptionContributions_WhenOptionHasBypassTrue_AndParentBomFieldLineIsAreaPriced`
 
 ### `PriceBuildTests.cs`
 **Existing coverage:** floor guard tests (`AdjustBomLinePricing` — prices adjusted when below original, allowed below when credit area), build status tests. No new flat rate zeroing tests needed here — zeroing is now tested at the `BaseBomLine` level.
