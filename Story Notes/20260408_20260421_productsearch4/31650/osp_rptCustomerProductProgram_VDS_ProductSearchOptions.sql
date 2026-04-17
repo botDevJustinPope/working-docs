@@ -3,7 +3,7 @@ GO
 SET QUOTED_IDENTIFIER ON
 GO
 
-CREATE OR ALTER PROCEDURE [dbo].[osp_rptCustomerProductProgram_JKP]
+CREATE or ALTER PROCEDURE [dbo].[osp_rptCustomerProductProgram_VDS_ProductSearchOptions]
     @customer_id               VARCHAR(15),
     @spec_id                   INT,
     @plan_id                   INT,
