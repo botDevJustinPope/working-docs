@@ -20,6 +20,13 @@ AS
                  corrected in #31650 to align with vds_selEstimatedOptionPricingItemsForNonSession_Yukon:
                  reads opt_pricing_build_type and group_walls from customers to drive dynamic
                  build selection (max / min / std) and conditional bath-tile wall grouping.
+                 Color resolution corrected in #31650 to match vds_selGroupLevelParts_Yukon:
+                 removed spec_items as the primary anchor for all 4 color paths — @price_levels
+                 already validates spec/plan/build context through prices_landed, so requiring
+                 spec_items membership for the exact @spec_id was too narrow and excluded valid
+                 builder colors. PATH 1/2 now walk directly from group_id → styles_groups →
+                 styles_groups_detail (GETDATE() date range). PATH 3/4 join colors directly
+                 from price_level_id (style_id / part_no).
                  Output: source_type, name, application, product, area, sub_area,
                          price, price_level, part_no, item_no, gpc_id, build_id
     Usage:
@@ -79,8 +86,6 @@ BEGIN
 
     -- ============================================================
     -- Step 3: Get max/min/std builds per application/product/area/sub_area.
-    --         vds_optionPricingMaxMinBuilds lives on this (Echelon) server —
-    --         no linked-server overhead.
     -- ============================================================
     DECLARE @MaxMinBuilds TABLE
     (
@@ -276,230 +281,235 @@ BEGIN
         [sub_area] = CASE WHEN [build_desc] IS NOT NULL THEN '' ELSE [sub_area] END;
 
     -- ============================================================
-    -- Step 6: Resolve individual color parts via 4-path spec_items traversal.
+    -- Step 6: Resolve individual color parts via 4-path traversal.
     --         All 4 paths join @price_levels so each color row carries the
     --         area/price context of its winning build.
-    --         Uses native Echelon tables — no wbs_* or Veo_* synonyms.
+    --
+    --         spec_items is NOT used as the primary anchor here. @price_levels
+    --         already validated spec/plan/build context through prices_landed.
+    --         Using spec_items as a gate (as originally written) was too narrow —
+    --         it excluded colors that are valid for the builder but not explicitly
+    --         listed in spec_items for the exact @spec_id. This matches the
+    --         approach used by vds_selGroupLevelParts_Yukon, which resolves colors
+    --         directly from the group/style/color and uses spec_items only as a
+    --         secondary membership check against ALL builder specs.
     --
     --         Path 1: price_level_type = 'group', group_detail item_type = 'style'
-    --                 group → styles_groups_detail (style) → styles → colors
+    --                 group_id (price_level_id) → styles_groups → sgd (style) → styles → colors
     --         Path 2: price_level_type = 'group', group_detail item_type = 'color'
-    --                 group → styles_groups_detail (color) → colors
+    --                 group_id (price_level_id) → styles_groups → sgd (color) → colors
     --         Path 3: price_level_type = 'style'
-    --                 spec_items (style) → colors (product_id + style_id)
+    --                 price_level_id (style_id) → colors via product_id + style_id
     --         Path 4: price_level_type = 'color'
-    --                 spec_items (color) → colors (part_no direct match)
+    --                 price_level_id (part_no) → colors direct match
     -- ============================================================
 
-    -- PATH 1: group → sgd (style) → styles → colors
+    -- PATH 1: group_id → styles_groups → sgd (style) → styles → colors
     SELECT DISTINCT
-        'estimated'                                                                   AS [source_type],
-        CASE
-            WHEN @builder_overrides_enabled = 1 AND DATALENGTH([cco].[color_private_label]) > 0
-                THEN [cco].[color_private_label]
-            ELSE [c].[color]
-        END                                                                           AS [name],
+        'estimated'             AS [source_type],
+        [n].[resolved_name]     AS [name],
         [pl].[application],
         [pl].[product],
         [pl].[area],
         [pl].[sub_area],
         [pl].[price],
-        SUBSTRING([pl].[price_level_name], 1, 1000)                                   AS [price_level],
+        SUBSTRING([pl].[price_level_name], 1, 1000)               AS [price_level],
         [c].[part_no],
-        NULL                                                                          AS [item_no],
-        TRY_CAST([c].[global_product_id] AS UNIQUEIDENTIFIER)                         AS [gpc_id],
+        NULL                                                       AS [item_no],
+        TRY_CAST([c].[global_product_id] AS UNIQUEIDENTIFIER)      AS [gpc_id],
         [pl].[build_id]
     FROM
         @price_levels [pl]
-        JOIN [dbo].[spec_items] [si] WITH (NOLOCK)
-            ON  [si].[spec_id]          = @spec_id
-            AND [si].[item_type]        = [pl].[price_level_type]
-            AND [si].[item]             = [pl].[price_level_id]
-            AND [si].[application_id]   = [pl].[application_id]
-            AND [si].[product_id]       = [pl].[product_id]
-        LEFT JOIN [dbo].[styles_groups] [sg] WITH (NOLOCK)
-            ON  [sg].[group_id]         = [si].[item]
-            AND [sg].[application_id]   = [si].[application_id]
-            AND [sg].[product_id]       = [si].[product_id]
-        LEFT JOIN [dbo].[styles_groups_detail] [sgd] WITH (NOLOCK)
+        JOIN [dbo].[styles_groups] [sg] WITH (NOLOCK)
+            ON  CAST([sg].[group_id] AS VARCHAR(500)) = [pl].[price_level_id]
+            AND [sg].[application_id]                 = [pl].[application_id]
+            AND [sg].[product_id]                     = [pl].[product_id]
+        JOIN [dbo].[styles_groups_detail] [sgd] WITH (NOLOCK)
             ON  [sgd].[group_id]        = [sg].[group_id]
             AND [sgd].[customer_id]     = @customer_id
             AND [sgd].[item_type]       = 'style'
-            AND ([sgd].[effective_date] <= @prices_landed_effective_date OR [sgd].[effective_date] IS NULL)
-            AND ([sgd].[end_date]       >= @prices_landed_effective_date OR [sgd].[end_date] IS NULL)
-        LEFT JOIN [dbo].[styles] [s] WITH (NOLOCK)
+            AND ([sgd].[effective_date] <= GETDATE() OR [sgd].[effective_date] IS NULL)
+            AND ([sgd].[end_date]       >= GETDATE() OR [sgd].[end_date] IS NULL)
+        JOIN [dbo].[styles] [s] WITH (NOLOCK)
             ON  [s].[product_id]    = [sg].[product_id]
             AND [s].[style_id]      = [sgd].[item]
-        LEFT JOIN [dbo].[colors] [c] WITH (NOLOCK)
+        JOIN [dbo].[colors] [c] WITH (NOLOCK)
             ON  [c].[product_id]    = [s].[product_id]
             AND [c].[style_id]      = [s].[style_id]
         LEFT JOIN [dbo].[colors_customer_overrides] [cco] WITH (NOLOCK)
             ON  [cco].[part_no]     = [c].[part_no]
             AND [cco].[customer_id] = @customer_id
-        LEFT JOIN [dbo].[stocking_codes] [sc] WITH (NOLOCK)
+        JOIN [dbo].[stocking_codes] [sc] WITH (NOLOCK)
             ON  [sc].[code]         = [c].[stocking_code]
+        CROSS APPLY
+        (
+            SELECT CASE
+                WHEN @builder_overrides_enabled = 1 AND DATALENGTH([cco].[color_private_label]) > 0
+                    THEN [cco].[color_private_label]
+                ELSE [s].[description] + ' - ' + [dbo].[ef_selStyleColorNameWithAttributes]([c].[product_id], [c].[style_id], [c].[color_id])
+            END AS [resolved_name]
+        ) [n]
     WHERE
         [pl].[price_level_type]         = 'group'
         AND [sc].[homebuyer_selectable] = 1
         AND [c].[part_no] IS NOT NULL
         AND
         (
-            CASE WHEN @builder_overrides_enabled = 1 AND DATALENGTH([cco].[color_private_label]) > 0
-                 THEN [cco].[color_private_label] ELSE [c].[color] END
-            LIKE '%' + ISNULL(@search_term, '') + '%'
-            OR [c].[part_no] LIKE '%' + ISNULL(@search_term, '') + '%'
+            @search_term IS NULL
+            OR [n].[resolved_name] LIKE '%' + @search_term + '%'
+            OR [c].[part_no]       LIKE '%' + @search_term + '%'
         )
 
     UNION ALL
 
-    -- PATH 2: group → sgd (color) → colors
+    -- PATH 2: group_id → styles_groups → sgd (color) → colors
     SELECT DISTINCT
-        'estimated'                                                                   AS [source_type],
-        CASE
-            WHEN @builder_overrides_enabled = 1 AND DATALENGTH([cco].[color_private_label]) > 0
-                THEN [cco].[color_private_label]
-            ELSE [c].[color]
-        END                                                                           AS [name],
+        'estimated'             AS [source_type],
+        [n].[resolved_name]     AS [name],
         [pl].[application],
         [pl].[product],
         [pl].[area],
         [pl].[sub_area],
         [pl].[price],
-        SUBSTRING([pl].[price_level_name], 1, 1000)                                   AS [price_level],
+        SUBSTRING([pl].[price_level_name], 1, 1000)               AS [price_level],
         [c].[part_no],
-        NULL                                                                          AS [item_no],
-        TRY_CAST([c].[global_product_id] AS UNIQUEIDENTIFIER)                         AS [gpc_id],
+        NULL                                                       AS [item_no],
+        TRY_CAST([c].[global_product_id] AS UNIQUEIDENTIFIER)      AS [gpc_id],
         [pl].[build_id]
     FROM
         @price_levels [pl]
-        JOIN [dbo].[spec_items] [si] WITH (NOLOCK)
-            ON  [si].[spec_id]          = @spec_id
-            AND [si].[item_type]        = [pl].[price_level_type]
-            AND [si].[item]             = [pl].[price_level_id]
-            AND [si].[application_id]   = [pl].[application_id]
-            AND [si].[product_id]       = [pl].[product_id]
-        LEFT JOIN [dbo].[styles_groups] [sg] WITH (NOLOCK)
-            ON  [sg].[group_id]         = [si].[item]
-            AND [sg].[application_id]   = [si].[application_id]
-            AND [sg].[product_id]       = [si].[product_id]
-        LEFT JOIN [dbo].[styles_groups_detail] [sgd] WITH (NOLOCK)
+        JOIN [dbo].[styles_groups] [sg] WITH (NOLOCK)
+            ON  CAST([sg].[group_id] AS VARCHAR(500)) = [pl].[price_level_id]
+            AND [sg].[application_id]                 = [pl].[application_id]
+            AND [sg].[product_id]                     = [pl].[product_id]
+        JOIN [dbo].[styles_groups_detail] [sgd] WITH (NOLOCK)
             ON  [sgd].[group_id]        = [sg].[group_id]
             AND [sgd].[customer_id]     = @customer_id
             AND [sgd].[item_type]       = 'color'
-            AND ([sgd].[effective_date] <= @prices_landed_effective_date OR [sgd].[effective_date] IS NULL)
-            AND ([sgd].[end_date]       >= @prices_landed_effective_date OR [sgd].[end_date] IS NULL)
-        LEFT JOIN [dbo].[colors] [c] WITH (NOLOCK)
+            AND ([sgd].[effective_date] <= GETDATE() OR [sgd].[effective_date] IS NULL)
+            AND ([sgd].[end_date]       >= GETDATE() OR [sgd].[end_date] IS NULL)
+        JOIN [dbo].[colors] [c] WITH (NOLOCK)
             ON  [c].[part_no]           = [sgd].[item]
+        JOIN [dbo].[styles] [s] WITH (NOLOCK)
+            ON  [s].[product_id]        = [c].[product_id]
+            AND [s].[style_id]          = [c].[style_id]
         LEFT JOIN [dbo].[colors_customer_overrides] [cco] WITH (NOLOCK)
             ON  [cco].[part_no]         = [c].[part_no]
             AND [cco].[customer_id]     = @customer_id
-        LEFT JOIN [dbo].[stocking_codes] [sc] WITH (NOLOCK)
+        JOIN [dbo].[stocking_codes] [sc] WITH (NOLOCK)
             ON  [sc].[code]             = [c].[stocking_code]
+        CROSS APPLY
+        (
+            SELECT CASE
+                WHEN @builder_overrides_enabled = 1 AND DATALENGTH([cco].[color_private_label]) > 0
+                    THEN [cco].[color_private_label]
+                ELSE [s].[description] + ' - ' + [dbo].[ef_selStyleColorNameWithAttributes]([c].[product_id], [c].[style_id], [c].[color_id])
+            END AS [resolved_name]
+        ) [n]
     WHERE
         [pl].[price_level_type]         = 'group'
         AND [sc].[homebuyer_selectable] = 1
         AND [c].[part_no] IS NOT NULL
         AND
         (
-            CASE WHEN @builder_overrides_enabled = 1 AND DATALENGTH([cco].[color_private_label]) > 0
-                 THEN [cco].[color_private_label] ELSE [c].[color] END
-            LIKE '%' + ISNULL(@search_term, '') + '%'
-            OR [c].[part_no] LIKE '%' + ISNULL(@search_term, '') + '%'
+            @search_term IS NULL
+            OR [n].[resolved_name] LIKE '%' + @search_term + '%'
+            OR [c].[part_no]       LIKE '%' + @search_term + '%'
         )
 
     UNION ALL
 
-    -- PATH 3: spec_items (style) → colors via product_id + style_id
+    -- PATH 3: style_id (price_level_id) → colors via product_id + style_id
     SELECT DISTINCT
-        'estimated'                                                                   AS [source_type],
-        CASE
-            WHEN @builder_overrides_enabled = 1 AND DATALENGTH([cco].[color_private_label]) > 0
-                THEN [cco].[color_private_label]
-            ELSE [c].[color]
-        END                                                                           AS [name],
+        'estimated'             AS [source_type],
+        [n].[resolved_name]     AS [name],
         [pl].[application],
         [pl].[product],
         [pl].[area],
         [pl].[sub_area],
         [pl].[price],
-        SUBSTRING([pl].[price_level_name], 1, 1000)                                   AS [price_level],
+        SUBSTRING([pl].[price_level_name], 1, 1000)               AS [price_level],
         [c].[part_no],
-        NULL                                                                          AS [item_no],
-        TRY_CAST([c].[global_product_id] AS UNIQUEIDENTIFIER)                         AS [gpc_id],
+        NULL                                                       AS [item_no],
+        TRY_CAST([c].[global_product_id] AS UNIQUEIDENTIFIER)      AS [gpc_id],
         [pl].[build_id]
     FROM
         @price_levels [pl]
-        JOIN [dbo].[spec_items] [si] WITH (NOLOCK)
-            ON  [si].[spec_id]          = @spec_id
-            AND [si].[item_type]        = [pl].[price_level_type]
-            AND [si].[item]             = [pl].[price_level_id]
-            AND [si].[application_id]   = [pl].[application_id]
-            AND [si].[product_id]       = [pl].[product_id]
-        LEFT JOIN [dbo].[colors] [c] WITH (NOLOCK)
-            ON  [c].[product_id]        = [si].[product_id]
-            AND [c].[style_id]          = [si].[item]
+        JOIN [dbo].[colors] [c] WITH (NOLOCK)
+            ON  [c].[product_id]    = [pl].[product_id]
+            AND [c].[style_id]      = [pl].[price_level_id]
+        JOIN [dbo].[styles] [s] WITH (NOLOCK)
+            ON  [s].[product_id]    = [c].[product_id]
+            AND [s].[style_id]      = [c].[style_id]
         LEFT JOIN [dbo].[colors_customer_overrides] [cco] WITH (NOLOCK)
-            ON  [cco].[part_no]         = [c].[part_no]
-            AND [cco].[customer_id]     = @customer_id
-        LEFT JOIN [dbo].[stocking_codes] [sc] WITH (NOLOCK)
-            ON  [sc].[code]             = [c].[stocking_code]
+            ON  [cco].[part_no]     = [c].[part_no]
+            AND [cco].[customer_id] = @customer_id
+        JOIN [dbo].[stocking_codes] [sc] WITH (NOLOCK)
+            ON  [sc].[code]         = [c].[stocking_code]
+        CROSS APPLY
+        (
+            SELECT CASE
+                WHEN @builder_overrides_enabled = 1 AND DATALENGTH([cco].[color_private_label]) > 0
+                    THEN [cco].[color_private_label]
+                ELSE [s].[description] + ' - ' + [dbo].[ef_selStyleColorNameWithAttributes]([c].[product_id], [c].[style_id], [c].[color_id])
+            END AS [resolved_name]
+        ) [n]
     WHERE
         [pl].[price_level_type]         = 'style'
         AND [sc].[homebuyer_selectable] = 1
         AND [c].[part_no] IS NOT NULL
         AND
         (
-            CASE WHEN @builder_overrides_enabled = 1 AND DATALENGTH([cco].[color_private_label]) > 0
-                 THEN [cco].[color_private_label] ELSE [c].[color] END
-            LIKE '%' + ISNULL(@search_term, '') + '%'
-            OR [c].[part_no] LIKE '%' + ISNULL(@search_term, '') + '%'
+            @search_term IS NULL
+            OR [n].[resolved_name] LIKE '%' + @search_term + '%'
+            OR [c].[part_no]       LIKE '%' + @search_term + '%'
         )
 
     UNION ALL
 
-    -- PATH 4: spec_items (color) → colors via direct part_no match
+    -- PATH 4: part_no (price_level_id) → colors direct match
     SELECT DISTINCT
-        'estimated'                                                                   AS [source_type],
-        CASE
-            WHEN @builder_overrides_enabled = 1 AND DATALENGTH([cco].[color_private_label]) > 0
-                THEN [cco].[color_private_label]
-            ELSE [c].[color]
-        END                                                                           AS [name],
+        'estimated'             AS [source_type],
+        [n].[resolved_name]     AS [name],
         [pl].[application],
         [pl].[product],
         [pl].[area],
         [pl].[sub_area],
         [pl].[price],
-        SUBSTRING([pl].[price_level_name], 1, 1000)                                   AS [price_level],
+        SUBSTRING([pl].[price_level_name], 1, 1000)               AS [price_level],
         [c].[part_no],
-        NULL                                                                          AS [item_no],
-        TRY_CAST([c].[global_product_id] AS UNIQUEIDENTIFIER)                         AS [gpc_id],
+        NULL                                                       AS [item_no],
+        TRY_CAST([c].[global_product_id] AS UNIQUEIDENTIFIER)      AS [gpc_id],
         [pl].[build_id]
     FROM
         @price_levels [pl]
-        JOIN [dbo].[spec_items] [si] WITH (NOLOCK)
-            ON  [si].[spec_id]          = @spec_id
-            AND [si].[item_type]        = [pl].[price_level_type]
-            AND [si].[item]             = [pl].[price_level_id]
-            AND [si].[application_id]   = [pl].[application_id]
-            AND [si].[product_id]       = [pl].[product_id]
-        LEFT JOIN [dbo].[colors] [c] WITH (NOLOCK)
-            ON  [c].[part_no]           = [si].[item]
+        JOIN [dbo].[colors] [c] WITH (NOLOCK)
+            ON  [c].[part_no]       = [pl].[price_level_id]
+        JOIN [dbo].[styles] [s] WITH (NOLOCK)
+            ON  [s].[product_id]    = [c].[product_id]
+            AND [s].[style_id]      = [c].[style_id]
         LEFT JOIN [dbo].[colors_customer_overrides] [cco] WITH (NOLOCK)
-            ON  [cco].[part_no]         = [c].[part_no]
-            AND [cco].[customer_id]     = @customer_id
-        LEFT JOIN [dbo].[stocking_codes] [sc] WITH (NOLOCK)
-            ON  [sc].[code]             = [c].[stocking_code]
+            ON  [cco].[part_no]     = [c].[part_no]
+            AND [cco].[customer_id] = @customer_id
+        JOIN [dbo].[stocking_codes] [sc] WITH (NOLOCK)
+            ON  [sc].[code]         = [c].[stocking_code]
+        CROSS APPLY
+        (
+            SELECT CASE
+                WHEN @builder_overrides_enabled = 1 AND DATALENGTH([cco].[color_private_label]) > 0
+                    THEN [cco].[color_private_label]
+                ELSE [s].[description] + ' - ' + [dbo].[ef_selStyleColorNameWithAttributes]([c].[product_id], [c].[style_id], [c].[color_id])
+            END AS [resolved_name]
+        ) [n]
     WHERE
         [pl].[price_level_type]         = 'color'
         AND [sc].[homebuyer_selectable] = 1
         AND [c].[part_no] IS NOT NULL
         AND
         (
-            CASE WHEN @builder_overrides_enabled = 1 AND DATALENGTH([cco].[color_private_label]) > 0
-                 THEN [cco].[color_private_label] ELSE [c].[color] END
-            LIKE '%' + ISNULL(@search_term, '') + '%'
-            OR [c].[part_no] LIKE '%' + ISNULL(@search_term, '') + '%'
+            @search_term IS NULL
+            OR [n].[resolved_name] LIKE '%' + @search_term + '%'
+            OR [c].[part_no]       LIKE '%' + @search_term + '%'
         )
 
     ORDER BY
@@ -507,3 +517,4 @@ BEGIN
 
 END
 GO
+
