@@ -1,0 +1,7 @@
+{
+  "// purpose": "Workspace-recommended VS Code extensions. When this folder opens, VS Code prompts to install any of these that are missing. The Mermaid extensions render the ```mermaid code blocks inline in the built-in markdown preview.",
+  "recommendations": [
+    "bierner.markdown-mermaid",
+    "bpruitt-goddard.mermaid-markdown-syntax-highlighting"
+  ]
+}

@@ -1,4 +1,7 @@
-declare @division datetime = '2026-04-17 12:00:00';
+use [VeoSolutions_DEV];
+go
+
+declare @division datetime = '2026-04-20 00:00:00';
 
 with event_data as (
 select
@@ -14,7 +17,7 @@ select
     resultCount,
     searchTerm,
     execution_time.executionTimeSec
-from [VeoSolutions_DEV].[dbo].[event_log]
+from [dbo].[event_log]
 cross apply openjson([data]) with (
     [community] varchar(100) '$.community',
     [series] varchar(100) '$.series',
@@ -31,7 +34,18 @@ cross apply (
 ) [execution_time]
 where [action] = 'perform_search' 
 and [json_data].[sessionId] is null
-and [json_data].[module] = 'option_pricing' ),
+and [json_data].[module] = 'option_pricing'
+and [json_data].[executionTimeMs] < 88000
+),
+terms as (
+select distinct 
+    organization_id,    
+    community,
+    series,
+    [plan],
+    searchTerm
+from event_data
+),
 pre_changes_searches as (
     select 
         *
@@ -43,15 +57,6 @@ post_changes_searches as (
         *
     from event_data
     where event_log_date >= @division
-),
-terms as (
-select distinct 
-    organization_id,    
-    community,
-    series,
-    [plan],
-    searchTerm
-from pre_changes_searches
 ),
 average_execution_time_pre_changes as (
     select 
@@ -96,8 +101,54 @@ average_execution_time_post_changes as (
         pcs.series,
         pcs.[plan],
         pcs.searchTerm
+),
+pre_grand_total as (
+    select 
+        organization_id,
+        community,
+        series,
+        [plan],
+        avg([executionTimeSec]) as [grandTotalExecutionTimeSec]
+    from pre_changes_searches
+    group by 
+        organization_id,
+        community,
+        series,
+        [plan]
+),
+post_grand_total as (
+    select 
+        organization_id,
+        community,
+        series,
+        [plan],
+        avg([executionTimeSec]) as [grandTotalExecutionTimeSec]
+    from post_changes_searches
+    group by 
+        organization_id,
+        community,
+        series,
+        [plan]
 )
 
+-- Query to compare grand total execution times before and after changes
+-- based grouped by organization, community, series, and plan
+select 
+    pgt.organization_id,
+    pgt.community,
+    pgt.series,
+    pgt.[plan],
+    pgt.[grandTotalExecutionTimeSec] as [grandTotalExecutionTimePreChangesSec],
+    pgt2.[grandTotalExecutionTimeSec] as [grandTotalExecutionTimePostChangesSec]
+from pre_grand_total pgt
+left join post_grand_total pgt2 on pgt2.organization_id = pgt.organization_id
+    and pgt2.community = pgt.community
+    and pgt2.series = pgt.series
+    and pgt2.[plan] = pgt.[plan]
+
+/*
+-- Query to compare average execution times before and after changes
+-- based grouped by organization, community, series, plan, and search term
 select 
     t.organization_id,
     t.community,
@@ -117,4 +168,5 @@ left join average_execution_time_post_changes aepoc on aepoc.organization_id = t
     and aepoc.series = t.series
     and aepoc.[plan] = t.[plan]
     and aepoc.searchTerm = t.searchTerm
-order by t.organization_id, t.community, t.series, t.[plan], t.searchTerm
+order by t.organization_id, t.community, t.series, t.[plan], t.searchTerm 
+*/

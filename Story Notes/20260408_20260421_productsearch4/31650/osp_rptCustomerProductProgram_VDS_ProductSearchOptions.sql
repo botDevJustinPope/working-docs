@@ -30,7 +30,7 @@ AS
                  Output: source_type, name, application, product, area, sub_area,
                          price, price_level, part_no, item_no, gpc_id, build_id
     Usage:
-        EXEC [dbo].[osp_rptCustomerProductProgram_JKP]
+        EXEC [dbo].[osp_rptCustomerProductProgram_VDS_ProductSearchOptions]
             @customer_id               = 'TMH2010',
             @spec_id                   = 8279,
             @plan_id                   = 12345,
@@ -50,7 +50,7 @@ BEGIN
     WHERE  [plan_id] = @plan_id;
 
     -- ============================================================
-    -- Step 1b: Resolve customer-level build behavior flags.
+    -- Step 1b: Resolve customer-level build behavior flags. 
     --          opt_pricing_build_type drives which build (max/min/std)
     --          is selected per area.  group_walls controls whether bath-tile
     --          sub_areas are collapsed into a single "Tile Walls" row.

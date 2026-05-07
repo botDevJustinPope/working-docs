@@ -1,0 +1,33 @@
+VEO Intelligence Reporting (VIR) — Meeting Summary
+Date: April 24, 2026 · Duration: ~1h 25mParticipants: Robert Hobbs, Justin Pope, Daniel Arwe, Daniel Krisher ("Data Daniel"), Samuel Klepper, Walter Martinez
+Purpose
+Align the VDS and Data teams on how to design, build, and integrate reporting in VDS using Power BI, and scope out what needs to happen before a technical spike.
+Three Implementation Paths Considered
+Justin opened by framing the three options everyone had been discussing informally:
+Separate reporting portal, VDS as auth provider. VDS implements an OIDC service so an external reporting portal can authenticate users through it.
+VDS is the reporting portal. VDS calls Power BI directly, handles security internally, and embeds reports in its own UI.
+Fully external portal. Daniel's team owns the portal end-to-end, including security; VDS just links out to it.
+Decision: The group aligned on Path 2 as the preferred direction. Path 1 requires an OIDC build that's too heavy for the current roadmap. Path 3 was floated by Richard as an interim option, but Ryan/Sales made clear they ultimately want everything inside VDS. Rob emphasized this is the current direction — if the spike exposes blockers, they may pivot.
+How the Power BI Integration Would Work
+Daniel Krisher walked through the "app-owns-data" model:
+Register an Azure Entra app (service principal) that's granted access to a Power BI workspace.
+VDS calls Power BI through that service principal — end users don't need their own Power BI logins.
+VDS passes a context payload (likely user ID + organization ID, possibly role) into the report.
+Filtering is enforced via Dynamic Row-Level Security (RLS) in the Power BI semantic model.
+Reports are interactive embeds (iframe or new tab) — not PDFs, which was a significant shift from earlier assumptions and invalidates parts of the Figma design.
+Rob pushed for a single consistent payload shape across all reports rather than per-report field configuration in the admin layer.
+Open Design Questions
+Multi-stack complications. VDS runs across two stacks (WBS and ePlan). The same person can have separate user IDs in each stack, so user ID alone can't bridge them. Email might work but isn't fully reliable. One option on the table: scope each report session to the stack the user launched from.
+Single-builder vs. cross-org view. VDS is normally scoped to one active builder/account org at a time, but reports could be more useful if users could aggregate across multiple orgs they have access to. The group leaned toward supporting multi-org payloads, since the data warehouse already has it.
+Workspace structure. At minimum they need separate dev and prod workspaces so Daniel can stage new reports against dev environments. Whether to split workspaces per stack (for AFI/CCDI monetization or management) was deferred.
+Capacity. Power BI requires purchasing capacity units — DevOps will need to be involved in that conversation.
+Pre-Spike Action Items
+Rob emphasized he wants enough groundwork done this sprint that the spike next sprint isn't derailed by foundational unknowns:
+Entra app setup — Justin will check his existing access from the Okta/OIDC work; Aaron (DevOps) will be pulled in. Rob already messaged him.
+Generate a working app-owns-data URL — Daniel Krisher to figure out the exact mechanism for producing a report URL that renders without a Power BI login and supports RLS filtering.
+Prepare a sample report — Daniel will copy an existing report and wire up the semantic model with the filtering logic to use as the spike target.
+Gather developer documentation — Sam already found a Microsoft doc covering URL construction (tenant ID, client ID, secret, workspace ID, report ID); Daniel to share the YouTube tutorials he'd watched.
+Goal: be able to invoke a filtered report via Postman before writing any VDS code.
+Next Meeting
+Follow-up scheduled for Wednesday, with Aaron from DevOps invited to help on the Entra app setup.
+ 
