@@ -1,0 +1,4 @@
+1 we need configuration to turn off these audit event logs
+2 we need to communicate with BI Daniel and Reese about these changes
+3 decide whether the other event logs are needed with the batch idea
+- keep in place for right now, include in batch, later we can get rid of the specific logging

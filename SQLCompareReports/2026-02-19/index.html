@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Schema Discovery 2026-02-19 — Redgate SQL Compare Reports</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: Segoe UI, Arial, sans-serif;
+      background: #f4f6f8;
+      color: #222;
+      padding: 2rem;
+    }
+
+    h1 {
+      font-size: 1.6rem;
+      margin-bottom: 0.25rem;
+      color: #1a1a2e;
+    }
+
+    .subtitle {
+      font-size: 1.2rem;
+      color: #666;
+      margin-bottom: 2rem;
+    }
+
+    .group {
+      margin-bottom: 1.5rem;
+    }
+
+    .group-label {
+      font-size: 0.75rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: #888;
+      margin-bottom: 0.5rem;
+      padding-left: 0.25rem;
+    }
+
+    details {
+      background: #fff;
+      border: 1px solid #dde1e7;
+      border-radius: 6px;
+      margin-bottom: 0.5rem;
+      overflow: hidden;
+    }
+
+    summary {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0.75rem 1rem;
+      cursor: pointer;
+      user-select: none;
+      font-weight: 600;
+      font-size: 0.95rem;
+      list-style: none;
+    }
+
+    summary::-webkit-details-marker { display: none; }
+
+    summary:hover { background: #f8f9fb; }
+
+    details[open] summary { border-bottom: 1px solid #dde1e7; }
+
+    .summary-left {
+      display: flex;
+      align-items: center;
+      gap: 0.6rem;
+    }
+
+    .chevron {
+      display: inline-block;
+      width: 16px;
+      height: 16px;
+      flex-shrink: 0;
+      transition: transform 0.2s ease;
+      color: #555;
+    }
+
+    details[open] .chevron { transform: rotate(90deg); }
+
+    .tag {
+      font-size: 0.72rem;
+      font-weight: 600;
+      padding: 2px 7px;
+      border-radius: 3px;
+      background: #e8edf5;
+      color: #3a5a9b;
+    }
+
+    .summary-right a {
+      font-size: 0.78rem;
+      font-weight: 400;
+      color: #3a7bd5;
+      text-decoration: none;
+      padding: 2px 8px;
+      border: 1px solid #c0d4f0;
+      border-radius: 4px;
+    }
+
+    .summary-right a:hover { background: #eaf1fc; }
+
+    .report-frame {
+      width: 100%;
+      height: 680px;
+      border: none;
+      display: block;
+    }
+
+    .home-link {
+      display: inline-block;
+      font-size: 0.85rem;
+      color: #3a7bd5;
+      text-decoration: none;
+      margin-bottom: 1rem;
+      padding: 4px 10px;
+      border: 1px solid #c0d4f0;
+      border-radius: 4px;
+      background: #fff;
+    }
+
+    .home-link:hover { background: #eaf1fc; }
+  </style>
+</head>
+<body>
+
+  <a class="home-link" href="../index.html">← Home</a>
+  <h1>Schema Discovery: 2026-02-19</h1>
+  <p class="subtitle">Third-party database vs. internal dev copy — Redgate SQL Compare</p>
+
+  <div class="group">
+    <div class="group-label">SQL Compare</div>
+
+    <details open>
+      <summary>
+        <span class="summary-left">
+          <svg class="chevron" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="6 4 10 8 6 12"/>
+          </svg>
+          SQL Compare Report
+          <span class="tag">2026-02-19</span>
+        </span>
+        <span class="summary-right">
+          <a href="SQLCompareReport.html" target="_blank">Open in new tab ↗</a>
+        </span>
+      </summary>
+      <iframe class="report-frame" src="SQLCompareReport.html" loading="lazy" title="SQL Compare Report"></iframe>
+    </details>
+  </div>
+
+</body>
+</html>

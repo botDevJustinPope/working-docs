@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home — Redgate SQL Compare Reports</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: Segoe UI, Arial, sans-serif;
+      background: #f4f6f8;
+      color: #222;
+      padding: 2rem;
+    }
+
+    h1 {
+      font-size: 1.6rem;
+      margin-bottom: 0.25rem;
+      color: #1a1a2e;
+    }
+
+    .subtitle {
+      font-size: 1.2rem;
+      color: #666;
+      margin-bottom: 2rem;
+    }
+
+    .group-label {
+      font-size: 0.75rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: #888;
+      margin-bottom: 0.5rem;
+      padding-left: 0.25rem;
+    }
+
+    .deployment-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+
+    .deployment-list a {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0.85rem 1rem;
+      background: #fff;
+      border: 1px solid #dde1e7;
+      border-radius: 6px;
+      text-decoration: none;
+      color: #222;
+      font-weight: 600;
+      font-size: 0.95rem;
+      transition: background 0.15s ease, border-color 0.15s ease;
+    }
+
+    .deployment-list a:hover {
+      background: #f8f9fb;
+      border-color: #c0d4f0;
+    }
+
+    .deployment-left {
+      display: flex;
+      align-items: center;
+      gap: 0.6rem;
+    }
+
+    .arrow {
+      color: #3a7bd5;
+      font-size: 0.9rem;
+      font-weight: 400;
+    }
+
+    .tag {
+      font-size: 0.72rem;
+      font-weight: 600;
+      padding: 2px 7px;
+      border-radius: 3px;
+      background: #e8edf5;
+      color: #3a5a9b;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Home</h1>
+  <p class="subtitle">Redgate SQL Compare Reports</p>
+
+  <div class="group-label">Deployments</div>
+  <ul class="deployment-list">
+    <li>
+      <a href="Deployment 2026_05_11/index.html">
+        <span class="deployment-left">
+          Deployment 2026-05-11
+          <span class="tag">Latest</span>
+        </span>
+        <span class="arrow">Open ↗</span>
+      </a>
+    </li>
+    <li>
+      <a href="Deployment 2026_04_13/index.html">
+        <span class="deployment-left">
+          Deployment 2026-04-13
+        </span>
+        <span class="arrow">Open ↗</span>
+      </a>
+    </li>
+  </ul>
+
+  <div class="group-label" style="margin-top: 1.5rem;">Schema Discovery</div>
+  <ul class="deployment-list">
+    <li>
+      <a href="2026-02-19/index.html">
+        <span class="deployment-left">
+          2026-02-19
+          <span class="tag">Third-party vs. dev</span>
+        </span>
+        <span class="arrow">Open ↗</span>
+      </a>
+    </li>
+  </ul>
+
+</body>
+</html>
