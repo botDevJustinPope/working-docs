@@ -2,8 +2,9 @@
 
 > **This file is the ChatGPT entry point.** It is ChatGPT-specific — Claude Code uses
 > `documentation/assistants/claude.md` and GitHub Copilot uses
-> `documentation/assistants/copilot-instructions.md`. Shared conventions that apply to all three
-> (and any future LLM tool) live under `documentation/skills/`.
+> `documentation/assistants/copilot-instructions.md`. Codex uses
+> `documentation/assistants/codex.md`. Shared conventions that apply to all current and future
+> LLM tools live under `documentation/skills/`.
 >
 > ChatGPT does not have direct filesystem access to this repo. This file is intended to be
 > **pasted into a ChatGPT conversation** at the start of work, or saved as the system instruction
@@ -52,8 +53,8 @@ execute. The same approval gates that apply to Claude Code apply here.
 
 ## Critical Rules (Always Apply)
 
-These mirror the rules that govern Claude Code in this repo so the team gets the same behavior
-regardless of which LLM helped with a given step.
+These mirror the rules that govern the assistant entry points in this repo so the team gets the
+same behavior regardless of which LLM helped with a given step.
 
 1. **Never produce a final commit without explicit user approval** of the staged diff and the
    proposed commit message.

@@ -2,8 +2,9 @@
 
 > **This file is the Claude Code entry point.** It is Claude-specific — ChatGPT uses
 > `documentation/assistants/chatgpt-instructions.md` and GitHub Copilot uses
-> `documentation/assistants/copilot-instructions.md`. Shared conventions that apply to all three
-> (and any future LLM tool) live under `documentation/skills/`.
+> `documentation/assistants/copilot-instructions.md`. Codex uses
+> `documentation/assistants/codex.md`. Shared conventions that apply to all current and future
+> LLM tools live under `documentation/skills/`.
 >
 > Claude Code does not auto-discover this file from the repo root. Load it explicitly at session
 > start with: *"Read `documentation/assistants/claude.md`."*
@@ -146,5 +147,5 @@ added to the table above once each file is authored.
 - `documentation/skills/ai-content/ai-content-conventions.md` — how to file AI-generated imagery and preserve prompts.
 
 When one of these is authored, follow the propagation workflow in
-[`assistant-conventions.md`](assistant-conventions.md) so the corresponding ChatGPT entry point
-gets updated in the same change.
+[`assistant-conventions.md`](assistant-conventions.md) so the corresponding assistant entry
+points get updated in the same change.

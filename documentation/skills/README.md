@@ -1,7 +1,7 @@
 # Working-Docs Skills (Shared Conventions)
 
 This directory holds shared convention files that apply across all LLM assistants used in this
-repo (Claude Code, ChatGPT, GitHub Copilot, future tools).
+repo (Claude Code, ChatGPT, GitHub Copilot, Codex, future tools).
 
 Each file describes how a recurring kind of artifact in Working-Docs should be created, named,
 filed, and cross-referenced.
@@ -14,6 +14,8 @@ The entry points in `documentation/assistants/` reference these files:
   from disk, so the rules themselves are summarized in its entry point.
 - `copilot-instructions.md` lists them under **Required Reading — Load at Session Start** so
   Copilot picks them up at the start of every session.
+- `codex.md` references them in its **lazy-load table** — Codex loads each file only when the
+  current task touches that area.
 
 When adding a new convention file here, follow the propagation workflow in
 [`../assistants/assistant-conventions.md`](../assistants/assistant-conventions.md).
@@ -50,6 +52,10 @@ When a stub above is filled in, also:
    the real file path (and add a row if one wasn't already drafted).
 2. Inline the rules into the appropriate section of
    `documentation/assistants/chatgpt-instructions.md`.
+3. Add the file under the appropriate Required Reading category in
+   `documentation/assistants/copilot-instructions.md`.
+4. Confirm the corresponding lazy-load row in `documentation/assistants/codex.md` points at the
+   real file path.
 
 ---
 

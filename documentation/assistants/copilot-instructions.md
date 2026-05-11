@@ -2,8 +2,9 @@
 
 > **This file is the GitHub Copilot entry point.** It is Copilot-specific — Claude Code uses
 > `documentation/assistants/claude.md` and ChatGPT uses
-> `documentation/assistants/chatgpt-instructions.md`. Shared conventions that apply to all three
-> (and any future LLM tool) live under `documentation/skills/`.
+> `documentation/assistants/chatgpt-instructions.md`. Codex uses
+> `documentation/assistants/codex.md`. Shared conventions that apply to all current and future
+> LLM tools live under `documentation/skills/`.
 >
 > Copilot does not auto-discover this file from `documentation/assistants/`. To use it, either
 > point Copilot at it via your Copilot configuration, or paste it into Copilot Chat at session
