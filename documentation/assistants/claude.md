@@ -43,6 +43,7 @@ area. This preserves context for actual work.
 | Staging files for commit (`git add`) | `documentation/skills/git/add-conventions.md` |
 | Authoring a commit message | `documentation/skills/git/commit-conventions.md` |
 | Pushing to GitHub | `documentation/skills/git/push-conventions.md` |
+| Calling OpenAI (chat completion, image generation, War Room posters) | `documentation/skills/external-services/openai-scripts.md` |
 
 Additional rows will be added as War Room and notes conventions are authored under
 `documentation/skills/`. See [Planned skills](#planned-skills) below for the current backlog.

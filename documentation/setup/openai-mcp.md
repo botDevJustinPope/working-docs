@@ -7,6 +7,13 @@ models and generating images directly in conversation.
 > Authored 2026-05-08 based on the MCP ecosystem at that time. If significant time has passed,
 > verify the recommended MCP server is still actively maintained before installing.
 
+> **Status (2026-05-10) — alternative path.** The primary OpenAI integration in this repo is now
+> the in-repo PowerShell scripts under `scripts/openai/`, documented at
+> [`../skills/external-services/openai-scripts.md`](../skills/external-services/openai-scripts.md).
+> The scripts are tool-agnostic (Claude Code, ChatGPT, Copilot, or a human can all use them) and
+> version-controlled. This MCP walkthrough remains here as an **alternative** for Claude Code
+> users who want runtime MCP tools instead of (or in addition to) the scripts.
+
 ---
 
 ## What This Enables

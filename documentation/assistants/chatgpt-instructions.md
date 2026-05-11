@@ -147,6 +147,28 @@ This section will expand as the process is refined.
 - The poster should live next to its Story Notes in this repo.
 - Personas referenced in the PBI should be cross-linked.
 
+### Calling OpenAI from this repo
+
+OpenAI calls (chat completion, image generation) happen via PowerShell scripts under
+`scripts/openai/`, not through any LLM-tool-specific MCP integration. Since ChatGPT cannot run
+shell commands, propose the exact command and the user runs it locally. Full usage docs are at
+`documentation/skills/external-services/openai-scripts.md`.
+
+Available scripts:
+
+- `scripts/openai/Invoke-OpenAIChat.ps1 -Prompt "..."` — chat completion (default model
+  `gpt-4o`). Returns the assistant message text. Optional `-System "..."`, `-Model "..."`,
+  `-MaxTokens`, `-Temperature`, `-Raw`.
+- `scripts/openai/New-OpenAIImage.ps1 -Prompt "..." -OutputPath "..."` — image generation
+  (default model `gpt-image-1` — DALL-E 3 is retired 2026-05-12, do not request it). Saves a PNG
+  to the given path. Add `-WritePromptSidecar` to write the prompt next to the image.
+- `scripts/openai/New-WarRoomPoster.ps1 -PbiId <id> -Title "<title>"` — domain wrapper for PBI
+  War Room posters. Saves to `AI Content/War Room Posters/PBI-<id>-<slug>.png` with a prompt
+  sidecar. Optional `-StyleDirection "..."` injects extra aesthetic direction.
+
+The scripts read the API key from User-scope env var `CLAUDE_openAPI_security_key`. Do not
+include the API key in commands you propose — the scripts pick it up themselves.
+
 ---
 
 ## Planned conventions

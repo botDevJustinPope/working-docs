@@ -27,6 +27,7 @@ When adding a new convention file here, follow the propagation workflow in
 | `git/add-conventions.md` | What to stage and what not to stage; scope discipline |
 | `git/commit-conventions.md` | Commit message format, scope rules, co-author trailer guidance |
 | `git/push-conventions.md` | Per-push approval, persistence/diff-viewing purpose, force-push prohibition |
+| `external-services/openai-scripts.md` | How to invoke `scripts/openai/` (chat completion, image generation, War Room poster wrapper) |
 
 ---
 

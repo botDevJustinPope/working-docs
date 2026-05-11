@@ -51,6 +51,9 @@ this repo.
 - `documentation/skills/git/commit-conventions.md`
 - `documentation/skills/git/push-conventions.md`
 
+### External Services
+- `documentation/skills/external-services/openai-scripts.md` — how to invoke `scripts/openai/` (chat completion, image generation, War Room poster wrapper)
+
 ### Shared Skills Index
 - `documentation/skills/README.md` — index of shared conventions. Specific files will be added as the War Room and notes conventions are authored; once they exist, list them here under matching `### <Category>` headings.
 
