@@ -42,7 +42,7 @@ files exist yet — they will be authored in dedicated efforts as the process is
 | `personas/persona-conventions.md` | How to write and file a personnel persona used in War Room and refinement |
 | `notes/story-notes-conventions.md` | How to file notes for a specific ADO PBI / story under `Story Notes/` |
 | `notes/meeting-notes-conventions.md` | How to file meeting notes under `Meeting Notes/` |
-| `ai-content/ai-content-conventions.md` | How to file AI-generated images / posters under `AI Content/` (filename, prompt preservation, cross-references) |
+| `ai-content/ai-content-conventions.md` | How to file AI-generated images / posters under `AI-Content/` (filename, prompt preservation, cross-references) |
 
 When a stub above is filled in, also:
 

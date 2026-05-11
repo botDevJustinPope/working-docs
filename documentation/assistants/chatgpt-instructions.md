@@ -22,7 +22,7 @@ Typical contents:
 
 - **Meeting notes** — `Meeting Notes/`
 - **Story notes** — `Story Notes/` (notes about ADO PBIs, often paired with War Room artifacts)
-- **AI Content** — `AI Content/` (images, posters, generated artifacts produced with ChatGPT, DALL·E, etc.)
+- **AI-Content** — `AI-Content/` (images, posters, generated artifacts produced with ChatGPT, DALL·E, etc.)
 - **War Room artifacts** — PBI creation War Room posters, persona work, refinement output
 - **Diagrams** — `diagrams/`
 - **SQL Compare reports** — `SQLCompareReports/`
@@ -41,7 +41,7 @@ ChatGPT typically helps with this repo by:
 
 - Drafting and refining text content (notes, posters, persona descriptions, ADO PBI descriptions).
 - Generating imagery (DALL·E posters for War Room aesthetics) which is then saved into
-  `AI Content/` by the user.
+  `AI-Content/` by the user.
 - Brainstorming structure for new sections of the repo before Justin authors or commits them.
 
 ChatGPT generally does **not** execute git commands directly. When ChatGPT outputs a commit
@@ -124,9 +124,9 @@ below apply once approval is granted.
 - **Meeting notes** go in `Meeting Notes/`. Filename guidance: `<YYYY-MM-DD> <subject>.md` or `.txt`.
 - **Story notes** (per ADO PBI) go in `Story Notes/`. Use the PBI ID in the filename for
   cross-reference.
-- **AI-generated images / posters** go in `AI Content/<topic>/`. Use descriptive filenames;
+- **AI-generated images / posters** go in `AI-Content/<topic>/`. Use descriptive filenames;
   preserve the original prompt next to the image where possible.
-- **War Room PBI posters** are filed alongside the related Story Notes (or under `AI Content/`
+- **War Room PBI posters** are filed alongside the related Story Notes (or under `AI-Content/`
   keyed by topic — exact convention TBD as part of the War Room refinement process).
 
 ### Personas
@@ -163,7 +163,7 @@ Available scripts:
   (default model `gpt-image-1` — DALL-E 3 is retired 2026-05-12, do not request it). Saves a PNG
   to the given path. Add `-WritePromptSidecar` to write the prompt next to the image.
 - `scripts/openai/New-WarRoomPoster.ps1 -PbiId <id> -Title "<title>"` — domain wrapper for PBI
-  War Room posters. Saves to `AI Content/War Room Posters/PBI-<id>-<slug>.png` with a prompt
+  War Room posters. Saves to `AI-Content/WarRooms/PBI Posters/PBI-<id>-<slug>.png` with a prompt
   sidecar. Optional `-StyleDirection "..."` injects extra aesthetic direction.
 
 The scripts read the API key from User-scope env var `CLAUDE_openAPI_security_key`. Do not

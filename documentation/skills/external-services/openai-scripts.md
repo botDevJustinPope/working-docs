@@ -63,12 +63,12 @@ Image generation against `gpt-image-1` (DALL-E 3 is retired **2026-05-12** — *
 ```
 
 Add `-WritePromptSidecar` to also write `<OutputPath>.prompt.txt` next to the image, preserving
-the prompt with the artifact (this is the convention for anything saved under `AI Content/`).
+the prompt with the artifact (this is the convention for anything saved under `AI-Content/`).
 
 ### `New-WarRoomPoster.ps1`
 
 Domain wrapper for PBI War Room posters. Bakes in a minimal poster prompt template and writes to
-`AI Content/War Room Posters/PBI-<id>-<slug>.png` with a `.prompt.txt` sidecar.
+`AI-Content/WarRooms/PBI Posters/PBI-<id>-<slug>.png` with a `.prompt.txt` sidecar.
 
 ```powershell
 .\scripts\openai\New-WarRoomPoster.ps1 -PbiId 12345 -Title "Product Search Component"
@@ -82,7 +82,7 @@ direction without modifying the script:
     -StyleDirection "Cold-war propaganda style, red and beige palette."
 ```
 
-Run this from the **repo root** so the default output path lands inside `AI Content/`.
+Run this from the **repo root** so the default output path lands inside `AI-Content/`.
 
 ---
 
@@ -115,7 +115,7 @@ adds up.
 ## What This Skill Does NOT Cover
 
 - **MCP-server setup** — see [`../../setup/openai-mcp.md`](../../setup/openai-mcp.md).
-- **AI Content filing conventions** (where the poster lives long-term, how to cross-reference it
+- **AI-Content filing conventions** (where the poster lives long-term, how to cross-reference it
   from Story Notes) — will be authored at `../ai-content/ai-content-conventions.md`.
 - **War Room aesthetic standards** (what makes a *good* poster) — will be authored at
   `../war-room/poster-conventions.md`.

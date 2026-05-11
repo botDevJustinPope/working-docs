@@ -21,7 +21,7 @@ Typical contents:
 
 - **Meeting notes** — `Meeting Notes/`
 - **Story notes** — `Story Notes/` (notes about ADO PBIs, often paired with War Room artifacts)
-- **AI Content** — `AI Content/` (images, posters, generated artifacts produced with ChatGPT, DALL·E, etc.)
+- **AI-Content** — `AI-Content/` (images, posters, generated artifacts produced with ChatGPT, DALL·E, etc.)
 - **War Room artifacts** — PBI creation War Room posters, persona work, refinement output
 - **Diagrams** — `diagrams/`
 - **SQL Compare reports** — `SQLCompareReports/`

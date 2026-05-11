@@ -5,7 +5,7 @@
 .DESCRIPTION
     Domain wrapper around New-OpenAIImage.ps1. Builds a poster prompt from the
     PBI metadata, generates the image, and saves it under
-    'AI Content/War Room Posters/' with a .prompt.txt sidecar so the prompt is
+    'AI-Content/WarRooms/PBI Posters/' with a .prompt.txt sidecar so the prompt is
     preserved with the artifact.
 
     The aesthetic template baked in here is intentionally minimal — the full
@@ -26,7 +26,7 @@
 
 .PARAMETER OutputPath
     Override the default output location. Default:
-    'AI Content/War Room Posters/PBI-<id>-<slug>.png' resolved relative to the
+    'AI-Content/WarRooms/PBI Posters/PBI-<id>-<slug>.png' resolved relative to the
     current directory (run from repo root for the default to land correctly).
 
 .PARAMETER Size
@@ -83,7 +83,7 @@ if (-not $OutputPath) {
     $slug = ($Title -replace '[^a-zA-Z0-9 ]', '' -replace '\s+', '-').ToLowerInvariant().Trim('-')
     if ([string]::IsNullOrWhiteSpace($slug)) { $slug = 'untitled' }
     if ($slug.Length -gt 60) { $slug = $slug.Substring(0, 60).TrimEnd('-') }
-    $OutputPath = Join-Path 'AI Content/War Room Posters' "PBI-$PbiId-$slug.png"
+    $OutputPath = Join-Path 'AI-Content/WarRooms/PBI Posters' "PBI-$PbiId-$slug.png"
 }
 
 $scriptDir = Split-Path -Parent $PSCommandPath

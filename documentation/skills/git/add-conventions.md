@@ -23,7 +23,7 @@
   config — they belong in `.gitignore` and must never be committed. If one appears in the working
   tree, remove it (or add it to `.gitignore` first) before proposing a commit.
 - **Secrets / credentials.** PATs, API keys, connection strings, OAuth tokens — never. Even in
-  AI Content, scratch folders, or notes that "won't go anywhere." Pushed history is exposed
+  AI-Content, scratch folders, or notes that "won't go anywhere." Pushed history is exposed
   history.
 - **Untracked drafts the user did not ask to include.** Working-Docs accumulates working notes
   that aren't ready to commit. When `git status` shows untracked files outside the agreed scope,

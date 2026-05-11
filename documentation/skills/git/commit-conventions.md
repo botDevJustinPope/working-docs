@@ -56,7 +56,7 @@ cross-reference is useful.
 ```
 Add War Room poster for product-search PBI
 
-- Save the DALL·E poster under AI Content/WarRoom/30900/
+- Save the DALL·E poster under AI-Content/WarRooms/PBI Posters/30900/
 - Cross-link from Story Notes/30900-product-search-component.md
 
 Co-Authored-By: Claude <noreply@anthropic.com>

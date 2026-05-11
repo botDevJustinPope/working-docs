@@ -8,7 +8,7 @@
     and writes the PNG bytes to OutputPath.
 
     Optionally writes a sidecar .prompt.txt file alongside the image so the
-    prompt is preserved with the artifact, per the AI Content convention.
+    prompt is preserved with the artifact, per the AI-Content convention.
 
     Usage docs at documentation/skills/external-services/openai-scripts.md
 
@@ -35,7 +35,7 @@
     .\New-OpenAIImage.ps1 -Prompt "A dramatic war-room poster..." -OutputPath ".\poster.png"
 
 .EXAMPLE
-    .\New-OpenAIImage.ps1 -Prompt $p -OutputPath "AI Content/foo.png" -WritePromptSidecar
+    .\New-OpenAIImage.ps1 -Prompt $p -OutputPath "AI-Content/foo.png" -WritePromptSidecar
 #>
 [CmdletBinding()]
 param(
