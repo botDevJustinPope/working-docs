@@ -25,6 +25,8 @@ There are three eras the aesthetic supports. Most current work sits in Era I. Th
 
 The eras share the same palette family, typography, and composition rules. They differ in **subject matter** and **environment cues** (code rain, mech parts, hologram glow), not in graphic-design fundamentals.
 
+For a denser, more cinematic expression of Era III — rain-soaked neo-noir megacity, server-rack trenches, augmented soldiers, AI-faction banners hanging beside propaganda posters — see [`aesthetic_future.md`](./aesthetic_future.md). Same restraint guidance as base Era III: reserve for milestone moments.
+
 ---
 
 ## 3. Color palette
@@ -165,20 +167,7 @@ The triplet structure ("VERB THE NOUN. VERB THE NOUN. VERB THE NOUN.") is the mo
 
 ---
 
-## 9. State variants (one operation, multiple posters)
-
-When the same operation needs multiple poster states, prefix the title:
-
-- **`OPERATION X`** — the base poster, "in progress / planned."
-- **`PR OPERATION X`** — pull-request variant. Indicates the work is up for review. Same artwork, prefix changes.
-- **`MISSION ACCOMPLISHED — OPERATION X`** — completion variant. Often gets the laurel-wreath medallion + ribbon at the bottom.
-- **`CANCELED OPERATION X`** — abandoned variant. Stamp "CANCELLED" across the artwork, swap tagline to acknowledge ("OPERATION CANCELLED BY HIGHER COMMAND").
-
-The artwork can be regenerated or reused with overlays — both patterns exist in the current set.
-
----
-
-## 10. Anachronism is the joke
+## 9. Anachronism is the joke
 
 The single most important rule: **the visual era is 1940s; the subject matter is 2020s software.**
 
@@ -190,41 +179,30 @@ When generating: always pair a WW2-era figure / setting with a clearly-modern so
 
 ---
 
-## 11. World War AI direction (Era II canon)
+## 10. World War AI direction (Era II canon)
 
-The four images in `WarRooms/WorldWarAI/` establish the canon for AI factions:
+The images in `WarRooms/WorldWarAI/` establish the canon for AI factions. Each canonized faction has its own aesthetic spec under `.metaData/` covering palette, hero appearance, flag-words, title/tagline grammar, and pose rules:
 
-- **Claude** — appears as a stoic mech-knight in WW2-style armor with a red cape. Symbol: an "Anthropic"-style sunburst on the chest. Standard. Flag-words: **CONTEXT · DEPTH · REASON · CLARITY**. Tagline grammar: "HOLD THE LINE OF REASON. CLARITY IS OUR COMMAND. THINK DEEP. STAND FIRM."
-- **Copilot** — appears as a charging cyber-robot, blue/cyan/steel palette, GitHub-mark on chest. Flag-words: **SPEED · SUGGESTION · FLOW · EXECUTION**. Tagline grammar: "ADVANCE AT SPEED. MOMENTUM WINS THE DAY. MOVE FAST. BUILD FASTER."
+- **Claude** — stoic mech-knight, warm Era-I palette + red cape, *holds-the-line* archetype. Flag-words: **CONTEXT · DEPTH · REASON · CLARITY**. Tagline: "THINK DEEP. STAND FIRM." Full spec: [`aesthetic_faction_claude.md`](./aesthetic_faction_claude.md).
+- **ChatGPT** — orator-android in a coordinated war-room, olive + holographic-cyan palette, *coordinate-the-front* archetype. Flag-words: **ADAPT · ASSIST · COORDINATE · CREATE**. Tagline: "EVERY FRONT. ONE MIND." Full spec: [`aesthetic_faction_chatgpt.md`](./aesthetic_faction_chatgpt.md).
+- **GitHub Copilot** — charging cyber-robot, steel-navy + cyan-glow palette, *advance-at-speed* archetype. Flag-words: **SPEED · SUGGESTION · FLOW · EXECUTION**. Tagline: "MOVE FAST. BUILD FASTER." Full spec: [`aesthetic_faction_githubcopilot.md`](./aesthetic_faction_githubcopilot.md).
 - **Summit / vs. format** — "AFTER ACTION SUMMIT" boxing-match poster style. Use when comparing tools, doing retros, or framing tool-selection debates.
-- **Banner format** — wide horizontal split-scene with Claude side / Copilot side / center title. Use for unifying banners ("WORLD WAR AI — DIFFERENT INTELLIGENCE. ONE FUTURE.").
+- **Banner format** — wide horizontal split-scene with two factions on opposite sides and a center title. Use for unifying banners ("WORLD WAR AI — DIFFERENT INTELLIGENCE. ONE FUTURE.").
 
-When introducing new AI agents (e.g., ChatGPT, Cursor, future tools), give each one:
-1. A WW2-era unit identity (medic, scout, engineer, artillery, intelligence officer, etc.).
-2. A faction palette (warm/cool variant of the core palette).
-3. A four-word flag motto in the same grammar as Claude's / Copilot's.
-4. A faction tagline.
+When introducing a new AI agent faction (Cursor, Gemini, Devin, future tools), give each one:
+1. A WW2-era unit identity (medic, scout, engineer, artillery, intelligence officer, signal corps, etc.).
+2. A faction palette that contrasts with the canonized three (warm-red, olive-cyan, and steel-blue are taken).
+3. A four-word flag motto in the same grammar as the canonized factions.
+4. A faction tagline matching the archetype.
+5. Its own `aesthetic_faction_<name>.md` file once the canon stabilizes.
 
 ---
 
-## 12. What this spec does NOT cover
+## 11. What this spec does NOT cover
 
+- **Prompt templates for generation** — see [`prompt_ado_item_poster.md`](./prompt_ado_item_poster.md) (PBI / Operation posters) and [`prompt_persona_image.md`](./prompt_persona_image.md) (persona portraits).
+- **Operation-poster lifecycle / state variants** — title prefixes for PR / MISSION ACCOMPLISHED / CANCELED variants live in `prompt_ado_item_poster.md`.
 - **Filename / naming convention** — that's `naming.md` (separate doc, deferred).
 - **Per-asset generation metadata** (which model, prompt history, seed) — that's the sidecar schema from the Forge integration (sub-project #4).
 - **Persona aesthetic** — the 13 War Room personas under `WarRooms/Personas/` use related but distinct visual rules (single-figure portrait posters, codename labeling). Persona-specific rules belong in sub-project #3.
 - **Funny / meme content** — `AI-Content/content/funny/` is intentionally outside this aesthetic. Memes follow their own internet-comedy visual logic.
-
----
-
-## 13. Quick prompt template (for OpenAI / DALL·E / gpt-image-1)
-
-For Mode A painterly:
-> *"A WW2-era American propaganda war-room poster, aged paper texture, parchment cream background with burnt orange and olive drab and red accents. Multiple GI soldiers in helmets gathered around a planning table covered in maps and paper documents. In the scene: [the modern software artifact, e.g., a vintage CRT monitor displaying 'QUERY TIMEOUT', or sticky notes labeled 'feature flag ON']. Top title bar reads 'OPERATION [NAME]' in bold cream-on-red ALL CAPS. Bottom tagline reads '[IMPERATIVE TRIPLET].' Painterly illustration, distressed grungy texture overlay, atmospheric warm lighting. Thin cream frame border. Portrait 2:3 aspect ratio."*
-
-For Mode B geometric:
-> *"A WW2-era American propaganda poster, geometric flat-color illustration, parchment cream background with olive green, burnt orange, and red. Single GI soldier holding [the modern software artifact, e.g., a clipboard labeled 'NULL']. Bold ALL CAPS title 'OPERATION [NAME]' top, red on cream. Bottom imperative tagline '[ONE LINE].' Clean simplified shapes, no realistic shading, propaganda-poster aesthetic. Thin cream frame. Portrait 2:3."*
-
-For Era II faction poster (Claude/Copilot side):
-> *"A WW2 propaganda poster in the [warm-Claude / cool-Copilot] palette. [Claude as stoic mech-knight in red-caped WW2 armor with sunburst chest symbol / Copilot as cyber-robot with cyan goggles charging forward, code rain backdrop]. Banner flag reads '[CONTEXT · DEPTH · REASON · CLARITY / SPEED · SUGGESTION · FLOW · EXECUTION]'. Title '[HOLD THE LINE OF REASON / ADVANCE AT SPEED]'. Tagline '[THINK DEEP. STAND FIRM. / MOVE FAST. BUILD FASTER.]'. Aged paper, parchment cream, distressed propaganda style. Portrait 2:3."*
-
-Refine over time. These prompts get filed under `.metaData/prompts/` if a prompt library emerges.
