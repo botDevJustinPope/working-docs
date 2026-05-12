@@ -2,8 +2,9 @@
 
 > **This file is the Codex entry point.** It is Codex-specific - Claude Code uses
 > `documentation/assistants/claude.md`, ChatGPT uses
-> `documentation/assistants/chatgpt-instructions.md`, and GitHub Copilot uses
-> `documentation/assistants/copilot-instructions.md`. Shared conventions that apply to all
+> `documentation/assistants/chatgpt-instructions.md`, GitHub Copilot IDE uses
+> `documentation/assistants/copilot-instructions.md`, and GitHub Copilot CLI uses
+> `documentation/assistants/copilot-cli.md`. Shared conventions that apply to all
 > current and future LLM tools live under `documentation/skills/`.
 >
 > Load this file explicitly at session start with: *"Read
@@ -47,6 +48,7 @@ area. This preserves context for actual work.
 | Authoring a commit message | `documentation/skills/git/commit-conventions.md` |
 | Pushing to GitHub | `documentation/skills/git/push-conventions.md` |
 | Calling OpenAI (chat completion, image generation, War Room posters) | `documentation/skills/external-services/openai-scripts.md` |
+| Working with Front Line Poster Forge or its API-equivalent workflow | `documentation/skills/external-services/front-line-poster-forge.md` |
 
 Additional rows will be added as War Room and notes conventions are authored under
 `documentation/skills/`. See [Planned skills](#planned-skills) below for the current backlog.

@@ -13,7 +13,9 @@ The entry points in `documentation/assistants/` reference these files:
 - `chatgpt-instructions.md` inlines the substance of each convention — ChatGPT cannot lazy-load
   from disk, so the rules themselves are summarized in its entry point.
 - `copilot-instructions.md` lists them under **Required Reading — Load at Session Start** so
-  Copilot picks them up at the start of every session.
+  Copilot IDE picks them up at the start of every session.
+- `copilot-cli.md` references them in its **lazy-load table** — Copilot CLI loads each file only
+  when the current task touches that area.
 - `codex.md` references them in its **lazy-load table** — Codex loads each file only when the
   current task touches that area.
 
@@ -30,6 +32,8 @@ When adding a new convention file here, follow the propagation workflow in
 | `git/commit-conventions.md` | Commit message format, scope rules, co-author trailer guidance |
 | `git/push-conventions.md` | Per-push approval, persistence/diff-viewing purpose, force-push prohibition |
 | `external-services/openai-scripts.md` | How to invoke `scripts/openai/` (chat completion, image generation, War Room poster wrapper) |
+| `external-services/front-line-poster-forge.md` | How to interact with the Front Line Poster Forge custom GPT, its API-equivalent workflow, and GPT Actions bridge |
+| `external-services/front-line-poster-forge-exported-instructions.md` | Repo-local export template for the private GPT Builder configuration |
 
 ---
 
@@ -54,7 +58,9 @@ When a stub above is filled in, also:
    `documentation/assistants/chatgpt-instructions.md`.
 3. Add the file under the appropriate Required Reading category in
    `documentation/assistants/copilot-instructions.md`.
-4. Confirm the corresponding lazy-load row in `documentation/assistants/codex.md` points at the
+4. Confirm the corresponding lazy-load row in `documentation/assistants/copilot-cli.md` points
+   at the real file path (and add a row if one wasn't already drafted).
+5. Confirm the corresponding lazy-load row in `documentation/assistants/codex.md` points at the
    real file path.
 
 ---

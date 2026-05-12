@@ -1,8 +1,9 @@
 # ChatGPT Instructions — Working-Docs
 
 > **This file is the ChatGPT entry point.** It is ChatGPT-specific — Claude Code uses
-> `documentation/assistants/claude.md` and GitHub Copilot uses
-> `documentation/assistants/copilot-instructions.md`. Codex uses
+> `documentation/assistants/claude.md`, GitHub Copilot IDE uses
+> `documentation/assistants/copilot-instructions.md`, GitHub Copilot CLI uses
+> `documentation/assistants/copilot-cli.md`, and Codex uses
 > `documentation/assistants/codex.md`. Shared conventions that apply to all current and future
 > LLM tools live under `documentation/skills/`.
 >
@@ -169,6 +170,68 @@ Available scripts:
 
 The scripts read the API key from User-scope env var `CLAUDE_openAPI_security_key`. Do not
 include the API key in commands you propose — the scripts pick it up themselves.
+
+### Front Line Poster Forge
+
+Front Line Poster Forge is Justin's custom GPT at:
+
+`https://chatgpt.com/g/g-698dcea6a11481919eddb4e04f68fbff-front-line-poster-forge`
+
+Use it in one of three modes:
+
+- **Exact custom GPT behavior:** open the GPT in ChatGPT and paste a structured poster request
+  packet.
+- **Repo tooling / API-equivalent behavior:** use the exported GPT Builder instructions from
+  `documentation/skills/external-services/front-line-poster-forge-exported-instructions.md` with
+  the OpenAI scripts above. This recreates the behavior; it does not call the hosted GPT.
+- **GPT reaches tooling:** configure GPT Actions in the GPT Builder so the GPT calls a small
+  HTTPS API. Setup notes live at `documentation/setup/front-line-poster-forge-actions.md`.
+
+Do **not** treat the `chatgpt.com/g/...` URL as an API endpoint. A public GPT link lets users
+open the GPT in ChatGPT; it does not expose the private builder instructions or provide a
+tool-callable API surface. If the exported instructions file is still a placeholder, say that
+exact Forge parity is unavailable until Justin exports the GPT Builder instructions.
+
+When asking Front Line Poster Forge for poster work, use this packet shape:
+
+```markdown
+# Front Line Poster Forge Request
+
+## Work Item
+- ID:
+- Title:
+- System / Product Area:
+- Feature Type:
+
+## Narrative
+- Problem:
+- Desired Outcome:
+- Primary Tension:
+- Stakeholders / Personas:
+
+## Visual Direction
+- Poster Format:
+- Mood:
+- Visual Motifs:
+- Required Text:
+- Text To Avoid:
+- Color Notes:
+- Style References:
+
+## Repo Filing
+- Target Folder:
+- Desired Filename:
+- Prompt Sidecar Required: yes
+
+## Output Needed
+- Prompt only:
+- Image generation:
+- Critique / refinement:
+- Alternate concepts:
+```
+
+Save generated poster assets under `AI-Content/` unless the user gives a more specific path, and
+preserve the final image prompt next to the image as a `.prompt.txt` sidecar.
 
 ---
 

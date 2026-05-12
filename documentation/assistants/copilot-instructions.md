@@ -1,10 +1,11 @@
 # Copilot Instructions — Working-Docs
 
-> **This file is the GitHub Copilot entry point.** It is Copilot-specific — Claude Code uses
-> `documentation/assistants/claude.md` and ChatGPT uses
-> `documentation/assistants/chatgpt-instructions.md`. Codex uses
-> `documentation/assistants/codex.md`. Shared conventions that apply to all current and future
-> LLM tools live under `documentation/skills/`.
+> **This file is the GitHub Copilot IDE entry point.** It is Copilot-IDE-specific — Claude Code
+> uses `documentation/assistants/claude.md`, ChatGPT uses
+> `documentation/assistants/chatgpt-instructions.md`, GitHub Copilot CLI uses
+> `documentation/assistants/copilot-cli.md`, and Codex uses `documentation/assistants/codex.md`.
+> Shared conventions that apply to all current and future LLM tools live under
+> `documentation/skills/`.
 >
 > Copilot does not auto-discover this file from `documentation/assistants/`. To use it, either
 > point Copilot at it via your Copilot configuration, or paste it into Copilot Chat at session
@@ -54,6 +55,7 @@ this repo.
 
 ### External Services
 - `documentation/skills/external-services/openai-scripts.md` — how to invoke `scripts/openai/` (chat completion, image generation, War Room poster wrapper)
+- `documentation/skills/external-services/front-line-poster-forge.md` — how to interact with the Front Line Poster Forge custom GPT, its API-equivalent workflow, and GPT Actions bridge
 
 ### Shared Skills Index
 - `documentation/skills/README.md` — index of shared conventions. Specific files will be added as the War Room and notes conventions are authored; once they exist, list them here under matching `### <Category>` headings.
