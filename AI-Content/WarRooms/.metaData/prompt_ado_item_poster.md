@@ -61,6 +61,7 @@ When prompting, include the full prefixed title in the title-bar instruction so 
 ## Workflow
 
 1. Pick the mode and fill in the inputs above.
-2. Paste the matching template into the custom GPT, replacing `[bracketed]` slots.
-3. If the result drifts (modern military gear, generic-AI palette, white background, etc.), correct by quoting `aesthetic.md` §3 (palette), §6 (iconography), or §10 (anachronism rule) in the follow-up message.
-4. Save successful prompts back here as named examples once a few good ones land.
+2. The assistant drafts the full prompt with `[bracketed]` slots filled in.
+3. **The assistant saves the prompt as a `.txt` file** under `AI-Content/WarRooms/PBI Posters/Prompt Files/` so the user can open and copy without re-pasting from chat. Filename pattern: `<OperationName>_PBI<Number>.txt` (PascalCase op name — e.g., `OperationFinishingSalvo_PBI31790.txt`). For ops without a PBI number, drop the `_PBI<Number>` suffix; for state variants (PR / completed / canceled), append `_PR`, `_MissionAccomplished`, or `_Canceled`.
+4. User opens the saved prompt file and pastes its contents into the custom GPT.
+5. If the result drifts (modern military gear, generic-AI palette, white background, etc.), correct in a follow-up message by quoting `aesthetic.md` §3 (palette), §6 (iconography), or §10 (anachronism rule) — and update the saved prompt file with the refined version so the canonical text matches what was actually used.
