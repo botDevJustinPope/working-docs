@@ -204,5 +204,5 @@ When introducing a new AI agent faction (Cursor, Gemini, Devin, future tools), g
 - **Operation-poster lifecycle / state variants** — title prefixes for PR / MISSION ACCOMPLISHED / CANCELED variants live in `prompt_ado_item_poster.md`.
 - **Filename / naming convention** — that's `naming.md` (separate doc, deferred).
 - **Per-asset generation metadata** (which model, prompt history, seed) — that's the sidecar schema from the Forge integration (sub-project #4).
-- **Persona aesthetic** — the 13 War Room personas under `WarRooms/Personas/` use related but distinct visual rules (single-figure portrait posters, codename labeling). Persona-specific rules belong in sub-project #3.
+- **Persona aesthetic** — the 13 War Room personas under `WarRooms/Personas/` use related but distinct visual rules (single-figure portrait posters, codename labeling). Per-persona folder layout and content schemas live in [`persona_structure.md`](./persona_structure.md), [`persona_data_template.md`](./persona_data_template.md), and [`persona_template.md`](./persona_template.md). Patterns that stabilize across 3–4 personas get promoted back into this spec as a "Persona portrait rules" section.
 - **Funny / meme content** — `AI-Content/content/funny/` is intentionally outside this aesthetic. Memes follow their own internet-comedy visual logic.
