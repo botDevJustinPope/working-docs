@@ -117,6 +117,68 @@ auto-memory guidance in the system prompt.
 Use any configured MCP servers (Figma, etc.) when the task references their domain. Do not
 authenticate to a new MCP server without confirming with the user first.
 
+### Azure DevOps access (PAT)
+
+When a task needs to read or query Azure DevOps work items (sprint pulls, PBI lookups for War
+Room posters, kickoff flows, etc.), authenticate using a Personal Access Token (PAT) from the
+**User-scope** environment variable:
+
+```
+CLAUDE_ADO_PAT
+```
+
+This mirrors the existing `CLAUDE_openAPI_security_key` convention — all repo-owned secrets
+Claude consumes are prefixed `CLAUDE_` and live at User scope. Defaults:
+
+- **Org:** `https://dev.azure.com/BuildonTechnologies`
+- **Project:** `VeoDesignStudio`
+
+**Setup (one-time, by the user):**
+
+```powershell
+[Environment]::SetEnvironmentVariable('CLAUDE_ADO_PAT', '<pat-value>', 'User')
+# Restart PowerShell so new processes inherit the value.
+```
+
+PAT scopes needed depend on the task — for War Room poster and kickoff workflows, **Work Items:
+Read** is sufficient.
+
+**Usage from PowerShell (REST) — preferred path:**
+
+```powershell
+$pat = $env:CLAUDE_ADO_PAT
+$auth = [Convert]::ToBase64String([Text.Encoding]::ASCII.GetBytes(":$pat"))
+$headers = @{ Authorization = "Basic $auth" }
+Invoke-RestMethod -Headers $headers `
+    -Uri "https://dev.azure.com/BuildonTechnologies/VeoDesignStudio/_apis/wit/workitems/<id>?api-version=7.1"
+```
+
+**Usage from `az` CLI (alternative):**
+
+The `az devops` extension reads from the env var `AZURE_DEVOPS_EXT_PAT`, not `CLAUDE_ADO_PAT`.
+Bridge them per-invocation only — don't permanently duplicate the secret:
+
+```powershell
+$env:AZURE_DEVOPS_EXT_PAT = $env:CLAUDE_ADO_PAT  # process-scope only
+az boards query --org "https://dev.azure.com/BuildonTechnologies" --project "VeoDesignStudio" --wiql "..."
+```
+
+If `az devops` isn't installed, install with `az extension add --name azure-devops`. On a machine
+where the extension auto-install fails (Windows pip error `3221225477` /
+`STATUS_ACCESS_VIOLATION`), run that command once from an elevated shell.
+
+**Rules:**
+
+- **Never print, echo, or interpolate the PAT value into stdout, files, or commit content.** The
+  auto-mode classifier will block commands that leak the value; this is intentional. Pass the PAT
+  via the env var directly to whatever tool consumes it.
+- **Do not commit the PAT** to any file in the repo (`config/*.json`, scripts, sidecars, etc.).
+- If the PAT needs to rotate, just update the User-scope env var — no code change required.
+
+When ADO connectivity is needed and `CLAUDE_ADO_PAT` is not yet set in the current session
+(check with `[Environment]::GetEnvironmentVariable('CLAUDE_ADO_PAT','User')` — length only, never
+the value), tell the user; do not attempt to scrape the ADO web UI as a workaround.
+
 ---
 
 ## Permissions

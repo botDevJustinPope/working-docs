@@ -54,7 +54,9 @@ WW2-era soldiers, officers, resistance fighters, radio operators, trench enginee
 - Retro-futuristic gear — handheld terminals, side-arm scanners, fiber-optic radio sets.
 - Cybernetic soldiers carrying briefcases labeled with software artifacts and deployment documents.
 
-The faction canon in `aesthetic_faction_claude.md`, `aesthetic_faction_chatgpt.md`, and `aesthetic_faction_githubcopilot.md` still applies — same archetypes, denser environment. In this mode, the *human* foreground figures get cybernetic augmentations too, matching the world.
+The faction canon in `aesthetic_faction_claude.md`, `aesthetic_faction_chatgpt.md`, and `aesthetic_faction_githubcopilot.md` still applies *when a faction appears in the scene* — same archetypes, denser environment. **Faction presence is not the default in Era III posters.** A typical Era III VDS / Indago Operation poster shows the team alone in its cyber-trench environment, no factions flanking. Include Claude / ChatGPT / Copilot only when the work item explicitly involves AI collaboration or cross-cutting AI themes — see [`prompt_ado_item_poster.md`](./prompt_ado_item_poster.md) §"Factions are additive, not default" for the rule.
+
+In this mode, the *human* foreground figures get cybernetic augmentations too, matching the world.
 
 ---
 

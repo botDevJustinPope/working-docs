@@ -14,6 +14,16 @@ For AI faction posters, no dedicated prompt doc yet — per-faction canon lives 
 
 ---
 
+## Factions are additive, not default
+
+AI factions (Claude, ChatGPT, Copilot) are **not standard scene elements** in Operation posters. They appear *only* when the work item itself is about AI collaboration, AI tooling, or cross-cutting AI themes — and even then their inclusion is a deliberate scene choice, not a default.
+
+For ordinary team work — bug fixes, schema changes, feature flags, copy revisions, RC reviews, ops scripts, search-criteria adds, performance fixes — the scene is **the team alone**. The Era II/III canon for factions still governs *how* they are drawn when they do appear; it does not govern *whether* they appear in every poster.
+
+When in doubt: leave them out. Faction-bearing Operation posters are reserved for work items where the AI angle is the story (e.g., "encapsulate the AI collaboration before stepping away," "the team picks between two AI tools," "AI agents argue across the table"). Use the v2 reference [`OperationFinishingSalvo_PBI31790_v2.txt`](../PBI%20Posters/Prompt%20Files/OperationFinishingSalvo_PBI31790_v2.txt) as guidance for *how* to compose a multi-faction Operation scene, not as a template for every Operation.
+
+---
+
 ## Inputs you need before prompting
 
 1. **Operation name** — `OPERATION X` (or the state-prefixed variant — see below).

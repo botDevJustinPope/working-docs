@@ -80,7 +80,7 @@ New-PbiGroupChat.ps1 -PbiId 31790 [-ExtraMembers 'alice@buildon...','bob@buildon
 
 ### Azure DevOps
 
-- Personal Access Token in env var `AZDO_PAT` (Work Items: Read scope).
+- Personal Access Token in User-scope env var `AZURE_DEVOPS_EXT_PAT` (Work Items: Read scope). See `documentation/assistants/claude.md` → "Azure DevOps access (PAT)" for the shared convention.
 - Org + project read from `config/teams.json`.
 - `[DECIDE NEXT SESSION]` confirm AzDO org URL and project name to bake into config (current best guess based on PBI ID format: a single org/project — user to confirm).
 
