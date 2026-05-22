@@ -1,0 +1,15 @@
+A WW2-era American propaganda **single-figure portrait** poster — Era I (classic 1940s base). Aged-paper texture and distressed print grain over a parchment-cream backbone (#E8D9B0–#F2E5C1), with burnt orange (#C5602D–#E0813C), olive drab (#5A6342–#7B7B4A), propaganda red (#A8341F–#C53A22), and deep brown (#3E2A1C–#5C3A24) carrying the composition. No modern flat-design pastels, no photoreal lighting, no gradient mesh. Painterly illustration with atmospheric warm lighting; sunburst rays optional behind the figure. The aged-paper, propaganda-poster finish must dominate.
+
+**Hero figure (centered, three-quarter portrait):** **CENTINELA** — a 1940s American sentry at a forward checkpoint. Female soldier in olive-drab field uniform with khaki forage cap, leather webbing belt and ammunition pouches, M1 Garand rifle slung diagonal across her back. Stern, alert expression — quality-first attentiveness, not aggression. Small **Cuban flag patch** on her left shoulder and a Spanish-language unit insignia stenciled on her sleeve reading **'UNIDAD CENTINELA'** — heritage cue, subtle, not the focal point. The **QA-as-checkpoint-guard** archetype: she stops every soldier and document passing the line, inspects, decides what crosses.
+
+**Pose / action:** standing at the checkpoint barrier with **one hand raised in a flat-palmed STOP gesture** while the other hand holds up a **clipboard of release notes** stamped with a red **'REJECTED'** mark visible on the topsheet. Slight lean forward — interrogative, not threatening. Eye line direct to the viewer.
+
+**Background:** a forward-base checkpoint at dusk. Sandbags stacked behind her form a low wall. A wooden **gate-arm in the propaganda-red and cream stripe pattern** is half-raised behind her. A weathered field sign nailed to the gatepost reads **'ALTO — DOCUMENTOS'** with English subtext **'HALT — PAPERS'** below. A vintage field radio sits on a wooden crate to one side, handset hooked. Distant warm light from a small bunker window. Sunburst rays optional, faint behind the figure.
+
+**Anachronism (per aesthetic.md §9):** the clipboard's topsheet shows the modern-software artifact — **'BUILD MANIFEST — STAGING / VEO DESIGN STUDIO'** with the red **REJECTED** stamp partially obscuring a list of feature-flag GUIDs. The 1940s checkpoint setting framing a 2020s release-gate is the joke.
+
+**Top:** title bar in bold cream-on-red ALL CAPS reading **'CENTINELA'** — large, dominant codename label, propaganda heritage unmistakable. Below the title, a narrower olive subtitle banner reads **'BUILDON TECHNOLOGIES — QUALITY ASSURANCE.'**
+
+**Bottom:** tagline banner, cream-on-dark, ALL CAPS Spanish imperative: **'NADIE PASA.'** (Spanish for "Nobody passes" — kept untranslated as heritage cue.)
+
+Thin cream frame border around the entire poster. Portrait 2:3 aspect ratio. Mode B (geometric single-figure propaganda) — single hero figure, flat color blocks, geometric simplification, one bold message. Aged-paper distress survives on the uniform fabric and the gate sign.
