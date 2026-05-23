@@ -44,7 +44,7 @@ Full unit canon: `AI-Content/WarRooms/.metaData/Teams/VDS/persona.md` (Era I) an
 
 ### Commander — above the detachment
 
-**Atlas — Eric Hickey** — *Director of Software Development.* Commands **Atlas's Company**, which comprises the VDS Pathfinders and the Indago Artillery Section. Member of the Senior Leadership joint chiefs. The detachment receives its drop assignments from this level and reports back up the same line. Atlas does not operate *in* the detachment scene — he is the figure above it, holding the company together across two distinct fronts.
+**Atlas — Eric Hickey** — *Director of Software Development.* Commands **Atlas's Company**, which comprises the VDS Pathfinders and the Indago Artillery Section. Member of the Senior Leadership joint chiefs. The detachment receives its drop assignments from this level and reports back up the same line. Atlas does not operate *in* the detachment scene — he is the figure above it, the unifying commander of one combined-arms operation (pathfinders mark the target, artillery delivers the strike).
 
 ### The Pathfinders — four operators
 

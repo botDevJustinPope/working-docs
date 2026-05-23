@@ -1,0 +1,15 @@
+A WW2-era American propaganda **single-figure portrait** poster — Era I (classic 1940s base). Aged-paper texture and distressed print grain over a parchment-cream backbone (#E8D9B0–#F2E5C1), with burnt orange (#C5602D–#E0813C), olive drab (#5A6342–#7B7B4A), propaganda red (#A8341F–#C53A22), and deep brown (#3E2A1C–#5C3A24) carrying the composition. No modern flat-design pastels, no photoreal lighting, no gradient mesh. Painterly illustration with atmospheric warm lighting; faint sunburst rays optional behind the figure. The aged-paper, propaganda-poster finish must dominate.
+
+**Hero figure (centered, three-quarter portrait):** **HAWKEYE** — a 1940s American Detachment Spotter / Verifier of a Pathfinder unit. Male soldier in olive-drab field uniform with khaki forage cap pushed back slightly off the brow, leather webbing belt and a small canvas dispatch pouch at the hip. A pair of NCO chevrons stitched on his sleeve. Focused, patient expression — locked-on attention, the held breath the second before he calls *"mark is true."* The **QA-as-Spotter** archetype: the operator whose green check unlocks the next step.
+
+**Pose / action:** standing slightly elevated on the lip of a sandbagged parapet, **brass-and-leather spotting scope raised to his unobscured right eye** with both hands steadying it. The opposite hip carries the **verification clipboard**, its pages stenciled with grid coordinates and rows of small green check-marks beside completed validations. Posture is patient, not aggressive — observer cadence.
+
+**Background:** a sandbagged observation post inside a war-room corner at first light. Stacked sandbags form the parapet in the foreground. A wooden ammo crate on the parapet beside him holds two brass **stamp-pads — one green stenciled 'CONFIRMED', one red stenciled 'REJECTED'** — the QA verdict made literal. A large situation map is pinned to the rear wall with map pins; a vintage field radio sits on a side table, handset hooked. Warm light from a hooded lamp catches the brass of the scope.
+
+**Anachronism (per aesthetic.md §9):** the topsheet of the clipboard at his hip reads **'RELEASE CANDIDATE — VDS PATHFINDER / BUILD 2026.05'** with a column of feature-flag GUIDs, the topmost row already inked with a green **CONFIRMED** stamp and a hand-checked tick. The 1940s spotting-post setting framing a 2020s release-verification gate is the joke.
+
+**Top:** title bar in bold cream-on-red ALL CAPS reading **'HAWKEYE'** — large, dominant codename label, propaganda heritage unmistakable. Below the title, a narrower olive subtitle banner reads **'BUILDON TECHNOLOGIES — VDS PATHFINDER DETACHMENT.'**
+
+**Bottom:** tagline banner, cream-on-dark, ALL CAPS imperative duo: **'VERIFY THE MARK. CONFIRM THE LIVE.'**
+
+Thin cream frame border around the entire poster. Portrait 2:3 aspect ratio. Mode B (geometric single-figure propaganda) — single hero figure, flat color blocks, geometric simplification, one bold message. Aged-paper distress survives on the uniform fabric, the sandbags, and the clipboard pages.

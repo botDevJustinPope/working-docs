@@ -26,7 +26,7 @@ Units considered and rejected: *Forward Liaison Platoon* (wrong size, wrong ener
 
 - **Forward of everyone.** The detachment operates ahead of the main force — first to land, first to make contact.
 - **Adjacent units:**
-  - [`Indago`](../Indago/) — sister unit under the same commander. Different mission entirely (rear-area fire support). The two units rarely operate in the same scene; when they do, the dynamic is "Pathfinders set the objective; Artillery fires on the grid."
+  - [`Indago`](../Indago/) — sister unit under the same commander, and the other specialized arm of the same combined-arms force. Different mission (rear-area fire support) but the same operation: *Pathfinders mark the target; Artillery delivers the strike.* The callout chain between them is doctrine, not exception — when an Operation involves both Detachments, they appear together by default.
   - **Echelon ERP** — Quartermaster's office one echelon up the chain. Pathfinders don't report to Echelon, but coordinate on the requisition data that flows alongside their drops.
 - **Upstream / downstream supply:** the detachment *receives* a drop assignment (an incoming homebuyer appointment) and *delivers* a marked zone (a committed set of option selections + a budgeted decision) for the rest of the homebuilding force to advance onto.
 
@@ -62,7 +62,7 @@ Primary recommendation is **"FIRST IN. MARK THE WAY."** — shortest, sharpest, 
 
 ## Composition
 
-- **Commander:** [`EricHickey_Atlas`](../../../Personas/EricHickey_Atlas/) — Atlas commands the Company; the Pathfinder Detachment is one of two units under him.
+- **Commander:** [`EricHickey_Atlas`](../../../Personas/EricHickey_Atlas/) — Atlas commands the Company; the Pathfinder Detachment is one of two specialized units in his combined-arms force (the forward arm — Indago is the rear / artillery arm).
 - **Named members of the detachment** (4 operators, per `data.md`):
 
   | Codename | Real role | Proposed role within the Pathfinder Detachment |

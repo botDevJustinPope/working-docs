@@ -3,7 +3,7 @@
 **Real-world anchor:** [`data.md`](./data.md) — Eric Hickey, Director of Software Development at BuildOn Technologies, leads both the VEO Design Studio and VEO Indago teams, 25 years in .NET / DDD.
 **Era applicability:** Era I default. Eligible for Era II appearances as a senior brass figure briefing the AI factions (he is the *human* commander, not a faction-aligned persona).
 **Faction:** Allied (human side). Codename outranks faction allegiance — Atlas commands; he doesn't choose sides between Claude and Copilot.
-**Last updated:** 2026-05-14
+**Last updated:** 2026-05-23
 
 ---
 
@@ -13,28 +13,29 @@
 
 Atlas is the titan who holds the world on his shoulders. The fit, anchored in `data.md`:
 
-- **Two distinct fronts, simultaneously.** Eric commands both the **VEO Design Studio** team (customer-facing homebuyer software — the *sales front*) and the **VEO Indago** team (internal MRP running the Reeveston countertop plant's production schedule — the *industrial / manufacturing front*). These are not two flavors of the same product; they are *front-of-house* and *back-of-house* in the same business. Holding both simultaneously is the load-bearing image.
+- **One combined-arms operation, two specialized units.** Eric commands both the **VEO Design Studio** team (customer-facing homebuyer software — *pathfinders* in the wartime metaphor, forward at the drop zone, marking the way for the follow-on force) and the **VEO Indago** team (internal MRP running the Reeveston countertop plant's production schedule — *artillery* in the metaphor, rear-area fires answering pathfinder marks with concentrated, scheduled output). They are not two parallel commands; they are the two specialized arms of one combined-arms doctrine — *pathfinders find and mark the target; artillery delivers the strike.* Atlas commands the unified operation.
 - **Twenty-five years in the field.** Senior weight, both in tenure and in the technical foundation (DDD as a recurring design philosophy across three employers — and verifiable directly in the Indago codebase). Atlas is the *oldest figure on the field* in the mythology — equivalent here: the most-experienced operator on the front.
-- **Senior Leadership Team.** He's not just running teams; he carries weight on company-wide direction. Strategic load, on top of technical and operational load.
+- **Senior Leadership Table.** He's not just running teams; he carries weight on company-wide direction. Strategic load, on top of technical and operational load.
 - **The recurring "foundation" motif.** DDD, repository / specification patterns, CI/CD pipelines, training channels, QA program introduction — every one of these is *substructure* work. Atlas builds and holds the base that other people stand on.
 
-The risk to watch: Atlas can read as *burdened* or *grim*. The codename should read as *steady* and *load-bearing* instead — the calm shoulders, not the suffering titan.
+The risk to watch: Atlas can read as *burdened* or *grim*, or as a *two-fronts juggler*. The codename should read as *steady* and *unifying* — the calm shoulders that hold one combined operation together, not the suffering titan with two separate worlds on each shoulder.
 
 ## WW2 unit identity
 
-- **Rank / role analogue:** **Colonel — Combined Arms Task Force Commander.** Brass-cap officer with authority over a small mixed-arms force: an elite Pathfinder Detachment forward and an Artillery Section in the rear. Not a single-branch officer; a senior commander whose job is to *orchestrate* across very different unit types.
-- **Wartime function:** Operates from a forward war-room HQ. One eye on the leading edge (Pathfinders marking the way at the homebuyer drop zone), one eye on the gun pit behind the line (Artillery Section at the Reeveston works, scheduling fires). Briefs higher brass, gives doctrine to his unit commanders, walks the line when something needs his hands. Equally comfortable at a map table, over a fire-direction console, and on a rooftop drop zone.
-- **Why this unit:** Director-level + technical-foundation-heavy résumé maps cleanly to a combined-arms senior officer. Both halves of his real command — a 4-person flagship elite team AND a specialist crew running a literal manufacturing-plant scheduling system — fit a WW2 commander who has authority over an elite forward detachment and a rear-area battery simultaneously. The interim-Scrum-Master detail says he still walks the line; not a desk-only general.
+- **Rank / role analogue:** **Colonel — Combined Arms Task Force Commander.** Brass-cap officer commanding a single combined-arms operation built from two specialized units working in tandem: an elite Pathfinder Detachment forward and an Artillery Section behind the line. Not a two-fronts juggler; a unifying commander whose doctrine is the *callout chain* — pathfinder marks the target, artillery delivers the strike, one operation.
+- **Wartime function:** Operates from a forward war-room HQ between the drop zone and the gun pit. Holds the radio handset that links pathfinder marks to artillery solutions on the same map. Briefs higher brass, gives doctrine to his unit commanders, walks the line when something needs his hands. Equally comfortable at a map table, over a fire-direction console, and on a rooftop drop zone — because all three are stations on *one* operation.
+- **Why this unit:** Director-level + technical-foundation-heavy résumé maps cleanly to a combined-arms senior officer. Both halves of his real command — a 4-person flagship elite team AND a specialist crew running a literal manufacturing-plant scheduling system — fit a WW2 commander whose doctrine binds an elite forward detachment to a rear-area battery as one operation. The interim-Scrum-Master detail says he still walks the line; not a desk-only general.
 
 ## Signature props / recurring artifacts
 
 Aim for 2–3 specific, recognizable items that recur across pieces.
 
-- **Twin unit standards / pennants** flanking him in interior scenes — one marked **DESIGN STUDIO** (front-of-house / sales line), one marked **INDAGO** (rear factory / production schedule). The two pennants encode the two-fronts read literally.
-- **Production schedule chart on the war-room wall behind him** — a long horizontal Gantt-style poster showing rows of saws and workstations across shifts. This is the Indago-side tell. Doesn't need to be readable; just legible-as-a-schedule.
+- **Twin unit standards / pennants** flanking him in interior scenes — one marked **DESIGN STUDIO** (the pathfinder arm — forward, finds the way), one marked **INDAGO** (the artillery arm — rear, delivers the strike). The two pennants read as the *two specialized arms of one combined-arms force*, not as two separate commands. Both staffs lean toward Atlas at the center of the map table.
+- **Field radio handset in his free hand or at his belt** — the literal callout link between pathfinder mark and artillery solution. This is the load-bearing prop for the combined-arms doctrine; it should appear in every Atlas portrait. Coiled fiber-optic cord disappears off-frame to two unit feeds in the future variant.
+- **Combined-arms situation map on the war-room table or wall behind him** — a single map showing the forward drop zone and the rear firing positions on the same sheet, with hand-drawn coordinate lines connecting pathfinder marks to artillery fire-solutions. The map is the doctrine made visible: one operation, two roles. (Replaces the production-schedule-chart-only framing from earlier drafts.)
 - **Leather-bound briefing book / field manual** — open or under one arm. Marked with a small embossed "DDD" insignia (the design-philosophy through-line, visible in the Indago codebase as the layered architecture). Reads in-universe as a regimental motto.
 
-Avoid: pistol or rifle (wrong command — he is not infantry), and a literal globe-on-shoulders (too on-the-nose for "Atlas"). An engineer's slide rule on the map table is fine as a tertiary prop but should not crowd the production-schedule chart.
+Avoid: pistol or rifle (wrong command — he is not infantry), and a literal globe-on-shoulders (too on-the-nose for "Atlas"). An engineer's slide rule on the map table is fine as a tertiary prop but should not crowd the situation map or the radio handset.
 
 ## Portrait composition notes
 
@@ -56,15 +57,15 @@ How Atlas "talks" in any in-universe content attributed to him.
 
 ## Tagline / motto
 
-> **"TWO FRONTS. ONE STANDARD."**
+> **"MARK THE TARGET. DELIVER THE STRIKE."**
 
-Alternate phrasings to consider, all per `aesthetic.md` §8 grammar:
+Locked 2026-05-23 — replaces the prior "TWO FRONTS. ONE STANDARD." (which framed the units as parallel rather than as one combined-arms operation). The new tagline encodes the pathfinder→artillery doctrine literally in an imperative duo per `aesthetic.md` §8: VDS marks, Indago delivers, Atlas commands the chain.
 
-- "HOLD THE FOUNDATION. SHIP THE BUILD."
-- "STRATEGIC ALTITUDE. TECHNICAL DEPTH."
-- "THE SHOULDERS THE LINE RESTS ON." *(closer to the Atlas myth, but flirts with the "burdened titan" risk)*
+Alternate phrasings preserved here for future reference:
 
-Primary recommendation is **"TWO FRONTS. ONE STANDARD."** — it's the only one that directly encodes the two-team-command fact from `data.md`, which is the most distinctive thing about this persona.
+- "ONE FRONT. ONE COMMAND." — if the framing needs to be even more explicit.
+- "ILLUMINATE. DELIVER. ADVANCE." — imperative triplet variant (pathfinder verb + artillery verb + combined outcome).
+- "PATHFINDERS MARK. ARTILLERY DELIVERS. ONE STANDARD." — keeps the "standard" through-line if it gets reintroduced elsewhere in the company's iconography.
 
 ## Relationships and deployments
 
@@ -90,7 +91,7 @@ Era III (near-future cyber-WW2): possible appearance as a senior officer in the 
 
 ## Open creative questions
 
-- Confirm or correct the Atlas rationale above (especially the "two pillars" framing — is that the read the user originally had, or was Atlas chosen for a different reason?).
+- Confirm or correct the Atlas rationale above (especially the combined-arms framing — pathfinders forward, artillery behind, callout chain between — is now load-bearing; flag if a different read was originally intended).
 - Should the **DDD insignia** on the briefing book be made literal in-universe (i.e. some kind of trefoil or three-layered crest representing domain/application/infrastructure layers), or stay subtle?
-- Tagline lock-in — confirm **"TWO FRONTS. ONE STANDARD."** or pick an alternate.
-- Codename-label-at-bottom-plate placement: if Atlas's portrait works at the base, does the same placement carry over to the other 12 personas, or do some get top-banner / mid-ribbon variations?
+- Codename-label-at-bottom-plate placement: if Atlas's portrait works at the base, does the same placement carry over to the other personas, or do some get top-banner / mid-ribbon variations?
+- ~~Tagline lock-in.~~ Resolved 2026-05-23 — **"MARK THE TARGET. DELIVER THE STRIKE."** locked.

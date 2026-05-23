@@ -62,7 +62,7 @@ Primary recommendation remains **"EVERY SHIFT. EVERY SAW. EVERY ORDER."** — it
 
 ## Composition
 
-- **Commander:** [`EricHickey_Atlas`](../../../Personas/EricHickey_Atlas/) — Atlas commands the Company; the Artillery Section is one of two units under him.
+- **Commander:** [`EricHickey_Atlas`](../../../Personas/EricHickey_Atlas/) — Atlas commands the Company; the Artillery Section is one of two specialized units in his combined-arms force (the rear / artillery arm — VDS is the forward / pathfinder arm).
 - **Named members of the Section** (3 crew, plus Atlas's command, per `data.md`):
 
   | Codename | Real role | Proposed role within the Artillery Section |

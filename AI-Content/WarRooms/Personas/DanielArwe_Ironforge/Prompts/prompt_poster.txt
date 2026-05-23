@@ -1,0 +1,15 @@
+A WW2-era American propaganda **single-figure portrait** poster — Era I (classic 1940s base). Aged-paper texture and distressed print grain over a parchment-cream backbone (#E8D9B0–#F2E5C1), with burnt orange (#C5602D–#E0813C), olive drab (#5A6342–#7B7B4A), propaganda red (#A8341F–#C53A22), and deep brown (#3E2A1C–#5C3A24) carrying the composition. No modern flat-design pastels, no photoreal lighting, no gradient mesh. Painterly illustration with atmospheric warm lighting; sunburst rays optional behind the figure. The aged-paper, propaganda-poster finish must dominate.
+
+**Hero figure (centered, three-quarter portrait):** **IRONFORGE** — a 1940s American **Combat Engineer / Detachment Sapper** at a forward field-bench. Male soldier in olive-drab field uniform with sleeves rolled to the forearms, khaki forage cap pushed back, **reinforced leather gauntlets** on both hands. **Heavy leather tool bandolier slung across his chest** with stenciled tool-loops marked **'WRENCH'**, **'SOLDER'**, **'FIBER-OPTIC SPLICE'**, **'FILE'**, **'SHIM'**. Soot smudge on one cheek. Focused expression — the operator-at-work, not posed. The **Sapper-who-keeps-the-kit-live** archetype: he builds what the unit needs and fixes what the marker breaks.
+
+**Pose / action:** **crouched braced over a portable field-bench**, mid-action, wielding an **oxy-acetylene welding torch** on a half-assembled piece of equipment clamped in the bench's vise. Strong frame, hands working. Warm orange sparks throw from the torch tip toward the foreground (the sparks are heat, not data). Eye line down on the work, not at the viewer.
+
+**Background:** the lee of a fortified war-room corner. Sandbags stacked behind the bench. A wooden tool-board nailed to the parapet holds spare wrenches, files, and a coil of cable. A weathered field sign reads **'FIELD WORKSHOP — DETACHMENT SAPPER'**. A vintage field radio sits on a crate to one side, handset hooked. Faint warm light from a single bulb above the bench. Sunburst rays optional, faint behind the figure.
+
+**Anachronism (per aesthetic.md §9):** the piece clamped in the vise is a **half-assembled BuildOn / VDS equipment module**, with a paper tag wired to it reading **'BUILD MANIFEST — VEO DESIGN STUDIO / SHIM PR #31602'** — feature-flag GUIDs partially visible. The 1940s field-bench framing a 2020s deployment-tooling fix is the joke.
+
+**Top:** title bar in bold cream-on-red ALL CAPS reading **'IRONFORGE'** — large, dominant codename label, propaganda heritage unmistakable. Below the title, a narrower olive subtitle banner reads **'BUILDON TECHNOLOGIES — SOFTWARE DEVELOPMENT.'**
+
+**Bottom:** tagline banner, cream-on-dark, ALL CAPS imperative duo: **'FORGE THE GEAR. KEEP THE KIT LIVE.'**
+
+Thin cream frame border around the entire poster. Portrait 2:3 aspect ratio. Mode B (geometric single-figure propaganda) — single hero figure, flat color blocks, geometric simplification, one bold message; mid-action pose works in Mode B as long as the lines stay clean. Aged-paper distress survives on the uniform fabric, the tool bandolier, and the field sign.
