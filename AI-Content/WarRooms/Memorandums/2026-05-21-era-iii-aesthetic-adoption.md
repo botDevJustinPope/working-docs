@@ -62,7 +62,7 @@ Full unit canon: `AI-Content/WarRooms/.metaData/Teams/VDS/persona.md` (Era I) an
 
 - **PBI Operation posters in Era III mode** now use the canonical Pathfinder Detachment composition: **exactly four** augmented paratroopers, rain-slick rooftop or server-rack trench environment, holographic markers and HUD visors as set-dressing, no AI factions unless the work is itself about AI collaboration. Era I posters continue to be the default for ordinary work.
 - **Persona profile cards** for each of the four operators (`Tactician`, `Hawkeye`, `Ironforge`, `Overseer`) are drafted and live under each persona folder at `Personas/<RealName>_<Codename>/Prompt/Profile<Codename>_Future.txt`.
-- **The Attributes-3 sprint** is the first Era III run. Eight PBIs have prompt files committed under `AI-Content/WarRooms/PBI Posters/Prompt Files/Attributes-3/` — four already generated, four reset to detachment-only after the factions-are-additive rule landed.
+- **The Attributes-3 sprint** is the first Era III run. Eight PBIs have prompt files committed under `AI-Content/WarRooms/PBI Posters/20260520_20260602_attributes_3/prompts/` (the generated posters sit in the sprint folder itself) — four already generated, four reset to detachment-only after the factions-are-additive rule landed.
 - **A dedicated Era III "Pathfinder Forge" custom GPT** is being scoped to streamline future PBI poster generation against the VDS canon. Status: pending.
 
 If anyone wants their codename rationale, in-universe role within the detachment, or signature props refined, flag it — the role table in `Teams/VDS/persona.md` is explicitly marked *proposed, pending team vetting*. Push back, and we will adjust.

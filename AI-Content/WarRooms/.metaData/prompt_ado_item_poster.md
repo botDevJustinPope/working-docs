@@ -20,7 +20,7 @@ AI factions (Claude, ChatGPT, Copilot) are **not standard scene elements** in Op
 
 For ordinary team work — bug fixes, schema changes, feature flags, copy revisions, RC reviews, ops scripts, search-criteria adds, performance fixes — the scene is **the team alone**. The Era II/III canon for factions still governs *how* they are drawn when they do appear; it does not govern *whether* they appear in every poster.
 
-When in doubt: leave them out. Faction-bearing Operation posters are reserved for work items where the AI angle is the story (e.g., "encapsulate the AI collaboration before stepping away," "the team picks between two AI tools," "AI agents argue across the table"). Use the v2 reference [`OperationFinishingSalvo_PBI31790_v2.txt`](../PBI%20Posters/Prompt%20Files/OperationFinishingSalvo_PBI31790_v2.txt) as guidance for *how* to compose a multi-faction Operation scene, not as a template for every Operation.
+When in doubt: leave them out. Faction-bearing Operation posters are reserved for work items where the AI angle is the story (e.g., "encapsulate the AI collaboration before stepping away," "the team picks between two AI tools," "AI agents argue across the table"). Use the v2 reference [`OperationFinishingSalvo_PBI31790_v2.txt`](../PBI%20Posters/prompts/OperationFinishingSalvo_PBI31790_v2.txt) as guidance for *how* to compose a multi-faction Operation scene, not as a template for every Operation.
 
 ---
 
@@ -72,6 +72,6 @@ When prompting, include the full prefixed title in the title-bar instruction so 
 
 1. Pick the mode and fill in the inputs above.
 2. The assistant drafts the full prompt with `[bracketed]` slots filled in.
-3. **The assistant saves the prompt as a `.txt` file** under `AI-Content/WarRooms/PBI Posters/Prompt Files/` so the user can open and copy without re-pasting from chat. Filename pattern: `<OperationName>_PBI<Number>.txt` (PascalCase op name — e.g., `OperationFinishingSalvo_PBI31790.txt`). For ops without a PBI number, drop the `_PBI<Number>` suffix; for state variants (PR / completed / canceled), append `_PR`, `_MissionAccomplished`, or `_Canceled`.
+3. **The assistant saves the prompt as a `.txt` file** in the `prompts/` subfolder of the poster's sprint folder — `AI-Content/WarRooms/PBI Posters/<sprint folder>/prompts/` (e.g. `20260520_20260602_attributes_3/prompts/`); the generated PNG sits in the sprint folder itself, prompts beside it under `prompts/`. For older posters that predate the sprint-folder layout, save under `PBI Posters/prompts/`. Filename pattern: `<OperationName>_PBI<Number>.txt` (PascalCase op name — e.g., `OperationFinishingSalvo_PBI31790.txt`). For ops without a PBI number, drop the `_PBI<Number>` suffix; for state variants (PR / completed / canceled), append `_PR`, `_MissionAccomplished`, or `_Canceled`.
 4. User opens the saved prompt file and pastes its contents into the custom GPT.
 5. If the result drifts (modern military gear, generic-AI palette, white background, etc.), correct in a follow-up message by quoting `aesthetic.md` §3 (palette), §6 (iconography), or §10 (anachronism rule) — and update the saved prompt file with the refined version so the canonical text matches what was actually used.

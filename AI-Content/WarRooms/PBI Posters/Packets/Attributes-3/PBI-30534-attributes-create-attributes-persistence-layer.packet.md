@@ -48,7 +48,7 @@ Given that:
 ## Repo Filing
 - Target Folder: AI-Content/WarRooms/PBI Posters/
 - Desired Filename: Operation<Codename>_PBI30534.png (codename assigned at generation time; mirrors existing naming)
-- Prompt Sidecar Required: yes — save as AI-Content/WarRooms/PBI Posters/Prompt Files/Operation<Codename>_PBI30534.txt
+- Prompt Sidecar Required: yes — save as AI-Content/WarRooms/PBI Posters/20260520_20260602_attributes_3/prompts/Operation<Codename>_PBI30534.txt
 
 ## Output Needed
 - Prompt only: no
