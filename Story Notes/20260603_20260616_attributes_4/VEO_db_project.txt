@@ -1,0 +1,34 @@
+Discussion with Rob:
+
+Projects:
+1) Improve VEO database
+- put into the project the database 
+    - ssdt project
+    - ef core project
+- possibility to sunset to DataSync
+    - Figure out if we can interalize ETL integration to the VEO database
+    
+
+2) Echelon API
+- this kind of touches on a lot of things
+- it is a big ask though
+
+
+What are the touch points into the VEO database?
+
+Artifact to consolidate this work.
+- under an initiative: Integrations > Veo Integration IMprovements
+- think about what we are solving
+
+ask:
+    - its okay to scope large Projects
+    - but important to focus on the most impactful change
+
+    mindsets:
+    - comprehensive
+        figure out the complete project to find all the 
+
+    - minimalist
+
+
+    between the two we can get the middle to attack
