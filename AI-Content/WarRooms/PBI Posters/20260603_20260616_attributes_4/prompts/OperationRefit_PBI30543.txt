@@ -1,0 +1,35 @@
+[NOTE TO SELF — not part of the prompt. Attach these four files to ChatGPT in this order:
+ 1) AI-Content/WarRooms/Personas/DanielArwe_Ironforge/poster_future.png
+ 2) AI-Content/WarRooms/Personas/JustinPope_Overseer/poster_future.png
+ 3) AI-Content/WarRooms/Personas/WalterMartinez_Hawkeye/poster_future.png
+ 4) AI-Content/WarRooms/Personas/RobHobbs_Tactician/poster_future.png]
+
+**Reference images:** Four reference images are attached to this message. Use them for likeness, matched by both upload order and visual description:
+- **First attached image → IRONFORGE** — the sapper (bearded, glasses, heavier augmented shoulder armor). He is the LEAD figure of this poster.
+- **Second attached image → OVERSEER** — the senior VDS operator (bearded, olive-drab uniform, augmented eye-visor).
+- **Third attached image → HAWKEYE** — the spotter with the augmented monocle-scope over one eye.
+- **Fourth attached image → TACTICIAN** — the mission planner (bald, bearded, amber-tinted glasses, headset).
+If the upload order differs, match each figure by the description above rather than by position.
+
+A WW2-era American propaganda war-room poster fused with retro-futurist cyberpunk dystopia — "World War AI" battlefield aesthetic. Aged-paper texture and distressed print grain over a parchment-cream backbone, with burnt orange, olive drab, propaganda red, and deep brown dominating; electric cyan and holographic blue used sparingly as accents only. Volumetric fog, rain, sparks, and faint code rain in the background. Painterly illustration with cinematic chiaroscuro lighting — stylized realism, not photoreal. Mood: **depot refit** — a forward repair bay at night, the session pulled off the line for a refit: new parts arriving, dead parts pulled, every swap inspected, signed for, and logged. Lamplight on oiled steel, sparks off the bench.
+
+**Foreground — IRONFORGE leads this operation:** **IRONFORGE** (sapper / equipment hand) is the dominant figure, largest in frame, at the refit bench. Bearded, glasses, heavier augmented shoulder armor, olive-drab uniform fused with cybernetic augmentation; render to match the supplied IRONFORGE persona reference. He is mid-refit on a field rig stenciled **"DESIGN SESSION"** — wrench in one hand, the other seating a freshly stenciled component labeled **"NEW ATTRIBUTE VALUE"** into an open slot. Around his bench, dense and legible:
+- an incoming supply crate, lid thrown open, stenciled **"NEW ATTRIBUTES — REVIEW & APPLY"**;
+- an outbound bin tagged **"REMOVED FROM CATALOG"** holding pulled components;
+- one pulled part set apart on the bench, wired with a red warning tag reading **"IN USE — CONFIRM REMOVAL"**, untouched until it gets a second sign-off;
+- a re-stenciled crate bearing the same serial number with the old name painted over by a new one, **"SAME ID · NEW NAME"** chalked beside it.
+
+**Supporting, midground (smaller in frame, working behind and around IRONFORGE):** the rest of the VDS Pathfinder Detachment, olive-drab uniforms fused with cybernetic augmentations (glowing HUD visors, headsets, fiber-optic radio packs), each rendered to match its supplied persona reference image, by codename:
+- **OVERSEER** (senior operator) — at the teletype-CRT printing the refresh manifest, amber rows reading **"FOUND: +ATTRIBUTE · +VALUE · −VALUE"**, one hand on a glowing holographic marker-tablet ready to countersign the change order. Bearded, augmented eye-visor. A sticky note on the console reads **"FLAG: SELECTABLE ATTRIBUTES — ON"**.
+- **HAWKEYE** (spotter / verifier) — checking each incoming and outgoing part against a paper manifest, ticking only the changes the user elected to apply. Augmented monocle-scope over one eye; nothing ships unverified.
+- **TACTICIAN** (mission planner) — at the change board, keeping the audit ledger — every applied change chalked in a column under the heading **"EVERY CHANGE LOGGED"**. Bald, bearded, amber-tinted glasses, headset; **VDS** patch and sergeant stripes.
+
+The team's posture is methodical refit — pull, inspect, fit, sign, log. This is the detachment alone — no AI factions in the scene.
+
+**Background:** server-rack trenches and fortified data-center bunkers receding into rain and fog, the repair bay lit warm against the dark line. A faint holographic banner projects **"REFRESH SESSION — CHANGES FOUND"** across the far horizon. Vintage radios connected to glowing fiber-optic cables. A VDS Pathfinder Detachment banner hangs from the rafters — parachute-and-spearhead insignia over a red flag reading **"FIRST IN · MARK THE WAY"**.
+
+**Top:** title bar in bold cream-on-red ALL CAPS reading **'OPERATION REFIT'**. Below the title, a narrower olive subtitle banner reads **'PBI 30543 — REFRESH THE SESSION. BRING IT UP TO SPEC.'**.
+
+**Bottom:** tagline banner, cream-on-dark, single-line imperative ALL CAPS: **'PULL THE OLD. FIT THE NEW. LOG EVERY CHANGE.'**
+
+Thin cream frame border around the entire poster. Portrait 2:3 aspect ratio. Painterly propaganda composition, dense environmental storytelling. **Figure hierarchy:** IRONFORGE is unmistakably the lead — largest, front-lit, center-frame; OVERSEER, HAWKEYE, and TACTICIAN support at reduced scale. **Critical:** the aged-paper, distressed-propaganda backbone must survive — if the result reads as "Cyberpunk 2077 fan art" instead of "WW2 propaganda with cyberpunk elements," the palette balance has tipped wrong. Pull neon back, push grain and propaganda framing forward.
