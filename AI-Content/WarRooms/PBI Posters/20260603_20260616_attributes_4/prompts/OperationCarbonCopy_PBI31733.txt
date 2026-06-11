@@ -1,0 +1,35 @@
+[NOTE TO SELF — not part of the prompt. Attach these four files to ChatGPT in this order:
+ 1) AI-Content/WarRooms/Personas/JustinPope_Overseer/poster_future.png
+ 2) AI-Content/WarRooms/Personas/DanielArwe_Ironforge/poster_future.png
+ 3) AI-Content/WarRooms/Personas/WalterMartinez_Hawkeye/poster_future.png
+ 4) AI-Content/WarRooms/Personas/RobHobbs_Tactician/poster_future.png]
+
+**Reference images:** Four reference images are attached to this message. Use them for likeness, matched by both upload order and visual description:
+- **First attached image → OVERSEER** — the senior VDS operator (bearded, olive-drab uniform, augmented eye-visor). He is the LEAD figure of this poster.
+- **Second attached image → IRONFORGE** — the sapper (bearded, glasses, heavier augmented shoulder armor).
+- **Third attached image → HAWKEYE** — the spotter with the augmented monocle-scope over one eye.
+- **Fourth attached image → TACTICIAN** — the mission planner (bald, bearded, amber-tinted glasses, headset).
+If the upload order differs, match each figure by the description above rather than by position.
+
+A WW2-era American propaganda war-room poster fused with retro-futurist cyberpunk dystopia — "World War AI" battlefield aesthetic. Aged-paper texture and distressed print grain over a parchment-cream backbone, with burnt orange, olive drab, propaganda red, and deep brown dominating; electric cyan and holographic blue used sparingly as accents only. Volumetric fog, rain, sparks, and faint code rain in the background. Painterly illustration with cinematic chiaroscuro lighting — stylized realism, not photoreal. Mood: **duplication post** — a forward dispatch depot at night, a session pulled up to the transfer line to be copied in full: carbon sheets pressed, manifests matched line by line, cargo moved crate-for-crate, nothing left on the origin dock. Lamplight on teletype brass, carbon-black fingertips.
+
+**Foreground — OVERSEER leads this operation:** **OVERSEER** (senior VDS operator) is the dominant figure, largest in frame, at the duplication station between two field rigs. Bearded, olive-drab uniform fused with cybernetic augmentation, the heaviest multi-overlay HUD visor in the detachment; render to match the supplied OVERSEER persona reference. He is working the transfer line himself — one hand pressing a carbon sheet through a teletype carbon press that prints the duplicate transfer manifest, the other countersigning the transfer order with a glowing holographic marker. His visor stacks two readouts side by side — **"SESSION — SOURCE"** and **"SESSION — TARGET"** — the operator who sees both ends of the copy at once. A fiber-optic radio handset rests within reach on the console. Around his station, dense and legible:
+- the transfer order pinned to the press, a stencil checkbox marked **"☑ INCLUDE SELECTIONS"**;
+- a rubber stamp and ink pad, the top sheet already struck **"COPIED IN FULL"**;
+- a sticky note on the console reading **"FLAG: SELECTABLE ATTRIBUTES — ON"**;
+- twin field rigs flanking the station, stenciled **"SESSION — SOURCE"** and **"SESSION — TARGET"**, cabled into the press.
+
+**Supporting, midground (smaller in frame, working behind and around OVERSEER):** the rest of the VDS Pathfinder Detachment, olive-drab uniforms fused with cybernetic augmentations (glowing HUD visors, headsets, fiber-optic radio packs), each rendered to match its supplied persona reference image, by codename:
+- **IRONFORGE** (sapper / equipment hand) — hoisting a cargo crate stenciled **"CATALOG OPTION — ATTRIBUTES SELECTED"** from the source rig across to the target rig — the physical transfer, crate-for-crate, choices riding inside. Bearded, glasses, heavier augmented shoulder armor.
+- **HAWKEYE** (spotter / verifier) — holding the original manifest and its carbon side by side, augmented monocle-scope down, ticking matched lines — every value matches or it doesn't ship.
+- **TACTICIAN** (mission planner) — at the change board, both scenarios chalked in columns: **"A) COPY SESSION → ANOTHER USER"** and **"B) COPY SELECTIONS → ACTIVE SESSION"**, with an open question chalked beneath: **"OPTION IN ONE, NOT THE OTHER — ADD IT?"**. Bald, bearded, amber-tinted glasses, headset; **VDS** patch and sergeant stripes.
+
+The team's posture is faithful duplication — press, match, carry, stamp. This is the detachment alone — no AI factions in the scene.
+
+**Background:** server-rack trenches and fortified data-center bunkers receding into rain and fog, the dispatch depot lit warm against the dark line. A faint holographic banner projects **"SELECTIONS TRAVEL WITH THE SESSION"** across the far horizon. Vintage radios connected to glowing fiber-optic cables. A VDS Pathfinder Detachment banner hangs from the rafters — parachute-and-spearhead insignia over a red flag reading **"FIRST IN · MARK THE WAY"**.
+
+**Top:** title bar in bold cream-on-red ALL CAPS reading **'OPERATION CARBON COPY'**. Below the title, a narrower olive subtitle banner reads **'PBI 31733 — COPY THE SESSION. CARRY THE SELECTIONS.'**.
+
+**Bottom:** tagline banner, cream-on-dark, single-line imperative ALL CAPS: **'PRESS THE CARBON. MATCH EVERY LINE. LEAVE NOTHING BEHIND.'**
+
+Thin cream frame border around the entire poster. Portrait 2:3 aspect ratio. Painterly propaganda composition, dense environmental storytelling. **Figure hierarchy:** OVERSEER is unmistakably the lead — largest, front-lit, center-frame between the two rigs; IRONFORGE, HAWKEYE, and TACTICIAN support at reduced scale. OVERSEER reads as the senior operator working the line himself — hands on the press, not commanding from above. **Critical:** the aged-paper, distressed-propaganda backbone must survive — if the result reads as "Cyberpunk 2077 fan art" instead of "WW2 propaganda with cyberpunk elements," the palette balance has tipped wrong. Pull neon back, push grain and propaganda framing forward.
