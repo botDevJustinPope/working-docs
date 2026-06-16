@@ -1,0 +1,26 @@
+[NOTE TO SELF — not part of the prompt. Attach ONE reference file to ChatGPT:
+ 1) AI-Content/WarRooms/Personas/JustinPope_Overseer/poster_future.png
+ This is a SOLO poster — Overseer only. No Claude, no Copilot, no ChatGPT figures.]
+
+**Reference image:** One reference image is attached to this message. Use it for likeness:
+- **Attached image → OVERSEER** — the human VDS operator (bearded, olive-drab uniform fused with cybernetic augmentation, glowing augmented eye-visor over one eye). Use this face/likeness and kit for the OVERSEER figure.
+
+A WW2-era American propaganda **seal of approval** — a single circular medallion emblem rendered in "World War AI" battlefield aesthetic, fusing 1940s propaganda heraldry with retro-futurist cyberpunk. Aged-paper texture and distressed print grain over a parchment-cream backbone, with burnt orange, olive drab, propaganda red, and deep brown dominating; electric cyan used as a single restrained accent only. Faint volumetric fog and warm code-rain in the negative space behind the seal. Painterly illustration with cinematic chiaroscuro lighting — stylized realism, not photoreal. Mood: **connoisseur's sign-off** — the moment the senior operator tastes the work, finds it flawless, and blesses the merge. Warm lamplight glow.
+
+**The seal — dominant central device (the "stamp of approval bordering" the user asked for):** a large embossed circular medallion, like a wax-and-brass military approval stamp, with a heavy rope-twist outer ring and an inner beaded ring. The seal sits centered on the aged-paper field, slightly raised with a cast shadow so it reads as stamped onto the poster. The full chef's-kiss scene lives INSIDE this stamp border.
+
+**Ring text (curved along the seal):** top arc reads **'APPROVED FOR DEPLOYMENT'** and bottom arc reads **'PR 82 · CLAUDE FIELD DOCTRINE'**, ALL CAPS military stencil, cream-on-deep-brown, with a small five-point star separating the two arcs on each side. (No "OPERATION" name — this is a documentation pull request, not an operation.)
+
+**Single hero figure inside the seal — OVERSEER, the connoisseur's chef's kiss:** a three-quarter-view bust of OVERSEER filling the central field of the medallion. Senior VDS operator, olive-drab field uniform fused with subtle cybernetic augmentation, a glowing augmented eye-visor over one eye, bearded — render to match the supplied OVERSEER persona reference, in warm propaganda tones. His expression is satisfied, eyes half-closed in a connoisseur's delight. **He is performing the universal Italian "chef's kiss" gesture:** the pinched fingertips and thumb of one hand brought to his lips mid-flourish — fingers gathered, kissed, then flaring open — the unmistakable *perfetto / no-notes* sign-off. This gesture is the centerpiece and replaces the usual thumbs-up. The hand may carry a faint augmented-glove glow, but keep the warm propaganda palette dominant.
+
+**Anachronism (per aesthetic.md §9):** resting just below his kissing hand, within the seal, is a clearly-modern software artifact — an open **'CLAUDE.MD — FIELD DOCTRINE'** instructions sheet (markdown headings, a lazy-load table, a co-author trailer line) bearing a small **'APPROVED'** ink stamp in the corner. The earnest 1940s-propaganda approval seal blessing a 2020s markdown instructions file — chef's-kissed for perfection — is the joke.
+
+**Inner-ring etched checklist (faint, around the inner beaded ring, all ticked):** **'LAZY-LOAD · CO-AUTHOR TRAILER · PERMISSIONS · NO NOTES'**.
+
+**Ribbon banner beneath the seal:** a short cream-on-red ribbon banner curling under the medallion reading **'PR 82 · CHEF'S KISS'**.
+
+**Top:** title bar in bold cream-on-red ALL CAPS reading **'CHEF'S KISS'** — large, dominant, the punchline of the poster. Below it, a narrower olive subtitle banner reads **'PR 82 · CLAUDE DOCUMENTATION TWEAKS — REVIEWED. NO NOTES. MERGE CLEARED.'**
+
+**Bottom:** tagline banner, cream-on-dark, ALL CAPS imperative triplet: **'READ IT. KISS IT. SHIP IT.'**
+
+Thin cream frame border around the entire poster. Portrait 2:3 aspect ratio, with the circular seal as the dominant centered device between the top title bar and the bottom tagline. **Figure count:** exactly ONE figure — OVERSEER only (no Claude, no Copilot, no ChatGPT, no second profile). **Critical:** the aged-paper, distressed-propaganda backbone must survive — the emblem stays warm-dominant (any cyan from Overseer's visor/glove is a single restrained accent only). If the result reads as "Cyberpunk 2077 fan art" instead of "WW2 propaganda with cyberpunk elements," the palette balance has tipped wrong. Pull neon back, push grain, embossing, and propaganda framing forward.

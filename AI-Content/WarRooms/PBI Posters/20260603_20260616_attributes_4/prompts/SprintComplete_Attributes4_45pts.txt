@@ -1,0 +1,33 @@
+[NOTE TO SELF — not part of the prompt. Attach FOUR reference files to ChatGPT in this order:
+ 1) AI-Content/WarRooms/Personas/RobHobbs_Tactician/poster_future.png
+ 2) AI-Content/WarRooms/Personas/WalterMartinez_Hawkeye/poster_future.png
+ 3) AI-Content/WarRooms/Personas/DanielArwe_Ironforge/poster_future.png
+ 4) AI-Content/WarRooms/Personas/JustinPope_Overseer/poster_future.png
+ This is the VDS Pathfinder Detachment — exactly FOUR figures. No Atlas, no Indago, no AI factions.]
+
+**Reference images:** Four reference images are attached to this message. Use them for likeness, matched by both upload order and visual description:
+- **First attached image → TACTICIAN** (Rob Hobbs) — mature cyber-augmented Detachment Sergeant; olive-drab field uniform, khaki forage cap, sergeant chevrons on the left pauldron, brass-and-glass HUD monocle, fiber-optic earpiece, brass-tipped pointer-baton. The mission-planner.
+- **Second attached image → HAWKEYE** (Walter Martinez) — cyber-augmented Detachment Spotter; olive-drab, khaki forage cap, NCO chevrons, brass-and-fiber-optic spotting scope, HUD monocle over the right eye, mech-assisted right pauldron. The verifier.
+- **Third attached image → IRONFORGE** (Daniel Arwe) — cyber-augmented Combat Engineer / Sapper; olive-drab with sleeves rolled, soot on one cheek, mech-assisted reinforced gauntlets with brass knuckle-plates and cyan circuitry, brass-and-glass targeting monocle, leather tool bandolier across the chest.
+- **Fourth attached image → OVERSEER** (Justin Pope) — senior cyber-augmented Pathfinder Operator; olive-drab, khaki forage cap, leather map case, multi-overlay HUD visor with cyan callouts, forearm-mounted analog-cyber catalog terminal, mech-assisted left pauldron (brass-and-chrome).
+If the upload order differs, match each figure by the description above rather than by position.
+
+A WW2-era American propaganda **victory poster** rendered in "World War AI" battlefield aesthetic — retro-futurist cyberpunk fused with 1940s wartime propaganda. Aged-paper texture and distressed print grain over a parchment-cream backbone, with burnt orange, olive drab, propaganda red, and deep brown dominating; electric cyan and holographic-blue used only as restrained accents on visors, holograms, and fiber-optic cabling. Volumetric fog, drifting rain, sparks, and faint warm code-rain fill the air. Painterly illustration with high-contrast cinematic chiaroscuro lighting — stylized realism, not photoreal. Mood: **hard-won triumph** — a small detachment that just took more ground than any larger force before it. Warm lamplight glow cutting through neon haze.
+
+**The scene:** an underground neon war-room / cyber-trench command post at twilight — server-rack bunker walls reinforced with steel-navy plating, vintage field radios wired to glowing fiber-optic cables, a rain-soaked neo-noir megacity skyline visible through a breach in the wall behind. Distress-toned VDS propaganda posters and a hanging **VDS Pathfinder parachute-and-cross banner** dress the back wall. Atmospheric, dense, every corner carrying a labeled artifact, CRT, or trench detail — but the four figures and the central hologram stay the clear focus.
+
+**The four figures — VDS PATHFINDER DETACHMENT, gathered around the central strategy table, mid-celebration (exactly four, no others):** all in olive-drab uniforms fused with cybernetic augmentation, HUD visors/monocles glowing faint cyan, lit warm from the holographic table below. Triumphant body language — fists raised, a clenched salute, hands clapped on shoulders, grins under the grime. Recognizable from the supplied references:
+- **OVERSEER** — forward at the table, one fist raised, the other hand resting on the table edge where his forearm catalog-terminal still glows; HUD visor with cyan callouts.
+- **TACTICIAN** — beside him, pointer-baton lowered at last, a satisfied sergeant's nod, brief folio tucked under one arm; sergeant chevrons on the pauldron.
+- **IRONFORGE** — engineer's grin, soot on his cheek, an augmented gauntlet thrown up in a victory fist, tool bandolier across his chest.
+- **HAWKEYE** — spotting scope lowered, arms crossed or one fist raised, the patient verifier finally letting a grin break; mech-assisted right pauldron.
+
+**Centerpiece — holographic strategy table (the anachronism):** a heavy wooden war-room table projecting a translucent cyan holographic battle map upward into the fog. Rising from it, a dominant glowing figure **'45'** with a label beneath reading **'SPRINT VELOCITY · 45 PTS'** and, above it, **'ATTRIBUTES-4 — COMPLETE'** with a bright cyan **SUCCESS ✓**. A faint vertical column of ticked objectives runs down one side of the hologram — eight green checkmarks labeled **CLEAR HORIZON · EDGEWATCH · FIELD REPORT · RETOOL · DISPATCH · REFIT · CARBON COPY · RUSTED GATE**. A red propaganda stamp burns across the table's corner reading **'DETACHMENT RECORD'**. The 1940s war-room table running a 2020s sprint board as a holographic battle map is the joke.
+
+**Medallion (bottom-center):** an embossed brass-and-laurel-wreath medallion enclosing the **VDS Pathfinder parachute-and-cross insignia**, a short cream-on-red ribbon banner curling beneath it reading **'VDS — PATHFINDER DETACHMENT'**.
+
+**Top:** title bar in bold cream-on-red ALL CAPS reading **'MISSION ACCOMPLISHED'**. Below it, a narrower olive subtitle banner reads **'ATTRIBUTES-4 SECURED · 45 POINTS — A PATHFINDER DETACHMENT RECORD.'**
+
+**Bottom:** tagline banner, cream-on-dark, ALL CAPS imperative triplet: **'FEWER HANDS. HEAVIER HAUL. RECORD BROKEN.'**
+
+Thin cream frame border around the entire poster. **Square 1:1 aspect ratio** — a tight victory tableau, not a tall narrative poster; frame the four figures and the holographic '45' as one centered group. **Figure count:** exactly FOUR — TACTICIAN, HAWKEYE, IRONFORGE, OVERSEER only (no Atlas, no fifth figure, no Claude / ChatGPT / Copilot factions — this is the team alone). **Critical:** the aged-paper, distressed-propaganda backbone must survive — keep it warm-dominant, with cyan and holographic-blue as restrained accents only. If the result reads as "Cyberpunk 2077 fan art" instead of "WW2 propaganda with cyberpunk elements," the palette has tipped wrong: pull neon back, push grain, embossing, and propaganda framing forward.
