@@ -1,0 +1,38 @@
+[NOTE TO SELF — not part of the prompt. Attach these two reference images to ChatGPT in this order:
+ 1) AI-Content/WarRooms/Personas/JustinPope_Overseer/poster_future.png   -> OVERSEER likeness/gear
+ 2) AI-Content/WarRooms/WorldWarAI/faction_claude.png                    -> CLAUDE faction likeness/gear
+They anchor the two heroes even though the final art is 16-bit pixel sprites.
+This is a deliberate Era-III canon break: a comedic arcade crossover, NOT a painterly propaganda poster.
+The table name "estiamted_stage_mappings" is spelled to match the source schema — keep it verbatim.]
+
+**Reference images:** Two reference images are attached. Use them for the two hero characters even though the final render is pixel art:
+- **First image -> OVERSEER** — senior VDS Pathfinder operator (bearded, olive-drab uniform, glowing cyan HUD eye-visor, forearm wrist-terminal). He is Player 1.
+- **Second image -> CLAUDE** — the Claude faction war-figure (bulked-up Warhammer 40k Space Marine, sealed vox-grille war-helm, full-length propaganda-red cape, Anthropic sunburst heraldry). He is Player 2.
+
+---
+
+A photograph of a vintage CRT arcade-cabinet screen running a fictional 16-bit, SNES-era video game — a loving parody mash-up of a **Street Fighter II versus screen** and a **Final Fantasy VI active-time-battle (ATB) turn-based RPG screen**. The whole image carries authentic CRT artifacts: visible horizontal scanlines, gentle screen curvature, phosphor glow and bloom, faint chromatic aberration toward the corners, chunky pixel-art aliasing. Vibrant retro 16-bit palette, neon-lit, high contrast. This image intentionally leaves the painterly war-propaganda look behind and commits fully to a glowing 2D arcade JRPG screenshot — the comedy is in the crossover.
+
+**Genre mash-up framing:** The composition uses the Final Fantasy turn-based battle LAYOUT — the hero party stands on the RIGHT side of the battlefield facing LEFT; the boss enemy looms on the LEFT facing them; three-quarter pixel-art battlefield perspective — while Street Fighter HUD flourishes (a big round-announcement and segmented fighting-game health bars) are overlaid across the top.
+
+**Battlefield / stage (16-bit, cyber-WW2 world):** a neon-soaked server-rack trench on a rain-slick near-future megacity rooftop, fully rendered as pixel art. Parallax background layers: falling cream-and-green pixel "code rain," a glitchy holographic battle-map, distant neon signage, drifting fog. A pixel neon arena sign reads **"VEO DESIGN STUDIO."** A small pixel banner of the VDS Pathfinder Detachment (parachute-and-spearhead insignia on a red flag) hangs in the back. Puddles reflect the neon.
+
+**PARTY — right side, two hero sprites in battle stance, facing left toward the boss:**
+- **OVERSEER (Player 1):** a 16-bit sprite of the senior VDS Pathfinder — olive-drab field uniform, khaki forage cap, beard, a glowing cyan HUD visor across his eyes, a forearm-mounted wrist terminal with a tiny cyan readout. He is shouldering a modern **AR-15-style carbine rifle**, aimed downrange at the boss; a pixel muzzle-flash and a hadoken-style holographic projectile streak from him reading **"FEATURE FLAG: ON."**
+- **CLAUDE (Player 2):** a 16-bit sprite of the Claude faction Space Marine — bulky Warhammer-40k power armor, sealed vox-grille war-helm with a warm HUD glow, full-length propaganda-red cape, the Anthropic sunburst stenciled on his pauldron and chest. He is leveling a **heavy Warhammer 40k bolter rifle** (boxy, oversized sci-fi machine-gun) at the boss. A small radial sunburst of pixels halos behind him.
+
+**BOSS — left side, large: "JOB STAGES" (Round 2, re-animated):** a bare-bones reanimated skeleton war-revenant — the comedic embodiment of a thin, half-finished software feature. Its ribcage is literally just **two bolted-on database-table slabs and nothing else** holding the whole skeleton together; the two slabs are stenciled **"[dbo].[job_stages]"** and **"[dbo].[estiamted_stage_mappings]."** Big gaps yawn where flesh/armor should be, with little dangling paper tags reading **"MISSING: USER EDIT UI"** and **"MISSING: FACET."** A torn-open, empty control-panel cavity gapes in its chest — loose wires, no buttons (no user-enabled way to modify it). Behind it: fresh grave-dirt and a cracked headstone stenciled **"JOB STAGES v1,"** with a red rubber-stamp mark **"RE-ANIMATED"** floating nearby. Glowing dead-pixel eyes. It is mid-attack, swinging a giant rubber stamp reading **"DISABLED,"** graying-out a row of floating pixel **"DESIGN SELECTION"** option cards (its in-world job: disabling selections). It looks rickety, thin, and barely held together — comedically outmatched.
+
+**STREET FIGHTER HUD (top overlay):**
+- Top-left: two stacked, FULL segmented health bars (yellow-to-orange), labeled **"OVERSEER"** and **"CLAUDE."**
+- Top-right: a single, comically SHORT, nearly-empty, glitchy/flickering health bar labeled **"JOB STAGES (THIN BUILD)"** — clearly almost depleted.
+- Center-top: a round timer reading **"99"** and a big yellow brushstroke announcement **"ROUND 2."**
+
+**FINAL FANTASY ATB UI (bottom overlay):**
+- Bottom-left: a classic translucent-blue JRPG command window with a white rounded border and a blinking **"►"** cursor, listing turn-based commands themed to the work: **"FIGHT", "DEPLOY", "REFACTOR", "DEFEND."**
+- Bottom-right: a party status window listing the heroes with full gauges — **"OVERSEER  HP 9999/9999  ATB ████"** and **"CLAUDE  HP 8888/8888  ATB ████"** — both ATB bars full and ready to act.
+- Floating white pixel damage numbers rising off the boss (**"9999!"** crit, plus a small **"404"**) as the heroes connect.
+
+**CENTER TEXT:** a big, bold, yellow arcade announcement across the middle reading **"READY!"** with **"FIGHT!"** just below it, in chunky Street-Fighter-style lettering with a heavy drop shadow.
+
+**Overall:** 4:3 arcade aspect ratio (CRT screen proportion). Pixel-art everything, neon and CRT glow, scanlines over the entire frame. Tone is funny, affectionate, and triumphant — two heavily-armed heroes curb-stomping a flimsy two-table skeleton. Keep all on-screen text crisp and legible despite the retro styling.
