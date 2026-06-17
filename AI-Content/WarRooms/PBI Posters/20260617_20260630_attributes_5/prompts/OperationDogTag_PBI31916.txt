@@ -1,0 +1,33 @@
+[NOTE TO SELF — not part of the prompt. Attach these four files to ChatGPT in this order:
+ 1) AI-Content/WarRooms/PBI Posters/team_images/ironforge_poster_future.png
+ 2) AI-Content/WarRooms/PBI Posters/team_images/overseer_poster_future.png
+ 3) AI-Content/WarRooms/PBI Posters/team_images/hawkeye_poster_future.png
+ 4) AI-Content/WarRooms/PBI Posters/team_images/tactician_poster_future.png]
+
+**Reference images:** Four reference images are attached to this message. Use them for likeness, matched by both upload order and visual description:
+- **First attached image → IRONFORGE** — the sapper / equipment hand (bearded, glasses, heavier augmented shoulder armor).
+- **Second attached image → OVERSEER** — the senior VDS operator (bearded, olive-drab uniform, augmented eye-visor).
+- **Third attached image → HAWKEYE** — the spotter / verifier with an augmented monocle-scope over one eye.
+- **Fourth attached image → TACTICIAN** — the mission planner (bald, bearded, amber-tinted glasses, headset; VDS patch and sergeant stripes).
+If the upload order differs, match each figure by the description above rather than by position.
+
+**Lead figure:** TACTICIAN leads this operation — largest in frame, front-lit, center; the other three support at reduced scale.
+
+A WW2-era American propaganda war-room poster fused with retro-futurist cyberpunk dystopia — "World War AI" battlefield aesthetic. Aged-paper texture and distressed print grain over a parchment-cream backbone, with burnt orange, olive drab, propaganda red, and deep brown dominating; electric cyan and holographic blue used sparingly as accents only. Volumetric fog, rain, sparks, and faint code rain in the background. Painterly illustration with cinematic chiaroscuro lighting — stylized realism, not photoreal. Mood: **requisition / liaison desk** — stamping every outbound dispatch with two extra correlation tags so an allied force can match our records to their own back-end. Ink, stencil plates, a fiber line running out to an allied bunker.
+
+**Foreground — TACTICIAN leads this operation:** **TACTICIAN** (mission planner) is the dominant figure, largest in frame, at the wall map, pointer-baton tracing a glowing fiber-optic line from the VDS bunker out to an allied position flagged **"TAYLOR MORRISON — NSE / SALESFORCE"**. Bald, bearded, amber-tinted glasses, headset; **VDS** patch and sergeant stripes; render to match the supplied TACTICIAN persona reference. Chalked beside the line: **"MATCH OUR RECORDS TO THEIRS"**.
+
+**Supporting, midground (smaller in frame, working behind and around TACTICIAN):** the rest of the VDS Pathfinder Detachment, olive-drab uniforms fused with cybernetic augmentations (glowing HUD visors, headsets, fiber-optic radio packs), each rendered to match its supplied persona reference image, by codename:
+- **IRONFORGE** (sapper / equipment hand) — running a stencil-stamp press, cutting two tags onto every outbound manifest: **"external_user_id"** and **"job_no"**; a rack of about seven stamped dispatch cards beside him, each headed with a GET endpoint path and the two new fields stamped along the bottom. Bearded, glasses, heavier augmented shoulder armor.
+- **HAWKEYE** (spotter / verifier) — verifying that each of the seven endpoint cards carries both tags, ticking a checklist headed **"7 GET ENDPOINTS — TAGGED"**; a side note reads **"SKIP ABOVE-PROFILE CALLS (e.g. /tenants)"**. Augmented monocle-scope over one eye.
+- **OVERSEER** (senior operator) — at the teletype-CRT printing the updated API spec to hand to the ally's liaison, a tag reading **"YAML DOCS → DELIVER"**. Bearded, augmented eye-visor.
+
+A small chalkboard reads **"TAG EVERY RECORD. LET THE ALLY MATCH IT."**. The team's posture is steady correlation — stamp, verify, document, send. This is the detachment alone — no AI factions in the scene.
+
+**Background:** server-rack trenches and fortified data-center bunkers receding into rain and fog, a bright fiber-optic trunk line running off toward a downstream allied bunker on the horizon flagged **"INTEGRATION"**. A faint holographic banner projects **"INTEGRATION API — NOW CARRYING external_user_id · job_no"** across the far horizon. Vintage radios connected to glowing fiber-optic cables. A VDS Pathfinder Detachment banner hangs from the rafters — parachute-and-spearhead insignia over a red flag reading **"FIRST IN · MARK THE WAY"**.
+
+**Top:** title bar in bold cream-on-red ALL CAPS reading **'OPERATION DOG TAG'**. Below the title, a narrower olive subtitle banner reads **'PBI 31916 — STAMP EVERY RECORD WITH ID + JOB NO.'**.
+
+**Bottom:** tagline banner, cream-on-dark, single-line imperative ALL CAPS: **'STAMP THE TAGS. CHECK THE LINE. SEND THE DOCS.'**
+
+Thin cream frame border around the entire poster. Portrait 2:3 aspect ratio. Painterly propaganda composition, dense environmental storytelling. **Figure hierarchy:** TACTICIAN is unmistakably the lead — largest, front-lit, center-frame; IRONFORGE, HAWKEYE, and OVERSEER support at reduced scale. **Critical:** the aged-paper, distressed-propaganda backbone must survive — if the result reads as "Cyberpunk 2077 fan art" instead of "WW2 propaganda with cyberpunk elements," the palette balance has tipped wrong. Pull neon back, push grain and propaganda framing forward.

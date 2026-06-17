@@ -1,0 +1,33 @@
+[NOTE TO SELF — not part of the prompt. Attach these four files to ChatGPT in this order:
+ 1) AI-Content/WarRooms/PBI Posters/team_images/ironforge_poster_future.png
+ 2) AI-Content/WarRooms/PBI Posters/team_images/overseer_poster_future.png
+ 3) AI-Content/WarRooms/PBI Posters/team_images/hawkeye_poster_future.png
+ 4) AI-Content/WarRooms/PBI Posters/team_images/tactician_poster_future.png]
+
+**Reference images:** Four reference images are attached to this message. Use them for likeness, matched by both upload order and visual description:
+- **First attached image → IRONFORGE** — the sapper / equipment hand (bearded, glasses, heavier augmented shoulder armor).
+- **Second attached image → OVERSEER** — the senior VDS operator (bearded, olive-drab uniform, augmented eye-visor).
+- **Third attached image → HAWKEYE** — the spotter / verifier with an augmented monocle-scope over one eye.
+- **Fourth attached image → TACTICIAN** — the mission planner (bald, bearded, amber-tinted glasses, headset; VDS patch and sergeant stripes).
+If the upload order differs, match each figure by the description above rather than by position.
+
+**Lead figure:** OVERSEER leads this operation — largest in frame, front-lit, center; the other three support at reduced scale.
+
+A WW2-era American propaganda war-room poster fused with retro-futurist cyberpunk dystopia — "World War AI" battlefield aesthetic. Aged-paper texture and distressed print grain over a parchment-cream backbone, with burnt orange, olive drab, propaganda red, and deep brown dominating; electric cyan and holographic blue used sparingly as accents only. Volumetric fog, rain, sparks, and faint code rain in the background. Painterly illustration with cinematic chiaroscuro lighting — stylized realism, not photoreal. Mood: **launch control at the line** — the release candidate staged and ready, command running the go/no-go board, the signal lamp flipping to GO for the 06/22 push.
+
+**Foreground — OVERSEER leads this operation:** **OVERSEER** (senior operator) is the dominant figure, largest in frame, at the launch-control console, one hand on a big signal lamp/lever flipping from amber to **GREEN**. Bearded, olive-drab uniform, augmented eye-visor; render to match the supplied OVERSEER persona reference. A date board beside him reads **"RC — 06/22"**, and a go/no-go board shows every row stamped **"GO"**.
+
+**Supporting, midground (smaller in frame, working behind and around OVERSEER):** the rest of the VDS Pathfinder Detachment, olive-drab uniforms fused with cybernetic augmentations (glowing HUD visors, headsets, fiber-optic radio packs), each rendered to match its supplied persona reference image, by codename:
+- **TACTICIAN** (mission planner) — at the wall map, the release convoy staged at the start line and pointed toward a forward position flagged **"PRODUCTION — 06/22"**; pointer-baton on the launch route. Bald, bearded, amber-tinted glasses, headset; **VDS** patch and sergeant stripes.
+- **HAWKEYE** (spotter / verifier) — running the final pre-launch verification pass, a checklist headed **"RC CHECKS — ALL CLEAR"**, monocle-scope on the staged build. Augmented monocle-scope over one eye.
+- **IRONFORGE** (sapper / equipment hand) — holding the convoy/relay rig ready to roll, a tag reading **"STAGED — READY TO SHIP"**. Bearded, glasses, heavier augmented shoulder armor.
+
+A small chalkboard reads **"CUT THE RC. GREEN-LIGHT 06/22."**. The team's posture is disciplined readiness — stage the build, run the checks, give the green. This is the detachment alone — no AI factions in the scene.
+
+**Background:** server-rack trenches and fortified data-center bunkers receding into rain and fog, the launch-control bunker lit warm against the dark line. A faint holographic banner projects **"RELEASE CANDIDATE — 06/22"** across the far horizon. Vintage radios connected to glowing fiber-optic cables. A VDS Pathfinder Detachment banner hangs from the rafters — parachute-and-spearhead insignia over a red flag reading **"FIRST IN · MARK THE WAY"**.
+
+**Top:** title bar in bold cream-on-red ALL CAPS reading **'OPERATION GREEN LIGHT'**. Below the title, a narrower olive subtitle banner reads **'PBI 34083 — RELEASE CANDIDATE FOR 06/22.'**.
+
+**Bottom:** tagline banner, cream-on-dark, single-line imperative ALL CAPS: **'STAGE THE BUILD. RUN THE CHECKS. GIVE THE GREEN.'**
+
+Thin cream frame border around the entire poster. Portrait 2:3 aspect ratio. Painterly propaganda composition, dense environmental storytelling. **Figure hierarchy:** OVERSEER is unmistakably the lead — largest, front-lit, center-frame; TACTICIAN, HAWKEYE, and IRONFORGE support at reduced scale. **Note on palette:** the signal-lamp GREEN is the one permitted green accent — a single glowing GO lamp. Do not let green spread into the rest of the scene; the warm parchment/orange/olive/red backbone must still dominate. **Critical:** the aged-paper, distressed-propaganda backbone must survive — if the result reads as "Cyberpunk 2077 fan art" instead of "WW2 propaganda with cyberpunk elements," the palette balance has tipped wrong. Pull neon back, push grain and propaganda framing forward.

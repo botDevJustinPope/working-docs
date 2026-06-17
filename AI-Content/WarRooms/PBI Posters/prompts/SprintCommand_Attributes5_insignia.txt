@@ -1,0 +1,13 @@
+**Sprint command insignia — circular unit patch (Teams command-channel image).**
+
+This is the detachment's own command badge — the parent emblem the per-operation patches derive from. It carries the canonical VDS Pathfinder Detachment mark rather than a single operation's symbol.
+
+**Format:** A single circular military unit insignia / command patch, centered and filling the frame on a flat dark-charcoal or transparent background, sized to crop cleanly into a round Teams avatar. Square 1:1 canvas. Bold and iconographic — it must stay legible at small avatar size.
+
+**Style:** WW2-era squadron embroidered-patch / stamped-leather emblem fused with subtle retro-futurist cyberpunk. Aged, lightly distressed, with a stitched double-border rim. Palette: parchment cream (#E8D9B0–#F2E5C1), burnt orange (#C5602D–#E0813C), olive drab (#5A6342–#7B7B4A), propaganda red (#A8341F–#C53A22), deep brown (#3E2A1C). Sparing electric-cyan glow (#3FB3D8) as an Era III accent only — a thin highlight on the parachute shroud lines, never dominant. No photorealism, no modern flat-design pastels, no pure-white background.
+
+**Rim:** an outer ring carrying curved stencil ALL-CAPS text — **'VDS PATHFINDER DETACHMENT'** across the top arc and the unit motto **'FIRST IN · MARK THE WAY'** across the bottom arc — cream lettering on a propaganda-red ring. A small olive tab at the very bottom reads **'SPRINT COMMAND'**.
+
+**Center emblem (the canonical unit mark):** a single open paratrooper's parachute — burnt-orange canopy, deep-brown shroud lines (with a faint electric-cyan glow) — descending over a stylized drop-zone marker: a "T" of lit signal beacons with a propaganda-red central light. The parachute reads "first in"; the marker reads "we point the way." The disc field stays cream-dominant to signal the detachment's prestige; the red marker light signals the live drop. A single small command star sits at the top-center inside the disc, above the canopy, marking this as the command badge (Atlas's company). Optionally, a thin olive laurel half-wreath cradles the lower inner rim — keep it subtle so it never crowds the emblem.
+
+**Critical:** the parachute-and-drop-zone mark is the hero — keep it large and unmistakable; no human figures, no scene clutter. The aged-paper / embroidered-patch finish must survive — if it reads as a glossy modern app icon or Cyberpunk fan art, pull the neon back and push the propaganda-patch framing forward. This badge should feel like the authoritative "parent" of the operation patches in the same set — same circular embroidered style and palette, but bearing the unit emblem instead of an operation symbol.

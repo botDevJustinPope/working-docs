@@ -1,0 +1,36 @@
+[NOTE TO SELF — not part of the prompt. Attach these four files to ChatGPT in this order:
+ 1) AI-Content/WarRooms/PBI Posters/team_images/ironforge_poster_future.png
+ 2) AI-Content/WarRooms/PBI Posters/team_images/overseer_poster_future.png
+ 3) AI-Content/WarRooms/PBI Posters/team_images/hawkeye_poster_future.png
+ 4) AI-Content/WarRooms/PBI Posters/team_images/tactician_poster_future.png]
+
+**Reference images:** Four reference images are attached to this message. Use them for likeness, matched by both upload order and visual description:
+- **First attached image → IRONFORGE** — the sapper / equipment hand (bearded, glasses, heavier augmented shoulder armor).
+- **Second attached image → OVERSEER** — the senior VDS operator (bearded, olive-drab uniform, augmented eye-visor).
+- **Third attached image → HAWKEYE** — the spotter / verifier with an augmented monocle-scope over one eye.
+- **Fourth attached image → TACTICIAN** — the mission planner (bald, bearded, amber-tinted glasses, headset; VDS patch and sergeant stripes).
+If the upload order differs, match each figure by the description above rather than by position.
+
+**Lead figure:** IRONFORGE leads this operation — largest in frame, front-lit, center; the other three support at reduced scale.
+
+A WW2-era American propaganda war-room poster fused with retro-futurist cyberpunk dystopia — "World War AI" battlefield aesthetic. Aged-paper texture and distressed print grain over a parchment-cream backbone, with burnt orange, olive drab, propaganda red, and deep brown dominating; electric cyan and holographic blue used sparingly as accents only. Volumetric fog, rain, sparks, and faint code rain in the background. Painterly illustration with cinematic chiaroscuro lighting — stylized realism, not photoreal. Mood: **night supply convoy / depot move** — the organization image archive being hauled out of an old crumbling depot and re-shelved into a new fortified vault. Lamplight on wet loading ramps, crates on dollies, a truck idling in the fog.
+
+**Foreground — IRONFORGE leads this operation:** **IRONFORGE** (sapper / equipment hand) is the dominant figure, largest in frame, at the loading ramp, heaving a heavy crate stenciled **"ORG IMAGES"** onto a convoy truck bound for a new reinforced vault stenciled **"CONTENT SYSTEM"**. Bearded, glasses, heavier augmented shoulder armor; render to match the supplied IRONFORGE persona reference. Around his ramp, dense and legible:
+- crates stacked and labeled **"BUILDER LOGOS"** and **"MISSING-IMAGE FALLBACKS"**;
+- a clipboard wired to a crate bearing a migration manifest tag that reads **"MIGRATION SCRIPT — RUN ONCE"**;
+- a placard chalked **"SUPPORTED CONTENT TYPES — LOOKUP"** propped against the new vault door.
+
+**Supporting, midground (smaller in frame, working behind and around IRONFORGE):** the rest of the VDS Pathfinder Detachment, olive-drab uniforms fused with cybernetic augmentations (glowing HUD visors, headsets, fiber-optic radio packs), each rendered to match its supplied persona reference image, by codename:
+- **TACTICIAN** (mission planner) — at the wall map, pointer-baton tracing the convoy route from **"OLD DEPOT"** to **"CONTENT VAULT"**. Bald, bearded, amber-tinted glasses, headset; **VDS** patch and sergeant stripes.
+- **OVERSEER** (senior operator) — at the teletype-CRT updating the admin manifest, an amber print headed **"VEO ADMIN UI → CONTENT TABLES"** and a sticky note reading **"IMAGE TYPES → CONTENT ATTRIBUTES"**. Bearded, augmented eye-visor.
+- **HAWKEYE** (spotter / verifier) — checking each crate off against a manifest before it ships, a tag reading **"REGRESSION: LOGOS + MISSING IMAGES — VERIFIED"**; nothing rolls unverified. Augmented monocle-scope over one eye.
+
+A small chalkboard reads **"MOVE THE ARCHIVE. NOTHING LEFT BEHIND."**. The team's posture is steady logistics — load, route, shelve, verify. This is the detachment alone — no AI factions in the scene.
+
+**Background:** server-rack trenches and fortified data-center bunkers receding into rain and fog, the new vault lit warm against the dark line. A faint holographic banner projects **"ORG IMAGES — MIGRATING TO CONTENT"** across the far horizon. Vintage radios connected to glowing fiber-optic cables. A VDS Pathfinder Detachment banner hangs from the rafters — parachute-and-spearhead insignia over a red flag reading **"FIRST IN · MARK THE WAY"**.
+
+**Top:** title bar in bold cream-on-red ALL CAPS reading **'OPERATION CONVOY'**. Below the title, a narrower olive subtitle banner reads **'PBI 29218 — MOVE ORG IMAGES TO THE CONTENT VAULT.'**.
+
+**Bottom:** tagline banner, cream-on-dark, single-line imperative ALL CAPS: **'LOAD THE CRATES. RUN THE LINE. SHELVE IT NEW.'**
+
+Thin cream frame border around the entire poster. Portrait 2:3 aspect ratio. Painterly propaganda composition, dense environmental storytelling. **Figure hierarchy:** IRONFORGE is unmistakably the lead — largest, front-lit, center-frame; TACTICIAN, OVERSEER, and HAWKEYE support at reduced scale. **Critical:** the aged-paper, distressed-propaganda backbone must survive — if the result reads as "Cyberpunk 2077 fan art" instead of "WW2 propaganda with cyberpunk elements," the palette balance has tipped wrong. Pull neon back, push grain and propaganda framing forward.

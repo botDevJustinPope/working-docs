@@ -1,0 +1,13 @@
+**Operation insignia — circular mission patch (Teams thread image).**
+
+**Format:** A single circular military unit insignia / mission patch, centered and filling the frame on a flat dark-charcoal or transparent background, sized to crop cleanly into a round Teams avatar. Square 1:1 canvas. Bold and iconographic — it must stay legible at small avatar size.
+
+**Style:** WW2-era squadron embroidered-patch / stamped-leather emblem fused with subtle retro-futurist cyberpunk. Aged, lightly distressed, with a stitched double-border rim. Palette: parchment cream (#E8D9B0–#F2E5C1), burnt orange (#C5602D–#E0813C), olive drab (#5A6342–#7B7B4A), propaganda red (#A8341F–#C53A22), deep brown (#3E2A1C). Sparing electric-cyan glow (#3FB3D8) as an Era III accent only — a thin highlight, never dominant. No photorealism, no modern flat-design pastels, no pure-white background.
+
+**Rim:** an outer ring carrying curved stencil ALL-CAPS text — **'OPERATION HOMESTEAD'** across the top arc and **'HIT THE ADDRESS · FALL BACK CLEAN'** across the bottom arc — cream lettering on a propaganda-red ring. A small olive tab at the very bottom reads **'PBI 26066'**.
+
+**Center emblem:** a stylized plat-survey grid with a single house/lot at its heart, struck by a dropping red map-pin marker tagged with a tiny **'ADDRESS'** flag. A bold solid route-line runs to the pinned house; a secondary **dashed** line curves away and loops back to a small base-camp tent marker labeled **'BASE'** — the fallback. Essence: pin the specific address, fall back to base if it comes up empty.
+
+**Unit DNA (shared across the set):** integrate a small parachute-over-drop-zone-marker mark — the VDS Pathfinder Detachment emblem — as a subtle motif near the bottom-center of the disc, with a faint cyan glow on the parachute shroud lines. Keep it small; the central emblem dominates.
+
+**Critical:** one or two symbols maximum, no human figures, no scene clutter. The aged-paper / embroidered-patch finish must survive — if it reads as a glossy modern app icon or Cyberpunk fan art, pull the neon back and push the propaganda-patch framing forward.
