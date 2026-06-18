@@ -1,0 +1,319 @@
+INTERVIEW QUESTIONS — Kevin Tran
+Role on resume: Software Developer (most recent title; no headline tagline on resume)
+Location: Houston, TX (home base / Plan A, confirmed on screen); most recent role was Dallas, TX. US Citizen.
+Prepared: 2026-06-18
+Revised: 2026-06-18 (refined for the F2F; leverages the 2026-06-01 phone screen)
+
+================================================================================
+
+
+SECTION 0 — RESUME CLARIFICATIONS
+(Ask early, keep it conversational — context-setters, not gotchas. The phone screen
+already resolved several of these; the notes show what's settled.)
+--------------------------------------------------------------------------------
+
+- Your Paycom role is listed as "June 2023 - February 2026." On the screen you said the
+  Feb 2026 exit was a company restructuring/layoff and your cohort was the first wave
+  (a clean, non-performance reason). Anything to add — and what have you been doing
+  since?
+
+- You confirmed Houston is home base / Plan A — grew up in SE Houston, family's here, and
+  you were in Dallas 2-3 years for Paycom. Just to close it: you're settled on Houston and
+  good with our in-office split, no remote-Dallas pull?
+
+- You graduated from University of Houston in May 2023 and started at Paycom in June 2023
+  — clean transition. Was Paycom a return offer, a new search out of school, or did an
+  internship lead into it?
+
+- Your Tokio Marine HCC internship ran "May 2022 - August 2022" while you were enrolled at
+  UH. Standard summer internship? Any other internships or co-ops in that 2019-2023 window?
+
+- Carrying a 3.8 GPA in CS with a Math minor while interning — how did you balance the
+  load, and does anything from the Math minor show up in how you approach engineering?
+
+
+SECTION 1 — WARM-UP / MOTIVATION
+--------------------------------------------------------------------------------
+(Screen read: motivation is sincere — "solving challenging problems" on an innovative
+product, room to "grow as a developer that's close to the mid-level." Keep this short.)
+
+- Walk me through your path in two or three minutes: UH new grad -> ~2.5 years at Paycom
+  owning payroll/tax backend features. What's the throughline?
+
+- You framed yourself as "close to mid-level" and motivated by challenging problems on an
+  innovative product. What does the next step up look like for you, and what would make
+  this role the right place for it?
+
+- You went deep on one domain (payroll/tax) for most of your career — looking to stay deep
+  or broaden out next?
+
+
+SECTION 2 — C# / .NET BACKEND & THE TAX CALCULATION ENGINE
+--------------------------------------------------------------------------------
+
+Resume claim: "Built and owned backend features for a C# and .NET payroll and tax
+calculation engine, implementing rules-driven federal, state, and local tax calculations
+across 100+ year-end tax form fields for 30K+ enterprise clients, using OOP and TDD to
+achieve 95%+ unit test coverage."
+
+(Screen flagged for F2F: how much of the rules-engine logic he AUTHORED vs. configured was
+never drilled. And the "95% coverage" was disclosed as a by-eye estimate of business-logic
+test files — no coverage tool. Push past the headline on both.)
+
+- "Rules-driven" federal/state/local tax calc — how was that modeled? Config data, a rules
+  engine, strategy/polymorphism? And be specific: how much of that engine did you AUTHOR
+  (the rule abstractions, the calculation framework) versus configure or extend rules
+  someone else designed?
+
+- How did you add a new state or a mid-year rule change without rewriting the engine? Walk
+  me through the last rule change you actually shipped.
+
+- 100+ tax form fields across 30K+ clients: where did correctness bugs hide — rounding,
+  jurisdiction edge cases, calculation ordering? Tell me about the gnarliest tax-calc bug
+  you chased.
+
+- On the screen you said the "95% coverage" was an eyeball estimate of business-logic test
+  files, not a tooled number — fair enough. So how would you actually instrument coverage,
+  and more importantly, how do you PROVE the tax math is right? Golden-file / scenario
+  tests against authoritative forms, who signs off?
+
+- "Owned" features — what did ownership concretely mean: design, the spec, on-call, the
+  product relationship? Give an example where you set the technical direction.
+
+
+SECTION 3 — BACKEND PATTERNS: SQL-FIRST -> DDD WITH EF CORE (+ EF DEPTH)
+--------------------------------------------------------------------------------
+
+Context for us: a lot of our codebase is a SQL-first / data-centric legacy paradigm, and
+we're working toward a Domain-Driven Design model on EF Core. We want to hear how he
+thinks about that — and to actually verify EF depth, which the phone screen did NOT reach
+(his skills list "EF + MySQL" but the resume bullets read as raw SQL/MySQL only).
+
+- A lot of legacy .NET is "SQL-first": logic living in stored procs and complex SQL with a
+  thin C# layer over it — which sounds close to your Paycom ETL/reporting work. What do you
+  see as the real strengths and the pain points of that style?
+
+- When you hear "Domain-Driven Design," what does that mean to you in practice? Which
+  concepts have you actually used — aggregates, entities vs value objects, repositories,
+  bounded contexts? (An honest "I've read about it but haven't applied it much" is fine —
+  I want to know where you really are.)
+
+- If we handed you a SQL-first system and asked you to move it toward a DDD model on EF
+  Core without a rewrite, where would you start, and how would you keep it shippable?
+
+- Your skills list EF with MySQL, but your resume work reads as raw SQL. Tell me about your
+  actual hands-on EF Core: change tracking, tracking vs no-tracking, and the loading
+  strategies — eager, lazy, explicit, projection. When do you reach for each?
+
+- How do you see and validate the SQL EF Core generates — logging the generated SQL, query
+  tags, a profiler, the execution plan? Tell me about a time the generated SQL surprised
+  you (N+1, a bad plan) and how you caught it.
+
+- Relational vs non-relational: explain the real trade-offs — consistency, schema
+  flexibility, query patterns, transactions. You've worked SQL Server/MySQL and built a
+  graph-style store for your LLM Wiki — when does each win, and what's your default
+  persistence choice when you get to pick?
+
+
+SECTION 4 — APIs, MICROSERVICES & SQL / AUTOMATION
+--------------------------------------------------------------------------------
+
+Resume claim: "Reduced manual labor by over 50% in payroll and tax software systems by
+designing RESTful APIs and automating ASP.NET microservices, backed by complex SQL scripts
+for data extraction, transformation, and reporting."
+
+- The "over 50% manual labor reduction" — what was the manual process before, who was
+  doing it, and how did you measure the 50%?
+
+- What was being automated, and what made it ASP.NET microservices rather than a job in the
+  existing monolith? How did the services talk to each other?
+
+- "Complex SQL scripts for ETL and reporting" — give me your most complex one. How did you
+  keep large extraction/transformation queries performant, and how did you test that the
+  transformed data was correct?
+
+- How did you design the RESTful APIs — versioning, error contracts, auth, and idempotency
+  for anything that mutated payroll/tax data?
+
+
+SECTION 5 — REACT FRONTEND, PHP-TO-REACT MIGRATION & STATE
+--------------------------------------------------------------------------------
+
+Resume claim: "Led the migration of a legacy PHP tool to a modern React frontend with
+reusable functional components, hooks and Context API state management, and UI mockup
+contributions, preserving 100% of existing functionality, adding new features, and reducing
+on-screen clutter by 70%."
+
+(Screen: the "70% clutter reduction" was really a data/perf win — the legacy PHP tool
+listed 100K clients but only ~30K were tax-eligible, so he restructured the queries and
+derived 70% from 30K/100K. React state-management DEPTH was never probed — do it here.)
+
+- On the screen you clarified the "70% clutter" was a query-filtering/perf result (30K of
+  100K clients were actually tax-eligible), not a UX redesign. Walk me through that query
+  restructuring — and separately, what did moving to a React SPA actually change for the
+  user?
+
+- "Preserving 100% of existing functionality" on a rewrite is a strong claim — how did you
+  verify nothing was lost? Feature inventory, parity tests, side-by-side QA against the PHP
+  tool?
+
+- Design the state layer for a moderately complex page: what lives in component state, in
+  Context, in a server cache (React Query)? At what point does Context start to hurt
+  (re-renders, prop sprawl), and what would you reach for instead — Redux, Zustand, React
+  Query?
+
+- "Led the migration" — were you leading other engineers, or leading the technical approach
+  solo? How did you sequence the PHP -> React cutover to avoid a big-bang risk?
+
+- You contributed UI mockups. How comfortable are you owning the design side, and where's
+  the line between you and a designer?
+
+
+SECTION 6 — PRODUCTION OWNERSHIP, ON-CALL & INCIDENT RESPONSE
+--------------------------------------------------------------------------------
+
+Resume claims: "Owned and supported a C# and ASP.NET payroll and tax document fulfillment
+service responsible for ~25% of annual Q1 revenue." / "Resolved 70+ production hotfixes
+with 90% SLA adherence... performing root cause analysis through complex SQL queries and
+Splunk log investigation."
+
+- A service tied to ~25% of annual Q1 revenue is high-stakes and seasonal. What were the
+  failure modes during the Q1 crunch, and how did you prepare for peak load?
+
+- 70+ hotfixes at 90% SLA — what counts as a "hotfix," what was the SLA clock, and what
+  happened in the 10% that missed? Walk me through your single worst production incident:
+  detection -> root cause -> fix -> prevention.
+
+- How did you use Splunk specifically — dashboards, queries, correlation IDs, alerting?
+  What told you something was wrong before a client did?
+
+- You did production "data corrections." Correcting live payroll/tax data is risky — what
+  was your safeguard process (backups, dry runs, sign-off, audit trail)?
+
+- As technical point of contact for cross-team questions on that service, how did you keep
+  that from eating all your time?
+
+
+SECTION 7 — AI: HIS TOOLING & PROJECTS + HOW DEVS SHOULD USE AI
+--------------------------------------------------------------------------------
+
+Resume claims: "LLM Wiki Trading Second Brain" — "replacing naive RAG with a cross-linked
+knowledge graph"; full-stack dashboard in "FastAPI, React, TypeScript." "KT's Portfolio" —
+"Astro and React... selective hydration to ship zero JS for static sections." Skills list
+"Claude Code" and "Claude Design."
+
+(Screen: AI/tooling fluency is real and resourceful — a working Claude Code workflow
+[prompt -> plan -> review/tune -> implement -> GitHub CLI commit], Playwright to scrape
+Fidelity trade history, an Obsidian markdown "second brain" with a React front end. But
+"authored vs. generated" depth is still partly open — test it live. This is a genuine asset
+given BuildOn's own Claude Code push, so also get his judgment on team-wide use.)
+
+Part A — His work and authorship:
+- Walk me through your Claude Code workflow on a real project — prompt, plan, review,
+  implement, commit. Where do you OVERRIDE or correct the AI? Give an example of a decision
+  you made that the tool wouldn't have made for you.
+- You replaced "naive RAG" with a cross-linked knowledge graph. What was failing with
+  vanilla RAG, how does the graph reduce redundant processing, and how do you retrieve
+  over it?
+- Astro selective hydration / islands — how did you decide what stays static (zero JS) vs.
+  an interactive island, and what did that buy you, measurably?
+
+Part B — How developers should use AI:
+- Where do you land on the spectrum from "full vibes" — trust the AI and ship what it gives
+  you — to "sus about AI" — verify everything? Why there?
+- What does a good day-to-day working process with AI tooling look like? Where does it
+  genuinely speed you up, and where do you keep it on a short leash?
+- We're leaning into Claude Code as a team. If you were setting our norms, how would you let
+  AI speed people up without eroding code quality or the team's understanding of its own
+  codebase?
+
+
+SECTION 8 — INTERNSHIP: SECURITY AUTOMATION & AWS (TOKIO MARINE HCC)
+--------------------------------------------------------------------------------
+(Lower priority — a 2022 summer internship. Light touch unless time allows.)
+
+Resume claims (May-Aug 2022): "Automated cybersecurity vulnerability tracking by building a
+Python API integration that generated tickets at scale (11,000+ assets)." / "Created a
+security-hardened golden AWS image... custom image pipeline using AWS EC2 Image Builder."
+
+- 11,000+ assets generating tickets — how did you avoid drowning the team in noise (dedup,
+  severity thresholds, grouping)? Which scanner/API were you integrating, into what
+  ticketing system?
+
+- The "security-hardened golden image" and EC2 Image Builder pipeline — what hardening did
+  you apply, and what did the build/test/distribute/versioning look like?
+
+- This was a summer internship four years ago — how much was yours end-to-end vs. guided,
+  and what still sticks with you from it?
+
+
+SECTION 9 — PERSONALITY, WORKING STYLE & COLLABORATION
+--------------------------------------------------------------------------------
+
+What we're testing: he read on the screen as the strongest communicator/process thinker of
+the cohort and genuinely collaborative (treats QA as a teammate). The open question is the
+strong-willed edge — will he VOICE and DEFEND an opinion, or default to agreeable? We want
+strong-willed but team-oriented; not heads-down, and not a pushover.
+
+- On the screen you described bringing QA in early — docs, context, edge cases before
+  handoff, QA in sprint planning. Tell me more about how you build those cross-team
+  relationships, and a time it caught a problem early.
+
+- Tell me about a time you strongly disagreed with a technical decision — a lead, an
+  architect, or the team. What did you do, and how did it land?
+
+- When you think an approach is wrong, how do you actually raise it? Walk me through voicing
+  a dissenting opinion in a team setting.
+
+- How do you handle pushing your view, the team going the other way, and having to commit to
+  a decision you argued against?
+
+- Requirements get handed to you unclear or wrong — tell me about a time you pushed back
+  rather than just building to spec.
+
+- Tell me about something you shipped that didn't go well. What did you change after?
+
+- Mentoring or onboarding newer teammates? If not yet, how do you share what you learn —
+  docs, reviews, pairing?
+
+
+SECTION 10 — CLOSING / CANDIDATE QUESTIONS
+--------------------------------------------------------------------------------
+(Screen: he asks good forward-looking, product-curious questions — VDS vision, the 3D
+product-visualization roadmap, deadlines vs. code-quality trade-offs. Give him room.)
+
+- Is there anything on your resume — or work that's not on it — that you think is your best
+  work and we didn't get to?
+
+- After deep payroll/tax domain ownership, what do you most want your next role to look like
+  (domain, stack, scope, team size)?
+
+- What's your timeline, and are you in other interview processes right now?
+
+- What questions do you have for us — about the team, the work, the stack, or how we operate?
+
+[ space for candidate's questions / interviewer notes ]
+
+
+--------------------------------------------------------------------------------
+INTERVIEWER NOTES (leveraging the 2026-06-01 phone screen)
+--------------------------------------------------------------------------------
+- STRENGTH (confirmed): strongest process maturity & communication of the cohort — walked
+  the full ticket->release pipeline unprompted and treats QA as a teammate (docs/context/
+  edge cases before handoff, QA in sprint planning). Maps to our shift-left, whole-team
+  model. Confirm the depth, don't re-prove it.
+- AI/tooling fluency is real and resourceful (working Claude Code workflow, Playwright
+  scraping, Obsidian "second brain" + React) — a genuine asset given our Claude Code push.
+  Open item: authored-vs-generated DEPTH — test it live in Section 7.
+- F2F DEPTH TARGETS the screen did NOT reach: (1) EF Core depth — skills claim EF+MySQL but
+  resume reads as raw SQL [Section 3]; (2) React state-management depth [Section 5]; (3) how
+  much of the Paycom rules-engine logic he AUTHORED vs. configured [Section 2].
+- TWO SOFTENED METRICS (he disclosed both honestly — don't re-litigate, just push past the
+  headline): "95% unit test coverage" was by-eye, no tool [Section 2]; "70% clutter
+  reduction" was a query-filtering/perf win (30K of 100K clients tax-eligible), not a UX
+  redesign [Section 5].
+- RESOLVED on the screen: Houston is Plan A (settled, family here — low relocation/flight
+  risk); Paycom Feb 2026 exit was a clean restructuring layoff (first wave, non-performance).
+- LEVELING: "mid-level with strong process instincts" — process/communication run ahead of
+  demonstrated architectural/frontend depth (~3 yrs, his own "close to mid-level" framing).
+  Section 9 tests the strong-willed / voices-an-opinion edge.

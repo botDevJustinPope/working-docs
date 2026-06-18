@@ -1,0 +1,206 @@
+INTERVIEW QUESTIONS — Jeff Moreau
+Role on resume: Senior Software Engineer
+Location: Tomball, TX
+Prepared: 2026-06-18
+Revised: 2026-06-18 (refined for the F2F; leverages the 2026-06-04 phone screen)
+
+================================================================
+
+SECTION 0 — RESUME CLARIFICATIONS
+(Ask early, keep it conversational. These aren't gotchas — give him room to explain.)
+
+- Your most recent role, Avue Technologies (Senior Software Engineer), is listed as
+  Jan 2025 – Mar 2025 — about three months. What was the story there? Was it a
+  fixed-scope contract, a contract-to-hire that didn't convert, or something else?
+  (Phone screen: he said Avue "hit a downturn and did a layoff that included me and a
+  large portion of the team." Confirm and move on.)
+
+- That Avue role ended Mar 2025, which leaves roughly the last 15 months (Mar 2025 to
+  now) unaccounted for on the resume. Walk me through what you've been doing since —
+  contracting, job searching, upskilling, time off?
+
+- There's a gap between NacSpace (ends Apr 2020) and Liquiddevs (starts Jan 2021) —
+  about eight or nine months. Anything notable in that window? COVID-related, contract
+  transition, etc.?
+
+- You list two "Senior" titles (Avue, Liquiddevs) and one "Software Developer" title
+  at NacSpace (Mar 2014 – Apr 2020). That NacSpace tenure is your longest at ~6 years —
+  did your scope/seniority grow there even though the title stayed the same?
+  (Phone screen note: the 2014–2020 employer was Elliott Electric Supply, which "spun
+  off into" NacSpace — cosmetic, flag only if it matters for references.)
+
+- Your B.S. in Computer Science from Stephen F. Austin is dated 2012, and your first
+  listed role (NacSpace) starts Mar 2014. Was there anything between graduation and
+  NacSpace you'd want us to know about?
+
+================================================================
+
+SECTION 2 — BACKEND PATTERNS: SQL-FIRST LEGACY → DDD WITH EF CORE
+
+Context for us: a lot of our codebase is a SQL-first / data-centric legacy paradigm
+(logic living in stored procedures and data-driven services), and we're working toward
+a Domain-Driven Design model layered on EF Core. We want to hear how he thinks about
+that transition and where his experience and knowledge actually sit.
+
+These are "walk me through how you think" questions — give him room to explain.
+(Phone screen: he nailed the EF change-tracking concept conceptually, but his EF/SQL
+specifics are dated and he showed no architecture vocabulary. These questions gauge how
+quickly the rust comes off and whether DDD is within reach for him.)
+
+- A lot of legacy .NET is "SQL-first": the database and stored procedures are the
+  source of truth, and the C# is a thin layer over them. How much of your work has
+  looked like that, and what do you see as the real strengths and the pain points of
+  that style?
+
+- When you hear "Domain-Driven Design," what does that mean to you in practice? Walk me
+  through the concepts you actually use — aggregates, entities vs value objects,
+  repositories, bounded contexts, ubiquitous language — and where you've applied them.
+
+- Where do you think business rules should live — in the database (stored procs,
+  triggers, constraints), in a service layer, or in a rich domain model? Has that view
+  shifted for you across your roles?
+
+- Say we hand you a SQL-first system with fat stored procedures and an anemic C# layer,
+  and the goal is to move toward a DDD model on EF Core without a full rewrite. How
+  would you approach it? Where would you start, and how do you keep the app shippable
+  along the way?
+
+- How do you map a domain model onto EF Core when the relational schema already exists
+  and can't change much — owned types, value-object mapping, keeping aggregate
+  boundaries honest against the existing tables?
+
+- What pulls you toward putting logic in the domain model versus leaning on the
+  database? And when is "SQL-first" actually the right call — where would you leave it
+  alone rather than DDD-ify it?
+
+================================================================
+
+SECTION 3 — DATA, SQL & EF CORE
+
+Resume: "Databases: SQL Server, MySQL, Oracle, NoSQL, EFCore"; Liquiddevs used
+"Oracle SQL, EFCore"; NacSpace used "MSSQL, EFCore."
+
+Persistence preference & relational vs non-relational:
+- When you get to choose, what's your go-to persistence approach, and why? What earns a
+  permanent spot in your default stack?
+- Explain the real differences between relational and non-relational stores. When does
+  each one win, and what trade-offs do you weigh — consistency, schema flexibility,
+  query patterns, transactions, scaling?
+- You've used SQL Server, MySQL, Oracle, and NoSQL. Walk me through a case where the
+  data store choice actually mattered to the design — why that engine over the others?
+- Where did NoSQL fit in your work, and what made it the right tool there versus a
+  relational store?
+
+EF Core depth (vetting his knowledge here):
+- How do you actually see and validate the SQL EF Core generates? Walk me through your
+  toolkit — logging the generated SQL, query tags, a profiler, reading the execution
+  plan. (Phone screen tell: his method was eyeballing a LINQ result against a raw query,
+  no profiling/logging — he called it "not a very robust way." See how that's evolved.)
+- Tell me about a time EF Core's generated SQL bit you — N+1, change-tracking surprises,
+  a bad query plan — and how you diagnosed and fixed it.
+- Tracking vs no-tracking, and the loading strategies — eager, lazy, explicit, and
+  projection (Select into a DTO). When do you reach for each, and where do they go wrong?
+- How do you handle EF Core migrations against an existing or shared database, and how
+  do you deal with optimistic concurrency on writes?
+- The Liquiddevs questionnaire "modified a SQL database" from user submissions — how did
+  you handle concurrency, validation, and data integrity on those writes?
+
+================================================================
+
+SECTION 4 — AI: AVUE INGESTION WORK + USING AI AS A DEVELOPER
+
+Two parts: give him room to tell the Avue story, then get his point of view on how
+developers should actually use AI.
+
+Part A — His Avue AI work (let him walk through it):
+Resume: "Spearheaded smart ingestion of a large third-party data source for training an
+internal AI model, saving on costs by reducing unneeded queries while staying current"
+— stack: "AWS, .Net Core (C#), Java, NoSQL."
+- Walk me through that ingestion pipeline end to end — the source, how the data moved
+  and was stored, and how it fed the model's training.
+- What made the ingestion "smart"? Change detection, delta/incremental pulls, dedup,
+  caching? And how did you measure the cost savings — query volume, the AWS bill, API
+  call counts?
+- Were you involved in the model training itself or strictly the data plumbing, and
+  which AWS services did you actually use?
+
+Part B — How developers should use AI (his philosophy and hands-on experience):
+- Where do you land on the spectrum from "full vibes" — trust the AI and ship what it
+  gives you — to "sus about AI" — skeptical, verify everything? Why there?
+- What does a good working process with AI tooling look like to you, day to day? Where
+  does it genuinely speed you up, and where do you keep it on a short leash?
+- What AI tooling have you actually used — Copilot, Cursor, Claude, ChatGPT — and on
+  what kind of work? What's worked well, and what's burned you?
+- How do you keep AI-generated code trustworthy before it ships — review, tests,
+  understanding it yourself first?
+- If you were setting team norms, how would you let AI speed people up without eroding
+  code quality or the team's understanding of its own codebase?
+
+================================================================
+
+SECTION 5 — FRONTEND: ANGULAR vs REACT + STRUCTURE
+
+(Phone screen already resolved the framework question favorably: he led an Angular 1→2 +
+TypeScript migration at NacSpace/Elliott Electric, and his most recent FE is React at
+Liquiddevs. Keep this light — just preference and structuring patterns. He's
+FE-productive when given mockups; not a visual designer.)
+
+- Between Angular and React, which do you prefer, and why? Where does each one fit
+  better, in your experience?
+- How do you structure a front-end application? Walk me through the patterns you reach
+  for — component structure, state management, feature/folder organization, separation
+  of concerns — and how you keep it maintainable as it grows.
+
+================================================================
+
+SECTION 8 — PERSONALITY / WORKING STYLE
+
+What we're trying to learn: is he strong-willed but still a strong team player? Does he
+voice his opinion? We don't want someone who's purely heads-down.
+(Phone screen read him as easygoing, honest, and genuinely drawn to the hybrid/whiteboard
+collaboration model — so the open question here is the "strong-willed / speaks up" edge.)
+
+- Tell me about a time you strongly disagreed with a technical decision — from a lead, an
+  architect, or the team consensus. What did you do, and how did it land?
+- When you think an approach is wrong, how do you raise it? Walk me through how you
+  actually voice a dissenting opinion in a team setting.
+- How do you handle it when you push your view, the team goes the other way, and you have
+  to get behind a decision you argued against?
+- Describe your ideal level of collaboration day to day. Are you someone who's
+  heads-down with the headphones on, or in the mix — whiteboarding, pairing, talking
+  problems out loud?
+- Tell me about a time you changed your mind because a teammate made a better case. What
+  convinced you?
+- Where's your line between advocating hard for your idea and knowing when to let it go?
+
+================================================================
+
+SECTION 9 — CLOSING / CANDIDATE QUESTIONS
+
+- Of everything on your resume, what's the work you're proudest of — and is there a
+  project we didn't get to that shows your best work?
+- What are you looking for in your next team, tech stack, and day-to-day?
+- What's your timeline, and are you in any other interview processes right now?
+- What questions do you have for us?
+
+----------------------------------------------------------------
+QUICK INTERVIEWER NOTES (leveraging the 2026-06-04 phone screen)
+- Backend is his self-ranked #1 and he nailed the EF change-tracking concept on the
+  screen ("exactly what I was looking for") — but his EF/SQL specifics are DATED ("back
+  in the day") and he showed no architecture vocabulary. Section 2 (SQL-first → DDD) and
+  the EF-depth block in Section 3 exist to gauge how fast the rust comes off and whether
+  DDD is within reach for him.
+- His method for validating EF-generated SQL was admittedly weak (eyeballing a LINQ
+  result vs raw SQL, no profiling/logging). The "how do you see and validate generated
+  SQL" question in Section 3 is the direct follow-up — don't let him off it.
+- Frontend is already resolved favorably (Angular 1→2 + TypeScript, recent React), so
+  Section 5 is intentionally light. He's productive on FE when given mockups.
+- Leveling read from the screen: disciplined strong-mid IC, not an architect (one solo
+  project, a reactive perf firefight, no architecture vocabulary). The DDD questions test
+  whether he's growing toward architectural thinking.
+- Personality is the open question — the screen read easygoing/honest/collaborative;
+  Section 8 tests the "strong-willed / voices his opinion / not just heads-down"
+  dimension we actually care about.
+- Still-open confirm items from the screen: reconfirm $100–110K, capture previous salary,
+  start timing, Tomball commute feasibility for the 3-day in-office split, and the
+  ~8-month NacSpace→Liquiddevs gap (Section 0).
