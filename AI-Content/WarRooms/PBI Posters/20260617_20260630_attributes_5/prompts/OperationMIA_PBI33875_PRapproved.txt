@@ -1,0 +1,22 @@
+[NOTE TO SELF — not part of the prompt. Attach ONE file to ChatGPT:
+ 1) AI-Content/WarRooms/Personas/JustinPope_Overseer/poster_future.png
+ PR number 83 is already filled in below — no placeholder to replace.]
+
+**Reference image:** One reference image is attached to this message. Use it for likeness:
+- **The attached image → OVERSEER** — the human VDS operator (bearded, olive-drab uniform, augmented eye-visor). Use this face/likeness for the single OVERSEER profile bust.
+
+A WW2-era American propaganda **seal of approval** — a single circular medallion emblem rendered in "World War AI" battlefield aesthetic, fusing 1940s propaganda heraldry with retro-futurist cyberpunk. Aged-paper texture and distressed print grain over a parchment-cream backbone, with burnt orange, olive drab, propaganda red, and deep brown dominating; electric cyan used as a single restrained accent only (a faint glow in the augmented eye-visor, nothing more). Faint volumetric fog and warm code-rain in the negative space behind the seal. Painterly illustration with cinematic chiaroscuro lighting — stylized realism, not photoreal. Mood: **earned sign-off** — the moment the pull request is stamped and Operation MIA is closed out, every missing wishlist image recovered and accounted for, the roll called and the card cleared back to the line. Warm lamplight glow.
+
+**The seal — dominant central device:** a large embossed circular medallion, like a wax-and-brass military approval stamp, with a heavy rope-twist outer ring and an inner beaded ring. The seal sits centered on the aged-paper field, slightly raised with a cast shadow so it reads as stamped onto the poster.
+
+**Ring text (curved along the seal):** top arc reads **'APPROVED FOR DEPLOYMENT'** and bottom arc reads **'PR OPERATION MIA'**, ALL CAPS military stencil, cream-on-deep-brown, with a small five-point star separating the two arcs on each side.
+
+**Single profile bust inside the seal (the OVERSEER alone — the main character of this sign-off):** one large heraldic **left-facing profile** filling the upper half of the medallion, struck like a head on a coin, front-lit and commanding. **OVERSEER** — senior VDS operator: olive-drab uniform fused with cybernetic augmentation, a glowing augmented eye-visor over one eye, bearded. Render to match the supplied OVERSEER persona reference. Warm propaganda tones throughout. This is the only figure on the seal — he carries the whole emblem.
+
+**Center medallion (lower-center of the seal, beneath the profile):** a strong **raised thumbs-up** — a gauntleted fist, thumb up — embossed inside a small inner roundel, the universal sign-off. A short cream-on-red ribbon banner curls beneath it reading **'PR 83 · APPROVED'**. A tiny ticked checklist etched faintly around the inner ring: **CODE REVIEW · TESTS · IMAGES RECOVERED · NO BLOCKERS**.
+
+**Top:** title bar in bold cream-on-red ALL CAPS reading **'PR OPERATION MIA'**. Below it, a narrower olive subtitle banner reads **'PBI 33875 · PR 83 — MISSING IMAGES RECOVERED. MERGE CLEARED.'**.
+
+**Bottom:** tagline banner, cream-on-dark, single-line imperative ALL CAPS: **'ACCOUNT FOR THE MISSING. LOCK THE CARD. PUSH THE MERGE.'**
+
+Thin cream frame border around the entire poster. Portrait 2:3 aspect ratio, with the circular seal as the dominant centered device between the top title bar and the bottom tagline. **Figure count:** exactly ONE profile bust in the seal — OVERSEER only (no CLAUDE, no COPILOT, no ChatGPT, no second or third profile). **Critical:** the aged-paper, distressed-propaganda backbone must survive — the emblem stays warm-dominant (cyan is a single restrained accent in the eye-visor only). If the result reads as "Cyberpunk 2077 fan art" instead of "WW2 propaganda with cyberpunk elements," the palette balance has tipped wrong. Pull neon back, push grain, embossing, and propaganda framing forward.
