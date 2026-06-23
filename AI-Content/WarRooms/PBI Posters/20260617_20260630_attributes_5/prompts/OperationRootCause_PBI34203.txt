@@ -1,0 +1,43 @@
+[NOTE TO SELF — not part of the prompt. Attach these five files to ChatGPT in this order, for likeness:
+ 1) AI-Content/WarRooms/Personas/JamesWarnement_Chateau/poster_future.png
+ 2) AI-Content/WarRooms/PBI Posters/team_images/overseer_poster_future.png
+ 3) AI-Content/WarRooms/PBI Posters/team_images/ironforge_poster_future.png
+ 4) AI-Content/WarRooms/PBI Posters/team_images/hawkeye_poster_future.png
+ 5) AI-Content/WarRooms/PBI Posters/team_images/tactician_poster_future.png]
+
+**Reference images:** Five reference images are attached — use them for likeness, matched by both upload order and visual description:
+- **First attached image → CHÂTEAU** — a senior High Command / General Staff officer at a rear château headquarters: brass general's cap with insignia, olive-drab service tunic with brass collar insignia, comfortable and unbothered; a faint Era III augmented monocle/HUD glint is acceptable but he is the analog rear-HQ general, not a front-line operator.
+- **Second attached image → OVERSEER** — the senior VDS Pathfinder operator: brown hair, short beard, a multi-overlay HUD visor (clear-lens HUD glasses), olive-drab uniform with augmented shoulder armor, a forearm-mounted holographic catalog terminal, a fiber-optic radio handset at his belt.
+- **Third attached image → IRONFORGE** — the sapper / equipment hand: bearded, glasses, heavier augmented shoulder armor.
+- **Fourth attached image → HAWKEYE** — the spotter / verifier 
+- **Fifth attached image → TACTICIAN** — the mission planner: bald, bearded, amber-tinted glasses, headset; VDS patch and sergeant stripes.
+If the upload order differs, match each figure by the description above rather than by position.
+
+**Lead figures:** CHÂTEAU and OVERSEER are co-leads — both largest, front-lit, squared off across the zone divide (Château at rear, Overseer at the front). IRONFORGE, HAWKEYE, and TACTICIAN support at reduced scale.
+
+A WW2-era American propaganda war-room poster fused with retro-futurist cyberpunk dystopia — "World War AI" battlefield aesthetic, Era III. Aged-paper texture and distressed print grain over a parchment-cream backbone, with burnt orange, olive drab, propaganda red, and deep brown dominating; electric cyan (#3FB3D8) and holographic blue used sparingly as accents only. Volumetric fog and faint code rain in the background depth; warm lamplight competes with a cool cyan glow on the equipment. Painterly illustration with cinematic chiaroscuro lighting — stylized realism, not photoreal. Mood: **methodical root-cause discipline** — an alarm has come down from the rear, and the front-line detachment refuses to tear the feature apart on a hunch; they trace the fault back to its true source first. Start-of-mission resolve, not an after-action verdict.
+
+**Composition — two zones, a split canvas divided by a traced signal wire that runs from the front all the way back toward the rear HQ:**
+
+**REAR HQ — left/upper zone, "CHÂTEAU'S SIDE":** a richly appointed château war-room, paneled walls, a fireplace, an armchair and a decanter on a sideboard — the trappings of distance from the mud. **CHÂTEAU** stands at a grand wall-map, swagger-stick / map-pointer tapping a single pin, a field telephone pressed to his mouth mid-order, confident and unbothered. The map-pin he taps is a modern dispatch card stamped in red **"REFRESH SESSION — THIS IS BROKEN!"** — he reports the *symptom* from the map. A small framed placard on the wall beside him reads **"HOW HARD COULD IT BE?"** The real front is visible only as a tiny, distant view through a far window. Rendered to match his supplied reference.
+
+**THE FRONT — right/lower zone, "THE DETACHMENT'S SIDE":** a forward signals-and-refit bay at night, server-rack walls and oiled-steel benches under work-lamps. The detachment is running a disciplined root-cause trace — not a teardown. A field rig stenciled **"DESIGN SESSION"** stands on the bench, sound and steady (a calm cyan status light glowing); one access panel is open only a crack. The team's posture is *trace first, dig later*. A traced signal wire / fault line runs from the rig's symptom out across the divide and back toward Château's rear HQ — following the fault to where it actually originates.
+
+**Two principals square off across the zone divide, co-dominant in the frame** (both largest, front-lit, rendered to match their supplied references):
+- **CHÂTEAU** — the rear-HQ reporter, comfortable at his map, phone to mouth, pointing the alarm forward. His case: the feature is broken — fix it. (Allied, same side; the roast is organizational distance, never malice — he reports symptoms from the map, not ground truth.)
+- **OVERSEER** — the senior operator at the front, one hand following the traced fault-wire back toward its source, the other staying the team's rush to tear into the rig. He looks back across the divide, tracking the trail toward the rear. An olive **"VDS"** patch marks his side; his forearm catalog terminal lit.
+
+**Supporting officers completing the front** (smaller in frame, olive-drab uniforms fused with glowing HUD visors and fiber-optic radio packs, each rendered to match its supplied reference):
+- **IRONFORGE** — at the sound "DESIGN SESSION" rig he built last sprint (Refit continuity), a wrench held deliberately **back / lowered**, not yet committed — discipline over reflex; a small tag on the closed panel reads **"DON'T TEAR DOWN — TRACE FIRST."** Bearded, glasses, heavier augmented shoulder armor.
+- **HAWKEYE** — augmented monocle-scope on the catalog data feeding the session, checking it against spec — verifying ground truth, not assuming. Augmented monocle-scope over one eye.
+- **TACTICIAN** — at a root-cause / fault-tree board chalked **"SYMPTOM: SESSION BROKEN → TRACE TO SOURCE,"** the trace line running back toward the data; a posted maxim card reads **"MOST FAULTS TRACE TO THE DATA."** Bald, bearded, amber-tinted glasses, headset; **VDS** patch and sergeant stripes.
+
+**Background:** interior depth of an underground Theater HQ — the château HQ warm and paneled on one side, the server-rack signals bunker cool and fogged on the other, both receding into faint code rain. The traced fault-wire is the connective thread between the zones. A wall-mounted holographic theater map shows the **VDS** sector with cyan planning pins. Vintage field radios wired to fiber-optic cables on a sideboard. A VDS Pathfinder Detachment banner — parachute-and-spearhead insignia over a red flag reading **"FIRST IN · MARK THE WAY"** — hangs on the front-zone side. The detachment is alone — no AI factions, no faction banners in the scene.
+
+**Anachronism (per aesthetic.md §9):** gravely-earnest 1940s officers running a disciplined **root-cause analysis** — a chalk fault-tree, a traced signal wire, "trace to source before you dig" — but the "fault" is a **Refresh Session** software feature, the trail leads to a **catalog data setup**, and the board carries a debugging maxim ("MOST FAULTS TRACE TO THE DATA"). WW2 high command and field discipline wrapped around a 2020s "before we blame the code, check how the data was set up" production ticket is the joke.
+
+**Top:** title bar in bold cream-on-red ALL CAPS reading **'OPERATION ROOT CAUSE'**. Below it, a narrower olive subtitle banner reads **'PBI 34203 — REFRESH SESSION REPORTED BROKEN · TRACE IT TO THE ROOT.'**
+
+**Bottom:** tagline banner, cream-on-dark, ALL CAPS imperative triplet: **'TRACE THE FAULT. FIND THE ROOT. FIX THE CAUSE.'**
+
+Thin cream frame border around the entire poster. Portrait 2:3 aspect ratio. Painterly propaganda composition, dense environmental storytelling. **Figure hierarchy:** CHÂTEAU and OVERSEER are the two co-leads — both largest and front-lit, squared off across the zone divide (Château rear-left, Overseer front-right); IRONFORGE, HAWKEYE, and TACTICIAN support at reduced scale on the front side. **Tone guardrail:** this is start-of-mission resolve, not a verdict — the fault is being *traced*, not declared fake; keep the data angle a lead the team is following, and keep Château an affectionate, Allied rear-HQ figure. **Critical:** the aged-paper, distressed-propaganda backbone must survive — if the result reads as "Cyberpunk 2077 fan art" instead of "WW2 propaganda with cyberpunk elements," the palette balance has tipped wrong. Pull neon back, push grain and propaganda framing forward. Cyan is set-dressing only (the rig status light, the traced fault-wire, the map pins, the monocle glow); the parchment-cream / burnt-orange / olive / propaganda-red backbone must dominate.

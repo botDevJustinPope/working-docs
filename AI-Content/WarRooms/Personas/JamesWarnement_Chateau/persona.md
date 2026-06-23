@@ -86,7 +86,18 @@ Secondary lines still available for other pieces:
 
 ## Era II / III appearances
 
-Era I only — TBD if / when promoted.
+**Promoted to Era III (2026-06-23, user-approved).** First Era III appearance: **Operation Root
+Cause (PBI 34203)** — the two-zone poster where Château raises a "REFRESH SESSION IS BROKEN!"
+alarm from his rear château HQ (reporting the symptom from the map) and the VDS Pathfinder
+Detachment traces the fault to its true source before tearing the sound feature apart. The
+canonical "it's usually the data Jim set up wrong" gag is kept as the team's *veteran instinct
+and a lead being followed* (a "MOST FAULTS TRACE TO THE DATA" maxim, the trace wire running back
+toward HQ) — never a verdict that the report is fake (his issues are of *varying* validity). He
+appears as the rear-HQ co-lead opposite Overseer. Likeness anchored by `poster_future.png`.
+Rendered in the Attributes-5 Era III house style (aged-paper propaganda backbone dominant; cyan
+accent only). His rear-HQ general identity, props, and affectionate-roast tone carry over from
+Era I unchanged — only the environment gains Era III cues. A canonical Era I Mode B château
+poster (`poster.png`) is still not yet generated.
 
 ## Open creative questions
 

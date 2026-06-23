@@ -29,7 +29,12 @@
 ## Notable contributions in this codebase / org
 
 - Organizationally removed from the engineering teams; routinely routes issues / bug reports to the dev teams, of **varying technical validity** — some valid, many reflecting use of the product in ways it was not designed to be used. This behavioral observation is the factual anchor for the *Château* codename (see [`persona.md`](./persona.md)); recorded here neutrally, framed creatively there.
-- *Specific Operations / PBI anchors: TBD.*
+- **PBI 34203 (2026-06-23):** reported Refresh Session broken; routed forward from Service and
+  Support to the engineering teams. On the team's read this is the recurring pattern — the
+  reported "break" tracing to catalog data set up incorrectly on the reporter's end rather than
+  a code defect. This is the factual anchor for the in-universe **Operation Root Cause** poster
+  (framed creatively in [`persona.md`](./persona.md), not here).
+- *Further specific Operations / PBI anchors: TBD.*
 
 ## Public profile links
 
@@ -53,4 +58,5 @@
 - Reporting line — who does James report to?
 - Prior roles and education — not on the LinkedIn export.
 - Certifications / specializations.
-- Specific Operations / PBI items where his issue reports have intersected the dev teams' work.
+- Specific Operations / PBI items where his issue reports have intersected the dev teams' work
+  (first recorded: **PBI 34203 / Operation Root Cause**, 2026-06-23 — see above; more TBD).
