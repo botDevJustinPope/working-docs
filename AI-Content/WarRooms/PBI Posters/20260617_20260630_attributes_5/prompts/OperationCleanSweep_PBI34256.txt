@@ -1,0 +1,26 @@
+[NOTE TO SELF — not part of the prompt. Attach ONE file to ChatGPT, for likeness:
+ 1) AI-Content/WarRooms/PBI Posters/team_images/ironforge_poster_future.png
+ SOLO poster — IRONFORGE only (he owned and cleared this hotfix). No other operators, no AI factions (ordinary bug fix — team alone).]
+
+**Reference image:** One reference image is attached — use it for likeness:
+- **The attached image → IRONFORGE** — Daniel Arwe, the VDS Pathfinder Detachment sapper / equipment hand: bearded, glasses, heavier augmented shoulder armor, olive-drab field uniform fused with cybernetic augmentation. Use this face/likeness and kit for the single IRONFORGE figure.
+
+A WW2-era American propaganda war-room poster fused with retro-futurist cyberpunk dystopia — "World War AI" battlefield aesthetic, Era III. Aged-paper texture and distressed print grain over a parchment-cream backbone, with burnt orange, olive drab, propaganda red, and deep brown dominating; electric cyan (#3FB3D8) and holographic blue used sparingly as accents only. Faint volumetric fog and warm code rain in the background depth; warm lamplight. Painterly illustration with cinematic chiaroscuro lighting — stylized realism, not photoreal. Mood: **a fast, decisive clean sweep** — a high-priority hotfix logged in the morning and swept off the board the same afternoon. Motion, dust still in the air, the job already done. "Done and dusted."
+
+**Foreground — IRONFORGE, the lead, mid-sweep and dominant in frame:** **IRONFORGE** (sapper / equipment hand) stands at a **DMH product-selection panel**, a **push-broom in hand mid-stroke** (with motion blur), sweeping a heap of broken red **'CANNOT SELECT PRODUCT'** error-tickets clean off the board and into a dustpan stenciled **'CLEARED.'** Bearded, glasses, augmented shoulder armor; render to match the supplied IRONFORGE reference. Behind the swept line, the panel has come back to life: a column of product tiles now click into place with green **'SELECTED ✓'** checks, the error gone. His posture is brisk and final — one clean stroke, problem gone.
+
+**The speed cues (this op is about how fast it was done — make the quickness unmistakable):**
+- a **HOTFIX work-order** spiked on the bench, stamped twice in red: **'LOGGED 24 JUN'** and **'CLEARED 24 JUN'** — same day, hours apart.
+- a vintage **wall clock / stopwatch** prominent, hands barely moved; a small torn day-sheet calendar showing a single date.
+- a sticky note reading **'SEV 2 · PRIORITY 1 · HOTFIX'** and another reading **'IN BY MORNING. OUT BY AFTERNOON.'**
+- dust and a few stray error-tickets still settling in the air — caught the instant after the sweep.
+
+**Mid/background (kept light so the sweep reads fast):** the affected front shown as a wall map with a single pin on the **'DMH · EPLAN'** sector and a small placard **'PRODUCT SELECTION'**; a field-report spike of incoming complaint slips, now flipped to **'RESOLVED.'** Server-rack bunker walls recede into fog and faint code rain. A VDS Pathfinder Detachment banner — parachute-and-spearhead over a red flag — hangs from the rafters reading **'FIRST IN · MARK THE WAY.'** Warm lamplight pools on Ironforge and the swept board; a cool cyan glow rises off the panel's green checks; the rest falls into deep-brown chiaroscuro.
+
+**Anachronism (per aesthetic.md §9):** an earnest 1940s sapper with a humble **push-broom** — but he's sweeping away **HTTP-style error tickets** off a **product-selection UI panel (DMH)**, the work order is a **Severity-2 hotfix bug (34256)**, and the victory is "users can select the product again." The WW2 clean-up detail wrapped around a 2020s same-day production hotfix is the joke.
+
+**Top:** title bar in bold cream-on-red ALL CAPS reading **'OPERATION CLEAN SWEEP'**. Below it, a narrower olive subtitle banner reads **'BUG 34256 — DMH PRODUCT SELECTION FIXED · SAME-DAY HOTFIX. DONE AND DUSTED.'**
+
+**Bottom:** tagline banner, cream-on-dark, ALL CAPS imperative triplet: **'SWEEP IT. CLEAR IT. DUST IT.'**
+
+Thin cream frame border around the entire poster. Portrait 2:3 aspect ratio. Painterly propaganda composition, focused (not cluttered) — the eye should land on the sweep first, the clock/HOTFIX cues second. **Figure count:** exactly ONE figure — IRONFORGE only (no other named operators, no AI factions). **Critical:** the aged-paper, distressed-propaganda backbone must survive — if it reads as "Cyberpunk 2077 fan art" instead of "WW2 propaganda with cyberpunk elements," the palette balance has tipped wrong. Pull neon back, push grain and propaganda framing forward. Cyan is set-dressing only (the panel's green/cyan checks, faint code rain); the parchment-cream / burnt-orange / olive / propaganda-red backbone must dominate.

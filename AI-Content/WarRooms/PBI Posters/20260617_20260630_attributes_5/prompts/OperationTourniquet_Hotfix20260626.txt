@@ -1,0 +1,35 @@
+[NOTE TO SELF — not part of the prompt. Attach these three files to ChatGPT in this order, for likeness:
+ 1) AI-Content/WarRooms/PBI Posters/team_images/overseer_poster_future.png
+ 2) AI-Content/WarRooms/PBI Posters/team_images/tactician_poster_future.png
+ 3) AI-Content/WarRooms/PBI Posters/team_images/hawkeye_poster_future.png
+ KICKOFF poster for the 6/26 hotfix war room — three figures only (OVERSEER, TACTICIAN, HAWKEYE). No AI factions (ordinary hotfix — team alone). The specific bug is NOT yet identified: this is a READINESS / triage-standing-by scene, not a depiction of a particular fix.]
+
+**Reference images:** Three reference images are attached — use them for likeness, matched by both upload order and description:
+- **First attached image → OVERSEER** — Justin Pope, the VDS Pathfinder Detachment senior operator: brown hair, short beard, a multi-overlay HUD visor (clear-lens HUD glasses), olive-drab uniform with augmented shoulder armor, a forearm-mounted holographic catalog terminal.
+- **Second attached image → TACTICIAN** — Rob Hobbs, the mission planner / detachment sergeant: bald, bearded, amber-tinted glasses, headset; olive-drab uniform with a VDS patch and sergeant stripes.
+- **Third attached image → HAWKEYE** — Walter Martinez, the spotter / verifier (QA): an augmented brass monocle-scope over one eye glowing faint cyan, olive-drab uniform with augmented kit, carrying a brass-and-fiber-optic spotting scope.
+If the upload order differs, match each figure by the description above rather than by position.
+
+A WW2-era American propaganda war-room poster fused with retro-futurist cyberpunk dystopia — "World War AI" battlefield aesthetic, Era III. Aged-paper texture and distressed print grain over a parchment-cream backbone, with burnt orange, olive drab, propaganda red, and deep brown dominating; electric cyan (#3FB3D8) and holographic blue used sparingly as accents only. Volumetric fog and faint code rain in the background depth; warm lamplight competes with a cool cyan glow off the instruments. Painterly illustration with cinematic chiaroscuro lighting — stylized realism, not photoreal. Mood: **battle-stations readiness at a field-aid station** — the klaxon has sounded and the response team musters at a prepped triage post, instruments laid out, tourniquet in hand, waiting for the casualty to come in. Tense, coiled, ready to move the instant the wound is called. The patient hasn't arrived yet — but the team is set to stop the bleeding fast.
+
+**Foreground — the three principals mustering at a battlefield triage station, co-dominant and front-lit:**
+- **OVERSEER** (center, commanding the response) — leans over a prepped field-operating slab, **a coiled rubber-and-brass tourniquet ready in one hand**, the other on a vintage **field telephone** handset — the line the casualty call will come in on. Bearded, augmented HUD visor, olive-drab uniform with augmented shoulder armor. Composed, decisive, "say the word and we move." Render to match the supplied OVERSEER reference.
+- **TACTICIAN** (left, the triage coordinator) — at a **casualty / priority board**, grease-pencil in hand, setting the intake. The board is headed **"HOTFIX READINESS — 26 JUN"** with rows reading **"TRIAGE: STANDING BY," "INCOMING: TBD," "SEVERITY: —."** Bald, bearded, amber-tinted glasses, headset, VDS patch and sergeant stripes. Render to match the supplied TACTICIAN reference.
+- **HAWKEYE** (right, eyes on the door) — slightly elevated, **spotting scope raised**, scanning the fog beyond the aid station for the incoming casualty (the bug not yet sighted). At his hip, his verification kit — he is also the medic who will confirm the bleed is stopped before anything ships. Augmented brass monocle-scope over one eye, faint cyan reticule. Render to match the supplied HAWKEYE reference.
+
+**The triage station (props that carry the joke — keep them legible, not cluttered):**
+- the **operating slab is EMPTY and prepped** — instruments laid out in a row, a clean sheet, nothing on it yet (readiness, casualty not arrived).
+- a rack of **blank triage tags** in the classic red / yellow / green field-medical system, hanging ready to be filled when the wound is called.
+- a **vitals monitor / oscilloscope** showing a steady but watched heartbeat line, labeled **"PROD: STABLE (FOR NOW)."**
+- a stenciled supply crate reading **"HOTFIX KIT"** with a field-medic cross; a wall placard **"FIELD AID STATION."**
+- a small sticky note: **"WHEN IT BLEEDS — CINCH FIRST, DIAGNOSE SECOND."**
+
+**Background:** underground Theater HQ bunker rigged as a forward aid post, server-rack walls receding into fog and faint code rain. A VDS Pathfinder Detachment banner — parachute-and-spearhead over a red flag — hangs from the rafters reading **"FIRST IN · MARK THE WAY."** Warm lamplight pools on the slab and the three principals; a cool cyan glow rises off the vitals monitor; the rest falls into deep-brown chiaroscuro.
+
+**Anachronism (per aesthetic.md §9):** an earnest 1940s battlefield **triage station** — stretcher, tourniquet, red/yellow/green casualty tags, a medic's cross — but the patient is **PRODUCTION**, the wound is a **bug yet to be reported**, the tourniquet is a **hotfix patch**, the triage tags are **bug-severity tags**, and the readiness board is a **deployment date (26 JUN)**. WW2 field medicine wrapped around "we're standing up a hotfix response" is the joke.
+
+**Top:** title bar in bold cream-on-red ALL CAPS reading **'OPERATION TOURNIQUET'**. Below it, a narrower olive subtitle banner reads **'6/26 HOTFIX — RAPID-RESPONSE WAR ROOM · TRIAGE STANDING BY.'**
+
+**Bottom:** tagline banner, cream-on-dark, ALL CAPS imperative triplet: **'CINCH IT. HOLD IT. SHIP IT.'**
+
+Thin cream frame border around the entire poster. Portrait 2:3 aspect ratio. Painterly propaganda composition, dense but focused environmental storytelling. **Figure count:** exactly THREE figures — OVERSEER, TACTICIAN, and HAWKEYE, co-dominant and front-lit (Overseer center with the tourniquet, Tactician left at the board, Hawkeye right on the scope); no other named operators, no AI factions. **Critical:** the aged-paper, distressed-propaganda backbone must survive — if it reads as "Cyberpunk 2077 fan art" instead of "WW2 propaganda with cyberpunk elements," the palette balance has tipped wrong. Pull neon back, push grain and propaganda framing forward. Cyan is set-dressing only (the vitals monitor, the monocle reticule, faint code rain); the parchment-cream / burnt-orange / olive / propaganda-red backbone must dominate.
