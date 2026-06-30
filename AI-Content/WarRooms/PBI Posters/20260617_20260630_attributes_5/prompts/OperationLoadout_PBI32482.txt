@@ -1,0 +1,33 @@
+[NOTE TO SELF — not part of the prompt. Attach ONE file to ChatGPT, for likeness:
+ 1) AI-Content/WarRooms/PBI Posters/team_images/overseer_poster_future.png
+ SOLO poster — OVERSEER only (he is the lead taking on this op). No other operators, no AI factions (ordinary feature work — team alone). This is the front-end build-out of the Catalog Item Card (part 2) to support attributes.]
+
+**Reference image:** One reference image is attached — use it for likeness:
+- **The attached image → OVERSEER** — Justin Pope, the VDS Pathfinder Detachment senior operator and the lead on this op: brown hair, short beard, a multi-overlay HUD visor (clear-lens HUD glasses), olive-drab uniform with augmented shoulder armor, a forearm-mounted holographic catalog terminal. Use this face/likeness and kit for the single OVERSEER figure.
+
+A WW2-era American propaganda war-room poster fused with retro-futurist cyberpunk dystopia — "World War AI" battlefield aesthetic, Era III. Aged-paper texture and distressed print grain over a parchment-cream backbone, with burnt orange, olive drab, propaganda red, and deep brown dominating; electric cyan (#3FB3D8) and holographic blue used sparingly as accents only. Faint volumetric fog and warm code rain in the background depth; warm lamplight competes with a cool cyan glow off the bench instruments. Painterly illustration with cinematic chiaroscuro lighting — stylized realism, not photoreal. Mood: **a forward armory / loadout bench at battle-stations** — the operator is outfitting a frontline kit before it ships out. Purposeful, hands-on, methodical: every piece of gear racked, checked, and locked in. The work of *equipping* — fitting each unit with exactly the loadout it needs before it goes to the line.
+
+**Foreground — OVERSEER, the lead, mid-build and dominant in frame:** **OVERSEER** stands at a **loadout / armory bench**, **fitting a CATALOG ITEM CARD with its attribute loadout** — racking small stamped **attribute "chips"** and **thumbnail-image plates** into slots on the card, his **forearm holographic catalog terminal** projecting the kit manifest beside the work, the other hand seating a chip into place. HUD visor, olive-drab uniform with augmented shoulder armor; render to match the supplied OVERSEER reference. His posture is decisive and skilled — the officer who owns the loadout, doing the fitting himself.
+
+**The hero prop — the CATALOG ITEM CARD on the bench (this is the work; keep it legible and central):** a sturdy field-equipment card, stencilled **'CATALOG ITEM CARD'**, being outfitted into a kit:
+- a **rack of attribute "chips"** waiting to be slotted — some are little **thumbnail-image plates** (a product picture on each), others are plain stamped **string "chips"** (a value name on each) — the two display styles, side by side.
+- a heavy **'SELECT' lever** on the card that, when thrown, **swings the card open** to reveal the attribute slots; once thrown, the lever plate has flipped to read **'REMOVE.'**
+- a **'CONFIRM SELECTION' lock** at the corner, visibly **latched-but-disabled** until every slot is filled — empty slots show a small red blocked indicator; a couple of filled slots glow ready.
+- the card's main **image window swaps to match the chosen chip** — the active-image display: slot a chip, the picture updates.
+
+**The bench cues (props that carry the joke — keep them legible, not cluttered):**
+- a **loadout manifest / work order** spiked on the bench reading **'PBI 32482 — CATALOG ITEM CARD · PART 2'** and **'ATTRIBUTES SUPPORT,'** with a stamped tag **'BEHIND FEATURE FLAG #31342 — ARMED WHEN ON.'**
+- a stencilled **rules placard:** **'2 ATTRIBUTES — NO SCROLL · 3+ — USE NAV'** and a smaller line **'NAMES OVER 14 CHARS — TRUNCATE · FULL NAME ON HOVER.'**
+- a **'DISPLAY ORDER PER VCMS'** stamp on the chip rack (the chips loaded in the order the stores dictate).
+- three **shipping crates / route stencils** showing where the kitted card deploys: **'OPTION PRICING,' 'PRODUCT CATALOG,' 'DESIGN MY HOME (DMH).'**
+- a sticky note: **'NO CONFIRM UNTIL EVERY SLOT IS FILLED.'**
+
+**Mid/background (kept light so the bench reads first):** the front shown as a wall map with three pins on the **'OPTION PRICING · PRODUCT CATALOG · DMH'** sectors, fed by a supply line from a **'VCMS' depot** in the rear. Server-rack bunker walls recede into fog and faint code rain. A VDS Pathfinder Detachment banner — parachute-and-spearhead over a red flag — hangs from the rafters reading **'FIRST IN · MARK THE WAY.'** Warm lamplight pools on Overseer and the card; a cool cyan glow rises off the card's image window and chip indicators; the rest falls into deep-brown chiaroscuro.
+
+**Anachronism (per aesthetic.md §9):** an earnest 1940s armorer at a **loadout bench**, racking **kit** into a field card and throwing a **SELECT lever** — but the "kit" are **UI attribute chips and thumbnail images**, the card is a **catalog item card component**, the loadout flow is a **'Select → Confirm Selection'** interaction (confirm disabled until all values are chosen), and this is **part 2** of a front-end refactor gated behind a **feature flag**. WW2 armory-and-loadout discipline wrapped around a 2020s React card component is the joke.
+
+**Top:** title bar in bold cream-on-red ALL CAPS reading **'OPERATION LOADOUT'**. Below it, a narrower olive subtitle banner reads **'PBI 32482 — CATALOG ITEM CARD, PART 2 · ATTRIBUTES SUPPORT. KIT EVERY CARD.'**
+
+**Bottom:** tagline banner, cream-on-dark, ALL CAPS imperative triplet: **'KIT IT. PICK IT. LOCK IT IN.'**
+
+Thin cream frame border around the entire poster. Portrait 2:3 aspect ratio. Painterly propaganda composition, focused (not cluttered) — the eye should land on the CATALOG ITEM CARD and Overseer first, the manifest/rules cues second. **Figure count:** exactly ONE figure — OVERSEER only (no other named operators, no AI factions). **Critical:** the aged-paper, distressed-propaganda backbone must survive — if it reads as "Cyberpunk 2077 fan art" instead of "WW2 propaganda with cyberpunk elements," the palette balance has tipped wrong. Pull neon back, push grain and propaganda framing forward. Cyan is set-dressing only (the card's image window, the chip indicators, faint code rain); the parchment-cream / burnt-orange / olive / propaganda-red backbone must dominate.

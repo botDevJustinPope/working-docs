@@ -1,9 +1,9 @@
 # Hawkeye — In-Universe Persona
 
 **Real-world anchor:** [`data.md`](./data.md) — Walter Martinez, Quality Assurance on the VDS Pathfinder Detachment at BuildOn Technologies. Beyond the codename and the team role, `data.md` is currently a skeleton pending user input.
-**Era applicability:** Era I default. Era III appearance documented in [`Prompt/ProfileHawkeye_Future.txt`](./Prompt/ProfileHawkeye_Future.txt) — the VDS Pathfinder Detachment Spotter / Verifier profile card.
+**Era applicability:** Era I default. Era III appearance documented in [`Prompt/ProfileHawkeye_Future.txt`](./Prompt/ProfileHawkeye_Future.txt) — the VDS Pathfinder Detachment Marksman / Verifier profile card.
 **Faction:** Allied (human side).
-**Last updated:** 2026-05-21
+**Last updated:** 2026-06-30
 
 ---
 
@@ -17,29 +17,30 @@ This file is a **skeleton pending user input** alongside `data.md`. The team-doc
 
 **Hawkeye** is sharp-eyed QA. The fit, grounded in what we know:
 
-- **Sees what the rest of the team misses.** QA function rendered as the operator who confirms the mark before the follow-on force lands. The codename's literal meaning — *eagle-eyed observer* — earns its weight in the Spotter role.
+- **Sees what the rest of the team misses.** QA function rendered as the sharpshooter who sights the mark, confirms it true through the scope, and takes the shot before the follow-on force lands. The codename's literal meaning — *eagle-eyed marksman* — earns its weight in the Marksman role.
 - **The codename feels canonical.** Of the 13 personas, *Hawkeye* is one of the few that maps unambiguously to its real role from the codename alone, without needing further explanation. That suggests the codename was given for a specific reason worth recording when the user provides the account.
 
 The persona-doc framing in `Teams/VDS/persona.md` calls this out explicitly: *"QA reads naturally as the sharp-eyed operator who validates the mark before the follow-on force lands. The codename earns its weight here."*
 
 ## WW2 unit identity
 
-- **Rank / role analogue:** **Detachment Spotter / Verifier** within the VDS Pathfinder Detachment. NCO-grade. The operator who carries the spotting scope and the verification clipboard; the one whose green check unlocks the next step.
-- **Wartime function:** elevated position at the parapet, scope to eye, scanning the drop zone for confirmation. When Tactician calls a zone, Hawkeye is the operator who says *"mark is true"* before the follow-on force commits. Equivalently: when the team commits a release candidate, Hawkeye is the operator who says *"this build holds."*
-- **Why this unit:** QA + Pathfinder Spotter doctrine + the codename's literal meaning.
+- **Rank / role analogue:** **Detachment Marksman / Verifier** within the VDS Pathfinder Detachment. NCO-grade. The operator who carries the scoped rifle and the verification stamp; the one whose green check unlocks the next step.
+- **Wartime function:** elevated overwatch position at the parapet, **scoped rifle shouldered and sighted**, reading the drop zone for confirmation. When Tactician calls a zone, Hawkeye sights the mark, says *"mark is true,"* and takes the shot before the follow-on force commits — one round, no wasted fire. Equivalently: when the team commits a release candidate, Hawkeye is the operator who says *"this build holds."*
+- **Why this unit:** QA + Pathfinder marksman / overwatch doctrine + the codename's literal meaning.
 
 ## Signature props / recurring artifacts
 
-- **Brass-and-fiber-optic spotting scope** — raised to his eye in action scenes. Era III treatment: scope projects a faint cyan crosshair reticule and surfaces availability / pricing overlays.
+- **Scoped marksman's rifle** — a sleek futuristic high-powered precision rifle: a long-barreled electromagnetic / coilgun marksman rifle with a matte composite frame, glowing cyan charge-coils along the receiver, a folding bipod, and an advanced digital smart-scope. Shouldered and sighted in action scenes (NOT a wood-stocked WW2 rifle — the bolt-action look was retired). Era III treatment: the smart-scope projects a faint cyan crosshair reticule and surfaces availability / pricing overlays. (The rifle's scope replaces the old standalone spotting scope.)
+- **Brass-framed tactical visor** — worn across the eyes, an armored half-visor with a thin faint-cyan HUD strip. Replaces the earlier augmented-eye / clip-on monocle look entirely; his sighting eye reads through the rifle scope.
 - **Verification clipboard** — at his hip in standing scenes; in hand when stamping a mark verified. Pages stenciled with grid coordinates and rows of green check-marks beside completed validations.
-- **Brass stamp-pads — green "CONFIRMED" and red "REJECTED"** — on the parapet beside him. The QA verdict made literal.
+- **Brass stamp-pads — green "CONFIRMED" and red "REJECTED"** — on the parapet beside him, often with a row of brass rounds each stamped like a verdict. The QA call made literal.
 
-Avoid: a rifle (he's a Spotter, not a sniper); a clipboard *and* a scope at once in mid-action scenes (overcrowded — pick one for the dominant moment).
+Avoid: the old augmented-eye / brass HUD monocle look (replaced by the tactical visor); the verification clipboard *and* the rifle raised at once in mid-action scenes (overcrowded — pick one for the dominant moment).
 
 ## Portrait composition notes
 
-- **Pose:** standing slightly elevated on the lip of a sandbagged parapet, raising the spotting scope to his unobscured eye. Posture is patient, locked-on attention — the second before he calls "mark is true."
-- **Setting:** elevated rooftop / parapet position (Era III); a sandbagged observation post in a war-room corner (Era I).
+- **Pose:** set back in shadow inside an overwatch hide (or elevated at a parapet), **futuristic rifle braced and sighted through the smart-scope** behind his tactical visor. Posture is patient, locked-on attention — the second before he calls "mark is true" and the round goes.
+- **Setting:** Era III — a shadowy interior overwatch hide, set back from a tall window with the rifle trained on a target out across the rain-slick megacity (the current future poster); alternately an elevated rooftop / parapet position. Era I — a sandbagged observation post in a war-room corner.
 - **Mode:** **Mode B — Geometric propaganda poster** per `aesthetic.md` §5.
 - **Codename label placement:** **Top banner** (cream-on-red ALL CAPS) currently — same as the rest of the Pathfinder detachment.
 
