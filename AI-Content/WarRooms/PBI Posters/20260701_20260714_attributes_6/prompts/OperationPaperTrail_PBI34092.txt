@@ -1,0 +1,31 @@
+[NOTE TO SELF — not part of the prompt. Attach ONE file to ChatGPT, for likeness:
+ 1) AI-Content/WarRooms/PBI Posters/team_images/ironforge_poster_future.png
+ SOLO poster — IRONFORGE only (Daniel Arwe owns this reporting work). No other operators, no AI factions (ordinary feature work — team alone). This op: the Option Pricing budget items PDF report (generated / saved / emailed) now captures attribute/value pairs as TEXT for each selected option — gated by the 'selectable attributes' feature flag (ON = attributes print; OFF = they don't).
+ NOTE — sibling to Operation Line Item (PBI 31351): that one is the on-screen budget items LIST card; THIS one is the saved/emailed PDF REPORT, attributes as text.]
+
+**Reference image:** One reference image is attached — use it for likeness:
+- **The attached image → IRONFORGE** — Daniel Arwe, the VDS Pathfinder Detachment Combat Engineer / Sapper: bearded with glasses, heavier augmented shoulder armor, mech-assisted reinforced gauntlets, a brass-and-glass targeting monocle, a heavy leather tool bandolier. Use this face/likeness and kit for the single IRONFORGE figure.
+
+A WW2-era American propaganda war-room poster fused with retro-futurist cyberpunk dystopia — "World War AI" battlefield aesthetic, Era III. Aged-paper texture and distressed print grain over a parchment-cream backbone, with burnt orange, olive drab, propaganda red, and deep brown dominating; electric cyan (#3FB3D8) and holographic blue used sparingly as accents only. Faint volumetric fog and warm code rain in the background; warm desk lamp competes with a cool cyan glow off the machine readouts. Painterly illustration with cinematic chiaroscuro — stylized realism, not photoreal. Mood: **the report desk at battle-stations** — typing the official record so every selected option is captured in writing, then sending it out. Deliberate, on-the-record.
+
+**Foreground — IRONFORGE, at the report desk, mid-work and dominant in frame:** **IRONFORGE** works a **retro-futurist field typewriter / teletype rig**, producing a **'BUDGET ITEMS REPORT — OPTION PRICING'** page, **typing attribute/value lines under each option**, one gauntlet feeding the platen, the other about to throw a gating lever. His targeting monocle checks the printed lines. Heavier shoulder armor, tool bandolier; render to match the supplied IRONFORGE reference. Posture: the clerk-engineer who puts every choice on the record.
+
+**The hero prop — the report page + the flag lever (this is the work; keep it legible and central):**
+- the printed **'BUDGET ITEMS REPORT'** page rolling out of the machine: each **option** followed by typed **'ATTRIBUTE : VALUE'** lines — **'FINISH : MATTE'**, **'TRIM : OAK'** — captured as **text**, associated with the selected option.
+- a heavy **gating lever / valve** beside the platen stencilled **'SELECTABLE ATTRIBUTES'** with an **'ON'** position lit — when ON, the attribute lines print; a small ghosted comparison sheet to the side shows the **'FLAG OFF'** version with those lines **absent**.
+- an **out-tray / send-spike** holding the finished report, ready to **save / email** — a stamped tag: **'GENERATE · SAVE · EMAIL.'**
+- a **'FOR THE RECORD'** stamp and a short **paper trail of carbon copies** trailing off the desk.
+
+**The desk cues (props that carry the joke — legible, not cluttered):**
+- a stencilled placard: **'FLAG ON → ATTRIBUTES ON THE REPORT · FLAG OFF → OMITTED.'**
+- a smaller line: **'ATTRIBUTE / VALUE PAIRS — AS TEXT.'**
+
+**Mid/background (kept light so the desk reads first):** server-rack bunker walls receding into fog and faint code rain; a pneumatic-tube / wire-dispatch line carrying reports to the rear. A VDS Pathfinder Detachment banner hangs from the rafters — parachute-and-spearhead over a red flag reading **'FIRST IN · MARK THE WAY.'** Warm lamplight pools on Ironforge and the page; a cool cyan glow rises off the flag lever and machine readout.
+
+**Anachronism (per aesthetic.md §9):** an earnest 1940s clerk typing the official report and wiring it out — but it's the **Option Pricing budget items PDF report**, the typed lines are **attribute/value pairs** captured for each selected option, the gating lever is the **'selectable attributes' feature flag** (ON prints them, OFF omits them), and "sending it out" is **generate / save / email**. WW2 records-desk discipline wrapped around a 2020s PDF report is the joke.
+
+**Top:** title bar in bold cream-on-red ALL CAPS reading **'OPERATION PAPER TRAIL'**. Below it, a narrower olive subtitle banner reads **'PBI 34092 — ATTRIBUTES ON THE OP BUDGET ITEMS REPORT.'**
+
+**Bottom:** tagline banner, cream-on-dark, ALL CAPS imperative: **'TYPE THE VALUE. FILE THE COPY. SEND IT OUT.'**
+
+Thin cream frame border around the entire poster. Portrait 2:3 aspect ratio. Painterly propaganda composition, focused (not cluttered) — the eye lands on IRONFORGE and the report page first, the flag-lever/cues second. **Figure count:** exactly ONE figure — IRONFORGE only (no other named operators, no AI factions). **Critical:** the aged-paper, distressed-propaganda backbone must survive — if it reads as "Cyberpunk 2077 fan art" instead of "WW2 propaganda with cyberpunk elements," pull neon back and push grain + propaganda framing forward. Cyan is set-dressing only; the parchment-cream / burnt-orange / olive / propaganda-red backbone must dominate.

@@ -1,0 +1,31 @@
+[NOTE TO SELF — not part of the prompt. Attach ONE file to ChatGPT, for likeness:
+ 1) AI-Content/WarRooms/PBI Posters/team_images/ironforge_poster_future.png
+ SOLO poster — IRONFORGE only (Daniel Arwe owns this integration-API work). No other operators, no AI factions (ordinary backend feature work — team alone). This is a backend/API op: gating the /contract endpoint on a required elevation.]
+
+**Reference image:** One reference image is attached — use it for likeness:
+- **The attached image → IRONFORGE** — Daniel Arwe, the VDS Pathfinder Detachment Combat Engineer / Sapper: bearded with glasses, heavier augmented shoulder armor, mech-assisted reinforced gauntlets with brass-and-chrome knuckle plates, a brass-and-glass targeting monocle flipped over one eye, and a heavy leather tool bandolier. Use this face/likeness and kit for the single IRONFORGE figure.
+
+A WW2-era American propaganda war-room poster fused with retro-futurist cyberpunk dystopia — "World War AI" battlefield aesthetic, Era III. Aged-paper texture and distressed print grain over a parchment-cream backbone, with burnt orange, olive drab, propaganda red, and deep brown dominating; electric cyan (#3FB3D8) and holographic blue used sparingly as accents only. Faint volumetric fog and warm code rain in the background depth; warm lamplight competes with a cool cyan glow off the gate instruments. Painterly illustration with cinematic chiaroscuro — stylized realism, not photoreal. Mood: **a fortified checkpoint on the road to CONTRACT** — the sentry-engineer holds the barrier down until the required pass is presented and checked. Disciplined, gatekeeping, methodical.
+
+**Foreground — IRONFORGE mans the gate (solo, dominant in frame):** **IRONFORGE** stands at a **fortified checkpoint / toll-gate boom-barrier** stencilled **'CONTRACT'**, one reinforced gauntlet on the barrier lever, the other holding up an **'ELEVATION PASS'** — a small stamped **house-front elevation blueprint card** — inspecting it against a plan dossier through his targeting monocle. Heavier augmented shoulder armor, tool bandolier; render to match the supplied IRONFORGE reference. His posture is the checkpoint sentry who won't lift the barrier until the papers check out.
+
+**The hero prop — the toll gate + the elevation pass (keep legible and central):**
+- the **boom barrier** across the road, currently **DOWN / blocking**, stencilled **'CONTRACT'** — it lifts only when the pass clears.
+- a builder's **pennant flag** raised on the gatepost reading **'REQUIRE ELEVATION TO CONTRACT'** with a small **'ON'** toggle — the per-builder rule that arms the gate.
+- the **'ELEVATION PASS'** in his hand — a stamped elevation (house-facade) blueprint card; when present, a green **'CLEARED'** stamp; when absent, a red placard drops: **'NO ELEVATION — NO CONTRACT.'**
+- the waiting **'PROFILE PLAN'** convoy/dossier at the barrier: if it already carries an elevation stamp it's waved through; if the courier hands over a *different* elevation, the gate **swaps the plan's stamp for the new one** — a small note reads **'PASS OVERRIDES PLAN — UPDATE ON FILE.'**
+
+**The gate cues (props that carry the joke — legible, not cluttered):**
+- an endpoint signpost: **'/CONTRACT — VDS INTEGRATION API.'**
+- a stencilled logic placard: **'FLAG ON? → PLAN HAS ELEVATION? → IF NOT, PASS MUST CARRY IT, ELSE REJECT.'**
+- a smaller line: **'ELEVATION OPTIONAL IF ALREADY ON THE PLAN.'**
+
+**Mid/background (kept light so the gate reads first):** a rain-slick server-rack trench road receding into fog behind the checkpoint, a data-center bunker gatehouse, faint code rain. A VDS Pathfinder Detachment banner hangs from the gatehouse — parachute-and-spearhead over a red flag reading **'FIRST IN · MARK THE WAY.'** Warm lamplight pools on Ironforge and the barrier; a cool cyan glow rises off the pass card and the flag toggle.
+
+**Anachronism (per aesthetic.md §9):** an earnest 1940s border/checkpoint sentry demanding travel papers before the barrier lifts — but the road is the **/contract API endpoint**, the "papers" are an **elevationId**, the raised pennant is a **per-builder feature flag ('require elevation to contract')**, turning back the convoy is a **special API error case**, and handing over a different pass **updates the profile plan's elevation on file**. WW2 checkpoint discipline wrapped around an API contract call is the joke.
+
+**Top:** title bar in bold cream-on-red ALL CAPS reading **'OPERATION TOLL GATE'**. Below it, a narrower olive subtitle banner reads **'PBI 30833 — API: REQUIRE ELEVATION TO CONTRACT.'**
+
+**Bottom:** tagline banner, cream-on-dark, ALL CAPS imperative: **'NO ELEVATION, NO CONTRACT. CHECK THE PASS.'**
+
+Thin cream frame border around the entire poster. Portrait 2:3 aspect ratio. Painterly propaganda composition, focused (not cluttered) — the eye lands on IRONFORGE and the barrier first, the flag/logic cues second. **Figure count:** exactly ONE figure — IRONFORGE only (no other named operators, no AI factions). **Critical:** the aged-paper, distressed-propaganda backbone must survive — if it reads as "Cyberpunk 2077 fan art" instead of "WW2 propaganda with cyberpunk elements," pull neon back and push grain + propaganda framing forward. Cyan is set-dressing only; the parchment-cream / burnt-orange / olive / propaganda-red backbone must dominate.

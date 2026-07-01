@@ -1,0 +1,13 @@
+**Operation insignia — circular mission patch (Teams thread image).**
+
+**Format:** A single circular military unit insignia / mission patch, centered and filling the frame on a flat dark-charcoal or transparent background, sized to crop cleanly into a round Teams avatar. Square 1:1 canvas. Bold and iconographic — it must stay legible at small avatar size.
+
+**Style:** WW2-era squadron embroidered-patch / stamped-leather emblem fused with subtle retro-futurist cyberpunk. Aged, lightly distressed, with a stitched double-border rim. Palette: parchment cream (#E8D9B0–#F2E5C1), burnt orange (#C5602D–#E0813C), olive drab (#5A6342–#7B7B4A), propaganda red (#A8341F–#C53A22), deep brown (#3E2A1C). Sparing electric-cyan glow (#3FB3D8) as an Era III accent only — a thin highlight, never dominant. No photorealism, no modern flat-design pastels, no pure-white background.
+
+**Rim:** an outer ring carrying curved stencil ALL-CAPS text — **'OPERATION LINE ITEM'** across the top arc and **'ITEMIZE THE CHOICE'** across the bottom arc — cream lettering on a propaganda-red ring, with a small five-point star separating the arcs on each side. A small olive tab at the very bottom reads **'PBI 31351'**.
+
+**Center emblem:** a **single stamped 'BUDGET ITEM' field card** as the hero device — a sturdy card shown front-on carrying a catalog option name and a **compact, tidy row of two or three attribute/value tag-chips** (e.g. **'FINISH : MATTE'**, **'TRIM : OAK'**), one chip with a faint cyan ready-glow. A small **routing arrow** curves off the card toward a little **'DMH' crate** at the edge of the disc — the values carried onward. Essence: every line item carries exactly its chosen values, and a copy travels to DMH.
+
+**Unit DNA (shared across the set):** integrate a small parachute-over-drop-zone-marker mark — the VDS Pathfinder Detachment emblem — as a subtle motif near the bottom-center of the disc, with a faint cyan glow on the parachute shroud lines. Keep it small; the budget-item-card central emblem dominates.
+
+**Critical:** one or two symbols maximum (the budget-item card + the DMH routing arrow), no human figures, no scene clutter. The card-with-tag-row must read instantly as *an itemized line carrying its spec values*, not a generic playing card or ID badge. Keep the tag row concise (do not overflow it) and the cyan confined to the one ready chip and the arrow — do not let it spread into the field; the warm parchment / burnt-orange / olive / propaganda-red backbone must dominate. The aged-paper / embroidered-patch finish must survive — if it reads as a glossy modern app icon or Cyberpunk fan art, pull the neon back and push the propaganda-patch framing forward.

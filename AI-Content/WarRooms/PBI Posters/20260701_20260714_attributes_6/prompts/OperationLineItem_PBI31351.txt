@@ -1,0 +1,30 @@
+[NOTE TO SELF — not part of the prompt. Attach ONE file to ChatGPT, for likeness:
+ 1) AI-Content/WarRooms/PBI Posters/team_images/ironforge_poster_future.png
+ SOLO poster — IRONFORGE only (Daniel Arwe owns this front-end work). No other operators, no AI factions (ordinary feature work — team alone). This op: show the buyer's chosen attribute values on the Option Pricing budget items list card, and carry those values into DMH on import.]
+
+**Reference image:** One reference image is attached — use it for likeness:
+- **The attached image → IRONFORGE** — Daniel Arwe, the VDS Pathfinder Detachment Combat Engineer / Sapper: bearded with glasses, heavier augmented shoulder armor, mech-assisted reinforced gauntlets, a brass-and-glass targeting monocle, a heavy leather tool bandolier. Use this face/likeness and kit for the single IRONFORGE figure.
+
+A WW2-era American propaganda war-room poster fused with retro-futurist cyberpunk dystopia — "World War AI" battlefield aesthetic, Era III. Aged-paper texture and distressed print grain over a parchment-cream backbone, with burnt orange, olive drab, propaganda red, and deep brown dominating; electric cyan (#3FB3D8) and holographic blue used sparingly as accents only. Faint volumetric fog and warm code rain in the background; warm lamplight competes with a cool cyan glow off the cards. Painterly illustration with cinematic chiaroscuro — stylized realism, not photoreal. Mood: **a quartermaster's counter at battle-stations** — itemizing the requisition list so every line carries exactly what was chosen. Methodical, hands-on, tidy.
+
+**Foreground — IRONFORGE, the quartermaster, mid-work and dominant in frame:** **IRONFORGE** stands at a **field requisition counter**, working a column of **'BUDGET ITEM' cards**, **stamping each one with a concise row of attribute/value tags**, one gauntlet pressing a label into place. His targeting monocle scans the row to keep it legible; a duplicate card is being routed onward. Heavier shoulder armor, tool bandolier; render to match the supplied IRONFORGE reference. Posture: the quartermaster who owns the ledger and itemizes it himself.
+
+**The hero prop — the budget items list (this is the work; keep it legible and central):** a neat **column / stack of stamped field cards**, each a **'BUDGET ITEM'**:
+- each card shows a **catalog option name** plus a **compact, concise row of attribute/value chips** — **'FINISH : MATTE'**, **'TRIM : OAK'**, **'HARDWARE : BRUSHED NICKEL'** — the buyer's chosen values, displayed tidily and **not overflowing the card** (concise by design).
+- these values were chosen back in **Option Pricing** — a small origin stamp reads **'FROM OPTION PRICING.'**
+- a **carbon-copy duplicate** of a card travels along a short **routing rail** toward a crate stencilled **'DMH'** — the values copied into DMH on import (a tag: **'COPY VALUES → DMH'**).
+
+**The counter cues (props that carry the joke — legible, not cluttered):**
+- a stencilled placard: **'EVERY ITEM CARRIES ITS VALUES.'**
+- a smaller note: **'CONCISE — DON'T OVERFLOW THE CARD.'**
+- a route stencil: **'OPTION PRICING → BUDGET ITEMS → DMH.'**
+
+**Mid/background (kept light so the counter reads first):** server-rack supply-depot walls receding into fog and faint code rain; a supply line running toward the **'DMH'** depot in the rear. A VDS Pathfinder Detachment banner hangs from the rafters — parachute-and-spearhead over a red flag reading **'FIRST IN · MARK THE WAY.'** Warm lamplight pools on Ironforge and the cards; a cool cyan glow rises off the chip tags.
+
+**Anachronism (per aesthetic.md §9):** an earnest 1940s quartermaster itemizing a requisition ledger, stamping each line with its kit — but the "line items" are **Option Pricing budget items**, the stamped kit are **UI attribute/value pairs** shown concisely on the budget items card, and the carbon copy is **the values copied into DMH on import**. WW2 requisition discipline wrapped around a 2020s budget-items list is the joke.
+
+**Top:** title bar in bold cream-on-red ALL CAPS reading **'OPERATION LINE ITEM'**. Below it, a narrower olive subtitle banner reads **'PBI 31351 — ATTRIBUTES ON OP BUDGET ITEMS.'**
+
+**Bottom:** tagline banner, cream-on-dark, ALL CAPS imperative: **'ITEMIZE THE CHOICE. CARRY IT TO DMH.'**
+
+Thin cream frame border around the entire poster. Portrait 2:3 aspect ratio. Painterly propaganda composition, focused (not cluttered) — the eye lands on IRONFORGE and the budget-item cards first, the route/rules cues second. **Figure count:** exactly ONE figure — IRONFORGE only (no other named operators, no AI factions). **Critical:** the aged-paper, distressed-propaganda backbone must survive — if it reads as "Cyberpunk 2077 fan art" instead of "WW2 propaganda with cyberpunk elements," pull neon back and push grain + propaganda framing forward. Cyan is set-dressing only; the parchment-cream / burnt-orange / olive / propaganda-red backbone must dominate.

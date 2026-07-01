@@ -1,0 +1,31 @@
+[NOTE TO SELF — not part of the prompt. Attach ONE file to ChatGPT, for likeness:
+ 1) AI-Content/WarRooms/PBI Posters/team_images/overseer_poster_future.png
+ SOLO poster — OVERSEER only (Justin Pope owns this reporting work). No other operators, no AI factions (ordinary feature work — team alone). This is the SEQUEL to Operation Field Report (PBI 30541): Selections Report iteration 2 — upgrade attribute text chips to thumbnail IMAGES (first selected image = the "main" image, the rest as smaller thumbnails).]
+
+**Reference image:** One reference image is attached — use it for likeness:
+- **The attached image → OVERSEER** — Justin Pope, the VDS Pathfinder Detachment senior operator: brown hair, short beard, a multi-overlay HUD visor (clear-lens HUD glasses), olive-drab uniform with augmented shoulder armor, a forearm-mounted holographic catalog terminal. Use this face/likeness and kit for the single OVERSEER figure.
+
+A WW2-era American propaganda war-room poster fused with retro-futurist cyberpunk dystopia — "World War AI" battlefield aesthetic, Era III. Aged-paper texture and distressed print grain over a parchment-cream backbone, with burnt orange, olive drab, propaganda red, and deep brown dominating; electric cyan (#3FB3D8) and holographic blue used sparingly as accents only. Faint volumetric fog and warm code rain in the background; warm map-table and lamp light. Painterly illustration with cinematic chiaroscuro — stylized realism, not photoreal. Mood: **the sequel briefing — upgrading the report from words to pictures.** Clarifying, decisive: the field report now carries actual photographs, not just coded tags.
+
+**Foreground — OVERSEER, the lead, mid-work and dominant in frame:** **OVERSEER** stands at a **report board** assembling the **'SELECTIONS REPORT'**, **pinning a large framed 'MAIN IMAGE' photo-plate** to the top of it — the first selected attribute image — while a **row of smaller thumbnail photo-plates** goes up beneath it. His forearm terminal projects the layout; his other hand sets a thumbnail in place. HUD visor, olive-drab with augmented shoulder armor; render to match the supplied OVERSEER reference. Posture: decisive, upgrading the report himself.
+
+**The hero prop — the SELECTIONS REPORT, VOL. II (this is the work; keep it legible and central):**
+- a large **framed 'MAIN IMAGE'** at the top of the report for the catalog item, with a small tag: **'FIRST SELECTED IMAGE → MAIN.'**
+- a strip of **smaller thumbnail images** beneath — additional attributes with images, **smaller but still clearly discernible.**
+- a set-aside pile of the old **text chips** tagged **'ITER 1 — CHIPS (MVP).'** — superseded by pictures.
+- a small layout note pinned nearby: **'LAYOUT — EXPLORE (SEE ESTIMATED AREAS).'**
+- a callback ribbon across a corner: **'FIELD REPORT — VOL. II · SEQUEL TO PBI 30541.'**
+
+**The board cues (props that carry the joke — legible, not cluttered):**
+- a stencilled placard: **'CHIPS WERE THE MVP. NOW SHOW THE PICTURE.'**
+- a smaller line: **'FIRST IMAGE = MAIN · THE REST = THUMBNAILS.'**
+
+**Mid/background (kept light so the report reads first):** server-rack trenches and data-center bunkers receding into fog and faint code rain. A faint holographic banner projects **'SELECTIONS REPORT — NOW WITH IMAGES'** across the far horizon. A VDS Pathfinder Detachment banner hangs from the rafters — parachute-and-spearhead over a red flag reading **'FIRST IN · MARK THE WAY.'** Warm lamplight pools on Overseer and the report; a cool cyan glow rises off the photo-plates.
+
+**Anachronism (per aesthetic.md §9):** an earnest 1940s intelligence officer upgrading a field report from **coded text tags** to actual **recon photographs** — but it's the **Selections Report, iteration 2**, the "photographs" are **attribute-value thumbnail images**, the first selected image becomes the **main image**, and the old chips were the **MVP from PBI 30541**. WW2 photo-intel discipline wrapped around a 2020s report increment is the joke.
+
+**Top:** title bar in bold cream-on-red ALL CAPS reading **'OPERATION FIELD REPORT II'**. Below it, a narrower olive subtitle banner reads **'PBI 34091 — SELECTIONS REPORT, ITERATION 2 · ATTRIBUTE THUMBNAILS.'**
+
+**Bottom:** tagline banner, cream-on-dark, ALL CAPS imperative: **'NAME THE CHOICE. SHOW THE PICTURE. FILE THE REPORT.'**
+
+Thin cream frame border around the entire poster. Portrait 2:3 aspect ratio. Painterly propaganda composition, focused (not cluttered) — the eye lands on OVERSEER and the MAIN IMAGE first, the thumbnails/cues second. **Figure count:** exactly ONE figure — OVERSEER only (no other named operators, no AI factions). **Critical:** the aged-paper, distressed-propaganda backbone must survive — if it reads as "Cyberpunk 2077 fan art" instead of "WW2 propaganda with cyberpunk elements," pull neon back and push grain + propaganda framing forward. Cyan is set-dressing only; the parchment-cream / burnt-orange / olive / propaganda-red backbone must dominate.
