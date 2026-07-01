@@ -1,0 +1,37 @@
+[NOTE TO SELF — not part of the prompt. Attach these four files to ChatGPT in this order:
+ 1) AI-Content/WarRooms/PBI Posters/team_images/ironforge_poster_future.png
+ 2) AI-Content/WarRooms/PBI Posters/team_images/overseer_poster_future.png
+ 3) AI-Content/WarRooms/PBI Posters/team_images/hawkeye_poster_future.png
+ 4) AI-Content/WarRooms/PBI Posters/team_images/tactician_poster_future.png
+ Team-only op — no AI factions (this is release-candidate / deploy cadence work, not AI-collaboration work).
+ PBI 34520 is a bare cadence item ("RC for 07/06", no AC) — the poster is grounded in the RC-ship ritual, not feature acceptance criteria.]
+
+**Reference images:** Four reference images are attached to this message. Use them for likeness, matched by both upload order and visual description:
+- **First attached image → IRONFORGE** — the sapper / equipment hand (bearded, glasses, heavier augmented shoulder armor).
+- **Second attached image → OVERSEER** — the senior VDS operator (brown hair, short beard, multi-overlay HUD visor / clear-lens HUD glasses, olive-drab uniform with augmented shoulder armor, a forearm-mounted holographic catalog terminal).
+- **Third attached image → HAWKEYE** — the marksman / verifier wearing a **brass-framed tactical visor** across the eyes (NO augmented eyeball, NO clip-on monocle), his futuristic smart-scoped marksman rifle slung.
+- **Fourth attached image → TACTICIAN** — the mission planner (bald, bearded, amber-tinted glasses, headset; VDS patch and sergeant stripes).
+If the upload order differs, match each figure by the description above rather than by position.
+
+**Lead figure:** OVERSEER leads this operation — largest in frame, front-lit, center; the other three support at reduced scale.
+
+A WW2-era American propaganda war-room poster fused with retro-futurist cyberpunk dystopia — "World War AI" battlefield aesthetic. Aged-paper texture and distressed print grain over a parchment-cream backbone, with burnt orange, olive drab, propaganda red, and deep brown dominating; electric cyan and holographic blue used sparingly as accents only. Volumetric fog, rain, sparks, and faint code rain in the background. Painterly illustration with cinematic chiaroscuro lighting — stylized realism, not photoreal. Mood: **the forward airfield launch line at battle-stations** — the release candidate loaded aboard the transport, ground crew clearing the ramp, engines hot, wheels up for the 07/06 push. Purposeful and kinetic: load it, clear it, send it.
+
+**Foreground — OVERSEER leads this operation:** **OVERSEER** (senior operator) is the dominant figure, largest in frame, standing on the flight line as the **launch officer clearing the transport** — one arm raised high giving the **WHEELS-UP go-signal** with a glowing **green marshaller's wand**, the other hand on a launch-control lever. Brown hair, short beard, multi-overlay HUD visor, olive-drab uniform with augmented shoulder armor, forearm holographic catalog terminal projecting the departure clock; render to match the supplied OVERSEER persona reference. Beside him a departure board reads **"DEPARTURE: PRODUCTION — 07/06"** and a status lamp has flipped to **"WHEELS UP."** His posture is decisive command — the officer who owns the launch call.
+
+**Supporting, midground (smaller in frame, working behind and around OVERSEER):** the rest of the VDS Pathfinder Detachment, olive-drab uniforms fused with cybernetic augmentations (glowing HUD visors, headsets, fiber-optic radio packs), each rendered to match its supplied persona reference image, by codename:
+- **TACTICIAN** (mission planner) — at a lit **flight-plan / route board**, plotting the launch route from the airfield to a forward position flagged **"PRODUCTION — 07/06"**; pointer-baton on the departure route. Bald, bearded, amber-tinted glasses, headset; **VDS** patch and sergeant stripes.
+- **HAWKEYE** (marksman / verifier) — running the **final pre-flight verification pass** on the loaded build, a checklist headed **"PRE-FLIGHT — ALL GREEN"**, his smart-scoped marksman rifle slung across his back, brass-framed tactical visor scanning the payload. (Verification is his action here — rifle stays slung, not raised.)
+- **IRONFORGE** (sapper / equipment hand) — heaving the **last RC payload pallet up the transport's ramp**, a stencilled crate tagged **"PROD PAYLOAD — STAGED, READY TO SHIP"**, one hand pulling the wheel chocks. Bearded, glasses, heavier augmented shoulder armor.
+
+A small chalkboard reads **"LOAD IT. CLEAR IT. WHEELS UP — 07/06."**. The team's posture is disciplined launch tempo — load the build, run the checks, clear the ramp, give the go. This is the detachment alone — no AI factions in the scene.
+
+**Background:** a forward airfield at the data-center front — a **retro-futurist military transport aircraft** (a WW2 C-47 Skytrain / Dakota silhouette reimagined as a cyberpunk cargo-dropship: olive-drab with invasion stripes, twin engines glowing as thruster-rings, fiber-optic conduits along the fuselage, a holographic tail number reading **"RC — 07/06"**) sits on the launch ramp with its cargo ramp down, engines spun up and prop-wash / thruster glow washing the tarmac. Runway marker lights recede into rain and fog; a **second transport is already airborne in the far distance, wheels retracting, climbing away** toward a faint holographic horizon banner reading **"RELEASE CANDIDATE — 07/06."** Server-rack trenches and fortified data-center bunkers line the field. Vintage radios wired to glowing fiber-optic cables. A VDS Pathfinder Detachment banner hangs from a control-tower mast — parachute-and-spearhead insignia over a red flag reading **"FIRST IN · MARK THE WAY."**
+
+**Anachronism (per aesthetic.md §9):** a 1940s airborne ground crew loading a transport for the combat jump — but the "cargo" is a **release-candidate build**, the airfield is a **deployment pipeline**, the flight plan is the **deploy route to PRODUCTION**, the pre-flight checks are **RC verification / CI green**, and **"wheels up"** is the **ship / deploy moment** on 07/06. Airborne launch discipline wrapped around shipping a verified build is the joke.
+
+**Top:** title bar in bold cream-on-red ALL CAPS reading **'OPERATION WHEELS UP'**. Below the title, a narrower olive subtitle banner reads **'PBI 34520 — RELEASE CANDIDATE FOR 07/06.'**.
+
+**Bottom:** tagline banner, cream-on-dark, single-line imperative ALL CAPS: **'LOAD THE BUILD. CLEAR THE RAMP. WHEELS UP.'**
+
+Thin cream frame border around the entire poster. Portrait 2:3 aspect ratio. Painterly propaganda composition, dense environmental storytelling. **Figure hierarchy:** OVERSEER is unmistakably the lead — largest, front-lit, center-frame; TACTICIAN, HAWKEYE, and IRONFORGE support at reduced scale. **Note on palette:** the green marshaller's wand / "WHEELS UP" go-lamp is the one permitted green accent — a single glowing GO cue. Do not let green spread into the rest of the scene; the warm parchment / burnt-orange / olive / propaganda-red backbone must still dominate, with the engine/thruster glow kept to a restrained cyan-into-warm. **Critical:** the aged-paper, distressed-propaganda backbone must survive — if the result reads as "Cyberpunk 2077 fan art" instead of "WW2 propaganda with cyberpunk elements," the palette balance has tipped wrong. Pull neon back, push grain and propaganda framing forward.
